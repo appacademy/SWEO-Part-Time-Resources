@@ -33,8 +33,10 @@ elif [ $SHELL = '/bin/zsh' ]; then
     PROFILE_FILE='.zshrc'
 fi
 # Check if the alias already exists
-ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh?token=AOLAMKREBTLVY6DEXWDKVKLBIPL24')
+ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
 # If not append it to the file
 if [ $ALIAS_IN_START != 1 ]; then
-    echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh?token=AOLAMKREBTLVY6DEXWDKVKLBIPL24 | bash'" >> $HOME/$PROFILE_FILE
+    echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
 fi
+
+#curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
