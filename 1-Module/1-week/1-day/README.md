@@ -1,8 +1,19 @@
 # `W1D1 - Welcome!`
 
 - Homework
-- Group Practice
-- Solo/Pair Work!
+- Orientation
+- Meet and Greet!
+- How does Mod1 work?
+
+---
+
+Meet and Greet!
+
+- Name/Pronouns/Location
+- Professional Background
+- Why are you here?
+  - Motivation
+- If you were a fruit, vegetable or mineral, what would you be and why?
 
 ---
 
