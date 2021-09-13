@@ -9,7 +9,7 @@
 
 Meet and Greet!
 
-- Name/Pronouns/Location
+- Preferred Name/Pronouns/Location
 - Professional Background
 - Why are you here?
   - Motivation
