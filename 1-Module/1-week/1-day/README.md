@@ -19,7 +19,7 @@ How to use:
 1. Run the following command (Once)
 
     ```bash
-    curl -s https://raw.githubusercontent.com/appacademy/Module-1-Resources/main/additional_resources/scripts/folder_structure.sh | bash
+    curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
     ```
 
 2. Restart your terminal
