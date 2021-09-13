@@ -82,6 +82,6 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
     done
 fi
 echo "Copying Files..."
-cp -r ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/ ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
+cp -rp ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
 echo "Done."
 exit 0

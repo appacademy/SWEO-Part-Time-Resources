@@ -12,8 +12,8 @@ else
   cd ../
 fi
 # Make the PT Folder Structure
-mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{d1,d2,d3,d4,d5}/{projects,homework}
-mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{d1,d2,d3,d4,d5}/{projects,homework}
+mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
 # Find the correct startup file
 if [ $SHELL = '/bin/bash' ]; then
     if [ -e $HOME/.bash_profile ]; then
