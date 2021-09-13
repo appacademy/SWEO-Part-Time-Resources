@@ -54,7 +54,7 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
         read -p "Are you only wanting the lecturer's live lecture file? y/n `echo $'\n> '`" yn1 < /dev/tty
         if [[ "$yn1" =~ ^([yY][eE][sS]|[yY])$ ]]; then
             echo "Copying to live-lecture.js..."
-            cp -r ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy/w${week}/d${day}/lecture/live-scratch.js
+            cp -r ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture/live-scratch.js
             echo "Done."
             exit 0
         elif [[ "$yn1" =~ ^([nN][oO]|[nN])$ ]]; then
