@@ -13,6 +13,7 @@
   - P.E.M.D.A.S.
 - Modulo
   - Returns the `remainder` of a division expression
+  
 
 ## Boolean Prompt: 20 mins
 
@@ -103,6 +104,8 @@
     - The `value` that will be assigned to the namespace
     - Think of it like the object you put in a box.
 - Three parts of a variable
+- Prefix and Postfix ++/--
+- +=, -=, *=, /=
 
   ```js
     let name; // declaration (undefined)
