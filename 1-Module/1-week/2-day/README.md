@@ -1,12 +1,12 @@
 # W1D2
 
-## Here we go
+## Here we go: 20 mins
 
   1. [Favorite Food]
   2. [Arithmetic Operator]
   3. [Number Exercise]
 
-### The Number Type
+### The Number Type: 15 mins
 
 - We can have whole numbers, decimals, and negative numbers
 - Order of Operations
@@ -14,12 +14,12 @@
 - Modulo
   - Returns the `remainder` of a division expression
 
-## Boolean Prompt
+## Boolean Prompt: 20 mins
 
   1. [Boolean Operators]
   2. [Boolean Exercise]
 
-### Boolean Type
+### Boolean Type: 15 mins
 
 - `Not` Operator (!)
   - Reverses a boolean
@@ -49,11 +49,11 @@
     | false | true  | true   |
     | false | false | false  |
 
-## Comparison Operators Prompt
+## Comparison Operators Prompt: 15 mins
 
   1. [Comparison Operators]
 
-### Comparison Operators
+### Comparison Operators: 15 mins
 
 - Compares two elements and evaluates to a boolean
 
@@ -88,12 +88,12 @@
     console.log([] == 0);   // true (can be unpredictable)
   ```
 
-## Variables Prompt
+## Variables Prompt: 20 mins
 
   1. [Variables Exercise]
   2. [Variables Quiz]
 
-### Variables
+### Variables: 15 mins
 
 - The `=` operator is the `assignment operator`
   - Left of the `assignment operator`
@@ -114,13 +114,13 @@
     console.log(name, name2);
   ```
 
-## 🎵 Put it all together!🎵
+## 🎵 Put it all together!🎵: 15 mins
 
   1. [Expression Expedition]
 
-### Expression Discussion
+### Expression Discussion: 10 mins
 
-## Formative Quiz
+## Formative Quiz: 10 mins
 
   1. [Formative Quiz]
 
