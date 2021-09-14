@@ -1,44 +1,128 @@
 # W1D2
 
-## PROMPT(s) 1
+## Here we go!
 
   1. [Favorite Food]
   2. [Arithmetic Operator]
   3. [Number Exercise]
 
-## Discussion Prompt 1
+### The Number Type
 
-## PROMPT(s) 2
+- We can have whole numbers, decimals, and negative numbers
+- Order of Operations
+  - P.E.M.D.A.S.
+- Modulo
+  - Returns the `remainder` of a division expression
+
+## Boolean Prompt
 
   1. [Boolean Operators]
   2. [Boolean Exercise]
 
-## Discussion Prompt 2
+### Boolean Type
 
-## PROMPT(s) 3
+- `Not` Operator (!)
+  - Reverses a boolean
+
+    | A     |   !A   |
+    |:-----:|:------:|
+    | true  | false  |
+    | false | true   |
+
+- The `And` Operator (&&)
+  - Only true if _both_ sides are true
+
+    | A     | B     | A && B |
+    |:-----:|:-----:|:------:|
+    | true  | true  | true   |
+    | true  | false | false  |
+    | false | true  | false  |
+    | false | false | false  |
+
+- The `Or` Operator (||)
+  - True if _either_ side is true
+
+    | A     | B     | A \|\| B |
+    |:-----:|:-----:|:------:|
+    | true  | true  | true   |
+    | true  | false | true   |
+    | false | true  | true   |
+    | false | false | false  |
+
+## Comparison Operators Prompt
 
   1. [Comparison Operators]
 
-## Discussion Prompt 3
+### Comparison Operators
 
-## PROMPT(s) 4
+- Compares two elements and evaluates to a boolean
+
+  ```js
+      // Less than/Greater than
+      console.log(5 < 9);      // true
+      console.log(5 > 9);      // false
+      console.log('a' < 'b');  // true (dictionary order)
+      console.log('cat' < 'cats'); // true (dictionary order)
+
+      // Inclusive comparison (... or equal to)
+      console.log(7 <= 10);    // true
+      console.log(10 >= 10);   // true 
+
+  ```
+
+- Equality
+  - `=` is an assignment operator
+  - `==` coerces data to check equality, hard to predict; **do not use**
+  - `===` strict equality
+  - `!==` strict NOT equal
+
+  ```js
+    // Equality === and !==
+    console.log(2 === 2);    // true
+    console.log(2 === 2.1);  // false
+    console.log(2 !== 2.1);  // true
+
+    // Two equality operators, === and ==
+    console.log(5 === '5'); // false
+    console.log(5 == '5');  // true (types are coerced)
+    console.log([] == 0);   // true (can be unpredictable)
+  ```
+
+## Variables Prompt
 
   1. [Variables Exercise]
   2. [Variables Quiz]
 
-## Discussion Prompt 4
+### Variables
 
-## PROMPT(s) 5
+- The `=` operator is the `assignment operator`
+  - Left of the `assignment operator`
+    - Creates a space in memory with that name
+    - Think of it like writing a name on a box
+  - Right of the `assignment operator`
+    - The `value` that will be assigned to the namespace
+    - Think of it like the object you put in a box.
+- Three parts of a variable
+
+  ```js
+    let name; // declaration (undefined)
+
+    name = 'Leroy' // assignment / reassignment
+
+    let name2 = "Jenkins" // initialization
+
+    console.log(name, name2);
+  ```
+
+## 🎵 Put it all together! 🎵
 
   1. [Expression Expedition]
 
-## Discussion Prompt 5
+### Expression Discussion
 
 ## Formative Quiz
 
   1. [Formative Quiz]
-
----
 
 [Favorite Food]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/favorite-food"
 [Arithmetic Operator]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/arithmetic-operators"
