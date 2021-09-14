@@ -13,6 +13,7 @@
   - P.E.M.D.A.S.
 - Modulo
   - Returns the `remainder` of a division expression
+- NaN
 
 ## Boolean Prompt: 20 mins
 
