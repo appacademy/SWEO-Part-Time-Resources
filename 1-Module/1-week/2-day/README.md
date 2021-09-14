@@ -15,12 +15,12 @@
   - Returns the `remainder` of a division expression
 - NaN
 
-## Boolean Prompt: 20 mins
+## Boolean Prompt: 15 mins
 
   1. [Boolean Operators]
   2. [Boolean Exercise]
 
-### Boolean Type: 15 mins
+### Boolean Type: 10 mins
 
 - `Not` Operator (!)
   - Reverses a boolean
