@@ -1,6 +1,6 @@
 # W1D2
 
-## Here we go!
+## Here we go
 
   1. [Favorite Food]
   2. [Arithmetic Operator]
@@ -114,7 +114,7 @@
     console.log(name, name2);
   ```
 
-## 🎵 Put it all together! 🎵
+## 🎵 Put it all together!🎵
 
   1. [Expression Expedition]
 
