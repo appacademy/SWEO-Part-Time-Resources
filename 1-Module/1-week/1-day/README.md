@@ -13,7 +13,7 @@ Meet and Greet!
 - Professional Background
 - Why are you here?
   - Motivation
-- If you were a fruit, vegetable or mineral, what would you be and why?
+- If you were a fruit, vegetable, or mineral, what would you be and why?
 
 ---
 
@@ -86,5 +86,18 @@ How to use:
       - Share your explanation
 
 ---
+
+## Solo/Pair Time
+
+- How to use the Slack Channel during project time!
+  - We'll teach you how to ask good coding questions... but for now...
+    1. I need help with _______
+    2. in room ______
+
+## Student Reports
+
+1. Every night you'll get a Slack message after class.
+2. Follow the link and fill out the form
+3. DOUBLE CHECK OR STUDENT ID
 
 [SWEO-Part-Time-Resources]: "https://github.com/appacademy/SWEO-Part-Time-Resources"
