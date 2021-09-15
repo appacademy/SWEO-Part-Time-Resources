@@ -50,11 +50,11 @@
     | false | true  | true   |
     | false | false | false  |
 
-## Comparison Operators Prompt: 15 mins
+## Comparison Operators Prompt: 10 mins
 
   1. [Comparison Operators]
 
-### Comparison Operators: 15 mins
+### Comparison Operators: 10 mins
 
 - Compares two elements and evaluates to a boolean
 
