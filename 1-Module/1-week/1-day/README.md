@@ -100,4 +100,4 @@ How to use:
 2. Follow the link and fill out the form
 3. DOUBLE CHECK OR STUDENT ID
 
-[SWEO-Part-Time-Resources]: "https://github.com/appacademy/SWEO-Part-Time-Resources"
+[SWEO-Part-Time-Resources]: https://github.com/appacademy/SWEO-Part-Time-Resources

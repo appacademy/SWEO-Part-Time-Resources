@@ -113,15 +113,15 @@
 
   1. [Formative Quiz]
 
-[String Operators]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/string-operators"
-[String Exercise]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/strings-exercise"
-[Intro to Functions Quiz]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/intro-to-functions-quiz"
-[Goodbye]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/goodbye----"
-[Muscle Memory]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/muscle-memory"
-[Plus Five]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/plus-five"
-[Call This Function]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/call-this-function"
-[Polya's Problem Solving Framework]: "https://open.appacademy.io/learn/student-handbook/code-of-conduct/polya-s-problem-solving-framework"
-[Average of Two]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/average-of-two"
-[Hello]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/hello"
-[Divide by Three]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/divide-by-three"
-[Formative Quiz]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----wednesday"
+[String Operators]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/string-operators
+[String Exercise]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/strings-exercise
+[Intro to Functions Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/intro-to-functions-quiz
+[Goodbye]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/goodbye----
+[Muscle Memory]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/muscle-memory
+[Plus Five]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/plus-five
+[Call This Function]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/call-this-function
+[Polya's Problem Solving Framework]: https://open.appacademy.io/learn/student-handbook/code-of-conduct/polya-s-problem-solving-framework
+[Average of Two]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/average-of-two
+[Hello]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/hello
+[Divide by Three]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/divide-by-three
+[Formative Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----wednesday

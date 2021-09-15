@@ -127,13 +127,13 @@
 
   1. [Formative Quiz]
 
-[Favorite Food]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/favorite-food"
-[Arithmetic Operator]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/arithmetic-operators"
-[Number Exercise]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/numbers-exercise"
-[Boolean Operators]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/boolean-operators"
-[Boolean Exercise]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/booleans-exercise"
-[Comparison Operators]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/comparison-operators-quiz"
-[Variables Exercise]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/variables-exercise"
-[Variables Quiz]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/variables-quiz"
-[Expression Expedition]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/expression-expedition"
-[Formative Quiz]: "https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----tuesday"
+[Favorite Food]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/favorite-food
+[Arithmetic Operator]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/arithmetic-operators
+[Number Exercise]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/numbers-exercise
+[Boolean Operators]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/boolean-operators
+[Boolean Exercise]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/booleans-exercise
+[Comparison Operators]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/comparison-operators-quiz
+[Variables Exercise]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/variables-exercise
+[Variables Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/variables-quiz
+[Expression Expedition]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/expression-expedition
+[Formative Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----tuesday
