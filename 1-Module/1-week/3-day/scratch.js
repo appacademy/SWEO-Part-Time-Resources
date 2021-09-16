@@ -64,7 +64,7 @@ function aName (optionalParams) {
 // console.log(two());
 
 // declare a function called divide that intakes two numbers and returns the first
-// number divied by the second number
+// number divided by the second number
 
 // function divide (num1, num2) {
 //   return num1 / num2;
@@ -84,3 +84,86 @@ function aName (optionalParams) {
 // too many args we don't care
 
 /* WEST */
+
+/*
+Understand the problem
+0 => 5
+-1 => 4
+3 => 8
+
+Make a plan
+
+Declare a function that will intake a number
+  declare a variable called sum and set it to the num plus five
+  return the sum
+  
+Carry out the plan
+
+Look back and improve your solution
+*/
+
+// function plusFive(num) {
+//   return num + 5;
+// }
+
+// console.log(plusFive(10));  // => 15
+// console.log(plusFive(2));   // => 7
+// console.log(plusFive(-8));  // => -3
+
+/* 
+Define a function called alphabetical that intakes two 
+words and will return true if the first word comes before 
+the second word in the dictionary, or false if it doesn't.
+
+Understand the problem
+
+cat, hat => true
+cat, cat => false
+Cat, cat => false
+Cat, hat => true
+hat, cat => false
+zebra, fish => false
+
+Make a Plan in Plain English
+
+Define a function with two params
+  lowercase each word and assign them to variables
+  compare the two words
+  return the comparison
+
+Execute the plan
+
+
+Review/Improve
+
+
+*/
+function alphabetical (word1, word2) {
+  return word1.toLowerCase() < word2.toLowerCase();
+}
+
+console.log(alphabetical("cat", "hat")) //=> true
+console.log(alphabetical("cat", "cat")) //=> false
+console.log(alphabetical("Cat", "cat")) //=> false
+console.log(alphabetical("Cat", "hat")) //=> true
+console.log(alphabetical("hat", "cat")) //=> false
+console.log(alphabetical("zebra", "fish")) //=> false
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
