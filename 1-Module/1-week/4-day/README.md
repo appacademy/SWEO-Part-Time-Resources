@@ -177,3 +177,4 @@ Other common methods you will use often: (Not needed _today_, but why not\
 [Vowel Counter]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/vowel-counter----
 [Control Flow Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/control-flow-quiz
 [Formative Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----thursday
+[Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
