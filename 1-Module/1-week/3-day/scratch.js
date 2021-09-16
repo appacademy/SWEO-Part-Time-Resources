@@ -83,12 +83,4 @@ function aName (optionalParams) {
 // too few args makes undefined
 // too many args we don't care
 
-
-
-
-
-
-
-
-
 /* WEST */
