@@ -70,6 +70,8 @@
   - By default, functions evaluate to `undefined`
 - Stops the rest of your code from running
 
+`Invoking a function`
+
 - Blueprint for`invoking` a function
   
   ```js
@@ -86,7 +88,7 @@
   - console.log we call a SIDE EFFECT, it doesn't effect the VALUE
   - return makes the function's VALUE equal to something when it's invoked
 
-## Solo Practice 1: 30 mins
+## Solo Practice 1: 20 mins
 
   1. [Goodbye]
   2. [Muscle Memory]
