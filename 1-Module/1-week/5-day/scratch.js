@@ -161,19 +161,77 @@ return res
 /* 
 
 */
-let arrSums = function (arr, target) {
-  let res = [];
-  for (let i = 0; i < arr.length; i++) {
-    let num1 = arr[i];
-    for (let j = i + 1; j < arr.length; j++) {
-      let num2 = arr[j];
-      if (num1 + num2 === target) {
-        res.push([num1, num2]);
-      }
-    }
-  }
-  return res;
-};
+// let arrSums = function (arr, target) {
+//   let res = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     let num1 = arr[i];
+//     for (let j = i + 1; j < arr.length; j++) {
+//       let num2 = arr[j];
+//       if (num1 + num2 === target) {
+//         res.push([num1, num2]);
+//       }
+//     }
+//   }
+//   return res;
+// };
 
-console.log(arrSums([2, 3, 6, 7], 9));
-console.log(arrSums([1, 2, 3], 4));
+// console.log(arrSums([2, 3, 6, 7], 9));
+// console.log(arrSums([1, 2, 3], 4));
+
+// takes in a word - a string!
+// takes in an operation - also a string!
+// only have to do real work for "capitalize" "uppercase" "double" "reverse"
+// anything not in those words, return the original word unchanged
+
+// check what operation we're being asked to perform
+// based on the operation we're given, we need to
+// "capitalize" - first letter of the string
+// word[0].toUpperCase() - store this and combine it with the rest of the word
+// to make a new word that fits our conditions - slice the rest of the word?
+// "uppercase" - word.toUpperCase() ? does not mutate the word, but returns new string, "FOO"
+// "double" - repeating each character of the string after the end of the original string
+// iterate through string? for each letter, add onto original string, return
+// word.repeat()
+// "reverse" - iterate through the string - backwards? - concatenate final output string together
+// what if stringChanger("foo", "banana") - return word? don't do anything else
+
+function stringChanger (word, operation) {
+  if (operation === "capitalize") {
+    word[0]
+    let letter = word[0];
+    let slicedWord = word.slice(1);
+    return letter.toUpperCase() + slicedWord;
+  } else if (operation === "uppercase") {
+    return word.toUpperCase();
+  } else if (operation === "double") {
+    return word.repeat(2);
+  } else if (operation === "reverse") {
+    let reversedString = "";
+    for (let i = word.length - 1; i >= 0; i--) {
+      reversedString += word[i];
+    }
+    return reversedString;
+  } else {
+    return word;
+  }
+}
+
+console.log(stringChanger("foo", "capitalize")); // Foo
+console.log(stringChanger("foo", "uppercase")); // FOO
+console.log(stringChanger("foo", "double")); // foofoo
+console.log(stringChanger("foo", "reverse")); // oof
+console.log(stringChanger("foo", "unknown")); // foo
+
+// TESTS
+// DO NOT MODIFY ANYTHING BELOW THIS LINE
+
+let score = 0;
+
+if (stringChanger("foo", "capitalize") === "Foo") score++;
+if (stringChanger("foo", "uppercase") === "FOO") score++;
+if (stringChanger("foo", "double") === "foofoo") score++;
+if (stringChanger("foo", "reverse") === "oof") score++;
+
+if (stringChanger("foo", "unknown") === "foo") score++;
+
+console.log("You have scored " + score + "/5 points.");
