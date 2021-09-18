@@ -1,9 +1,4 @@
-/* EAST 
-Is odd - what is the condition?
-loops!
-  incrimination in loops
-  parts of a for loop
-*/
+/* EAST */
 
 /* 
  5 => true
