@@ -1,7 +1,7 @@
 /* 
 Write a function that counts and uppercases all the vowels of all the 
 strings located in an array of strings. Return an array that has the
-count at the zeroth position and the uppercased version of the string
+count at the zeroth position and the uppercase version of the string
 at the first position.
 */
 
