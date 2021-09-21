@@ -12,10 +12,8 @@ function countAndUpper(arrOfStrs) {
     for (let j = 0; j < str.length; j++) {
       let char = str[j];
       if ("aeiou".includes(char)) {
-        arrOfStrs[i] =
-          arrOfStrs[i].slice(0, j) +
-          char.toUpperCase() +
-          arrOfStrs[i].slice(j + 1);
+        arrOfStrs[i] = arrOfStrs[i].slice(0, j) + char.toUpperCase() + arrOfStrs[i].slice(j + 1);
+        arrOfStrs[i].splice(j, 1, char.toUpperCase());
         count += 1;
       }
     }
