@@ -4,7 +4,7 @@
 
 - [removeConsonants]
 
-[removeConsonants]: /removeConsonants.js
+[removeConsonants]: removeConsonants.js
 
 ## Practice Time
 
