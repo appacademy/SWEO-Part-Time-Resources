@@ -1,0 +1,6 @@
+/* 
+Write a function that removes all of the
+consonants from a string and returns that new string.
+Write you function in function expression syntax.
+Use the Array.splice method in your implementation.
+*/
