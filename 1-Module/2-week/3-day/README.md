@@ -4,7 +4,7 @@
 
 - [Choose Primes]
 
-## Choose Primes Discussion
+### Choose Primes Discussion
 
 ## Practice 1
 
@@ -12,16 +12,26 @@
 - [Reverse Sentence]
 - [Initials]
 
+### Practice 1 Discussion
+
 ## Practice 2
 
 - [Two Dimensional Product]
 - [Popper]
+
+### Practice 2 Discussion
 
 ## Practice 3
 
 - [Longest Word]
 - [Abbreviate]
 - [Product Array]
+
+### Practice 3 Discussion
+
+## EOD Discussion
+
+## Formative Quiz
 
 [Choose Primes]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/choose-primes
 [Two Sum Recall]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/two-sum-recall
