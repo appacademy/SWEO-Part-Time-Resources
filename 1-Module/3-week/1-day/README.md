@@ -2,12 +2,6 @@
 
 ## Assessment
 
-  1. Kickoff talk
-  2. Assessment
-  3. Pair Programming Material
-  4. Empathetic Communication
-  5. Overview of the week
-
 ## Pair Programming
 
 ### Readings && Quizzes
