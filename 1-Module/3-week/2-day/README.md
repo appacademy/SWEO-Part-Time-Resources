@@ -50,6 +50,10 @@
   - exit with ctrl+c (twice)
 - Use `node <file_name>` to run a file with node
 
+## Download Project && Git Flow
+
+- [Git Flow]
+
 ## Mocha
 
 - Mocha is a testing suite we'll use to test our code
@@ -61,10 +65,6 @@
 - Run `mocha -b` to run the test until one fails
 - Run `mocha <testFileLocation>` to run a single test
 - Run `mocha -g <functionName>` to run all test about a single function
-
-## Download Project && Git Flow
-
-- [Git Flow]
 
 [Git Flow]: gitflow/README.md
 [One on One List]: https://docs.google.com/spreadsheets/d/12_NDRZO4QSZ6fMdlDj3uEn3tZ18_U1t1fqEZXxWHk3A/edit#gid=1323684749
