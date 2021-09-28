@@ -21,8 +21,6 @@
 - cd ./
   - Don't travel
 
-## Project Download
-
 ## Node.js
 
 - Node.js (Node) is a JavaScript runtime environment
@@ -55,7 +53,7 @@
 
 - Mocha is a testing suite we'll use to test our code
 
-## Using Mocha
+### Using Mocha
 
 - Make sure you're in the folder that contains the 'test' file
 - Run `mocha` to run all test files
@@ -63,7 +61,7 @@
 - Run `mocha <testFileLocation>` to run a single test
 - Run `mocha -g <functionName>` to run all test about a single function
 
-## Git Flow
+## Download Project && Git Flow
 
 - [Git Flow]
 
