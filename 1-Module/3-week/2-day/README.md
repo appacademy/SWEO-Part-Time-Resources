@@ -34,6 +34,7 @@
 ### NPM - Node Package Manager
 
 - We run `npm install` in __EACH__ project
+  - IF it has one/both of these files
 
 `package.json`
 
