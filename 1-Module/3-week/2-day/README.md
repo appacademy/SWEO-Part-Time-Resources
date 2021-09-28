@@ -50,9 +50,11 @@
   - exit with ctrl+c (twice)
 - Use `node <file_name>` to run a file with node
 
-## Download Project && Git Flow
+## Git Flow
 
 - [Git Flow]
+
+## Download Project && Setup Repos: 20 mins
 
 ## Mocha
 
@@ -68,3 +70,7 @@
 
 [Git Flow]: gitflow/README.md
 [One on One List]: https://docs.google.com/spreadsheets/d/12_NDRZO4QSZ6fMdlDj3uEn3tZ18_U1t1fqEZXxWHk3A/edit#gid=1323684749
+
+## Finish Project
+
+## Formative Quiz
