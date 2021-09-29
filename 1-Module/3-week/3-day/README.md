@@ -145,6 +145,13 @@ console.log(obj[time.toLowerCase()]); //
 
 </td></tr> </table>
 
+## Project Time
+
+[POJO Project]
+
+## Formative Quiz
+
 [Cat Builder]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-3---node--pair-programming--pojos--adv--arrays/cat-builder
 [Iterate Through Obj]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-3---node--pair-programming--pojos--adv--arrays/iterate-through-obj
+[POJO Project]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-3---node--pair-programming--pojos--adv--arrays/pojo-project-part-1
 [*OBJECTS ARE UNORDERED*]: https://2ality.com/2015/10/property-traversal-order-es6.html
