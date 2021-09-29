@@ -31,19 +31,6 @@
   1. `npm install <version>` (if not installed)
   2. `npm use <version>`
 
-### NPM - Node Package Manager
-
-- We run `npm install` in __EACH__ project
-  - IF it has one/both of these files
-
-`package.json`
-
-- This is like a grocery list you make before you go to the store
-
-`package-lock.json`
-
-- This is like the receipt you get back after shopping at the grocery store
-
 ### Using Node
 
 - Open a node REPL with `node`
