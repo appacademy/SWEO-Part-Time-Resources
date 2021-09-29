@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 -->
 # M1W3D3
 
 ## POJO Practice
@@ -37,7 +38,7 @@ let obj = {
   third: 'c'
 }
 
-console.log(obj.first, obj['first']) // a a
+console.log(obj.first, obj['first']) //
 ```
 
 `Using a variable`
@@ -54,9 +55,9 @@ let obj = {
   frequency: "everyday",
 };
 
-console.log(obj[someVariable]); // Oscar
-console.log(obj[some + variable]); // Mayer
-console.log(obj[time.toLowerCase()]);
+console.log(obj[someVariable]); // 
+console.log(obj[some + variable]); // 
+console.log(obj[time.toLowerCase()]); //
 ```
 
 `Checking if a key exists`
