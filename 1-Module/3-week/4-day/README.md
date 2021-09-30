@@ -27,6 +27,8 @@
 
 ## Rest and Spread
 
+- Rest takes the `rest` of the arguments and puts them into an array and single parameter
+
   ```js
   let makeThemBig = function (...strings) {
       //console.log(Array.isArray(strings));
