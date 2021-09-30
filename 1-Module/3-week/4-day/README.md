@@ -1,6 +1,6 @@
 # M1W3D4
 
-## Practice
+## Practice: 20 mins
 
 - [Destructuring Quiz]
 - [Destructure Array]
