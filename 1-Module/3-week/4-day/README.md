@@ -62,3 +62,6 @@
 ## Project Pt 2
 
 ## Formative Quiz
+
+[Destructuring Quiz]: https://open.appacademy.io/learn/part-time-canonical/pt-week-3-canonical/destructuring-quiz
+[Destructure Array]: https://open.appacademy.io/learn/part-time-canonical/pt-week-3-canonical/destructure-array
