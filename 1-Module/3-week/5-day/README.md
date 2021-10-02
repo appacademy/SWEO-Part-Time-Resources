@@ -3,6 +3,7 @@
 ## Setup the Project: 15 mins
 
 - Setup repo
+- run `npm install`
 - Test mocha
 - Test Node
 
