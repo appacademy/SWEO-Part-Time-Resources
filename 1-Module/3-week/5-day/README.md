@@ -36,19 +36,17 @@
 
 `reduce`
 
-### No Default Accumulator
+- No Default Accumulator
+  - Make an accumulator and set it to the zeroeth element of the array
+  - RUN THIS FUNCTION for each element in the array, starting at the first index
+  - The return value of the function becomes the new accumulator
+  - return the final accumulator
 
-- Make an accumulator and set it to the zeroeth element of the array
-- RUN THIS FUNCTION for each element in the array, starting at the first index
-- The return value of the function becomes the new accumulator
-- return the final accumulator
-
-### Default Accumulator
-
-- Make an accumulator and set it to the second parameter given to you
-- RUN THIS FUNCTION for each element in the array, starting at the zeroeth index
-- The return value of the function becomes the new accumulator
-- return the final accumulator
+- Default Accumulator
+  - Make an accumulator and set it to the second parameter given to you
+  - RUN THIS FUNCTION for each element in the array, starting at the zeroeth index
+  - The return value of the function becomes the new accumulator
+  - return the final accumulator
 
 ## Project Time Pt 1: 1 hour
 
@@ -62,6 +60,6 @@
 
 ## Before Monday
 
-- COMPLETE Pojo project
+- COMPLETE POJO project
 - Study for Assessment
 - Ask Question in Slack
