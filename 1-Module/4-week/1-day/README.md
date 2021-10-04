@@ -2,27 +2,20 @@
 
 ## Assessment
 
-## Callbacks
+## First Class Objects
 
-`Code it out`
+`Videos`
 
-- [useACallback]
+- [First Class Objects Lecture]
+- [First Class Objects Demo]
 
-`Vocabulary`
+### Discussion: First Class Objects
 
 - First Class Function | MDN: [First-class Function]
 
   1. Stored in a variable (last week)
   2. Passed as an argument to a function (today)
-  3. Returned from a function (today/more tomorrow)
-
-- Higher Order Function
-  - A function that intakes and/or returns another function.
-
-- Callback
-  - A function passed into another function
-
-`First Class Objects`
+  3. Returned from a function (Later this week)
 
 - Stored in a variable
 
@@ -53,24 +46,34 @@
   higherOrderFunction(intoAFunctionPt2);
   ```
 
-- Returned from a function - NEXT WEEK
+- Returned from a function (Later this week)
 
-  ```js
-  function HOF(){
-    return function(){
-      console.log('I\'m being returned from a function');
-    }
-  }
+## Callbacks
 
-  console.log(HOF()); // this will be the inner function
+`Vocabulary`
 
-  HOF()(); // this will invoke the inner function
+- Higher Order Function
+  - A function that intakes and/or returns another function.
 
-  let returnFromFunc = HOF(); // we could also save it to a variable
+- Callback
+  - A function passed into another function
 
-  console.log(returnFromFunc); // this will be the inner function
+`Videos / Readings`
 
-  returnFromFunc(); // then call the variable
+- [Callbacks Reading]
+- [Using Callbacks Pt 1]
+- [Using Callbacks Pt 2]
+
+`Code it out`
+
+- [useACallback]
+
+### Discussion useCallbacks
 
 [useACallback]: ./useACallback.js
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
+[First Class Objects Lecture]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-lecture
+[First Class Objects Demo]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-demo
+[Callbacks Reading]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-4---callbacks--scope--and-closure/callbacks-reading
+[Using Callbacks Pt 1]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-1
+[Using Callbacks Pt 2]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-2
