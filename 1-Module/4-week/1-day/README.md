@@ -73,3 +73,4 @@
   returnFromFunc(); // then call the variable
 
 [useACallback]: ./useACallback.js
+[First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
