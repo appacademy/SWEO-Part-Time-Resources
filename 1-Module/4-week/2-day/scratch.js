@@ -16,24 +16,16 @@ let result2 = myMap(['run', 'Forrest'], function (el) {
 console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
 
-// let myMap = function (array, cb) {
-//   // create a new array that i will push in the result of the cb
-//   let newArray = []
-//   // loop through array and run cb on each element
-//   for (let i = 0; i < array.length; i++) {
-//     newArray.push(cb(array[i]))
-//   }
-//   // return the new array
-//   return newArray
-// }
-
-// let result1 = myMap([100, 25, 81, 64], Math.sqrt)
-// console.log(result1) // [ 10, 5, 9, 8 ]
-
-// let result2 = myMap(['run', 'Forrest'], function (el) {
-//   return el.toUpperCase() + '!'
-// })
-// console.log(result2) // [ 'RUN!', 'FORREST!' ]
+let myMap = function (array, cb) {
+  // create a new array that i will push in the result of the cb
+  let newArray = []
+  // loop through array and run cb on each element
+  for (let i = 0; i < array.length; i++) {
+    newArray.push(cb(array[i]))
+  }
+  // return the new array
+  return newArray
+}
 
 /*******************************************************************************
 Write a function `multiMap` that accepts a value, a number n, and a callback.
@@ -72,21 +64,6 @@ let multiMap = function (value, number, cb) {
   // return updated value after being run through the callback n times
   return value
 }
-
-// let result1 = multiMap(7, 2, function (n) {
-//   return n * 10
-// })
-// console.log(result1) // 700
-
-let result2 = multiMap(7, 3, function (n) {
-  return n * 10
-})
-console.log(result2) // 7000
-
-// let result3 = multiMap('hi', 5, function (s) {
-//   return s + '!'
-// })
-// console.log(result3) // hi!!!!!
 
 /*******************************************************************************
 Write a function `chainMap` that accepts a value and any number of callbacks as
