@@ -45,9 +45,9 @@ console.log('---Done---');
 const byeBot = factory('Goodbye');
 console.log('---Done---');
 
-console.log('This is the return of hiBot: ', hiBot); // function
+console.log('This is hiBot: ', hiBot); // function
 console.log('---Done---');
-console.log('This is the return of byeBot: ', byeBot); // function
+console.log('This is byeBot: ', byeBot); // function
 console.log('---Done---');
 
 console.log(hiBot('Mylo'));
