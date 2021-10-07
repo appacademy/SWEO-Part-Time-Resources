@@ -1,6 +1,6 @@
 # M1W4D4
 
-## Arrow Functions
+## Arrow Functions: 20 mins
 
 `Overview`
 
