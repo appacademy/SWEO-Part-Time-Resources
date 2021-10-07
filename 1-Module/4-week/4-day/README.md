@@ -50,6 +50,8 @@
     - Level Four
       - Customers would like it if the robots kept track of ALL the names they've spoken to.
 
+[Closures]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures
+
 <!-- ```js
 const factory = function (voiceChip) {
   console.log("Booting up factory...");
