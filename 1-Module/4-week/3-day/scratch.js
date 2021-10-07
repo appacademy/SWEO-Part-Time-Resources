@@ -1,67 +1,47 @@
-// let globalVar = 'I am a global variable';
+let globalScope = "this is global scope";
 
 // let myFunc = function(arg){
-//   let functionVar = "I am function or local scoped";
+//   let functionScope = "this is function scope";
 //   if(true){
-//     let blockVar = "I am scoped to a block";
-//     console.log({globalVar, functionVar, blockVar});
+//     let blockScope = "this is block scoped";
 //   }
+//   console.log({functionScope, globalScope, arg, blockScope});
 // }
 
-// myFunc();
+// myFunc("this is also function scoped");
 
-// let firstName = "Bob";
 
-// let myFunc = function(){
-//   // let firstName = 'James';
+// let firstName = "James";
+
+// let nameFunction = function(){
+//   // let firstName = "Sarah";
 //   if(true){
-//     // let firstName = "Sarah";
+//     // let firstName = "William"
 //     console.log(firstName);
 //   }
 // }
+// nameFunction();
 
+// console.log(__dirname);
 
-// myFunc();
-
-// console.log(__dirname)
-// let lastName = "People have last names";
-
-// let function1 = function(){
-//   let firstName = "William";
-// }
-
-// let function2 = function(){
-//   let lastName = 'Vincent';
-// }
-
-// function1();
-// function2();
-
-// console.log(lastName);
-
-
-// const myArr = [1,2,3];
-// myArr.forEach(function(el, i, arr){console.log(el, i, arr)})
-// myArr.push(4);
-
-// const myNum = 5;
-// const myNewNum = myNum + 2
-// console.log(myNewNum);
-
+// const num = 5;
+// const newNum = num + 2
+// console.log({new: newNum, num: num});
 
 // const dontUseVar = function(){
-//   var test1 = "hello";
+//   var test = "hello";
 //   if(true){
-//     var test1 = 'hi';
+//     var test = "hi";
 //   }
-//   console.log(test1);
+//   console.log(test);
 // }
 
 // dontUseVar();
 
-const tdz = function(){
-  var test = undefined;
+const dontUseVar2 = function(){
+  // var test = undefined;
   console.log(test);
-  var test = 'things and stuff';
+  let test = "test";
 }
-tdz();
+
+dontUseVar2();
