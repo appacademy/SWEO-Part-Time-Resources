@@ -25,9 +25,10 @@
   console.log(addOne);
   ```
 
-- Closure | MDN: [Closures]
-  - An inner function that uses or changes variables that were initialized\
-  in an outer function.
+## Closure | MDN: [Closures]
+
+- An inner function that uses or changes variables that were initialized\
+in an outer function.
 
 `Overview`
 
