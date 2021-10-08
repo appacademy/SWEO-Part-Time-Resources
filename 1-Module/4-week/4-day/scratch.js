@@ -61,3 +61,28 @@ console.log(byeBot('JM'));
 console.log('---Done---');
 console.log(byeBot('Mylo'));
 console.log('---Done---');
+
+let str = 'hello';
+
+function something(str) {
+    return str;
+}
+
+something(str);
+// First Class Function - A feature of a coding language (JavaScript)
+/* 
+JavaScript functions are first-class function
+Strings are first-class
+Arrays are first-class
+1. Assigned to a variable - true for JS
+2. Passed into a function - true for JS
+3. Returned from a function - true for JS
+*/
+
+// Higher Order Function
+/* 
+sandwich maker is a higher order function BECAUSE it returns another function
+1. Intake another function
+2. Return another function
+3. OR Both
+*/
