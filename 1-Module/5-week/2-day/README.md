@@ -40,9 +40,9 @@
 `Discussion`
 
 - Is JS single-threaded or multi-threaded?What does this mean?
-  1. Single-Threaded - Can only run things one at a time.
+  1. answer
 - What is a 'stack'?
-  1. First in First Out (FIFO)
+  1. answer
 
 ```js
 function foo() {
@@ -69,10 +69,10 @@ console.log(foo());
 `Discussion`
 
 - What is a recursive function?
-  1. A function that runs itself until it doesn't
+  1. answer
 - What are the 'parts' of a recursive function?
-  1. Base Case
-  2. Recursive Case
-  3. Recursive Step
+  1. answer
+  2. answer
+  3. answer
 
 ## Project Time
