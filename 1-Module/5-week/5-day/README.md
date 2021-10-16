@@ -1,5 +1,9 @@
 # W5D5 - Function Hoisting, IIFE, & Falsy Values
 
+## Function Hoisting Prep (20min)
+
+Function Hoisting Lecture Video
+
 ## Function Hoisting
 
 Similar to how JS can hoist variables it can also hoist functions.
@@ -73,7 +77,15 @@ function foo() {
 console.log(foo); // Syntax Error
 ```
 
+## IIFE and Truthy/Falsy (24 minutes)
+
+- Primitive Data Types Quiz
+- Falsey Values in JavaScript Quiz
+- IIFE Quiz
+
 ## IIFE
+
+- IIFE QUIZ (8 minutes)
 
 Immediately Invoked Function Expression
 
