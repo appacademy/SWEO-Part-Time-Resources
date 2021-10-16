@@ -85,8 +85,6 @@ console.log(foo); // Syntax Error
 
 ## IIFE
 
-- IIFE QUIZ (8 minutes)
-
 Immediately Invoked Function Expression
 
 The two important pieces of an IIFE. [MDN](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
