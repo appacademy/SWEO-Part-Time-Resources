@@ -77,7 +77,7 @@ function foo() {
 console.log(foo); // Syntax Error
 ```
 
-## IIFE and Truthy/Falsy (24 minutes)
+## IIFE and Truthy/Falsy (25 minutes)
 
 - Primitive Data Types Quiz
 - Falsey Values in JavaScript Quiz
