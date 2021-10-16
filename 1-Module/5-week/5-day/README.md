@@ -99,7 +99,7 @@ The two important pieces of an IIFE. [MDN](https://developer.mozilla.org/en-US/d
 })();
 ```
 
-Primarily used to avoid polluting the gobal namespace. Useful for situations
+Primarily used to avoid polluting the global namespace. Useful for situations
 where you only need a function to run once.
 
 ## Truthy and Falsy
@@ -114,3 +114,11 @@ Falsy Values
 | false | NaN       |
 
 Everything else is Truthy;
+
+
+## aA Open Links
+
+- [Function-Hoisting](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/function-hoisting-lecture)
+- [Primitive-Data-Types-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/primitive-data-types-quiz)
+- [Falsy-Values-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/falsey-values-in-javascript-quiz)
+- [IIFE-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/iife-quiz)
