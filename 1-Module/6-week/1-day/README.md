@@ -1,10 +1,10 @@
 # M1W6D1
 
-## Assessment(1 hour 15 min)
+## Assessment(1 hour 35 min)
 
-## Readings(20 min)
+## Readings(25 min)
 
-## Node/Readline (20 min)
+## Node/Readline
 
 ### Node Runtime Environment
 
@@ -23,9 +23,9 @@
 - Callbacks allow us to write asynchronous code freeing up the main threads
   call stack to perform other tasks as we are waiting for some sort of input.
 
-- In our below code we are using callbacks to pass a function to be executed once
-we have user input. While we are waiting for user input the main thread of
-execution is freed up to perform other tasks.
+- In our below code we are using callbacks to pass a function to another
+ function to be executed once we have user input. While we are waiting for the
+ user input, the main thread of execution is freed up to perform other tasks.
 
 ```js
 // import the readline module into our file
@@ -70,6 +70,6 @@ function handleResponseThree(thirdAnswer) {
 }
 ```
 
-## Kahoot! (30 min)
+## Kahoot! Quiz
 
-Material will be from mod
+Material will be from weeks 3-4.
