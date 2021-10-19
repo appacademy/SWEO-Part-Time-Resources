@@ -36,6 +36,9 @@ time.
 
 ## Sync vs. Async
 
+- **Sync**: If code is synchronous, that means that there is an inherent order among the commands and this order of execution is guaranteed.
+- **Async**: If code is asynchronous, that means that there is no guarantee in the total order that commands are executed. Asynchronous is the opposite of synchronous.
+
 ```js
 // --------------- Problem 1 ---------------------------
 console.log('one');
@@ -125,7 +128,3 @@ const intervalCount = (count, delay) => {
 
 intervalCount(3, 500);
 ```
-
-## Resources
-
-Great [video](https://youtu.be/8aGhZQkoFbQ) on the event loop.
