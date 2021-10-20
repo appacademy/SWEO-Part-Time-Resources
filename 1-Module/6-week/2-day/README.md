@@ -14,8 +14,6 @@ time.
 
 ## Event Loop
 
-![event-loop](./images/event_loop.gif)
-
 ### Call Stack: Last In First Out - (LIFO)
 
 - The call stack is the structure used in the JavaScript runtime to track the execution of function calls.
