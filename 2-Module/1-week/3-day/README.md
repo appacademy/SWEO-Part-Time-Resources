@@ -4,7 +4,7 @@
 
 ## Quiz Discussion - 25 mins
 
-## Classes Lecture - 30 Min
+## Classes Lecture - 15 Min
 
 What is a class?
 
@@ -49,6 +49,11 @@ const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
 // call an instance method
 console.log(carnitasTaco.assemble())
 ```
+
+### Group Activity - 20 min
+
+- Lets come up with some tings that would be easy to model with a class
+- Lets come up with some attributes and actions that these objects could have
 
 ## Create a Dog - 20 mins
 
