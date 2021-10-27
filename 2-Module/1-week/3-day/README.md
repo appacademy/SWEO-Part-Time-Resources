@@ -1,4 +1,4 @@
-# W7D3 Lecture Notes
+# M2W1D3 Lecture Notes
 
 ## Quizzes - 25 mins
 
@@ -19,13 +19,10 @@ What is a class?
 
 Why does OOP use Classes?
 
-- Classes are a clean way to `Encapsulate` your code and providing an API
-  that hides the internal complexity and manages the data of your object
-- Techniques
-  - Store internal data as properties - these are not usually exposed to the
-    user of this class
-  - Has methods defined on the class - these can perform actions and update the
-    state of the instance
+- Classes are a clean way to `Encapsulate` your code. They provide an API
+  that hides the internal complexity(logic) and manages the data of your object
+- Classes allow us to model real world entities in an organized way which can
+  make solving certain types of problems easier
 
 ```js
 // Define a class with the class keyword followed by the name with the first
