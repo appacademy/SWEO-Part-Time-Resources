@@ -81,16 +81,16 @@ class Saxophone extends Instrument {
 }
 
 // What will print to the console?
-const mitchell = new Saxophone();
+const zaviar = new Saxophone();
 const mylo = new Trumpet();
 mylo.play();
-mitchell.play();
+zaviar.play();
 mylo.soakReed();
-mitchell.soakReed();
+zaviar.soakReed();
 
 /* 
 We all know that Saxophones make more of a 'squawk squawk squawk'
-How can I change just the Saxophones to squawk?
+How can I change just the Saxophones to squawk instead of toot?
 */
 ```
 
