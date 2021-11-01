@@ -13,34 +13,27 @@
 - Context refers to the value of this within a function and this refers to where a function is invoked.
 
 ```js
-class Dog {
-  constructor(name, isSitting) {
-    this.name = name;
-    this.isSitting = isSitting;
-  }
-
-  standOrSit() {
-    this.isSitting = !this.isSitting;
-    return this.isSitting;
-  }
-
-  test() {
+class Test {
+  testFunc() {
     debugger;
-    return `this is equal to dog: ${this === dog}`;
+    console.log(`this is equal to dog: ${this === test1}`);
+
   }
 }
 
-const dog = new Dog('Fido', true);
-console.log(dog.standOrSit()); //
-console.log(dog.test()); //
-const dogTest = dog.test; //
-console.log(dogTest()); //
-setTimeout(dog.test, 1000); //
+const test1 = new Test();
+// Calling the method on the instance
+test1.testFunc(); //
+// Calling the method outside the class
+const test1Func = test1.testFunc; //
+test1Func(); //
+// Calling the method as a callback
+setTimeout(test1.testFunc, 1000); //
 
+// Using this in Function Declaration Syntax
 function someFunc() {
   console.log(this);
 }
-
 someFunc(); //
 ```
 
