@@ -1,4 +1,4 @@
-# M2W2D2 (2-s day)
+# M2W2D2 (2's day)
 
 ## Quizzes: 30 mins
 
