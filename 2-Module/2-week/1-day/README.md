@@ -16,7 +16,7 @@
 class Test {
   testFunc() {
     debugger;
-    console.log(`this is equal to dog: ${this === test1}`);
+    console.log(`this is equal to test: ${this === test1}`);
 
   }
 }
