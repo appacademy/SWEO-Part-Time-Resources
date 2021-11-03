@@ -1,3 +1,22 @@
+cd $HOME
+# Creates an appacademy folder if there isn't one already
+mkdir -p appacademy
+cd appacademy
+# Create a PT Resource if it doesn't exist or pull it
+if [ ! -d SWEO-Part-Time-Resources ]; then
+    git clone -q https://github.com/appacademy/SWEO-Part-Time-Resources.git
+else
+    cd SWEO-Part-Time-Resources
+    git pull -q
+    cd ../
+fi
+# Make the PT Folder Structure
+mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+
+
+cd SWEO-Part-Time-Resources
+
 while true; do
 
     read -p "What is your Cohort ID?" cohortID < /dev/tty
@@ -12,7 +31,8 @@ while true; do
         echo "Course ID must be formated properly, please try again!`echo $'\n '`" 
         continue
     fi
-
+    
+    # Check if cohortID is in branch name on remote
     inGithub=$(for branch in `git branch -r | grep -v HEAD`;
         do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch;
         done | grep -c $cohortID);
@@ -22,15 +42,48 @@ while true; do
         echo "Check with your cohort lead form the for your cohortID`echo $'\n '`"
         continue
     fi
+
+    # ALl checks have been made, create file structure and add vars to Profile File
+    echo "Your cohort's repo will be downloaded now!"
+
+    # switch to and download remote branch
+    git checkout --track -q origin/$cohortID
+    git branch -d -q main
+
+    # Find the correct startup file
+    if [ $SHELL = '/bin/bash' ]; then
+        if [ -e $HOME/.bash_profile ]; then
+            PROFILE_FILE='.bash_profile'
+        elif [ -e $HOME/.profile ]; then
+            PROFILE_FILE='.profile'
+        else
+            PROFILE_FILE='.bashrc'
+        fi
+        # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
+        if [ $PROFILE_FILE != '.bashrc' ]; then
+            BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
+            if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
+                PROFILE_FILE='.bashrc'
+            fi
+        fi
+    elif [ $SHELL = '/bin/zsh' ]; then
+        PROFILE_FILE='.zshrc'
+    fi
+
     # check if branch name variable already exists
     UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
     # If not append variable to the startup file
     if [ $UPDATE_BRANCH_IN_START != 1 ]; then
-        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
+        echo "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     fi
-    
-    echo "Your cohort's repo will be downloaded now!"
-    break
+
+    # Check if the update alias already exists
+    UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
+    # If not append it to the file
+    if [ $UPDATE_ALIAS_IN_START != 1 ]; then
+        echo "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
+    fi
+
     echo "Done."
     exit 0
     echo
