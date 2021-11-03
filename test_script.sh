@@ -1,21 +1,22 @@
+#!/bin/bash
+
 cd $HOME
 # Creates an appacademy folder if there isn't one already
 mkdir -p appacademy
 cd appacademy
-# Create a PT Resource if it doesn't exist or pull it
-if [ ! -d SWEO-Part-Time-Resources ]; then
-    git clone -q https://github.com/appacademy/SWEO-Part-Time-Resources.git
-else
-    cd SWEO-Part-Time-Resources
-    git pull -q
-    cd ../
-fi
+
 # Make the PT Folder Structure
 mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
 mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
 
-
-cd SWEO-Part-Time-Resources
+# Create a PT Resource if it doesn't exist or pull it
+if [ ! -d SWEO-Part-Time-Resources ]; then
+  git clone -q https://github.com/appacademy/SWEO-Part-Time-Resources.git
+  cd SWEO-Part-Time-Resources
+else
+  cd SWEO-Part-Time-Resources
+  git pull -q
+fi
 
 while true; do
 
@@ -44,11 +45,12 @@ while true; do
     fi
 
     # ALl checks have been made, create file structure and add vars to Profile File
-    echo "Your cohort's repo will be downloaded now!"
+    echo "Your cohort's branch will be downloaded now!"
 
-    # switch to and download remote branch
+    # Switch to and download remote branch
     git checkout --track -q origin/$cohortID
-    git branch -d -q main
+    # Delete main branch
+    git branch -D -q main
 
     # Find the correct startup file
     if [ $SHELL = '/bin/bash' ]; then
@@ -69,7 +71,7 @@ while true; do
     elif [ $SHELL = '/bin/zsh' ]; then
         PROFILE_FILE='.zshrc'
     fi
-
+    
     # check if branch name variable already exists
     UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
     # If not append variable to the startup file
