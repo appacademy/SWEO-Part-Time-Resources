@@ -115,7 +115,6 @@ Falsy Values
 
 Everything else is Truthy;
 
-
 ## aA Open Links
 
 - [Function-Hoisting](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/function-hoisting-lecture)

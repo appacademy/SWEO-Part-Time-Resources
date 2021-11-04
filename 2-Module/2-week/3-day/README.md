@@ -47,7 +47,7 @@ Testing Pyramid
 
 - Unit Tests: Smallest unit of testing. Focuses on individual functions or tasks
   individually.
-- Integration Tests: Testing how seperate peices of code work with one another.
+- Integration Tests: Testing how separate pieces of code work with one another.
 - End-to-End Tests: Tests the whole application, high level functionality, close
   to the user experience.
 
