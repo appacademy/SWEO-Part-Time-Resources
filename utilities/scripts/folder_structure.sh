@@ -4,7 +4,7 @@ cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W)
 
 while true; do
 
-    read -p "What is your Cohort ID?" cohortID < /dev/tty
+    read -p "What is your Cohort ID? `echo $'\n '`" cohortID < /dev/tty
 
     if [ -z "$cohortID" ]; then
         echo "Course ID cannot be blank please try again! `echo $'\n '`"
