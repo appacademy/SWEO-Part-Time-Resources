@@ -1,44 +1,16 @@
 #!/bin/bash
 
-cd $HOME
-# Creates an appacademy folder if there isn't one already
-mkdir -p appacademy
-cd appacademy
-
-# Make the PT Folder Structure
-mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
-mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
-
-# Create a PT Resource if it doesn't exist or pull it
-if [ ! -d SWEO-Part-Time-Resources ]; then
-  git clone -q https://github.com/appacademy/SWEO-Part-Time-Resources.git
-  cd SWEO-Part-Time-Resources
-else
-  cd SWEO-Part-Time-Resources
-  git pull -q
-fi
+cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W)
 
 while true; do
 
     read -p "What is your Cohort ID?" cohortID < /dev/tty
 
-    if [ -z "$cohortID" ]; then 
+    if [ -z "$cohortID" ]; then
         echo "Course ID cannot be blank please try again! `echo $'\n '`"
         continue
-    fi 
-    DATE_REGEX="^[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])-[we]$"
-    if ! [[ $cohortID =~ $DATE_REGEX ]]; then
-        echo
-        echo "Course ID must be formated properly, please try again!`echo $'\n '`" 
-        continue
     fi
-    
-    # Check if cohortID is in branch name on remote
-    inGithub=$(for branch in `git branch -r | grep -v HEAD`;
-        do echo -e `git show --format="%ci %cr" $branch | head -n 1` \\t$branch;
-        done | grep -c $cohortID);
-
-    if [ $inGithub == 0 ]; then 
+    if [[ ${cohorts[*]} =~ (^|[[:space:]])"$CohortID"($|[[:space:]]) ]]; then
         echo
         echo "Check with your cohort lead form the for your cohortID`echo $'\n '`"
         continue
@@ -46,6 +18,24 @@ while true; do
 
     # ALl checks have been made, create file structure and add vars to Profile File
     echo "Your cohort's branch will be downloaded now!"
+
+    cd $HOME
+    # Creates an appacademy folder if there isn't one already
+    mkdir -p "appacademy-$CohortID"
+    cd "appacademy-$CohortID"
+
+    # Make the PT Folder Structure
+    mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+    mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+
+    # Create a PT Resource if it doesn't exist or pull it
+    if [ ! -d SWEO-Part-Time-Resources ]; then
+    git clone -q https://github.com/appacademy/SWEO-Part-Time-Resources.git
+    cd SWEO-Part-Time-Resources
+    else
+    cd SWEO-Part-Time-Resources
+    git pull -q
+    fi
 
     # Switch to and download remote branch
     git checkout --track -q origin/$cohortID
@@ -71,11 +61,14 @@ while true; do
     elif [ $SHELL = '/bin/zsh' ]; then
         PROFILE_FILE='.zshrc'
     fi
-    
+
     # check if branch name variable already exists
     UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
     # If not append variable to the startup file
     if [ $UPDATE_BRANCH_IN_START != 1 ]; then
+        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
+    else
+        grep -v "$cohortID" $HOME/$PROFILE_FILE > tmpfile && mv tmpfile $HOME/$PROFILE_FILE
         echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     fi
 

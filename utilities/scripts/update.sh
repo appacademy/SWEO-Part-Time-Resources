@@ -44,17 +44,17 @@ while true; do
     fi
 done
 echo
-cd ~/appacademy/SWEO-Part-Time-Resources
+cd "~/appacademy-${cohortID}/SWEO-Part-Time-Resources"
 git reset --hard -q
 git pull --quiet
 cd ~
-if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
+if [ -d "./appacademy-${cohortID}/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
     echo 'Lecture folder already exists...'
     while true; do
         read -p "Are you only wanting the lecturer's live lecture file? y/n `echo $'\n> '`" yn1 < /dev/tty
         if [[ "$yn1" =~ ^([yY][eE][sS]|[yY])$ ]]; then
             echo "Copying to live-lecture.js..."
-            cp -r ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture/live-scratch.js
+            cp -r ~/appacademy-${cohortID}/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy-${cohortID}/${mod}-Module/${week}-week/${day}-day/lecture/live-scratch.js
             echo "Done."
             exit 0
         elif [[ "$yn1" =~ ^([nN][oO]|[nN])$ ]]; then
@@ -62,7 +62,7 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
                 read -p "Would you like to overwrite what is currently there? y/n `echo $'\n> '`" yn2 < /dev/tty
                 if [[ "$yn2" =~ ^([yY][eE][sS]|[yY])$ ]]; then
                     echo "Overwriting..."
-                    rm -rf ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
+                    rm -rf ~/appacademy-${cohortID}/${mod}-Module/${week}-week/${day}-day/lecture
                     break
                 elif [[ "$yn2" =~ ^([nN][oO]|[nN])$ ]]; then
                     echo "If you're having issues contact your Module Instructor."
@@ -82,6 +82,6 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
     done
 fi
 echo "Copying Files..."
-cp -rp ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
+cp -rp ~/appacademy-${cohortID}/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy-${cohortID}/${mod}-Module/${week}-week/${day}-day/lecture
 echo "Done."
 exit 0
