@@ -62,22 +62,24 @@ while true; do
         PROFILE_FILE='.zshrc'
     fi
 
-    # check if branch name variable already exists
-    UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
-    # If not append variable to the startup file
-    if [ $UPDATE_BRANCH_IN_START != 1 ]; then
-        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
-    else
-        grep -v "$cohortID" $HOME/$PROFILE_FILE > tmpfile && mv tmpfile $HOME/$PROFILE_FILE
-        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
-    fi
-
+   
     # Check if the update alias already exists
     UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
     # If not append it to the file
     if [ $UPDATE_ALIAS_IN_START != 1 ]; then
         echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
     fi
+
+     # check if branch name variable already exists
+    UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
+    # If not append variable to the startup file
+    if [ $UPDATE_BRANCH_IN_START != 1 ]; then
+        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
+    else
+        grep -v "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE > tmpfile && mv tmpfile $HOME/$PROFILE_FILE
+        echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
+    fi
+
 
     echo "Done."
     exit 0
