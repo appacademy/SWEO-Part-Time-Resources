@@ -10,7 +10,7 @@ while true; do
         echo "Course ID cannot be blank please try again! `echo $'\n '`"
         continue
     fi
-    if [[ ${cohorts[*]} =~ (^|[[:space:]])"$CohortID"($|[[:space:]]) ]]; then
+    if [[ ${cohorts[*]} =~ (^|[[:space:]])$cohortID($|[[:space:]]) ]]; then
         echo
         echo "Check with your cohort lead form the for your cohortID`echo $'\n '`"
         continue
