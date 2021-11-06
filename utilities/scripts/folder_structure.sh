@@ -10,7 +10,7 @@ while true; do
         echo "Course ID cannot be blank please try again! `echo $'\n '`"
         continue
     fi
-    if [[ ${cohorts[*]} =~ (^|[[:space:]])$cohortID($|[[:space:]]) ]]; then
+    if ! [[ ${cohorts[*]} =~ (^|[[:space:]])$cohortID($|[[:space:]]) ]]; then
         echo
         echo "Check with your cohort lead form the for your cohortID`echo $'\n '`"
         continue
@@ -21,8 +21,8 @@ while true; do
 
     cd $HOME
     # Creates an appacademy folder if there isn't one already
-    mkdir -p "appacademy-$CohortID"
-    cd "appacademy-$CohortID"
+    mkdir -p "appacademy-${cohortID}"
+    cd "appacademy-${cohortID}"
 
     # Make the PT Folder Structure
     mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
