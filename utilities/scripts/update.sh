@@ -1,4 +1,28 @@
 #!/bin/bash
+# Find the correct startup file
+    if [ $SHELL = '/bin/bash' ]; then
+        if [ -e $HOME/.bash_profile ]; then
+            PROFILE_FILE='.bash_profile'
+        elif [ -e $HOME/.profile ]; then
+            PROFILE_FILE='.profile'
+        else
+            PROFILE_FILE='.bashrc'
+        fi
+        # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
+        if [ $PROFILE_FILE != '.bashrc' ]; then
+            BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
+            if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
+                PROFILE_FILE='.bashrc'
+            fi
+        fi
+    elif [ $SHELL = '/bin/zsh' ]; then
+        PROFILE_FILE='.zshrc'
+    fi
+
+
+# Reassign the variable set in ZSHRC so it is available in the
+AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
+
 while true; do
     read -p "What is the current MODULE? (1 - 7): `echo $'\n> '`" mod < /dev/tty
     if [ -z "$mod" ]; then 
@@ -44,17 +68,19 @@ while true; do
     fi
 done
 echo
-cd ~/appacademy/SWEO-Part-Time-Resources
+
+cd ~/appacademy-$AA_RESOURCES_BRANCH_NAME/SWEO-Part-Time-Resources
+
 git reset --hard -q
 git pull --quiet
 cd ~
-if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
+if [ -d "./appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
     echo 'Lecture folder already exists...'
     while true; do
         read -p "Are you only wanting the lecturer's live lecture file? y/n `echo $'\n> '`" yn1 < /dev/tty
         if [[ "$yn1" =~ ^([yY][eE][sS]|[yY])$ ]]; then
             echo "Copying to live-lecture.js..."
-            cp -r ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture/live-scratch.js
+            cp -r ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day/scratch.js ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${day}-day/lecture/live-scratch.js
             echo "Done."
             exit 0
         elif [[ "$yn1" =~ ^([nN][oO]|[nN])$ ]]; then
@@ -62,7 +88,7 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
                 read -p "Would you like to overwrite what is currently there? y/n `echo $'\n> '`" yn2 < /dev/tty
                 if [[ "$yn2" =~ ^([yY][eE][sS]|[yY])$ ]]; then
                     echo "Overwriting..."
-                    rm -rf ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
+                    rm -rf ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${day}-day/lecture
                     break
                 elif [[ "$yn2" =~ ^([nN][oO]|[nN])$ ]]; then
                     echo "If you're having issues contact your Module Instructor."
@@ -82,6 +108,6 @@ if [ -d "./appacademy/${mod}-Module/${week}-week/${day}-day/lecture" ]; then
     done
 fi
 echo "Copying Files..."
-cp -rp ~/appacademy/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy/${mod}-Module/${week}-week/${day}-day/lecture
+cp -rp ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${day}-day/lecture
 echo "Done."
 exit 0
