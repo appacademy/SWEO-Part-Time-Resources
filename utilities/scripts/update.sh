@@ -19,6 +19,7 @@
         PROFILE_FILE='.zshrc'
     fi
 
+
 # Reassign the variable set in ZSHRC so it is available in the
 AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
@@ -67,7 +68,9 @@ while true; do
     fi
 done
 echo
-cd "~/appacademy-${AA_RESOURCES_BRANCH_NAME}/SWEO-Part-Time-Resources"
+
+cd ~/appacademy-$AA_RESOURCES_BRANCH_NAME/SWEO-Part-Time-Resources
+
 git reset --hard -q
 git pull --quiet
 cd ~
