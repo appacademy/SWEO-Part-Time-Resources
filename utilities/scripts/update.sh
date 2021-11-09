@@ -19,8 +19,8 @@
         PROFILE_FILE='.zshrc'
     fi
 
-# Reassign the variable set in ZSHRC so it is available in the script
-AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | tail -c 13 )
+# Reassign the variable set in ZSHRC so it is available in the
+AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
 while true; do
     read -p "What is the current MODULE? (1 - 7): `echo $'\n> '`" mod < /dev/tty
