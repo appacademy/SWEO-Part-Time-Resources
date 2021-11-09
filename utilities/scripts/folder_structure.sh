@@ -38,9 +38,9 @@ while true; do
     fi
 
     # Switch to and download remote branch
-    git checkout --track -q origin/$cohortID
+    git checkout --track -q origin/$cohortID &> /dev/null
     # Delete main branch
-    git branch -D -q main
+    git branch -D -q main &> /dev/null
 
     # Find the correct startup file
     if [ $SHELL = '/bin/bash' ]; then
