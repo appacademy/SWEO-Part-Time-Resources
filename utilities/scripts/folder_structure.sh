@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# Manually update this array when new cohorts are added 
 cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W)
 
 while true; do
@@ -12,11 +13,11 @@ while true; do
     fi
     if ! [[ ${cohorts[*]} =~ (^|[[:space:]])$cohortID($|[[:space:]]) ]]; then
         echo
-        echo "Check with your cohort lead form the for your cohortID`echo $'\n '`"
+        echo "Check with your cohort lead for your cohortID`echo $'\n '`"
         continue
     fi
 
-    # ALl checks have been made, create file structure and add vars to Profile File
+    # ALl checks have been made, create file structure and add vars to profile file
     echo "Your cohort's branch will be downloaded now!"
 
     cd $HOME
@@ -65,14 +66,14 @@ while true; do
    
     # Check if the update alias already exists
     UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
-    # If not append it to the file
+    # If not append it to the profile file
     if [ $UPDATE_ALIAS_IN_START != 1 ]; then
         echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
     fi
 
      # check if branch name variable already exists
     UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
-    # If not append variable to the startup file
+    # If not append variable to the profile file
     if [ $UPDATE_BRANCH_IN_START != 1 ]; then
         echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     else
