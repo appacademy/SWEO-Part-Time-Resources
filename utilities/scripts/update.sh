@@ -1,4 +1,27 @@
 #!/bin/bash
+# Find the correct startup file
+    if [ $SHELL = '/bin/bash' ]; then
+        if [ -e $HOME/.bash_profile ]; then
+            PROFILE_FILE='.bash_profile'
+        elif [ -e $HOME/.profile ]; then
+            PROFILE_FILE='.profile'
+        else
+            PROFILE_FILE='.bashrc'
+        fi
+        # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
+        if [ $PROFILE_FILE != '.bashrc' ]; then
+            BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
+            if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_PROFILE > 0 ]; then
+                PROFILE_FILE='.bashrc'
+            fi
+        fi
+    elif [ $SHELL = '/bin/zsh' ]; then
+        PROFILE_FILE='.zshrc'
+    fi
+
+# Reassign the variable set in ZSHRC so it is available in the script
+AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | tail -c 13 )
+
 while true; do
     read -p "What is the current MODULE? (1 - 7): `echo $'\n> '`" mod < /dev/tty
     if [ -z "$mod" ]; then 
