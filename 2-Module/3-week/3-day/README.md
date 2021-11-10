@@ -1,6 +1,6 @@
 # M2W3D3
 
-## Binary Practice (Markdown file) (30min)
+## Binary Practice (15 min)
 
 ## Lecture Part 1
 
