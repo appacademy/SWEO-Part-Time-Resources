@@ -38,20 +38,25 @@ complexity you think we see here.
 
 - Some questions to start us off...
   - Why can't we effectively use 'time' to test the efficiency of our code?
-    - answer
+    - Computers be weird and different all the time.
   - What is Big-O notation concerned with?
     - Best, average or worst case?
-      - answer
+      - Worst
     - Specific tests run or general trend of many tests run?
-      - answer
+      - General Trend
     - Tests with similar sizes, or tests with different sizes?
-      - answer
+      - Different sizes growing bigger
     - What are the three complexities we read about?
-      - answer
-      - answer
-      - answer
+      - Constant O(1)
+        - Arithmetic
+        - Keying into an object
+      - Linear O(n)
+        - Iterating over an array from beginning to end
+      - Quad On^2
+        - nested loops with n
     - So... what is Big-O?
-      - answer
+      - Just a way for us to analyze our code to find the general tread\
+      of the time it will take as data grows
 
 ## Simplifying Big-O
 
@@ -72,9 +77,9 @@ complexity you think we see here.
   ```
 
 - Let's simply!
-  - 5n^2 + 2n + 5 => ??
-  - n * 5n + n => ??
-  - 2 + 3 => ??
+  - 5n^2 + 2n + 5 => O(n^2)
+  - n * 5n + n => O(n^2)
+  - 2 + 3 => O(1)
 
 ## If time is left
 
