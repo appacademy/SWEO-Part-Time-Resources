@@ -136,6 +136,7 @@ Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 ## Write a fuction that converts hex to decimal (20min)
 
 ## Lecture Part 3
+
 ### Bytes, kilobytes, megabytes, gigabytes, terabytes
 
 1 byte = 8 bits
