@@ -1,8 +1,8 @@
 # M2W3D3
 
-## Binary Practice (Markdown file) (30min)
+## Binary Practice (15 min)
 
-## Lecture Part 1 (30 min)
+## Lecture Part 1
 
 ### Key Logic and Truth Points
 
@@ -78,6 +78,8 @@ Add all of those sums together to get 2 + 8 + 64 + 128 = 202
 
 ## Write a javascript function that converts Binary to Decimal (20 min)
 
+## Lecture Part 2
+
 ### Base 16 - Hexadecimal
 
 hex = 6, dec = 10, hence hexadecimal (6 + 10 = 16)
@@ -132,6 +134,8 @@ To convert the hex number 0xF23C:
 Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 
 ## Write a fuction that converts hex to decimal (20min)
+
+## Lecture Part 3
 
 ### Bytes, kilobytes, megabytes, gigabytes, terabytes
 
