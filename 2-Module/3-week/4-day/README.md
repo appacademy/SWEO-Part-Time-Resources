@@ -5,11 +5,11 @@
 - What does it hold?
 - Is it slow or fast?
 - Persistent or volatile?
-- Cheap or expensive?
+- Cheap or expensive compared to hard disk storage?
 - How do we access or refer to it?
-- Only two kinds of things are truly stored in memory
+#### Only two kinds of things are truly stored in memory
 ## Pointers, references, etc
-- What do 32-bit and 64-bit even mean?
+- What do 16/32/64-bit even mean?
 - How much space is needed to store an address/reference/pointer on a 16/32/64-bit system?
 - What is a variable?
 - What is an array?
