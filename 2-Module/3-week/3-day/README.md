@@ -36,7 +36,7 @@ counting pattern.
 
 ### Binary, base 2
 
-- 2 Key points:
+- 2 Key points:          
   - binary is all 0s and 1s
   - binary digits are called bits
     - a group of 8 bits is a byte
