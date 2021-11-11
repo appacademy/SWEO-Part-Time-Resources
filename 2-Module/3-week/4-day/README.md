@@ -13,6 +13,7 @@
 - How much space is needed to store an address/reference/pointer on a 16/32/64-bit system?
 - What is a variable?
 - What is an array?
+- What is a stack?
 - Let's "zoom out" on Node
 ```
        64        65        66        67
