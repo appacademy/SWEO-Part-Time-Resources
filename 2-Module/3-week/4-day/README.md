@@ -3,13 +3,26 @@
 
 ## RAM
 - What does it hold?
+  - BINARY! 1s and 0s
+  - literally everything, all the data, the programs, how to execute them, etc.
 - Is it slow or fast?
+  - Fast, like, really, really fast
 - Persistent or volatile?
+  - volatile; it requires a constant electric power source
 - Cheap or expensive compared to hard disk storage?
+  - Expensive, because electrical precision is expensive
 - How do we access or refer to it?
+  - memory address / pointer / reference
+
 #### Only two kinds of things are truly stored in memory
+- Raw data
+- Instructions for how to deal with that data
+
 ## Pointers, references, etc
 - What do 16/32/64-bit even mean?
+  - length of the "words" stored
+  - 0000000000000000
+  - 1111111111111111
 - How much space is needed to store an address/reference/pointer on a 16/32/64-bit system?
 - What is a variable?
 - What is an array?
@@ -21,11 +34,13 @@
        68        69        6A        6B
  01110000  01110110  01110100  01110010
        6C        6D        6E        6F
- 00000000  00000000  00000000  00000000
+ 00000000  00000000  00000000  01000001
        70        71        72        73
  00000010  00101111  00000011  01000001
        74        75        76        77
- 00000001  00000001  00000000  00000000
+ 00000001  00000001  00000011  01001111
+
+ [47, 'O', true, 'A']
 ```
 
  
