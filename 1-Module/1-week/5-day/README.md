@@ -216,7 +216,7 @@ console.log(str); // 'abcd'
 
 ---
 
-## Practice Set 3 - 40m
+## Practice Set 4 - 40m
 
 - [FizzBuzz Array]
 - [First Vowel]
@@ -236,7 +236,7 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
 
 ---
 
-## Practice Set 4 - 40m
+## Practice Set 5 - 40m
 
 - [Last Vowel]
 - [Pit Pat]
