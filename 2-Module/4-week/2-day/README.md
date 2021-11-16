@@ -150,4 +150,6 @@ Should have these methods:
 
 ## Linked List Practice for Wedensday (3 Hours)
 
-## Bonus: Implement a Queue using a linked list and test it
+## Bonus
+
+Implement a queue using a linked list and make sure to test it!
