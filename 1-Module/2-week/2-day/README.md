@@ -5,13 +5,13 @@
 Take 10 minutes to work on a function using this prompt.
 Feel free to use any repl you would like to on AAO.
 
->Write a function that removes all of the
->consonants from a string and returns that new string.
+> Write a function that removes all of the
+> consonants from a string and returns that new string.
 >
->Write your function in function expression syntax.
->Use the `Array.splice` method in your implementation.
+> Write your function in function expression syntax.
+> Use the `Array.splice` method in your implementation.
 >
->Feel free to look up the `Array.splice` method on MDN.
+> Feel free to look up the `Array.splice` method on MDN.
 
 We will work through this problem together when the 10 minutes are up.
 
@@ -64,3 +64,13 @@ We will work through this problem together when the 10 minutes are up.
 
 - Phillip will be giving todays EOD.
 - If you want 1:1 help put your name on the signup sheet!
+
+[array sum]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/array-sum
+[rotate right]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/rotate-right
+[two dimensional sum]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/two-dimensional-sum
+[avg value]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/avg-val
+[my index of recall]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/my-index-of-recall
+[tripler]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/tripler
+[long words]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/long-words
+[remove e words]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/remove-e-words
+[max value]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/max-value
