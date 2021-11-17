@@ -1,6 +1,6 @@
 # M2W4D2
 
-## Linked List Practice Part 1 (20 Min)
+## Linked List Practice Part 1 (30 Min)
 
 ## Lecture Part 1
 
@@ -81,7 +81,7 @@ was found at any node.
 - Inserting a value:
 - Deleting a node:
 
-## Linked list Practice Part 3 (20 min)
+## Linked list Practice Part 3 (15 min)
 
 ## Lecture Part 3
 
@@ -139,7 +139,7 @@ class Stack {
 }
 ```
 
-## Implement a Queue using an Array (20 Min)
+## Implement a Queue using an Array (10 Min)
 
 Should have these methods:
 
