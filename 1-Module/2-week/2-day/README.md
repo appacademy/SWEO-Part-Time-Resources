@@ -1,5 +1,7 @@
 # W2D2
 
+Make sure to use the zoom raised hand feature when asking questions!
+
 ## Warm Up Problem (25m)
 
 Take 10 minutes to work on a function using this prompt.
