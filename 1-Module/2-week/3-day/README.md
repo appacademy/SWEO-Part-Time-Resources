@@ -1,6 +1,8 @@
 # W2D3
 
-Make sure to call us into your breakout room during practice time if you are at all confused with what you are working on!
+Make sure to call us into your breakout room during practice time if you are at
+all confused with what you are working on. We don't know how and when to help if
+you don't ask!
 
 ## Helper Functions 30m
 
