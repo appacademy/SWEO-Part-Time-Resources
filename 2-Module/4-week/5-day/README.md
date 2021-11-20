@@ -7,7 +7,7 @@
   - Constant lookup time, also cool
 
 - Methods/Properties
-  - new Set(/* something to create set from */) - creates a set
+  - new Set(`/* something to create set from */`) - creates a set
   - Set.add() - adds something to a set
   - Set.delete() - deletes something from a set
   - Set.size - gives you the 'length' of a set
