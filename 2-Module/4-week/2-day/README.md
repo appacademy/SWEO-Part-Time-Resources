@@ -76,10 +76,10 @@ was found at any node.
 
 #### Time Complexity of Linked List Methods
 
-- Accessing a node:
-- Searching a list:
-- Inserting a value:
-- Deleting a node:
+- Accessing a node: O(n)
+- Searching a list: O(n)
+- Inserting a value: O(1)
+- Deleting a node: O(1)
 
 ## Linked list Practice Part 3 (15 min)
 
