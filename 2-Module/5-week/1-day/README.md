@@ -41,6 +41,13 @@ Math.log2(1024); // 10
 2 ** 10  // 1024
 ```
 
+Properties of a Binary Search Tree:
+
+- The tree starts at the root
+- nodes whose values are less than the current node go to the left
+- nodes whose values are more than the current node go to the right
+- Each node has three properties: value, left and right
+
 ## Binary Search Readings & Practice (30 min)
 
 ## Binary Search Discussion
