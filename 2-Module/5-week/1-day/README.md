@@ -54,4 +54,7 @@ Properties of a Binary Search Tree:
 
 ## Start on HW for Tuesday (40 min)
 
-## Binary Tree Project Part 1
+## Rest of today
+
+- Binary Tree Project Part 1/Discussion
+- Binary Tree Project Part 2/Discussion
