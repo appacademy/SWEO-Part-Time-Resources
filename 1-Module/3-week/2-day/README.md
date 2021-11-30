@@ -39,7 +39,7 @@
 - Walkthrough with cloned repo.
 - [Git Flow]: Extra git resources.
 
-## Download Project && Setup Repos: 20 mins
+## Download Project && Setup Repos: 20 mins (SOLO)
 
 ## Mocha
 
@@ -53,7 +53,7 @@
 - Run `mocha <testFileLocation>` to run a single test
 - Run `mocha -g <functionName>` to run all test about a single function
 
-## Finish Project
+## Finish Project (Paired)
 
 ## Formative Quiz
 
