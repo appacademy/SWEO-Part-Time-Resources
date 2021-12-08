@@ -1,7 +1,5 @@
 # M2W3D3
 
-## Finish Quicksort + Discussion
-
 ## Graphs
 
 ### What is a graph?
