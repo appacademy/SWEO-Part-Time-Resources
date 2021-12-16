@@ -1,7 +1,9 @@
 // Default Parameters
 
-function exponent(num, power) {
-  // 
+function exponent(num, power = 1, stacks = [`stack frame 1`]) {
+  // console.log(stacks);
+  if (power === 0) return 1;
+  return num * exponent(num, power - 1, stacks.concat([`stack frame ${stacks.length + 1}`]));
 }
 // exponent(2, 3); <--- stack frame notes
 
@@ -12,8 +14,8 @@ console.log(exponent(2, 1)); // 2
 console.log(exponent(3, 2)); // 9
 console.log(exponent(5, 5)); // 3125
 
-console.log(exponent(2)); // 4
-console.log(exponent(3)); // 9
+console.log(exponent(2)); // 2
+console.log(exponent(3)); // 3
 
 
 /***********************************************************************
