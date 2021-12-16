@@ -12,12 +12,6 @@ console.log(exponent(2, 1)); // 2
 console.log(exponent(3, 2)); // 9
 console.log(exponent(5, 5)); // 3125
 
-console.log(exponent(2, 2)); // 4
-console.log(exponent(2, 3)); // 8
-console.log(exponent(2, 4)); // 16
-console.log(exponent(2, 5)); // 32
-console.log(exponent(2, 6)); // 64
-
 console.log(exponent(2)); // 4
 console.log(exponent(3)); // 9
 
