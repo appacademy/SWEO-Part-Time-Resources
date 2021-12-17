@@ -8,14 +8,14 @@ function exponent(num, power = 1, stacks = [`stack frame 1`]) {
 // exponent(2, 3); <--- stack frame notes
 
 
-console.log(exponent(2, 0)); // 1
-console.log(exponent(2, 1)); // 2
+// console.log(exponent(2, 0)); // 1
+// console.log(exponent(2, 1)); // 2
 
-console.log(exponent(3, 2)); // 9
-console.log(exponent(5, 5)); // 3125
+// console.log(exponent(3, 2)); // 9
+// console.log(exponent(5, 5)); // 3125
 
-console.log(exponent(2)); // 2
-console.log(exponent(3)); // 3
+// console.log(exponent(2)); // 2
+// console.log(exponent(3)); // 3
 
 
 /***********************************************************************
@@ -30,17 +30,53 @@ previous numbers in the sequence together to form the next one:
 We count Fibonacci numbers beginning with the first 1. Take a look at the
 examples below if you're unsure where to start!
 
+understand
+  inputs: n (int)
+  outputs: the nth number in the fib sequence 
+    [0,1,1,2,3,5,8,...] each number is the sum of the previous 2 nums
+
+plan
+  base case(s): 
+    if (n === 1) return 1;
+    if (n === 2) return 1;
+  recursive case(s):
+    return fibonacci(n - 1) + fibonacci(n - 2);
+  arg change:
+    n - 1 
+    n - 2
+
 Examples:
 
 fibonacci(1); // 1
 fibonacci(2); // 1
+
 fibonacci(3); // 2
 fibonacci(4); // 3
 fibonacci(10); // 55
 ***********************************************************************/
 
 function fibonacci(n) {
-  // Your code here
+  if (n === 1) return 1;
+  if (n === 2) return 1;
+
+  return fibonacci(n - 1, memo) + fibonacci(n - 2, memo)
+}
+
+function crazyFibonacci(n, memo = []) {
+  if (memo[n]) return memo[n];
+  
+  if (n === 1) return 1;
+  if (n === 2) return 1;
+
+  const prevNum1 = fibonacci(n - 1, memo)
+  const prevNum2 = fibonacci(n - 2, memo)
+  
+  memo[n - 1] = prevNum1;
+  memo[n - 2] = prevNum2;
+  memo[n] = prevNum2 + prevNum1
+  
+  // console.log(n, memo);
+  return memo[n];
 }
 
 // console.log(fibonacci(1)); // 1
@@ -49,6 +85,9 @@ function fibonacci(n) {
 // console.log(fibonacci(4)); // 3
 // console.log(fibonacci(10)); // 55
 
+// Danger!...
+// console.log(fibonacci(100)); // ??
+// console.log(fibonacci(1000)); // ???
 
 /***********************************************************************
 Write a recursive function called `factorial` that takes an integer, `num`,
@@ -60,6 +99,22 @@ all the way down to 1 (but not 0)! We represent them with an exclamation
 point, also sometimes called a "bang" in programming.
 
 5! = 5 x 4 x 3 x 2 x 1 = 120
+2! = 2 x 1 = 2
+
+understand
+  input: num (int)
+  output: factorial of num (?)
+
+plan
+  base(s): 
+    if (num === 1) return 1;
+    if (num === 2) return 2;
+    ...
+  recursive(s): 
+    return num * factorial(num - 1)
+            5 * 4 * 3 * 2 * 1 
+  change(s): 
+    num - 1
 
 Examples:
 
@@ -69,7 +124,8 @@ factorial(5); // 120
 ***********************************************************************/
 
 function factorial(num) {
-  // Your code here
+  if (num === 1) return 1;
+  return num * factorial(num - 1);
 }
 
 // console.log(factorial(1)); // 1
