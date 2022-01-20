@@ -6,11 +6,14 @@
 
 ## Binary & Hexadecimal
 
+---
+
 ### Base-10 - Decimal
+
 You are familiar with and learned to count in the base-10 number system.
 This system of representing numbers has each digit represent 0-9.
 
-```
+```js
  0
  1
  2
@@ -28,9 +31,9 @@ This system of representing numbers has each digit represent 0-9.
 
 Proof of value -- 12
 
-10^0 * 2 = 1 * 2  =  2
-10^1 * 1 = 10 * 1 = 10
-total = 2 + 10 = 12
+- 10^0 * 2 = 1 * 2  =  2
+- 10^1 * 1 = 10 * 1 = 10
+- total = 2 + 10 = 12
 
 ---
 
@@ -39,7 +42,7 @@ total = 2 + 10 = 12
 We use binary in machine code to represent everything. 1 and 0, true and false, off and on.
 A binary digit is called a bit. 8 binary digits are called a byte
 
-```
+```js
 0b0000 > 0
 0b0001 > 1
 0b0010 > 2
@@ -60,17 +63,17 @@ A binary digit is called a bit. 8 binary digits are called a byte
 
 Proof of value -- 13(1101)
 
-2^0 * 1  =  1 * 1  =  1
-2^1 * 0  =  2 * 0  =  0
-2^2 * 1  =  4 * 1  =  4
-2^3 * 1  =  8 * 1  =  8
-total   =  1 + 4 + 8  =  13
+- 2^0 * 1  =  1 * 1  =  1
+- 2^1 * 0  =  2 * 0  =  0
+- 2^2 * 1  =  4 * 1  =  4
+- 2^3 * 1  =  8 * 1  =  8
+- total   =  1 + 4 + 8  =  13
 
 ---
 
 ### Base-16 - Hexadecimal
 
-```
+```js
 0x0 > 0
 0x1 > 1
 0x2 > 2
@@ -93,18 +96,16 @@ total   =  1 + 4 + 8  =  13
 0x13 > 19
 ```
 
-Proof of Value -- 62,012(0xF23C)
+Proof of Value -- 62,012(F23C)
 
-16^0 * C  =  1 * 12     =  12
-16^1 * 3  =  16 * 3     =  48
-16^2 * 2  =  256 * 2    =  512
-16^3 * F  =  4096 * 15  =  61440
-total = 12 + 48 + 512 + 61,440 =  62,012
-
-
+- 16^0 * C  =  1 * 12     =  12
+- 16^1 * 3  =  16 * 3     =  48
+- 16^2 * 2  =  256 * 2    =  512
+- 16^3 * F  =  4096 * 15  =  61440
+- total = 12 + 48 + 512 + 61,440 =  62,012
 
 | Base-10 | Base-2 | Base-16 |
-|   *--*  |  *--*  |  *--*   |
+|---------|--------|---------|
 |    2    |   10   |   2     |
 |    11   |   1011 |   B     |
 
@@ -115,6 +116,8 @@ total = 12 + 48 + 512 + 61,440 =  62,012
 ---
 
 ## Arrays
+
+---
 
 ### Array Practice (20m)
 
