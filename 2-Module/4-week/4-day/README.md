@@ -101,7 +101,6 @@ time.
 to be repeated, from the top down.
 - Tabulation: Caching results of iterative function, from the bottom up.
 
-
 Both Memoization and Tabulation are forms of dynamic programming. Which means
 solving a sub-problems once and then using those solutions to solve the main
 problem. Don't worry about the names and the differences, what's important is
