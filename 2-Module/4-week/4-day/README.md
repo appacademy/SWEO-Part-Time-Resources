@@ -1,6 +1,6 @@
 # M2-W4-D4
 
-## Warmup Problem (30m)
+## Warmup Problem (20m)
 
 Implement a doubly linked list.
 
@@ -100,7 +100,6 @@ time.
 - Memoization: Caching results of recursive function calls so that they dont need
 to be repeated, from the top down.
 - Tabulation: Caching results of iterative function, from the bottom up.
-
 
 Both Memoization and Tabulation are forms of dynamic programming. Which means
 solving a sub-problems once and then using those solutions to solve the main
