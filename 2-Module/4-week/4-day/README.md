@@ -1,6 +1,6 @@
 # M2-W4-D4
 
-## Warmup Problem (30m)
+## Warmup Problem (20m)
 
 Implement a doubly linked list.
 
