@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Manually update this array when new cohorts are added 
-cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W)
+# Manually update this array when new cohorts are added
+cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W 2022-Feb-E 2022-Feb-W)
 
 while true; do
 
@@ -63,7 +63,7 @@ while true; do
         PROFILE_FILE='.zshrc'
     fi
 
-   
+
     # Check if the update alias already exists
     UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
     # If not append it to the profile file
