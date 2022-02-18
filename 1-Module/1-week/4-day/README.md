@@ -96,6 +96,8 @@
 - An array holds a `ORDERED LIST` of data
 - We can call each item in an array an `element`
 - Index starts at 0
+- When array gets passed as an argument it is passed as reference
+  therefore any changes to that array would mutate it.
 
 `Syntax`
 
