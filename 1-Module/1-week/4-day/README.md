@@ -160,6 +160,23 @@ Other common methods you will use often: (Not needed _today_, but why not\
 - Array.slice
 - Array.splice
 
+
+### Terms for today:
+
+1. Conditionals
+2. Mutually Exclusive
+3. While loops
+4. For loops
+5. Arrays
+6. Control Flow
+
+### Good Terms to know:
+
+1. Declaritive programming
+2. Imperative Programming
+3. Explicit Return
+4. Implicit Return
+
 ## Solo Practice 2: 25 mins
 
 1. [Doubler]
