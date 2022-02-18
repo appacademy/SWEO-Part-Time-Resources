@@ -76,13 +76,13 @@
   - For loop: Use when a loops duration is based on a defined length.
   - While loop: Use when a loops duration is based on a unknown or undefined length.
 
-## Solo Practice 1: 20 mins
+## Group Practice 1: 20 mins
 
 1. [Print Fives]
 2. [Log Between Stepper]
 3. [Three or Seven]
 
-## Solo Practice Discussion: 10 mins
+## Group Practice Discussion: 10 mins
 
 ## Arrays : 20 mins
 
@@ -180,7 +180,7 @@ Other common methods you will use often: (Not needed _today_, but why not\
 3. Explicit Return
 4. Implicit Return
 
-## Solo Practice 2: 25 mins
+## Group Practice 2: 25 mins
 
 1. [Doubler]
 2. [Vowel Counter]
