@@ -98,7 +98,7 @@
   - console.log we call a SIDE EFFECT, it doesn't effect the VALUE
   - return makes the function's VALUE equal to something when it's invoked
 
-## Solo Practice 1: 20 mins
+## Group Practice 1: 20 mins
 
   1. [Goodbye]
   2. [Muscle Memory]
@@ -113,7 +113,7 @@
   3. Carry out the plan
   4. Look back and improve your solution
 
-## Solo Practice 2: 30 mins
+## Group Practice 2: 30 mins
 
   1. [Average of Two]
   2. [Hello]
