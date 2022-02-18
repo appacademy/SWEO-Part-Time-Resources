@@ -171,6 +171,9 @@ Other common methods you will use often: (Not needed _today_, but why not\
 6. Control Flow
 
 ### Good Terms to know:
+(Not needed _today_, but why not\
+ take a look at them on Wikipedia or MDN)
+
 
 1. Declaritive programming
 2. Imperative Programming
