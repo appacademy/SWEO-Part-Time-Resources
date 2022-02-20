@@ -291,6 +291,116 @@ for (let i = 0; i < dogs.length; i++) {
 
 ---
 
+### Solutions:
+
+Vowel Counter
+```js
+function countVowels(word) {
+  let count = 0;
+  let vowels = ['a','e','i','o','u']
+  for(let i = 0; i < word.length; i++){
+  	let char = word[i]
+
+	// first approach
+
+	// if(vowels[0] === char){
+	// count++
+	// } else if(vowels[1] === char){
+	// 	count++
+	// } else if(vowels[2] === char){
+	// 	count++
+	// } else if(vowels[3] === char){
+	// 	count++
+	// } else if(vowels[4] === char){
+	// 	count++
+	// }
+
+	// second approach
+    for(let j = 0; j < vowels.length; j++){
+		if(vowels[j] === char){
+        	count++
+        }
+    }
+  }
+
+  return count
+};
+
+console.log(countVowels("bootcamp")); // => 3
+console.log(countVowels("apple")); // => 2
+console.log(countVowels("pizza")); // => 2
+
+```
+
+Pairs Maker
+```js
+// your code here
+function pairsMaker(arr){
+  	let newArray = []
+	for(let i = 0; i < arr.length; i++){
+		for(let j = i + 1; j < arr.length; j++){
+          let currArray = [arr[i], arr[j]]
+          // console.log(currArray, 'our array ', 'current i ==', i, ' current j ==', j)
+          newArray.push(currArray) // we just pass in our curr array to be pushed to our newArray
+		}
+	}
+  	return newArray
+}
+
+
+
+
+
+console.log(pairsMaker(['a', 'b', 'c', 'd'])); // =>
+// [ [ 'a', 'b' ],
+//   [ 'a', 'c' ],
+//   [ 'a', 'd' ],
+//   [ 'b', 'c' ],
+//   [ 'b', 'd' ],
+//   [ 'c', 'd' ] ]
+
+console.log(pairsMaker(['Rosemary', 'Alex', 'Connor'])); // =>
+// [ [ 'Rosemary', 'Alex' ],
+//   [ 'Rosemary', 'Connor' ],
+//   [ 'Alex', 'Connor' ] ]
+```
+
+Pig Latin
+```js
+
+// So the two rules for our version of Pig Latin are:
+
+// 1. For words that start with a vowel, add 'yay' to the end of the word.
+// 2. For words that start with a non-vowel, move all letters that come
+// **before the first vowel** to the **end of the word** then add 'ay'
+
+function pigLatinWord(word) {
+  let vowels = ['a','e','i','o','u']
+  let latinWord = '';
+
+  let char = word[0] // tracking current character/letter
+  if(vowels.includes(char)){ // check if the beginning of the character is a vowel
+  	latinWord = word + 'yay'
+  } else { // if beginning of the word is not a vowel
+  	for(let i = 1; i < word.length; i++){ // iterate through the word starting from the [1] index cause we ignore the first character
+		char = word[i]
+      	if(vowels.includes(char)){ // if we end up on a vowel
+          let slicedWordFirst = word.slice(0, i); // create a copy first word up to the vowel
+          let slicedWordEnd = word.slice(i); // create a copy of the remaining words
+      	  latinWord = slicedWordEnd + slicedWordFirst + 'ay'; // swap the first with the end and add ay to the word
+          return latinWord // return
+        }
+	}
+  }
+  return latinWord
+};
+
+console.log(pigLatinWord("apple")); //=> "appleyay"
+console.log(pigLatinWord("eat")); //=> "eatyay"
+console.log(pigLatinWord("banana")); //=> "ananabay"
+console.log(pigLatinWord("trash")); //=> "ashtray"
+```
+
 ## Practice Assessment - 1hr
 
 We will be treating this as a mock assessment to get you used to how assessments
