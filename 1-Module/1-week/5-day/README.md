@@ -426,6 +426,29 @@ questions about clarifying what is expected of you.
 
 ## Optional Practice Assessment Walkthrough (Patrick) - 45m
 
+```js
+//solution to PA
+
+function stringChanger(word, operation) {
+    if(operation === "capitalize"){
+    return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+  if(operation === "uppercase"){
+  	return word.toUpperCase()
+  }
+  if(operation === "double"){
+  	return word.repeat(2)
+  }
+
+  if (operation === "reverse"){
+  	return word.split("").reverse().join("");
+  }
+  else {
+    return word
+  }
+}
+```
+
 ### If you feel comfortable with the practice assessment, you can continue working through the following problems, we will still be available to answer questions
 
 - [Min Value]
