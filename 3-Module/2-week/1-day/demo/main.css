@@ -1,0 +1,32 @@
+body{
+  margin: 0px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+}
+
+.inner__container{
+  border: 2px solid black;
+  padding: 4px;
+  margin: 4px;
+  color: white;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.c1{
+  background-color: blue;
+}
+
+.c2{
+  background-color: green;
+}
+
+.c3{
+  background-color: purple;
+}
