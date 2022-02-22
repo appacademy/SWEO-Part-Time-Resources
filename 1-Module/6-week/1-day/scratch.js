@@ -28,5 +28,6 @@ const fastCode = () => {
 }
 
 fastCode()
-// Hey james
+// Hey James
 // Hey Zaviar
+// Hey Baylen
