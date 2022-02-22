@@ -1,0 +1,31 @@
+body{
+  margin: 0px;
+}
+
+.container{
+  display: flex;
+  justify-content: space-around;
+  background-color: yellow;
+}
+
+.inner__container{
+  border: 1px solid black;
+  color: white;
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.one {
+  background-color: blue;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.two{
+  background-color: green;
+}
+
+.three{
+  background-color: purple;
+}
