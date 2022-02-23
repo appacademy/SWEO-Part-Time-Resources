@@ -56,16 +56,16 @@
 
 // mainFunc()
 
-const somIntervalFunc = (param1, param2) => {
-        console.log(param1, param2)
-        i++
-        console.log('I am running every 1 second')
-        if(i === 10){
-            clearInterval(myInterval)
-        }
-}
-let i = 0
-let myInterval = setInterval(somIntervalFunc, 1000, 'Anything can be here','Anything can be here too')
+// const somIntervalFunc = (param1, param2) => {
+//         console.log(param1, param2)
+//         i++
+//         console.log('I am running every 1 second')
+//         if(i === 10){
+//             clearInterval(myInterval)
+//         }
+// }
+// let i = 0
+// let myInterval = setInterval(somIntervalFunc, 1000, 'Anything can be here','Anything can be here too')
 
 // const myFunc  = () => {
     
@@ -75,3 +75,77 @@ let myInterval = setInterval(somIntervalFunc, 1000, 'Anything can be here','Anyt
 
 // // console.log(myFunc())
 // console.log()
+
+
+
+
+// let num = 10
+
+// let someVar = false
+
+// setTimeout(() => {
+//     someVar = true
+//     if (someVar === true){
+//         clearInterval(myInterval)
+//     }
+// }, 4000)
+// const counterFunc  = (num) => {
+//     if(num === 0){
+//         clearInterval(myInterval)
+//     }
+// }
+
+// function myFunc() { 
+//     if(number === 0){
+//     clearInterval(myInterval)
+// }   
+// }
+// let myInterval = setInterval(myFunc, 1000)
+// myInterval.count
+
+
+// setTimeout(myFunc, 1000, 'Baylen', 'inside my callback')
+
+// let myInterval = setInterval(myFunc, 1000, myInterval)
+
+
+
+
+function intervalCount(cb, delay, amount) {
+  let interval  = setInterval(() => {
+    cb() // console.log('Hi')
+    amount --
+    if(amount === 0) {
+      clearInterval(interval)
+    }
+  }, delay)
+}
+
+
+intervalCount(() => {
+    console.log('Hi')
+}, 1000, 3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
