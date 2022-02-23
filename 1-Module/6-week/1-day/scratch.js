@@ -60,6 +60,7 @@ const question3 = answer => {
 
 <<<<<<< HEAD
 fastCode()
+<<<<<<< HEAD
 // Hey james
 // Hey Zaviar
 =======
@@ -72,3 +73,8 @@ interface.question('What is your name? ', question1)
 
 
 >>>>>>> 2022-Jan-W
+=======
+// Hey James
+// Hey Zaviar
+// Hey Baylen
+>>>>>>> 29f9da00a993daf57ed6ed4b218cd9a7e0ad092a
