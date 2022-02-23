@@ -13,9 +13,67 @@ Feel free to use any repl you would like to on AAO.
 > Write your function in function expression syntax.
 > Use the `Array.splice` method in your implementation.
 >
-> Feel free to look up the `Array.splice` method on MDN.
+> Feel free to look up the `Array.splice` and `Array.join` method on MDN.
 
 We will work through this problem together when the 10 minutes are up.
+
+
+```js
+// solution
+
+let removeConsonants = function(str){
+	let vowels = 'aeiouAEIOU';
+	let result = ''; // 'e', 'e ', 'e o'
+	let chars = str.split(''); // str = ['t','h','e',' ','b','r','o','w','n',' ','f','o','x']
+
+	// let chars = str.split(); ['the quick brown fox']
+
+	for(let i = 0; i < chars.length; i++){
+		let currentChar = chars[i]
+		if(vowels.includes(currentChar) || currentChar === ' '){
+			result += currentChar
+		}
+	}
+
+	return result
+}
+
+let removeConsonants = function(str){
+	let vowels = 'aeiouAEIOU ';
+	let result = '';
+	let chars = str.split('');
+
+	for(let i = 0; i < chars.length; i++){
+		if(vowels.includes(chars[i])){
+			result += chars[i]
+		}
+	}
+
+	return result
+}
+
+let removeConsonantsUsingSplit = function(str){
+	let vowels = 'aeiouAEIOU ';
+	let chars = str.split(''); // str = ['t','h','e',' ','b','r','o','w','n',' ','f','o','x']
+
+	// let chars = str.split(); ['the quick brown fox']
+
+	for(let i = 0; i < chars.length; i++){
+		if(!vowels.includes(chars[i])){
+			chars.splice(i, 1)
+			i--
+		}
+	}
+
+	return chars.join('')
+}
+
+
+// samples:
+// 'the quick brown fox'  // 'e ui o o'
+// 'immutable data types' // 'iuae aa e'
+```
+
 
 ---
 
@@ -67,12 +125,12 @@ We will work through this problem together when the 10 minutes are up.
 - Phillip will be giving todays EOD.
 - If you want 1:1 help put your name on the signup sheet!
 
-[array sum]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/array-sum
-[rotate right]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/rotate-right
-[two dimensional sum]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/two-dimensional-sum
-[avg value]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/avg-val
-[my index of recall]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/my-index-of-recall
-[tripler]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/tripler
-[long words]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/long-words
-[remove e words]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/remove-e-words
-[max value]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/max-value
+[array sum]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/array-sum
+[rotate right]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/rotate-right
+[two dimensional sum]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/two-dimensional-sum
+[avg value]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/avg-val
+[my index of recall]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/my-index-of-recall
+[tripler]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/tripler
+[long words]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/long-words
+[remove e words]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/remove-e-words
+[max value]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-2---intermediate-functions/max-value
