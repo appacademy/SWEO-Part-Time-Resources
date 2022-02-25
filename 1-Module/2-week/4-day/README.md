@@ -12,11 +12,60 @@ Take 15 minutes and work on the problem described in this prompt.
 >
 >`console.log(uncompress('x3y4z2')); // 'xxxyyyyzz'`
 >`console.log(uncompress('a5b2c4z1')); // 'aaaaabbccccz'`
->`console.log(uncompress('b1o2t1')); // 'boot'`
+>`console.log(uncompress('b1o2t10')); // 'bootttttttttt'`
 >
 >Hint: you can use the built-in Number function
 >should convert a numeric string into the number type.
 >For example. Number("4") // => 4
+
+1. lets start off by writing down a function
+2. that function takes in one argument and that argument is a string
+3. it will be a character followed by a number
+4. odds are characters and evens are numbers
+5. return a string as an answer
+6. loop through the string and look at each character.
+7. if we find a character save that character and then if we find a number repeat the saved character
+   that many times
+8. if we are in an odd index we know its going to be a character //
+9. str.split('') // ['x', '3', 'y', '4', 'z', '2']
+10. str.split('') // ['b', '1', 'o', '2', 't', '1', '0'] //
+11. a character will always be from a-z
+12. we can create a variable that would a string that can hold a number it
+13. we can initialize a numbers string and use numbers.includes('char') to see if its a number
+
+
+// we would check every 2 index values
+// and see if one of them is a number and one of them isnt
+// we would use a .repeat(n) function. that would repeat n number of times
+// either wise we would use a helper function for repeat
+// check if one is a number or isnt we would push to result
+// if its a number greater than 9 we would repeat x10
+// push that into the word
+// would increment i one additonal time so we would skip it
+
+```js
+let uncompress = function(str){
+	let result = []
+
+	for(let i = 1; i < str.length; i+=2){ // because we would check index of 1 cause 0 is a
+		let word;						  // char
+		if(Number(str[i - 1]) && Number(str[i])){ // we are comparing if in the example we
+												  // passing 'x' then number would
+												  // result to NaN which would be false
+												  // if case both are numbers are true
+												  // then we know its 10
+			word = str[i + 1].repeat(10)
+			i++ // we do this to offset the index by 1
+		} else {
+			word = str[i - 1].repeat(str[i]) // because i would be where that single digit
+		}
+		result.push(word)
+	}
+	result.join(' ')
+}
+
+```
+
 
 We will come back and walk through this when the 10 minutes are up!
 
