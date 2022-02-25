@@ -20,6 +20,46 @@ Take 15 minutes and work on the problem described in this prompt.
 
 We will come back and walk through this when the 10 minutes are up!
 
+created two functions
+one will take in a string and the other as well
+declared four variables
+
+create a loop that would iterate through newArrays length
+created a checker an if else statement
+if the array sees a number it will an operation to remove number and push characters
+to the array depending on number
+
+return new array with pushed characters
+
+```js
+
+let uncompress = function(str){
+	let numbers = '123456789'
+	let strSplit = str.split('')
+	let num = 0;
+	let filtered = [];
+
+	for(let i = 0; i < strSplit.length; i++){
+		let char = strSplit[i]
+		if(numbers.includes(char)){
+			num = numChecker(char);
+			let letter = strSplit[i - 1]
+			for(let j = 0; j < num; j++){
+				filtered.push(letter)
+			}
+		}
+
+	}
+	return filtered.join('')
+}
+
+let numChecker = function(str){
+	return Number(str)
+}
+
+
+```
+
 ---
 
 ## Practice 1 (30m)
