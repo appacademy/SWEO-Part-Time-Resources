@@ -90,6 +90,45 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
 
 ```js
 
+// practice assessments
+
+function costOfGroceries(groceries){
+    let sum = 0
+        for(let i = 0; i < groceries.length; i++){
+            let ele = groceries[i]
+            if (ele === 'butter'){
+                sum += 1
+           } else if(ele === 'milk'){
+               sum += 3
+            } else if (ele === 'eggs'){
+                sum += 2
+            } else if (ele === 'bread'){
+                sum += 4
+            } else if (ele === 'cheese'){
+                sum += 5
+            }
+
+
+        }
+	return sum
+}
+
+function mostExpensiveGroceries(groceriesList){
+	let index;
+	let maxVal = 0;
+  		for(let i = 0; i < groceriesList.length; i++ ){
+        		let items = groceriesList[i]
+                let itemsTotal = costOfGroceries(items)
+				  if(itemsTotal > maxVal){
+                  	maxVal = itemsTotal
+                    index = i
+                  }
+
+        }
+	return index
+}
+
+
 ```
 
 ## Practice Assessment - 1hr
