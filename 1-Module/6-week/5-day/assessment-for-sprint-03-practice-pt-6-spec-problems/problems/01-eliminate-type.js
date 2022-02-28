@@ -73,18 +73,18 @@ of the specified type removed.
 // I will push that element into my results array
 // return my array 
 //
-function eliminateType(arr) {
-  return (string) => {
-    let result = []
-    for(let i = 0; i < arr.length; i++) {
-      let ele = arr[i]
-      if(typeof ele !== string){
-        result.push(ele)
-      }
-    }
-    return result
-  }
-}
+// function eliminateType(arr) {
+//   return (string) => {
+//     let result = []
+//     for(let i = 0; i < arr.length; i++) {
+//       let ele = arr[i]
+//       if(typeof ele !== string){
+//         result.push(ele)
+//       }
+//     }
+//     return result
+//   }
+// }
 // function eliminateType(arr) {
 //   return (string) => {
 //     let newArr = arr.filter(ele => {
@@ -123,7 +123,7 @@ function eliminateType(arr) {
 // const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
 // console.log(smallEliminate('number')); // ['one', 'two', 'three']
 // console.log(smallEliminate('string')); // [1, 2, 3]
-
+// console.log(([1,2,3,4,5].at(-1)))
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
   module.exports = eliminateType;
