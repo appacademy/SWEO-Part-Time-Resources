@@ -123,6 +123,45 @@ questions about clarifying what is expected of you.
 
 ```js
 
+// practice assessments
+
+function costOfGroceries(groceries){
+    let sum = 0
+        for(let i = 0; i < groceries.length; i++){
+            let ele = groceries[i]
+            if (ele === 'butter'){
+                sum += 1
+           } else if(ele === 'milk'){
+               sum += 3
+            } else if (ele === 'eggs'){
+                sum += 2
+            } else if (ele === 'bread'){
+                sum += 4
+            } else if (ele === 'cheese'){
+                sum += 5
+            }
+
+
+        }
+	return sum
+}
+
+function mostExpensiveGroceries(groceriesList){
+	let index;
+	let maxVal = 0;
+  		for(let i = 0; i < groceriesList.length; i++ ){
+        		let items = groceriesList[i]
+                let itemsTotal = costOfGroceries(items)
+				  if(itemsTotal > maxVal){
+                  	maxVal = itemsTotal
+                    index = i
+                  }
+
+        }
+	return index
+}
+
+
 ```
 
 ### If you feel comfortable with the practice assessment, you can continue working through the following problems, we will still be available to answer questions
