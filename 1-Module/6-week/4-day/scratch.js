@@ -1,33 +1,30 @@
 const readline = require('readline');
 const rl = readline.createInterface({
-        input: process.stdin,
-        output: process.stdout
-})
-const user = {}
+    input: process.stdin,
+    output: process.stdout
+});
 
-const question3 = () => {
-    rl.question('What is the flight speed velocity of an unladen swallow? ', (answer3) => {
-        if(answer3.toLowerCase().includes('african or european')){
-            console.log('I dont know')
+const myChar = {}
+
+const ageQuestion = () =>   {
+    rl.question('What is your characters age ', answer => {
+        myChar.age = answer
+        console.log(myChar)
+        rl.question('What is your superpower \n enter 1 for flight \n enter 2 for invisibility \n enter 3 for laser vision \n' , answer2 => {
+            if(answer2 === '1'){
+                console.log('Your super power is flight')
+            }if (answer2 === '2'){
+                console.log('Your super power is invisibility')
+            }if(answer2 === '3'){
+                console.log('Your super power is laser vision')
+            }
             rl.close()
-        }else{
-            console.log('You are launched into the pit of death')
-            return question3()
-        }
+        })
+        
     })
 }
 
-
-
-rl.question('What is your name ', (answer) => {
-    user.name = answer
-    console.log(user)
-    rl.question('What is your age ', (answer2) => {
-        user.age = answer2
-        console.log(user)
-        question3()
-    })
+rl.question('Hey what do you want to name your character?? ', answer => {
+    myChar.name = answer
+   ageQuestion()
 })
-
-
-console.log('I am a regular console.log')
