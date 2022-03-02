@@ -97,7 +97,7 @@ Todays goal is to complete problems 1-7.
 
 ## Primitive VS Reference
 
-`Primitive`
+`Primitive` || `Immutable Data types`
 
 ```js
 let age = 10;
@@ -106,25 +106,7 @@ age = numberOfFingers + 1;
 console.log(age, numberOfFingers);
 ```
 
-<table>
-<tr><th>Before</th><th>After</th></tr>
-<tr><td>
-
-| RAM  | VAR | VAL |
-| ---- | --- | --- |
-| #001 | age | 10  |
-| #002 | NOF | 10  |
-
-</td><td>
-
-| RAM  | VAR | VAL |
-| ---- | --- | --- |
-| #001 | age | 11  |
-| #002 | NOF | 10  |
-
-</td></tr> </table>
-
-`Reference`
+`Reference` || `Mutable Data types`
 
 ```js
 let biff = {
@@ -137,36 +119,6 @@ buster.age = 0;
 
 console.log(biff, buster);
 ```
-
-  <table>
-<tr><th>Before</th><th>After</th></tr>
-<tr><td>
-
-| RAM  | VAR    | VAL   |
-| ---- | ------ | ----- |
-| #003 | biff   | --    |
-| \|   | type   | 'dog' |
-| \|   | age    | 10    |
-| #004 | buster | #003  |
-
-</td><td>
-
-| RAM  | VAR    | VAL   |
-| ---- | ------ | ----- |
-| #003 | biff   | --    |
-| \|   | type   | 'dog' |
-| \|   | age    | 0     |
-| #004 | buster | #003  |
-
-</td></tr> </table>
-
----
-
-## Project Time pt2
-
-[POJO Project]
-
----
 
 [cat builder]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-3---node--pair-programming--pojo--adv--arrays/cat-builder
 [iterate through obj]: https://open.appacademy.io/learn/js-py---pt-feb-2022-online/week-3---node--pair-programming--pojo--adv--arrays/iterate-through-obj
