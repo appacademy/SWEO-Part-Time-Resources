@@ -23,13 +23,14 @@ You will be adding your guesses to the readme and then testing the route using P
 
 Request components:
 
-- Method:
-- URL:
-- Headers:
-- Body:
+- Method: GET
+- URL: /any-route-that-doesnt-exist
+- Headers: none
+- Body: none
 
 Response components:
 
-- Status code:
+- Status code: 404
 - Headers:
-- Body:
+  - Content-Type: text/html
+- Body: "Page Not Found" HTML Page
