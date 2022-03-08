@@ -1,26 +1,27 @@
-class Person {
+class Person{
   constructor(name, age){
-    this.name = name
+    this['name']= name
     this.age = age
   }
-
-  showContext(cb){
+  showContext(){
     console.log(this)
-    console.log(this.age)
     console.log(this.name)
+    console.log(this.age)
     // cb()
   }
 }
 
-let baylen = new Person('Baylen', 27, )
-
-
-// setTimeout(baylen.showContext, 100)
-// function something(){
-//   console.log(this)
-// }
+const baylen = new Person('Baylen', 27)
 
 baylen.showContext()
 
-// context()
+// setTimeout(baylen.showContext, 100)
+// let someFunc = baylen.showContext
+// someFunc(function(){
+//   console.log(this)
+// })
 
+// function globalContext(){
+//   console.log(this)
+// }
+// globalContext()

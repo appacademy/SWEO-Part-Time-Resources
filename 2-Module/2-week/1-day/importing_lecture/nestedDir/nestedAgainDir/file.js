@@ -1,13 +1,3 @@
-const { NewClass } = require('../../file1')
+const { NewClass, NewClass2 } = require('../../file1')
 
-console.log(NewClass)
-// class NestedClass {
-//     constructor(){
-
-//     }
-//     printClass(){
-//         console.log('Inner Most File')
-//     }
-// }
-
-
+console.log(NewClass, NewClass2)
