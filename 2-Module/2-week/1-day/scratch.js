@@ -1,22 +1,26 @@
-// class Test {
-//   testFunc() {
-//     debugger;
-//     console.log(this)
-//     console.log(`this is equal to test1: ${this === test1}`);
-//   }
+class Person {
+  constructor(name, age){
+    this.name = name
+    this.age = age
+  }
+
+  showContext(cb){
+    console.log(this)
+    console.log(this.age)
+    console.log(this.name)
+    // cb()
+  }
+}
+
+let baylen = new Person('Baylen', 27, )
+
+
+// setTimeout(baylen.showContext, 100)
+// function something(){
+//   console.log(this)
 // }
 
-// const test1 = new Test();
-// Calling the method on the instance
-test1.testFunc(); // true
-// Calling the method outside the class
-const test1Func = test1.testFunc; 
-test1Func(); // false
-// Calling the method as a callback
-setTimeout(test1.testFunc, 1000); // false
+baylen.showContext()
 
-// Using this in Function Declaration Syntax
-function someFunc() {
-  console.log(this);
-}
-someFunc(); // Global Object
+// context()
+
