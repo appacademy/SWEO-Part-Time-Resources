@@ -1,51 +1,91 @@
-class Test {
-  testFunc(name, num) {
-    console.log(name, num)
-    console.log(this === test1);
-  }
-}
 
-const test1 = new Test();
 
-// setTimeout(test1.testFunc.bind(test1, "Mylo", 3), 1000); // wait 1 second, true
 
-/* 
-Using this in Function Declaration Syntax
-Could I make `this` equal to test1 in this function?
-*/
-// function someFunc() {
-//   console.log(this);
+
+
+
+
+
+// function someContext (param1, param2, param3){
+//   console.log(param1, param2, param3)
+//   // console.log(this)
+//   console.log(this.firstName)
+//   console.log(this.lastName)
+
+//   return this
+// }
+// // someContext('Baylen', 'Zaviar', 'James')
+// let someObj = {
+//   firstName : 'Baylen',
+//   lastName : 'Doss',
+// }
+// // let boundFunc = someContext.bind(someObj, 'Baylen', 'Zaviar', 'James')
+// // boundFunc()
+
+// // let myCall = someContext.call(someObj, 'Baylen', 'Zaviar', 'James')
+// // console.log(myCall)
+// let myArr = ['Baylen', 'Zaviar', 'James']
+// let myCall = someContext.apply(someObj, ['Baylen', 'Zaviar', 'James'])
+// console.log(myCall)
+
+
+// boundFunc()
+// someObj.func()
+
+
+
+
+
+
+// class Person {
+//   constructor(fisrtName, lastName){
+//     this.fisrtName = fisrtName
+//     this.lastName = lastName
+//     this.arr = [1,2,3,4,5,6]
+//   }
+
+//   printName(cb){
+//     console.log(this.fisrtName)
+//     console.log(this.lastName)
+//     let myCB = cb.bind(this)
+//     myCB()
+
+//     // this.arr.forEach(function(el, i){
+//     //   console.log(this.arr[i])
+//     // }, this)
+//   }
 // }
 
-// someFunc.call(test1); // (undefined) Test {...}
 
+// let baylen = new Person('Baylen', 'Doss')
 
-
-
-// function greeting(...messages) {
-//   return messages.map((message) => {
-//     return `${this.firstName} says ${message}`;
-//   });
+// function printThis(){
+//   console.log(this)
 // }
+// baylen.printName(printThis)
 
-// const derek = {
-//   firstName: 'Derek',
-// };
-
-// const derekMessages = greeting.bind(derek, 'Hello class!');
-// console.log(derekMessages('Goodbye class!'));
-
-class Fruit {
-  constructor(name) {
-    this.name = name;
+class Person{
+  constructor(){
+    this.people = []
   }
-
-  eat = () => {
-    console.log(`${this.name} has a bite mark`);
-  };
+  addPerson(name){
+    this.people.push(name)
+  }
+  printPeople(){
+      this.people.forEach((el) => {
+        console.log(this)
+      })
+  }
+  // printPeopleArrow = () => {
+  //   console.log(this)
+  // }
 }
 
-const apple = new Fruit('apple');
-const eat = apple.eat;
-eat();
-setTimeout(eat, 1000);
+let people = new Person()
+
+people.addPerson('Zaviar')
+people.addPerson('James')
+people.addPerson('Baylen')
+
+
+people.printPeople()
