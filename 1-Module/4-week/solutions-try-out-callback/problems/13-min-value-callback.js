@@ -10,23 +10,38 @@ console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3
 
 *******************************************************************************/
 
-let minValueCallback = function(arr, cb) {
-	if(cb){
-		let value = cb(arr[0]);
-		for(let i = 0; i < arr.length; i++){
-			if(value > cb(arr[i])) value = cb(arr[i])
-		}
-		return value
-	} else {
-		return Math.min(...arr)
+// let minValueCallback = function(array, callback) {
+// 	if(!callback){
+// 		return Math.min(...array)
+// 	}
+
+// 	let result = [];
+
+// 	for(let i = 0; i < array.length; i++){
+// 		let element = array[i];
+// 		result.push(callback(element));
+// 	}
+
+// 	return Math.min(...result)
+// };
+
+// alternate solution
+let minValueCallback = function(array, callback) {
+	let min = Math.min(...array);
+
+	if(callback !== undefined){
+		return callback(min)
 	}
+
+	return min
 };
 
-console.log(minValueCallback([64, 25, 49, 9, 100]));             // 9
-console.log(minValueCallback([64, 25, 49, 9, 100], Math.sqrt));  // 3
 
-
-
+// so iterate through the array
+// have a min variable
+// iterate through the array
+// and compare your current element with the min value and if its less
+// reassign that min value
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 module.exports = minValueCallback;

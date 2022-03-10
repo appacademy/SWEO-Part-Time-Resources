@@ -34,12 +34,13 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   optional initial accumulator
 *******************************************************************************/
 
-let mySimpleReduce = function() {
-
+let mySimpleReduce = function(array, cb) {
+    let acc = array[0]
+    array.slice(1).forEach(el => {
+        acc = cb(el, acc)
+    })
+    return acc
 };
-
-
-
 
 
 
