@@ -1,6 +1,6 @@
 # W4D3
 
-## Scope (45m)
+## Scope (25m)
 
 ### `Overview`
 
