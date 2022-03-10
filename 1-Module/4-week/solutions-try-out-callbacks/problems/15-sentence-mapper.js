@@ -25,8 +25,18 @@ let result2 = sentenceMapper("this is pretty cool right", removeVowels);
 console.log(result2); // 'ths s prtty cl rght'
 *******************************************************************************/
 
-let sentenceMapper = function() {
+let sentenceMapper = function(sentence, callback) {
+	//this is pretty cool right
+	let splitted = sentence.split(' '); // ['this', 'is', 'pretty', 'cool', 'right']
 
+	for(let i = 0; i < splitted.length; i++){
+		let el = splitted[i]; // this
+
+					//  0  1  ths
+		splitted.splice(i, 1, callback(el, i))
+	}
+
+	return splitted.join(' ')
 };
 
 
