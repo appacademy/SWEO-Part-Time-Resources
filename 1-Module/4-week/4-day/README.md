@@ -1,0 +1,62 @@
+# W4D4
+
+## Lecture (30m)
+
+### Arrow Functions
+
+`Overview`
+
+- Arrow Functions are always anonymous
+- Arrow Functions have implicit return (one line)
+- Optional parenthesis for single parameter
+
+  ```js
+  // Multiline
+  const multilineName = name => {
+    return 'My name is '+ name;
+  };
+  multilineName('Mylo');
+
+  // Single Line
+  const returnName = name => 'My name is ' + name;
+  console.log(returnName('JM'));
+
+  // Anonymous callback
+  const arr = [1, 2, 3];
+  const addOne = arr.map((num) => num + 1);
+  console.log(addOne);
+  ```
+
+### Closure | MDN: [Closures]
+
+- An inner function that uses or changes variables that were initialized\
+in an outer function.
+
+- When you have a function defined inside of another function, that inner function has access to the variables and scope of the outer function even if the outer function finishes executing and those variables are no longer accessible outside of that function
+
+`Overview`
+
+- We can use/manipulate a Higher Order Functions' variables/parameters with a closure
+- We can create multiple "instances" of a function's variables with closures
+
+---
+
+## Project Part 1 (45m)
+
+Problems 0-5
+
+---
+
+## Discussion 1 (20m)
+
+---
+
+## Project Part 2 (45m)
+
+Problems 6-11
+
+---
+
+## Discussion 2 (20m)
+
+---
