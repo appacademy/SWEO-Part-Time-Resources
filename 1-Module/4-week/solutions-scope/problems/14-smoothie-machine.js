@@ -23,6 +23,39 @@ console.log(smoothie2("pineapple"));
 ***********************************************************************/
 
 // your code here
+// array solution
+// const smoothieMachine = (...args) => {
+// 	let smoothie = '';
+// 	let fruits = [...args]
+// 	return (...moreArgs) => {
+// 		let string = "I'm having a smoothie with "
+// 		fruits.push(...moreArgs)
+// 		return smoothie = string + fruits.join(' and ')
+// 	}
+// }
+// string solution
+const smoothieMachine = (...args) => {
+	let smoothie = "I'm having a smoothie with " + args.join(' and ')
+	return (...moreArgs) => {
+		if(!smoothie.endsWith(' ')){
+			smoothie += ' and '
+		}
+		return smoothie += moreArgs.join(' and ')
+	}
+}
+
+
+// const smoothieMachine = (func, ...params1) => {
+// 	let str = "I'm having a smoothie with "
+
+// 	return (...params2) => {
+// 	   str += params1.join(' and ')
+// 	   str += params2.join(' and ')
+// 	  return str
+// 	}
+//   }
+
+//I'm having a smoothie with milkkale and spinach
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

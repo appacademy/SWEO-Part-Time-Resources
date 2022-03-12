@@ -19,6 +19,22 @@ multiplyByFive(5); // returns 25
 ***********************************************************************/
 
 // your code here!
+// const dynamicMultiply = num1 => {
+// 	return (num2) => {
+// 		return num1 * num2
+// 	}
+// }
+
+// const dynamicMultiply = (num) => num2 => num * num2
+
+const dynamicMultiply = (num) => {
+	let multiplier = num;
+
+	return function(factor) {
+	  return multiplier * factor;
+	};
+  }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

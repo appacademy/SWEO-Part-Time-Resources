@@ -43,6 +43,48 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 // your code here
+// const curriedSum = numArgs => {
+// 	let numbers = [];
+
+// 	let _curriedSum = num => {
+// 		numbers.push(num)
+
+
+// 		// if(numbers.length === numArgs){
+// 		// 	return numbers.reduce((a, b) => a + b)
+// 		// } else {
+// 		// 	return _curriedSum
+// 		// }
+
+// 		// ternary operator ? :
+// 		return numbers.length === numArgs ? numbers.reduce((a, b) => a + b) : _curriedSum
+// 	}
+
+// 	return _curriedSum
+// }
+
+function curriedSum(numArgs) {
+	const numbers = [];
+
+	function _curriedSum(num) {
+	  numbers.push(num);
+
+	  if (numbers.length === numArgs) {
+		let total = 0;
+
+		numbers.forEach((n) => {
+		  total += n;
+		});
+
+		return total;
+	  } else {
+		return _curriedSum;
+	  }
+	}
+
+	return _curriedSum;
+  }
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
