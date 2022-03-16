@@ -1,20 +1,24 @@
 // Adds up positive integers from 1-n
-function addNums(n) {
-  let sum = 0 // Space Complexity O(1) Constant
-  for(let i = 0; i <= n; i++){ // Time Complexity O(n) Linear
-    sum+=i
+function addNums(n) { // Time O(n) Space O(1)
+  let total = 0; // Space Complexity O(1)
+  let index = 1; // Space Complexity O(1)
+  while(index <= n){ // Time Complexity O(n)
+    total += index // Space O(1)
+    index ++ // Space O(1)
   }
-  return sum
+  return total // Space O(1)
 }
 
 
 // Adds up values of addNums(1) through addNums(n)
 function addManyNums(n) {
-  let sum = 0; // Space Complexity O(1) Constant
-  for(let i = 0; i <= n; i++){ // O(n^2) Quadratic Time Complexity
-    sum += addNums(i) 
+  let total = 0; // Space Complexity O(1)
+  let index = 1; // Space Complexity O(1)
+  while(index <= n){ // Time Complexity O(n)
+    total += addNums(index) // Time Complexity O(n ^ 2)
+    index ++ // Space O(1)
   }
-  return sum
+  return total // Space O(1)
 }
 
 
