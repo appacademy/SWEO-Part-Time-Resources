@@ -1,5 +1,9 @@
 # M3-W5-D3
 
+## Demo: Element Selection, Create/Remove Elements, Events
+
+---
+
 ## Practice: NodeList vs. HTML Collection (20m)
 
 ---
