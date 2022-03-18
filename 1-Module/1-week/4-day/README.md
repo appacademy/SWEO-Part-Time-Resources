@@ -158,8 +158,6 @@ Other common methods you will use often: (Not needed _today_, but why not\
   1. [Doubler]
   2. [Vowel Counter]
 
-## EOD / Office Hours
-
 ## Quizzes: 15 mins
 
   1. [Control Flow Quiz]
