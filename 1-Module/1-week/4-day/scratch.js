@@ -82,6 +82,10 @@
 //   console.log('This run, i is', i);
 // }
 
+//! ------- Practice problems from AAO
+
+//////////! Is Five
+
 // function isFive(num) {
 // 	if (num !== 5) {
 // 		return false
@@ -90,7 +94,7 @@
 // 	}
 // }
 
-//! Log Between
+//////////! Log Between
 
 // function logBetween (lowNum, highNum) {
 //   	let newLow = lowNum
@@ -127,10 +131,68 @@
 //   }
 // }
 
-function give5() {
-  return 5;
-}
+//////////! Print Fives
 
+// function printFives(max) {
+// 	let i = 0;
+//   	while ( i < max ) {
+//     	console.log(i)
+//       	i += 5
+//     }
+// }
+
+//////////! Log Between Stepper
+
+// function logBetweenStepper (min, max, step) {
+// 	for (let i = min; i <= max; i+= step) {
+//     	console.log(i)
+//     }
+// }
+
+// function logBetweenStepper (min, max, step) {
+// 	// create a counter to keep track of my current number
+//   	let currNum = min
+
+//   	// start a while loop
+//     while (currNum <= max) {
+// 		// will run until counter is equal to max
+//   	// it will print counter
+//     	console.log(currNum)
+//   	// increment counter by step
+//       	currNum += step
+//     }
+// }
+
+//////////! Three Or Seven
+
+// function threeOrSeven(num) {
+// 	let ans = false
+//     if (num % 7 === 0 || num % 3 === 0) {
+//     	ans = true
+//     }
+//   	return ans
+// }
+
+// function threeOrSeven(num) {
+// 	return num % 7 === 0 || num % 3 === 0
+// }
+
+// function threeOrSeven(num) {
+//   if (num % 7 === 0) {
+//     return true;
+//   } else if (num % 3 === 0) {
+//     return true;
+//   } // else {
+//   //   	return false
+//   //   }
+//   return false;
+// }
+
+//! ----------------
+
+// function give5() {
+//   return 5;
+// }
 
 // console.log(give5)
 // console.log(give5())
@@ -139,9 +201,9 @@ function give5() {
 // console.log(str[0])
 // console.log(str[1])
 
-let arr = [1, 'hello', false, undefined, [1, 2, 3], give5, give5()];
+// let arr = [1, 'hello', false, undefined, [1, 2, 3], give5, give5()];
 
-console.log(arr);
+// console.log(arr);
 
 // function myFunc() {
 //   // return 'Hello';
