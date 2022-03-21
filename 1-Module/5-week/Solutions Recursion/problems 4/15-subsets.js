@@ -15,18 +15,6 @@ Hint: For subsets([1, 2, 3]), there are two kinds of subsets:
 ***********************************************************************/
 
 const subsets = (arr) => {
-	let path = [[]];
-
-	for (let i = 0; i < arr.length; i++) {
-	  path.push([arr[i]]);
-	  let subPath = [];
-	  for (let j = 1; j < path.length - 1; j++) {
-		subPath.push(path[j].concat(arr[i]));
-	  }
-	  path.push(...subPath);
-	}
-
-	return path;
 };
 
 
