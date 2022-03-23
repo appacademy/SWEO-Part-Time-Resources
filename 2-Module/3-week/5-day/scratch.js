@@ -1,3 +1,14 @@
+
+
+
+
+// console.log(parseInt('0x00C9', 16))
+
+// let num = 0x00C9
+
+// console.log(num.toString(2))
+
+
 //Truth table and how to solve programmatically 
 /* 
 A  B  |  !A && B 
@@ -7,15 +18,19 @@ A  B  |  !A && B
 1  0  |    ? 0
 */
 
-// const myTruthTableSolver = (arrOfBool) => {
-//     for(let i  = 0; i < arrOfBool.length; i++){
-//         let ele = arrOfBool[i]
-//         let [A, B] = ele
-//         console.log(!A && B)
-//     }
-// }
+const myTruthTableSolver = (arrOfBool) => {
+    for(let i  = 0; i < arrOfBool.length; i++){
+        let ele = arrOfBool[i]
+        let [A, B] = ele
+        // console.log(!A)
+        // console.log(!B)
+        // console.log(A)
+        // console.log(!0)
+        console.log(!B && (A || B))
+    }
+}
 
-// myTruthTableSolver([[0,0], [0, 1], [1,1], [1, 0]])
+myTruthTableSolver([[0,0], [0, 1], [1,0], [1, 1]])
 
 
 // Arrays
