@@ -12,43 +12,39 @@ class LinkedList {
   }
 
   addToHead(val) {
-    // first, create a new node
-    const newNode = new LinkedListNode(val)
-    // set new node.next to equal the head
+    // create a new node to be added
+    let newNode = new LinkedListNode(val)
+    // point the new node to the current head
     newNode.next = this.head
-    // this.head = newNode
+    // coerce the current head to be the newNode
     this.head = newNode
-    // increase the value of the length
-    this.length++
+    // increase the size
+    this.length ++
   }
 
   addToTail(val) {
-    // check if there is a head
+    // check to see if we have a head currently
     if(!this.head){
-      // if not 
-      // call Add to head
+      // if not call addToHead passing in our value
       this.addToHead(val)
-      //else 
     }else{
+      // create a new node
       let newNode = new LinkedListNode(val)
-      // while loop to get to the last thing before the end and insert a new node
-      // crete a current var
+      // if we do have a head, we need to traverse the list to find the last node in the list
+      // create a current node variable, set it to this.head
       let current = this.head
-      // while(current.next){
-      //   // moving on to the next node
-      //   current = current.next
-      // }
-      // creating a new node, and setting as the next of our last node
-      // current.next = new LinkedListNode(val)
-      // this.length++
-
-      //possible alternative
+      // create a while loop, where we will loop while current is not null
       while(current){
+        // check if the next value of the current node is null
         if(current.next === null){
+          // then assign the next value of current to my new Node
           current.next = newNode
-          this.length++
-          break
+          // then increment the length of the list by one 
+          this.length ++
+          // to make this act like the push method, I will return the new length
+          return this.length
         }
+        // incrementing to the next node
         current = current.next
       }
     }
@@ -66,7 +62,5 @@ class LinkedList {
     console.log("NULL");
   }
 }
-
-// let someNode = someNode
 
 module.exports = LinkedList;

@@ -72,7 +72,7 @@ class DoublyLinkedList {
     let current = this.head;
 
     while (current) {
-      console.log("Current Node :",  `Val : ${current.value}, Next : ${current.next}, Prev : ${current.prev}`);
+      process.stdout.write(`${current.value} <-> `);
       current = current.next;
     }
 

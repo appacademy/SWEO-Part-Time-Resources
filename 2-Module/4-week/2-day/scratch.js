@@ -117,13 +117,16 @@
 //     }
 // }
 
+// first in First Out iE head
+
 // let stack = new Stack()
 
 // stack.addToStack(1)
 // stack.addToStack(2)
 // stack.addToStack(3)
 // stack.addToStack(4)
-// console.log(stack.unstack().value)
-// console.log(stack.unstack().value)
+// stack.printStack()
+
+// console.log(stack.removeFromStack().value)
 
 // stack.printStack()
