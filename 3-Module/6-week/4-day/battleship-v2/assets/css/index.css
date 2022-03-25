@@ -1,0 +1,28 @@
+.board{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.col{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.hit{
+  background-color: red;
+}
+
+.miss{
+  background-color: grey;
+  color: white;
+}
