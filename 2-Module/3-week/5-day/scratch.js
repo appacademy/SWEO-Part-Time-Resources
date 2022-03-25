@@ -149,4 +149,6 @@ myTruthTableSolver([[0,0], [0, 1], [1,0], [1, 1]])
 // yotta - septillion
 
 
+let mySet = new Set()
 
+console.log(mySet)
