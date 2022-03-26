@@ -74,6 +74,34 @@
 
 // console.log('You have scored ' + score + '/7 points.');
 
+// function isSorted(nums) {
+
+// 	// Loop through each number
+// 	for (let i = 0 ; i < nums.length - 1 ; i++) {
+
+// 			// check if next number is NOT bigger than last number
+// 			if (nums[i + 1] < nums[i]) {
+// 					// If it's not, return false
+// 					return false;
+// 			}
+// 		// 		1   ===       1
+// 		// if (i + 1 === nums[i + 1]) {
+// 		//       // If it's not, return false
+// 		//       return false;
+// 		//   }
+// 	}
+
+// 	// If every number is greater or equal to the previous number
+// 	// in the array, it's sorted.
+// 	return true;
+
+// }
+
+// console.log(isSorted([1, 2, 3, 4, 5]))  // true
+// console.log(isSorted([2, 2, 4, 4]))  // true
+// console.log(isSorted([1, 2, 4, 3, 5, 6]))  // false
+// console.log(isSorted([0, 1, 4, 5, 6, 7]))  // true
+
 // 1, 1, 2, 3, 5, 8, 13, 21, 34
 
 // let fib = function (num) {
