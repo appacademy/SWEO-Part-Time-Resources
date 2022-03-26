@@ -12,23 +12,30 @@ class KeyValuePair {
 class HashTable {
 
   constructor(numBuckets = 4) {
-    this.count = 0;
+    this.data = new Array(numBuckets).fill(null)
+    this.count = 0
     this.capacity = numBuckets
-    this.data = this.fillBuckets(numBuckets)
-  }
-
-  fillBuckets(num){
-    let arr = []
-    for(let i = 0 ; i < num; i++){
-      arr.push(null)
-    }
-    return arr
-  }
+  } 
+  // brute force
+  // buildBuckets(num){
+  //   let arr = []
+  //   for(let i = 0 ; i < num; i++){
+  //     arr.push(null)
+  //   }
+  //   return arr
+  // }
 
   hash(key) {
-    let myKey = sha256(key).slice(0, 8)
-    let num = parseInt(myKey, 16)
-    return num
+    // return 637812323123123
+    let hash = sha256(key).slice(0, 8)
+    // Hash example
+    // // let hash = 0
+    // // for(let i = 0; i < key.length; i++){
+    // //   // console.log(key.charCodeAt(i))
+    // //   // console.log()
+    // //   hash+=key.charCodeAt(i)
+    // // }
+    return parseInt(hash, 16)
   }
 
   hashMod(key) {
@@ -36,30 +43,30 @@ class HashTable {
   }
 
   insert(key, value) {
-    // going to create a new key val pair instance 
+    // I need to create a new Key value instance
     let newKeyVal = new KeyValuePair(key, value)
-    //get the target index
+    // get the target index fro the hashMod method
     let index = this.hashMod(newKeyVal.key)
-    // check to see if something exists at the index
-    // console.log(this.data, index)
-    if(this.data[index] === null){
-      // if not, assign that index, 
-      this.data[index] = newKeyVal
-      this.count++
-    }
-    // if so do an add to head type operation
-    else{
-      // creating a var that is equal to what lives at the target index
-      let currentBucket = this.data[index]
-      // i am saying that current bucket is the .next of my new key val
-      newKeyVal.next = currentBucket
-      // reassigning the index to my new KeyVal
-      this.data[index] = newKeyVal
-      this.count++
-    }
+    //create a variable that is equal to what lives at the current index
+    let targetBucket = this.data[index]
+    // i need to check if something exists at that index already
+    newKeyVal.next = targetBucket
+    // if(targetBucket !== null){
+    //   // if nothing is there I am going to do a normal index assignment
+    //   // else I am going to do an add to head operation 
+    //   // make the .next property of my new KeyVal pair the target bucket
+    //   // then I need to reassign the hashmap it the target index to the new key val
+    // }
+    this.data[index] = newKeyVal
+    this.count++
   }
 
 }
 
+
+let hashTable = new HashTable(10)
+console.log(hashTable.hashMod('hey'))
+console.log(hashTable.hashMod('hey'))
+console.log(hashTable.data)
 
 module.exports = HashTable;
