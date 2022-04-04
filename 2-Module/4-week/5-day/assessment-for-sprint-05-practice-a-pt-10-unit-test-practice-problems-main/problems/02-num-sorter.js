@@ -87,29 +87,29 @@ class NumSorter {
   // Build a numlist of integers from 0 to amount.
   // Only include allowed numbers
   buildNumList(amount) {
-      this.numList.clear;
-      for (let i = 0; i < amount; i++) {
-        if (!this.isNumAllowed(i)) {
-          this.numList.add(i);
-          //;
-        }
+      // this.numList.clear;
+      // for (let i = 0; i < amount; i++) {
+      //   if (!this.isNumAllowed(i)) {
+      //     this.numList.add(i);
+      //     //;
+      //   }
   
-        //return `${i} is not an allowed number`;
-      }
-      return this.numCount()
+      //   //return `${i} is not an allowed number`;
+      // }
+      // return this.numCount()
     
-    // this.numList.clear()
-    // for (let i = 0; i <= amount; i++) {
-    // if (this.isNumAllowed(i)) {
-    // // this.numList.enqueue(i);
-    // // Set option
-    // this.numList.add(i);
-    // // console.log(`${i} added to numList`);
-    // }
-    // // console.log(`${i} is not an allowed number`);
-    // }
+    this.numList.clear()
+    for (let i = 0; i <= amount; i++) {
+    if (this.isNumAllowed(i)) {
+    // this.numList.enqueue(i);
+    // Set option
+    this.numList.add(i);
+    console.log(`${i} added to numList`);
+    }
+    console.log(`${i} is not an allowed number`);
+    }
 
-    // return this.numCount()
+    return this.numCount()
   }
   // Remove and return the first number in the numList
   // If numList is empty, return undefined
