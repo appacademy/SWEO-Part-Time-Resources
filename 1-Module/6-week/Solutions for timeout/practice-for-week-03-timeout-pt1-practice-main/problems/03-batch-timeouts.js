@@ -32,17 +32,15 @@ const timeoutObjs = batchTimeouts(tasks, delays);
 console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]
 ***********************************************************************/
 
-function batchTimeouts(callbacks, delays, newArr = []){
-	if(callbacks.length === 0){
-		return newArr
-	}
+// function batchTimeouts(callbacks, delays) {
+// 	return callbacks.map((cb, idx)=> setTimeout(cb, delays[idx]))
+// }
 
-	newArr.push(setTimeout(callbacks[0], delays[0]))
-
-	return batchTimeouts(callbacks.slice(1), delays.slice(1), newArr)
+function batchTimeouts(callbacks, delays, result = []){
+	if(!callbacks.length) return result
+	result.push(setTimeout(callbacks[0], delays[0]))
+	return batchTimeouts(callbacks.slice(1), delays.slice(1), result)
 }
-
-
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

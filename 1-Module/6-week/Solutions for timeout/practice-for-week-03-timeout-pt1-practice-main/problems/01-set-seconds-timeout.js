@@ -24,14 +24,8 @@ setSecondsTimeout(function () {
 ***********************************************************************/
 
 function setSecondsTimeout(cb, delayInSeconds) {
-	let stObj = setTimeout(cb, 1000 * delayInSeconds)
-	console.log(stObj)
-	clearTimeout(stObj)
+  setTimeout(cb, delayInSeconds * 1000)
 }
-
-// setSecondsTimeout(function () {
-//     console.log('world');
-// }, 1.4); // should print 'world' after 1400 milliseconds
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
