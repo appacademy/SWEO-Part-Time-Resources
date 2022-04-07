@@ -116,15 +116,3 @@ If the root node's value equals the target, return true.
 If the target is less than the root value, recursively search the left child
 If the target is greater than the root value, recursively search the right child
 */
-
-// Recursive
-
-const searchBSTRecursive = () => {
-
-}
-
-// Iterative
-
-const searchBSTIterative = () => {
-
-}
