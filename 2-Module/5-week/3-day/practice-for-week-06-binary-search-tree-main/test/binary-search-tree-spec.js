@@ -213,7 +213,8 @@ describe('Binary Search Tree', () => {
       //    /   \
       //   2     6
       //  / \   / \
-      // 1   3 5   7
+      // 1   3 5   7 
+                    
 
       bst = new BinarySearchTree();
       bst.insert(4);
