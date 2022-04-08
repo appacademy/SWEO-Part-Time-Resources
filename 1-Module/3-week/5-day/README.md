@@ -68,7 +68,9 @@
 
 ## PA Walkthrough/Study Time: 1 hour
 
-## Project Time Pt 2/Study Time: 1 hour
+## Project Time Pt 2/Study Time
+
+## EOD: 30 min
 
 ## Before Monday
 
