@@ -27,7 +27,10 @@ console.log(sumForEach([])); // 0
 
 //! Tripler Map
 
-let myMap = function () {};
+let myMapWithoutDefault = function () {};
+
+let myMapWithDefault = function () {};
+
 
 /*
 Write a function `tripler(nums)` that takes in an array as an arg. The function
