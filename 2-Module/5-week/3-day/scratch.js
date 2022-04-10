@@ -63,3 +63,5 @@ on child, parents child becomes node to deletes child
 two children, replace the value of the node to delete with the in order predecessor,  
 and then delete the in order predecessor 
 */
+
+console.log()

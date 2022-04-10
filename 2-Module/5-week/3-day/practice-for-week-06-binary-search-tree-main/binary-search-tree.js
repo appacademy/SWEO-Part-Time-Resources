@@ -13,167 +13,206 @@ class BinarySearchTree {
     this.root = null
   }
 
-  insert(val, currentNode=this.root) {
-    let newNode = new TreeNode(val)
-    // base Case
-    if(currentNode === null){
-      this.root = newNode
-      return 
-    }
-    if(val < currentNode.val){
-      if(currentNode.left === null){
-        currentNode.left = newNode
-      }else{
-        this.insert(val, currentNode.left)
-      }
-    }
-    if(val > currentNode.val){
-      if(currentNode.right === null){
-        currentNode.right = newNode
-      }else{
-        this.insert(val, currentNode.right)
-      }
-    }
-  }
+//  // Recursively 
+//   insert(val, currentNode=this.root) {
+//     // One liner for fun
+//     // !currentNode ? this.root = new TreeNode(val) : (val > currentNode.val ? 
+//     //   !currentNode.right ? currentNode.right = new TreeNode(val) : this.insert(val, currentNode.right) : 
+//     //   !currentNode.left ? currentNode.left = new TreeNode(val) : this.insert(val, currentNode.left)
+//     //   )
 
+//     // // if there is no root,  I need to create a new instance of treeNode and set it as the root
+//     // if(!currentNode) return this.root = new TreeNode(val)
+
+//     // check to see if the val is < than the current node.val
+//     if(val < currentNode.val){
+//       // if it is
+//       // check weather the current node has anything in its left side
+//       if(currentNode.left === null){
+//         // if it is set the left to the new node
+//         currentNode.left = new TreeNode(val)
+//         return
+//       }
+//       // if the node on the left is not null then we recurse
+//       this.insert(val, currentNode.left)
+//     }
+//     // check to see if the val is grater than the currentNode.val
+//     if(val > currentNode.val){
+//       //if it is
+//       // check weather something lives at the .right
+//       if(currentNode.right === null){
+//         // if nothing lives there, assign it to a new node
+//         currentNode.right = new TreeNode(val)
+//         return
+//       }
+//       // if the node on the right is not null recurse passing in the right node
+//       this.insert(val, currentNode.right)
+//     }
+
+//   }
+
+//  Iterative
+insert(val, currentNode=this.root) {
+    if(!currentNode) return this.root = new TreeNode(val)
+
+    while(currentNode){
+      if(val > currentNode.val){
+        if(currentNode.right === null){
+          currentNode.right = new TreeNode(val)
+          break
+        }else{
+          currentNode = currentNode.right
+        }
+      }
+      if(val < currentNode.val){
+        if(currentNode.left === null){
+          currentNode.left = new TreeNode(val)
+          break
+        }else{
+          currentNode = currentNode.left
+        }
+      }
+
+
+    }
+}
+  // Iterative
   // search(val) {
+  //   // create a variable equal to the root node
   //   let currentNode = this.root
-
+  //   // start our while loop with while currentNode
   //   while(currentNode){
-  //     if(val < currentNode.val){
-  //       currentNode = currentNode.left
-  //     }
-  //     else if(val > currentNode.val){
-  //       currentNode = currentNode.right
-  //     }
-  //     else{
-  //       return true
-  //     }
+  //     // if we find our  value we want to return true
+  //     if(currentNode.val === val) return true
+  //     // check to see if the target value is less than the current nodes value
+  //     // if it is then we reassign current node to current Node.left
+  //     if(val < currentNode.val) currentNode = currentNode.left
+  //     else currentNode = currentNode.right
   //   }
   //   return false
   // }
-  search(val, current = this.root) {
-    if(current === null) return false 
-    if(current.val === val) return true
-    if(val < current.val) {
-      return this.search(val, current.left)
-    }
-    else if(val > current.val){
-      return this.search(val, current.right)
-    }
+
+  // recursive
+  search(val, current = this.root){
+    //base case is if we search and reach a null value, we did not find our target
+    if(!current) return false
+    // First we need to check to see if we found our val
+    if(val === current.val) return true
+    if(val < current.val) return this.search(val, current.left)
+    else return this.search(val, current.right)
   }
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
 
 
-  
-        //      4
-        //    /   \
-        //   2     6
-        //  / \   / \
-        // 1   3 5   7
   preOrderTraversal(currentNode = this.root) {
-    // console.log("Am I SANE??")
-    // base Case check tyo see if nodes val is not null, 
-    if(!currentNode) return 
-    // console log the current nodes value
+    // base case
+    if(!currentNode) return
+//     log current val
     console.log(currentNode.val)
-    // recursive step, we are recusing passing in the left node
+//     recurse left 
     this.preOrderTraversal(currentNode.left)
-    // then do the same thing on the right
+//     recurse right
     this.preOrderTraversal(currentNode.right)
-    
   }
-  
-        //      4
-        //    /   \
-        //   2     6
-        //  / \   / \
-        // 1   3 5   7
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
 
   inOrderTraversal(currentNode = this.root) {
-   // console.log("Am I SANE??")
-    // base Case check tyo see if nodes val is not null, 
-    if(!currentNode) return 
-    // recursive step, we are recusing passing in the left node
+    // base case
+    if(!currentNode) return
+    //     recurse left 
     this.inOrderTraversal(currentNode.left)
-    // console log the current nodes value
-    console.log(currentNode.val)
-    // then do the same thing on the right
+    //     log current val
+        console.log(currentNode.val)
+    //   recurse right
     this.inOrderTraversal(currentNode.right)
   }
-        //      4
-        //    /   \
-        //   2     6
-        //  / \   / \
-        // 1   3 5   7
-  postOrderTraversal(currentNode = this.root) {
-     // console.log("Am I SANE??")
-    // base Case check tyo see if nodes val is not null, 
-    if(!currentNode) return 
-    // recursive step, we are recusing passing in the left node
-    this.postOrderTraversal(currentNode.left)
-    // then do the same thing on the right
-    this.postOrderTraversal(currentNode.right)
-    // console log the current nodes value
-    console.log(currentNode.val)
-  }
 
-    // Breadth First Search - Iterative -- queue
-       //      4
-        //    /   \
-        //   2     6
-        //  / \   / \
-        // 1   3 5   7
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
+  postOrderTraversal(currentNode = this.root) {
+    // base case
+    if(!currentNode) return
+    //     recurse left 
+    this.postOrderTraversal(currentNode.left)
+    //   recurse right
+    this.postOrderTraversal(currentNode.right)
+    //     log current val
+        console.log(currentNode.val)
+  }
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
+    // Breadth First Traversal - Iterative
   breadthFirstTraversal() {
-    // initialize a queue with the this.root
+    // start  with the root node
+    //create my queue, and have the root be the first value
     let queue = [this.root]
-    // while the queue is not empty
+    // loop while my queue has a length
     while(queue.length){
-      //print and remove first node in queue
+      // dequeue the first element in the queue
       let currentNode = queue.shift()
       console.log(currentNode.val)
-      // if the node has a left node
-      if(currentNode.left){
-        // push the left node onto the back of the queue
+      //inside my loop 
+      // I am going to push each child of the current node into the queue
+      if(currentNode.left !== null){
         queue.push(currentNode.left)
       }
-      // if the currentNde has a right
-      if(currentNode.right){
-        // push that to the queue
+      if(currentNode.right!==null){
         queue.push(currentNode.right)
-      }
+      }  
     }
-
   }
-
-        //      4
-        //    /   \
-        //   2     6
-        //  / \   / \
-        // 1   3 5   7
-
-  // Depth First Traversal - Iterative -- stack 
+      //      4
+      //    /   \
+      //   2     6
+      //  / \   / \
+      // 1   3 5   7
+  // Depth First Traversal - Iterative
   depthFirstTraversal() {
-    // initialize a queue with the this.root
+    // start  with the root node
+    //create my stack, and have the root be the first value
     let stack = [this.root]
-    // while the stack is not empty
+    // loop while my stack has a length
     while(stack.length){
-      //print and remove first node in stack
+      // unstack the most recent element added to the stack
       let currentNode = stack.pop()
       console.log(currentNode.val)
-      // if the node has a left node
-      if(currentNode.left){
-        // push the left node onto the back of the queue
+      //inside my loop 
+      // I am going to push each child of the current node into the stack
+      if(currentNode.left !== null){
         stack.push(currentNode.left)
       }
-      // if the currentNde has a right
-      if(currentNode.right){
-        // push that to the stack
+      if(currentNode.right!==null){
         stack.push(currentNode.right)
-      }
+      }  
     }
-
   }
 }
 
+
+
+bst = new BinarySearchTree();
+      bst.insert(4);
+      bst.insert(2);
+      bst.insert(6);
+      bst.insert(1);
+      bst.insert(3);
+      bst.insert(5);
+      bst.insert(7);
+
+bst.depthFirstTraversal()
 
 module.exports = { BinarySearchTree, TreeNode };
