@@ -1,0 +1,16 @@
+{
+  "name": "myProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^9.2.2",
+    "node": "^10.24.1"
+  }
+}
