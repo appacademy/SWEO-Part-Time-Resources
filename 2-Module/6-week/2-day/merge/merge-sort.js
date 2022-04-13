@@ -14,9 +14,9 @@ function mergeSort(arr) {
   const right = arr.slice(midpoint, arr.length);
 
   // Recursively sort the left half
-  const leftSorted = mergeSort(left);[1, 2, 3, 4]
+  const leftSorted = mergeSort(left);
   // Recursively sort the right half
-  const rightSorted = mergeSort(right);, [100, 800, 900, 100]
+  const rightSorted = mergeSort(right);
 
   // Merge the halves together and return
   return merge(leftSorted, rightSorted);
