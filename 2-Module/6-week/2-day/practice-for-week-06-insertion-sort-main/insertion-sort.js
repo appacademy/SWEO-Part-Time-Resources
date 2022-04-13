@@ -5,10 +5,6 @@ function insertionSort(arr) {
   Pseudocode:
 
   Copy the original array
-<<<<<<< HEAD
-  
-=======
->>>>>>> 2022-Jan-W
   Create an array to store the sorted values
   While the array is not empty:
   - make sure you have a console.log(sorted.join(',')) as your first line in the while loop
