@@ -1,8 +1,8 @@
 {
-  "name": "insertion-sort",
+  "name": "custom-sort",
   "version": "1.0.0",
   "description": "",
-  "main": "insertion-sort.js",
+  "main": "custom-sorts.js",
   "directories": {
     "test": "test"
   },

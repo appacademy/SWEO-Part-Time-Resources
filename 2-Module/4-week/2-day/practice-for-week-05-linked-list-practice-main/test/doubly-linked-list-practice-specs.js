@@ -74,13 +74,6 @@ describe('Doubly Linked List', () => {
 
         it('addToTail adds head if no head exists', () => {
             expect(doublyLinkedList.head.value).to.equal(1);
-<<<<<<< HEAD
-            // expect(doublyLinkedList.tail.next).to.equal(null)
-            // expect(doublyLinkedList.head.next).to.equal(null)
-            // expect(doublyLinkedList.head.prev).to.equal(null)
-            // expect(doublyLinkedList.tail.prev).to.equal(null)
-=======
->>>>>>> 2022-Jan-E
         });
 
         it('addToTail links the prev property in the correct order', () => {

@@ -1,3 +1,24 @@
+<<<<<<< HEAD
+// *min max*
+// binary search -- recurse all the way left or right
+// binary -- visit every node and keep track current max or min
+// *Height*
+// recurse, count nodes, minus 1 when you see null
+// compare left and right 
+// *count nodes*
+// visit every node and count
+// *Balanced tree*
+// compare the heights of left and right
+// *Get Parent*
+// find the node that point to your target, thats the parent 
+// *node deletion*
+// no children, -- make the node null
+// on child, parents child becomes node to deletes child
+// two children, replace the value of the node to delete with the in order predecessor,  
+// and then delete the in order predecessor 
+// */
+
+=======
 const adjList = {
     1: [2, 5],
     2: [1, 3, 5],
@@ -34,3 +55,4 @@ const adjList = {
   console.log("Third Test:")
   printDepthFirst(4); // Prints 1 through 6 in Depth-first order, starting with 4
                       // One possible solution:  4, 6, 5, 2, 1, 3
+>>>>>>> 2022-Jan-W

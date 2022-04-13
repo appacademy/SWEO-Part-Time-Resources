@@ -1,30 +1,5 @@
 // Insertion Sort out-of-place
 // Do not modify the original array
-const insert = (arr, val) => {
-  let newArr = arr.slice()
-  // for empty array
-  if(newArr.length ===0){
-    newArr.push(val)
-    return newArr
-  }
-  //check beginning 
-  if(val < newArr[0]){
-    newArr.unshift(val)
-    return newArr
-  }
-  // check end
-  if(val > newArr[newArr.length -1]){
-    newArr.push(val)
-    return newArr
-  }
-  // check middle
-  arr.forEach((element, i) => {
-    if(val < element && val > newArr[i-1]){
-      newArr = [...newArr.slice(0, i), val, ...newArr.slice(i)]
-    }
-  });
-  return newArr
-}
 function insertionSort(arr) {
   /*
   Pseudocode:
@@ -42,16 +17,38 @@ function insertionSort(arr) {
   - Insert the unsorted value at the break point
   Return the sorted array
   */
-
   let array = arr.slice()
   let sorted = []
   while(array.length){
     console.log(sorted.join(','))
-    let val = array.pop()
-    sorted = insert(sorted, val)
+    let value = array.pop()
+    sorted = insert(sorted, value)
   }
   return sorted
-
+}
+function insert(array, value){
+  // checking if the array is empty
+  if(array.length === 0 ){
+    array.push(value)
+    return array
+  }
+  // checking the beginning of the array
+  if(value < array[0]){
+    array.unshift(value)
+    return array
+  }
+  // checking the end of the array
+  if(value > array[array.length -1]){
+    array.push(value)
+    return array
+  }
+  // [1,3,4]
+  array.slice().forEach((element, i) => {
+    if(value > element && value < array[i + 1]){
+      array = [...array.slice(0, i+1), value, ...array.slice(i+1)]
+    }
+  });
+  return array 
 }
 
 // In-place Insertion Sort
@@ -73,10 +70,6 @@ function insertionSortInPlace(arr) {
   Return the mutated array
   */
 
-  // arr = [4,5,6,7,4,3,5,6]
-  // pointer = 1
-  // val = 5
-
   let pointer = 1
   while(pointer < arr.length){
     console.log(arr.join(','))
@@ -90,7 +83,6 @@ function insertionSortInPlace(arr) {
      pointer ++
   }
   return arr
-} 
+}
 
-console.log(insertionSortInPlace([3,6,7,4,5,9,8,5,6,7,3,2]))
 module.exports = [insertionSort, insertionSortInPlace];

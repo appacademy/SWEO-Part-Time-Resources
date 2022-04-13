@@ -13,6 +13,56 @@ class BinarySearchTree {
     this.root = null
   }
 
+<<<<<<< HEAD
+  insert(val, currentNode=this.root) {
+    let newNode = new TreeNode(val)
+    // base Case
+    if(currentNode === null){
+      this.root = newNode
+      return 
+    }
+    if(val < currentNode.val){
+      if(currentNode.left === null){
+        currentNode.left = newNode
+      }else{
+        this.insert(val, currentNode.left)
+      }
+    }
+    if(val > currentNode.val){
+      if(currentNode.right === null){
+        currentNode.right = newNode
+      }else{
+        this.insert(val, currentNode.right)
+      }
+    }
+  }
+
+  // search(val) {
+  //   let currentNode = this.root
+
+  //   while(currentNode){
+  //     if(val < currentNode.val){
+  //       currentNode = currentNode.left
+  //     }
+  //     else if(val > currentNode.val){
+  //       currentNode = currentNode.right
+  //     }
+  //     else{
+  //       return true
+  //     }
+  //   }
+  //   return false
+  // }
+  search(val, current = this.root) {
+    if(current === null) return false 
+    if(current.val === val) return true
+    if(val < current.val) {
+      return this.search(val, current.left)
+    }
+    else if(val > current.val){
+      return this.search(val, current.right)
+    }
+=======
 //  // Recursively 
 //   insert(val, currentNode=this.root) {
 //     // One liner for fun
@@ -100,6 +150,7 @@ insert(val, currentNode=this.root) {
     if(val === current.val) return true
     if(val < current.val) return this.search(val, current.left)
     else return this.search(val, current.right)
+>>>>>>> 2022-Jan-W
   }
 
 

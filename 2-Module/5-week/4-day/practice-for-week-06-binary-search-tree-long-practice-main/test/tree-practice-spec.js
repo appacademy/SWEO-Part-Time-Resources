@@ -291,6 +291,19 @@ describe('Binary Tree Practice', () => {
       expect(bstRoot.left.left).to.equal(null);
       expect(bstRoot.left.right).to.equal(null);
 
+<<<<<<< HEAD
+      // deleteNodeBST(bstRoot, 5);
+      // deleteNodeBST(bstRoot, 6);
+      // expect(bstRoot.right.val).to.equal(7);
+      // expect(bstRoot.right.left).to.equal(null);
+      // expect(bstRoot.right.right).to.equal(null);
+
+      // deleteNodeBST(bstRootUnbalanced, 3);
+      // expect(bstRootUnbalanced.right.right.val).to.equal(4);
+      // expect(bstRootUnbalanced.right.right.right.val).to.equal(5);
+      // expect(bstRootUnbalanced.right.right.right.right.val).to.equal(6);
+      // expect(bstRootUnbalanced.right.right.right.right.right.val).to.equal(7);
+=======
       deleteNodeBST(bstRoot, 5);
       deleteNodeBST(bstRoot, 6);
       expect(bstRoot.right.val).to.equal(7);
@@ -302,6 +315,7 @@ describe('Binary Tree Practice', () => {
       expect(bstRootUnbalanced.right.right.right.val).to.equal(5);
       expect(bstRootUnbalanced.right.right.right.right.val).to.equal(6);
       expect(bstRootUnbalanced.right.right.right.right.right.val).to.equal(7);
+>>>>>>> 2022-Jan-W
 
     });
 
@@ -312,7 +326,11 @@ describe('Binary Tree Practice', () => {
       expect(bstRoot.right.left).to.equal(null);
       expect(bstRoot.right.right.val).to.equal(7);
 
+<<<<<<< HEAD
+      console.log(deleteNodeBST(bstRoot, 4));
+=======
       deleteNodeBST(bstRoot, 4);
+>>>>>>> 2022-Jan-W
       expect(bstRoot.val).to.equal(3);
       expect(bstRoot.left.val).to.equal(2);
       expect(bstRoot.left.left.val).to.equal(1);

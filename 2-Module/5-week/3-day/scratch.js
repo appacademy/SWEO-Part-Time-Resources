@@ -35,7 +35,6 @@ push children
 *
 
 
-
 *
 Iterative depth first, using a stack.  mimic's the call stack
 
