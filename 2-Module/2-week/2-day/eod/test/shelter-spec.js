@@ -39,7 +39,7 @@ describe("User", function () {
 
 describe("Animal", function () {
 	it("should set name and age on creation", function () {
-	  let animal = new animalShelter2("Maxie", 3);
+	  let animal = new Animal("Maxie", 3);
 
 	  expect(animal.name).to.equal("Maxie");
 	  expect(animal.age).to.equal(3);
