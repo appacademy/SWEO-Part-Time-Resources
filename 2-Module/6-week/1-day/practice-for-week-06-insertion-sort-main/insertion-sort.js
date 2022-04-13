@@ -1,39 +1,5 @@
 // Insertion Sort out-of-place
 // Do not modify the original array
-<<<<<<< HEAD
-const insert = (array, value) => {
-  // if the array is empty
-  if(array.length ===0 ) {
-    array.push(value)
-    return array
-  }
-  // check beginning 
-  if(value < array[0]){
-    array.unshift(value)
-    return array
-  }
-  // check the end
-  if(array[array.length -1] < value){
-    array.push(value)
-    return array
-  }
-
-  array.slice().forEach((element, i) => {
-    // 3
-    //[1,2,4,5,6]
-    // [1, 2, 3, 4, 5, 6]
-    if(value > element && value < array[i+1]){
-      array = [...array.slice(0, i+1), value, ...array.slice(i+1)]
-    }
-    
-  });
-
-  return array
-
-}
-
-=======
->>>>>>> 2022-Jan-W
 function insertionSort(arr) {
   /*
   Pseudocode:
