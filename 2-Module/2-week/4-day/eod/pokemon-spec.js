@@ -42,6 +42,8 @@ describe("Trainer", function(){
 
 		const pokemon2 = new Pokemon('Pikachu', 120, 'Electric', 21, 'Pikachu');
 
+		trainer.catch(pokemon2)
+
 		expect(trainer.pokemons.length).to.equal(2);
 		expect(trainer.pokemons[1]).to.deep.equal(pokemon2);
 	})
