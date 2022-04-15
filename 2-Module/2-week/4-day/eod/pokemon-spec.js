@@ -37,13 +37,15 @@ describe("Trainer", function(){
 
 		trainer.catch(pokemon)
 
-		expect(trainer.pokemons.length).to.equal(1);
-		expect(trainer.pokemons[0]).to.deep.equal(pokemon);
+		expect(trainer.pokemon.length).to.equal(1);
+		expect(trainer.pokemon[0]).to.deep.equal(pokemon);
 
 		const pokemon2 = new Pokemon('Pikachu', 120, 'Electric', 21, 'Pikachu');
 
-		expect(trainer.pokemons.length).to.equal(2);
-		expect(trainer.pokemons[1]).to.deep.equal(pokemon2);
+		trainer.catch(pokemon2)
+
+		expect(trainer.pokemon.length).to.equal(2);
+		expect(trainer.pokemon[1]).to.deep.equal(pokemon2);
 	})
 
 	it('should be able to release a pokemon', function(){
