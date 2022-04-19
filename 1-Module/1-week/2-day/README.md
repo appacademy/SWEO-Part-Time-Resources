@@ -1,4 +1,7 @@
 # W1D2
+We will be doing a reverse classroom style. 
+
+Best way to learn in this field is by actively practicing/coding, then running into a problem and finding ways to solve those problems (parsing documentations, asking questions, etc.)
 
 ## a/A Update Command Line Tool
 
