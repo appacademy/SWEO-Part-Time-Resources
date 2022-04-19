@@ -14,6 +14,8 @@
 
 CohortID === `2022-Apr-E`
 
+**Important:** SWEO-PART-TIME-RESOURCE Folder is READ ONLY, if you make changes, it might delete those changes. Your changes should go in the folders above (1-Module, 2-Module)
+
 ## Learning boost!: 5 minutes
 
 ## Here we go: 20 mins
