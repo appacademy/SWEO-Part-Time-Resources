@@ -1,9 +1,9 @@
 # W1D2
-- We will be doing a reverse classroom style.
+- **reverse classroom**: We will be doing a reverse classroom style.
 
-- Syntax drilling: Working on learning foundational and fundamental tools.
+- **Syntax drilling**: Working on learning foundational and fundamental tools.
 
-- Best way to learn in this field is by actively practicing/coding, then running into a problem and finding ways to solve those problems (parsing documentations, notes, asking questions, etc.)
+- **reverse engineering**: Best way to learn in this field is by actively practicing/coding, then running into a problem and finding ways to solve those problems (parsing documentations, notes, asking questions, etc.)
 
 ## a/A Update Command Line Tool
 
