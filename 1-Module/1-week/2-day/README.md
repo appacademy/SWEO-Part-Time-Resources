@@ -3,7 +3,7 @@
 
 - Syntax drilling: Working on learning foundational and fundamental tools.
 
-- Best way to learn in this field is by actively practicing/coding, then running into a problem and finding ways to solve those problems (parsing documentations, asking questions, etc.)
+- Best way to learn in this field is by actively practicing/coding, then running into a problem and finding ways to solve those problems (parsing documentations, notes, asking questions, etc.)
 
 ## a/A Update Command Line Tool
 
