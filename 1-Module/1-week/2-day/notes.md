@@ -6,6 +6,8 @@
 - **Notes:** Then try the cheatsheet / notes (**5 minutes**)
 - **Question:** Mandatory to ask question
 
+struggling a bit will help ya learn!! It's always more memorable
+
 ## <span style="color:#3c78d8;">console.log(...) </span>
 This is a way to output the expression inside the parentheses of the console.log into the terminal.  
 
