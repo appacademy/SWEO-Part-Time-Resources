@@ -1,6 +1,9 @@
 # W1D3
 
 ## Notes
+- aa_update
+  - inside the instructors folder (ls, then cd into `SWEO-Part-Time-Resource`)
+  - run: `aa_update`
 - Incorrectly filled out reports will result in a strike. Don't get a strike! If
   you have any questions make sure to reach out to a member of staff and ask!
 - Live Questions Channel
@@ -10,7 +13,9 @@
     - Room # (if applicable)
     - Context | what you have tried (i.e. "I have a technical issue", "I'm not quite sure how... I tried this...", etc.)
     - Screenshot of issue, problem, etc. (if possible or applicable)
-
+- How to Learn to Code Faster Than Anyone Else - Syntax Drilling Fundamentals
+  - Continue Syntax Drilling!! Don't copy paste! Do, Delete, Repeat. 
+  - https://www.reddit.com/r/learnjavascript/comments/c3hvb2/just_ran_into_a_very_wise_noob_thought_id_share/
 ## Here we go: 15 mins
 
   1. [String Operators]
