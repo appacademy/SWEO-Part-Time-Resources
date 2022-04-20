@@ -1,0 +1,11 @@
+body{
+    height: 10000px;
+}
+
+.form1{
+    padding: 10px;
+    border: 3px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
