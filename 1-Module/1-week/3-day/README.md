@@ -4,6 +4,7 @@
 - aa_update
   - inside the instructors folder (ls, then cd into `SWEO-Part-Time-Resource`)
   - run: `aa_update`
+  - remember: `SWEO-Part-Time-Resource` is **read-only**, **anything added** there might get **deleted** or cause other issues.
 - Incorrectly filled out reports will result in a strike. Don't get a strike! If
   you have any questions make sure to reach out to a member of staff and ask!
 - Live Questions Channel
