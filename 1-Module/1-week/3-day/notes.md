@@ -100,7 +100,7 @@ A function ([MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Refere
 ```javascript=
 // Function declaration / definition
 function house_blue_print(name_parameter) {
-  return name + '\'s' + ' house';
+  return name_parameter + '\'s' + ' house';
 }
 ```
 
