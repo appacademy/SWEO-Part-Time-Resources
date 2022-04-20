@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>My HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="header-and-p">
+        <h1 class="main-header" align="center">My HTML Cheat Sheet</h1>
+    
+        <h2>Headings</h2>
+    
+        <p>
+            Headings from `h1` to `h6`
+            identify blocks and sections.
+            Every page must have one `h1`.
+        </p>
+    
+        <h2>Paragraphs</h2>
+    
+        <p>
+            Paragraphs of text go in `p` tags.
+        </p>
+    </div>
+
+    <h2>Lists</h2>
+
+    <h4>Types of lists</h4>
+    <h3>Unordered Lists</h3>
+    <p>
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+    </p>
+    <ul>
+        <li>Unordered lists (`ul`)</li>
+        <li>Ordered lists (`ol`)</li>
+    </ul>
+    <h3>Ordered Lists</h3>
+    <p>
+        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+    </p>
+    <ol>
+        <li>Understand the problem</li>
+        <li>Come up with a plan</li>
+        <li>Carry out the plan</li>
+        <li>Go back and improve your solution</li>
+    </ol>
+
+    <h2>Anchors (i.e. links)</h2>
+    <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attribute.
+        <a href="https://www.google.com" target="_blank">Anything you want</a>
+        
+    </p>
+
+    <h2>Images</h2>
+    <p>
+        You can use the img tag to add images to your page.
+        <img src="https://www.babyanimalzoo.com/wp-content/uploads/2011/10/cute-baby-hippo-tortoise-friends-pic-150x150.jpg"
+            alt="A cute Hippo">
+    </p>
+
+    <h2>Table tag</h2>
+
+    <table>
+        <thead>
+            <th scope="col">Insect</th>
+            <th scope="col">Family</th>
+            <th scope="col">Fact</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">LadyBug</th>
+                <td>Coccinellidae</td>
+                <td>Can eat more than 5,000 insects!</td>
+            </tr>
+            <tr>
+                <th scope="row">Fruit flies</th>
+                <td>Drosophilidae</td>
+                <td>First living creatures in outer space!</td>
+            </tr>
+            <tr>
+                <th scope="row">Caterpillars</th>
+                <td>Heterobathmiidae</td>
+                <td>Have 12 eyes!</td>
+              </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>I had no ideas!</td>
+                <td>Those are neat!</td>
+              </tr>
+        </tfoot>
+    </table>
+
+    <form class="my-form" action="">
+        <h1 align="center">Log in Below</h1>
+        <label for="username"> Enter your username : </label>
+        <input id="username" type="text">
+        <label for="password"> Enter your password : </label>
+        <input name="password" type="password">
+        <button type="submit" > Login</button>
+    </form>
+</body>
+
+</html>
