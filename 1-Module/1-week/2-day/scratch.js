@@ -1,4 +1,4 @@
-// CONSOLELOG
+// CONSOLELOG ---
 // Print out your favorite food using console.log below:
 console.log('wes', "wings");
 console.log("nelson", "ceviche");
