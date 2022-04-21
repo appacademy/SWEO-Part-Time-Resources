@@ -46,13 +46,13 @@ const graph1 = {
     T: ['V'],
     U: ['V'],
     V: [],
-};
+  };
   
-const graph2 = {
+  const graph2 = {
     X: ['Y'],
     Y: ['Z'],
     Z: ['X'],
-};
+  };
   
   const graph3 = {
     A: ['B', 'C'],
@@ -84,7 +84,7 @@ class GraphNode {
 //breadth first search.  searching as you traverse 
 
 // shortest path, bfs but you are keeping track of paths rather than nodes themselves 
-// first complete path you encounter will be the shortest
+// first complete path you encounter with be the shortest
 
 
 // length of separation is just the length of paths 
