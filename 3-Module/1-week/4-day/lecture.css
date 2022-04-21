@@ -1,0 +1,12 @@
+.div-1{
+    width: 100px;
+    height: 100px;
+    margin: 100px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    padding: 10px;
+}
+.span-1{
+    margin: 100px;
+    border: 1px solid black;
+}
