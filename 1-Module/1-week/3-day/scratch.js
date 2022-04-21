@@ -74,3 +74,33 @@ function isCool(string) {
 
 // Call the above function passing in the below arguments:
 console.log(isCool("Wes"));
+
+
+// -------------------POLYA's PLAN------------
+//plan is better than the code
+function averageOfTwo(num1, num2) {
+    //understand the problem --> see inputs and outputs if question doesn't make sense
+        //see that 3 + 7 is 10 and then 10 / 2 will tield is 5.
+    //write a plan - in english as closely as you can, resemble to code 
+        //first add the numbers together and store it in a variable called total
+          //total = first num + second num
+        //we know the average is always static, will be always 2, variable average = 2
+            //avg = 2
+        //we want to take the total divide it by the averge and the store it a variable called result.
+            //result = total / 2
+        //return result
+            //return result
+            
+    //execution - write the code from the plan
+    // let total = num1 + num2;
+    // let average = 2;
+    // let result = total / 2;
+    // return result;
+    
+    //refactor, see if we can improve, etc.
+    return (num1 + num2) / 2;
+  }
+  
+  console.log(averageOfTwo(3, 7)); // => 5
+  console.log(averageOfTwo(16, 5)); // => 10.5
+  console.log(averageOfTwo(2, 7.5)); // => 4.75
