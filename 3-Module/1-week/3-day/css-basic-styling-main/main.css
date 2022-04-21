@@ -1,37 +1,41 @@
+*{
+    background-color: lightgray;
+}
+
 h1 {
-    font-size: ;
-    font-family: ;
-    padding: ;
-    margin: ;
-    font-weight: ;
-    text-decoration: ;
-    color: ;
-    background-color: ;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    margin: auto;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: red;
+    background-color: cornflowerblue;
 }
 
 h2 {
-    font-size: ;
-    font-family: ;
-    padding: ;
-    margin: ;
-    font-weight: ;
-    color: ;
-    background-color: ;
+    font-size: 40px;
+    font-family: fantasy;
+    padding: 10px;
+    margin: 50px;
+    font-weight: 900;
+    color: orange;
+    background: linear-gradient(#F69D3C, #3F87A6);
 }
 
 p {
-    font-family: ;
-    font-size: ;
-    padding: ;
-    margin: ;
-    color: ;
-    background-color: ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1pc;
+    padding: 10px;
+    margin: auto;
+    color: maroon;
+    background-color: tomato;
 }
 
 .logo {
     background-size: cover;
-    background-image: url();
-    background-color: ;
-    height: ;
-    width: ;
+    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fscreenrant.com%2Fthat-70s-show-circle-trope-gag-battle-network-censorship-drug-use-explained%2F&psig=AOvVaw2qShhAflHssYt_jVw08U2t&ust=1650585271576000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiOy7nro_cCFQAAAAAdAAAAABAD");
+    background-color: pink;
+    height: 200px;
+    width: 200px;
 }
