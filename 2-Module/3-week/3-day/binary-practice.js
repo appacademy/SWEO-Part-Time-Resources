@@ -13,9 +13,25 @@ and consult their documentation on how to utilize them:
 /*
 Base 10 to binary
 */
-function deciToBinary() {
+// function deciToBinary(n, res = []) {
+// 	if (n === 0) return `0b${res.join("")}`;
 
+// 	let digit = n % 2;
+// 	if (digit === 0) {
+// 	  res.unshift(digit);
+// 	  return deciToBinary(n / 2, res);
+// 	} else {
+// 	  res.unshift(digit);
+// 	  return deciToBinary((n - 1) / 2, res);
+// 	}
+// }
+
+function deciToBinary(num) {
+	// return `0b${num.toString(2)}`;
+	let binary = (num >>> 0).toString(2);
+    return `0b${binary}`;
 }
+
 
 console.log('Base 10 to binary:');
 console.log(deciToBinary(8)); // '0b1000'
@@ -26,7 +42,8 @@ console.log('');
 /*
 Base 10 to hexadecimal
 */
-function deciToHexa() {
+function deciToHexa(n) {
+	return `0x${n.toString(16)}`;
 }
 
 console.log('Base 10 to hexadecimal:');
@@ -38,7 +55,8 @@ console.log('');
 /*
 Binary to base 10
 */
-function binaryToDeci() {
+function binaryToDeci(string) {
+	return parseInt(string.substring(2), 2);
 }
 
 console.log('Binary to base 10:');
@@ -49,7 +67,8 @@ console.log('');
 /*
 Hexadecimal to base 10
 */
-function hexaToDeci() {
+function hexaToDeci(string) {
+	return parseInt(string);
 }
 
 console.log('Hexadecimal to base 10:');
@@ -60,9 +79,17 @@ console.log('');
 /*
 Binary to hexadecimal
 */
-function binaryToHexa() {
-
+function binaryToHexa(str) {
+	str = str.substring(2)
+	let num = parseInt(str, 2)
+	return '0x' + num.toString(16)
 }
+
+// function binaryToHexa(b) {
+//     return b.substring(2).match(/.{4}/g).reduce(function(acc, i) {
+//         return acc + parseInt(i, 2).toString(16);
+//     }, '0x')
+// }
 
 console.log('Binary to hexadecimal:');
 console.log(binaryToHexa('0b1010')); // '0xa'
@@ -72,8 +99,15 @@ console.log('');
 /*
 Hexadecimal to binary
 */
-function hexaToBin() {
+function hexaToBin(string) {
+	return `0b${parseInt(string).toString(2)}`;
 }
+
+// function hexaToBin(h) {
+//     return h.substring(2).split('').reduce(function(acc, i) {
+// 			return acc + ('000' + parseInt(i, 16).toString(2)).substring(-4, 4);
+// 	}, '0b')
+// }
 
 console.log('Hexadecimal to binary:');
 console.log(hexaToBin('0xa1')); // '0b10100001'
@@ -81,12 +115,13 @@ console.log(hexaToBin('0xff')); // '0b11111111'
 console.log('');
 
 
-// bonus
+// // bonus
 
 /*
 Base 10 to ASCII
 */
-function deciToAscii() {
+function deciToAscii(num) {
+	return String.fromCharCode(num);
 }
 
 console.log('Base 10 to ASCII:');
@@ -99,7 +134,9 @@ console.log('');
 /*
 Hexadecimal to ASCII
 */
-function hexaToAscii() {
+function hexaToAscii(string) {
+	// return String.fromCharCode(parseInt(string));
+	return String.fromCharCode(string);
 }
 
 console.log('Hexadecimal to ASCII:');
@@ -112,7 +149,9 @@ console.log('');
 /*
 Binary to ASCII
 */
-function binToAscii() {
+function binToAscii(bin) {
+	num = bin.toString()
+	return String.fromCharCode(num)
 }
 
 console.log('Binary to ASCII:');
@@ -125,7 +164,8 @@ console.log('');
 /*
 ASCII to decimal
 */
-function asciiToDeci() {
+function asciiToDeci(blob) {
+	return blob.charCodeAt(0)
 }
 
 console.log('ASCII to decimal:');
@@ -135,7 +175,10 @@ console.log(asciiToDeci('a')); // 97
 console.log(asciiToDeci('b')); // 98
 console.log(' ')
 
-function asciiStrToDeci() {
+function asciiStrToDeci(str) {
+	for(let i=0;i<str.length; i++){
+		console.log(str.charCodeAt(i))
+	}
 }
 
 asciiStrToDeci('abc'); // 97 98 99
