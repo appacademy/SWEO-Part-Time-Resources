@@ -1,5 +1,5 @@
 ## <span style="color:#3c78d8;">VSCode Readers </span>
-- Wes's tip: Install the extension `HackMD` for a nice and pretty preview :D
+- Wes's tip: Install the extension `HackMD` for a nice and pretty preview :)
 
 - Continue Syntax Drilling!! Don't copy paste! Do, Delete, Repeat.  https://www.reddit.com/r/learnjavascript/comments/c3hvb2/just_ran_into_a_very_wise_noob_thought_id_share/
 
