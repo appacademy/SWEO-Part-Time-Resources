@@ -1,4 +1,37 @@
 /* Your code here */
+#page-title{
+    font-weight: bold;
+}
+
+.pagenum{
+    position: absolute;
+    right: 1%;
+    font-size: small;
+}
+
+p{
+    margin-top: .75em;
+    margin-bottom: .75em;
+    text-align: justify;
+}
+
+pre{
+    margin: 100px auto;
+    width: fit-content;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+pre > a {
+    color: black;
+}
 
 /* ===== DO NOT EDIT BELOW THIS COMMENT ===== */
 
