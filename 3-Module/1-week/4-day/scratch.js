@@ -69,7 +69,8 @@ From innermost is goes
     box shadow and text shadow takes 5 possible values 
     The first two lengths are the horizontal and vertical offsets of the shadow.
 
-    The third length, if provided, is the blur radius of the shadow. The bigger this number, the bigger the blur, so the bigger the shadow.
+    The third length, if provided, is the blur radius of the shadow. The bigger this number, the bigger the blur, 
+    so the bigger the shadow.
 
     The fourth length, if provided, is the spread radius. Positive values make the shadow expand. Negative values make it shrink.
 
@@ -83,9 +84,7 @@ From innermost is goes
     Position property -- static or not positioned top bottom left right dont apply
     -- relative the top bottom left right are off set values relative to itself, and does not effect other elements
     -- absolute element is removed from the flow of the document and no space is made between other elements for it ont he page 
-    --  same as absolute, but its left right top bottom are relative to the parent 
+    -- fixed removed from the flow,  no space is made and is position relative to nearest block level element
     -- sticky The element is positioned according to the normal flow of the document, and then offset relative to its nearest 
-    scrolling ancestor and containing block (nearest block-level ancestor), 
-    including table-related elements, based on the values of top, right, bottom, and left. 
-    The offset does not affect the position of any other elements.
+    scrolling ancestor 
 */
