@@ -1,4 +1,4 @@
-## <span style="color:#3c78d8;">Conditional Statements (control flow)</span>
+## <span style="color:#3c78d8;">Conditional Statements (control flow) :)</span>
 - **control flow** is the **order** in which **instructions** are **executed** within a program.
 - **conditional statements** perform **different actions** based on **different conditions**
     - `if`, `else` `if`, `if...else`
