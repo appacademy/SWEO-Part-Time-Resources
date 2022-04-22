@@ -1,5 +1,5 @@
 
-// ------------------------- IF ELSE IF ELSE Conditional Statements-------------------------
+// -------------- IF ELSE IF ELSE Conditional Statements-------------
 
 // if(300 === 300){ //true
 // 	console.log("THIS IS 300!");
