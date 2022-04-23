@@ -277,23 +277,28 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
 
 ## Practice Assessment - 1hr
 
-We will be treating this as a mock assessment to get you used to how assessments
+- We will be treating this as a mock assessment to get you used to how assessments
 will work at aA.
+
+- If you have 
 
 You have access to:
 
 - aA open
+  - including homework
+  - problems you did
+  - REPL (to run code)
 - MDN
 - any code you have written outside of code from previous assessments.
 - US! (but to elaborate and explain question)
-- REPL (to run code)
 - VSCode
 
-You are not permitted to use:
 
+You are not permitted to use:
 - Google
 - Notes
 - Wes's lecture notes
+- PREVIOUS ASSESSMENTS ARE NOT ALLOWED
 - anything not in the listed resources
 
 During this time we will only answer questions about technical issues and
@@ -306,14 +311,19 @@ Mandatory
 
 
 ## STUDY TIME: Things to work on...
-- Practice Assessment!!! Repeat
+- Practice Assessment!!! DO, DELETE, REPEAT
 - Recommend Problems to do!!
   - []
   - []
 - Objectives to Know for Assessment
-  - How to access and read data from an array
-  - ...
-- syntax
+  - [How to access and read data from an array]
+  - [Mutability]
+  - [JavaScript uses Pemdas!]
+  - [Conditionals]
+  - [Modulo Operator]
+  - [Strict equality ===, loose equality ==]
+- Continue working on problems + syntax
+  - DO, DELETE, REDO (put in those reps!!)
 
 ## Extra Problems
 
