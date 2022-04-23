@@ -1,6 +1,6 @@
 /*
  css selectors, 
-
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors
     Type selectors, select by the type of html tag
 
     div{
