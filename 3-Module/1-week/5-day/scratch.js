@@ -30,6 +30,7 @@
 
 
     Css sizes
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
 
     Absolute units of measurement 
     cm	Centimeters	1cm = 37.8px = 25.2/64in -- rarely used
@@ -38,7 +39,7 @@
     in	Inches	1in = 2.54cm = 96px -- rarely used
     pc	Picas	1pc = 1/6th of 1in -- rarely used
     pt	Points	1pt = 1/72th of 1in -- rarely used
-    px	Pixels	1px = 1/96th of 1in -- rarely used
+    px	Pixels	1px = 1/96th of 1in
 
     relative units of measurement 
     unit | Relative to 
@@ -54,18 +55,25 @@
 
 
     Box model, inner out content padding border margin
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model
 
     display border-box, fits content + padding + border in your set height/width
 
     Box shadow
+    https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 
     border 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/border
 
     elements default to the position of static, ie, not positioned 
-
+  
     positioning 
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning#relative_positioning
+
 
     rgb, rgba functions
-
+    rgb --https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgb
+    rgba -- https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/rgba
     specificity 
+    https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 */
