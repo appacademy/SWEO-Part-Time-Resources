@@ -8,17 +8,17 @@
 5. Practice Assessment
 
 **_Quick Notes_**:
-1. The assessment: 
+1. The assessment:
    1. **Hint**: it will be very similar to your practice assessment (study conditional statements ;))
    2. **Thursday and Today** is heavy on the content, but don't worry, most will not be on the first assessment (Doesn't mean we can slack off! Snowball effect).
-      1. It might be a lot, but don't worry, we want that 'desired level of difficulty'. 
+      1. It might be a lot, but don't worry, we want that 'desired level of difficulty'.
       2. Active learning is definitely not easy. Gotta keep ya on ya toes! If it's too easy, then we're not learning!
       3. Can't have an obstacle in life and go back to what is easy. Don't give up, keep on growing!
 
 
 
 2.  **Best way to learn:**
-    1.  Code it 
+    1.  Code it
         1.  - TRY ANYTHING, even if you don't know the syntax.
     2.  Run code
     3.  See error
@@ -26,7 +26,7 @@
         1.  **IMPORTANT: DO NOT stare down your code. Mandatory to ask for help after 5 minutes of being stuck**
     5.  Raise a hand, ask for live & guided help.
 
-3. New question format + order of resources when stuck on a problem: 
+3. New question format + order of resources when stuck on a problem:
    1.  **Your current knowledge**: Think about the tools you have and learned, for example:
        1. Conditionals - execution of code block if condition is met
        2. Arrays - container to hold a list of different data
@@ -37,9 +37,9 @@
          1. Because students are first learning, they need to be directed and shown **HOW to** access resources and not be stuck.
    3. Quiz!
 
-4. **LESS passive walkthroughs, MORE active practice, and Homework:** 
+4. **LESS passive walkthroughs, MORE active practice, and Homework:**
    1. We won't go over every problem during discussion
-   today to allow more time to practice. 
+   today to allow more time to practice.
    1. This makes it even **more important** for you to **ask for help** if you don't
    understand a problem. We are more than happy to pop into your room and help!
    1. At the end of the day, it's still a **reverse classroom** style course. So doing **HOMEWORK** is soooo important.
@@ -53,7 +53,7 @@
 ## Practice Set 1 - 25m
 
 New Zoom format for when question is asked:
-   1.  This allows every student to have an equitable experience and an equal chance to be heard.  
+   1.  This allows every student to have an equitable experience and an equal chance to be heard.
 ```javascript=
 if(hand_raised_reaction === true){
     return 'student unmutes and provide their answer!'
@@ -322,6 +322,7 @@ Mandatory
 - [Pig Latin Recall]
 - [Least Common Multiple]
 
+## Things to know
 ---
 
 ## Nested Loops - 30m (Optional for today, will cover more next week)
@@ -382,4 +383,3 @@ for (let i = 0; i < dogs.length; i++) {
 
 [unique pairs in arrays]: ./images/unique_pairs_in_arrays.png
 [pairs in arrays]: ./images/pairs_in_arrays.png
-
