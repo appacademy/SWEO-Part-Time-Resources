@@ -2,9 +2,20 @@
 
 /******************************************************************************/
 
+// const convertToBase10 = str => {
+//   // Your code here
+// };
+
+// const convertToBase10 = str => str.includes(`0x`) ? parseInt(str, 16) : parseInt(str.substr(2), 2)
+
 const convertToBase10 = str => {
-  // Your code here
+	if(str.includes('0b')) {
+	  return parseInt(str.substring(2), 2)
+	} else {
+	  return parseInt(str.substring(2), 16)
+	}
 };
+
 
 /******************************************************************************/
 
