@@ -305,6 +305,8 @@ questions about clarifying what is expected of you.
 Mandatory
 
 
+## STUDY TIME: Things to work on...
+
 
 ## Extra Problems
 
