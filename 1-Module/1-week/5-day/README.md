@@ -280,7 +280,7 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
 - We will be treating this as a mock assessment to get you used to how assessments
 will work at aA.
 
-- If you have 
+- If you have already done it. DELETE, REPEAT --> all about that syntax drilling.
 
 You have access to:
 
@@ -313,8 +313,9 @@ Mandatory
 ## STUDY TIME: Things to work on...
 - Practice Assessment!!! DO, DELETE, REPEAT
 - Recommend Problems to do!!
-  - []
-  - []
+  - [Vowel Counter (using If, else if, ...)](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/vowel-counter----)
+  - [Three or Seven](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/three-or-seven)
+  - [Fizz Buzz Array](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/fizz-buzz-array)
 - Objectives to Know for Assessment
   - [How to access and read data from an array]
   - [Mutability]
