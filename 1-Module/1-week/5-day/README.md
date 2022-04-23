@@ -12,8 +12,9 @@
    1. **Hint**: it will be very similar to your practice assessment (study conditional statements ;))
    2. **Thursday and Today** is heavy on the content, but don't worry, most will not be on the first assessment (Doesn't mean we can slack off! Snowball effect).
       1. It might be a lot, but don't worry, we want that 'desired level of difficulty'. 
-      2. [Can't have an obstacle in life and go back to what is easy](https://www.youtube.com/watch?v=Bnx6KlT19FU) (share audio)
-      3. Active learning is definitely not easy. Gotta keep ya on ya toes! If it's too easy, then we're not learning!
+      2. Active learning is definitely not easy. Gotta keep ya on ya toes! If it's too easy, then we're not learning!
+      3. Can't have an obstacle in life and go back to what is easy. Don't give up, keep on growing!
+
 
 
 2.  **Best way to learn:**
@@ -274,16 +275,48 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
 
 ---
 
-## Practice Set 5 - 40m
+## Practice Assessment - 1hr
 
-- [Last Vowel]
-- [Pit Pat]
-- [Remove Last Vowels]
-- [Pairs Maker]
+We will be treating this as a mock assessment to get you used to how assessments
+will work at aA.
+
+You have access to:
+
+- aA open
+- MDN
+- any code you have written outside of code from previous assessments.
+- US! (but to elaborate and explain question)
+- REPL (to run code)
+- VSCode
+
+You are not permitted to use:
+
+- Google
+- Notes
+- Wes's lecture notes
+- anything not in the listed resources
+
+During this time we will only answer questions about technical issues and
+questions about clarifying what is expected of you.
 
 ---
 
-## Nested Loops - 30m
+## Practice Assessment Walkthrough - 45m
+Mandatory
+
+
+
+## Extra Problems
+
+- [Min Value]
+- [Two Sum]
+- [Pig Latin Recall]
+- [Least Common Multiple]
+
+---
+
+## Nested Loops - 30m (Optional for today, will cover more next week)
+Refer to homework! For this section!
 
 `Nested Loops`
 
@@ -329,36 +362,15 @@ for (let i = 0; i < dogs.length; i++) {
 
 ---
 
-## Practice Assessment - 1hr
+## Practice Set 5 - 40m
 
-We will be treating this as a mock assessment to get you used to how assessments
-will work at aA.
-
-You have access to:
-
-- aA open
-- MDN
-- any code you have written outside of code from previous assessments.
-
-You are not permitted to use:
-
-- Google
-- Notes
-- William's lecture notes
-- anything not in the listed resources
-
-During this time we will only answer questions about technical issues and
-questions about clarifying what is expected of you.
+- [Last Vowel]
+- [Pit Pat]
+- [Remove Last Vowels]
+- [Pairs Maker]
 
 ---
 
-## Optional Practice Assessment Walkthrough - 45m
+[unique pairs in arrays]: ./images/unique_pairs_in_arrays.png
+[pairs in arrays]: ./images/pairs_in_arrays.png
 
-### If you feel comfortable with the practice assessment, you can continue working through the following problems, we will still be available to answer questions
-
-- [Min Value]
-- [Two Sum]
-- [Pig Latin Recall]
-- [Least Common Multiple]
-
----
