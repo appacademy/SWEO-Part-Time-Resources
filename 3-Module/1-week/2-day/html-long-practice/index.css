@@ -45,7 +45,11 @@
 }
 .footer-seperator{
     width: 90vw;
+<<<<<<< HEAD
+    border-bottom: 3px solid black;
+=======
     border-bottom: 5px solid black;
+>>>>>>> 2022-Jan-E
 }
 .footer{
     margin-top: 10px;

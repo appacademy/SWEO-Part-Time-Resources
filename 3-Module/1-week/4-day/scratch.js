@@ -66,13 +66,13 @@ From innermost is goes
     Anytime you use a color, you can specify by the rgb function -- rbg(255, 255, 255) or hex of each number concat
     as well there is an rbga function where the last arg is the opacity rbg(255, 255, 255, 0.5) half transparent
 
-    box shadow and text shadow takes 5 possible values 
+    box shadow takes 5 possible values 
     The first two lengths are the horizontal and vertical offsets of the shadow.
 
-    The third length, if provided, is the blur radius of the shadow. The bigger this number, the bigger the blur, 
+    The third value, if provided, is the blur radius of the shadow. The bigger this number, the bigger the blur, 
     so the bigger the shadow.
 
-    The fourth length, if provided, is the spread radius. Positive values make the shadow expand. Negative values make it shrink.
+    The fourth value, if provided, is the spread radius. Positive values make the shadow expand. Negative values make it shrink.
 
     The color is usually some transparent value of black, like rgba(0, 0, 0, 0.4).
 

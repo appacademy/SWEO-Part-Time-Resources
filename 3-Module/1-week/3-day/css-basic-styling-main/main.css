@@ -1,41 +1,50 @@
-*{
-    background-color: lightgray;
-}
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,700&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,700&family=Poiret+One&display=swap');
+
 
 h1 {
     font-size: 50px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     padding: 20px;
-    margin: auto;
-    font-weight: bolder;
+    margin: 0px;
+    font-weight: 700;
     text-decoration: underline;
-    color: red;
-    background-color: cornflowerblue;
+    color: magenta;
+    background-color: lime;
 }
 
 h2 {
-    font-size: 40px;
-    font-family: fantasy;
-    padding: 10px;
-    margin: 50px;
-    font-weight: 900;
-    color: orange;
-    background: linear-gradient(#F69D3C, #3F87A6);
+    font-size: 28px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;    ;
+    padding-left: 5%;
+    margin: 0px;
+    font-weight: normal;
+    /* color: ; */
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1pc;
-    padding: 10px;
-    margin: auto;
-    color: maroon;
-    background-color: tomato;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight:;
+    padding-left: 3%;
+}
+
+body{
+    background: url(https://files.123freevectors.com/wp-content/original/149873-abstract-red-and-white-business-brochure-template.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100%;
 }
 
 .logo {
     background-size: cover;
-    background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fscreenrant.com%2Fthat-70s-show-circle-trope-gag-battle-network-censorship-drug-use-explained%2F&psig=AOvVaw2qShhAflHssYt_jVw08U2t&ust=1650585271576000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCMiOy7nro_cCFQAAAAAdAAAAABAD");
-    background-color: pink;
-    height: 200px;
-    width: 200px;
+    background-image: url("https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png");
+    background-color: red;
+    height: 1000px;
+    width: 1000px;
 }

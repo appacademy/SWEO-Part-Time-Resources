@@ -20,11 +20,14 @@ pre{
     width: fit-content;
 }
 
+<<<<<<< HEAD
 
 a{
     text-decoration: underline;
 }
 
+=======
+>>>>>>> 2022-Jan-W
 a:link{
     text-decoration: none;
 }
