@@ -306,7 +306,14 @@ Mandatory
 
 
 ## STUDY TIME: Things to work on...
-
+- Practice Assessment!!! Repeat
+- Recommend Problems to do!!
+  - []
+  - []
+- Objectives to Know for Assessment
+  - How to access and read data from an array
+  - ...
+- syntax
 
 ## Extra Problems
 
