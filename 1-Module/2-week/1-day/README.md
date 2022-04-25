@@ -2,7 +2,7 @@
 
 0. Assessment! (1hr)
    1. <span style="color:#cd1d1d;">First step when you are stuck:</span>
-      1. <span style="color:#cd1d1d;">**examine inputs and outputs** </span> in the examples.
+      1. <span style="color:#cd1d1 d;">**examine inputs and outputs** </span> in the examples.
          1. what data is going in to the function(arguments),  
          2. what data are they expecting to go outside of the function (is it to return a number?, boolean?, an array?)
        1. Then read the question again.
