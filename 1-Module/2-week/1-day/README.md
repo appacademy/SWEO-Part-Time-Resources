@@ -49,7 +49,7 @@ Go through and follow the [workshop on AAOpen](https://open.appacademy.io/learn/
 
 ---
 
-## Solo Study Day: Nested Loops 
+## Solo Study Day: Nested Loops + Early Start on Homework
 
 `Nested Loops`
 - Watch [Nested Loop Homework Video Review](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/nested-loops)
