@@ -4,8 +4,7 @@
 
 Time: 1h30m
 
-- MC: 16 points
-- FR: 1 point
+- MC: 17 points
 - Specs: 18 points
 - Total: 35
 - Passing: 28
