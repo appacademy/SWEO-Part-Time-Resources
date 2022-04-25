@@ -100,8 +100,8 @@ for (let i = 0; i < dogs.length; i++) {
 - [Remove from Array](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/remove-from-array---research)
 
 ### Nested Loops Recommend Problems
-- [Pairs Maker]
-- [Two Sum]
+- [Pairs Maker](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/pairs-maker)
+- [Two Sum](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/two-sum)
 
 ---
 
