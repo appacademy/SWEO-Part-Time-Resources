@@ -2,8 +2,10 @@
 
 0. Assessment! (1hr)
    1. First step when you are stuck:
-      1. examine inputs and outputs in the examples.
-      2. what data is going in to the function(arguments), what data is going outside of the function (return x...)
+      1. **examine inputs and outputs** in the examples.
+         1. what data is going in to the function(arguments), 
+         2. what data are they expecting to go outside of the function (is it to return a boolean? an array?)
+       1. Then read the question again.
 1. Study Workshop
 2. Study Review Day
    1. Nested Loops 
