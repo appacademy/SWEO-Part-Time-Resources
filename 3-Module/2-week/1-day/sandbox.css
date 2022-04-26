@@ -1,0 +1,47 @@
+/* body{
+    height: 10000px;
+} */
+.main-container{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 10px;  
+  /* flex-flow: column wrap; */
+
+}
+.main-item{
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+}
+/* .one{
+    order: 2;
+}
+.two{
+    order:1
+}
+.three{
+    order: 3;
+}
+.four{
+    order: 4;
+}
+.five{
+    order: 5;
+}
+.six{
+    order: 6;
+}
+.seven{
+    order: 7;
+}
+.eight{
+    order: 8;
+}
+.nine{
+    order: 9;
+}
+.ten{
+    order: 10;
+} */
