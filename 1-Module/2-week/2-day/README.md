@@ -16,7 +16,6 @@
 ## Discussion Set 1
 
 - Any Questions?
-- Rotate Right Walkthrough (slice)
 
 ---
 
@@ -29,7 +28,6 @@
 ## Discussion Set 2
 
 - Any Questions?
-- Avg Value Walkthrough
 
 ---
 
@@ -42,7 +40,6 @@
 ## Discussion Set 3
 
 - Any Questions?
-- Remove E Words Walkthrough (split, join)
 
 ---
 
