@@ -6,13 +6,13 @@
 //----------plan----------------
 //strategy: what we want to do (pseudo code: how do we do it)
 
-//define function rotateRight in expression syntax (let rotateRight = function(arr, num)...)
-    //make a copy of the original array (copyArr = arr.slice() )
-    //create a for loop to repeat that process n number of times (for(let i=0; i<num) ...)
-        //inside the for loop, each time, remove the last element (lastEl = copyArr.pop()
-        //we want to then move that last element to the front (copyArr.unshift(lastEl))
+//1. define function rotateRight in expression syntax (let rotateRight = function(arr, num)...)
+    //2. make a copy of the original array (copyArr = arr.slice() )
+    //3. create a for loop to repeat that process n number of times (for(let i=0; i<num) ...)
+        //4. inside the for loop, each time, remove the last element (lastEl = copyArr.pop()
+        //5. we want to then move that last element to the front (copyArr.unshift(lastEl))
     
-    //at the very end, after the for loop repeats n times, return the copied array which is the result (return copyArr)
+    //6. at the very end, after the for loop repeats n times, return the copied array which is the result (return copyArr)
             
 
 
