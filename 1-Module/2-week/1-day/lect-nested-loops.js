@@ -1,14 +1,14 @@
 console.log("---------------nested loops pairing-------------");
-let people = ["wes", "bill", "jeff", "jesse"];
-                //["wes", "bill", "jeff", "jesse"];
-for(let i=0; i<people.length; i++){
-    let person1 = people[i];
-    // console.log(person1);
-    for(let j=0; j<people.length; j++){
-        let person2 = people[j];
-        console.log(person1, person2)
-    }
-}
+// let people = ["wes", "bill", "jeff", "jesse"];
+//                 //["wes", "bill", "jeff", "jesse"];
+// for(let i=0; i<people.length; i++){
+//     let person1 = people[i];
+//     // console.log(person1);
+//     for(let j=0; j<people.length; j++){
+//         let person2 = people[j];
+//         console.log(person1, person2)
+//     }
+// }
 
 console.log("--------------nested loops unique pairing----------")
 // let people = ["wes", "bill", "jeff", "jesse"];
