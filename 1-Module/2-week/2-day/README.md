@@ -6,7 +6,18 @@
 - open the `debug-problem.js` file and try it out.
 
 ---
+## Questions Flow
+Please ask questions when stuck for 5 minutes!!
+1.  Code it 
+    1.  - **TRY ANYTHING**, even if you don't know the syntax.
+2.  Run code
+3.  See error
+4.  See if you can debug the error (5 minutes)
+    1.  **IMPORTANT: DO NOT stare down your code. Mandatory to ask for help after 5 minutes of being stuck**
+5.  Raise a hand, ask for live & guided help.
+    - <span style="color:#cd1d1d;">**format: "I need help in room # please"**</span>
 
+---
 ## Practice Set 1 (30m)
 
 - [Array Sum]
