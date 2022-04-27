@@ -22,15 +22,10 @@ let removeEWords = function(sentence){
         	//6. then add it to the newArr (newArr.push(word))	
           	noEWords.push(currentWord);
         }
-  
     }
-
 	//7. return newArr in string format (newArr.join(' '));
   	return noEWords.join(' ');
-
 }
-
-
 
 console.log(removeEWords('What time is it everyone?')); // 'What is it'
 console.log(removeEWords('Enter the building')); // 'building'
