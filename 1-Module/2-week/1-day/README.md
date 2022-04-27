@@ -2,7 +2,7 @@
 
 0. Assessment! (1hr)
    1. <span style="color:#cd1d1d;">First step when you are stuck:</span>
-      1. <span style="color:#cd1d1d;">**examine inputs and outputs** </span> in the examples.
+      1. <span style="color:#cd1d1 d;">**examine inputs and outputs** </span> in the examples.
          1. what data is going in to the function(arguments),  
          2. what data are they expecting to go outside of the function (is it to return a number?, boolean?, an array?)
        1. Then read the question again.
@@ -49,7 +49,7 @@ Go through and follow the [workshop on AAOpen](https://open.appacademy.io/learn/
 
 ---
 
-## Solo Study Day: Nested Loops 
+## Solo Study Day: Nested Loops + Early Start on Homework
 
 `Nested Loops`
 - Watch [Nested Loop Homework Video Review](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/nested-loops)
@@ -100,8 +100,8 @@ for (let i = 0; i < dogs.length; i++) {
 - [Remove from Array](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/remove-from-array---research)
 
 ### Nested Loops Recommend Problems
-- [Pairs Maker]
-- [Two Sum]
+- [Pairs Maker](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/pairs-maker)
+- [Two Sum](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/two-sum)
 
 ---
 
