@@ -9,7 +9,7 @@
 //1. define function rotateRight in expression syntax (let rotateRight = function(array, num)...)
 let rotateRight = function(array, num){
     //2. make a copy of the original array (let copyArr = array.slice())
-
+    
     //3. create a for loop to repeat that process num number of times 
         //4. inside the for loop, each time, remove the last element (hint: look at array methods to add and remove)
        
