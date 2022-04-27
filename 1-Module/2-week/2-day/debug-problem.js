@@ -13,9 +13,9 @@ let uniquePairsMaker = function (arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
         let letter = arr[i];
-        for (let j = i+1; j < arr.length; j++) {
+        for (let j = 0; j < arr.length; j++) {
             let secondLetter = arr[j];
-            newArr.push([letter, secondLetter]);
+            newArr.unshift([letter, secondLetter]);
         }
     }
     console.log(newArr);
@@ -23,7 +23,6 @@ let uniquePairsMaker = function (arr) {
 }
 
 uniquePairsMaker(['a', 'b', 'c', 'd']); // =>
-                //['a', 'b', 'c', 'd']
 // [ [ 'a', 'b' ],
 //   [ 'a', 'c' ],
 //   [ 'a', 'd' ],
