@@ -1,0 +1,54 @@
+body{
+    height: 1000px;
+    display: flex;
+}
+.main-container{
+    gap: 50px;
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    /* align-items: center; */
+}
+.main-item{
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    width: 200px;
+    height: 200px;
+}
+.main{
+    height: 10px;
+}
+
+ /* .one{
+    order: 1;
+}
+
+.two{
+    order:2;
+}
+.three{
+    order: 7;
+}
+.four{
+    order: 4;
+}
+.five{
+    order: 5;
+}
+.six{
+    order: 6;
+}
+.seven{
+    order: 3;
+}
+.eight{
+    order: 8;
+}
+.nine{
+    order: 9;
+}
+.ten{
+    order: 10;
+} */
