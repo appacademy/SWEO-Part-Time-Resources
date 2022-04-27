@@ -17,23 +17,29 @@ Create a class which will act as a Stack data structure.
 
 class Stack {
   constructor(){
-
+	this.data = [];
+    this.length = 0;
   }
 
-  push(){
-
+  push(val){
+	this.data.push(val); // worst case o(n), average o(1)
+    return ++this.length;
+	// this.data.push(value);
+    // this.length++;
   }
 
   pop(){
-
+   	if (!this.data) return;
+    this.length--;
+    return this.data.pop(); // time o(1)
   }
 
   peek(){
-
+	return this.data[this.data.length-1] // time o(1)
   }
 
   printAll(){
-
+	this.data.forEach((e) => console.log(e))) // time o(e)
   }
 }
 ```
