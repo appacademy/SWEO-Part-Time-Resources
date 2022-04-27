@@ -1,5 +1,5 @@
 // ---------understand the problem---------
-//take the current last number, rotate it to the right (remove it from the back), then move it the front, then repeat that process(aka for loop) n number of times.
+//take the current last number, rotate it to the right (remove it from the back), then add it the front, then repeat that process(aka for loop) n number of times.
 
 //FUNCTIONS SHOULD NOT MUTATE ORIGINAL ARRAY, ONLY WORK WITH A COPY
 
