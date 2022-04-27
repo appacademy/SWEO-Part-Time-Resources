@@ -15,32 +15,38 @@ Create a class which will act as a Stack data structure.
 ```js
 // Boilerplate Code
 
+// big o time o(n) and space o(n)
 class Stack {
   constructor(){
-
+	  this.array = [] // space o(1)
   }
 
-  push(){
-
+  push(val){
+	  return this.array.push(val); // average time o(1), worst time o(n)
   }
 
   pop(){
-
+	if (!this.array.length) {
+      return new Error(`No item to pop! YOU LOSE! GOOD DAY, SIR!`); // space o(1)
+    }
+    return this.array.pop(); // time complexity o(1), space o(1)
   }
 
   peek(){
-
+	return this.array[this.array.length - 1] // time complexity o(1), space o(1)
   }
 
-  printAll(){
-
+  printAll(){ // time complexity o(n)
+	for (let el of this.array) {
+      console.log(el)
+    }
   }
 }
 ```
 
 ---
 
-## Linked List Practice pt1 (20m)
+## Linked List Practice pt1 (25m)
 
 ---
 
