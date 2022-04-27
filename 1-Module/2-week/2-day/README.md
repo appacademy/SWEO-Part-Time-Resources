@@ -18,7 +18,7 @@ Please ask questions when stuck for 5 minutes!!
     - <span style="color:#cd1d1d;">**format: "I need help in room # please"**</span>
 
 ---
-## Practice Set 1 (30m)
+## Practice Set 1 (40m)
 
 - [Array Sum]
 - [Rotate Right]
