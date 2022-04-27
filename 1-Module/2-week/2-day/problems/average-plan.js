@@ -8,6 +8,8 @@
 
 //---------------plan-------------------
 //1. define avgVal as a function expression syntax (...your pseudo code...)
+    //1.5 Handle the edge case where array is empty (no length). 
+        //1.6 return null if condition met.
     //2. create a sum variable to keep count of the nums we add from the original array()
     //3. iterate over the array of nums, then get the number
         //4. take number and add it to the sum variable
