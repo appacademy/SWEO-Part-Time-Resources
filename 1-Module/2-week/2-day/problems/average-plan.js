@@ -8,14 +8,28 @@
 
 //---------------plan-------------------
 //1. define avgVal as a function expression syntax (...your pseudo code...)
+let avgVal = function(array){
     //1.5 Handle the edge case where array is empty (no length). 
+    if(array.length === 0) {
         //1.6 return null if condition met.
+        return null;
+    }
+        
+   
     //2. create a sum variable to keep count of the nums we add from the original array()
+    let sum = 0;
     //3. iterate over the array of nums, then get the number
+    for(let i=0; i<array.length; i++){
         //4. take number and add it to the sum variable
+        let currentNum = array[i];
+        sum+=currentNum;
+    }
     
     //5. after for loop, create a variable called average. Take the sum / length of array
+    let average = sum / array.length;
     //6. take the average variable and return it.
+    return average;
+}
 
 
 
