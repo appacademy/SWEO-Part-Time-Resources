@@ -1,6 +1,7 @@
 # W2D3
 
-Make sure to call us into your breakout room during practice time if you are at all confused with what you are working on! **Don't stare down your code!!**
+Make sure to call us into your breakout room during practice time if you are at all confused with what you are working on!    
+**Let us save you time! Don't stare down your code!!**
 
 ## Helper Functions Longest Warm Up (15m)
 
