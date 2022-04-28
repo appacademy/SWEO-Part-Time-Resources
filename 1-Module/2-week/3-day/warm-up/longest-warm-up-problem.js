@@ -42,6 +42,6 @@ let twoDList = [
   ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight']
 ]
 
- // answer is 1; because twoDList[1]  contains the subArray with the most 5+ letter words.
+ // answer is 1; because twoDList[1]  contains the subArray with the most 5+ letter words of ['couscous', 'ceviche', 'solyanka']
 console.log("mostWordsFive(twoDList): " + mostWordsFive(twoDList));
 
