@@ -1,7 +1,10 @@
 # W2D4
 
 ## Homework was tough! Let's Review w/ a warm-up! (15m)
-- from homework: [Abbreviate Words](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/abbreviate-words)
+- Work on this problem from homework: [Abbreviate Words](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/abbreviate-words)
+- If you've already done it:
+  - Delete
+  - Repeat!
 ---
 
 ## Practice 1 (30m)
