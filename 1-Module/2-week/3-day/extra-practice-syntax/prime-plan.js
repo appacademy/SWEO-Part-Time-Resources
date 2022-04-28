@@ -4,8 +4,9 @@ Write a function choosePrimes(nums) that takes in an array of numbers as args. T
 
 
 //1. Define helper isPrime function
-function choosePrimes(array){
+function isPrime(num){
     //2. handle edge case: anything less than 2 is not prime
+    
     //3. iterate from 2 to the number
         //4. check if number is divisible by i (%), if it is, then return false because it's not prime.
     //5. default: we haven't found any evidence that it's prime, so return true.
