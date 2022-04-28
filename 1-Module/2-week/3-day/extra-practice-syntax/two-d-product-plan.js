@@ -1,4 +1,6 @@
 /*
+https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/two-dimensional-product-
+
 Write a function twoDimensionalProduct(array) that takes in a 2D array of numbers as an argument. The function should return the total product of all numbers multiplied together.
 */
 

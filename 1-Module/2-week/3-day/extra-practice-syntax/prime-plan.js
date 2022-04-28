@@ -1,4 +1,6 @@
 /*
+https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/choose-primes
+
 Write a function choosePrimes(nums) that takes in an array of numbers as args. The function should return a new array containing the primes from the original array. A prime number is a number that is only divisible by 1 and itself. Hint: consider creating a helper function to check if a number is prime!
 */
 
