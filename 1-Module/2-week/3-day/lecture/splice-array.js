@@ -1,3 +1,7 @@
+/*NOTES LINK (ctrl + left-click to open): 
+https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Array-Methods---splice-split-join
+*/
+
 // array.splice mutates the array that it is called on. 
 //That is, array.splice will modify the existing array and NOT return a new array.
 //syntax --> .splice(start, amount-to-remove, data-to-add)

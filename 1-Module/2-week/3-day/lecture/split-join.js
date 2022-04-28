@@ -1,3 +1,8 @@
+/*NOTES LINK (ctrl + left-click to open): 
+https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Array-Methods---splice-split-join
+*/
+
+
 console.log("---------------split-------------")
 // use the `string.split` method to turn a string into an array
 // string --> to --> array
