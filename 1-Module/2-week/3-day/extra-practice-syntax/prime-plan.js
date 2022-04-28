@@ -9,7 +9,7 @@ function isPrime(num){
     
     //3. iterate from 2 to the number
         //4. check if number is divisible by i (%), if it is, then return false because it's not prime.
-    //5. default: we haven't found any evidence that it's prime, so return true.
+    //5. default: we haven't found any evidence that it's  not prime, so return true.
 }
 
 console.log(isPrime(17)) //true
@@ -19,7 +19,7 @@ console.log(isPrime(50)) //false
 
 //1. Define a choosePrimes function
 function choosePrimes(array){
-    //2. create new array to push any prime numbers to
+    //2. create new array isPrimeArr to push any prime numbers to
     //3. iterate through array 
         //4. define a variable (num) to access array at i.
         //5. if num is prime
