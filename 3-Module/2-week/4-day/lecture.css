@@ -1,0 +1,24 @@
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rotate{
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    /* transition: background-color 3s, transform 3s, font-size 1s; */
+    transition: font-size .5s, border 0.5s;
+    font-size: 10px;
+}
+
+.rotate:hover{
+    /* border: 3px solid black; */
+    /* background-color: red;
+    transform: rotate(360deg); */
+    font-size: 12px;
+}
