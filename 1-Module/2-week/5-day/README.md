@@ -1,13 +1,15 @@
 # M1W2D5
 
-## Plan for today
+## Plan for today - Study Day!
 
   1. Review Notes/Homework + Start Working On Problems (2hrs)
      1. Instructors will do tech setup checks
+     2. Please have your cameras on in your workstation.
+     3. If we come in for tech setups or for checkups and student is not there, the student will receive a strike.
   2. Mock practice assessment!(1hr)
-  4. Lunch
-  5. Practice Assessment Walkthrough
-  6. Practice, Practice, Practice!
+  3. Lunch
+  4. Practice Assessment Walkthrough
+  5. Practice, Practice, Practice!
 
 ---
 
