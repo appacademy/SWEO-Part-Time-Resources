@@ -22,6 +22,13 @@ inline grid
     /* Your code here */
     /* Bonus Phase */
     /* Your code here */
+    display: grid;
+    grid-template-columns: 3fr auto 1fr;
+    grid-template-areas:
+    "header header header"
+    "main . sidebar"
+    "footer footer footer";
+    grid-gap: 15px 0;
 
 }
 .item-1 {
@@ -29,6 +36,7 @@ inline grid
 
     /* Phase 1 */
     /* Your code here */
+    grid-area: header;
 
 }
 
@@ -38,7 +46,7 @@ inline grid
 
     /* Phase 1 */
     /* Your code here */
-
+    grid-area: main;
 
 }
 .item-3 {
@@ -46,6 +54,7 @@ inline grid
 
     /* Phase 1 */
     /* Your code here */
+    grid-area: sidebar;
 
 }
 .item-4 {
@@ -54,6 +63,7 @@ inline grid
 
     /* Phase 1 */
     /* Your code here */
+    grid-area: footer;
 
 }
 
@@ -62,6 +72,8 @@ inline grid
 
     /* Bonus Phase */
     /* Your code here */
+    width: 100px;
+    box-sizing: border-box;
 
 }
 
@@ -73,6 +85,9 @@ inline grid
 
     /* Phase 2 */
     /* Your code here */
-
-
+    display: inline-grid;
+    grid-template: repeat(3, 50px) / repeat(6, 100px);
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
 }
