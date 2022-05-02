@@ -16,6 +16,7 @@
 You have access to:
 
 - aA open
+  - Practice Assessment (NOT previous assessments)
   - including homework
   - problems you did
   - REPL (to run code)
