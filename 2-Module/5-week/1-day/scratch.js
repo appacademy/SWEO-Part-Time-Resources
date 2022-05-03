@@ -48,6 +48,8 @@ console.log(Math.log2(512)) // 9
 
 /*
 
+conditions for when binary search can be achieved in logarithmic time.
+
 Data must be sorted
 Data can be accessed by index on constant time
 
