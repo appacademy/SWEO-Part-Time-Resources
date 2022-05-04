@@ -9,14 +9,14 @@ console.log("----------Defining an Object----------")
 https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Defining-an-Object
 */
 
-//avoid passively reading! Try, test / paste your code or examples here
+//avoid passively reading! test code here
 
 console.log("----------setting / updating or creating data in an object----------")
 /*NOTES LINK (ctrl + left-click to open): 
 https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Setting-keyvalue
 */
 
-//avoid passively reading! Try, test / paste your code or examples here
+//avoid passively reading! test code here
 
 console.log("----------getting / reading data in an object----------")
 /*NOTES LINK (ctrl + left-click to open): 

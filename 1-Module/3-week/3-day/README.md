@@ -19,7 +19,7 @@
                  1. Driver: `git add .` | `git commit -m "message"` | `git push`
                  2. Navigator: `git pull`
                  3. switch roles
-              2. `git reset --hard && pull` if we accidentally wrote something while not the driver.
+              2. `git reset --hard && git pull` if we accidentally wrote something while not the driver.
            2. switch after each problem OR after 15 minutes
         5. Reach out for help / questions, we're here for ya!
 
