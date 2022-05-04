@@ -21,6 +21,6 @@ let userObj = {
         name: "Hunter x Hunter",
         finished: true,
         type: "anime",
-    }
+    },
 }
 
