@@ -59,6 +59,18 @@ describe('Both sides', () => {
 
 	});
 
+	context('Height of tree', () => {
+
+		it(`Produces the height value of the tree`, () => {
+
+		  const height = findHeight(tree)
+
+		  expect(height).to.deep.equal(3)
+
+		});
+
+	});
+
 })
 
 
@@ -88,6 +100,18 @@ describe('Big tree', () => {
 		expect(both).to.deep.equal([500,123])
 
 	  });
+
+	});
+
+	context('Height of right only tree', () => {
+
+		it(`Produces the height value of the tree`, () => {
+
+		  const height = findHeight(bigTree)
+
+		  expect(height).to.deep.equal(5)
+
+		});
 
 	});
 
