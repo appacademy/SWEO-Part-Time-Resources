@@ -29,18 +29,37 @@ class TreeNode {
 }
 
 // building a binary tree example
-let a = new TreeNode('a');
-let b = new TreeNode('b');
-let c = new TreeNode('c');
-let d = new TreeNode('d');
-let e = new TreeNode('e');
-let f = new TreeNode('f');
+const num1 = new TreeNode(50);
+const num2 = new TreeNode(5);
+const num3 = new TreeNode(78);
+const num4 = new TreeNode(1);
+const num5 = new TreeNode(20);
+const num6 = new TreeNode(33);
+const num7 = new TreeNode(100);
+const num8 = new TreeNode(6);
+const num9 = new TreeNode(2);
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
+num1.left = num2
+num1.right = num3
+num2.left = num4
+num2.right = num5
+num5.left = num6
+num5.right = num7
+num6.left = num8
+num6.right = num9
+
+/*
+			 50
+			/  \
+		   5    78
+		 /  \
+		1    20
+			/  \
+		   33   100
+		  /  \
+		 6    2
+*/
+
 
 /*
 This method of traveling as deep as possible down the tree branches until reaching a dead-end,
@@ -54,27 +73,54 @@ This method of traveling as deep as possible down the tree branches until reachi
 // Recursively call the left subtree
 // Recursively call the right subtree
 
+// [50,5,1,20,33,6,2,100,78]
 const preOrderTraversal = (root) => {
+	// base case
+	if(!root) return
 
+	// recursive step
+	console.log(root.val)
+	preOrderTraversal(root.left)
+	preOrderTraversal(root.right)
 }
+
+// preOrderTraversal(num1)
 
 // In-order traversal * recursive depth-first
 // Recursively call the left subtree
 // Print the current node value
 // Recursively call the right subtree
 
+// [1, 5, 6, 33, 2, 20, 100, 50, 78]
 const inOrderTraversal = (root) => {
+	// base case
+	if(!root) return
 
+	// recursive step
+	inOrderTraversal(root.left)
+	console.log(root.val)
+	inOrderTraversal(root.right)
 }
+
+// inOrderTraversal(num1)
 
 // Post-order traversal * recursive depth-first
 // Recursively call the left subtree
 // Recursively call the right subtree
 // Print the current node value
 
+// [1, 6, 2, 33, 100, 20, 5, 78, 50]
 const postOrderTraversal = (root) => {
+	// base case
+	if(!root) return
 
+	// recursive step
+	postOrderTraversal(root.left)
+	postOrderTraversal(root.right)
+	console.log(root.val)
 }
+
+// postOrderTraversal(num1)
 
 /*
 breadth-first traversal will visit each node in a particular level before moving down to the next level.
@@ -82,17 +128,46 @@ Cannot be implemented recursively with a binary search tree, but to the nature o
 */
 
 // Breadth First with queue
-const breadthFirstTraversal = () => {
+const breadthFirstTraversal = (root) => {
+	if (!root) return;
 
+    const queue = [root];
+    let curr;
+
+    while (queue.length) {
+      curr = queue.shift();
+
+      console.log(curr.val);
+
+      if (curr.left) queue.push(curr.left);
+      if (curr.right) queue.push(curr.right);
+    }
+
+    return;
 }
 
+// breadthFirstTraversal(num1)
 // depth first with a stack
 
 
-const depthFirstTraversal = () => {
+const depthFirstTraversal = (root) => {
+	if (!root) return;
 
+    const stack = [root];
+    let curr;
+
+    while (stack.length) {
+      curr = stack.pop();
+
+      console.log(curr.val);
+	  if (curr.right) stack.push(curr.right);
+      if (curr.left) stack.push(curr.left);
+    }
+
+    return;
 }
 
+depthFirstTraversal(num1)
 /*
 Binary search tree,  same as the binary tree, ie but with avery powerful rule,
 every node contained in the left branch of any node will be less than the value of the node itself,
@@ -111,12 +186,30 @@ If the target is greater than the root value, recursively search the right child
 
 // Recursive
 
-const searchBSTRecursive = () => {
+// big o time o(log n) space o(n)
+const searchBSTRecursive = (root, target) => {
+	// base case
+	if(!root) return false
+	if (root.val === target) return true
 
+	// recursive case
+	if (root.val > target) return searchBSTRecursive(root.left, target)
+	if (root.val < target) return searchBSTRecursive(root.right, target)
 }
 
 // Iterative
 
-const searchBSTIterative = () => {
+// big o time o(log n) space o(1)
+const searchBSTIterative = (root, target) => {
+	// base case
+	if(!root) return false // space o(1)
 
+	let curr = this.root; // space o(1)
+
+    while (curr) {
+      if (curr.val === val) return true; // space o(1)
+      if (curr.val < val) curr = curr.right;
+      else curr = curr.left;
+    }
+    return false; // space o(1)
 }
