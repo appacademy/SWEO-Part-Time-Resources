@@ -3,7 +3,21 @@
 
 //write this function
 let keyValueSame = function(obj){
+    //create new array
+    let resArr = [];
 
+    //iterate through the object to get the keys
+    for(let key in obj){
+        //get the value from the key
+        //determine if key === value
+        let value = obj[key];
+        if (key === value){
+            //if so, add to resArr.
+            resArr.push(value);
+        }
+    }
+    //return our answer
+    return resArr;
 }
 
 
