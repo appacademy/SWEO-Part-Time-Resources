@@ -1,3 +1,4 @@
+// just a refrence to see
 let userObj = {
     name: "Wes Trinh",
     age: 60,
@@ -22,5 +23,6 @@ let userObj = {
         finished: true,
         type: "anime",
     },
+
 }
 
