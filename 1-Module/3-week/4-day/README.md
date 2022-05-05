@@ -2,14 +2,14 @@
 
 ## Plan for today
 
-  1. Practice & Review Lecture
-     1. Review Objects
-     2. Warm-up Problems
-     3. Pair Programming Demo
-  2. Plain Old Javascript Project (pair programming)
-     1. ONLY ONE PERSON will DOWNLOAD project & UPLOAD to GITHUB
-     2. Follow [this guide](https://github.com/appacademy/Module-1-Resources/blob/main/additional_resources/week2/gitflow/README.md#basic-setup-for-pairing) I showed in demo
-     3. Pair Programming Etiquette
+  1. Destructure / Rest / Spread Review
+     1. Destructure Quiz and Destructure Array Problem (20 minutes)
+     2. Short Review Lecture
+  2. Objects Warm-up
+     1. `object-warm-ups` (15 minutes)
+  3. pair programming 
+     1. Continue with the same partner and same project
+     2. Pair Programming Etiquette
         1. Avoid cutting each other off when speaking (great learners are great listeners)
         2. Treat others like how we want to be treated
         3. Critique the work, not the person (try to use pronouns like we / I, and talk objectively about the code)
@@ -23,6 +23,5 @@
            2. switch after each problem OR after 15 minutes
         5. Reach out for help / questions, we're here for ya!
 
-  3. End of Day Review
-     1. When to: Memorize vs. Reference
+  4. End of Day Review
 
