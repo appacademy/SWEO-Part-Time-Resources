@@ -6,7 +6,7 @@
      1. Destructure Quiz and Destructure Array Problem (20 minutes)
      2. Short Review Lecture
   2. Objects Warm-up
-     1. `object-warm-ups` (15 minutes)
+     1. `object-warm-ups` folder (15 minutes)
   3. pair programming 
      1. Continue with the same partner and same project
      2. Pair Programming Etiquette
