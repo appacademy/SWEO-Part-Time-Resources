@@ -18,7 +18,7 @@
   - Open windows file explorer for the current folder
 
 ## Download Project using Curl Command
-Note: If you use Windows you might find it easier to use curl to download the zip file into your WSL. Here's how to do that:
+Note: Can be done for mac or windows. If you use Windows you might find it easier to use curl to download the zip file into your WSL. Here's how to do that:
 
 - right click on the link to the zip file and copy the link to your clipboard
 - In the Ubuntu Terminal type the following: `curl -o skeleton.zip paste-link-here` and then paste in the link you copied and press Enter. This will download the zip file into your current directory. 
