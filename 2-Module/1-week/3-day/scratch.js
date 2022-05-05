@@ -14,6 +14,7 @@
 // console.log(myArr)
 // console.log(myArr[0])
 
+//! Difference between .length and .anything()
 // const myObj = {
 // 	aProp: 25,
 // 	aFunc: () => {
@@ -40,6 +41,8 @@
 //   name: 'Zaviar',
 //   age: 100000,
 // };
+
+//! So, what does it look like?
 
 class Pokemon {
   constructor(name, level, type, trainer) {
