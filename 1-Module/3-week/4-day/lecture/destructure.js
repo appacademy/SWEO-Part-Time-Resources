@@ -8,6 +8,9 @@ let animals = ["dragon", "panda", "gorilla", "lion"]
 
 
 //how would I destructure the first two animals ("dragon" and "panda")?
+let [firstAnimal, secondAnimal] = animals;
+console.log("firstAnimal:",firstAnimal)
+console.log("secondAnimal:", secondAnimal)
 
 
 console.log("-------------destructure object-----------")
@@ -45,9 +48,20 @@ console.log("male: ", male); //???
 
 
 //given this userObj, destructure the "age", and "organization", give organization an alias of `org`
+let {age, organization:org} = userObj;
+
+console.log("age:", age);
+console.log("org:", org);
 
 
 //given this userObj, destructure the object inside of "favoriteShow" (no alias)
+let {favoriteShow} = userObj;
+console.log("favoriteShow:",favoriteShow)
+
 
 
 //given this userObj, destructure "Hunter x Hunter" inside of "name", give it an alias of `showName`
+
+let {favoriteShow:{name:showName}} = userObj;
+
+console.log("showName:", showName)

@@ -13,7 +13,7 @@ function multiplyAll(first, ...otherNums) {
 }
 
 // What will this output below? Try to do it without running the code! Can someone explain?
-console.log(multiplyAll(2, 3, 4, 5)) //???
+console.log(multiplyAll(2, 3, 4, 5 )) //???
 
 
 console.log("------------------spread------------------")
@@ -23,3 +23,8 @@ let b = [1, 2, 3]
 // what will this do?
 let combinedAB = [...a, ...b] 
 console.log("combinedAB:", combinedAB);  //???
+
+
+// let aCopy = a.slice();
+let aCopy = [...a];
+console.log("aShallowCopy:", aCopy);
