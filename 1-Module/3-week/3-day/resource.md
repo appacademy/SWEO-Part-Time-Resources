@@ -30,7 +30,7 @@ Note: Can be done for mac or windows. If you use Windows you might find it easie
 - Use unzip to unzip the file like this: `unzip skeleton.zip`
   - if terminals prompts to install, then run the command provided to install unzip feature.
 - to `zip` something up:
-  - `zip myfile.zip filename.txt`
+  - `zip name-this.zip item-to-zip`
 
 ## Node.js
 

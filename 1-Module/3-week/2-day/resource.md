@@ -16,15 +16,21 @@
   - Don't travel
 - explorer.exe .
   - Open windows file explorer for the current folder
+- unzip 
+  - `unzip skeleton.zip`
+- zip 
+  - `zip name-this.zip item-to-zip`
 
 ## Download Project using Curl Command
-Note: If you use Windows you might find it easier to use curl to download the zip file into your WSL. Here's how to do that:
+Note: Can be done for mac or windows. If you use Windows you might find it easier to use curl to download the zip file into your WSL. Here's how to do that:
 
 - right click on the link to the zip file and copy the link to your clipboard
 - In the Ubuntu Terminal type the following: `curl -o skeleton.zip paste-link-here` and then paste in the link you copied and press Enter. This will download the zip file into your current directory. 
 - It should look something like this: `curl -o skeleton.zip https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-JavaScript/js-local/skeleton.zip`
 - Use unzip to unzip the file like this: `unzip skeleton.zip`
   - if terminals prompts to install, then run the command provided to install unzip feature.
+- to `zip` something up:
+  - `zip name-this.zip item-to-zip`
 
 ## Node.js
 
