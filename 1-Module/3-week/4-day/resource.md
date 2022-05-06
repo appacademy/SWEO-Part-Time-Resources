@@ -16,6 +16,10 @@
   - Don't travel
 - explorer.exe .
   - Open windows file explorer for the current folder
+- unzip 
+  - `unzip skeleton.zip`
+- zip 
+  - `zip name-this.zip item-to-zip`
 
 ## Download Project using Curl Command
 Note: Can be done for mac or windows. If you use Windows you might find it easier to use curl to download the zip file into your WSL. Here's how to do that:
@@ -25,6 +29,8 @@ Note: Can be done for mac or windows. If you use Windows you might find it easie
 - It should look something like this: `curl -o skeleton.zip https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Module-JavaScript/js-local/skeleton.zip`
 - Use unzip to unzip the file like this: `unzip skeleton.zip`
   - if terminals prompts to install, then run the command provided to install unzip feature.
+- to `zip` something up:
+  - `zip myfile.zip filename.txt`
 
 ## Node.js
 
@@ -39,7 +45,7 @@ Note: Can be done for mac or windows. If you use Windows you might find it easie
 ## Mocha
 Mocha is a testing suite we'll use to test our code
   
-- Make sure you're in the folder that contains the 'test' folder
+- Make sure you're in the folder that contains the 'test' file
 - Run `mocha` to run all test files
 - Run `mocha -b` to run the test until one fails
 - Run `mocha <testFileLocation>` to run a single test
