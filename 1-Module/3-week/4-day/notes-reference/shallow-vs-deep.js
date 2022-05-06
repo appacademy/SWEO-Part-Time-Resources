@@ -20,11 +20,11 @@ console.log("original3:", a); //also change to [100]
 console.log("copied3", aCopy); //changed to [100]
 
 console.log("--------make a copy of the inner array (subArray)as well------")
-// aCopy[2] === [100]
-aCopy[2] = [200] //reassign aCopy[2] with a copied version
-console.log("original4:", a); //also change to [100]
+//give aCopy[2] at that index a new array of [200]
+aCopy[2] = [200] 
+console.log("original4:", a); //doesn't get affected still [100]
 console.log("updated inner array of copiped:", aCopy)
 console.log("--------update copied inner array to [1000] from [200]---------")
 aCopy[2][0] = 1000;
-console.log("original4:", a); //also change to [100]
-console.log("copied4", aCopy); //changed to [1000]
+console.log("original5:", a); //also change to [100]
+console.log("copied5", aCopy); //changed to [1000]
