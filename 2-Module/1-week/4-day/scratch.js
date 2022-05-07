@@ -15,6 +15,7 @@ class Task {
     // console.log(this.otherList);
     console.log(this.taskList);
   }
+
   static addTask(task) {
     this.taskList.push(task);
   }
@@ -22,14 +23,26 @@ class Task {
   constructor(taskDetail) {
     this.taskDetail = taskDetail;
     Task.addTask(this);
+    // console.log(this, "This is this")
+    // return this // {taskDetail: "dishes"}
+  }
+
+  doTask() {
+    console.log(`I'm going to do the ${this.taskDetail}`);
   }
 }
 
-// const laundry = new Task('laundry');
+const laundry = new Task('laundry');
+// console.log(laundry, "This is laundry")
 // Task.printTaskList();
+laundry.doTask();
+// Task.doTask() // errors because we don't have instance methods on the main Class
 
-// const dishes = new Task('dishes')
+const dishes = new Task('dishes');
+// console.log(dishes, "This is dishes")
+
 // Task.printTaskList();
+// dishes.doTask()
 
 //?    overriding     vs    overloading
 // different function vs different parameters
@@ -52,26 +65,21 @@ class Games {
   }
 }
 
-
-
 // chess.play()
 // animalCrossing.type()
 
 class FPS extends Games {
-	static fpsLib = []
+  static fpsLib = [];
   constructor(name) {
     super(name, 'First Person Shooter');
-		FPS.fpsLib.push(this)
+    FPS.fpsLib.push(this);
   }
 }
-
-
 
 // warZone.play()
 // warZone.type()
 
 class Souls_Like extends Games {
-
   constructor(name, difficulty) {
     super(name, 'Action RPG');
     this.difficulty = difficulty;
@@ -88,21 +96,20 @@ class Souls_Like extends Games {
   }
 }
 
-const chess = new Games('Chess', 'Strategy');
-console.log(Games.library);
-console.log(FPS.fpsLib);
-const animalCrossing = new Games('Animal Crossing', 'Farming Sim');
-console.log(Games.library);
-console.log(FPS.fpsLib);
+// const chess = new Games('Chess', 'Strategy');
+// console.log(Games.library);
+// console.log(FPS.fpsLib);
+// const animalCrossing = new Games('Animal Crossing', 'Farming Sim');
+// console.log(Games.library);
+// console.log(FPS.fpsLib);
 
-const warZone = new FPS('Warzone');
-console.log(Games.library);
-console.log(FPS.fpsLib);
+// const warZone = new FPS('Warzone');
+// console.log(Games.library);
+// console.log(FPS.fpsLib);
 
-const eldenRing = new Souls_Like('Elden Ring', 10);
-console.log(Games.library);
-console.log(FPS.fpsLib);
-
+// const eldenRing = new Souls_Like('Elden Ring', 10);
+// console.log(Games.library);
+// console.log(FPS.fpsLib);
 
 // eldenRing.play()
 // Souls_Like.gitGud()
