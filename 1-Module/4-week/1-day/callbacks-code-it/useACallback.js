@@ -8,7 +8,7 @@ Write a callback function called 'upper' that:
 */
 
 //code here
-let upper = function(){
+let upper = function(array){
 
 }
 
@@ -23,7 +23,7 @@ Write a callback function called 'lower' that:
 */
 
 //code here
-let lower = function(){
+let lower = function(array){
 
 }
 
@@ -42,7 +42,7 @@ Write a higher order function called printVals that:
 */
 
 //code here
-let printVals = function(){
+let printVals = function(obj, cb){
   
 }
 
