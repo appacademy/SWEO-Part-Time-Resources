@@ -1,9 +1,11 @@
 # M1W4D1
 
 ## Assessment 1hr 30m
+- Every multiple choice counts! Doublecheck your answers. You can always reference homework on AA-Open, BUT NOT NOTES! 
+
 - **VERY IMPORTANT**: run `mocha` before submitting! Any syntax or code failures can result in a zero if `mocha` doesn't work!!
 
-- If we're stuck, always check the **inputs** and **outputs**, the **write a plan** in english (the what) then implement it (the how) - polya's plan
+- If we're stuck, always check the **inputs** and **outputs**, then **write a plan** in english (the what) then implement it (the how) - polya's plan
   
 - After you have finished and submitted your assessment, you can verify your submission by clicking `your submission`: 
 - ![exampole](https://i.imgur.com/EMyUqNW.png)
@@ -21,37 +23,40 @@
 
 - First Class Function | MDN: [First-class Function]
 - **Functions** in JS are **treated like** any other **variable**
-  1. Stored in a variable (last week)
-  2. Passed as an argument to a function (today)
+  1. Stored in a variable (funct expression syntax)
+  2. Passed as an argument to a function (today - callbacks)
   3. Returned from a function (Later this week)
 
 - Stored in a variable
 
   ```js
   let func1 = function(){
-    console.log('I\'m stored in a variable');
+    return 'I\'m stored in a variable';
   };
 
-  console.log(func1());
+  console.log(func1()); //when we invoke it (), it's NOT a function anymore, it's whatever was in the function's return.
+
+  console.log(func1) //func1 uninvoked will still hold a reference to the function.
   ```
 
 - Passed as an argument to a function
 
   ```js
-  let higherOrderFunction = function(callback){
-    callback();
+  let higherOrderFunction = function (callback) {
+    let dataFromCallback = callback()
+    return dataFromCallback;
   };
 
-  let intoAFunction = function() {
-    console.log('I\'m being passed into a function');
+  let intoAFunction = function () {
+      return 'I\'m being passed into a function';
   };
 
-  let intoAFunctionPt2 = function() {
-    console.log('I\'m ALSO being passed into a function');
+  let intoAFunctionPt2 = function () {
+      return 'I\'m ALSO being passed into a function';
   }
 
-  higherOrderFunction(intoAFunction);
-  higherOrderFunction(intoAFunctionPt2);
+  console.log(higherOrderFunction(intoAFunction));
+  console.log(higherOrderFunction(intoAFunctionPt2));
   ```
 - Passed as an argument to a function pt. 2
   ```js
@@ -88,7 +93,7 @@
 
 ### Discussion useCallbacks
 
-[useACallback]: ./callbacks-code-it-useACallback.js
+[useACallback]: ./callbacks-code-it/useACallback.js
 
 [First-class Function]: https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
 [First Class Objects Lecture]: https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-lecture
