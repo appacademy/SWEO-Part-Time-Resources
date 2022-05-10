@@ -1,10 +1,10 @@
 # M1W4D2
 
 ## Callbacks Warmup - 15m
-inside `code-it-out` folder, open `myForEach.js` and try the problem.
-- Round 1 - 10m
+inside `code-it-out` folder, open `myForEach.js` and `key-in-ojc-array` try the problem.
+- Round 1 - 10m: `key-in-object-array.js`
 
-- Round 2 - 5m
+- Round 2 - 5m: `myForEach.js`
 
 ## Callbacks Project - Part 1 (60 min)
 
