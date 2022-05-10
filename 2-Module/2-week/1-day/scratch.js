@@ -54,7 +54,6 @@ const test1 = new Test();
 //!
 
 // Using this in Function Declaration Syntax
-//! Functions take the context of the object that wraps them
 function someFunc() {
   console.log(this);
 }
