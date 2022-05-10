@@ -1,7 +1,7 @@
 function stretch() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve("Hey im in a promise")
+      resolve(console.log("Done stretching"))
     }, 1000)
   })
 }
@@ -21,23 +21,10 @@ function liftWeights() {
     }, 2000)
   })
 }
-const resFunc = (res, one, two, three) => {
-  console.log(res)
-  console.log(one)
-  console.log(two)
-  console.log(three)
-}
+
 function workout() {
   // stretch().then(runOnTreadmill).then(liftWeights)
-  stretch()
-  .then(res => {
-    console.log(res)
-    return "Hey Im in a .then"
-  }).then(resFunc).then(res => {
-    console.log(res)
-  }).catch(err => {
-    console.log(err)
-  })
+  stretch().then(runOnTreadmill).then(liftWeights)
   
 }
 /* ============================ TEST YOUR CODE ============================
