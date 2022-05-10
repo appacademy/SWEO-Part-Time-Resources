@@ -11,8 +11,9 @@
       3. Must be able to download, do, and submit the assessment properly
    2. Order of Resources to Practice: 
       1. PRACTICE ASSESSMENT!!
-      2. Pojo Project (especially problems 12 & 13)
-      3. Problems we worked on previously (see below later)
+      2. Multiple Choices (Formative Quizzes from homework! monday-saturday)
+      3. Pojo Project (especially problems 12 & 13)
+      4. Problems we worked on previously (warm-ups, multiple choices, etc.)
 
 ## <span style="color:#3c78d8;">Objects Review & Warmup</span>
 ### Review Homework and Notes on Objects (10m)
