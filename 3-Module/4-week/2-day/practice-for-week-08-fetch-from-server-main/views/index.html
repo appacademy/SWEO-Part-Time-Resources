@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/application.css" rel="stylesheet" />
+  <script type='module' src="/assets/js/your-code.js"></script>
+  <script type='module' src="/assets/js/not-your-code.js"></script>
+  <title>Dog Club</title>
+</head>
+
+<body>
+  <div id="content">
+    <div>
+    <h1>Dog Club</h1>
+    <img src="/assets/images/dog.jpg" />
+  </div>
+  <div id="user_interface">
+    <h3>Add your fetch calls to `/assets/js/your-code.js`</h2>
+    <h4>Phase 1-3</h4>
+    <button id="get_dogs">Get all dogs</button>
+    <button id="get_dogs2">Get dog with id 2</button>
+    <button id="post_dogs">Post new dog</button>
+    <hr />
+    <h4>Phase 4</h4>
+    <input class="dog_name" type="text" placeholder="Dog name"></input>
+    <label for="age">Age: </label>
+    <select name="age" class="dog_age">
+      <!-- script to fill age options below -->
+    </select>
+    <script>
+      const select = document.querySelector("select.dog_age")
+      const i = [...Array(40).keys()]
+      
+      i.forEach((age) => {
+        const option = document.createElement("option");
+        option.value = age;
+        option.innerText = age;
+        select.appendChild(option);
+      })
+    </script>
+    
+    <button class="userinput_dog_submit">Submit</button>
+
+    <hr />
+    <h4>Phase 5</h4>
+    <select name="delete" class="dog_id_delete">
+      <!-- script to fill age options below -->
+    </select>
+    <button id="delete_dog">DELETE</button>
+  </div>
+  </div>
+
+</body>
+
+</html>
