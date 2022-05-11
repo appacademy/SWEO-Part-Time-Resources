@@ -1,0 +1,19 @@
+html {
+  background-color: blanchedalmond;
+}
+#content {
+  display: flex;
+  height: min-content;
+}
+
+#user_interface {
+ padding: 1em;
+ margin: auto;
+ border: 1px solid black;
+ border-radius: 20px;
+}
+
+#home_link {
+  font-size: 2em;
+  display: block;
+}
