@@ -30,15 +30,13 @@ Things to study:
 
 - Three types of scope & what they "see" / "Access to"
 
-  - `Global` - See variables defined in the global scope.
+  - `Global` - Can see variables defined in the global scope.
     - Everything in js is an object. When running js in the browser the global
       scope represents the window when running js locally (Node) it represents the
       global object.
-    - If you initialize a variable without a declaration it defaults to the
-      global scope.
-  - `Local or Function` - See Global, Parameters, Variables in the function
+  - `Local or Function` - Can see Global, Parameters, Variables in the function
     - When we enter a function, we enter a new scope
-  - `Block`- See Global, Local, Variables in the block
+  - `Block`- Can see Global, Local, Variables in the block
 
 ---
 

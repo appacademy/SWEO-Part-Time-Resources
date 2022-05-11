@@ -16,6 +16,7 @@ let getAverage = function(...argsArr){
     for(let i=0; i<argsArr.length; i++){
         let arg = argsArr[i];
         total += arg;
+        //what is available for this line of code?
     }
     return total / argsArr.length;
 }
