@@ -1,5 +1,22 @@
-### `Scope Homework Review`
+## Warmups (10m)
+- `code-it-out` folder do: `get-average-param.js`
+  
+## Project Time (1hr)
+- Continue where you left on callbacks project with your pair
 
+## Scope Homework Review (30m)
+
+## Study Time (1hr) 
+Note: Must be sharing screen and cameras on.
+
+Things to study:
+- Review objects (understand how to work with array of objects)
+- Review and play around with Scope
+- Ask questions about previous assessment
+- Start on homework early
+---
+
+### `Scope Homework Review`
 - What is scope?
 
   - Scope determines what variables are available for use within any given line
