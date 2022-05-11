@@ -1,8 +1,8 @@
 function stretch() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("done stretching");
-      resolve();
+      // console.log("done stretching");
+      resolve("Error");
     }, 1000);
   });
 }
@@ -10,8 +10,8 @@ function stretch() {
 function runOnTreadmill() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("done running on treadmill");
-      resolve();
+      // console.log("done running on treadmill");
+      resolve(2);
     }, 500);
   });
 }
@@ -19,19 +19,25 @@ function runOnTreadmill() {
 function liftWeights() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("done lifting weights");
-      resolve();
+      // console.log("done lifting weights");
+      reject("Error");
     }, 2000);
   });
 }
 
 function workout() {
   // refactor this code to use Promise.all
-  stretch()
-    .then(runOnTreadmill)
-    .then(liftWeights)
-    .then(() => console.log("done working out"))
-    .catch((err) => console.log(err));
+  // stretch()
+  //   .then(runOnTreadmill)
+  //   .then(liftWeights)
+  //   .then(() => console.log("done working out"))
+  //   .catch((err) => console.log(err));
+  Promise.all([stretch(), runOnTreadmill(), liftWeights()]).then(values => {
+    console.log(values)
+  })
+  .catch(err => {
+    console.log(err)
+  })
 }
 
 

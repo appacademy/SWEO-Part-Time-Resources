@@ -1,26 +1,56 @@
-function stretch(timeLeft) {
-  // refactor your code from phase 1
-  // Your code here
+function stretch(time) {
+  return new Promise((resolve, reject) => {
+    if(time - 1000 >=0){
+      setTimeout(() => {
+        console.log("done stretching")
+        resolve(time - 1000)
+      }, 1000)
+    }else{
+      reject("you dont have enough time to complete this exercise")
+    }
+  })
 }
 
-
-function runOnTreadmill(timeLeft) {
-  // refactor your code from phase 1
-  // Your code here
+function runOnTreadmill(time) {
+  return new Promise((resolve, reject) => {
+    if(time - 500 >=0){
+      setTimeout(() => {
+        console.log("done running")
+        resolve(time - 500)
+      }, 500)
+    }else{
+      reject("you dont have enough time to complete this exercise")
+    }
+  })
 }
 
-
-function liftWeights(timeLeft) {
-  // refactor your code from phase 1
-  // Your code here
+function liftWeights(time) {
+  return new Promise((resolve, reject) => {
+    if(time - 2000 >=0){
+      setTimeout(() => {
+        console.log("done lifting")
+        resolve(time - 2000)
+      }, 2000)
+    }else{
+      reject("you dont have enough time to complete this exercise")
+    }
+  })
 }
-
 
 function workout(totalTime) {
-  // refactor your code from phase 1
-  // Your code here
+  stretch(totalTime)
+  .then(res => {
+    return runOnTreadmill(res)
+  }).then(res => {
+    return liftWeights(res)
+  })
+  .then(res => {
+    console.log(`you finished working out with ${res / 1000} seconds left`)
+  })
+  .catch(err => {
+    console.log(err)
+  })
 }
-
 /* ============================ TEST YOUR CODE ============================
 
 Comment in each invocation of your workout function below and run the file
@@ -46,7 +76,7 @@ Comment in each invocation of your workout function below and run the file
     // Error:  you dont have enough time to lift weights
 
 
-// workout(4000);
+workout(4000);
   // should print out the following:
   //   done stretching
   //   done running on treadmill
