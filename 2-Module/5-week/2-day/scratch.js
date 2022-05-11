@@ -29,18 +29,36 @@ class TreeNode {
 }
 
 // building a binary tree example
-let a = new TreeNode('a');
-let b = new TreeNode('b');
-let c = new TreeNode('c');
-let d = new TreeNode('d');
-let e = new TreeNode('e');
-let f = new TreeNode('f');
+const num1 = new TreeNode(50);
+const num2 = new TreeNode(5);
+const num3 = new TreeNode(78);
+const num4 = new TreeNode(1);
+const num5 = new TreeNode(20);
+const num6 = new TreeNode(33);
+const num7 = new TreeNode(100);
+const num8 = new TreeNode(6);
+const num9 = new TreeNode(2);
 
-a.left = b;
-a.right = c;
-b.left = d;
-b.right = e;
-c.right = f;
+num1.left = num2
+num1.right = num3
+num2.left = num4
+num2.right = num5
+num5.left = num6
+num5.right = num7
+num6.left = num8
+num6.right = num9
+
+/*
+			 50
+			/  \
+		   5    78
+		 /  \
+		1    20
+			/  \
+		   33   100
+		  /  \
+		 6    2
+*/
 
 /*
 This method of traveling as deep as possible down the tree branches until reaching a dead-end,
@@ -54,43 +72,90 @@ This method of traveling as deep as possible down the tree branches until reachi
 // Recursively call the left subtree
 // Recursively call the right subtree
 
+// [50, 5, 1, 20, 33, 6, 2, 100, 78]
 const preOrderTraversal = (root) => {
 
+	// base case
+	if(!root) return;
+
+	// recursive step
+	console.log(root.val)
+	preOrderTraversal(root.left)
+	preOrderTraversal(root.right)
 }
+
+// preOrderTraversal(num1)
+
 
 // In-order traversal * recursive depth-first
 // Recursively call the left subtree
 // Print the current node value
 // Recursively call the right subtree
 
+// [1 5 6 33 2  20 100 50 78]
 const inOrderTraversal = (root) => {
+	// base case
+	if(!root) return;
 
+	// recursive step
+	inOrderTraversal(root.left)
+	console.log(root.val)
+	inOrderTraversal(root.right)
 }
+
+// inOrderTraversal(num1)
 
 // Post-order traversal * recursive depth-first
 // Recursively call the left subtree
 // Recursively call the right subtree
 // Print the current node value
 
+// []
 const postOrderTraversal = (root) => {
+	// base case
+	if(!root) return;
 
+	// recursive step
+	postOrderTraversal(root.left)
+	postOrderTraversal(root.right)
+	console.log(root.val)
 }
 
+// postOrderTraversal(num1)
 /*
 breadth-first traversal will visit each node in a particular level before moving down to the next level.
-Cannot be implemented recursively with a binary search tree, but to the nature of recursion
+Cannot be implemented recursively with a binary search tree, due to the nature of recursion
 */
 
 // Breadth First with queue
-const breadthFirstTraversal = () => {
+// first in first out
+const breadthFirstTraversal = (root) => {
+	const queue = [root]
 
+	while(queue){
+		const currentNode = queue.shift();
+		if(!currentNode) return
+		console.log(currentNode.val)
+		if (currentNode.left) queue.push(currentNode.left);
+		if (currentNode.right) queue.push(currentNode.right);
+	}
 }
+
+breadthFirstTraversal(num1)
 
 // depth first with a stack
 
+// last in first out = LIFO
+const depthFirstTraversal = (root) => {
+	const stack = [root]
 
-const depthFirstTraversal = () => {
-
+	while(stack){
+		const currentNode = stack.pop();
+		if(!currentNode) return
+		console.log(currentNode.val)
+		if (currentNode.right) stack.push(currentNode.right);
+		if (currentNode.left) stack.push(currentNode.left);
+	}
 }
 
 /*
@@ -102,6 +167,7 @@ and every node in the right branch will be greater than the node value.
 /*
 Searching a binary search tree
 Binary search trees can be searched by calling the following recursive function on the root node:
+
 If the root node is null, return false
 If the root node's value equals the target, return true.
 If the target is less than the root value, recursively search the left child
@@ -111,7 +177,13 @@ If the target is greater than the root value, recursively search the right child
 
 // Recursive
 
-const searchBSTRecursive = () => {
+const searchBSTRecursive = (root, target) => {
+	// base case
+	if(!root) return false
+
+	if (root.val === target) return true
+	if (root.val > target) return searchBSTRecursive(root.left, target)
+	if (root.val < target) return searchBSTRecursive(root.right, target)
 
 }
 
