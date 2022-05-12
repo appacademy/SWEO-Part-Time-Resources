@@ -124,7 +124,7 @@ sayHungry();
 let helloWorld = function(){
     if(true){
         console.log("inside block scope:", blockStr);
-        let str = "apple";
+        let blockStr = "apple";
         // var blockStr = "not apple";
         
     }
