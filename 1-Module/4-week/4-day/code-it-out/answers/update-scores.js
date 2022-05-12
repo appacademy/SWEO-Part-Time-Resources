@@ -18,8 +18,15 @@ let peeps = [
 console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "Winnie", score: 20},  {name: "Fred", score: 30}];
 ***********************************************************************/
 
-let updateScores = (people) => {
-
+const updateScores = (people) => {
+  let newPeopleArr = [];
+  for(let i=0; i < people.length; i++){
+    let currentPerson = people[i];  //without shallow copy: people[i]
+    // let currentPerson = {...people[i]} //with a shallow copy of the person obj.
+    currentPerson["score"] *= 10; //currentPerson["score"] = currentPerson["score"] * 10;
+    newPeopleArr.push(currentPerson);
+  }
+  return newPeopleArr;
 }
 
 let peeps = [
