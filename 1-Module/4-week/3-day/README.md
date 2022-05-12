@@ -159,6 +159,10 @@ helloWorld();
     - When we enter a function, we enter a new scope
   - `Block`- See Global, Local, Variables in the block
 
+- to determine which scope the variable belongs to
+  - step1: find which line of code the variable is defined at
+  - step2: what scope does that line belong to? (local, block, global)
+
 ---
 **What is Scope Chaining?**
 - Scope Chaining: JS will search through scopes, working upwards until it finds a match.

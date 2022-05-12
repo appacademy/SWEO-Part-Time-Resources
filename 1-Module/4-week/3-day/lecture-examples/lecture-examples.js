@@ -29,6 +29,9 @@ console.log("-------------3 different Scopes-------------")
 let globalScope = 'I am globally scoped'
 //from line 22 to 30 is included in the global scope
 
+//step1: find which line of code the variable is defined at
+//step2: what scope does that line belong to? (local, block, global)
+
 let myFunction = function (functionScope) {
     //whatever is in this function is now in the function scope
     let alsoFunctionScope = "I am also function scoped"
