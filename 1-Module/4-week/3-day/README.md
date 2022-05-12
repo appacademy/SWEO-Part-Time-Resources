@@ -139,10 +139,10 @@ helloWorld();
 ### `Key Takeaways`
 
 **Ways to Declare Variables**
-- `Let` is block scoped (belongs to that block only) and CAN be reassigned.
-- `Const` is also block scoped (belongs to that block only), but CANNOT be reassigned.
+- `Let` is block scoped and CAN be reassigned.
+- `Const` is also block scoped, but CANNOT be reassigned.
 - reassign !== mutable
-- `Var` is function scoped (belongs to the function even if in block), and CAN be reassigned. (don't use, legacy, can cause unintended behaviors)
+- `Var` is function scoped, and CAN be reassigned. (don't use, legacy, can cause unintended behaviors)
 ---
 **What is scope?**
 - Scope determines what variables are available for use within any given line of a JavaScript program.
@@ -168,4 +168,4 @@ helloWorld();
 
 **What is hoisting**
 - Before execution of code, Javascript takes note of the variables & functions and hoist (take note of) these guys to their respective scopes.
-  - For example: the variable `let str` will get hoisted to the its block scope (this block scope can `see` the `let str`)
+  - For example: the variable `let str` will get hoisted to the its block scope (however it is placed in the `temporal deadzone` so if we try to access before assignment, we will get a `reference ERROR`)

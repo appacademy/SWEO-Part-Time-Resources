@@ -119,7 +119,7 @@ const funcExpression = function(){
     
 }
 console.log(funcExpression())
-funcExpression = function(){
-    return "newer function";
-}
-console.log(funcExpression())
+// funcExpression = function(){
+//     return "newer function";
+// }
+// console.log(funcExpression())
