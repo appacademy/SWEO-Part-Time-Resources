@@ -69,6 +69,6 @@ console.log("----------------Favorite Food Factory----------------")
 // -------------YOUR CODE HERE-----------
 
 // const addFood = favoriteFoodDB("My favorite desserts are ") //--> returns the `innerFunc` inside and stores it in the `addFood` variable.
-// console.log(addFood("wings"));
-// console.log(addFood("burgers"));
-// console.log(addFood("chicken sandwiches"));
+// console.log(addFood("wings")); //My favorite desserts are wings
+// console.log(addFood("burgers")); //My favorite desserts are wings, burgers
+// console.log(addFood("chicken sandwiches")); //My favorite desserts are wings, burgers, chicken sandwiches
