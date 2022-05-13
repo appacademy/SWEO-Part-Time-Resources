@@ -19,12 +19,22 @@ console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "W
 ***********************************************************************/
 
 let updateScores = (people) => {
+  let result = [];
+  for (let i = 0; i < people.length; i++) {
+    let personObj = people[i];
+    //now that we have the personObj at the current i
+    //now we access the score and update it by multiplying it by 10
+    personObj.score = personObj.score * 10; //personObj.score *= 10;
 
+    //add the updated personObj to the result
+    result.push(personObj);
+  }
+  return result;
 }
 
 let peeps = [
-    {name: "Anthony", score: 1},
-    {name: "Winnie", score: 2},
-    {name: "Fred", score: 3},
-  ];
+  { name: "Anthony", score: 1 },
+  { name: "Winnie", score: 2 },
+  { name: "Fred", score: 3 },
+];
 console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "Winnie", score: 20},  {name: "Fred", score: 30}];
