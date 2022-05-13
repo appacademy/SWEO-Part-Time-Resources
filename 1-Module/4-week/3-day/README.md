@@ -3,6 +3,8 @@
   
 ## Project Time (1hr)
 - Continue where you left on callbacks project with your pair
+- DO NOT have to finish the project
+- As long as you are at problems 10-12 you are in great shape!
 
 ## Scope Homework Review (30m)
 

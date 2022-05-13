@@ -21,6 +21,9 @@ console.log("getAverage:", getAverage);
 
 
 console.log("-------------Different Scope Examples-------------")
+//step1: find which line of code the variable is defined at
+//step2: what scope does that line belong to? (local, block, global)
+
 let globalScope = 'I am globally scoped' //this line belongs to the global scope
 
 let myFunction = function(functionScope){

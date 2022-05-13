@@ -1,6 +1,6 @@
 # M1W4D4
 
-## Arrow HomeWork Review
+## Arrow Func Homework Review
 `Overview`
 - Arrow Functions are always anonymous
 - Arrow Functions have implicit return (one line)

@@ -37,9 +37,9 @@ let counter = 0;
 
 console.log("----------------What is a closure?----------------")
 /*
-- Before we look at closures: Remmeber that functions (inner functions) can be return from another function (higher order func)
+- Before we look at closures: Remmember that functions (inner functions) can be return from another function (higher order func)
 
-- It's the ability for an `inner function` (declared inside of another function) to access, or to change `variables` that were initialized in an `outer function's` scope (outer function's variables).
+- Closure, it's the ability for an `inner function` (declared inside of another function) to access, or to change `variables` that were initialized in an `outer function's` scope (outer function's variables).
     - Summary: `innerFunc` access `outerFunc` variables.
 
 - The inner function is creating a `CLOSURE` around the outer function's (higher order func) variables.
