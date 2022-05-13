@@ -26,3 +26,4 @@ in an outer function's scope (outer function's variables).
 ## Pair Programming Closures Project
 - Remember to add a `.gitignore` with `node_modules` written in it before we `npm install`
 - Reference this if we're not sure: [git-ignore](https://github.com/appacademy/Module-1-Resources/blob/main/additional_resources/week2/gitflow/README.md#adding-gitignore-file)
+- Note: both pairs must `npm install` after.
