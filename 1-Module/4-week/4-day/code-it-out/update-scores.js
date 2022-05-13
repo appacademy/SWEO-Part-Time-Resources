@@ -18,13 +18,13 @@ let peeps = [
 console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "Winnie", score: 20},  {name: "Fred", score: 30}];
 ***********************************************************************/
 
-let updateScores = function(people){
+let updateScores = function (people) {
 
 }
 
 let peeps = [
-    {name: "Anthony", score: 1},
-    {name: "Winnie", score: 2},
-    {name: "Fred", score: 3},
-  ];
+  { name: "Anthony", score: 1 },
+  { name: "Winnie", score: 2 },
+  { name: "Fred", score: 3 },
+];
 console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "Winnie", score: 20},  {name: "Fred", score: 30}];
