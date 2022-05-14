@@ -28,17 +28,19 @@ function liftWeights() {
 // refactor this function to handle Promises using async/await instead of
   // .then and .catch
 // async function workout() {
-//   // stretch()
-//   //   .then(runOnTreadmill)
-//   //   .then(liftWeights)
-//   //   .then(() => console.log("done working out"))
-//   //   .catch((err) => console.log(err));
+//   stretch()
+//     .then(runOnTreadmill)
+//     .then(liftWeights)
+//     .then(() => console.log("done working out"))
+//     .catch((err) => console.log(err));
 // }
 const workout = async () => {
     await stretch()
     await runOnTreadmill()
     await liftWeights()
+
     console.log("Done working out")
+    return "Done with my async function"
 }
 
 /* ============================ TEST YOUR CODE ============================
@@ -48,7 +50,7 @@ output.
 */
 
 
-workout();
+workout().then(res => console.log(res))
   // should print out the following:
     // done stretching
     // done running on treadmill

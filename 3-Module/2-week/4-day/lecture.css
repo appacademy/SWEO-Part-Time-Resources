@@ -1,24 +1,60 @@
 body{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
 }
-.rotate{
-    height: 50px;
-    width: auto;
+.transition{
+    margin-bottom: 50px;
+    width: 200px;
+    height: 200px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     border: 2px solid black;
-    /* transition: background-color 3s, transform 3s, font-size 1s; */
-    transition: font-size .5s, border 0.5s;
-    font-size: 10px;
+    transition: background-color 2s, font-size 2s, transform 4s;
 }
 
-.rotate:hover{
-    /* border: 3px solid black; */
-    /* background-color: red;
-    transform: rotate(360deg); */
+.transition:hover{
+    background-color: cornflowerblue;
+    font-size: 20px;
+    transform: rotate(360deg);
+}
+.transition-1{
+    border-radius: 200px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid black;
+    transition: border-radius 2s, box-shadow 2s, transform 2s;
+}
+
+.transition-1:hover{
+    border-radius: 0px;
+    box-shadow: 10px 10px 5px black;
+    transform: rotate(180deg);
+}
+.nav{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav > div{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid black;
+    font-size: 10px;
+    transition: font-size 1s, border 1s;
+}
+.nav > div:hover{
     font-size: 12px;
+    border: 3px solid black;
 }

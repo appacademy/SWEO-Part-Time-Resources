@@ -10,7 +10,7 @@ export function postNewDog() {
     return fetch('/dogs', {
         method : 'POST',
         headers : {
-            'Content-type' : 'application/x-www-form-urlencoded'
+            'Content-Type' : 'application/x-www-form-urlencoded'
         },
         body : new URLSearchParams({
             name : 'maggie',
@@ -23,7 +23,7 @@ export function postNewDogV2(name, age) {
     return fetch('/dogs', {
         method : 'POST',
         headers : {
-            'Content-type' : 'application/x-www-form-urlencoded'
+            'Content-Type' : 'application/x-www-form-urlencoded'
         },
         body : new URLSearchParams({
             name : name,
@@ -34,9 +34,9 @@ export function postNewDogV2(name, age) {
 
 export function deleteDog(id) {
     return fetch(`/dogs/${id}/delete`, {
-          method : 'POST',
-          headers : {
-              'AUTH' : 'ckyut5wau0000jyv5bsrud90y'
-          }
-      })
+        method : 'POST',
+        headers : {
+            'AUTH' : 'ckyut5wau0000jyv5bsrud90y'
+        }
+    })
 }

@@ -4,14 +4,16 @@
     height: 200px;
     width: auto;
     margin-left: 300px;
+    transition: transform 2s;
     /* Your code here */
-    transition-property: transform;
-    transition-duration: 2s;
 }
+
 .rocket_svg:hover{
     transform: rotate(250deg);
 }
+
 /* Create rocket hover animation here
+
 
 /* ===== Problem 2 ===== */
 
@@ -19,11 +21,12 @@
     height: 200px;
     width: auto;
     margin-left: 200px;
-    /* Your code here */
     transition: transform 2s;
+    /* Your code here */
 }
 
 .astronaut_svg:hover{
+    
     transform: translateX(100px);
 }
 
@@ -36,14 +39,19 @@
     width: auto;
     margin-left: 300px;
     /* Your animation here*/
-    animation-name: whatever;
-    animation-duration: 2s;
+    /* animation-name: actuallyAnything;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-duration: 2s; */
+    animation: infinite linear 2s actuallyAnything;
 }
 
-@keyframes whatever {
+@keyframes actuallyAnything {
     /* Set up your keyframe animation here*/
-    from{transform: rotate(0deg);}
-    to{transform: rotate(360deg);}
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }

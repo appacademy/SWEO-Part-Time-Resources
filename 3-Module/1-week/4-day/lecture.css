@@ -17,9 +17,29 @@ body{
     box-shadow: 25px 25px 35px 5px rgb(13, 247, 20);
     font-size: 50px;
     text-shadow: 2px 2px rgb(255, 149, 0);
-}   
+}
 
 .span-1{
     padding: 100px;
     border: 5px dotted black;
+}
+
+
+body{
+    height: 2500px;
+}
+
+.container{
+    height: 1000px;
+}
+
+.position{
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    z-index: -1;
+}
+
+.div-1.index{
+    /* z-index: ; */
 }

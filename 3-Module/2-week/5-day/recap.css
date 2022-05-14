@@ -1,0 +1,102 @@
+.main-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 10000px;
+}
+.flex-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 80vw;
+    height: 500px;
+    border: 2px solid black;
+}
+.flex-item{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+
+.media-q-review{
+    border : 5px solid pink; 
+    width : 80vw;
+    height: 500px;
+}
+@media screen and (max-width: 500px){
+    .media-q-review{
+        border-radius: 200px;
+        border: 5px solid lime;
+        background-color: yellow;
+    }
+}
+@media screen and (min-width:1500px){
+    .media-q-review{
+        border-radius: 200px;
+        border: 25px solid rgb(69, 78, 255);
+        background-color: rgb(255, 136, 136);
+    }
+}
+
+.grid-review{
+    border: 2px solid black;
+    width: 80vw;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+}
+.grid-item{
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+}
+.one{
+    grid-row-start: 1;
+    grid-column-start: 2;
+}
+.two{
+    grid-row-start: 1;
+    grid-column-start: 2;
+    position: relative;
+    left: 100px;
+}
+.three{
+    grid-row-start: 1;
+    grid-column-start: 3;
+}
+.transition-box{
+    border: 5px solid black;
+    height: 50px;
+    width: 50px;
+    animation: spin 3s infinite linear ;
+    transition: transform 3s, background-color 3s, border-radius 3s, padding 3s, font-size 3s;
+}
+
+@keyframes spin {
+    from{
+        transform: rotate(0deg);
+        background-color: white;
+        border-radius: 0px;
+        
+    }
+    to{
+        transform: rotate(360deg);
+        background-color: green;
+        border-radius: 30px;
+    }
+}
+
+.transition-box:hover{
+    font-size: 100px;
+    padding : 100px;
+    border-radius : 200px;
+    background-color :rgb(255, 136, 136);
+    transform: rotate(360deg);
+}
+.logo{
+    position: relative;
+    bottom: 40px;
+    left : 14px
+}
