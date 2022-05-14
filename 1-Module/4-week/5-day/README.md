@@ -20,7 +20,6 @@ Things to study:
 - Additional **Practice Assessment** Problems
   - HIGHLY Recommend.
   - ![](https://i.imgur.com/pCbF2Cx.png)
-- Review Warm ups
 - Continue Project
 
 ---
