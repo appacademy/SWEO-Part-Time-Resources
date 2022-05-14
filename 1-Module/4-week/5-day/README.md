@@ -17,9 +17,10 @@ Note: Must be sharing screen and cameras on.
 Things to study:
 - Practice Assessment 
   - Repeat until you don't need to reference anything
-- Additional Problems
-- Objects
-- Scope Closue, Callback Projects
+- Additional **Practice Assessment** Problems
+  - HIGHLY Recommend.
+  - ![](https://i.imgur.com/pCbF2Cx.png)
 - Review Warm ups
+- Continue Project
 
 ---
