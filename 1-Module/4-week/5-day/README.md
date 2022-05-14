@@ -20,6 +20,11 @@ Things to study:
 - Additional **Practice Assessment** Problems
   - HIGHLY Recommend.
   - ![](https://i.imgur.com/pCbF2Cx.png)
+- Additiona Practice Problems
+  - in particular: #4, #6, #8, #9
+  - ![](https://i.imgur.com/KteH6ir.png)
+  
+  
 - Continue Project
 
 ---
