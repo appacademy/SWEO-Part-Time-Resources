@@ -5,9 +5,9 @@
 ## Project Time - Scope / Closure (Solo 1hr)
 - Start from problem 6 or beyond
 - Ask lots of questions!
-- As long as you are at problems 10 you are in great shape!
+- As long as you are at problems 10-12 you are in great shape!
 
-## Practice Assessment (1hr 30m)3
+## Practice Assessment (1hr 30m)
 
 ## Lunch (30m)
 

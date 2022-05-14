@@ -11,6 +11,7 @@ function pizzaMaker(food) {
 }
 
 const innerFuncCooker = pizzaMaker('cheese');
+
 const itemCooked = innerFuncCooker();
 console.log(itemCooked);
 
