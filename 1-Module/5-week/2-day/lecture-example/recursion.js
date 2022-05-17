@@ -51,7 +51,11 @@ const sumArrRecr = function(numsArr){
     //1 + sumArrRecr([2,3])
     //I need the first number from the array to start adding on
     const firstNum = numsArr[0]; // 1
+
+    //recursive step:
     const restOfNums = numsArr.slice(1) //[2,3]
+
+    //recursive case:
     //this will solve the smaller problems ([2,3]) and then we add our initial one to that sub-result.
     const result = firstNum + sumArrRecr(restOfNums); 
     //1 + 5 -- > 6
