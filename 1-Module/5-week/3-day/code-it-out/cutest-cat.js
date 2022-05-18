@@ -6,6 +6,8 @@ rating.
 */
 
 function cutestCat(cats) {
+  //add debugger keyword
+  debugger;
   let cutest;
   let cutestObj;
   let i = 0;
