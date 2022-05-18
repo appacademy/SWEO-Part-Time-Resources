@@ -49,10 +49,10 @@
   2. Goal is to solve smaller problems (the sub problems) and then use that result in order to solve the original bigger problem
      1. The original problem doesn't do all the work, but the smaller ones will do the heavy lifting.
   3. Night at the Theatre: Finding What Row We Are In Analogy
-     1. You are here ?? - 3
-        1. person row ?? - 2
-           1. person row ?? - 1
-              1. person row last row - 0
+     1. Brandon ?? - 3
+        1. David ?? - 2
+           1. Nicholas ?? - 1
+              1. Christopher row last row - 0
 
 
 
