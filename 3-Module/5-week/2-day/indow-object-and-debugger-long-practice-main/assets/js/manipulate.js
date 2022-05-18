@@ -25,17 +25,3 @@ export function changeAboutMe() {
     div.innerText = 'HEY my name is baylen and I work at app academy'
 }
 
-
-
-
-const test =() => {
-    [1,2,3,4,5,6,7,8].forEach(el => {
-        let something = 'hey'
-        something = 'new1'
-        something = 'new2'
-        something = 'new3'
-        if(true){
-            console.log(el)
-        }
-    })
-}
