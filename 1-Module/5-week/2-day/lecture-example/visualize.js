@@ -3,57 +3,54 @@ const sumArrRecr = function(numsArr){
         return 0; 
     }
   
-    const firstNum = numsArr[0]; // 1
-    const restOfResult = sumArrRecr(numsArr.slice(1)); 
+    const firstNum = numsArr[0];
+    const result = firstNum + sumArrRecr(numsArr.slice(1)); 
 
-    return firstNum + restOfResult;
+    return result;
 
 }
 
 console.log(sumArrRecr([1,2,3])) 
 
 /*
+FOR EXAMPLE: sumArrRecr([1,2,3])
+
 const sumArrRecr = function([1,2,3]){
-    if(numsArr.length === 0){
-        return 0; 
-    }
-    const firstNum = 1
-    const restOfResult = sumArrRecr([2,3]); //pause here to evaluate sumArrRecr
-                                |
-    return 1 + restOfResult;    |
-}                               |
-                                |
-                const sumArrRecr = function([2,3]){
-                    if(numsArr.length === 0){
-                        return 0; 
-                    }    
-                    const firstNum = 2
-                    const restOfResult = sumArrRecr([3]); //pause here to evaluate sumArrRecr
-                                                |
-                    return 2 + restOfResult;    |
-                }                               |
-                                                |
-                            const sumArrRecr = function([3]){
-                                if(numsArr.length === 0){
-                                    return 0; 
-                                }
-                                const firstNum = 3
-                                const restOfResult = sumArrRecr([]); //pause here to evaluate sumArrRecr                 |
-                                return 3 + restOfResult;   |
-                            }                              |
-                                                           |
-                                                const sumArrRecr = function([]){
-                                                    if(numsArr.length === 0){
-                                                        return 0;  
-                                                        //HIT BASE CASE----sumArrRecr[]----> 0
-                                                    }
+    //base case
+    if(numsArr.length === 0) return 0; 
 
-                                                    //------IGNORE---------
-                                                    const firstNum = 3
-                                                    const restOfResult = sumArrRecr([]); //pause here to evaluate sumArrRecr
+    const firstNum = numsArr[0];
+    const result = 1 + sumArrRecr([2,3]); 
+    return result;           |
+}                            |
+                             |
+            const sumArrRecr = function([2,3]){
+                //base case
+                if(numsArr.length === 0) return 0; 
 
-                                                    return 3 + restOfResult;
-                                                } 
+                const firstNum = numsArr[0];
+                const result = 2 + sumArrRecr([3]); 
+                return result;          |
+            }                           |
+                                        |
+                                        |
+                        const sumArrRecr = function([3]){
+                            //base case
+                            if(numsArr.length === 0) return 0; 
 
-*/
+                            const firstNum = numsArr[0];
+                            const result = 3 + sumArrRecr([]); 
+                            return result;          |
+                        }                           |
+                                                    |
+                                                    |
+                                    const sumArrRecr = function([]){
+                                        //HIT BASE CASE------sumArrRecr([])-------> 0
+                                        if(numsArr.length === 0) return 0; 
 
+                                        //****return val for this func sumArrRecr([]) is 0****
+
+                                        // -------STOP IGNORE BELOW NOW-------
+                                        const firstNum...
+                                    }                               
+*/ 
