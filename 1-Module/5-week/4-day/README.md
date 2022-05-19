@@ -1,12 +1,15 @@
-## Default Parameters
 
-```js
-const addAndMultiply = (num1, num2, num3 = 5) => {
-  let sum = num1 + num2;
-  let product = sum * num3;
-  return product;
-};
+## Debugger Warmup (10m)
+- run `aa_update`
+- in `code-it-out` folder do `debug-exponent.js`
+  
+## Default Parameters Lecture
+- `lecture-ex` folder
 
-console.log(addAndMultiply(1, 2, 3)) // 9
-console.log(addAndMultiply(1, 2)) // 15
-```
+## Default Parameters `code-it-out` (12m)
+- in `code-it-out` folder do `default-range.js`
+
+## Recursion Project Time 
+- Start from where you left off and then continue from there
+
+
