@@ -102,7 +102,7 @@ Invalid String
 
 count the number of characters in a string using .length
 
-```javascript=
+```javascript
 console.log("ramen".length); // => 5
 console.log("go home!".length); // => 8
 console.log("".length); // => 0
@@ -112,7 +112,7 @@ console.log("".length); // => 0
 
 Two ways: `string.charAt(index)` or `string[index]`. `string[index]` is the more commonly used one. Read more about [character accessing on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#character_access).
 
-```javascript=
+```javascript
 console.log('fat'.charAt(1)) // prints "a"
 console.log('cat'[1]) // prints "a"
 ```
@@ -166,7 +166,7 @@ console.log("door hinge".indexOf("hint")); // => -1 //'hint' does not exist in s
 
 Joining two or more strings together. To **concatenate strings**, we use the `+` **operator**:
 
-```javascript=
+```javascript
 console.log("hello" + "world"); // => 'helloworld'
 console.log("goodbye" + " " + "moon"); // => 'goodbye moon'
 ```
