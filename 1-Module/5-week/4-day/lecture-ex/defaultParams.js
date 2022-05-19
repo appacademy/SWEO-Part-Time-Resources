@@ -4,7 +4,7 @@ console.log("----------what happens w/ more parameters than argument?----------"
 const moreParams = function(first, second, third){
     console.log("first:", first);
     console.log("second:", second);
-    console.log("third:", third); // what will this output?
+    console.log("third:", third); // what will this output? //undefined
 }
 
 moreParams("one", "two"); // what will the output for the last console.log in the func?
@@ -21,3 +21,5 @@ const moreParams2 = function(first, second, third = ["three"]){
 }
 
 moreParams2("one", "two"); //even through we do not pass anything to `third` arg, what happens?
+
+// moreParams2("one", "two", ["3"]) //?
