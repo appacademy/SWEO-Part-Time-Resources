@@ -49,10 +49,10 @@
   2. Goal is to solve smaller problems (the sub problems) and then use that result in order to solve the original bigger problem
      1. The original problem doesn't do all the work, but the smaller ones will do the heavy lifting.
   3. Night at the Theatre: Finding What Row We Are In Analogy
-     1. we're here ?? - 
-        1. person row ?? - 
-           1. person row ?? - 
-              1. person last row - 0
+     1. Erena ?? - 3 (2+1)
+        1. Ricky ?? - 2
+           1. Minh ?? - 1
+              1. Nathalie - 0
 
 
 
@@ -62,3 +62,7 @@
   3. Recursive Step (How do I move toward the BC or move out of the RC)
 
 - Also check out the visualizer files and walk through them to see more how it's working under the hood.
+
+- Note: **Problem 8: Advanced Exponent** is optional. That problem is poorly worded and it's meant more like:
+  - here's the math solved
+  - convert it to javascript using recursion

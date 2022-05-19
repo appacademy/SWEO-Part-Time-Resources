@@ -12,10 +12,13 @@ function cutestCat(cats) {
   let cutestObj;
   let i = 0;
 
+
   while (i < cats.length) {
     const cat = cats[i];
-    if (cat > cutest) {
+    if (cat["cuteness"] > cutest) { //obj > 0 // 9 > 0 // I EXPECT TO ENTER THIS IF STATEMENT.
       cutest = cat.cuteness;
+      //update the cutestObj as well with the new cat that is cuter
+      cutestObj = cat;
     }
     i++;
   }
