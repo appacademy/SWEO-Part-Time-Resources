@@ -1,12 +1,10 @@
 const sumArrRecr = function(numsArr){ 
-    debugger; //pauses here 
-    if(numsArr.length === 0){
+    if(numsArr === 0){
         return 0; 
     }
   
     const firstNum = numsArr[0];
-    //need to check recursive step to see if it's getting closer to the base case
-    const restOfResult = sumArrRecr(numsArr.slice(1)); 
+    const restOfResult = sumArrRecr(numsArr.slice(0)); 
     const result = firstNum + restOfResult;
 
     return result;
