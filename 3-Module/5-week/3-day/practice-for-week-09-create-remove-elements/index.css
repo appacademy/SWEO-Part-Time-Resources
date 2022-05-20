@@ -1,0 +1,53 @@
+.header {
+    padding: 1rem 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 0.5fr));
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.gallery {
+    padding: 2rem;
+}
+
+.gallery > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery > ul > li {
+    list-style-type: none;
+    border: 1px solid #E2E2E2;
+    border-radius: .5rem;
+}
+
+.gallery > ul > li > figure {
+    overflow: hidden;
+    border-top-left-radius: .5rem;
+    border-top-right-radius: .5rem;
+    position: relative;
+}
+  
+.gallery > ul > li > figure > img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+}
+  
+.gallery > ul > li > figure > figcaption {
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+    color: white;
+    padding: .75rem;
+    font-size: 1.25rem;
+}
+
