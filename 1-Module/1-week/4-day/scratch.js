@@ -40,7 +40,7 @@ function getHeroQuote(hero) {
 // // console.log(array + array2)
 // // console.log(array.concat(5))
 
-// nums.push(4,5); // can one thing, or as many as you'd like
+// nums.push(4,5); // can add one thing, or as many as you'd like
 // console.log('after .push',nums);
 // nums.pop(); // will only remove the last element.
 // console.log('after .pop',nums);
