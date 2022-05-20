@@ -9,19 +9,21 @@ hint: remember to watch variables
 ***********************************************************************/
 
 function exponent(num, power) {
+
     //base case
     if(power){ //anything to the power of 0 will be 1, so if power is 0, return 1
         return 1;
     }
 
-    //account for positive power; 4 x 4 x 4 x 1 = 64;
+
+    //account for positive power; exponent(4,3) --> 4 x 4 x 4 x 1 = 64;
     if(power < 0){
         const restOfResult = exponent(num, power - 1) //exponent(4, 3-1)
         const finalResult = num * restOfResult; //exponent(4, 3) --> 4 x exponent(4, 2)
         return finalResult;
     }
 
-    //acount for negative power; (1/4) x (1/4) x (1/4) x 1 = 1/64;
+    //acount for negative power; exponent(4,-3) --> (1/4) x (1/4) x (1/4) x 1 = 1/64;
     if(power > 0){
         //rest of result from recursion but power + 1 since power is negative.
         const restOfResult = exponent(num, power - 1) //exponent(4, 3 + 1)
