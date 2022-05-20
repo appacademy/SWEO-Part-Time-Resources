@@ -26,8 +26,8 @@ function range(start, end, result=[]) {
 
   //-----part 3: Do part 2, but for everything after start (start + 1). Pushing in 2, 3, 4...
   // range(start + 1, end, result=[1,2])
-  // range(start + 1, end, result=[1,2,3])
-  // range(start + 1, end, result=[1,2,3,4])
+      // range(start + 1, end, result=[1,2,3])
+          // range(start + 1, end, result=[1,2,3,4])
   range(start + 1, end, result); //[1,2,3,4]
 
 
