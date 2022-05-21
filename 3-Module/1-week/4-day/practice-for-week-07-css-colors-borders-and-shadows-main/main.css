@@ -1,0 +1,63 @@
+.box1 {
+  background-color: blueviolet;
+  border: 5px solid blue
+}
+
+.box2 {
+  background-color: greenyellow;
+  border: 2px dotted red;
+  border-radius: 5px;
+}
+
+.text1 {
+  background-color: blue;
+  color: #FFC300;
+}
+
+.text2 {
+  background-color: burlywood;
+}
+
+.box3 {
+  background-color: lavender;
+}
+
+.box5 {
+  background-color: lemonchiffon;
+}
+
+.box6 {
+  background-color: papayawhip;
+}
+
+
+/* do not change below this line */
+
+body {
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.box4 {
+  top: 0;
+  left: 5px;
+  background-color: hotpink;
+  position: absolute;
+  z-index: -1;
+}
+
+.text {
+  width: 500px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  box-sizing: border-box;
+}

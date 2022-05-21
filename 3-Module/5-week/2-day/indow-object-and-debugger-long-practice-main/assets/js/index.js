@@ -1,17 +1,16 @@
+import { changeTitle, changeHeader, changeAboutMe } from './manipulate.js'
 import {
-    changeTitle, 
-    changeHeader, 
-    changeAboutMe
-} from './manipulate.js'
-import {
-    findElementById, 
-    findElementsOfTag, 
-    findFirstElementOfClass, 
-    findFirstElementOfTag, 
+    findElementById,
+    findFirstElementOfTag,
+    findFirstElementOfClass,
+    findElementsOfTag,
     findElementsOfClass
-} from './search.js'
-window.document.addEventListener("DOMContentLoaded", e => {
-    console.log("sanity check")
+}
+from './search.js'
+
+
+document.addEventListener('DOMContentLoaded', e => {
+
     changeTitle();
     changeHeader();
     changeAboutMe();
@@ -20,4 +19,9 @@ window.document.addEventListener("DOMContentLoaded", e => {
     console.log(findFirstElementOfClass("section")); // <div class="section"><h2>About Me</h2>...</div>
     console.log(findElementsOfTag("H3")); // [h3, h3, h3, h3, h3, h3, h3, h3, h3, h3, h3] (length: 11)
     console.log(findElementsOfClass("section")); // [div.section, div.section, div.section, div.section, div.section, div.section] (length: 6)
+<<<<<<< HEAD
 })
+=======
+
+})
+>>>>>>> 2022-Jan-E

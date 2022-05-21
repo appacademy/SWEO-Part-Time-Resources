@@ -1,0 +1,38 @@
+/* Your code here */
+
+
+.outer-layer-1{
+    display : flex;
+    flex-direction : column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    /* padding-bottom: 5px; */
+    /* padding-bottom: 6px; */
+    /* height: ; */
+}
+
+/* .outer-layer-2{
+    display: grid;
+    grid-template-areas: ". box box box box";
+}
+.inner-layer-2{
+    grid-area: box;
+}
+ */
+
+ /* works too */
+ /* .inner-layer-2{
+    grid-column-start: 2;
+    grid-column-end: 6;
+ } */
+
+ /* works too
+.inner-layer-2{
+    display: grid;
+    grid-column-start: 5;
+    grid-template-columns: repeat(3, 40px);
+} */
+
+.inner-layer-2{
+    grid-column: 2 / span 4;
+}

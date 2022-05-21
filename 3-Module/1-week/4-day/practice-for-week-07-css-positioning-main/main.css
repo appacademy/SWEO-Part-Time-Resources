@@ -1,0 +1,71 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #2b2d2f;
+    position: relative;
+}
+
+.element {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 280px;
+    font-size: 36px;
+}
+
+#yellow-box {
+    background-color: #ffff00;
+    /* Fill these in
+    position: ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#pink-box {
+    background-color: #ff69b4;
+    /* Fill these in
+    position: ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#blue-box {
+    background-color: #00eeee;
+    /* Fill these in
+    position: ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#red-box {
+    background-color: #ff0000;
+    /* Fill these in
+    position: ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}
+
+#orange-box {
+    background-color: #ffa500;
+    /* Fill these in
+    position: ;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: ;
+}

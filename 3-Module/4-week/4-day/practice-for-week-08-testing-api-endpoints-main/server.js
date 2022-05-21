@@ -84,7 +84,10 @@ const server = http.createServer((req, res) => {
     res.write(JSON.stringify("Endpoint not found"));
     return res.end();
   });
+<<<<<<< HEAD
+=======
 
+>>>>>>> 2022-Jan-W
 });
 
 const port = 5000;

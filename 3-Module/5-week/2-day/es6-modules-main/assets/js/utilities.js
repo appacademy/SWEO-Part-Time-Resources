@@ -1,8 +1,6 @@
-export let name12 = 'baylen'
-
-const getIndex = () => {
+export const getIndex = () => {
     const wrapper = document.getElementById('wrapper');
     return parseInt(wrapper.dataset.index);
 };
 
-export default getIndex
+// export default getIndex

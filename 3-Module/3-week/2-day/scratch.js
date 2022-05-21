@@ -3,9 +3,12 @@
 
 HTTP Request
 
+<<<<<<< HEAD
+=======
 appacademy.io/
 
 
+>>>>>>> 2022-Jan-W
 POST / HTTP/1.0
 Host: appacademy.io
 Content-Length: 31
@@ -29,6 +32,8 @@ Version: HTTP/1.0
 
 Headers
 Content-Type: application/x-www-form-urlencoded
+<<<<<<< HEAD
+=======
 
 
 {
@@ -36,6 +41,7 @@ Content-Type: application/x-www-form-urlencoded
     "age": 27
 }
 
+>>>>>>> 2022-Jan-W
 application/x-www-form-urlencoded - info submitted directly from an HTML web form
 application/json - JSON - data format similar to JavaScript objects
 multipart/form-data	- info submitted from an HTML web form with multiple media types
@@ -46,6 +52,21 @@ username=azure&password=hunter2
 
 
 
+<<<<<<< HEAD
+CRUD: Create, Read, Update, Delete
+
+GET: retrieve resources // Read portion of CRUD
+    Get method does not have to have header and body
+
+POST: Create New Resources
+
+PUT: Updates resource // Put has to update every portion of the resource
+
+PATCH: update resource // Patch can update partial portions of the resource
+
+DELETE: Delete entire resoure
+    DELETE method also does not ahve to have header and body
+=======
 
 CRUD: Create, Read, Update, Delete
 
@@ -84,10 +105,34 @@ DELETE: Delete entire resoure
         Does not have to have headers and body, and will almost never have a body.
 
         POST /tweets/:tweetId/delete
+>>>>>>> 2022-Jan-W
 
 
 Status Codes
 100 - 199 Informational
+<<<<<<< HEAD
+    information client recieves from server
+
+200 - 299 Successfull
+    200 OK // completed and carried out
+    201 Created // after form submission
+
+300 - 399 Redirection
+    301 perminantly moved
+    302 found
+    POST /tweets
+    302
+    /tweets/:tweetId
+400 - 499 Client Error
+    400 bad request
+    401 unauthorized
+    403 Forbidden
+    404 Not found
+    418: Im a teapot
+500 - 599 Server Error
+    500 internal server error // something on server side went wrong
+    504 gateway timeout // server didnt respond in time
+=======
 
 
 200 - 299 Successfull
@@ -132,6 +177,7 @@ Via: 1.1 vegur
 Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
 Server: cloudflare
 CF-RAY: 51d641d1ca7d2d45-TXL
+>>>>>>> 2022-Jan-W
 
 
 Headers
@@ -145,9 +191,13 @@ image/png - PNG Image
 application/json - JSON - data format similar to JavaScript object
 
 
+<<<<<<< HEAD
+// ilovedogs.com/dog
+=======
 
 
 // ilovedog.com/dog
+>>>>>>> 2022-Jan-W
 
 <form method="post" action="/dog">
 <input type="text" name="name" />
@@ -162,6 +212,52 @@ application/json - JSON - data format similar to JavaScript object
   <button type="submit">Create Dog</button>
   </form>;
 
+<<<<<<< HEAD
+  // method - defined by the method HTML form attribute
+  // URL path - defined by the action HTML form attribute
+  // Content-Type header - application/x-www-form-urlencoded
+  // body - form input names and values
+
+// name=GoodBoy&color=brown&age=8&description=bestBoyEver
+
+// {
+    //     "name": "Jaylen",
+    //     "color": "brown",
+    //     "age": 24
+
+// }
+
+
+
+POST / HTTP/1.0
+Host: appacademy.io
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded
+Host: appacademy.io
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+
+
+// Routes and Endpoints
+Endpoint: combination of our our route and our method : POST /
+Route: URL path for the request /
+
+
+Endpoint: GET /users,
+ Route: /users
+Endpoint: POST /users,
+Route: /users
+Endpoint: POST /session,
+Route: /session
+Endpoint: DELETE /login,
+Route: /login
+
+
+*/
+=======
   */
 
 // name=GoodBoy&color=brown&age=8&description=bestBoyEver
@@ -198,3 +294,4 @@ application/json - JSON - data format similar to JavaScript object
 // Route: /login
 // Endpoint: GET /users/:userId
 // Route: /users/:userId
+>>>>>>> 2022-Jan-W

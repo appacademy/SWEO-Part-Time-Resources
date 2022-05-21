@@ -1,27 +1,32 @@
-export function changeTitle() {
+function changeTitle() {
     // Change the title of the page to "(Your name)'s Portfolio"
-    // console.log(document)
-    document.title = "Baylen Doss portfolio"
+    document.title = 'Baylen Doss Portfolio'
 }
 
-export function changeHeader() {
+function changeHeader() {
     // Change the name in the h1 of the page to your name
-    // Your code here
-    // document.body.children[0].children[0].innerText = "Baylen Doss"
-    // document.getElementsByTagName('h1')[0].innerText = "Scotty Wong"
-    // document.getElementById('header').firstChild
-    let h1 = document.querySelector('h1')
-    h1.innerText = "Baylen Doss"
-    h1.style.color = 'green'
-
+    // document.body.childNodes[1].childNodes[1].innerText = 'I am Baylen'
+    // let headerDiv = document.body.children[0]
+    // let h1 = headerDiv.children[0]
+    // h1.innerText = 'george and sam'
+    // let div = document.getElementById('header').children[0]
+    // console.log(div)
+    document.querySelector('h1').innerText = 'Baylen Doss'
+    
 }
 
-export function changeAboutMe() {
+
+function changeAboutMe() {
     /* Update the first paragraph in the About Me section with a small
      passage about yourself */
+    let p = document.querySelector('.section').children[1]
+    p.innerText = "Hey I am baylen and I work at app academy"
 
     // Your code here
-    let div = document.querySelector('.section').children[1]
-    div.innerText = 'HEY my name is baylen and I work at app academy'
 }
 
+export {
+    changeTitle, 
+    changeHeader, 
+    changeAboutMe
+}

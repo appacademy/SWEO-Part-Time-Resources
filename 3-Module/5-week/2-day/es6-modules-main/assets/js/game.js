@@ -1,7 +1,7 @@
-import getIndex from "./utilities.js";
-import mrPotatoHeadQuotes from "./quotes/mrPotatoHead.js";
+import { getIndex } from "./utilities.js";
+import { mrPotatoHeadQuotes } from "./quotes/mrPotatoHead.js";
 import mrsPotatoHeadQuotes from './quotes/mrsPotatoHead.js'
-export class Game {
+export default class Game {
 
   start() {
 
