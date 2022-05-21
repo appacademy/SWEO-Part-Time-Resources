@@ -2,7 +2,7 @@
 
 ## Debugger Warmup (10m)
 - run `aa_update`
-- in `code-it-out` folder do `debug-exponent.js`
+- in `code-it-out` folder do `debug-lineCount.js`
 
 ## Project Time (1hr15m)
 - Continue working on recursion project
