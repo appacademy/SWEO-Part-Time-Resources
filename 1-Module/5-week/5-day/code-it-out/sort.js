@@ -41,6 +41,6 @@ function sort(nums, sorted = []) {
 
 
 
-console.log(sort([7, 4, 1, 6,])); // [1, 1, 3, 4, 6, 7]
+console.log(sort([7, 4, 1, 6,])); // [1, 4, 6, 7]
 console.log(sort([0, 1, -3])); // [-3, 0, 1]
 console.log(sort([])); // []

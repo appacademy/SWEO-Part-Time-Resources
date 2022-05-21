@@ -13,15 +13,15 @@ flatten([1, [2, [3]]]); // [1, 2, 3]
 function flatten(arr, result = []) {
     debugger;
     //part 0: base case where arr.length is 0, then return result
-    if(!arr.length) return result;
+    if (!arr.length) return result;
 
     //part 1: get the front element, determine if that element is an array or if it's an element
     const frontEl = arr[0];
-    if(Array.isArray(frontEl)){
+    if (Array.isArray(frontEl)) {
         //if frontEl is an array, we want to `flatten` it again
         flatten(frontEl, result);
     }
-    else{
+    else {
         //else if it is not an array, just push it to result
         result.push(frontEl);
     }
@@ -44,6 +44,23 @@ function flatten(arr, result = []) {
 // 	  return [arr[0],...flatten(arr.slice(1))]
 // 	}
 // }
+
+//------ Aman Kaur's Solution--------
+// function flatten(arr) {
+//     if (arr.length === 0) {
+//         return [];
+//     }
+//     else {
+//         const [frontItem, ...rest] = arr;
+//         if (Array.isArray(frontItem)) {
+//             return [...flatten(frontItem), ...flatten(rest)]
+//         }
+//         else {
+//             return [frontItem, ...flatten(rest)]
+//         }
+//     }
+// }
+
 
 
 console.log(flatten([])); // []
