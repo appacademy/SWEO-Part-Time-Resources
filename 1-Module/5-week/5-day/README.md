@@ -12,9 +12,6 @@
 ## Sort Warmup (20m)
 - in `code-it-out` folder do `sort.js` (same problem as your project 😄)
 
-
-
-
 ## Lunch (30m)
 
 ## Practice Assessment Walkthrough
