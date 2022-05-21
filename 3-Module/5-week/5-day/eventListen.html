@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./scratch.js"></script>
+    <link rel="stylesheet" href="./event.css">
+</head>
+<body>
+    <div class="screen-left">
+        Type something in the box below
+        <input id="input" type="text" />
+        <button id="button" > clear text</button>
+        <form id="form" action="/stuff" method="get">
+            <label for="name">Name : </label>
+            <input type="text" name="" id="name-input">
+            <label for="lastname">LastName : </label>
+            <input type="text" id="lastName-input">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="screen-right"></div>
+    <div class='screen-bottom-left' id="screen-bottom-left">
+        click a button to change the color on the right
+        <button class="button" id="green-button">green</button>
+        <button class="button" id="red-button">red</button>
+        <button class="button" id="blue-button">blue</button>
+        choose a color from this thing below
+        <input
+        min="0" max="500"
+        type="range" name="" id="color-input">
+    </div>
+    <div id="screen-bottom-right"></div>
+</body>
+</html>
