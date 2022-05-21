@@ -6,7 +6,7 @@
 
 ## Project Time (1hr15m)
 - Continue working on recursion project
-- **HIGHLY recommend** doing/reviewing problem 11 `flatten.js`(part 3) & problem 13 `sort.js` (part 4)
+- **HIGHLY recommend** focusing on problems like  #11 `flatten.js`(part 3) & problem 13 `sort.js` (part 4)
 - Problems 14 and beyond are bonus problems. Nothing remotely close to that level of difficulty on the assessment, but definitely give it a try if you're comfortable with today's content.
 
 ## Sort Warmup (20m)
