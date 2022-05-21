@@ -29,13 +29,13 @@ function sort(nums, sorted = []) {
     // Find the smallest number in the nums array (can use a for loop for this)
 
 
+    // Remove the smallest number from the nums array (the one we just processed above)
+    
+    
     // Add the smallest number to the sorted array
 
 
-    // Remove the smallest number from the nums array (the one we just processed above)
-
-
-    // Recursively call sort with the new array (that we removed smallest num from) to do it again for the rest of the numbers
+    // Recursively call sort with the new array to do it again for the rest of the numbers to find the next shortest.
 
 }
 
