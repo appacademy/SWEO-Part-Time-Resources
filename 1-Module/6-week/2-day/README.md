@@ -1,8 +1,11 @@
 # W6D2 - Async
 
-JavaScript is a single threaded language that can be non-blocking.
+## Debugger Warmup (10m)
+- run `aa_update`
+- in `code-it-out` folder do `closure-review.js`
 
 ## Threading
+JavaScript is a single threaded language that can be non-blocking.
 
 ![threading-image](./images/threading.png)
 _JavaScript is Single Threaded_
