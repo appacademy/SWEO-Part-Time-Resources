@@ -67,4 +67,8 @@ let fibonacci2 = (term) => {
 console.log(fibonacci2(25));
 
 //what will be outputted first? The fibonacci of 25 answer or helloFunc's console.log
-//
+
+//result for fibonacci2 will be the first to output before the callback inside setTimeout. 
+//- this is because setTimeout will process the callback asynchronously elsewhere on a different call stack, then after the delay expires, it will send helloFunc() to our message queue.
+//- while that is happening, all the syncronous code is ran first on the main call stack until there is no synchronous code left to run (fibonacci2's recursive calls until the end)
+//- once the main call stack is empty, items like helloFunc() will be added back to the callstack from our message queue through the event loop!
