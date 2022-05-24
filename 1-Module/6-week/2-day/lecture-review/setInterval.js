@@ -12,15 +12,16 @@ console.log("--------------- Problem 1 ---------------------------");
 // however we see that there's no way to stop, no end, it's gona keep going!
 
 console.log("--------------- Problem 2 ---------------------------");
-//we can clear the setInterval immediately by putting the result of the setInterval (which is an object) and passing it to the global function `clearInterval` which will clear out the setInterval.
-const foo2 = (a, b) => {
-    console.log('time is up');
-    console.log(`${a} ${b}`);
-}
+//we can clear the setInterval immediately by putting the result of the setInterval (which is an object) and passing it to the global function `clearInterval` which will clear out the setInterval..
 
-const interval = setInterval(foo2, 1000, 'potato', 'tomato');
-// console.log(interval);
-clearInterval(interval); //if we run this right after, it immediately clears the message queue of all the items from setInterval
+// const foo2 = (a, b) => {
+//     console.log('time is up');
+//     console.log(`${a} ${b}`);
+// }
+
+// const interval = setInterval(foo2, 1000, 'potato', 'tomato');
+// // console.log(interval);
+// clearInterval(interval); //if we run this right after, it immediately clears the message queue of all the items from setInterval
 
 //however, the above doesn't serve us too much purpose, so instead, 
 //we'll clear the interval from the callback once a condition is met
@@ -41,30 +42,30 @@ const countIntFunc = (count, delay) => {
 countIntFunc(3, 500);
 
 console.log("--------------- Problem 4 ---------------------------");
-const intervalCount2 = (count, delay) => {
-    const intervalObj = setInterval(() => {
-        console.log('time is up');
-        count--;
+// const intervalCount2 = (count, delay) => {
+//     const intervalObj = setInterval(() => {
+//         console.log('time is up');
+//         count--;
 
-        if (count === 0) {
-            clearInterval(intervalObj);
-        }
-    }, delay);
-}
+//         if (count === 0) {
+//             clearInterval(intervalObj);
+//         }
+//     }, delay);
+// }
 
-intervalCount2(3, 1000);
+// intervalCount2(3, 1000);
 
 
-// //what will happen first? fibonacci(45) or the setInterval
-let fibonacci = (term) => {
-    //base cases
-    if (term === 0) return 0;
-    if (term === 1) return 1;
-    if (term === 2) return 1;
+// // //what will happen first? fibonacci(45) or the setInterval
+// let fibonacci = (term) => {
+//     //base cases
+//     if (term === 0) return 0;
+//     if (term === 1) return 1;
+//     if (term === 2) return 1;
 
-    //recursive case + recursive step
-    let answer = fibonacci(term - 1) + fibonacci(term - 2);
-    // console.log(answer);
-    return answer;
-}
-console.log(fibonacci(45));
+//     //recursive case + recursive step
+//     let answer = fibonacci(term - 1) + fibonacci(term - 2);
+//     // console.log(answer);
+//     return answer;
+// }
+// console.log(fibonacci(45));
