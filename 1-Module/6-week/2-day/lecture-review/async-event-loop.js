@@ -50,6 +50,9 @@ console.log("synchronous code end....") //this line is synchronous code
 //after that, we dequeue the first thing in the message queue onto the main call stack to be evaluated.
 
 console.log("----------------Async & Event Loop in action----------------");
+//Event Loop is made up of 2 key components
+// - Call stack (stack datastructure, pop/push, Last in first out)
+// - Message Queue (queue datastructure, enqueue/dequeue, first in first out)
 
 //helloFunc callback
 const helloFunc = () => {
@@ -73,6 +76,7 @@ let fibonacci2 = (term) => {
 console.log(fibonacci2(25));
 
 //what will be outputted first? The fibonacci of 25 answer or helloFunc's console.log
+
 //fibonacci(25) gets output first because all synchronous code will get executed before the async code in the main call stack.
 
 //----event loop steps----
