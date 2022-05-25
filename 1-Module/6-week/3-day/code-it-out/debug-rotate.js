@@ -32,20 +32,21 @@ console.log(nums); // [ 3, 4, 1, 2 ]
 // debug this
 
 const rotate = function(array, num) {
+    debugger;
     if (num > 0) { //positive case rotate right
         for (let i = 0; i < num; i++) {
             let el = array.pop();
-            array.shift(el);
+            array.unshift(el); //add this to the front of the array
         }
     } else { //negative case, rotate left
         for (let i = 0; i < -(num); i++) {
-            let el = array.unshift();
+            let el = array.shift();
             array.push(el);
         }
     }
 };
 
-let arr = ['a', 'b', 'c', 'd', 'e'];
+let arr = ['a', 'b', 'c', 'd', 'e' ];
 rotate(arr, 2);
 console.log(arr); // [ 'd', 'e', 'a', 'b', 'c' ]
 
