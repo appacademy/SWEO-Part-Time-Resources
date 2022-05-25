@@ -19,5 +19,23 @@ console.log(positiveCounter()); // returns 8
 ***********************************************************************/
 
 const hiddenCounter = (num) => {
-
+    function innerFunc(){
+        if(num > 0){
+            return num += 1;
+        }
+        else{
+            return num -= 1;
+        }
+        
+    }
+    return innerFunc
 }
+
+let negativeCounter = hiddenCounter(-5); //returns a function
+console.log(negativeCounter()); // returns -6
+console.log(negativeCounter()); // returns -7
+
+let positiveCounter = hiddenCounter(5); // returns a function
+console.log(positiveCounter()); // returns 6
+console.log(positiveCounter()); // returns 7
+console.log(positiveCounter()); // returns 8
