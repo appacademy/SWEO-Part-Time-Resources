@@ -1,6 +1,7 @@
 # W6D2 - Async
 
-## Closure Warmup (10m)
+## Closure Warmup (15m)
+- Learning Boost
 - run `aa_update`
 - in `code-it-out` folder do `closure-review.js`
 
