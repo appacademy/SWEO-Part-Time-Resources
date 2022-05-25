@@ -4,7 +4,8 @@ console.log("---------------split-------------");
 // the string will split on when creating the elements for the array. 
 // ** IMPORTANT NOTE ** whatever separator you use will be removed when the array is created.
 let sandyQuote = 'This is not your average, everyday darkness. This is.. ADVANCED darkness';
-
+// let words = sandyQuote.split(' ')
+// console.log(words)
 
 
 // Remember that strings are immutable! This method must be set to a variable in order to have
@@ -18,13 +19,18 @@ console.log("---------------join-------------");
 // array are concatenated together with the separator between each element. This method
 // DOES NOT MUTATE the original array. It will return a new string.
 let spongebobQuote = ['The', 'pioneers', 'used', 'to', 'ride', 'these', 'babies', 'for', 'miles.']
+let sentence = spongebobQuote.join(' ')
+// // console.log(spongebobQuote);
+// console.log(sentence);
 
 
 
 
 console.log("-------------The beauty of opposite methods------------------")
 // When you combine these methods, you can get some pretty cool behavior!
-let planktonQuote = 'Holographic meatloaf! My favorite!'
+let planktonQuote = 'Holographic meatloaf! My favorite!';
+let betterMeal = planktonQuote.split('meatloaf').join('spaghetti');
+console.log(betterMeal);
 
 
 

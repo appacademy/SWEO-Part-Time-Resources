@@ -13,11 +13,12 @@ let uniquePairsMaker = function (arr) {
     let newArr = [];
     for (let i = 0; i < arr.length; i++) {
         let letter = arr[i];
-        for (let j = 0; j < arr.length; j++) {
+        for (let j = i + 1; j < arr.length; j++) {
             let secondLetter = arr[j];
-            newArr.unshift([letter, secondLetter]);
+            newArr.push([letter, secondLetter]);
         }
     }
+    console.log(newArr)
     return newArr;
 }
 

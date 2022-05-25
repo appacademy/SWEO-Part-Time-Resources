@@ -6,12 +6,13 @@ console.log("-------------------------------------------------------------------
 // first argument is the target index (starting index), second argument is how many elements to remove.
 let colors = ["red", "yellow", "blue", "green", "orange", "brown", "gray"];
 
-
 // If you set it to a variable, it will return the item(s) that were removed.
-
-
+let removedElements = colors.splice(1,2, 'purple', 'pink', 5)
+console.log(colors)
+// console.log(removedElements)
 
 // any additional arguments are elements to add to the array. Can add as many as you'd like.
 
-
+// colors.splice(4, 0, 'purple', 'pink');
+// console.log(colors)
 
