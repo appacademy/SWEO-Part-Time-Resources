@@ -28,11 +28,12 @@
   - then push your project up there today,
   - and start making commits to fill up those gardens over the weekend!
 
-## Other Options 
-- Work on readline input project (solo)
-- Work on async, sync, event loop, review homework, etc.
-- Work on extra recursion problems
-
+## Other Options: Priority on what to work on
+- Practice Assessment (not out yet)
+- Homework / Lecture on Conceptual Material (Being able to break down event loop, etc.)
+- Practice Practice Assessment (extra problems)
+- All the warm ups (`code-it-out`) that we did
+- Projects
 
 
 
