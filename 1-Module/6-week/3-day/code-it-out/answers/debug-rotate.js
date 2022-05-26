@@ -32,14 +32,15 @@ console.log(nums); // [ 3, 4, 1, 2 ]
 // debug this
 
 const rotate = function(array, num) {
+    debugger;
     if (num > 0) { //positive case rotate right
         for (let i = 0; i < num; i++) {
-            let el = array.pop();
-            array.shift(el);
+            let el = array.pop(); //expect this to remove last element in array, does it actually do that?
+            array.unshift(el); //expect this to take the el, and add it to the front of the array, does it ACTUALLY do that?
         }
     } else { //negative case, rotate left
         for (let i = 0; i < -(num); i++) {
-            let el = array.unshift();
+            let el = array.shift(); //expect this line to take the first el off the array
             array.push(el);
         }
     }

@@ -28,15 +28,29 @@ hint#2: recursive way #2 - if not using default params, how can we combine resul
 
 ***********************************************************************/
 const batchTimeouts = (cbsArr, delaysArr) => {
-    
+    //base case
+    if(cbsArr.length === 0){
+        return;
+    }
+    let cbs = cbsArr[0];
+    let delay = delaysArr[0];
+    setTimeout(cbs, delay);
+    return batchTimeouts(cbsArr, delaysArr.slice(1)); //cbsArr.slice(1) gets us closer to the base case at each recursive call
 }
+
+// const testArr = [1,2,3,4]
+// const frontEl = testArr[0]; //1
+// const slicedArr = testArr.slice(1); //[2,3,4]
+// console.log("sliced array", slicedArr);
+// console.log("first element:", frontEl);
+// console.log("original array:", testArr);
 
 
 const sayHello = () => console.log('hi');
 const sayGoodbye = () => console.log('bye');
 const shout = () => console.log('WHAT?');
 const tasks = [sayHello, sayGoodbye, shout];
-const delays = [500, 200, 900];
+const delays = [5000, 2000, 9000];
 
 const timeoutObjs = batchTimeouts(tasks, delays);
 // should print:
