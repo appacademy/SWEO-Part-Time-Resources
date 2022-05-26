@@ -27,10 +27,32 @@ hint#1: recursive way #1 - can use default parameters
 hint#2: recursive way #2 - if not using default params, how can we combine result of a previous array with the another array through recursion?
 
 ***********************************************************************/
-const batchTimeouts = (cbsArr, delaysArr) => {
-    
-}
+// const batchTimeouts = (cbsArr, delaysArr) => {
+//     const workingArray = [];
+//     for(let i=0; i<cbsArr.length; i++){
+//         workingArray.push(setTimeout(cbsArr[i], delaysArr[i]));
+//     }
+//     return workingArray;
+// }
 
+const batchTimeouts = (cbsArr, delaysArr, result=[]) => {
+    //base case
+    if(cbsArr.length === 0){
+        return result;
+    }
+
+    //recursive step
+    const id = setTimeout(cbsArr[0], delaysArr[0])
+    result.push(id);
+    cbsArr.shift(); //remove front that we just processed
+    delaysArr.shift() // remove front that we just processed
+
+    //recursive case
+    return batchTimeouts(cbsArr, delaysArr, result)
+
+    // this will work too
+    // return result;
+}
 
 const sayHello = () => console.log('hi');
 const sayGoodbye = () => console.log('bye');
@@ -43,3 +65,6 @@ const timeoutObjs = batchTimeouts(tasks, delays);
 //  'bye' after 200 ms
 //  'hi' after 500 ms
 //  'WHAT?' after 900 ms
+
+
+console.log(timeoutObjs); // [ Timeout {...},  Timeout {...}, Timeout {...} ]

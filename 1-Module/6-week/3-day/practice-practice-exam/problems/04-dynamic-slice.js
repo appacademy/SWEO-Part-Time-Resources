@@ -21,9 +21,40 @@
 
 //hint: what are the two edge cases they want us to cover for start and end?
 
+//going be a closure problem (inner func access outer func's variables)
 function dynamicSlice(start, end) {
-    // Your code here
+    const innerFunc = (innerArr) => {
+      //1) edge cases
+      let innerStart = start; //setting up innerStart to account for edge cases
+      if(start < 0){
+        innerStart = 0;
+      }
+
+      let innerEnd = end;
+      if(end > innerArr.length){
+        innerEnd = innerArr.length;
+      }
+
+      //2) slicing without slice
+      const workingArr = [];
+      for(let i=innerStart; i<innerEnd; i++){
+        workingArr.push(innerArr[i]);
+      }
+      return workingArr; //return the result inside the innerFunc
+
+    }
+    return innerFunc;
 }
+
+
+const slicer = dynamicSlice(1, 3);
+console.log(slicer([0, 1, 2, 3])); // prints [ 1, 2 ]
+
+const slicer2 = dynamicSlice(2, 7);
+console.log(slicer2(['kittens', 'puppies', 'cats', 'dogs'])); // prints [ 'cats', 'dogs' ]
+
+const slicer3 = dynamicSlice(-10, 2);
+console.log(slicer3([99, 40, 131, 8])); // prints [ 99, 40 ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {
