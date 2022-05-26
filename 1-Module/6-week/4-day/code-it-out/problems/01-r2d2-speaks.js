@@ -17,10 +17,26 @@
 
 //do this recursively
 function r2d2Speaks(code) {
-    
+    //base case, if array code reaches length of 0, we've reach stopping point, no more recursion
+    if(code.length === 0){
+        return;
+    }
+
+    //recursive step to get first element and remove it from code
+    const first = code.shift();
+
+    if(first === 0){
+        console.log("beep");
+        setTimeout(r2d2Speaks, 400, code); //code being passed in as argument
+    }
+    else{
+        console.log("boop");
+        setTimeout(r2d2Speaks, 800, code); //code being passed in as argument
+    }
+
 }
 
-let code = [0, 1, 1, 0];
+let code = [0, 1];
 r2d2Speaks(code);
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
