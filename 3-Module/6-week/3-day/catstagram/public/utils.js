@@ -11,7 +11,13 @@ export const getCat = async () => {
     // resolving the json out of it
     image = await image.json()
     // returning the url
-    return image[0].url
+    let url = localStorage.getItem('url')
+    if(url){
+        return url
+    }else{
+        localStorage.setItem('url', image[0].url)
+        return image[0].url
+    }
 }
 
 export const createImage = (url) => {
@@ -21,7 +27,9 @@ export const createImage = (url) => {
     img.setAttribute('id', 'image')
     // appending that image to the body of our webpage
     let div = document.createElement('div')
-    
+    let voteCount = localStorage.getItem('votes')
+
+
     div.innerHTML =`
     <div id='vote-div' class='vote-container'>
         <div class='button-container'>
@@ -29,7 +37,7 @@ export const createImage = (url) => {
             <button id='downvote'>downvote</button>
         </div>
         <div class='vote-container'>
-            <p id='vote-count'>0<p>
+            <p id='vote-count'>${voteCount ? voteCount : 0}<p>
         </div>
     </div>
     `
@@ -46,8 +54,15 @@ export const createNewCatBUtton = () => {
     let button = document.createElement('button')
     button.innerText = 'get new cat'
     button.style.marginBottom = '10px'
-    button.addEventListener('click', e => {
-        location.reload()
+    button.addEventListener('click', async e => {
+        let image = document.getElementById('image')
+        let url = await fetch('https://api.thecatapi.com/v1/images/search')
+        // resolving the json out of it
+        url = await url.json()
+        // returning the url
+        image.setAttribute('src', url[0].url)
+        localStorage.setItem('url', url[0].url)
+
     })
     document.body.appendChild(button)
 }
@@ -59,10 +74,12 @@ function voteFunc (){
 
     upvote.addEventListener('click', e => {
         numberOfVotes.innerText = `${Number(numberOfVotes.innerText)+1}`
+        localStorage.setItem('votes', Number(numberOfVotes.innerText))
     })
 
     downvote.addEventListener('click', e => {
         numberOfVotes.innerText = `${Number(numberOfVotes.innerText)-1}`
+        localStorage.setItem('votes', Number(numberOfVotes.innerText))
     })
     commentSection()
 }
@@ -91,9 +108,15 @@ function commentSection (){
         let comment  = document.createElement('div')
         comment.classList.add('comment')
         comment.innerText = document.getElementById('comment').value
+        let commentArr = JSON.parse(localStorage.getItem('comments'))
+        if(!commentArr){
+            localStorage.setItem('comments', `[]`)
+        }
+        if(commentArr){
+            commentArr.push(document.getElementById('comment').value)
+            localStorage.setItem('comments', JSON.stringify(commentArr))
+        }
         document.getElementById('comment').value = ''
         document.getElementById('comment-section').appendChild(comment)
     })
-
-
 }
