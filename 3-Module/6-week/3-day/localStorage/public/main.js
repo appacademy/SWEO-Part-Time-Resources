@@ -2,16 +2,13 @@
 
 // For storing user's theme selection in the browser
 function storeTheme(themeName) {
-    // storing a new item in local storage
+    // create a new Key value pair in local storage
     localStorage.setItem('theme', themeName)
 }
 
 // For restoring theme, if selected by the user in the past
 function restoreTheme() {
-    // grabbing a value out of local storage with the key
     let theme = localStorage.getItem('theme')
-    // passing the value of my local storage the the provided key into the st theme function
-    // check if the theme actually exists before we set it
     if(theme){
         setTheme(theme)
     }
@@ -20,34 +17,30 @@ function restoreTheme() {
 // For clearing theme selection from the browser's storage (reset to default)
 
 function clearTheme() {
-    // clearing an item from local storage
-    localStorage.removeItem('theme')
+    // only clear the given key/val
+    // localStorage.removeItem('theme')
+    // clear everything
+    localStorage.clear()
 }
 
 /* ================================ PHASE 2 ================================ */
 
 // For storing user's display name
 function storeName(displayName) {
-    // adding an item to the session storage
-    // session and local use the same constructor and have access to the same methods
     sessionStorage.setItem('displayName', displayName)
 }
 
 // For restoring user's display name, if set in the past
 function restoreName() {
-    // get the display name from local storage
     let name = sessionStorage.getItem('displayName')
-    //check if it exists 
-    if(name){
-        // if so call the set input values, passing in the value of the session storage
 
-        setInputValue('display-name', name)
+    if(name){
+        setInputValue("display-name", name)
     }
 }
 
 // For clearing user's display name from browser storage
 function clearName() {
-    // clearing the entire session storage
     sessionStorage.clear()
 }
 

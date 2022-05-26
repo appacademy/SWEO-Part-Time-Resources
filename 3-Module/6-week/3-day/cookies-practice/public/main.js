@@ -2,31 +2,30 @@
 
 // For storing user's theme selection in cookies
 function storeTheme(themeName) {
-    // creating a cookie, string of key=value
-    document.cookie = `theme=${themeName}`
-
-
+    document.cookie = `theme=${themeName};max-age=31536000`
+    // document.cookie  = 'something1=something1'
+    // document.cookie = 'something2=something2'
+    // console.log(document.cookie)
 }
 
 // For restoring theme from cookies, if selected by the user in the past
 function restoreTheme() {
-    // cookie comes back as one long string key and value separated by = sign
-    // I need to split the cookie on the equal sign to get they keys and values
-    // console.log(document.cookie)
+    // let cookieArr = document.cookie.split(' ')
+    // cookieArr.forEach(el => {
+    //     let cookie = el.split('=')[1].slice(0, el.split('=')[1].length)
+    //     if(cookie === 'griffin' || cookie === 'dragon' || cookie === 'wizard'){
+    //         setTheme(cookie)
+    //     }
+    // })
     let theme = document.cookie.split('=')[1]
-    // checking if the cookie exists 
     if(theme){
-        // if so set the theme to the value of the cookie
         setTheme(theme)
     }
 }
 
 // For clearing theme selection from cookies (reset to default)
 function clearTheme() {
-    // creating a cookie with the same key, updates the current cookie
-    // we need to update the cookie and give it a max-age of 0
-    //causing it to expire instantly
-    document.cookie = `theme=anything;max-age=0`
+    document.cookie = 'theme=anything;max-age=0'
 }
 
 /* ================================ PHASE 3 ================================ */
