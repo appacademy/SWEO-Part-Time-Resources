@@ -1,11 +1,12 @@
 # W6D3
 - Fun day today!
 
-## Warmups (20m)
+## Warmups (15m)
 - run `aa_update`
-- in `code-it-out` folder do:
-  -  `debug-rotate.js`
-  -  `batch-time-recursion.js`
+- in `code-it-out` --> `problems` folder do:
+  -  `01-r2d2-speaks.js`
+  -  `npm install` (inside of `code-it-out` folder)
+  -  run `mocha` to test your code
 
 ## Readline Pt1 Project (45m)
 - Work on readline input project (solo)
