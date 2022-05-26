@@ -16,9 +16,42 @@ https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Helper-Functions
 // with an 'x' , and for every word that is 6 or more characters we want to remove all the vowels. Helper functions 
 // could come in handy here!
 
+let changeVowelsToX = function(word){
+  let vowels = 'aeiou';
+  let result = '';
+  for (let i = 0; i < word.length; i++){
+    if (vowels.includes(word[i])){
+      result += 'x';
+    } else {
+      result += word[i]
+    }
+  }
+  return result;
+}
+
+let removeVowels = function(word){
+  let vowels = 'aeiou';
+  let result = '';
+  for (let i = 0; i < word.length; i++){
+    if (!vowels.includes(word[i])){
+      result += word[i];
+    }
+  }
+  return result;
+}
+
 
 let changeWords = function(sentence){
+  let words = sentence.split(' ');
 
+  for (let i = 0; i < words.length; i++){
+    if (words[i].length <= 5) {
+      words[i] = changeVowelsToX(words[i]);
+    } else {
+      words[i] = removeVowels(words[i]);
+    }
+  }
+  return words.join(' ');
 }
 
 let tweet = 'I just spent 3 hours walking around town playing pokemon go and I feel great!'

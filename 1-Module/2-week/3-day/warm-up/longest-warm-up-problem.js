@@ -32,7 +32,29 @@ console.log(longWords(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'se
 //output: expected number that represent the index
 
 let mostWordsFive = function(twoDiArr){
+  // create a variable for the index
+  // iterate through our 2d array to get access to each subarray
+  // feed each subarray to the long words func to get our longest words array back
+  // check then length of that and see which is bigger
+  // then return the index of the biggest.
 
+  let longests = [];
+
+  for (let i = 0; i < twoDiArr.length; i++){
+    let subArr = twoDiArr[i];
+    longests.push(longWords(subArr).length);
+  }
+
+  let biggestIndex = 0;
+  let biggestLength = longests[0]
+
+  for (let i = 1; i < longests.length; i++){
+    if (biggestLength < longests[i]) {
+      biggestIndex = i
+      biggestLength = longests[i]
+    }
+  }
+  return biggestIndex;
 }
 
 
