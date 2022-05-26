@@ -1,9 +1,4 @@
-class SinglyLinkedNode {
-  constructor(val) {
-    this.value = val;
-    this.next = null;
-  }
-}
+const { SinglyLinkedNode } = require('./01-singly-linked-list');
 
 class Queue {
   constructor() {
@@ -13,7 +8,6 @@ class Queue {
   }
 
   enqueue(val) {
-    // Add node to end of queue (linked list)
     const newNode = new SinglyLinkedNode(val);
 
     if (!this.head) {
@@ -23,22 +17,25 @@ class Queue {
       this.tail.next = newNode;
       this.tail = newNode;
     }
-
     this.length++;
     return this.length;
   }
 
   dequeue() {
-    // Remove node from front of queue (linked list)
     if (!this.head) return null;
-		const removedNode = this.head
-		if (!this.head.next) {
-			this.head = null
-			this.tail = null
-		} else {
-			this.head = this.head.next
-		}
-		this.length--
-		return removedNode.value
+    const removed = this.head;
+    if (!this.head.next) {
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = this.head.next;
+    }
+    this.length--;
+    return removed.value;
   }
 }
+
+module.exports = {
+  Queue,
+  SinglyLinkedNode,
+};
