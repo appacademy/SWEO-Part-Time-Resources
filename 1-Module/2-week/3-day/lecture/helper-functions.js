@@ -12,13 +12,45 @@ https://hackmd.io/ibCTcNIERy2irC8OUTRcFQ?view#Helper-Functions
 // having that code in separate functions will keep everything more readable. Helper functions don't only apply to
 // for loops, but they are a good example of when to use one. You can use Helpers anywhere for any reason.
 
-// Say we have a problem, where we want to take every word less than 5 characters long and replace all the vowels 
+// Say we have a problem, where we want to take every word with 5 or less characters and replace all the vowels 
 // with an 'x' , and for every word that is 6 or more characters we want to remove all the vowels. Helper functions 
 // could come in handy here!
 
 
-let changeWords = function(sentence){
 
+let changeVowelsToX = function(word){
+  let chars = word.split('');
+  let vowels = 'aeiou';
+  for (let i = 0; i < chars.length; i++){
+    if (vowels.includes(chars[i])) chars[i] = 'x';
+  }
+  return chars.join('');
+}
+
+let removeVowels = function(word){
+  let vowels = 'aeiou';
+  let newWord = '';
+
+  for (let i = 0; i < word.length; i++){
+    if (!vowels.includes(word[i])) newWord += word[i]
+  }
+  return newWord;
+}
+
+
+let changeWords = function(sentence){
+  let words = sentence.split(' ');
+
+  for (let i = 0; i < words.length; i++){
+    let word = words[i];
+    if (word.length <= 5){
+      words[i] = changeVowelsToX(word);
+    } else {
+      words[i] = removeVowels(word);
+    }
+  }
+
+  return words.join(' ');
 }
 
 let tweet = 'I just spent 3 hours walking around town playing pokemon go and I feel great!'

@@ -15,9 +15,9 @@ let longWords = function(words){
     return longestWords;
 }
 
-console.log(longWords(['bike', 'skateboard','scooter'])); // [ 'skateboard', 'scooter' ]
-console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
-console.log(longWords(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'])); //[]
+// console.log(longWords(['bike', 'skateboard','scooter'])); // [ 'skateboard', 'scooter' ]
+// console.log(longWords(['couscous', 'soup', 'ceviche', 'solyanka' ,'taco'])); // [ 'couscous', 'ceviche', 'solyanka' ]
+// console.log(longWords(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'])); //[]
 
 
 // --------------YOUR CODE HERE-------------
@@ -32,7 +32,22 @@ console.log(longWords(['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'se
 //output: expected number that represent the index
 
 let mostWordsFive = function(twoDiArr){
-
+  
+  let lengths = [];
+  for (let i = 0; i < twoDiArr.length; i++){
+    let subArr = twoDiArr[i];
+    lengths.push(longWords(subArr).length)
+    
+  }
+  let index = 0;
+  let longest = lengths[0];
+  for (let i = 0; i < lengths.length; i++){
+    if (longest < lengths[i]){
+      longest = lengths[i];
+      index = i
+    }
+  }
+  return index;
 }
 
 
