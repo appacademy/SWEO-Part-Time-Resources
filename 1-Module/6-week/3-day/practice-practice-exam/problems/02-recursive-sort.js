@@ -8,6 +8,34 @@
     console.log(sort([5, 4, 3, 2, 1])) // prints [1, 2, 3, 4, 5]
     console.log(sort([14, 5, 10, 6, 3, 4, 21, 16, 9])); // prints [ 3, 4, 5, 6, 9, 10, 14, 16, 21 ]
 */
+
+// ---------------------------sort original----------------------
+function sort(nums, result=[]) {
+    debugger;
+    //base case
+    if(nums.length === 0){
+        return result;
+    }
+
+    //find the smallest number
+    let smallestIndx = 0;
+    let smallestVal = nums[0];
+    for(let i=1; i<nums.length; i++){
+        const currentVal = nums[i]; //nums[0] and then use debugger to show stoods
+        if(currentVal < smallestVal){
+            smallestVal = currentVal;
+            smallestIndx = i;
+        }
+    }
+
+    //add to result
+    result.push(smallestVal);
+    //remove it from wherever the smallest is in the array (use the index)
+    nums.splice(smallestIndx, 1);
+    return sort(nums, result);
+}
+
+// ---------------------------Robert Merge Sort Solution----------------------
 //helper for sort
 const merge = (leftList, rightList) =>{
     let merge = [];
