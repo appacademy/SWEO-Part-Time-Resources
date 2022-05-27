@@ -11,8 +11,8 @@
 
 
 #### Assessment Breakdown
-11 total points (passing score is 8)
-- 2 coding problems (7 points total)
+10 total points (passing score is 8)
+- 2 coding problems (6 points total)
 - 3 FRQ (3 points total)
   - Breaking concepts down
 - 1 multiple choice (1 point each)

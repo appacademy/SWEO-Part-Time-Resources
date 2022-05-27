@@ -25,3 +25,6 @@
 - **Sync (blocking)**: If code is synchronous, that means that there is an inherent order among the commands and this order of execution is guaranteed.
 - **Async (non-blocking)**: If code is asynchronous, that means that there is no guarantee in the total order that commands are executed. Asynchronous is the opposite of synchronous.
 - What is an example of async code that we've been working with all week?
+
+
+## setTimeout

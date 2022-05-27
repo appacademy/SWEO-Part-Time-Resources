@@ -68,27 +68,27 @@ console.log("-----Practice #3: What is the output?-----")
 
 
 console.log("-----Practice #4: What is outputted?-----")
-// const foo = (a, b) => {
-//     console.log('time is up');
-//     console.log(`${a} ${b}`);
-// }
+const foo = (a, b) => {
+    console.log('time is up');
+    console.log(`${a} ${b}`);
+}
 
-// const res = setTimeout(foo, 0, 'potato', 'tomato'); //timeOut id object that represents the return value of setTimeout
-// console.log(res);
+const res = setTimeout(foo, 0, 'potato', 'tomato'); //timeOut id object that represents the return value of setTimeout
+console.log("timeoutOjb", res);
 
 
 // console.log("-----Practice #5: What if I wanted to run additional functions, logic, code when using setTimeout?-----")
-const first = () => {
-    console.log("first");
-}
-const third = () =>{
-    console.log("third");
-}
+// const first = () => {
+//     console.log("first");
+// }
+// const third = () =>{
+//     console.log("third");
+// }
 
-//run both first and third inside a single setTimeout
-//add an anonymous wrapper function that is then taking in and invoking the functions we want
-setTimeout(()=>{ 
-    first();
-    console.log("second");
-    third();
-}, 1000); //setTimeout will invoke the anonymous wrapper function after the given delay --> execute all the line of code inside that wrapper.
+// //run both first and third inside a single setTimeout
+// //add an anonymous wrapper function that is then taking in and invoking the functions we want
+// setTimeout(()=>{ 
+//     first();
+//     console.log("second");
+//     third();
+// }, 1000); //setTimeout will invoke the anonymous wrapper function after the given delay --> execute all the line of code inside that wrapper.
