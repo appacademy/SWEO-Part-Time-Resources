@@ -12,8 +12,10 @@ let arr = [
 ];
 
 // What is the length of the arr above?
+// 3
 
 // what element would be returned if we console.log(arr[1][2])?
+// 3
 
 // Using code comments, please explain what each line of the following for loop is doing
 // in your own words.
