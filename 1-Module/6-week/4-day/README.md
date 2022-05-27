@@ -2,6 +2,7 @@
 - Fun day today!
 
 ## Warmups (15m)
+- Learning Boost
 - run `aa_update`
 - in `code-it-out` --> `problems` folder do:
   -  `01-r2d2-speaks.js`
