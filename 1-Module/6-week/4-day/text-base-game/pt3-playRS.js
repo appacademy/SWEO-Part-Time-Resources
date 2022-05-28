@@ -75,6 +75,7 @@ function lumbridgeCastle() {
             lumbridgeCastle(); //return back to the castle
         }
     });
+   
 }
 
 function outsideCastle() {
