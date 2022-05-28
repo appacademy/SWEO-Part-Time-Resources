@@ -1,7 +1,10 @@
 /***********************************************************************
 Write a function called `eliminateType` which takes in an array of elements
-that could be of any type and returns a function. The return function should
+that could be of any type and 
+
+returns a function. The return function should
 accept a string that could be any of the following types:
+
 
 - 'object'
 - 'number'
@@ -54,9 +57,34 @@ on the command line.
 
 ***********************************************************************/
 
+//closure problem: inner func access outer funcs variables
+//outer func eliminateType takes in the array --> returns a function (inner func)
+//the inner func takes in a type string --> returns array of everything that is NOT that type.
+
+// const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
+// smallEliminate('number'); // ['one', 'two', 'three']
+// smallEliminate('string'); // [1, 2, 3]
+
 function eliminateType(arr) {
-  // Your code here
+  const innerFunc = (typeKeyWord) =>{ //typeKeyWord --> "number", "string", etc.
+    const newArr = [];
+    for(let i=0; i<arr.length; i++){
+      const currentEl = arr[i]; //1, "one"
+      //if the type of the current el is the same as the typeKeyWord provided
+      if(typeof currentEl !== typeKeyWord){
+        newArr.push(currentEl);
+      }
+    }
+    //return the newArr result after we iterated through ever element and check its type
+    return newArr;
+    
+  }
+  return innerFunc;
 }
+
+const smallEliminate = eliminateType([1, 'one', 2, 'two', 3, 'three']);
+console.log(smallEliminate('number')); // ['one', 'two', 'three']
+console.log(smallEliminate('string')); // [1, 2, 3]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 try {

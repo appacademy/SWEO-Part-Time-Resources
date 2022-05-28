@@ -45,6 +45,8 @@
 ## Open Study Period
 - Review and try all the `code-it-out` problems we did for warm-ups this week!
 - Practice Assessment
+- `practice-practice-exam` folder
 - Homework / Lecture on Conceptual Material (Being able to break down event loop, etc.)
 - Week 6 Additional Problems (extra problems)
+- Week 7 Content
 
