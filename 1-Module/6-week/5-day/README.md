@@ -1,4 +1,4 @@
-# M1W6D5
+# M1W6D5 - Today
 - We're almost there!!! Final push through Mod 1!!! 
 - Don't slow down when you're close to the finish line :thumbsup:
 
