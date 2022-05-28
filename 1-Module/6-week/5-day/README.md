@@ -1,6 +1,7 @@
 # M1W6D5
 - We're almost there!!! Final push through Mod 1!!! 
 - Don't slow down when you're close to the finish line :thumbsup:
+- Day off on Monday - Memorial Day, Assessment on Tuesday
 
 ## Wrap Up Readline Project || Study (1hr)
 
@@ -25,13 +26,17 @@
 
 
 ## Optional Showcase of your Cool Readline Project!
+- Everyone, please message me the link to your project
 - Share screen and walk us through your awesome proj!
+
 
 ## Practice Assessment / Study
 - **VERY IMPORTANT**
   - Don't look at solution for FRQs / code, try it, even if we don't know the answer, give the wrong answer first
   - Then after, check the answer, and then we'll have a strong desire to LEARN why that is the right answer and why our answer was wrong. Rather than just copying the right answer.
   - Try this as this is a practice assessment, and there's **NO RISK IN BEING WRONG on a PA** 
+- If you finished early, try the code it out folder for quick review!
+- **Please have your cameras on, thank you**
 
 ## Lunch
 
