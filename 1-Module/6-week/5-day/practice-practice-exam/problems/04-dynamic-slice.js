@@ -23,27 +23,7 @@
 
 //going be a closure problem (inner func access outer func's variables)
 function dynamicSlice(start, end) {
-    const innerFunc = (innerArr) => {
-      //1) edge cases
-      let innerStart = start; //setting up innerStart to account for edge cases
-      if(start < 0){
-        innerStart = 0;
-      }
 
-      let innerEnd = end;
-      if(end > innerArr.length){
-        innerEnd = innerArr.length;
-      }
-
-      //2) slicing without slice
-      const workingArr = [];
-      for(let i=innerStart; i<innerEnd; i++){
-        workingArr.push(innerArr[i]);
-      }
-      return workingArr; //return the result inside the innerFunc
-
-    }
-    return innerFunc;
 }
 
 
