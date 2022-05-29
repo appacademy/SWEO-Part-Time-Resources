@@ -2,7 +2,7 @@
 
 ## Debugger Warmup (10m)
 - run `aa_update`
-- in `code-it-out` folder do `debug-exponent.js`
+- in `code-it-out` folder do `debug-lineCount.js`
 
 ## Project Time (1hr15m)
 - Continue working on recursion project
@@ -11,10 +11,6 @@
 
 ## Sort Warmup (20m)
 - in `code-it-out` folder do `sort.js` (same problem as your project 😄)
-
-
-## Practice Assessment (until lunch)
-- If you're stuck, feel free to ask us for help, we'll provide the help to get ya going
 
 ## Lunch (30m)
 
@@ -65,6 +61,9 @@ Everything else is Truthy;
 - Primitive Data Types Quiz
 - Falsey Values in JavaScript Quiz
 - IIFE Quiz
+
+## Practice Assessment (until lunch)
+- If you're stuck, feel free to ask us for help, we'll provide the help to get ya going
 
 ## aA Open Links
 
