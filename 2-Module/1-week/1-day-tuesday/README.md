@@ -1,4 +1,4 @@
-# W5D1
+# W7D1 - Tuesday
 
 ## Assessment (1h45m)
 - You can always use the node to test code, reference homework on AA-Open for content, BUT NOT NOTES! 
