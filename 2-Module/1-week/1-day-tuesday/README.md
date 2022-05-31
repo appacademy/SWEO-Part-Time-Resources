@@ -35,6 +35,7 @@
 - <span style="color:#cd1d1d;">**VERY IMPORTANT**</span>: If we are not doing or not relying on the homework this week, we will fail the assessment! Please do the homework!
   - <span style="color:#cd1d1d;">Reverse classroom style</span> is going to be the <span style="color:#cd1d1d;">theme of this module</span>
   - The assessment is **all multiple choice** and very heavy on the conceptual content (DRY, Single Responsibility Principle, Classes - Object oriented Programming)
+    - Putting code in the node repl won't work and won't solve your MCs since it's more conceptual in nature.
 	
 ## End of Day
 - **Passive Learning** - introduction / shows us `what is possible`
