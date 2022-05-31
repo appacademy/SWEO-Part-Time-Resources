@@ -1,6 +1,6 @@
 # W7D1 - Tuesday
 
-## Assessment (1h45m)
+## Assessment (1h50m)
 - You can always use the node to test code, reference homework on AA-Open for content, BUT NOT NOTES! 
 
 - Remember, looking things up can slow you down. I highly recommend that you try the problem with your own knowledge first to the best of your ability, then reference material to double check (especially for FRQs)
