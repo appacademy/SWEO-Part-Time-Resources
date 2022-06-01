@@ -52,6 +52,8 @@
     - Coding
     - `Explaining` concepts / what we’ve `learned` in `our own words`
       - FRQs
+        - Try w/ our own knowledge first
+        - If we search or look up the answer right away without trying, we have already lost the active learning battle.
       - Answering Questions / Participating
       - Drawing out models, plans, visuals, etc.
       - Flash Cards (without choices)
