@@ -1,6 +1,8 @@
 # M2W1D2 - Wednesday
 - Headsup: Formative Quizzes are one day ahead (wednesday formative quiz is for thursday) 
-
+- Upload projects / practices to Github (private them) 
+  - Continue to fill out that green garden by constantly committing.
+  - Should aim for 4-5 commits a day.
 ## Code-it-out SRP (10m)
 - in the `code-it-out` folder do:
   - `rotate-SRP`
