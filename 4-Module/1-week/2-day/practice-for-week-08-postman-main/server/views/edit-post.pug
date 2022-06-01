@@ -1,0 +1,13 @@
+extends layout.pug
+
+block title
+  title Edit Post #{post.title}
+
+block body
+  h1 Edit Post #{post.title}
+  form(action="/posts/" + post.postId method="post")
+    label Title
+      input(type="text" name="title" value=post.title)
+    label Description 
+      textarea(name="description")= post.description
+    button(type="submit") Submit
