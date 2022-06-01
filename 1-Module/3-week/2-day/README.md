@@ -44,6 +44,8 @@ Once you finish:
 
 - Please leave your breakout room so that we know you're finished, and if there is time left, feel free to take a quick break. Please be sure to be back when the alotted time for the assessment is up.
 
+---
+
 ## Basic Terminal Commands
 
 - ls
