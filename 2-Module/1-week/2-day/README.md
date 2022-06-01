@@ -6,7 +6,9 @@
 ## Code-it-out SRP (10m)
 - in the `code-it-out` folder do:
   - `rotate-SRP`
-
+- Solo day today
+  - Screenshare and cameras on
+  - instructors will check in here and there to see if anyone needs anything
 ## Single Responsibility Principle (30m)
 
 - SRP - Practice
