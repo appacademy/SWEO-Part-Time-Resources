@@ -11,11 +11,11 @@
 - in the `code-it-out` folder do:
   - `rotate-SRP`
 
-## Single Responsibility Principle (30m)
+## Single Responsibility Principle (40m)
 
 - SRP - Practice
 
-## DRY Principle (30m)
+## DRY Principle (40m)
 
 - DRY - Practice
 
