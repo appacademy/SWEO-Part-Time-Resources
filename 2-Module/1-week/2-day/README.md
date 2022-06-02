@@ -22,3 +22,10 @@
 ## Solo Project
 
 - Rock Paper Scissors
+
+
+## Before Tomorrow
+- If you didn't get through the project, don't sweat it, don't continue anymore!
+- The important thing to focus on for tonight before thursday (tomorrow) is the homework!
+- It's all about Object Oriented Programming (Classes)
+- We will be **pair programming** tomorrow all day on objects!
