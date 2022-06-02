@@ -32,6 +32,6 @@ Why does OOP use Classes?
 - All Formative Quizzes so far
 - Practice Assessment Released
 - Exam Breakdown
-  - All MC
+  - All MC (8 questions, passing === 6/8)
   - OOP & Classes (all concepts we have learned so far + saturday)
   - identifying DRY & SRP
