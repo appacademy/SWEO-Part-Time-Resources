@@ -16,29 +16,50 @@ YOUR TASK:
     - test this helper individually
 
 ***********************************************************************/
+//SRP vs. DRY
+//SRP --> mainly working with helper functions, separating the logic into smaller functions (function should do one thing and one thing really well)
+//DRY --> 
+    // -repeating patterns or repeating code and reducing the redundancy of it. 
+    // -Typically you'll see repeating strings, code in different functions that can be simplified. 
+    // -If you change something like a value and have to do it in many places, then you'll probably want to apply DRY.
 
+
+//How do we determine if we ned to apply SRP?
+//-if our function has too much logic that could be separated 
+//-We need separation of concerns (one function should not do everything, should instead do one thing well really well)
 
 //right helper func:
+const rotateRightHelper = (array, num) =>{
+    for(let i=0; i<num; i++){
+        let el = array.pop(); //remove last
+        array.unshift(el); //add to front
+    }
+}
+// let arrTest = ['a', 'b', 'c', 'd', 'e'];
+// rotateRightHelper(arrTest, 2) // arrTest = [ 'd', 'e', 'a', 'b', 'c' ]
+// console.log(arrTest);
 
 //left helper func:
-
+const rotateLeftHelper = function(array, num){
+    for (let i = 0; i < -(num); i++) {
+        let el = array.shift();
+        array.push(el);
+    }
+    return array;
+}
 
 function dynamicRotate(num) {
     const innerFunc = array => {
+        //innerFunc uses SRP
         if (num > 0) {
             //rotate array to the right
-            for(let i=0; i<num; i++){
-                let el = array.pop(); //remove last
-                array.unshift(el); //add to front
-            }
+            //skeleton: rotateRightHelper(array, num) --> can return maybe the reference to the mutated array or don't return anything
+            rotateRightHelper(array,num);
         } else {
             //rotate array to the left
-            for (let i = 0; i < -(num); i++) {
-                let el = array.shift();
-                array.push(el);
-            }
+            rotateLeftHelper(array,num); //rotates left and mutates array
         }
-        return arr;
+        return array;
     }
     return innerFunc;
 }
