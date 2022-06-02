@@ -12,16 +12,15 @@
   - `rotate-SRP`
 
 ## Single Responsibility Principle (40m)
-
+- SRP - Quiz
 - SRP - Practice
 
 ## DRY Principle (40m)
-
+- DRY - Quiz
 - DRY - Practice
 
 ## Solo Project
-
-- Rock Paper Scissors
+- Rock Paper Scissors (phase 1-3)
 
 
 ## Before Tomorrow
