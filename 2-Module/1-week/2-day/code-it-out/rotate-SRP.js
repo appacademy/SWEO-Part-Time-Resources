@@ -65,6 +65,3 @@ console.log(animals); // [ 'koala', 'opossum', 'kangaroo', 'wombat' ]
 // - utilizing helper functions to reduce the amount of code that one function has to do.
 // - test individual functions / components and makes it easier to debug
 
-// SRP vs. DRY TLDR:
-// SRP --> helper functions, do one thing and one thing well
-// DRY --> repeating logic/patterns or making a small change requires multiple change --> normalize/reduce the redundancy
