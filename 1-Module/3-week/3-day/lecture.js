@@ -1,35 +1,82 @@
 // What is an Object?
+// A data type similar to an Array, can't index because everything is stored in a key
+// Order is NOT guaranteed. 
 
 // No indexes?
+// Use keys instead of indeces
 
 // Object Syntax
+let arr = [
+
+];
+let obj = {};
 
 // POJO?
+// Plain Old JS Obj
 
 // Object Example
 
+let witcher = {
+    'name': 'Geralt',
+    'birthplace': 'Rivia',
+    'hobbies': [
+        'monster hunting', 'pretending to be emotionless', 'rescuing princesses'
+    ],
+    'animal': {
+        'species': 'horse',
+        'name': 'Roach'
+    },
+    'quote': function(){
+        return 'Evil is evil. Lesser, greater, middling... Makes no difference.'
+    },
+    123: 'one, two, three'
+}
+
 // How to access values
 // Bracket Notation
+// console.log(witcher['name']) // Geralt
+// let town = 'birthplace';
+// console.log(witcher[town]) // Rivia
+// console.log(witcher[123]) // one, two, three
 
 // Dot Notation
+// console.log(witcher.hobbies) // [hobbies]
 
 // how to invoke a function stored inside an object
+// console.log(witcher.quote()) // 'the quote'
 
 // how to add key value pairs to an object
+witcher['loveInterest'] = 'Yennifer';
+// console.log(witcher);
 
-// How to access a value if it exists in an obj
+// How to update a value if it exists in an obj
+witcher[123] = 'three, two, one'
+// console.log(witcher);
+witcher.birthplace = 'Norman, Ok'
+// console.log(witcher)
 
 // How to iterate through an object
 // for in loops!
 
+for (let someKey in witcher){
+    // console.log(witcher[someKey]);
+}
+
 // Is it mutable?
+// they are definitely mutable!
 
 // Object Methods! (important please study these!)
-// Object.keys
+// Object.keys // return an array of all keys
+let keys = Object.keys(witcher);
+// console.log(keys);
 
-// Object.values
+// Object.values // return an array of all values
+let values = Object.values(witcher);
+// console.log(values);
 
-// Object.entries
+// Object.entries // return a 2d array with key value pairs in each subArr
+let entries = Object.entries(witcher);
+// console.log(entries);
 
 // *********************************object challenges *****************************
 
@@ -102,13 +149,24 @@ let exampleUser = {
 }
 
 
-// print out the cities
+// print out the city
+console.log(exampleUser.results[0].location.city)
+
 
 // print out the title, first, last, city and email in one line
+// console.log(exampleUser.results[0].email)
+let title = exampleUser.results[0].name.title
+let first = exampleUser.results[0].name.first
+let last = exampleUser.results[0].name.last
+let city = exampleUser.results[0].location.city
+let email = exampleUser.results[0].email
 
-// change the values to be close to your profile
+// console.log(title, first, last, city, email)
 
 // add a hobbies, favorites into the object
+
+exampleUser.results['hobbies'] = ['running', 'hiking']
+console.log(exampleUser.results.hobbies)
 
 
 
