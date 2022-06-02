@@ -2,6 +2,7 @@
 //- there's repeating logic that are similar that can be abstracted from each function
 // - Typically have strings that are logged or returned with repeating words
 // - if you ever find yourself changing a piece of code (value or variable) and have to change it in multiple places
+// hello
 
 function getBiggestValue(first, second){
   let biggest;
