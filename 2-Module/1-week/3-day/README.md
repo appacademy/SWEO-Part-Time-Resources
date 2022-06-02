@@ -28,6 +28,10 @@ Why does OOP use Classes?
 - Long Practice: Manager and Employee Salaries
 
 ## EOD 
+- Remember to do your homework! (Polymorphism, static methods) - **WILL BE ON EXAM**
 - All Formative Quizzes so far
 - Practice Assessment Released
 - Exam Breakdown
+  - All MC
+  - OOP & Classes (all concepts we have learned so far + saturday)
+  - identifying DRY & SRP
