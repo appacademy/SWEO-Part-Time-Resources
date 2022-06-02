@@ -9,7 +9,7 @@ first invoked. It will return the original array mutated by
 the given rotation.
 
 YOUR TASK: 
-- Refactor this to follow the single-responsibility principle
+- Refactor this to follow the single-responsibility principle (helper functions)
 - If num is greater than 0, create a helper func to rotate it to the right
     - test this helper individually
 - If num is less than 0, create a helper func to rotate it to the left
