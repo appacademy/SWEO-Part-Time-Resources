@@ -10,7 +10,9 @@
 /* 
 
 WRITE YOUR ANSWER HERE:
-i.e. The main concept of OOP is the idea that we can...
+i.e. The main concept of OOP is the idea that we can identify, group, and organize data (properties) and behaviors (methods) under a tool like classes. As your program gets bigger, classes & oop becomes a better to use use to help group information and scale the project
+
+ex: person class that contains information and behaviors of people (eyeColor, age, gender, cry(), walk(), befriend())
 
 
 
