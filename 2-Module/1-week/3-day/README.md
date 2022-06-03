@@ -26,6 +26,7 @@ Why does OOP use Classes?
 
 ## Classes Project (Pair)
 - Long Practice: Manager and Employee Salaries
+- Phase 1 - 4 (all the same project, only need to download it once)
 
 ## EOD 
 - Remember to do your homework! (Polymorphism, static methods, overriding, etc.) - **WILL BE ON EXAM**
