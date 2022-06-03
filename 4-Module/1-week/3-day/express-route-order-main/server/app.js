@@ -1,6 +1,12 @@
 const express = require('express');
 const app = express();
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 2022-Jan-W
 app.get('/', (req, res) => {
     res.send("Server is alive");
 });
