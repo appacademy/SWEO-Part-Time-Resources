@@ -10,10 +10,11 @@
 /* 
 
 WRITE YOUR ANSWER HERE:
-i.e. The main concept of OOP is the idea that we can...
+i.e. The main concept of OOP is the idea that we can identify, group, and organize related data and functionalities together using a tool like classes.
 
-
-
+        class Weapon 
+        /           \
+class bow weapon    class word weapon
 */
 
 
