@@ -1,8 +1,12 @@
-// I am creating a game and I want to create NPC that contain certain and behaviors
+// I am creating a game and I want to create NPC that contain certain data and behaviors
 
 // Classes are just special functions that are like blueprints / template that we then use in order to create INSTANCES (objects from that blueprint)
+// Classes allow us to identify, group, and organize related data (good for bigger applications)
 // we just feed the class raw data, and it will create the object for us
 
+//class Towns{}
+//class weapons{}
+//class Food{} --> extend --> DessertFood{}
 class MonsterNPC {
     //constructor, initially feed the raw data to our constructor
     constructor(name, race, lifepoints, attackable, description, location){
@@ -56,7 +60,6 @@ class MonsterNPC {
 // 2) constructor method is called, and `this` is bound to the object that was just created
 // 3) constructor builds the new object and new object is IMPLICITLY returned from the constructor method.
 const gnomeChild = new MonsterNPC("Gnome Child", "gnomes", 2, true, "Small, even by gnome standards", "Tree Gnome Stronghold");
-
 console.log(gnomeChild); //our class constructor when instantiated, created an object for us
 
 console.log("------displayData() instance method-----")
