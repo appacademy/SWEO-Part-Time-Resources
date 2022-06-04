@@ -1,120 +1,167 @@
-// Do not change this
-class TreeNode {
-  constructor(val) {
-    this.val = val;
-    this.left = null;
-    this.right = null;
-  }
-}
+const { BinarySearchTree, TreeNode } = require('./binary-search-tree.js');
 
-class BinarySearchTree {
-  constructor() {
-    this.root = null;
-  }
+// Practice problems on binary trees
 
-  insert(val, currentNode = this.root) {
-    const newNode = new TreeNode(val);
+const findMinBST = (rootNode) => {
+  if (rootNode.left) return findMinBST(rootNode.left);
+  return rootNode.val;
+};
 
-    if (currentNode === null) this.root = newNode;
-    else if (currentNode.val > val) {
-      if (currentNode.left === null) currentNode.left = newNode;
-      else this.insert(val, currentNode.left);
-    } else if (currentNode.val < val) {
-      if (currentNode.right === null) currentNode.right = newNode;
-      else this.insert(val, currentNode.right);
+const findMaxBST = (rootNode) => {
+  if (rootNode.right) return findMaxBST(rootNode.right);
+  return rootNode.val;
+};
+
+const findMinBT = (rootNode) => {
+  let min = rootNode.val;
+
+  if (rootNode.left) min = Math.min(min, findMinBT(rootNode.left));
+  if (rootNode.right) min = Math.min(min, findMinBT(rootNode.right));
+
+  return min;
+};
+
+const findMaxBT = (rootNode) => {
+  let max = rootNode.val;
+
+  if (rootNode.left) max = Math.max(max, findMaxBT(rootNode.left));
+  if (rootNode.right) max = Math.max(max, findMaxBT(rootNode.right));
+
+  return max;
+};
+
+const getHeight = (rootNode) => {
+  let queue = [rootNode];
+  let height = 0;
+  let next = [];
+  while (queue.length) {
+    const current = queue.shift();
+
+    if (current.left) {
+      next.push(current.left);
     }
-  }
-  //! Geoffrey's while loop solution
-  // insert(val) {
-  //   const newNode = new TreeNode(val);
-  //   let currentNode = this.root;
-
-  //   if (!this.root) {
-  //     this.root = newNode;
-  //   } else {
-  //     while (newNode !== currentNode) {
-  //       if (val < currentNode.val) {
-  //         if (!currentNode.left) {
-  //           currentNode.left = newNode;
-  //           return;
-  //         }
-  //         currentNode = currentNode.left;
-  //       } else if (val > currentNode.val) {
-  //         if (!currentNode.right) {
-  //           currentNode.right = newNode;
-  //           return;
-  //         }
-  //         currentNode = currentNode.right;
-  //       }
-  //     }
-  //   }
-  // }
-
-  // search(val, currentNode = this.root) {
-  search(val) {
-    let currentNode = this.root;
-
-    while (currentNode) {
-      if (currentNode.val === val) return true;
-      if (currentNode.val > val) currentNode = currentNode.left;
-      else currentNode = currentNode.right;
+    if (current.right) {
+      next.push(current.right);
     }
 
-    return false;
-  }
-
-  preOrderTraversal(currentNode = this.root) {
-    // Current, Left, Right
-    if (currentNode) console.log(currentNode.val);
-    if (currentNode.left) this.preOrderTraversal(currentNode.left);
-    if (currentNode.right) this.preOrderTraversal(currentNode.right);
-  }
-
-  inOrderTraversal(currentNode = this.root) {
-    // Left, Current, Right
-    if (currentNode.left) this.inOrderTraversal(currentNode.left);
-    if (currentNode) console.log(currentNode.val);
-    if (currentNode.right) this.inOrderTraversal(currentNode.right);
-  }
-
-  postOrderTraversal(currentNode = this.root) {
-    // Left, Right, Current
-    if (currentNode.left) this.postOrderTraversal(currentNode.left);
-    if (currentNode.right) this.postOrderTraversal(currentNode.right);
-    if (currentNode) console.log(currentNode.val);
-  }
-
-  // Breadth First Traversal - Iterative
-  breadthFirstTraversal() {
-    if (!this.root) return null;
-
-    let currentNode;
-    const queue = [this.root];
-
-    while (queue.length) {
-      currentNode = queue.shift();
-      console.log(currentNode.val);
-
-      if (currentNode.left) queue.push(currentNode.left);
-      if (currentNode.right) queue.push(currentNode.right);
+    if (!queue.length && next.length) {
+      queue = next;
+      next = [];
+      height++;
     }
   }
 
-  // Depth First Traversal - Iterative
-  depthFirstTraversal() {
-    if (!this.root) return null;
+  return height;
+};
 
-    let currentNode;
-    const stack = [this.root];
+const countNodes = (rootNode) => {
+  let count = 0;
 
-    while (stack.length) {
-      currentNode = stack.pop();
-      console.log(currentNode.val);
+  if (rootNode) count++;
+  if (rootNode.left) count += countNodes(rootNode.left);
+  if (rootNode.right) count += countNodes(rootNode.right);
 
-      if (currentNode.left) stack.push(currentNode.left);
-      if (currentNode.right) stack.push(currentNode.right);
-    }
+  return count;
+};
+
+const balancedTree = (rootNode) => {
+  if (!rootNode.left && !rootNode.right) return true;
+  if (rootNode.left && rootNode.right) {
+    const left = getHeight(rootNode.left);
+    const right = getHeight(rootNode.right);
+    if (Math.abs(left - right) <= 1) return true;
   }
-}
 
-module.exports = { BinarySearchTree, TreeNode };
+  return false;
+};
+
+const getParentNode = (rootNode, target) => {
+  if (rootNode.val === target) return null;
+  if (rootNode.left && rootNode.left.val === target) return rootNode;
+
+  if (rootNode.right && rootNode.right.val === target) return rootNode;
+
+  if (rootNode.left) {
+    let left = getParentNode(rootNode.left, target);
+    if (left) return left;
+  }
+  if (rootNode.right) {
+    let right = getParentNode(rootNode.right, target);
+    if (right) return right;
+  }
+};
+
+const inOrderPredecessor = (rootNode, target, stack = []) => {
+  if (rootNode.left) {
+    let left = inOrderPredecessor(rootNode.left, target, stack);
+    if (left || left === null) return left;
+  }
+
+  stack.push(rootNode);
+  if (rootNode.val === target) {
+    if (stack[0].val === target) return null;
+    else return stack[stack.length - 2].val;
+  }
+
+  if (rootNode.right) {
+    let right = inOrderPredecessor(rootNode.right, target, stack);
+    if (right || right === null) return right;
+  }
+};
+
+const deleteNodeBST = (rootNode, target) => {
+  // Do a traversal to find the node. Keep track of the parent
+  // Undefined if the target cannot be found
+  const parent = getParentNode(rootNode, target);
+  if (parent === undefined) return undefined;
+
+  // Set target based on parent
+  let targetNode;
+  let onYourLeft = false;
+  if (!parent) {
+    targetNode = rootNode;
+  } else if (parent.left && parent.left.val === target) {
+    targetNode = parent.left;
+    onYourLeft = true;
+  } else {
+    targetNode = parent.right;
+  }
+
+  // Case 0: Zero children and no parent:
+  if (!parent && !targetNode.left && !targetNode.right) return null;
+
+  // Case 1: Zero children:
+  if (!targetNode.left && !targetNode.right) {
+    if (onYourLeft) parent.left = null;
+    else parent.right = null;
+    return;
+  }
+  // Case 2: Two children:
+  if (targetNode.left && targetNode.right) {
+    let pred = inOrderPredecessor(rootNode, target);
+    deleteNodeBST(rootNode, pred);
+    targetNode.val = pred;
+    return;
+  }
+  if (targetNode.left) {
+    if (onYourLeft) parent.left = targetNode.left;
+    else parent.right = targetNode.left;
+    return;
+  } else {
+    if (onYourLeft) parent.left = targetNode.right;
+    else parent.right = targetNode.right;
+  }
+};
+
+module.exports = {
+  findMinBST,
+  findMaxBST,
+  findMinBT,
+  findMaxBT,
+  getHeight,
+  countNodes,
+  balancedTree,
+  getParentNode,
+  inOrderPredecessor,
+  deleteNodeBST,
+};
