@@ -1,5 +1,5 @@
-let friends = ['Ludo', 'Hoggle', 'Sarah', 'Sir Didymus']
-let nums = [2,4,6,8,10,12,14,16,18]
+
+// let nums = [2,4,6,8,10,12,14,16,18]
 
 // for each example
 // YOU CANNOT RETURN FROM A FOREACH 
@@ -7,6 +7,12 @@ let nums = [2,4,6,8,10,12,14,16,18]
 // but will not return anything.
 // this method can mutate the original array if the 
 // code in your callback function mutates it.
+
+// friends.forEach(function(str, i){
+//   friends[i] = str.toUpperCase();
+// })
+
+// console.log(friends);
 
 
 // Every other advanced method will return something
@@ -18,11 +24,26 @@ let nums = [2,4,6,8,10,12,14,16,18]
 // returns and array with every element in the array
 // after the changes have been made to each element.
 
+// let doubles = nums.map(function(num){
+//   return num * num
+// })
 
+// console.log(doubles)
+// console.log(nums)
+
+
+let friends = ['Ludo', 'Hoggle', 'Sarah', 'Sir Didymus']
 // filter example
 // returns an array with only the elements that returned
 // true from the callback function inside.
 
+// let longestFriends = friends.filter(function(friend){
+//   return friend.length > 4
+// })
+
+// console.log(longestFriends)
+
+let nums = [2,4,6,8,10,12,14,16,18]
 // reduce example
 // reduce is going to return a single value (the accum's 
 // final value).
@@ -35,17 +56,22 @@ let nums = [2,4,6,8,10,12,14,16,18]
 // be the accumulator, the second arg is the ele in the
 // array.
 
+let sum = nums.reduce(function(accum, num){
+  return accum += num
+}, 20)
 
-// const names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
-// let countedNames = names.reduce(function (allNames, name) {
-//   if (name in allNames) {
-//     allNames[name]++
-//   }
-//   else {
-//     allNames[name] = 1
-//   }
-//   return allNames
-// }, {})
-// // countedNames is:
-// // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
+console.log(sum);
+
+const names = ['Alice', 'Bob', 'Tiff', 'Bruce', 'Alice']
+let countedNames = names.reduce(function (allNames, name) {
+  if (name in allNames) {
+    allNames[name]++
+  }
+  else {
+    allNames[name] = 1
+  }
+  return allNames
+}, {})
+// countedNames is:
+// { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
 
