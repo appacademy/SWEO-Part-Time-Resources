@@ -3,7 +3,7 @@
 - DISREGARD the time they put on the homework for the reading, don't feel pressured by it, not accurate. Go at your own pace and it's <span style="color:#cd1d1d;">**VERY IMPORTANT TO RUN THE EXAMPLE AND BREAK / EXPERIMENT w/ the CODE**</span> 
   - Are we doing any active learning along our passive learning?
 
-## Quizzes - 8 min
+## Code it out - 8 min
 - `aa_update`
 - in the `code-it-out` folder
 - do: `inheritance-frq.js` file
