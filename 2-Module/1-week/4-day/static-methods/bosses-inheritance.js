@@ -62,6 +62,12 @@ class Bosses extends MonsterNPC{
     //3) SEE EXAMPLE AT THE BOTTOM OF THE FILE
 
     //hint: remember to use the getRace() method, and not access the data directly!! (Encapsulation: hiding/protecting your properties behind methods!)
+    static compareBossesRace(firstBossInstance, secondBossInstance){
+        if(firstBossInstance.getRace() === secondBossInstance.getRace()){
+            return true;
+        }
+        return false;
+    }
 
     
 
