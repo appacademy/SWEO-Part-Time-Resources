@@ -12,6 +12,11 @@
 WRITE YOUR ANSWER HERE:
 
 
+-inheritance is just the ability for a class(es) to receive the properites or methods from a parent class
+-Inheritance apply to classes NOT instances. 
+-Classes (blueprints); instances (houses)
+
+
 */
 
 
