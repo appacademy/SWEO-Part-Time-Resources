@@ -16,8 +16,12 @@ class Bosses extends MonsterNPC{
         // this.description = description;
         // this.lootTable = lootTable;
 
-        
+        //our constructor gets invoked each time we instantiate using the class to build our instance (obj)
+        Bosses.bossesAlive += 1;
     }
+
+    //create an static variable
+    static bossesAlive = 0; //determines how many Bosses instances were created
 
     
 
@@ -40,6 +44,14 @@ class Bosses extends MonsterNPC{
 
     
     //static method that will take the instance object, grab its loot table, and returns all the name of the loot (keys) in an array.
+    static lootNameKeys(instanceObj){
+        const lootObj = instanceObj.getLootTable(); //i.e. {dragon_necklace: 1, dragon_bones: 1,...}
+        const lootNames = [];
+        for(let key in lootObj){ //key = "dragon_necklace"
+            lootNames.push(key);
+        }
+        return lootNames // ["dragon_necklace", ...]
+    }
 
 
 
@@ -50,6 +62,12 @@ class Bosses extends MonsterNPC{
     //3) SEE EXAMPLE AT THE BOTTOM OF THE FILE
 
     //hint: remember to use the getRace() method, and not access the data directly!! (Encapsulation: hiding/protecting your properties behind methods!)
+    static compareBossesRace(firstBossInstance, secondBossInstance){
+        if(firstBossInstance.getRace() === secondBossInstance.getRace()){
+            return true;
+        }
+        return false;
+    }
 
     
 
@@ -71,27 +89,32 @@ console.log("-----INSTANCE METHOD TESTS-----");
 vorkathInstance.displayData();
 
 console.log("-----STATIC VARIABLE TESTS-----");
+console.log(vorkathInstance.bossesAlive); //undefined
+console.log(Bosses.bossesAlive); //1
+const bowser1 = new Bosses();
+console.log(Bosses.bossesAlive); //2
 
 
 console.log("-----STATIC METHOD TESTS-----");
 // Applying the static method from Bosses CLASS
+const lootNames = Bosses.lootNameKeys(vorkathInstance) //["dragon_necklace", "dragon bones", ...]
+console.log(lootNames);
 
 
+console.log("-----PROBLEM 1: YOUR CODE TEST-----");
+//EXAMPLE
+const donkeyKong = new Bosses("Donkey Kong", "monkey", 10, true, "Big, even by monkey standards", {}); //race = "monkey"
 
-// console.log("-----PROBLEM 1: YOUR CODE TEST-----");
-// //EXAMPLE
-// const donkeyKong = new Bosses("Donkey Kong", "monkey", 10, true, "Big, even by monkey standards", {}); //race = "monkey"
+const donkeyKongJR = new Bosses("Donkey Kong JR", "monkey", 5, true, "Small little guy!", {}) //race = "monkey"
 
-// const donkeyKongJR = new Bosses("Donkey Kong JR", "monkey", 5, true, "Small little guy!", {}) //race = "monkey"
-
-// const bowser = new Bosses("Bowser", "turtle", 20, true, "Turtle Evil!", {}); //race = "turtle"
+const bowser = new Bosses("Bowser", "turtle", 20, true, "Turtle Evil!", {}); //race = "turtle"
 
 
-// const compare1 = Bosses.compareBossesRace(donkeyKong, bowser) 
-// console.log(compare1); // ==> false
+const compare1 = Bosses.compareBossesRace(donkeyKong, bowser) 
+console.log(compare1); // ==> false
 
-// const compare2 = Bosses.compareBossesRace(donkeyKong, donkeyKongJR) 
-// console.log(compare2); // ==> true
+const compare2 = Bosses.compareBossesRace(donkeyKong, donkeyKongJR) 
+console.log(compare2); // ==> true
 
-// //Bosses class's static variable
-// console.log(Bosses.bossesAlive);
+//Bosses class's static variable
+console.log(Bosses.bossesAlive);
