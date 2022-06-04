@@ -73,3 +73,7 @@ const goblin = new MonsterNPC("Goblin Child", "Goblin", 5, true, "Small, even by
 // console.log(goblin.lifepoints); //we don't want to directly access the properties from our object. THIS IS EXAMPLE OF BAD PRACTICE. (Encapsulation)
 
 module.exports = MonsterNPC;
+
+
+
+
