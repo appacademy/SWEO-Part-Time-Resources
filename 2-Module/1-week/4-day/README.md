@@ -43,7 +43,7 @@
 ## Project Solo (1HR)
 - Friendly and Evil Dragons Proj
 
-## Study : Ask questions about quizzes, terms, etc!
+## Study
 - Readings (below) & [terminologies](https://hackmd.io/go8KUeopRdmYCGiXm1Ck1Q?view)
 - All Formative Quizzes
 - Code-it-out content
