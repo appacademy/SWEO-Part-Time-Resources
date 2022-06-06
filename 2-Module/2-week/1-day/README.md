@@ -1,0 +1,15 @@
+# M2W2D1
+
+## Assessment
+- 40m
+- All MC (6/8 is passing score)
+- If you aren't sure on what the question is asking or want clarity on what it is trying to ask, let us know~!
+
+
+---
+
+## Context
+#### Context refers to the object that represens `this` within a function when it is invoked.
+
+
+## Context Project Pair Programming
