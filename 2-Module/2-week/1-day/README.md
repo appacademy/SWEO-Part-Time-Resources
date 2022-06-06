@@ -13,3 +13,6 @@
 
 
 ## Context Project Pair Programming
+- If you both finish phase 3:
+  - PAUSE
+  - Start on the homework early
