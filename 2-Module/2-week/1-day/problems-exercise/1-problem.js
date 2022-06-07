@@ -1,15 +1,15 @@
 // -------Problem 1:
 
-//What is the context / the value of `this`
+//1) What is the context / the value of `this`
+//it's the global object
 
-
-//what will be the output in the terminal? 
-
+//2) what will be the output in the terminal? 
+//the global object
 
 function firstFunc() {
     console.log(this);
 }
 
-firstFunc(); 
+firstFunc(); //where is this function being executed? Executed under the global object. The global object then becomes the context for `this`
 
 

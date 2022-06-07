@@ -2,7 +2,7 @@
 //what will be the output in the terminal? 
 
 function purr(){ //note this function here.
-    console.log("meow");
+    console.log("outside-meow");
 }
 
 class Cat {
