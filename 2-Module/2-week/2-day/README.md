@@ -3,15 +3,16 @@
 ## Learning Boost (5m)
 
 ## Assessment Break Down
-- 6 mc - 6 points
+- Length: 2hr 25m
+- **6 mc - 6 points**
   - Classes
   - Context
   - TDD Concepts
   - MISC Javascript Concepts we've learned
-- Coding Challenge - 13 points
+- **Coding Challenge - 13 points**
   - Be able to write classes from scratch using OOP concepts 
   - Be able to read test specs and build the said above (build classes from reading mocha specs)
-- Passing score 15/19
+- Passing score **15/19**
 - Ask ourselves: Am I confident in building simple Employee / Manager classes right now using constructor, instance methods, inheritance, etc?
   - If you can do this with minimal amount of reference / looking up syntax, you're in good shape 
   - If we have trouble doing this and writing the syntax. Go back to the `employee project` or `friendly & evil dragon` project to practice syntax drilling
