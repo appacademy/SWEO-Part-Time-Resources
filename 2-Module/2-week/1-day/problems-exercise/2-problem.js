@@ -5,7 +5,7 @@
 
 
 //2) what will be the output in the terminal? 
-//Error because the property .owner does not exist on undefined (`this`  === undefined as context is lost)
+//Error because the property/method does not exist on undefined (`this`  === undefined as context is lost)
 
 class Car{
     constructor(owner) {

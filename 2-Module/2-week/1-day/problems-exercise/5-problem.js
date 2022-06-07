@@ -1,6 +1,6 @@
 // -------problem 5:
 //What is the context / the value of `this`
-// since the global object method of setTimeout is invoking the method, then `this` inside that method becomes the global object. `this` ==> the global object
+// since the global object method of setTimeout is invoking the method, then `this` inside that method becomes the setTimeout object. `this` ==> the setTimeout object
 
 
 //what will be the output in the terminal? 
