@@ -14,7 +14,8 @@
 - Passing score 15/19
 - Ask ourselves: Am I confident in building simple Employee / Manager classes right now using constructor, instance methods, inheritance, etc?
   - If you can do this with minimal amount of reference / looking up syntax, you're in good shape 
-  - If we have trouble doing this and writing the syntax. Go back to the `employee project` or `friendl & evil dragon` project to practice syntax drilling
+  - If we have trouble doing this and writing the syntax. Go back to the `employee project` or `friendly & evil dragon` project to practice syntax drilling
+    - When should we be confident in our class skills? When we are able to write classes and apply OOP concepts with little to no references
   - We'll be doing more class related `code-it-out` problems during class later this week
 
 
