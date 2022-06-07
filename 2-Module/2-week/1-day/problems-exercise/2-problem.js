@@ -1,10 +1,11 @@
 // -------Problem 2:
 //1) What is the context / the value of `this`
 //the context is the global object because the method is invoked under the global object (NOT BY THE INSTANCE)
+//however, the context is lost through the process and set as undefined because of the method style calling.
 
 
 //2) what will be the output in the terminal? 
-//Error because the method does not exist in the global object.
+//Error because the property .owner does not exist on undefined (`this`  === undefined as context is lost)
 
 class Car{
     constructor(owner) {
