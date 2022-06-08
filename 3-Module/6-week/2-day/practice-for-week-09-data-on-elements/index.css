@@ -1,0 +1,26 @@
+li {
+    list-style-type: none;
+    width: 33%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+/* Your code here */
+
+li[data-type='drinks']{
+    background-color: aqua;
+}
+li[data-type='bakery']{
+    background-color: brown;
+}
+li[data-type='canned']{
+    background-color: black;
+    color: white;
+}
+li[data-type='dairy']{
+    background-color: darkorange;
+}
+li[data-type='frozen']{
+    background-color: goldenrod;
+}
