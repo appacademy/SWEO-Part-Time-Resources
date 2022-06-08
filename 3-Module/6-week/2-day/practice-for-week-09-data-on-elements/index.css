@@ -7,14 +7,21 @@ li {
 }
 
 /* Your code here */
+<<<<<<< HEAD
 
 li[data-type='drinks']{
     background-color: aqua;
+=======
+li[data-type='drinks']{
+    background-color: blue;
+    color: white;
+>>>>>>> 00f6ae9f9ec54426d8c54977aa37230cf341eac9
 }
 li[data-type='bakery']{
     background-color: brown;
 }
 li[data-type='canned']{
+<<<<<<< HEAD
     background-color: black;
     color: white;
 }
@@ -24,3 +31,22 @@ li[data-type='dairy']{
 li[data-type='frozen']{
     background-color: goldenrod;
 }
+=======
+    background-color: gray;
+}
+li[data-type='dairy']{
+    background-color: blanchedalmond;
+}
+li[data-type='frozen']{
+    background-color: darkgrey;
+}
+li[data-type='meats']{
+    background-color: darkorchid;
+}
+li[data-type='']{}
+li[data-type='']{}
+li[data-type='']{}
+li[data-type='']{}
+li[data-type='']{}
+li[data-type='']{}
+>>>>>>> 00f6ae9f9ec54426d8c54977aa37230cf341eac9
