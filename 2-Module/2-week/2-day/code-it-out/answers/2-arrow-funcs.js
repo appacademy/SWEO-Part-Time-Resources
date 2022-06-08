@@ -15,6 +15,7 @@ let doubleNumArrowExplicit = (num) => {
 
 //-------------Arrow Functions------------ 
 //What is one ADVANTAGE of arrow functions?
-
+//When we declared an arrow function, the context of that said function will be the code block that we define this arrow function in. (not invoking it, but when we declare it)
 
 //What is one DISADVANTAGE in terms of practical usability that the newer ES2015 have compared to the normal function declaration? (Hint: look up arrow functions on MDN and scroll to the bottom)
+//older browsers might not support syntax like the arr functions
