@@ -28,7 +28,7 @@ WHERE first_name = 'Tyler'
   AND last_name = 'Rose';
 
 -- Not In Project (output for verification)
-SELECT * FROM friends WHERE first_name = 'Rose';
+SELECT * FROM friends 
 
 --------------- Step 2 - Fixed ---------------
 

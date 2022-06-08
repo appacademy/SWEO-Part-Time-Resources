@@ -5,7 +5,9 @@ CREATE TABLE friends (
     last_name VARCHAR(255) NOT NULL
 );
 
-insert into friends (first_name, last_name) values ('amy', 'pond');
+insert into friends (id, first_name, last_name) 
+values 
+(1, 'amy', 'pond'),(2, 'hensdelle', 'awesome');
 
 insert into friends (first_name, last_name)
 values

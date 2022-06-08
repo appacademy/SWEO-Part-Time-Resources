@@ -21,3 +21,5 @@ VALUES
   (8, 'Jaxson', 0.4, 'Beagle', 19, 1),
   (9, 'Leinni', 1, 'Miniature Schnauzer', 25, 1),
   (10, 'Max', 1.6, 'German Shepherd', 65, 0);
+
+-- DELETE * from puppies;
