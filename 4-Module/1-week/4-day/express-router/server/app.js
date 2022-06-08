@@ -2,9 +2,8 @@ const express = require('express');
 const app = express();
 
 const peopleRouter = require('./routes/people');
-app.use('/people', peopleRouter);
-
 const colorsRouter = require('./routes/colors');
+app.use('/people', peopleRouter);
 app.use('/colors', colorsRouter);
 
 const port = 5000;

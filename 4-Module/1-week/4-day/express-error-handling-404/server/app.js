@@ -5,7 +5,7 @@ app.get('/', (req, res) => {
   res.send('GET / This is the root URL');
 });
 
-// "Resource Not Found Error" middleware
+// // "Resource Not Found Error" middleware
 app.use((req, res, next) => {
   const err = new Error('Sorry, the requested resource couldn\'t be found.');
   err.statusCode = 404;

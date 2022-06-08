@@ -9,7 +9,9 @@ app.use(express.static('assets/scripts'));
 
 // Part 3
 app.use('/stylesheets', express.static('assets/css'));
-app.use('/html', express.static('assets/html/index.html'));
+// serving one file only
+// example
+// app.use('/', express.static('assets/html/index.html'));
 
 // BONUS
 app.use('/stickers', express.static('assets/images'));
