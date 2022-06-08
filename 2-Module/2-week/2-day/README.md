@@ -11,7 +11,7 @@
   - MISC Javascript Concepts we've learned
 - **Coding Challenge - 13 points**
   - Be able to write classes from scratch using OOP concepts 
-  - Be able to read test specs and build the said above (build classes from reading mocha specs)
+  - Be able to read test specs and build the said above (build classes from reading mocha specs, test files, apply TDD concepts)
 - Passing score **15/19**
 - Ask ourselves: Am I confident in building simple Employee / Manager classes right now using constructor, instance methods, inheritance, etc?
   - If you can do this with minimal amount of reference / looking up syntax, you're in good shape 
