@@ -7,6 +7,6 @@ let doubleNum = function (num) {
 let doubleNumArrow = num => num * 2; //implicit return w/o any {} - VALID
 
 
-//What is the one disadvantage that the newer ES2015 have compared to the normal function declaration?
-//Advantage: for arrow functions, an advantage is that it allows us use the context bind from where the arrow function is declared
-//Disadvantage: older browsers may not support it
+//What is the one disadvantage and one advantage that the newer ES2015 have compared to the normal function declaration?
+//Advantage: 
+//Disadvantage:
