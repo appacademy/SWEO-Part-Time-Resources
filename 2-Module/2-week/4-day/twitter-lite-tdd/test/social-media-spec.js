@@ -9,6 +9,8 @@ console.log(Tweet.tweetCounter);
 
 describe("User Class", function () {
     it("should construct the property of `userName`", function () {
+
+        // THE CODE IS TRUTH, Not particularly the description, understanding the code below is what will get you the passing score
         let johnUser = new User("John Quack");
         expect(johnUser.userName).to.be.equal("John Quack")
     })
