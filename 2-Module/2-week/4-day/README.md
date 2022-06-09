@@ -2,8 +2,8 @@
 
 ## TDD Pair Programming
 - TDD Style Project phase 3-4
-- Get as much done as possible
-- Remember your imports /exports
+- Focus more on phase 4 - testing classes (you can go out of order)
+
 
 ## Practice Building Classes From Tests (Solo - Cams On)
 - Building Twitter Lite!
