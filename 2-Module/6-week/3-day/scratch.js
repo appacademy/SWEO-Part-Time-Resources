@@ -87,7 +87,7 @@ const aShortestPath = (start, end) => {
     const path = queue.shift();
     const curr = path[path.length - 1];
 
-    if (curr === end) return path
+    if (curr === end) return path.length - 1
 
     // adjList[curr].forEach((el) =>
     //   !visited.has(el) ? visited.add(el) && queue.push(path.concat(el)) : null
@@ -113,3 +113,4 @@ console.log('Second Test:');
 console.log(aShortestPath(4, 1)); // -> [ 4, 5, 1 ] (One possible solution)
 console.log('Third Test:');
 console.log(aShortestPath(6, 1)); // -> false
+
