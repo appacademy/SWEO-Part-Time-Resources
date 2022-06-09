@@ -35,13 +35,11 @@ describe("VerifiedUser Class", function () {
         expect(verifiedKawhi.verified).to.equal(true);
     });
 
+
     it("only verified users could have their userName changed, otherwise throw an error", function () {
         let verifiedKawhi = new VerifiedUser("Kawhi Leonard");
-
-        expect(verifiedKawhi.changeUsername("Board Man Gets Paid")).to.equal("Board Man Gets Paid");
-
+        verifiedKawhi.changeUsername('Board Man Gets Paid');
         expect(verifiedKawhi.userName).to.equal("Board Man Gets Paid");
-
         verifiedKawhi.verified = false;
         expect(verifiedKawhi.changeUsername.bind(verifiedKawhi, "The Klaw")).to.throw(Error);
     });
