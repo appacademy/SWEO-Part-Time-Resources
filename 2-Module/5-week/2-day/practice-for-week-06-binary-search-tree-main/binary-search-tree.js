@@ -13,7 +13,6 @@ class BinarySearchTree {
     this.root = null
   }
 
-<<<<<<< HEAD
   insert(val, currentNode=this.root) {
     let newNode = new TreeNode(val)
     // base Case
@@ -62,7 +61,6 @@ class BinarySearchTree {
     else if(val > current.val){
       return this.search(val, current.right)
     }
-=======
 //  // Recursively 
 //   insert(val, currentNode=this.root) {
 //     // One liner for fun
@@ -150,7 +148,6 @@ insert(val, currentNode=this.root) {
     if(val === current.val) return true
     if(val < current.val) return this.search(val, current.left)
     else return this.search(val, current.right)
->>>>>>> 2022-Jan-W
   }
 
 
