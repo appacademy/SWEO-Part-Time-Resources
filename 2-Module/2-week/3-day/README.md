@@ -8,6 +8,7 @@
 - Error Handling Quiz
 - Error Handling Practice
 
+
 ### Error Handling Discussion
 
 - Purpose of Error Handling
