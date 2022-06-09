@@ -9,10 +9,17 @@ console.log(Tweet.tweetCounter);
 
 describe("User Class", function () {
     it("should construct the property of `userName`", function () {
+        //are we trrying to pass the description or are we trying to pass the mocha test specs? (expect)
 
-        // THE CODE IS TRUTH, Not particularly the description, understanding the code below is what will get you the passing score
+        // THE CODE IS TRUTH, Not particularly the description, understanding the code below is what will get you the passing score.
+        // remember actual vs. expected
         let johnUser = new User("John Quack");
         expect(johnUser.userName).to.be.equal("John Quack")
+        //johUSer.userName is your actual value that is being tested (could go wrong)
+        //.equal("John Quack") expected value that your `actual` has to pass this.
+
+
+        
     })
     it("should contain the intial `tweets` & `verified` attributes as well", function () {
         let johnUser = new User("John Quack");
