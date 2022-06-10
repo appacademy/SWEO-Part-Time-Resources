@@ -26,7 +26,7 @@ describe("User Class", function () {
     it("should contain the intial `tweets` & `verified` attributes as well", function () {
         let johnUser = new User("John Quack");
         expect(johnUser.tweets).to.deep.equal([])
-        expect(johnUser.verified).to.be.false;
+        expect(johnUser.verified).to.be.false; //by commenting out certain blocks of code, we have isolated where the bug is.
     })
 })
 
