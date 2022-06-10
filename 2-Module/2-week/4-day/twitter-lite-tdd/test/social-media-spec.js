@@ -60,7 +60,7 @@ describe("VerifiedUser Class", function () {
 
 describe("Tweet Class", function () {
     it("Tweet class should have static variable to keep track of tweets created", function () {
-        expect(Tweet.tweetCounter).to.be.equal(0);
+        expect(Tweet.tweetCounter).equal(0);
     })
 
     it("constructor should contain and intialize the initial properties... & ALSO increment the static variable tweetCounter by one each time a Tweet is created", function () {
