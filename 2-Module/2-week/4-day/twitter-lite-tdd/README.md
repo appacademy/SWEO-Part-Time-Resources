@@ -1,0 +1,4 @@
+- `npm install`
+- `mocha` to test
+- inside `test` folder, check out specs and write the classes in the `class` folder
+- Hint: make the files first and remember to export
