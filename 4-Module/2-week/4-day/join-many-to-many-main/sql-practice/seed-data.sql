@@ -19,7 +19,7 @@ CREATE TABLE musician_instruments (
   musician_id INTEGER NOT NULL,
   instrument_id INTEGER NOT NULL,
   FOREIGN KEY (musician_id) REFERENCES musicians(id),
-  FOREIGN KEY (instrument_id) REFERENCES musicians(id)
+  FOREIGN KEY (instrument_id) REFERENCES instruments(id)
 );
 
 INSERT INTO musicians
