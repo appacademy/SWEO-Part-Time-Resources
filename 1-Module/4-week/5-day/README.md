@@ -1,7 +1,5 @@
 # W4D5
 
-## In depth lecture about scopes and closures
-
 ## 1. Scope Project (Paired)
 
 ---
