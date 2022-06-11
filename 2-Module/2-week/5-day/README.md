@@ -35,7 +35,8 @@
   - If you can do this with minimal amount of reference / looking up syntax, you're in good shape 
   - If we have trouble doing this and writing the syntax. Go over:
     - Syntax and basics: `dragon project`, `employee manager` (up until bonus, don't have to do bonus)
-    - `Practice Assessment`
     - `Twitter Lite`
+    - `Practice Assessment`
+
 - Know the syntax so we can allocate our time, brain power, and resources to solving problems rather than trying to look up a certain syntax.
 
