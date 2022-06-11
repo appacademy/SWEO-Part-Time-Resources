@@ -8,7 +8,7 @@
 
 - remember the 2 great strategies when we aren't sure why our code isn't passing the test specs:
   - `commenting tests out` until we can `isolate the failing one`
-  -` running the examples` provided `from the test specs` into `class file and running node`
+  - ` running the examples` provided `from the test specs` into `class file and running node`
 
 
 ## Practice Assessment
