@@ -1,3 +1,4 @@
-let johnUser = new User("John Quack");
 
-console.log(johnUser.tweets) //[]
+
+console.log({} === {})
+console.log({} == {}) //these are two different instances from the Object class
