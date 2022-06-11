@@ -25,10 +25,14 @@ describe ('User', function () {
     // Create a user born on October 17, 1985
     let user = new User("John Doe", 10, 17, 1985);
 
-    const today = new Date();
-    let age = today.getFullYear() - 1985;
+    const today = new Date(); //6/11/2022
+    let age = today.getFullYear() - 1985; //2022 - 1985 --> 37
 
-    if (today.getMonth() < 9 ||
+    //born in 2020, october, 11
+    //today: 2022, june, 11
+    // 1 year old (isnt 2022 - 2020 ===  2 years old)
+    //edge cases
+    if (today.getMonth() <  9||
         today.getMonth() === 9 && today.getDate() < 17) {
       age--;
     }
@@ -158,6 +162,7 @@ describe ('Appointment', function () {
 
     try {
       const appointment = new Appointment(doctor, patient, month, date, year, hour);
+      //never hit this, only the catch if date is in the past
       expect("SHOULD NOT GET HERE").to.equal(false);
     } catch (error) {
       expect(error instanceof AppointmentError).to.equal(true);
