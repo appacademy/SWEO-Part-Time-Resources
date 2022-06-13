@@ -12,5 +12,6 @@
 - Passing score **15/19**
 
 - Debugging Strats - Isolating the Bug
+  - `mocha -b`(first failing 'it' block) & `mocha` (`mocha` same as `npm test`) 
   - Read mocha error messages to see which `expect` line is failing, if that doesn't work, comment out certain mocha specs to isolate the failing test (remember to uncomment after)
   - If isolating the problem still doesn't help, run the mocha example in class file to visualize the output.
