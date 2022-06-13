@@ -11,6 +11,6 @@
   - Be able to read test specs and build the said above (build classes from reading mocha specs)
 - Passing score **15/19**
 
-- Debugging Strats
+- Debugging Strats - Isolating the Bug
   - Read mocha error messages to see which `expect` line is failing, if that doesn't work, comment out certain mocha specs to isolate the failing test (remember to uncomment after)
   - If isolating the problem still doesn't help, run the mocha example in class file to visualize the output.
