@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Manually update this array when new cohorts are added
-cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W 2022-Feb-E 2022-Feb-W 2022-Jan-E 2022-Jan-W 2022-Mar-E 2022-Mar-W 2022-Apr-E 2022-Apr-W 2022-May-E 2022-May-W)
+cohorts=(2021-Sept-E 2021-Sept-W 2021-Nov-E 2021-Nov-W 2022-Feb-E 2022-Feb-W 2022-Jan-E 2022-Jan-W 2022-Mar-E 2022-Mar-W 2022-Apr-E 2022-Apr-W 2022-May-E 2022-May-W 2022-Jun-E 2022-Jun-W)
 
 while true; do
 
