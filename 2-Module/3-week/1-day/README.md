@@ -17,6 +17,14 @@
     - ![](https://i.imgur.com/VraiSC5.png)
   - If isolating the problem still doesn't help, run the mocha example in class file to visualize the output.
 
+- AVAILABLE Resources
+  - Code you've written on projects, exercises, warm ups like `twitter-lite`, `practice-assessment`, and other projects.
+  - MDN
+  - AA-Open (quizzes, readings, homework, videos, etc). 
+
+- NOT Available resources:
+  - notes (not mine, not yours, not anyone else notes)
+  - google is not available
 
 # Remember to do homework for tuesday 
 
