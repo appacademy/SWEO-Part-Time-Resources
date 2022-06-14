@@ -114,7 +114,7 @@
   - Right of the `assignment operator`
     - The `value` that will be assigned to the namespace
     - Think of it like the object you put in a box.
-- Three parts of a variable
+- Four parts of a variable
 - Prefix and Postfix ++/--
 - +=, -=, \*=, /=
 
