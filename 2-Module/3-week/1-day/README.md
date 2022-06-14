@@ -15,3 +15,15 @@
   - `mocha -b`(first failing 'it' block) & `mocha` (`mocha` same as `npm test`) 
   - Read mocha error messages to see which `expect` line is failing, if that doesn't work, comment out certain mocha specs to isolate the failing test (remember to uncomment after)
   - If isolating the problem still doesn't help, run the mocha example in class file to visualize the output.
+
+
+# Remember to do homework for tuesday 
+
+### Homework Content
+- Intro to Big-O
+- Space Complexity
+- Formative Quiz
+
+### Strategy
+- Read through it quickly once
+- Go through it again and run the examples, break the code, and take notes of key things.
