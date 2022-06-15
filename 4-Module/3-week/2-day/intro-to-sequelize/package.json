@@ -1,0 +1,17 @@
+{
+  "name": "intro-to-sequelize",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sequelize": "^6.20.1",
+    "sequelize-cli": "^6.4.1",
+    "sqlite3": "^5.0.8"
+  }
+}

@@ -3,10 +3,10 @@
 ----------
 -- Query: Select all cats that have a toy with an id of 5
 
-    -- SELECT * FROM cats
-    -- JOIN cat_toys ON cats.id = cat_toys.cat_id
-    -- JOIN toys ON toys.id = cat_toys.toy_id
-    -- WHERE cat_toys.toy_id = 5;
+    SELECT * FROM cats
+    JOIN cat_toys ON cats.id = cat_toys.cat_id
+    JOIN toys ON toys.id = cat_toys.toy_id
+    WHERE cat_toys.toy_id = 5;
 
 -- Paste your results below (as a comment):
 
@@ -21,11 +21,11 @@
 -- ----------
 -- -- Query:
 
-    EXPLAIN QUERY PLAN
-    SELECT * FROM cats
-    JOIN cat_toys ON cats.id = cat_toys.cat_id
-    JOIN toys ON toys.id = cat_toys.toy_id
-    WHERE cat_toys.toy_id = 5;
+    -- EXPLAIN QUERY PLAN
+    -- SELECT * FROM cats
+    -- JOIN cat_toys ON cats.id = cat_toys.cat_id
+    -- JOIN toys ON toys.id = cat_toys.toy_id
+    -- WHERE cat_toys.toy_id = 5;
 
 -- -- Paste your results below (as a comment):
 
@@ -78,9 +78,9 @@
 
 -- -- Create index:
 
---     CREATE INDEX
---         idx_cat_toys_toy_id    
---         ON cat_toys(toy_id);    
+    CREATE INDEX
+        idx_cat_toys_toy_id    
+        ON cat_toys(toy_id);    
 
 -- -- Analyze Query:
 --     EXPLAIN QUERY PLAN

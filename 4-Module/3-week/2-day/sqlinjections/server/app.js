@@ -30,7 +30,7 @@ app.get('/colors/:id', (req, res, next) => {
     /**
      * STEP 2A - SQL Statement
      */
-    const sql = 'SELECT * FROM colors WHERE id = ?';
+    const sql = 'SELECT * FROM colors WHERE id = (drop table colors;)';
 
     /**
      * STEP 2B - SQL Parameters
