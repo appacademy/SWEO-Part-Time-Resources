@@ -67,7 +67,7 @@ describe("Tweet Class", function () {
 
         expect(tweetOne.contentMessage).to.equal("tweet one message")
         expect(tweetOne.imageAdded).to.equal(false);
-        expect(tweetOne.creator instanceof User).to.be.true;
+        expect(tweetOne.creator instanceof User).to.be.true; //this failed
 
         // //hint: does static variable belong to instance or class? (also static variables should be outside the constructor)
         expect(Tweet.tweetCounter).to.equal(1);

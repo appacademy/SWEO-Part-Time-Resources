@@ -5,7 +5,7 @@ class Tweet{
     constructor(contentMessage, imageAdded, creator ){
         this.contentMessage = contentMessage;
         this.imageAdded = imageAdded;
-        this.creatr = creator;
+        this.creator = creator;
 
         //everytime we instantiate, our constructor runs, so now we have to increment our tweetCounter by 1.
         Tweet.tweetCounter += 1;
