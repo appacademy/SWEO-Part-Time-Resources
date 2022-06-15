@@ -34,25 +34,36 @@
 // debugger demo
 
 function first(){ 
+	debugger
 	console.log('1')
 	second()
 	console.log('5') 
 }
 
 function second(){ 
+	debugger
 	console.log('2') 
 	third() 
 	console.log('4')
 }
 
 function third(){
+	debugger
 	console.log('3') 
 }
 
-first();
+// first();
 
 // Recursion Demo
 
 // Write a function called rec_sum that intakes a number, and adds up all numbers from 1 
 // to the number and returns the sum. Must be recursive. We're expecting all nums to be >= 1
 
+const rec_sum = num => {
+	debugger
+	if (num < 1) return 0;
+
+	return rec_sum(num - 1) + num;
+}
+
+console.log(rec_sum(3))
