@@ -140,8 +140,9 @@ console.log(sumTwoDArray([[1,2,3,4,5,6], [3], [], [5,6,7,8,9,9]]))
 
 
 console.log("----------Problem 5----------");
-//time complexity: O(1)
-//space complexity: 
+//time complexity: O(1) --> number of operations always stay constant even if the number of inputs increases
+
+//space complexity: O(1) --> space never changes, stay contant even if the number of inputs change over time
 
 //comparing the amount of elements input vs the amount of operations
 function printFirst10Nums(array){
