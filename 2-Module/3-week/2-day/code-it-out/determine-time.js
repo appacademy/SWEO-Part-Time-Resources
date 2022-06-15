@@ -1,16 +1,7 @@
-console.log("----------What is the big O?----------");
-//describes our solution's general shape and its growth curve
-//TLDR: how fast does our operations grow/increases in comparison to the elements (n) used and how efficient is it?
+console.log("----------What is the big O and time complexity?----------");
+//Answer:
 
-//different types of complexity or growth:
-    // - constant: O(1) "big O of 1", if there's operations for different element inputs we still consider that O(1) --> 10 operations --> O(10) --> O(1)
-    // - linear: O(n) 
-    // - quadratic: O(n^2)
-    // - more to come...
-
-//key concept of Big-O is that we are typically only concerned with the very large values (n --> number of elements that we input) --> therefore we only really care about the worst case scenarios (i.e for example if we are trying to iterate through an array of random numbers 1-100 and tried to find the number 7, in the worst case, we will have to iterate through the whole array in order to find the number 7)
-
-//Chart link: https://www.bigocheatsheet.com/
+//Check out this chart link!~ Chart link: https://www.bigocheatsheet.com/
 
 
 console.log("----------Determine the time complexity for each problem below:----------");
@@ -19,56 +10,58 @@ console.log("----------Determine the time complexity for each problem below:----
 //      - linear: O(n)
 //      - quadratic: O(n^2)
 
+
+//What we should do first when determining time complexity: 
+//      - Determine if there's a change in number of operations from 2 different input values
+//      - array of 100 elements vs. array of 1,000,000 elements. Do the number of operations that the function does change for each one(i.e. for loop n times)? Or do they remain the same?
+
 console.log("----------Problem 0----------");
-//time complexity: O(m - n) --> O(n)
-//space complexity: O(n)
-function range(min, max) { //max = 100,000, min = 0, max - min = 100,000 elements
+
+//time complexity:
+//space complexity:
+function range(num) {
     let result = [];
-    for (let i = min; i <= max; i++) {
-        result = result.push(i); //100,000 elements in result
+    for (let i = 0; i <= num; i++) {
+        result = result.push(i); 
     }
-    return result;
+    return result; 
 }
 
 
+
 console.log("----------Problem 1----------");
-//time complexity: O(n + m) --> O(whichever is the bigger one between n or m) --> O(n)
-//space complexity: O(1)
+//time complexity: 
+//space complexity: 
 function addTwoNums(num1, num2) {
     let total = 0;
 
     for (let i = 0; i < num1; i++) {
         total += 1;
-    } //100
+    }
 
     for (let i = 0; i < num2; i++) {
         total += 1;
-    } //200 
+    }
 
     return total;
 }
 console.log(addTwoNums(5, 6))
 
 console.log("----------Problem 2----------");
-//time complexity: O(n) //n represents however big our array is.
-//space complexity: O(1) //our space is not increasing with the amount of elements input
+//time complexity: 
+//space complexity: 
 function removeFirst(array) {
-    //when we remove something in the front of the array
-    // [1,2,3,4]; we remove 1. We have to perform n - 1 number of operations on the rest of the elements in order to change their place in memory correctly. (i.e. change the number 2 in the array's index to be now 0 instead of 1)
     array.shift();
     return array;
 }
-
-//.pop() is O(1) because if we remove the element at the end of the array, we do not have to reassign the index of everything else.
-//[1,2,3,4] --> we remove 4, but do not have to reassign index for 1,2,3
 
 const arr = [1, 2, 3]
 console.log(removeFirst(arr));
 
 
 console.log("----------Problem 3----------");
-//time complexity: O(1) 
-//space complexity: O(1)
+//time complexity: 
+//space complexity: 
 function addFirstAndLast(nums) {
 
     const firstNum = nums[0];
@@ -77,70 +70,52 @@ function addFirstAndLast(nums) {
     return firstNum + lastNum;
 }
 
+const twoNums = [999999999999, 999999999999];
+
+const millionNums = [];
+for (let i = 0; i < 1000000; i++) {
+    millionNums.push(999999999999);
+}
+
+startTime2 = Date.now();
+addFirstAndLast(twoNums);
+endTime2 = Date.now();
+
+startTime1m = Date.now();
+addFirstAndLast(millionNums);
+endTime1m = Date.now();
+
+console.log(`${endTime2  - startTime2 }`);   // 2ms
+console.log(`${endTime1m - startTime1m}`);   // 1ms
 
 console.log("----------Problem 4----------");
-//time complexity: O(n number of items in array2d * m in number of items in each sub array) --> O(n^2) --> represents quadratic time
-//space complexity: O(1)
-function sumTwoDArray(array2d) {
-    let total = 0; //number and we reassign that number each time to have the old number + the new number
-    for (let i = 0; i < array2d.length; i++) {
+//time complexity: 
+//space complexity:
+function sumTwoDArray(array2d){
+    let total = 0;
+    for(let i=0; i<array2d.length; i++){
         const subArr = array2d[i];
-        for (let j = 0; j < subArr.length; j++) {
+        for(let j=0; j<subArr.length; j++){
             const ele = subArr[j];
             total += ele;
         }
     }
     return total;
 }
-console.log(sumTwoDArray([[1, 2], [3]]))
-
-//if they are specific and say that the subArray can only have 3 elements. but the array2d can have n number of arrays, then the math --> n * 3 --> O(3n) --> O(n)
-
-//since we don't know the strict amount of elements in each sub array and we don't know the amount of arrays. Then we can assume that it could be as big as possible. O(n * m)
+console.log(sumTwoDArray([[1,2], [3]]))
 
 
 console.log("----------Problem 5----------");
-//time complexity: O(1)
-//space complexity: O(1)
-
-//array of 100 elements vs. array of 1,000,000 elements. Do the number of operations change for each one? Or do they remain the same?
-
-//what is the operations for 100 elements vs. operations for 1,000,000, elements
-function printFirst10Nums(array) {
-    const first10Arr = []; 
-    //10 sspace is used even when we had an input array of 1,000,00 elements.
-    //only 10 space is used even when we had an input array of 10 elements.
-
-    for (let i = 0; i < 10; i++) { //always contant 10 number of operations and always 10 number of extra space added.
+//time complexity: 
+//space complexity: 
+function printFirst10Nums(array){
+    const first10Arr = [];
+    for(let i=0; i<10; i++){
         console.log(array[i]);
         first10Arr.push(array[i]);
     }
     return first10Arr;
-
-}
-
-const array100 = []
-for(let i=0; i<100; i++){
-    array100.push(i);
-}
-
-const array1million = []
-for(let i=0; i<1000000; i++){
-    array1million.push(i);
+    
 }
 
 
-const res100 = printFirst10Nums(array100)//same time and space
-const res1000000= printFirst10Nums(array1million); //same time and space
-
-const start = Date.now();
-console.log("res100:", res100);
-const end = Date.now();
-const runTime = end - start;
-console.log(runTime);
-
-const start2 = Date.now();
-console.log("res1m:", res1000000);
-const end2 = Date.now();
-const runTime2 = end - start;
-console.log(runTime2);
