@@ -29,10 +29,16 @@ A   B     (!A && B) || (A || !B)
 
 YOUR TABLE HERE(feel free to copy and paste above and change it):
 
-
-
-
-
-
+A   B      (!A && B)   (A || !B)   (!A && B) || (A || !B)
+---------------------------------------------------
+0   0          0            1               1
+0   1          1            0               1
+1   0          0            1               1
+1   1          0            1               1
 
 */
+
+console.log((!false && false) || (false || !false))
+console.log((!false && true) || (false || !true))
+console.log((!true && false) || (true || !false))
+console.log((!true && true) || (true || !true))

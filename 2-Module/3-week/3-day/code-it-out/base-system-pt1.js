@@ -14,8 +14,8 @@ counting pattern.
  - In order to represent characters, each byte value is matched up with a character according to a standard encoding. The most common English standard is ASCII
     
 
- - Ob11111111: what does this even mean???
-    - Ob stands for binary system. Helps us differentiate what the number represents
+ - 0b11111111: what does this even mean???
+    - 0b stands for binary system. Helps us differentiate what the number represents
     - 11111111 are 8 bits grouped together (8 bits = 1 byte)
     - 11111111 also represents the number 255 in decimal value (max for an 8-bit)
     - the decimal number 255 in ASCII represents character 'ÿ' symbol 
@@ -50,7 +50,19 @@ Add all of those sums together to get 2 + 8 + 64 + 128 = 202
 ******YOUR TASK: Convert this binary to decimal value! (remember 0b means this represent binary)******
 
 convert this to decimal: 0b11001000
+
+1 + 2 + 4 + 8 + 16 + 32 + 64 + 128 --> 255
 YOUR ANSWER:
+2^0 = 1 * 0 = 0
+2^1 = 2 * 0 = 0
+2^2 = 4 * 0 = 0
+2^3 = 8 * 1 = 8
+2^4 = 16 * 0 = 0
+2^5 = 32 * 0 = 0
+2^6 = 64 * 1 = 64
+2^7 = 128 * 1 = 128
+
+8 + 64 + 128 ==> 72 + 128 ==> 200
 
 
 
@@ -60,13 +72,11 @@ YOUR ANSWER:
 console.log('-----binary to decimal to ASCII problem 1----')
 /*
 -  0b00000000: what does this even mean in ASCII value???
-    -//BREAK down your answer here
-
+    -// 0b00000000 --> 0 (decimal value) --> 0 in the ascii table represents --> null
 
 -  0b01101000 0b01101001: what does this even mean in ASCII value???
-    -//BREAK down your answer here
-
-   
+    -//0b01101000 ==> 104 ==> ascii value of 'h'
+    -//0b01101001 ==> 105 ==> ascii value of 'i'
 
 */
 
