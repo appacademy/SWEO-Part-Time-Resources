@@ -22,6 +22,9 @@ const decimalToAscii = arrayDecimal => {
 
 }
 
+const decimalToAsciiOneLine = (arrayDecimal) => String.fromCharCode(...arrayDecimal);
+
+
 const arrDeci = [`65`, `47`, `97`, `33`, ]
 const result = decimalToAscii(arrDeci)
 console.log(result) // --> "A/a!"

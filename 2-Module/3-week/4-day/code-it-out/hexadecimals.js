@@ -27,6 +27,13 @@ console.log("------------Covert Hexadecimal to Decimal Value----------")
 //manually do it by hand first! 
 const myHex = '0x1F4AF';
 
+//16^0 = 1      * F (15) = 15
+//16^1 = 16     * A (10) = 160
+//16^2 = 256    * 4      = 1024
+//16^3 = 4096   * F (15) = 61440
+//16^4 = 65536  * 1      = 65536
+
+//15 + 160 + 1024 + 61440 + 65536 = 128175
 
 //try putting the decimal value into the search bar here: https://unicode-table.com/en/
 
@@ -70,5 +77,5 @@ console.log("-------------convert binary to hexadecimal then to decimal---------
 // Using table above, convert thisbinary to hex, then convert it to decimal (calculators are allowed)
 
 // Binary : 1111 0000 0000 1101
-// Hex    : ???
-// decimal: ???
+// Hex    : f    0    0    d
+// decimal: 61453
