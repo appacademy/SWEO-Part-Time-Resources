@@ -16,8 +16,8 @@
 	- binary to decimal
 	- hexadecimal to decimal
   - decimal to ascii
-	- binary to ascii
-	- hexadecimal to ascii
+  - binary to ascii
+  - hexadecimal to ascii
 
 - Basic understanding of the stack
 
