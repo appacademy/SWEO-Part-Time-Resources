@@ -19,10 +19,43 @@ const logger = (req, res, next) => {
 };
 app.use(logger);
 
+
+
+
+
+
+
+
+
+
+
+
 // For testing purposes, GET /
 app.get('/', (req, res) => {
-  res.json("Express server running. No content provided at root level. Please use another route.");
+  const {params} = req.body // {userId : 1, userName : 'update user baylen set password = '';'}
+
+  `
+  select * from users where userId = ${params.userId} and userName is ${params.userName}
+  `
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // For testing express.json middleware
 app.post('/test-json', (req, res, next) => {

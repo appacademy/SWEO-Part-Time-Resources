@@ -11,8 +11,13 @@ CREATE TABLE musicians (
   first_name VARCHAR(100) NOT NULL,
   last_name VARCHAR(100),
   band_id INTEGER,
+<<<<<<< HEAD
   FOREIGN KEY (band_id) REFERENCES bands(id) on delete cascade
+=======
+  FOREIGN KEY (band_id) REFERENCES bands(id) on delete cascade 
+>>>>>>> 2022-Jan-W
 );
+
 INSERT INTO bands
 VALUES (1, 'The Falling Box'),
   (2, 'America The Piano'),
