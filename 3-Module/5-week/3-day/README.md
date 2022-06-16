@@ -11,8 +11,8 @@ Methods for element selection
 | document.getElementsByTagName() | HTMLCollection  | Live |
 | document.getElementsByName() | NodeList | Live |
 | -------- | -------- | -------- |
-| document.getElementById() | Node  | Static |
-| document.getElementById() | NodeList  | Static |
+| document.querySelector() | Node  | Static |
+| document.querySelectorAll() | NodeList  | Static |
 
 ## HTMLCollection vs NodeList
 
@@ -47,8 +47,9 @@ newDiv.appendChild(newText)
 // here is a much simpler approach in creating new text without using
 // createTextNode
 
-newDiv.innerText = "Hi! I love javascript" // this line here does lines 44-46
-
+newDiv.innerText = "Hi! I love javascript" // this line here does lines 44-45
+newDiv.innerHTML = "Hi! I love javascript"
+newDiv.innerHTML = "<span>New child</span>"
 ```
 
 ## Add/Remove Attributes
@@ -82,7 +83,7 @@ newDiv.style.backgroundColor = 'blue';
 ```
 
 
-## Create Remove Elements
+## Remove Elements
 
 ```js
 // remove the specific element from the dom
@@ -96,7 +97,7 @@ elementToBeRemoved.remove() // this will remove the element from the DOM
 parent.removeChild(child) // have a parent element remove one of its child elements
 
 // remove a child from a parent
-parent.removeChild(child.firstChild)
+parent.removeChild(parent.firstChild)
 
 // remove a child without knowing what its parent
 const node = document.querySelector("#nested");
