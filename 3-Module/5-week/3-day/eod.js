@@ -9,23 +9,30 @@ window.addEventListener('DOMContentLoaded', async () =>{
 	const nextChampionButton = document.createElement('button');
 	const previousChampionButton = document.createElement('button');
 	const abilitiesDiv = document.createElement('div');
+	const abilityToolTipContainer = document.createElement('div');
 	const abilityToolTip = document.createElement('div');
+	const abilityName = document.createElement('div');
+
+	const sourceWebM = document.createElement('source');
+	const sourceMP4 = document.createElement('source');
 
 	const abilityQ = document.createElement('img');
 	const abilityW = document.createElement('img');
 	const abilityE = document.createElement('img');
 	const abilityR = document.createElement('img');
 
-	let allChampions = []
-	let currentChampionData = []
-	let currentChampion = 0
+	let video = document.createElement('video');
+
+	let allChampions = [];
+	let currentChampionData = [];
+	let currentChampion = 0;
 
 	// add css
 	document.body.style.margin = '0px';
 	document.body.style.height = '100%';
 
 	document.head.appendChild(styleElement);
-	styleElement.innerText = "* {font-family: sans-serif} html { height: 100% } .hidden { display : none}"
+	styleElement.innerText = "* {font-family: sans-serif} html { height: 100% } .hidden {visibility : hidden}"
 
 	// creating the main container
 	mainContainer.setAttribute('class', 'main-container');
@@ -113,16 +120,33 @@ window.addEventListener('DOMContentLoaded', async () =>{
 	abilityR.style.height = '40px';
 	abilityR.style.border = '3px solid #c28f2c';
 
+	// ability tooltip container
+	abilityToolTipContainer.setAttribute('class', 'hidden');
+	abilitiesContainer.appendChild(abilityToolTipContainer)
+
+	abilityToolTipContainer.style.display = 'flex';
+	abilityToolTipContainer.style.position = 'absolute';
+	abilityToolTipContainer.style.bottom = '65px';
+	abilityToolTipContainer.style.flexDirection = 'column';
+
+	// ability name
+	abilityToolTipContainer.appendChild(abilityName);
+	abilityName.style.fontSize = '30px';
+	abilityName.style.color = 'grey'
+	abilityName.style.backgroundColor = '#11141d';
+	abilityName.style.textAlign = 'center';
+
 	// ability tooltip
-	abilityToolTip.setAttribute('class', 'hidden');
-	abilitiesContainer.appendChild(abilityToolTip)
-	abilityToolTip.style.position = 'absolute';
+	abilityToolTipContainer.appendChild(abilityToolTip)
+	abilityToolTip.setAttribute('id', 'ability-tt');
 	abilityToolTip.style.height = '100px';
-	abilityToolTip.style.width = '400px';
+	abilityToolTip.style.width = '410px';
 	abilityToolTip.style.zIndex = '1';
-	abilityToolTip.style.backgroundColor = 'yellow';
-	abilityToolTip.style.bottom = '65px';
+	abilityToolTip.style.backgroundColor = '#11141d';
 	abilityToolTip.style.overflow = 'auto';
+	abilityToolTip.style.color = 'white';
+	abilityToolTip.style.textAlign = 'center';
+	abilityToolTip.style.paddingTop = '10px';
 
 	// api functions
 
@@ -179,8 +203,49 @@ window.addEventListener('DOMContentLoaded', async () =>{
 		previousChampionButton.style.width = '140px';
 	}
 
-	await getAllChampions()
-	await getChampion()
+	// helper functions
+	function removeLatestVideo(){
+		if(abilityToolTipContainer.children.length > 2){
+			abilityToolTipContainer.children[abilityToolTipContainer.children.length - 1].remove()
+		}
+	}
+
+	// functions
+	function newVideo(source1, source2, ability){
+			// ability video
+			// if(video.paused){
+			// 	video.play()
+			// }
+
+			if(!video){
+				video = document.createElement('video');
+			}
+			removeLatestVideo()
+
+			abilityToolTipContainer.appendChild(video);
+			// video.setAttribute('preload', 'metadata');
+			video.setAttribute('playsinline', '');
+			video.setAttribute('loop', '');
+			video.setAttribute('muted', '');
+			video.setAttribute('autoplay', '');
+			video.setAttribute('controls', '');
+			video.setAttribute('height', '250');
+			video.setAttribute('width', '400');
+			video.style.border = '5px solid grey'
+
+			video.appendChild(sourceWebM);
+			sourceWebM.src = source1
+			sourceWebM.setAttribute('type', 'video/webm');
+
+			video.appendChild(sourceMP4);
+			sourceMP4.src = source2
+			sourceMP4.setAttribute('type', 'video/mp4');
+
+			video = null;
+	}
+
+
+	// listeners
 
 	nextChampionButton.addEventListener('click', async ()=>{
 		currentChampion += 1;
@@ -200,11 +265,34 @@ window.addEventListener('DOMContentLoaded', async () =>{
 	});
 
 	abilitiesContainer.addEventListener('click', async (e) => {
-		if(e.target.tagName === 'IMG'){
+		if(e.target.tagName === 'IMG' || e.target.tagName === 'VIDEO'){
+			let champKey = currentChampionData.key
+			const imgValue = e.target.getAttribute('class').toUpperCase()
+
+			abilityName.innerText = currentChampionData.spells[e.target.getAttribute('value')].name
 			abilityToolTip.innerHTML = currentChampionData.spells[e.target.getAttribute('value')].description
-			abilityToolTip.setAttribute('class', 'visible')
+
+			if(parseInt(champKey) < 10){
+				champKey = `000${champKey}`
+			} else if(parseInt(champKey) < 100){
+				champKey = `00${champKey}`
+			} else if(parseInt(champKey) < 1000){
+				champKey = `0${champKey}`
+			}
+
+			const source1 = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_${imgValue}1.webm`
+			const source2 = `https://d28xe8vt774jo5.cloudfront.net/champion-abilities/${champKey}/ability_${champKey}_${imgValue}1.mp4`
+			newVideo(source1, source2)
+			abilityToolTipContainer.setAttribute('class', 'visible')
 		} else {
-			abilityToolTip.setAttribute('class', 'hidden')
+
+			abilityToolTipContainer.setAttribute('class', 'hidden')
+			removeLatestVideo()
+			video = null;
 		}
 	})
+
+	// run
+	await getAllChampions()
+	await getChampion()
 })
