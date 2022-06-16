@@ -158,12 +158,12 @@ Other common methods you will use often: (Not needed _today_, but why not\
   1. [Doubler]
   2. [Vowel Counter]
 
-## EOD / Office Hours
-
 ## Quizzes: 15 mins
 
   1. [Control Flow Quiz]
   2. [Formative Quiz]
+
+## EOD / Office Hours
 
 [Is Five]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-five
 [Is Odd]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-odd
