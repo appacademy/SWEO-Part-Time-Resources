@@ -9,19 +9,19 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       name: {
-        type: Sequelize.STRING,
-        allowNull: false,
+        type: Sequelize.STRING(20),
+        allowNull : false,
         unique : true
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        default : Sequelize.literal("CURRENT_TIMESTAMP") 
+        default : Sequelize.literal("CURRENT_TIMESTAMP")
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        default : Sequelize.literal("CURRENT_TIMESTAMP") 
+        default : Sequelize.literal("CURRENT_TIMESTAMP")
       }
     });
   },

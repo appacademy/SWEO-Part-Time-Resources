@@ -18,13 +18,13 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       allowNull: false,
       validate : {
-        len : {
-          args : [2, 20],
+        len: {
+          args : [2,10],
           msg : 'name must be between 2 and 20 characters'
         },
-        notEndInY(value){
-          if(value.slice(-1).toLowerCase() === 'y'){
-            throw new Error("name must not end in 'y'")
+        cantEndInY(value){
+          if(value.slice(-1).toLowerCase() === 'y') {
+            throw new Error('name must not end in \'y\'');
           }
         }
       }

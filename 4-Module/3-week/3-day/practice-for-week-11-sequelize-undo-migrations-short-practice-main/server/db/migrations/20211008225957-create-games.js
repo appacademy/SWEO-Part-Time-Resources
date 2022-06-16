@@ -17,8 +17,8 @@ module.exports = {
       estPlayTime: {
         type: Sequelize.INTEGER
       },
-      isCool : {
-        type : Sequelize.BOOLEAN
+      genre : {
+        type: Sequelize.STRING
       }
     })
   },
