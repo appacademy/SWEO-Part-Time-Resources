@@ -49,10 +49,19 @@ Add all of those sums together to get 2 + 8 + 64 + 128 = 202
 
 ******YOUR TASK: Convert this binary to decimal value! (remember 0b means this represent binary)******
 
-convert this to decimal: 0b1100100
+convert this to decimal: 0b11001000
 YOUR ANSWER:
 
+2^0 = 1 * 0 = 0
+2^1 = 2 * 0 = 0
+2^2 = 4 * 0 = 0
+2^3 = 8 * 1 = 8
+2^4 = 16 * 0 = 0
+2^5 = 32 * 0 = 0
+2^6 = 64 * 1 = 64
+2^7 = 128 * 1 = 128
 
+8 + 64 + 128 = 72 + 128 = 200
 
 */
 
@@ -61,10 +70,14 @@ console.log('-----binary to decimal to ASCII problem 1----')
 /*
 -  0b00000000: what does this even mean in ASCII value???
     -//BREAK down your answer here
+    - decimal: 0
+    - ascii: null
 
 
 -  0b01101000 0b01101001: what does this even mean in ASCII value???
     -//BREAK down your answer here
+    - decimal: 104 , 105
+    - ascii: h, i
 
    
 
