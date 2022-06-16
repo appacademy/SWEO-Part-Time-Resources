@@ -1,12 +1,12 @@
 console.log("----------What is the big O and time complexity?----------");
-//Answer: describes our solution's general and its growth curve in regards to the amount of elements vs. the operations
+//Answer: describes our solution's general shape and its growth curve in regards to the amount of elements vs. the operations
 
 //TLDR: the relationship or how fast does our operations grow / increases in comparison to the elements (n) used (#elements vs #operations)
 
 //different types of time complexity that we've learned so far:
     // - constant: O(1)
             // - n number of inputs will yield a CONSTANT number of operation
-            // even if our element / inputs grow, the number of operations will never grow (horizontal line)
+            // even if our element / inputs grow (i.e. 10 elements in the arr vs. 10,000 elements in the array), the number of operations will never grow. It will stay constant (horizontal line)
     // - linear: O(n)
             // - n number of inputs/elements will yield n number of operations
     // - quadratic: O(n^2)
