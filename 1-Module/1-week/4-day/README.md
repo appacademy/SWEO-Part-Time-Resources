@@ -68,6 +68,11 @@
     console.log('hello world');
   }
   ```
+  
+- When to use?
+
+  - For loop: Use when a loops duration is based on a defined length.
+  - While loop: Use when a loops duration is based on a unknown or undefined length.
 
 ## Solo Practice 1: 20 mins
 
