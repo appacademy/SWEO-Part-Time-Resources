@@ -12,9 +12,7 @@ const { Puppy } = require('./db/models');
 
 // Index of all puppies - DO NOT MODIFY
 app.get('/puppies', async (req, res, next) => {
-    const allPuppies = await Puppy.findAll({order: [['name', 'ASC']]});
-
-    res.json(allPuppies);
+    
 });
 
 
@@ -24,20 +22,7 @@ app.get('/puppies', async (req, res, next) => {
 // Use these values to create a new Puppy in the database.
 // Respond to the request by sending a success message
 app.post('/puppies', async (req, res, next) => {
-    // const {name, age_yrs, breed, weight_lbs, microchipped} = req.body
-    // // Most verbose and readle way to do it
-    // let newPuppy = await Puppy.create({
-    //     name : name, 
-    //     age_yrs : age_yrs, 
-    //     breed : breed, 
-    //     weight_lbs: weight_lbs, 
-    //     microchipped : microchipped
-    // })
-    let newPuppy = await Puppy.create(req.body)
-    res.json({
-        msg: "Success",
-        puppy : newPuppy
-    })
+    
 })
 
 
