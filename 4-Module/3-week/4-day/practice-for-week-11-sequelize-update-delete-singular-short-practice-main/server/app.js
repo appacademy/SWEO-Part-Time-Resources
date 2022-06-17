@@ -20,12 +20,27 @@ app.get('/puppies', async (req, res, next) => {
 
 // STEP 1: Update a puppy by id
 app.put('/puppies/:puppyId', async (req, res, next) => {
+    const {age_yrs, weight_lbs, microchipped} = req.body
+    let puppy = await Puppy.findByPk(req.params.puppyId)
+    await puppy.update({
+        age_yrs : age_yrs,
+        weight_lbs : weight_lbs,
+        microchipped : microchipped
+    })
+    res.json({
+        puppy
+        // message : `${puppy.name} was updated`
+    })
 })
 
 
 // STEP 2: Delete a puppy by id
 app.delete('/puppies/:puppyId', async (req, res, next) => {
-    
+    let puppy = await Puppy.findByPk(req.params.puppyId)
+    await puppy.destroy()
+    res.json({
+        msg: `${puppy.name} ran away to a farm in vermont`
+    })
 })
 
 
