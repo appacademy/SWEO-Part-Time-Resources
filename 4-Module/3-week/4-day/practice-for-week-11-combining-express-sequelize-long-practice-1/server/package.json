@@ -1,0 +1,29 @@
+{
+  "name": "sequelize-long-practice-1",
+  "version": "1.0.0",
+  "description": "Practice Sequelize Basics",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "export DB_FILE=db/test.db && node test/utils/reset-db.js && mocha"
+  },
+  "keywords": [
+    "Express",
+    "Sequelize"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mocha": "^9.1.3",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
