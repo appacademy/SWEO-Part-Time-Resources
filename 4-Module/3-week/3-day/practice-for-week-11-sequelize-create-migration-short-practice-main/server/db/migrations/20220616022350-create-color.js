@@ -6,17 +6,17 @@ module.exports = {
      * Add altering commands here.
      *
      * Example:
+     * await queryInterface.createTable('users', { id: Sequelize.INTEGER });
      */
-    await queryInterface.createTable('Colors', { 
+     await queryInterface.createTable('Colors', { 
       id: {
         type : Sequelize.INTEGER,
         primaryKey : true,
         autoIncrement : true
       },
       name : {
-        type: Sequelize.STRING
+        type : Sequelize.STRING
       }
-
     });
   },
 
@@ -25,7 +25,8 @@ module.exports = {
      * Add reverting commands here.
      *
      * Example:
+     * await queryInterface.dropTable('users');
      */
-    await queryInterface.dropTable('Colors');
+     await queryInterface.dropTable('Colors');
   }
 };
