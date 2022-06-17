@@ -25,8 +25,8 @@
   - Traditional Arrays (i.e. typed arrays in C++)
     - An `array` is a `sequence of elements` of the `SAME TYPE` `stored in a contiguous block of memory`.
     - traditional arrays can only hold like or similar datatypes (c++ strict type for arrays)
-    - `.push` method
-  - [Dynamic Arrays (Javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#description)
+    - `.push` method O(1), indexing to get an element is also O(1) because of the reason at bullet 1.
+  - [Dynamic Arrays (i.e. Javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#description)
     - Dynamic arrays like in JavaScript array are resizable and can contain a mix of different data types (sorta, see next point). 
     - JS Array contains `pointers` (memory address) at each index that will point to different data. there `pointers` are all the same datatype but it points to different datatypes at runtime.
     - Dynamic Arrays `.push` time complexity is `O(n)` when resizing.

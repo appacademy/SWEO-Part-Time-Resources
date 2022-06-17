@@ -1,6 +1,6 @@
 
 
-console.log("-----------------------Write YOUR own binaryToAscii function--------------------")
+console.log("-----------------------Write YOUR own decimalToAscii function--------------------")
 // Write a javascript function that converts an array of Binary numbers to ASCII
 
 // hint: take a look at String.fromCharCode() 
@@ -9,8 +9,13 @@ console.log("-----------------------Write YOUR own binaryToAscii function-------
 // String.fromCharCode will take in a hexa or decimal value and retrieve its ascii value.
 
 const decimalToAscii = arrayDecimal => {
-
-
+    let word = "";
+    for(let i=0; i<arrayDecimal.length; i++){
+        const decimalStr = arrayDecimal[i];
+        const asciiValue = String.fromCharCode(decimalStr);
+        word += asciiValue;
+    }
+    return word;
 }
 
 const arrDeci = [`65`, `47`, `97`, `33`, ]
