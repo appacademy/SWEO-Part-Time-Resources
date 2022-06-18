@@ -14,17 +14,7 @@
     4.  See error
     5.  See if you can debug the error (5 minutes)
         1.  **IMPORTANT: DO NOT stare down your code. Mandatory to ask for help after 10 minutes of being stuck**
-    6.  Raise a hand, ask for live & guided help.
-
-2. New question format + order of resources when stuck on a problem: 
-   1.  **Your current knowledge**: Think about the tools you have and learned, for example:
-       1. Conditionals - execution of code block if condition is met
-       2. Arrays - container to hold a list of different data
-       3. **IMPORTANT**: if stuck for 5 minutes, go to step #2, asking a question. We will teach you how to look for resources. How to not be stuck.
-       4. **Avoid the biggest trap**: Staring down your code.
-   2. **Asking live question channel:** `I need help in room #`
-      1. Instructors will provide hints, direct students to resources, go over some concepts, etc.
-         1. Because students are first learning, they need to be directed and shown **HOW to** access resources and not be stuck.
+    6.  Ask a question in live-questions channel
 
 3. **LESS passive walkthroughs, MORE active practice, and Homework:** 
    1. We won't go over every problem during discussion
@@ -36,17 +26,6 @@
 ---
 
 ## Practice Set 1 - 25m
-
-New Zoom format for when question is asked:
-   1.  This allows every student to have an equitable experience and an equal chance to be heard.  
-```javascript=
-if(hand_raised_reaction === true){
-    return 'student unmutes and provide their answer!'
-}
-else{
-    return 'feel free to put answer on the chat';
-}
-```
 
 - [Reverse String]
 - [Range]
@@ -234,7 +213,7 @@ You have access to:
   - REPL (to run code)
 - MDN
 - any code you have written outside of code from previous assessments.
-- US! (for clarifying questions & technical issues)
+- Us! (for clarifying questions & technical issues)
 - VSCode
 
 
