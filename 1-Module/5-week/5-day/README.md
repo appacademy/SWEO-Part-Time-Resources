@@ -78,17 +78,8 @@ Falsy Values
 | 0n    | ""        |
 | null  | undefined |
 | false | NaN       |
-|  []   |           |
 
 Everything else is Truthy;
-
-- If you're unsure if something is falsey,
-use the == to test it.
-
-```js
-(console.log([] == false)) // true
-(console.log({} == false)) // false
-```
 
 ## IIFE and Truthy/Falsy Quizzes
 
