@@ -33,37 +33,18 @@ function binaryToString(binaryBlob) {
 function binaryToString(binaryBlob) {
     // Your code here
     if (binaryBlob.length === 0) return '';
-
-    let firstEight;
-    if (binaryBlob.length > 8) {
-        firstEight = eightSplitString(binaryBlob);
-    } else {
-        firstEight = binaryBlob;
-    }
-
-    const decTranslate = translateToDec(firstEight);
-    const eightBitTranslate = binaryToAscii(decTranslate);
-
+    const firstEight = binaryBlob.slice(0,8);
+    const binTranslate = translateToBin(firstEight);
+    const eightBitTranslate = binaryToAscii(binTranslate);
     return eightBitTranslate + binaryToString(binaryBlob.slice(8));
-}
-
-function eightSplitString(str) {
-    let eightBit = ''
-    for (let i = 0; i < 8; i++) {
-        let currentVal = str[i];
-        eightBit += currentVal;
-    }
-    return eightBit;
-}
-
-function translateToDec(str) {
-    const dec = parseInt(str, 2);
-    return dec;
-}
-
-function binaryToAscii(num) {
-    return String.fromCharCode(num);
-}
+  }
+  function translateToBin(str) {
+    const bin = '0b' + str;
+    return bin;
+  }
+  function binaryToAscii(str) {
+    return String.fromCharCode(str);
+  }
 
 
 
@@ -108,30 +89,26 @@ function decomposeIntoWords(inputString, wordLength = 8) {
 function binaryToString(binaryBlob) {
     let arrayBinary = chunkMaker(binaryBlob)
     let word = "";
-
-
     for (let i = 0; i < arrayBinary.length; i++) {
-        const binaryStr = arrayBinary[i];
-        const asciiValue = String.fromCharCode(binaryStr);
-        word += asciiValue;
+      const binaryStr = arrayBinary[i];
+      const asciiValue = String.fromCharCode(binaryStr);
+      word += asciiValue;
     }
     return word;
-};
-
-const chunkMaker = (str, chunkSize = 8) => {
+  };
+  const chunkMaker = (str, chunkSize = 8) => {
     let chunks = [];
     let chunk = '0b'
     let j = 0;
-
     for (let i = 0; i < str.length; i++) {
-        let char = str[i]
-        if (j === chunkSize) {
-            chunks.push(chunk);
-            chunk = "0b"
-            j = 0
-        }
-        chunk += char
-        j++
+      let char = str[i]
+      chunk += char
+      j++
+      if (j === chunkSize) {
+        chunks.push(chunk);
+        chunk = "0b"
+        j = 0
+      }
     }
     return chunks
-}
+  }
