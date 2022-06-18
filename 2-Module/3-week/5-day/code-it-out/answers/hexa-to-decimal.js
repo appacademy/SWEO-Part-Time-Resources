@@ -32,3 +32,10 @@ dec- binary - hex
 15 = 0b1111 = 0xF
 */
 
+
+//translate the value to a decimal
+console.log(Number("0xffa")) //parseInt("0xffa")
+
+//translate into a character like ascii
+console.log(String.fromCharCode("0xffa")); //whatever character this number maps to
+console.log(String.fromCharCode("0xa1")); //whatever character this number maps to
