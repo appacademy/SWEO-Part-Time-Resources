@@ -3,13 +3,16 @@
 
 // translate: 0xa1
 // Answer: 
+    // 16^0 = 1; 1 * 1 = 1
+    // 16^1 = 16; 16 * 10 (a) = 160
+    //160 + 1 = 161
 
 // translate: 0xffa
 // Answer: 
-
-
-
-
+    // 16^0 = 1; 1 * 10(a) = 10;
+    // 16^1 = 16; 16 * 15(f) = 240;
+    // 16^2 = 256; 256 * 15(f) = 3840;
+    // 3840 + 240 + 10 = 4090
 
 /*chart
 dec- binary - hex
@@ -30,3 +33,11 @@ dec- binary - hex
 14 = 0b1110 = 0xE
 15 = 0b1111 = 0xF
 */
+
+
+//translate the value to a decimal
+console.log(Number("0xffa")) //parseInt("0xffa")
+
+//translate into a character like ascii
+console.log(String.fromCharCode("0xffa")); //whatever character this number maps to
+console.log(String.fromCharCode("0xa1")); //whatever character this number maps to
