@@ -234,18 +234,19 @@ questions about clarifying what is expected of you.
 ## STUDY TIME: Things to work on...
 - Practice Assessment!!! DO, DELETE, REPEAT
 - Recommend Problems to do!!
-  - [Vowel Counter (using If, else if, ...)](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/vowel-counter----)
+  - [Vowel Counter](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/vowel-counter----)
   - [Three or Seven](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/three-or-seven)
   - [Fizz Buzz Array](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-1---intro-to-javascript/fizz-buzz-array)
 - Objectives to Know for Assessment
   - [How to access and read data from an array]
   - [Mutability]
-  - [JavaScript uses Pemdas!]
+  - [PEMDAS]
   - [Conditionals]
-  - [Modulo Operator]
+  - [Loops]
+  - [Operators]
   - [Strict equality ===, loose equality ==]
 - Continue working on problems + syntax
-  - DO, DELETE, REDO (put in those reps!!)
+  - DO, DELETE, REDO (put in those reps)
 
 ## Extra Problems
 
