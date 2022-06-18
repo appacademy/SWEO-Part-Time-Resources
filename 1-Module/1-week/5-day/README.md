@@ -62,20 +62,11 @@ console.log(str); // 'abcd'
 
 ---
 
-## Practice Set 2 - 25m
+## Practice Set 2 - 50m
 
 - [My Includes]
 - [Sum Array Recall]
 - [Factors Of]
-
----
-
-## Discussion - 10m
-
----
-
-## Practice Set 3 - 25m
-
 - [My Index Of]
 - [Vowel Counter Recall]
 - [Has Vowel]
@@ -178,7 +169,7 @@ console.log(str); // 'abcd'
 
 ---
 
-## Practice Set 4 - 40m
+## Practice Set 3 - 40m
 
 - [FizzBuzz Array]
 - [First Vowel]
@@ -304,7 +295,7 @@ for (let i = 0; i < dogs.length; i++) {
 
 ---
 
-## Practice Set 5 - 40m
+## Practice Set 4 - 40m
 
 - [Last Vowel]
 - [Pit Pat]
