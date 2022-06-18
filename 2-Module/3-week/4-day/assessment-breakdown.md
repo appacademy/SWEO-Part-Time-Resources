@@ -22,17 +22,16 @@
 - Basic understanding of the stack
 
 - Understanding Arrays
-  - Typed Arrays (C++)
-    - An array is a sequence of elements of the same type stored in a contiguous block of memory.
-    - in other languages traditional arrays can only hold like or similar datatypes (c++ strict type for arrays)
-  - [Loose/Dynamic Arrays (Javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#description)
-    - JavaScript arrays are resizable and can contain a mix of different data types. (When those characteristics are undesirable, use typed arrays instead.)
+  - Traditional Arrays (i.e. typed arrays in C++)
+    - An `array` is a `sequence of elements` of the `SAME TYPE` `stored in a contiguous block of memory`.
+    - traditional arrays can only hold like or similar datatypes (c++ strict type for arrays)
+    - `.push` method
+  - [Dynamic Arrays (Javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array#description)
+    - Dynamic arrays like in JavaScript array are resizable and can contain a mix of different data types (sorta, see next point). 
     - JS Array contains `pointers` (memory address) at each index that will point to different data. there `pointers` are all the same datatype but it points to different datatypes at runtime.
-
-- Know that array.push is also O(n) in the worst case scenario in rare situations where resizing happens.
-  - Once in a while, it will have a bad time complexity.
-  - Situation: when pushing to an array that has met its maximum capacity (fixed/static size like c++ static arrays).
-    - if we want to increase its capacity, we create a new array. Then copy over all the elements from the old array. This becomes O(n) time.
+    - Dynamic Arrays `.push` time complexity is `O(n)` when resizing.
+      - because of automatic resizing when more elements get added, it will create a new array and copy the old elements over to the bigger array. (This becomes `O(n)` time)
+      - Once in a while, it will have a bad time complexity.
 
 - Define bits, bytes, kilobytes, megabytes, gigabytes and their conversion
   - 1 byte = 8 bits

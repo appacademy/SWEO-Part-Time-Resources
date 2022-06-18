@@ -1,5 +1,6 @@
 const fs = require('fs');
 
+//shiftTest: the function we are testing
 function shiftTest(arr) {
     const n = arr.length;
 
@@ -10,6 +11,7 @@ function shiftTest(arr) {
     return arr;
 }
 
+//arrayMaker: given a number, make an array of elements based on number. i.e. num = 3--> [0,1,2]
 const arrayMaker = function (numberOfArraysToMake) {
     const arr = []
     for (let i = 0; i < numberOfArraysToMake; i++) {

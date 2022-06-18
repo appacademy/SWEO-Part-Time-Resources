@@ -114,6 +114,7 @@ function printFirst10Nums(array){
         console.log(array[i]);
         first10Arr.push(array[i]);
     }
+    
     return first10Arr;
     
 }
