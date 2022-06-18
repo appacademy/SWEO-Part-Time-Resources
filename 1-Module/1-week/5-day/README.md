@@ -12,7 +12,7 @@
     2.  Code it out
     3.  Run code
     4.  See error
-    5.  See if you can debug the error (5 minutes)
+    5.  See if you can debug the error
         1.  **IMPORTANT: DO NOT stare down your code. Mandatory to ask for help after 10 minutes of being stuck**
     6.  Ask a question in live-questions channel
 
