@@ -41,6 +41,9 @@ console.log("-----------------Practice:-----------------");
 
         //answer: `0b01110010`
 
+// 114
+//   
+
 
 //4) True||False: An array is a sequence of elements of the same type stored in a contiguous block of memory.
     //answer: true

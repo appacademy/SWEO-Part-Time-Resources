@@ -29,7 +29,7 @@ Justification: Removing from the front of the array requires all other values to
 
 ## `arr.unshift()`
 
-Time complexity: O(1)
+Time complexity: O(n)
 Space complexity: depends if n amount was unshift.
 Justification: Adding to the front of the array requires all other values to shift to the right by 1 to make space for the first value. This happens in place.
 
