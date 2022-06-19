@@ -1,0 +1,16 @@
+Table Superheros {
+  id int [pk, increment] // auto-increment
+  name varchar(40) [not null, unique]
+  alias varchar(40) [not null]
+  affiliation varchar(30) [not null]
+  heightCm integer [not null]
+  isMutant boolean [not null, default: true]
+  race varchar(16) [not null]
+  universe varchar(30) [not null]
+  releaseYear integer [not null]
+
+  Indexes {
+    (releaseYear, universe)
+    id [unique]
+  }
+}
