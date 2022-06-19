@@ -1,7 +1,6 @@
 'use strict';
 const {
-  Model,
-  Validator // validator.js node module
+  Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Airplane extends Model {
