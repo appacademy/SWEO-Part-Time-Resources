@@ -47,11 +47,6 @@ questions about clarifying what is expected of you.
 
 ---
 
-## How to Study Workshop
-Go through and follow the [workshop on AAOpen](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/how-to-study-workshop).
-
----
-
 ## Function Expression - 20m
 
 ### `First Class Functions`
@@ -93,6 +88,11 @@ let greet = function (name) {
   console.log("Hello, " + name);
 };
 ```
+
+---
+
+## How to Study Workshop
+Go through and follow the [workshop on AAOpen](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/how-to-study-workshop).
 
 ---
 
