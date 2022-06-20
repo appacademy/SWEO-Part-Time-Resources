@@ -6,7 +6,7 @@
 - 9 MC; 6 Specs; 
   - Passing score: 12/15
 
-- You can always use the node to test code, reference homework on AA-Open for content, BUT NOT NOTES!
+- You can always use the node to test code, all of aa-open (besides previous assessment), MDN, BUT NOT NOTES!
 
 - Remember that these are `also available resources`:
   - practice assessment
