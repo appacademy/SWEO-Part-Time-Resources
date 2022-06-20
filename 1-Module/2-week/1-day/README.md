@@ -1,13 +1,11 @@
 # W2D1
 
 0. Assessment! (1hr)
-   1. <span style="color:#cd1d1d;">First step when you are stuck:</span>
-      1. <span style="color:#cd1d1 d;">**examine inputs and outputs** </span> in the examples.
-         1. what data is going in to the function(arguments),  
-         2. what data are they expecting to go outside of the function (is it to return a number?, boolean?, an array?)
-       1. Then read the question again.
-    2. <span style="color:#cd1d1d;">**Console.log Before Return**</span>: 
-       1. Put your return values in variables, then console.log before returning to make sure you're getting what you expect.
+   1. Polya's Framework
+      1. Understand the problem
+      2. Make a Plan
+      3. Execute the Plan
+      4. Refactor (ignore for now)
 1. Study Workshop
 2. Study Review Day
    1. Nested Loops 
@@ -18,26 +16,30 @@
 ---
 ## Assessment - 1hr
 
-Must have your cameras on and screen is sharing.
+Must have your mics / cameras on and sharing one screen.
 
 You have access to:
 
-- aA open
+- a/A Open
   - including homework
   - problems you did
   - REPL (to run code)
 - MDN
-- any code you have written outside of code from previous assessments.
-- US! (but to elaborate and explain question)
+- Any code you have written outside of code from previous assessments
+- US! (answer clarifying questions + technical issues)
+- Slack (live-questions channel ONLY)
 - VSCode
-
+- Spotify
 
 You are not permitted to use:
-- Google
+- Google / Stack Overflow / any other 3rd party search/forum sites
+- Discord / other chat sites
 - Notes
-- Wes's lecture notes
+- My lecture notes
+- Solutions tab in REPL problems
 - PREVIOUS ASSESSMENTS ARE NOT ALLOWED
-- anything not in the listed resources
+- Hardcoding answers
+- Anything not in the listed resources
 
 During this time we will only answer questions about technical issues and
 questions about clarifying what is expected of you.
