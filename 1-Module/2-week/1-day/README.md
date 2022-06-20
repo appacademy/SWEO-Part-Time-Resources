@@ -36,6 +36,7 @@ You are not permitted to use:
 - Discord / other chat sites
 - Notes
 - My lecture notes
+- Code anybody else has written
 - Solutions tab in REPL problems
 - PREVIOUS ASSESSMENTS ARE NOT ALLOWED
 - Hardcoding answers
