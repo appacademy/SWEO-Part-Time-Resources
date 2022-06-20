@@ -52,6 +52,50 @@ Go through and follow the [workshop on AAOpen](https://open.appacademy.io/learn/
 
 ---
 
+## Function Expression - 20m
+
+### `First Class Functions`
+
+1. Can be stored in a variable.
+2. Passed into a function as an argument.
+3. Returned from a function (will use this next week).
+
+```js
+let name = "Alvin";
+let age = 1000;
+let getAvg = function (num1, num2) {
+  return (num1 + num2) / 2;
+};
+
+console.log(name, age, getAvg(4, 2)); // "Alvin", 1000, 3
+
+const arr = [getAvg, name, age];
+
+console.log(arr[0](6, 4)); // 5
+```
+
+### `Function Expression Syntax`
+
+1. variable assignment (name)
+2. `function` keyword
+3. parenthesis with the functions parameter(s)
+4. code block
+5. semi-colon
+
+```js
+//declaration syntax
+function greet(name) {
+  console.log("Hello, " + name);
+}
+
+//expression syntax
+let greet = function (name) {
+  console.log("Hello, " + name);
+};
+```
+
+---
+
 ## Solo Study Day: Nested Loops + Early Start on Homework
 
 `Nested Loops`
