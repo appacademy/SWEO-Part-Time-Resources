@@ -1,6 +1,6 @@
 # W2D2
 
-## Nested Loops (Optional for today, will cover more next week)
+## Nested Loops
 Refer to homework! For this section!
 
 `Nested Loops`
