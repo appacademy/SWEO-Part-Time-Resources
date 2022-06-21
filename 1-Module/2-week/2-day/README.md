@@ -56,7 +56,6 @@ for (let i = 0; i < dogs.length; i++) {
 ## Discussion Set 1
 
 - Any Questions?
-- Rotate Right Walkthrough (slice)
 
 ---
 
@@ -69,7 +68,6 @@ for (let i = 0; i < dogs.length; i++) {
 ## Discussion Set 2
 
 - Any Questions?
-- Avg Value Walkthrough
 
 ---
 
@@ -82,7 +80,6 @@ for (let i = 0; i < dogs.length; i++) {
 ## Discussion Set 3
 
 - Any Questions?
-- Remove E Words Walkthrough (split, join)
 
 ---
 
