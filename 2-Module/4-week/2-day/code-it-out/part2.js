@@ -5,7 +5,9 @@ class LinkedListNode {
       }
 }
 
-//Below: create a class `LinkedList` for creating and representing our linked list datastructure instance
+//Below: 
+//1) create a class `LinkedList` for creating and representing our linked list datastructure instance
+
 //requirements: should have a `tail` property and a `head` property but no data passed in to the constructor. What should the `tail` and `head` property be intially assigned the value of?
 
-//bonus: create a `addToHead` method that when given a `valueData` it will create a node and add it to the front/head.
+//2) create a `addToHead` method that when given a `valueData` it will create a node and add it to the front/head.
