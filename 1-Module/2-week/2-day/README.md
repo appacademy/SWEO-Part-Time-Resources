@@ -12,6 +12,8 @@ Please ask questions
 5.  Raise a hand, ask for live & guided help.
     - <span style="color:#cd1d1d;">**format: "Question in room # please"**</span>
 
+---
+
 ## Nested Loops
 
 `Nested Loops`
