@@ -19,8 +19,8 @@
   security reasons(so webpages cannot do anything malicious on your system).
 
 - This allows us to write software that runs natively on your computer such as a
-  desktop app or server for a web app. Utilities such as readline which interact
-  with the file system can only be utilized in node, not the browser.
+  desktop app or server for a web app. Utilities such as readline, which interact
+  with the file system, can only be utilized in node, not the browser.
 
 ### Callbacks and the Event Loop
 
