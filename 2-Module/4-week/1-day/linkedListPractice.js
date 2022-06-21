@@ -10,7 +10,7 @@ class LinkedListNode {
 //create a class for creating our linked list
 class LinkedList {
     constructor() {
-        this.head = null; //when we first instantiate our linked list, the linked list instance should have the head set to null.
+        this.head = null; //this.head is a pointer that points to a LinkListNode instance.
     }
 
     //should have a print functionality
