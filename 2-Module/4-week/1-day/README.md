@@ -28,3 +28,4 @@
 
 ## Early Homework Start!
 - Active Learning Example
+- Now that you've done a bit of the reading, go through it again, and try to code out the link-list section by section from memory!
