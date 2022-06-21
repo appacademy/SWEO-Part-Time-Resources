@@ -1,7 +1,6 @@
 # W2D2
 
 ## Nested Loops
-Refer to homework! For this section!
 
 `Nested Loops`
 
