@@ -2,7 +2,7 @@
 
 Make sure to call us into your breakout room during practice time if you are at all confused with what you are working on!
 
-## Helper Functions
+## Warm Up
 
 ```js
 // You are given a 2-D array of nums. Find the subarray with the highest sum and return that sum.
