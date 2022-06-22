@@ -5,7 +5,8 @@ Make sure to call us into your breakout room during practice time if you are at 
 ## Warm Up
 
 ```js
-// You are given a 2-D array of nums. Find the subarray with the highest sum and return that sum. The main block of code is written out for you. Try to refactor it to incorporate a helper function.
+// You are given a 2-D array of nums. Find the subarray with the highest sum and return that sum. 
+The main block of code is written out for you. Try to refactor it to incorporate a helper function.
 
 function findSum(arr) {
 
