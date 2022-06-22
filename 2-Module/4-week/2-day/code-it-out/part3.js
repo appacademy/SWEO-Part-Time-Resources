@@ -47,3 +47,15 @@ class LinkedList {
 //Below:
     //1) instantiate LinkedList (hint: `new`), and add a few examples in using `addToHead`, then after each one, run the method `.print()` to see the output.
     //2) finally, log the LinkedList's instance `.head` property and see what you get. Try `.tail` as well!
+
+const ll = new LinkedList();
+ll.print();
+ll.addToHead("10");
+ll.print();
+ll.addToHead("200");
+ll.print();
+ll.addToHead(1000);
+ll.print();
+
+console.log("the head of the list:", ll.head);
+console.log("the TAIL of the list:", ll.tail);
