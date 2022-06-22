@@ -79,7 +79,7 @@ console.log('end'); //sync code
 
 END */
 
-console.log("-----Practice #4: What is outputted?-----")
+// console.log("-----Practice #4: What is outputted?-----")
 
 /* START
 
@@ -89,12 +89,12 @@ const foo = (a, b) => {
 }
 
 const res = setTimeout(foo, 0, 'potato', 'tomato'); //timeOut id object that represents the return value of setTimeout
-console.log("timeoutOjb", res);
+console.log("timeoutObj", res._timerArgs);
 
 END */
 
 
-console.log("-----Practice #5: What if I wanted to run additional functions, logic, code when using setTimeout?-----")
+// console.log("-----Practice #5: What if I wanted to run additional functions, logic, code when using setTimeout?-----")
 
 /* START
 
