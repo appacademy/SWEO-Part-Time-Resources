@@ -13,8 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       Band.hasMany(
         models.Musician, {
           foreignKey: 'bandId', 
-          onDelete: 'CASCADE', 
-          hooks: true
+          onDelete: 'CASCADE'
       });
     }
   };

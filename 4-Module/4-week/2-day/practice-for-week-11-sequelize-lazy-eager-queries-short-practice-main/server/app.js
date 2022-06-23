@@ -11,6 +11,10 @@ const { Band, Musician } = require('./db/models');
 // Express using json - DO NOT MODIFY
 app.use(express.json());
 
+app.get('/bands/musicians/:bandId', async(req, res) => {
+    const band = await Band.findByPk(req.params.bandId)
+    res.json(await band.getMusicians())
+})
 // STEP 1: Example of lazy loading
 app.get('/bands-lazy/:id', async (req, res, next) => {
     const band = await Band.findByPk(req.params.id);
@@ -80,5 +84,5 @@ app.get('/', (req, res) => {
 });
 
 // Set port and listen for incoming requests - DO NOT MODIFY
-const port = 5000;
+const port = 5001;
 app.listen(port, () => console.log('Server is listening on port', port));
