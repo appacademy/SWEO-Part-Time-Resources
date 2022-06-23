@@ -43,7 +43,7 @@ q.dequeue();
 
 
 //DO NOT run node!! analyze and try it first.
-// console.log(q.dequeue());
+console.log(q.dequeue());
 
 
 
