@@ -19,5 +19,6 @@
 ## Homework IMPORTANT
 - Remember that homework is mandatory in order to succeed in a reverse classroom style. During class is where we review a bit, but more importantly, apply the material.
   - Apply active learning during homework: run examples from the homework and analyze the code; avoid `just reading`.
+  - If there's a concept or example that doesn't make sense, `write down a question for it` and bring it to class the next day. I don't know if you're struggling with it unless you let me know.
 - Go over today's homework,; fairly short
 - IMPORTANT: Review / do Homework for Wednesday (hashmap homework) as it will be the focus of tomorrow's project.
