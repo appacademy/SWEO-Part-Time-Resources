@@ -103,3 +103,6 @@ ll.print(); //  one! -> 2 -> NULL
 
 
 //execute node this file after.
+
+//link to diagram: go to "draw-out-diagram" tab below
+//https://drive.google.com/file/d/1IF3PfWaZFWPlxeIAKBKqLjEvQLIOD4ot/view?usp=sharing

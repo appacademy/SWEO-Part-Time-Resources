@@ -39,7 +39,7 @@ q.dequeue();
 
 //What will be returned from calling q.dequeue() once more <-- what will this return.
 //hint: draw out the flow!!! (think message queue from event loop)
-//answer:
+//answer: "warriors"
 
 
 //DO NOT run node!! analyze and try it first.
