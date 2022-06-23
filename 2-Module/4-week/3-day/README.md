@@ -14,3 +14,8 @@
 - If you're stuck for 5 minutes. Mandatory to ask question. You can get a strike for not doing this.
 - If you're struggling with any concepts or need more breakdown, let us know! 
   - Einstein: doesn't matter if we think our question is stupid, what matters is we learn and get the answer we need from the question. 
+
+
+## Homework IMPORTANT
+- Go over today's homework, fairly short
+- IMPORTANT: Review / do Homework for Wednesday (hashmap homework) as it will be the focus of tomorrow's project.
