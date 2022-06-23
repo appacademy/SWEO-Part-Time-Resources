@@ -3,8 +3,8 @@
   - in other languages they might be called hashmaps & dictionaries.
 -  **Use Case:** 
    -  Used to implement everything from JavaScript objects and sets to performance-boosting caches
--  **Constant Big-O:** 
-   -  providing key/value storage with constant big-O time complexity for insertion, deletion, access and search.
+-  **Average Constant Big-O:** 
+   -  providing key/value storage with average constant big-O time complexity for insertion, deletion, access and search.
 -  **HashTables Makeup**: 
    -  hash tables use **hash functions** and an underlying **array structure** to achieve **flexible data storage** with nearly all the efficiency of an array.
 -  **Collision**: 
