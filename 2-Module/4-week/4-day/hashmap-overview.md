@@ -9,8 +9,8 @@
    -  hash tables use **hash functions** and an underlying **array structure** to achieve **flexible data storage** with nearly all the efficiency of an array.
 -  **Collision**: 
    -  2 different keys can have the same hash output (hash collision), i.e.
-       - Hash("ABC100") = `400`
-       - Hash("XYZ200") = `400`
+       - Hash("ABC100") = `400` = index 10 
+       - Hash("XYZ200") = `400` = index 10 
 
 ![](https://i.imgur.com/Aklw9rJ.png)
 ![](https://i.imgur.com/KU4foNa.png)

@@ -1,5 +1,4 @@
 ## Project Solo
-### Hashmap
 
 ## Discussion
 
