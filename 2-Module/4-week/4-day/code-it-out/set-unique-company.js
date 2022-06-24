@@ -5,7 +5,6 @@
 // ----------Properties of Set Summary--------
 //No Dupes: A set contains no duplicate elements
 
-
 //Only Keys, NO Values: Set is just like a hashmap (key value pair object) but only holding the keys only, no values.
 
 //O(1) Search Time: A set can check if an element is contained in O(1) time (whereas arrays we have to potentially iterate through the whole array to find the element)
