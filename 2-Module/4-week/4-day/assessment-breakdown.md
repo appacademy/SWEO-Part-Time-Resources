@@ -5,7 +5,7 @@
 - Link lists, hashmaps, queues, arrays
 - Doubly vs. Singly linked list operations and time complexity.
 - Understanding Hash Collision
-  - i.e. what happens when 2 keys, after going through a hash function/modulo, have the same hash output?
+  - i.e. what happens when 2 different keys, after going through a hash function/modulo, have the same hash output?
 - Time complexity (average and worst) of hashmap operations, link lists operations,
   - i.e. operations like remove, insert, lookup, etc.
 
