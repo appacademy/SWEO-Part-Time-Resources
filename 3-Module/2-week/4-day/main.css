@@ -1,0 +1,76 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wrapper {
+  border: 5px black solid;
+  margin: 20px;
+}
+
+.transition-1 {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid blue;
+  transition: font-size 2s, transform 0.3s, width 30s, height 5s,
+    background-color 2s;
+}
+
+.transition-1:hover {
+  background-color: cornflowerblue;
+  font-size: 20px;
+  transform: rotate(360deg);
+
+  width: 250px;
+  height: 250px;
+}
+
+.transition-2 {
+  border-radius: 200px;
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border: 2px solid red;
+  transition: border-radius 2s, border-color 2s, border-style 2s, box-shadow 2s,
+    transform 2s;
+}
+
+.transition-2:hover {
+  border-radius: 0px;
+  border-color: green;
+  border-style: dotted;
+  box-shadow: -10px -10px 5px black;
+  transform: rotate(-180deg);
+}
+
+nav {
+  width: 100vw;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5px;
+}
+nav > div {
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(77, 255, 0);
+  font-size: 14px;
+  transition: font-size 1s, border 1s, background-color 1s, color 1s;
+}
+nav > div:hover {
+  font-size: 20px;
+  border: 5px solid rgb(100, 0, 150);
+  background-color: rgb(0, 141, 124);
+  color: white;
+}

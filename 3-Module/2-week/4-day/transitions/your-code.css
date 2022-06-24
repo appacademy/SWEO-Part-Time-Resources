@@ -1,0 +1,51 @@
+/* ===== Problem 1 ===== */
+
+.rocket_svg {
+  height: 200px;
+  width: auto;
+  margin-left: 300px;
+  transition: transform 0.1s;
+}
+
+.rocket_svg:hover {
+  transform: rotate(250deg);
+}
+
+/* Create rocket hover animation here
+
+
+/* ===== Problem 2 ===== */
+
+.astronaut_svg {
+  height: 200px;
+  width: auto;
+  margin-left: 200px;
+  transition: transform 2s;
+}
+
+.astronaut_svg:hover {
+  transform: translate(-300px, 8px);
+}
+/* Create astronaut hover animation here
+
+/* ======= BONUS ======= */
+
+.earth_svg {
+  height: 200px;
+  width: auto;
+  margin-left: 300px;
+  animation: myKeyName infinite linear 0.0001s;
+}
+
+@keyframes myKeyName {
+  from {
+    transform: rotate(5deg);
+    /* margin-left: 100%; */
+    width: 100%;
+  }
+  to {
+    transform: rotate(365deg);
+    /* margin-left: 0%; */
+    width: 0%;
+  }
+}
