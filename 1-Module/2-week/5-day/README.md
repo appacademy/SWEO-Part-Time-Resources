@@ -30,7 +30,6 @@
   - [Repeat Translate](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/repeating-translate)
   - [Abbreviate Words](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/abbreviate-words)
   - [Hipsterfy](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/hipsterfy)
-  - [Max in Matrix](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/max-in-matrix)
 
 ## Practice Assessment - 1hr
 
@@ -85,5 +84,4 @@ The second attendance check on Saturdays is after the lunch break, don't get a s
   - [Repeat Translate](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/repeating-translate)
   - [Abbreviate Words](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/abbreviate-words)
   - [Hipsterfy](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/hipsterfy)
-  - [Max in Matrix](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-2---intermediate-functions/max-in-matrix)
   - DO, DELETE, REDO (put in those reps!)
