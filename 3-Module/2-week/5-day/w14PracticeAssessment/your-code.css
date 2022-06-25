@@ -1,0 +1,31 @@
+.outer-layer-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* .outer-layer-1 { Dangerous but passing
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-left: 380px;
+} */
+
+/* .outer-layer-2 {
+  grid-template-areas:
+    '. box box box box'
+    '. . . . .';
+}
+
+.inner-layer-2 {
+  grid-area: box;
+} */
+
+.inner-layer-2 {
+  /* display: grid; */
+  grid-column: 2 / -1;
+}
+
+/* .inner-layer-2 {
+  grid-column: 2 / 6;
+} */
