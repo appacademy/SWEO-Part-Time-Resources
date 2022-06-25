@@ -1,5 +1,5 @@
 console.log("-------------Link Lists Chart-------------")
-//fill out the big O worst time complexity chart of a singly vs. doubly linked list
+//fill out the time complexity chart of a singly vs. doubly linked list (assume both lists have a tail and head)
 
 // | List Type         |  Singly  | Doubly |
 // | ----------------- |----------|--------|
