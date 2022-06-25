@@ -1,13 +1,13 @@
 console.log("-------------Link Lists Chart-------------")
-//fill out the big O worst time complexity chart of a singly vs. doubly linked list
+//fill out the time complexity chart of a singly vs. doubly linked list (assume both lists have a tail and head)
 
 // | List Type         |  Singly  | Doubly |
 // | ----------------- |----------|--------|
-// | addToHead         |   O(?)   |  O(?)  |
-// | addToTail         |   O(?)   |  O(?)  |
-// | removeHead        |   O(?)   |  O(?)  |
-// | removeTail        |   O(?)   |  O(?)  |
-// | Lookup / Search   |   O(?)   |  O(?)  |
+// | addToHead         |   O(1)   |  O(1)  |
+// | addToTail         |   O(1)   |  O(1)  |
+// | removeHead        |   O(1)   |  O(1)  |
+// | removeTail        |   O(n)   |  O(1)  |
+// | Lookup / Search   |   O(n)   |  O(n)  |
 
 
 //What is the difference between singly and doubly operations?
