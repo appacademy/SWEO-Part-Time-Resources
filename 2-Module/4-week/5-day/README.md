@@ -18,4 +18,5 @@
 ## Study Review
 - Check out the assessment breakdown
 - `datastructure-review` folder for quick reviews
-- Ask questions about PA, projects, etc. !!!
+- Code-it-outs!!
+- Formative Quizzes!!
