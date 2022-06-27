@@ -1,4 +1,4 @@
-//write a function `linearSearch` that takes in a SORTED array of `n` number of items as the first argument, and the second argument is the `targetEl`. The function will return true if the `targetEl` is found within `items` and false if not. 
+//write a function `linearSearch` that takes in a SORTED array of `n` number of items as the first argument, and the second argument is the `targetEl`. The function will return the index if the `targetEl` is found within `items` and -1 if not. 
 
 
 //DO THIS WITHOUT INCLUDES, USING FOR LOOP in O(n) time.
