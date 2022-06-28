@@ -16,7 +16,7 @@
 - Don't hesitate to ask questions if something is confusing or we require clarity! We cannot help you code, but we can explain the question and point you to available resources.
 
 ### Coding Portion Advice
-- Always have a reference to the original code.
+- Always have a reference to the original code. The logic to the original code is correct with the original datastructure used.
 
 - **understand the problem:** 
   - by reading the code, methods, mocha output, etc. (don't stare down the prompt)
