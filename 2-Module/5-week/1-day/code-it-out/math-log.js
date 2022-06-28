@@ -5,7 +5,14 @@
 
 //WRITE YOUR WORK and ANSWER HERE:
 //1) 16 / 2 = 8 ...
-//2) ...
+//2) 8 / 2 = 4 
+//3) 4 / 2 = 2
+//4) 2 / 2 = 1 --> 1 is our answer, we stop here.
+
+//^ took us 4 steps to reach our answer.
+
+
+//2^4 = 2 * 2 * 2 * 2 = 16
 
 
 
@@ -23,7 +30,7 @@
 // log2( 512 )  = 9
 // log2( 1024 ) = 10
 // ...
-// log2( 4503599627370496 ) = ???
+// log2( 4503599627370496 ) = 52
 
 //Sound familiar? Write your answer here:
 

@@ -3,7 +3,18 @@
 
 //DO THIS WITHOUT INCLUDES, USING FOR LOOP in O(n) time.
 function linearSearch(sortedItems, targetEl){
+    let index = -1; //defaults to -1
 
+    //if target is found update the index to be the element's index
+    for(let i=0; i<sortedItems.length; i++){
+        let currentEl = sortedItems[i];
+        if(currentEl === targetEl){
+            index = i;
+        }
+    }
+
+    
+    return index;
 }
 
 
