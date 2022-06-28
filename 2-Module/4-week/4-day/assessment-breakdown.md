@@ -1,11 +1,11 @@
-## Week 9 Assessment Breakdown
+## Week 10 Assessment Breakdown
 - 5 MC; 11 Specs; 
   - Passing score: 12/16
 
 - Link lists, hashmaps, queues, arrays
 - Doubly vs. Singly linked list operations and time complexity.
 - Understanding Hash Collision
-  - i.e. what happens when 2 keys, after going through a hash function/modulo, have the same hash output?
+  - i.e. what happens when 2 different keys, after going through a hash function/modulo, have the same hash output?
 - Time complexity (average and worst) of hashmap operations, link lists operations,
   - i.e. operations like remove, insert, lookup, etc.
 
@@ -23,4 +23,4 @@
     	- Sets
   		- Arrays
   		- Linked List
-		- Hard if we're not prepared (understanding sets, queues, linked list, sets and understanding a problem)
+- Hard if we're not prepared (understanding sets, queues, linked list, sets and understanding a problem)

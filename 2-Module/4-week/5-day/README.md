@@ -16,7 +16,9 @@
 ## PA Walkthrough
 
 ## Study Review
+- Drill Practice Assessment
 - Check out the assessment breakdown
 - `datastructure-review` folder for quick reviews
 - Code-it-outs!!
 - Formative Quizzes!!
+

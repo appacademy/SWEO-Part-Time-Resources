@@ -28,11 +28,8 @@ class Tweet{
     }
 }
 
-// let johnUser = new User("John Quack");
-// let tweetOne = new Tweet("tweet one message", false, johnUser);
+let johnUser = new User("John Quack");
+let tweetOne = new Tweet("tweet one message", false, johnUser);
 
-// console.log(tweetOne.contentMessage) // "tweet one message";
-
-// console.log(Tweet.tweetCounter);
-
+console.log(tweetOne.creator instanceof User) //expect this to be true
 module.exports = Tweet;

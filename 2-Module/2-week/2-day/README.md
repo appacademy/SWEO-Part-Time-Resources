@@ -17,7 +17,9 @@
   - If you can do this with minimal amount of reference / looking up syntax, you're in good shape 
   - If we have trouble doing this and writing the syntax. Go back to the `employee project` or `friendly & evil dragon` project to practice syntax drilling
     - When should we be confident in our class skills? When we are able to write classes and apply OOP concepts with little to no references
+  - Know the syntax so we can allocate our time, brain power, and resources to solving problems rather than trying to look up a certain syntax.
   - We'll be doing more class related `code-it-out` problems during class later this week
+
 
 
 ## Code-it-out

@@ -16,6 +16,7 @@ class VerifiedUser extends User{
     changeUsername(nameToChange){
         if(this.verified === true){
             this.userName = nameToChange;
+            return this.userName;
         }
         else{
             const errorInstance = new Error();
