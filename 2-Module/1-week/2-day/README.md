@@ -56,7 +56,7 @@ const abbreviateWords = function(sentence) {
 console.log(abbreviateWords("Hello World!")); // Hll Wrl
 ```
 
-As you can see that this function is lengthy and hard to read because it is trying to do too many things. The problem can be broken down into the following steps to correct that.
+This function is lengthy and hard to read because it is trying to do too many things. The problem can be broken down into the following steps to correct that.
 
 Lets break that function down into smaller helper functions.
 
