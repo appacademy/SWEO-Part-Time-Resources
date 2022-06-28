@@ -29,7 +29,7 @@
 
 - **change the datastructure & refactor** (set or ll-queue). 
   - Then read each function again and make sure each line is compatible with the new datastructure (refactor if necessary)
-  - When you apply the new method, MAKE SURE to look on MDN and that the logic makes sense. **becareful, just changing a method name doesn't mean everything works.**
+  - When you apply the new method, MAKE SURE to look on MDN and that the logic makes sense. `becareful, just changing a method name doesn't mean everything works.`
 
 ## Logarithm and Binary Search
 - try `linear-search.js` first in the `code-it-out` folder
