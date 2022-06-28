@@ -57,4 +57,4 @@
 
 ## Formative Quiz
 
-[Git Flow]: gitflow/README.md
+[Git Flow]: (https://github.com/appacademy/Module-1-Resources/blob/main/additional_resources/week2/gitflow/README.md#basic-setup-for-pairing)
