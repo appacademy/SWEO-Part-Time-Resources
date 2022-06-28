@@ -5,6 +5,7 @@
 - [Basic Git Commands](#basic-git-commands)
 - [Pairing Setup](#basic-setup-for-pairing)
   - [Creating a GitHub Repo](#creating-a-repo)
+  - [PAT Setup](#pat-setup)
   - [Connecting to a GitHub Repo](#cloning-a-repo)
 - [Git Flow](#basic-git-flow-for-pairing)
 
@@ -92,6 +93,18 @@ similar to this
 
 - Lastly, your cohort is your most valuable resource during a/A make sure to follow each other  
 on github to make it easier to share projects and work together!
+
+### PAT Setup
+
+  If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
+  [PAT SETUP LINK](gitflow/github-setup.md)
+
+- Reminder: When setting up secrets manager on git, we will **also have to download git on our main system if windows** (sometimes we only have it on our wsl)
+  
+***IMPORTANT***
+- When generating token: Make sure to check all the fields for repo permission.
+- DO NOT show your PAT to anyone
+- For WSL users, when pasting (right click) your PAT into the password section, your password will be invisible, it will seem like it's not there, but it is there. So only paste once.
 
 ### Cloning a Repo
 
