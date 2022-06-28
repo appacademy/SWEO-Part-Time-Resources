@@ -37,7 +37,7 @@
 
 - Walkthrough with new repo
 - Walkthrough with cloned repo.
-- [Git Flow](https://github.com/appacademy/Module-1-Resources/blob/main/additional_resources/week2/gitflow/README.md#basic-setup-for-pairing): Extra git resources.
+- [Git Flow]: Extra git resources.
 
 ## Download Project && Setup Repos: 20 mins (SOLO)
 
@@ -57,4 +57,4 @@
 
 ## Formative Quiz
 
-[Git Flow]: (https://github.com/appacademy/Module-1-Resources/blob/main/additional_resources/week2/gitflow/README.md#basic-setup-for-pairing)
+[Git Flow]: gitflow/README.md
