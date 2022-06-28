@@ -10,7 +10,6 @@ function binarySearch(arr, target) {
     // While high and low indices do not overlap...
     while(lowPointer <= highPointer){
         // Find the midpoint between high and low indices
-        let midPointer = Math.floor((highPointer + lowPointer) / 2);
         
         // Compare the target value to the midpoint value
         // If the target equals the midpoint...

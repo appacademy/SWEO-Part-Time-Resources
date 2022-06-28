@@ -12,6 +12,9 @@
 //^ took us 4 steps to reach our answer.
 
 
+//2^4 = 2 * 2 * 2 * 2 = 16
+
+
 
 //2) given an array of 4503599627370496 elements, How many STEPS / OPERATIONS will it take to get to 1 by dividing the array into 2 each time --> log2(4503599627370496)?
 
@@ -27,9 +30,9 @@
 // log2( 512 )  = 9
 // log2( 1024 ) = 10
 // ...
-// log2( 4503599627370496 ) = ???
+// log2( 4503599627370496 ) = 52
 
-//Sound familiar? Write your answer here: 
+//Sound familiar? Write your answer here: 52
 
 
 

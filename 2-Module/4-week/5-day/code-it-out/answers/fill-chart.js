@@ -18,7 +18,7 @@ console.log("-------------Hashmap Chart-------------")
 
 // | List Type         |  Average |   Worst  |
 // | ----------------- |----------|----------|
-// | insert            |   O(?)   |  O(?)    |
-// | delete            |   O(?)   |  O(?)    |
-// | Lookup / Search   |   O(?)   |  O(?)    |
+// | insert            |   O(1)   |  O(n)    |
+// | delete            |   O(1)   |  O(n)    |
+// | Lookup / Search   |   O(1)   |  O(n)    |
 

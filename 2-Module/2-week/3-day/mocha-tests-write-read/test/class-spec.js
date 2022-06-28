@@ -9,6 +9,7 @@ describe("Word", function () {
       const jeff = new Word("Jeff"); //jeff = {word: "jeff"}
       expect(jeff).to.have.all.keys("word")
       expect(jeff).to.have.property("word")
+      expect(jeff).property("word")
       // expect(true).to.be.true //FALSE POSITIVE. even if we had the wrong code, this will still give us the passing test.
 
     });

@@ -50,8 +50,8 @@ describe("VerifiedUser Class", function () {
         verifiedKawhi.changeUsername('Board Man Gets Paid');
         expect(verifiedKawhi.userName).to.equal("Board Man Gets Paid");
 
-        // verifiedKawhi.verified = false;
-        // expect(verifiedKawhi.changeUsername.bind(verifiedKawhi, "The Klaw")).to.throw(Error);
+        verifiedKawhi.verified = false;
+        expect(verifiedKawhi.changeUsername.bind(verifiedKawhi, "The Klaw")).to.throw(Error);
     });
 });
 
