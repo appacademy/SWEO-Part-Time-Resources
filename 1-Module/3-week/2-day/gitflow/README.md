@@ -97,7 +97,7 @@ on github to make it easier to share projects and work together!
 ### PAT Setup
 
   If Github asks for your credentials (username / password). Your own password won't work. You will have to replace it with a Personal Access Token (PAT acts as your password). 
-  [PAT SETUP LINK](github-setup.md)
+  [PAT SETUP LINK](./github-setup.md)
 
 - Reminder: When setting up secrets manager on git, we will **also have to download git on our main system if windows** (sometimes we only have it on our wsl)
   
