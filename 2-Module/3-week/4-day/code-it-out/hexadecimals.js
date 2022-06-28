@@ -75,6 +75,6 @@ console.log("-------------convert binary to hexadecimal then to decimal---------
 // YOUR TASK: 
 // Using table above, convert thisbinary to hex, then convert it to decimal (calculators are allowed)
 
-// Binary : 1111 0000 0000 1101
+// Binary : 1111 0000 0110 1101
 // Hex    : f    0    0    d
 // decimal: 61453

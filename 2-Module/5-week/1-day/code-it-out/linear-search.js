@@ -2,6 +2,8 @@
 
 
 //DO THIS WITHOUT INCLUDES, USING FOR LOOP in O(n) time.
+
+//if we had 4.5 billion elements, then we need to operate on 4.5 billion of them.
 function linearSearch(sortedItems, targetEl){
 
 }

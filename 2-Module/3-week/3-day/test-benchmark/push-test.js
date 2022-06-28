@@ -33,4 +33,4 @@ const testPush = function (numberOfTests) {
     }
 }
 
-testPush(2000) //testPush 2000 times, each time with a different input size i.e. test-1 w/ input(1), test-2 w/ input(2) ... test-2000 w/ input(2000) and getting the runtime to compare for each test.
+testPush(3000) //testPush 2000 times, each time with a different input size i.e. test-1 w/ input(1), test-2 w/ input(2) ... test-2000 w/ input(2000) and getting the runtime to compare for each test.

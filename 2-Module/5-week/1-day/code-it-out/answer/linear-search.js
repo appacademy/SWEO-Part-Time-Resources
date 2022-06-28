@@ -2,19 +2,19 @@
 
 
 //DO THIS WITHOUT INCLUDES, USING FOR LOOP in O(n) time.
-function linearSearch(sortedItems, targetEl){
-    let index = -1; //defaults to -1
 
-    //if target is found update the index to be the element's index
-    for(let i=0; i<sortedItems.length; i++){
-        let currentEl = sortedItems[i];
-        if(currentEl === targetEl){
+//if we had 4.5 billion elements, then we need to operate on 4.5 billion of them.
+function linearSearch(sortedItems, targetEl){
+    let index = -1; //O(1)
+    for(let i=0; i<sortedItems.length; i++){ //O(n)
+        let currentEl = sortedItems[i]; //O(1)
+        if(currentEl === targetEl){ //O(1)
             index = i;
         }
     }
+    return index; //O(1)
 
-    
-    return index;
+    //O(n + 4) --> O(n);
 }
 
 
