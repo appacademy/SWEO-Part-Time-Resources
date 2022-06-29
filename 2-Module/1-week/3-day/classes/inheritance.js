@@ -12,7 +12,23 @@
 // say we have a human class.
 
 
+class Human{
+  constructor(age, gender){
+    this.age = age;
+    this.gender = gender;
+    this.hungry = true;
+    this.alive = true;
+  }
 
+  ageUp(){
+    this.age++;
+    console.log(`Happy birthday, you're now ${this.age} years old!`)
+  }
+
+  static burp(){
+    console.log(`BURRRRPRPRPR`);
+  }
+}
 
 
 
@@ -22,9 +38,16 @@
 // of that class, so you can use all of those methods without having to redifine them.
 
 
+class Programmer extends Human{
+  program(){
+    console.log(`I love creating new thins`);
+  }
+}
 
 
-
+let chris = new Programmer(25, 'male');
+// console.log(chris)
+// chris.ageUp();
 
 
 // If you want to define a new constructor for your class, but still want to inherit from 
@@ -34,7 +57,15 @@
 // the `super` function is a way to keep our code dry, and can ONLY be used inside a constructor.
 
 
+class Mother extends Human{
+  constructor(age, numberOfChildren){
+    super(age, 'female')
+    this.numberOfChildren = numberOfChildren
+  }
+}
 
-
-
-
+let jordyn = new Mother(34, 2);
+console.log(jordyn);
+jordyn.ageUp();
+// jordyn.burp()
+Mother.burp();

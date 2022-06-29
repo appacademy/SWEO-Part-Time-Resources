@@ -12,7 +12,7 @@
 // that will help you and other devs to correctly identify the name as a class.
 
 // the first thing i need is a construtor, something that will determine what properties 
-// and methods are needed to create a new instance of a vampire. The constructor is like the 
+// are needed to create a new instance of a vampire. The constructor is like the 
 // master vampire, and will be used to create new vampires in the future.
 // a constructor function is created with the constructor keyword followed by parens to add 
 // parameters and curly braces. You do NOT use the function keyword with a constructor. 
@@ -23,7 +23,14 @@
 // back when you create a new instance!
 
 
-
+// class Vampire{
+//   constructor(strength, stealth, beauty){
+//     this.strength = strength;
+//     this.stealth = stealth;
+//     this.beauty = beauty;
+//     this.hungry = true;
+//   }
+// }
 
 
 
@@ -33,30 +40,47 @@
 
 // If we want to create a new instance of a Vampire, we just need to use the `new` keyword.
 
-
-
-
+// const lestat = new Vampire(7, 8, 8);
+// console.log(lestat)
 
 
 // Lets add some methods to our vampire! Methods perform an action for the class.
 // since the methods we create are typically invoked on a given instance of the class 
 // thats been stored in a variable (like lestat) they are also called `instance methods`.
 
-// Again, we do NOT use the function keyword when creating an instance, just like with the
+// Again, we do NOT use the function keyword when creating an instance method, just like with the
 // constructor. Notice that you use the `this` keyword in that method as well when referencing
 // properties of the class, that's so that it will be referring to whichever instance of the
 // vampire you've created. If you have 12 vampires, you want it to refer only to the one you're
 // working with currently.
 
 
+class Vampire{
+  constructor(strength, stealth, beauty){
+    this.strength = strength;
+    this.stealth = stealth;
+    this.beauty = beauty;
+    this.hungry = true;
+  }
+
+  feed(){
+    if (this.hungry === true) {
+      this.hungry = false;
+      return `Blehhh, i vant to suck your blood`;
+    } else return `You live to see another sunrise, Mortal`;
+  }
+}
+
+
+const louie = new Vampire(8, 8, 10);
+// console.log(louie.feed());
+// console.log(louie.feed());
 
 
 
+// use the instanceof operator to check if something is an instance of the vampire class.
 
-
-
-
-// use the instanceOf operator to check if something is an instance of the vampire class.
+console.log(louie instanceof Vampire)
 
 
 
