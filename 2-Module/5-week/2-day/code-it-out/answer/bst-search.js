@@ -1,7 +1,8 @@
 /***************** 
 *************************Search step by step*********************
 O(log n) search for BSTs recursive process:
-- Initially set the current node to the entry point (what is the entry point to be able to access all the nodes?)
+
+- Initially set the current node to the entry point (what is the entry point to be able to access all the nodes? -->)
 - ------------while----------
 - If the current node's value is equal to the target, return true
 - If the target is less than the current node's value, re assign the current node to be the current node's left pointer.

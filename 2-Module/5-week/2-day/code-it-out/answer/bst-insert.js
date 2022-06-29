@@ -12,7 +12,9 @@
 
 1) create a pointer (currentNode) that will be used to traverse the tree starting at root node. (think of root = head in a link list). CurrentNode will always start at the entry point.
 
-2) ...
-
+2) is the value less than the currentNode.val?
+    //3) is currentNode.left null? if null --> assign currentNode.left = node(value)
+    //4) if left is not null --> we need to recurse -->
+call insert again and repeat for this for next node
 
 */
