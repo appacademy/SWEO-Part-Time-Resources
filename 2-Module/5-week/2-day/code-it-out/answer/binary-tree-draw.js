@@ -23,4 +23,12 @@ b.right = e;
 c.right = f;
 
 //draw on the tree here (or on a piece of paper, paint, etc.):
+/*
+      a
+     / \ 
+    b   c
+   / \   \
+  d   e   f
 
+
+*/
