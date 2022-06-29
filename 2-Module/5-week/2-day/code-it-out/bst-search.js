@@ -1,34 +1,4 @@
 /***************** 
-Properties of a binary SEARCH tree (BST):
-- is a binary tree( w/ at most 2 nodes left and right).
-    - binary search trees are binary trees, but a normal binary tree may NOT be a BST
-
-- Left less: every node contained in the **left branch** of any node will be less than the value of the node itself
-
-- Right More: every node in the right branch will be greater than the node value
-
-- allows for the same O(log n) search as a sorted array, but with O(log n) insertion and deletion 
-
-
-
-//Is this a valid binary tree?
-     10
-   /   \
-  5     12
- / \   / \
-4   6 11   13
-
-
-
-//Is this a valid binary tree?
-     5
-   /   \
-  3     8
- / \   / \
-1   6 6   9
-
-
-
 *************************Search step by step*********************
 O(log n) search for BSTs recursive process:
 - Initially set the current node to the entry point (what is the entry point to be able to access all the nodes?)
