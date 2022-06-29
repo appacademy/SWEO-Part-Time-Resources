@@ -19,7 +19,7 @@ let cohort = {
     ] 
   }, {
     name: "Blake",
-    currentGame: "Excape from Tarkov",
+    currentGame: "Escape from Tarkov",
     hours: 50
   }],
 }
