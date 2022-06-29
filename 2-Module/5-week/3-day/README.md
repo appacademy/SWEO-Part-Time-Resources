@@ -15,5 +15,6 @@
 - Take it one step at time. Use smaller examples first (empty node, then root node, then root node with 1 child, 2 child, etc...)
 - Ask questions!
 
-- Remember that staring and `only analyzing` the solution isn't going to help us solve it. We must try it ourselves without reference even if we already saw the solution. This confirms that we can do it.
+- Remember that staring and `only analyzing` the solution ISN'T going to help us solve it. We must try it ourselves without reference even if we already saw the solution. This confirms that we can do it.
+  - I.e. if the we received a question on the exam right now asking us to implement the BST `.search` method, without reference to the solution, could we do it?
 
