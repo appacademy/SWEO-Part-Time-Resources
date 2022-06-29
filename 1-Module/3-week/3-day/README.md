@@ -16,7 +16,7 @@ let cohort = {
     mostPlayed: [
       "Cinderace", 
       "Charizard"
-      ] 
+    ] 
   }, {
     name: "Blake",
     currentGame: "Excape from Tarkov",
