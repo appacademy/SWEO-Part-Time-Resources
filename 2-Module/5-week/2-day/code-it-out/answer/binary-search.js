@@ -18,27 +18,27 @@ function binarySearch(arr, target) {
         // Compare the target value to the midpoint value
         // If the target equals the midpoint...
         // Return the midpoint index
-        const midPointValue = arr[midPointer];
-        if(target === midPointValue) return midPointer;
+        const midValue = arr[midPointer];
+        if(midValue === target) return midPointer;
 
 
         // If the target is higher than the midpoint...
-        // Move the low pointer to midpoint + 1
-        if( target > midPointValue){
+        if(target > midValue){
+            // Move the low pointer to midpoint + 1
             lowPointer = midPointer + 1;
         }
-
-
+        
         // If the target is less than the midpoint...
-        // Move the high pointer to midpoint - 1
-        if( target < midPointValue){
+        if(target < midValue){
+            // Move the high pointer to midpoint - 1
             highPointer = midPointer - 1;
         }
 
+
     }
-    
+    //if our while loop does not find any match, return -1
     // Return -1 if the loop exits with overlapping pointers
-    return -1
+    return -1;
 
 }
 
