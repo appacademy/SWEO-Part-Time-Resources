@@ -5,7 +5,7 @@
 ```js
 /*
 
-Write a function called countVowels that counts the vowels contained in an input string. Store the count of each vowel \n
+Write a function called countVowels that counts the vowels contained in an input string. Store the count of each vowel
 individually in an object. The key should be the vowels with the count being the value contained at the key.
 
 I: "hello world"
