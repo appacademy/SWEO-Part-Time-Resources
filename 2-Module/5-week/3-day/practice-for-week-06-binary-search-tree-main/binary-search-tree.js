@@ -101,27 +101,93 @@ class BinarySearchTree {
 
 
   preOrderTraversal(currentNode = this.root) {
-    // Your code here
+    //base case, if currentNode is null, then stop and just return. This will prevent any code below to excute and stop the recursion
+    if(currentNode === null){
+      return;
+    }
+    //access/ log the data first at the currentNode
+    console.log(currentNode.val);
+
+    //recursively traverse on the left node (currentNode.left)
+    this.preOrderTraversal(currentNode.left);
+
+    //recursively traverse on the right node (currentNode.right)
+    this.preOrderTraversal(currentNode.right);
   }
 
 
   inOrderTraversal(currentNode = this.root) {
-    // Your code here
+    //if currentNode doesn't exist, this handles the edge case at the start and prevent continuation if currentNode is null
+    if (!currentNode) return;
+
+    //if currentNode.left exists, recursive call w/ currentNode = currentNode.left
+    this.inOrderTraversal(currentNode.left);
+
+    //log the data
+    console.log(currentNode.val)
+
+    //if currentNode.right exists, recursive call w/ currentNode = currentNode.right
+    this.inOrderTraversal(currentNode.right);
   }
-
-
+  
+  
   postOrderTraversal(currentNode = this.root) {
-    // Your code here
+    //if currentNode doesn't exist, this handles the edge case at the start and prevent continuation if currentNode is null
+    if (!currentNode) return;
+
+    //if currentNode.left exists, recursive call w/ currentNode = currentNode.left
+    this.postOrderTraversal(currentNode.left);
+
+    //if currentNode.right exists, recursive call w/ currentNode = currentNode.right
+    this.postOrderTraversal(currentNode.right);
+
+    //log the data
+    console.log(currentNode.val)
   }
 
     // Breadth First Traversal - Iterative
   breadthFirstTraversal() {
-    // your code here
+    //create queue (for now we will use an array)
+    const queue = [];
+    queue.push(this.root) //add the root to the queue initially
+
+    //while queue is not empty (q.length, we want to continue processing the nodes)
+    while(queue.length > 0){
+      //dequeue to get the current node and then process it
+      let node = queue.shift();
+      console.log(node.val);
+
+      //we check to see if left sub tree exists, so we can queue it to be processed later 
+      if(node.left !== null){
+        queue.push(node.left);
+      }
+      //we check to see if right sub tree exists, so we can queue it to be processed later 
+      if(node.right !== null){
+        queue.push(node.right);
+      }
+    }
   }
 
   // Depth First Traversal - Iterative
   depthFirstTraversal() {
-    // your code here
+    const stack = [this.root];
+
+    while(stack.length){
+      //pop from the stack, and log the data
+      const currentNode = stack.pop()
+      console.log(currentNode.val);
+
+      //then check if the left of the stack exist, push it to the stack
+      if(currentNode.left){
+        stack.push(currentNode.left);
+      }
+
+      //then check if the right of the stack exist, push it to the stack
+      if(currentNode.right){
+        stack.push(currentNode.right);
+      }
+    }
+
 }
 }
 

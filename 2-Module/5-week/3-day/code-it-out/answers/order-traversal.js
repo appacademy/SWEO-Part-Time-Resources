@@ -13,8 +13,8 @@
 //hint: Preorder traversal is good for visiting the data first as we traverse the node
 /*
 log the data from the node
-then recurse left and repeat this logic
-then recurse right and repeat this logic
+then recurse left and repeat the logic
+then recurse right and repeat the logic
 
 */
 
@@ -27,9 +27,9 @@ then recurse right and repeat this logic
 //Your answer: 4, 5, 8, 9, 10, 12, 13, 14
 /*
 
-then recurse left and repeat this logic
+then recurse left and repeat the logic
 log the data from the node
-then recurse right and repeat this logic
+then recurse right and repeat the logic
 
 */
 
@@ -40,8 +40,8 @@ then recurse right and repeat this logic
 
 /*
 
-then recurse left and repeat this logic
-then recurse right and repeat this logic
+then recurse left and repeat the logic
+then recurse right and repeat the logic
 log the data from the node
 
 */
