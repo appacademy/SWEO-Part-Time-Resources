@@ -9,7 +9,7 @@
                   9      14
 */                  
 
-//given this tree, use Preorder traversal to log the data in that order(don't code, just provide output throw analysis)?
+//given this tree, use Preorder traversal to log the data in that order(don't code, just provide output through analysis)
 //hint: Preorder traversal is good for visiting the data first as we traverse the node
 
 /***********Pseudo Code Example
