@@ -94,3 +94,12 @@ O: {
   console.log(obj3);
   console.log(obj4);
   ```
+  
+  ---
+
+## Project Pt 2 (PAIRED)
+
+Problems 8-14.
+
+[destructuring quiz]: https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-3---node--pair-programming--pojo--adv--arrays/destructuring-quiz
+[destructure array]:https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-3---node--pair-programming--pojo--adv--arrays/destructure-array
