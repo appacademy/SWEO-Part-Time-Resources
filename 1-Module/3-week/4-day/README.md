@@ -33,13 +33,6 @@ O: {
 
 ---
 
-## Practice (SOLO, 20m)
-
-- [Destructuring Quiz]
-- [Destructure Array]
-
----
-
 ## Destructuring Discussion
 
 - Destructuring is just matching a pattern.
