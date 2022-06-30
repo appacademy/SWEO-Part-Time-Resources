@@ -20,8 +20,8 @@ class TreeNode {
 // Expected Output -> [ 7, 2, 1, 8, 5, 2, 4, 3, 6, 9]
 
 function dfsFromLeft(root) {
-    debugger;
     //HINT: Call debugger here!!!
+    debugger;
 
     //add initial root node to stack 
     const stack = [];
@@ -32,21 +32,24 @@ function dfsFromLeft(root) {
 
     //while the stack is not empty
     while (stack.length) {
-        //pop the currentNode
-        const currentNode = stack.unshift();
+        //pop the currentNode from our stacl
+        const currentNode = stack.pop();
 
         //log currentNode's value
         results.push(currentNode.val);
+
+
+        
+        //if currentNode.right exists, push to stack
+        if (currentNode.right !== null) {
+            stack.push(currentNode.right);
+        }
 
         //if currentNode.left exists, push to stack
         if (currentNode.left !== null) {
             stack.push(currentNode.left)
         }
 
-        //if currentNode.right exists, push to stack
-        if (currentNode.right !== null) {
-            stack.push(currentNode.right);
-        }
     }
     return results;
 }
@@ -63,7 +66,11 @@ tree.left.right = new TreeNode(8, null, null);
 
 /*
 DRAW YOUR TREE HERE:
-
+               10
+             /    \
+            5      12
+           / \       \ 
+          4   8       13
 */
 
 console.log(dfsFromLeft(tree)); //expected result: [10,5,4,8,12,13]
