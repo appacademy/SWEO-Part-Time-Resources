@@ -2,7 +2,7 @@
 
 ## Continue Project
 - Wrap up `focus on BFS and DFS implementation!!` 
-- Review if you're done (try different ways like recursion or w/ while loop)
+- If you finished, delete dfs/bfs, repeat and confirm that you know how to code it. (i.e. maybe our pair was the one navigating, we also want to make sure we know how to and CAN do it ourselves)
 
 ## Code-it-out
 - without referencing any solutions or code, work on `dfs-stack.js`

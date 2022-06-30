@@ -7,6 +7,7 @@
 - Different tree traversals: BFS, DFS (inorder, preorder, postorder), etc.
   - i.e. given a tree, can you provide the output for if asked for pre-order, etc?
 - Big O and Time complexity of binary tree operations
+- Go Over `tree-terminology.md`
 
 - Coding Portion: Analyze and Debug
   - given almost working code, get it to work (debug).
