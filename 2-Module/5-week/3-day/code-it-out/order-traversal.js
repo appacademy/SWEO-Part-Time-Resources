@@ -13,9 +13,9 @@
 //hint: Preorder traversal is good for visiting the data first as we traverse the node
 
 /***********Pseudo Code Example
-log the data from the  node
-then repeat this logic for Node's left(recurse the func passing it the left node)
-then repeat this logic for Node's right(recurse the func passing it the right node)
+- log the data from the  node
+ -then repeat this logic for Node's left(recurse the func passing it the left node)
+ -then repeat this logic for Node's right(recurse the func passing it the right node)
 */
 
 //Your answer: 
@@ -35,9 +35,9 @@ then repeat this logic for Node's right(recurse the func passing it the right no
 //hint: inorder traversal is good for visiting the nodes data in a way that gives an inherent order
 
 /***********Pseudo Code Example
-then repeat this logic for Node's left(recurse the func passing it the left node)
-log the data from the  node
-then repeat this logic for Node's right(recurse the func passing it the right node)
+ -then repeat this logic for Node's left(recurse the func passing it the left node)
+ -log the data from the  node
+ -then repeat this logic for Node's right(recurse the func passing it the right node)
 */
 
 
@@ -57,9 +57,9 @@ then repeat this logic for Node's right(recurse the func passing it the right no
 //hint: Postorder traversal is good for visiting left subtree first, the right, then the root.
 
 /***********Pseudo Code Example
-then repeat this logic for Node's left(recurse the func passing it the left node)
-then repeat this logic for Node's right(recurse the func passing it the right node)
-log the data from the  node
+ -then repeat this logic for Node's left(recurse the func passing it the left node)
+ -then repeat this logic for Node's right(recurse the func passing it the right node)
+ -log the data from the  node
 */
 
 //Your answer: 
