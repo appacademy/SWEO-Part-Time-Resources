@@ -91,13 +91,13 @@ class BinarySearchTree {
     if (currentNode === null) {
       return;
     }
-    //if currentNode.left exists, recursive call w/ currentNode = currentNode.left
+    //recurse down to the left by calling itself on currentNode.left
     this.inOrderTraversal(currentNode.left);
 
     //log the data
     console.log(currentNode.val)
 
-    //if currentNode.right exists, recursive call w/ currentNode = currentNode.right
+    //recurse down to the right by calling itself on currentNode.right
     this.inOrderTraversal(currentNode.right);
 
   }
@@ -109,14 +109,14 @@ class BinarySearchTree {
       return;
     }
 
-    //if currentNode.left exists, recursive call w/ currentNode = currentNode.left
-    if(currentNode.left !== null){
+    //recurse down to the left by calling itself on currentNode.left
+    if (currentNode.left !== null) {
       this.postOrderTraversal(currentNode.left)
     }
 
 
-    //if currentNode.right exists, recursive call w/ currentNode = currentNode.right
-    if(currentNode.right !== null){
+    //recurse down to the right by calling itself on currentNode.right
+    if (currentNode.right !== null) {
       this.postOrderTraversal(currentNode.right);
     }
 
@@ -133,11 +133,11 @@ class BinarySearchTree {
   breadthFirstTraversal() {
     //create a queue and add it our root node to the queue
     const queue = [];
-    if(this.root !== null){
+    if (this.root !== null) {
       queue.push(this.root);
     }
     //while the queue is not empty
-    while(queue.length > 0){
+    while (queue.length > 0) {
       //shift the array (dequeue) in order to get front element 
       const currentNode = queue.shift();
       //access the currentNode (in this case, we want to log it)
@@ -145,12 +145,12 @@ class BinarySearchTree {
 
       //we need to add the items into the queue
       //if left node exists, enqueue to the queue
-      if(currentNode.left !== null){
+      if (currentNode.left !== null) {
         queue.push(currentNode.left);
       }
 
       //if right node exists, enqueue to the queue
-      if(currentNode.right !== null){
+      if (currentNode.right !== null) {
         queue.push(currentNode.right);
       }
     }
