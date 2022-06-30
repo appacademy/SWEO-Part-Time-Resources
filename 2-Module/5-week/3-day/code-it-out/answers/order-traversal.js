@@ -41,7 +41,7 @@
 */
 
 
-//Your answer:
+//Your answer: 4, 5,  8, 9, 10, 12, 13, 14
 
 //*************Postorder**************
 /*
@@ -62,4 +62,4 @@
  -log the data from the  node
 */
 
-//Your answer: 
+//Your answer: 4, 9, 8, 5, 14, 13, 12, 10
