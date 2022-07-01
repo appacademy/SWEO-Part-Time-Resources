@@ -11,8 +11,8 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? //yes
+//Is this a valid binary SEARCH tree (BST)? //yes
      10
    /   \
   5     12
@@ -21,13 +21,15 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? //yes
+//Is this a valid binary SEARCH tree (BST)? //no
      5
    /   \
   3     8
  / \   / \
 1   6 6   9
+
+//6 on the left hand side is not less than the node of 5, so therefore it invalidates this as a BST.
 
 **********/
 
@@ -59,7 +61,9 @@ c.right = f;
 
 /*   a
     / \
-  
+   b   c
+  / \   \
+ d   e   f
 
 
 */
@@ -68,3 +72,8 @@ c.right = f;
 
 
 //IS THE TREE A BST?
+//no it is not BST because b,d,e are not less than a.
+
+
+
+//graphs <-- tree (is a graph) <-- binary tree <-- binary search tree (bst is a tree, but a binary tree is not always a BST.)
