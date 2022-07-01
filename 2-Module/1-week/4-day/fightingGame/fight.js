@@ -34,10 +34,13 @@ let maraTurn = () => setTimeout(() => {
   merlinTurn();
 }, 3000)
 
-NPC.getNumberOfNPCs();
-Mage.getNumberOfMages();
-Healer.getNumberOfHealers();
+// NPC.getNumberOfNPCs();
+// Mage.getNumberOfMages();
+// merlin.getNumberOfMages();
+// Healer.getNumberOfHealers();
 maraTurn();
+
+// Healer.compareMana(mara, shera)
 
 
 

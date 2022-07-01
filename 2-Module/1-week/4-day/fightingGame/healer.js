@@ -5,7 +5,14 @@ class Healer extends NPC{
     super(name, finishingMove, 30);
     this.mana = 25
     this.maxMana = this.mana;
+    
     Healer.numberOfHealers++
+  }
+
+  static compareMana(healer1, healer2){
+    healer2.mana += 100
+
+    console.log(`${healer1.name}'s mana is ${healer1.mana}, and ${healer2.name}'s mana is ${healer2.mana}`)
   }
 
   static numberOfHealers = 0;
