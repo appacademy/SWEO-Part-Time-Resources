@@ -21,7 +21,7 @@ class Mage extends NPC{
   attack(enemy){
     this.mana--
     console.log(`${this.name} used an elemental ${elements[this.xp % 5]} attack for ${this.damage + 5} damage!`)
-    enemy.takeDamage(this.damage);
+    enemy.takeDamage(this.damage + 5);
     this.gainXp();
   }
 

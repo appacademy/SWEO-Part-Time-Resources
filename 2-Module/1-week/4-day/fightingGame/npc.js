@@ -53,8 +53,10 @@ class NPC{
         console.log(`${this.name} used ${this.finishingMove} on ${enemy.name}!!`)
         enemy.takeDamage(this.finishingMoveDamage);
         this.gainXp();
-      } else console.log(`${this.name} needs ${this.xp % 6} more xp to use ${this.finishingMove}!`)
-
+      } else {
+        console.log(`${this.name} needs ${this.xp % 6} more xp to use ${this.finishingMove}!`)
+        this.attack();
+      }
     }
   }
 

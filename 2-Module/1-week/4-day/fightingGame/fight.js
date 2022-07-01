@@ -14,6 +14,7 @@ let sheraTurn = () => setTimeout(() => {
   // console.log(merlin);
   // console.log(yennefer);
   // console.log(shera);
+  console.log(Healer.compareMana(mara,shera));
 }, 3000)
 
 let yenneferTurn = () => setTimeout(() => {
@@ -34,10 +35,15 @@ let maraTurn = () => setTimeout(() => {
   merlinTurn();
 }, 3000)
 
-NPC.getNumberOfNPCs();
-Mage.getNumberOfMages();
-Healer.getNumberOfHealers();
-maraTurn();
+// NPC.getNumberOfNPCs();
+// Mage.getNumberOfMages();
+// Healer.getNumberOfHealers();
+// maraTurn();
+// sheraTurn();
+
+mara.totals(); // can use a static method from the parent in an inherited class instance method and get the result this way
+mara.getNumberOfNPCs() // cannot directly call the static method from the instance.
+
 
 
 
