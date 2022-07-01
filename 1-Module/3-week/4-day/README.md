@@ -98,7 +98,7 @@ O: {
   console.log(makeThemBig("Hello", "world,", "how's", "it", "going", "today?"));
   ```
 
-- Spread takes some data and 'spreads' it out of it's containing brackets.
+- Spread takes some data and 'spreads' it out of its containing brackets.
 
   ```js
   let arr1 = [1, 2, 3];
