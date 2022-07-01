@@ -1,5 +1,4 @@
 // FRQ: what is an instance method? Does it apply to classes or instances?
-// FRQ: what is an instance variable? Does it apply to classes or instances?
 
 // --remember, try with our own knowledge first! 
 // --Even if it's the wrong answer, write it out, we can always learn from it later
