@@ -30,7 +30,7 @@
 
 - A `class*` is a blueprint for an object. It defines the `attributes` and `behavior` for an object type.
 - A `class` is created using the `class` keyword followed by the *capitalized* name of the class.
-- To define a class, we need to define the `constructor` function.
+- To define a class' properties, we need to define the `constructor` function.
 - A `constructor` is a function that is called when we create a new `instance` of a `class` and it determines what `properties` (**attributes**) are returned in the new `object` that is created. We do not return a value from the `constructor`.
 - The `this` keyword is used to access the `properties` of the `instance object` that has been created. It refers to the `context` of the object (the specific `instance`)
 - To **instantiate** a class, we use the `new` keyword.
@@ -108,6 +108,7 @@ console.log(Person.getPopulation()); // 2
 - JavaScript strictly uses **implementation inheritance**, which means the `properties` and `methods` defined on a parent `class` are available to the child `class` and to the `instances` of the child `class`.
 - We use the `extends` keyword to **inherit** the `properties` and `methods` of a parent `class` so they don't have to be redefined in the child `class` (keeping our code `DRY`!)
 - if you create a `child class` from a `parent class`, it will `inherit` the `static methods and variables` of the parent `class`, though they are still only accessible by keying into the `class` name (parent or child).
+- the `super` function is what gives us access to the `properties` of the parent `class`.
 
 ```js
 class Person {
