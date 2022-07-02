@@ -26,7 +26,7 @@
     - Eliminate unnecessary repetition with inheritance  `(correct)`
     - Label _POJO_s with intuitive keys and values
 
-<img src="./paImages/SRPExample.png" alt="context question" width="300" />
+<img src="./paImages/SRPExample.png" alt="SRP Example" width="300" />
 
 5. Which coding principle does the above code violate?
     - TDD
