@@ -26,52 +26,43 @@ class TreeNode {
 
 
 
-// takes in the root of a binary tree
-// returns an array where each element is the maximum
-// value found at each level of the tree, starting with the root.
-// uses the helper function splitIntoLevels()
 function findMaxEachLevel(root) {
-    // get an array of arrays of all nodes at each level
-    const allLevels = splitIntoLevels(root);
-    // map each subarray of nodes to a subarray of the
-    // values of those nodes
-    const allValues = allLevels.map((nodeArr) => {
-        return nodeArr.map((node) => node.value);
-    });
-    // map each subarray of values to the maximum value
-    // in each subarray.
-    const maxEachLevel = allValues.map((valArr) => Math.max(...valArr));
-    return maxEachLevel;
-}
-
-
-// returns an array of arrays, with each sub-array containing all
-// nodes at each level of a binary tree, starting with the root
-function splitIntoLevels(root) {
-    const allLevels = [];
-    let currentLevel = [];
-    let nextLevel = [];
-    if (root !== null) currentLevel.push(root);
-    // for each level, starting at the root, unload all
-    // children of each node into the nextLevel array.
-    while (currentLevel.length > 0) {
-        for (let i = 0; i < currentLevel.length; i++) {
-            let currentNode = currentLevel[i];
-            let leftNode = currentNode.left;
-            let rightNode = currentNode.right;
-            if (leftNode !== null) nextLevel.push(leftNode);
-            if (rightNode !== null) nextLevel.push(rightNode);
-        }
-        // when done, push currentLevel to allLevels
-        allLevels.push(currentLevel);
-        // and reassign nextLevel to currentLevel.
-        currentLevel = nextLevel;
-        // finally, empty out nextLevel for next loop.
-        nextLevel = [];
+    if (root === null) return;
+    if (root.left === null && root.right === null) return [root.value];
+  
+    const queue = [root];
+    const maxes = [];
+  
+    root.level = 0;
+  
+    while (queue.length > 0) {
+      const curr = queue.shift();
+  
+      // console.log(maxes[curr.level] + ` <--`);
+  
+      if (maxes[curr.level]) {
+        maxes[curr.level] = Math.max(curr.value, maxes[curr.level]);
+        console.log("maxes should be updated", maxes[curr.level]);
+        // console.log(maxes[curr.level] + ` <-- it ran`)
+      } else {
+        maxes.push(curr.value);
+        console.log("something should be pushed in max", maxes);
+      }
+  
+      if (curr.left !== null) {
+        console.log(`line 50 ran`);
+        curr.left.level = curr.level + 1;
+        queue.push(curr.left);
+      }
+      if (curr.right !== null) {
+        console.log(`line 55 ran`);
+        curr.right.level = curr.level + 1;
+        queue.push(curr.right);
+      }
     }
-    return allLevels;
-}
-
+  
+    return maxes;
+  }
 
 
 

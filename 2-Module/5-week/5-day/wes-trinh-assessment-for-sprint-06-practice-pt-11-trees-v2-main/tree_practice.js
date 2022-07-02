@@ -23,90 +23,128 @@ class TreeNode {
 
 // Expected Output -> [ 5, 7, 3, 9, 4 ]
 
-// function findMaxEachLevel(root) {
-//   debugger;
-//   const stack = [];
-//   //if our interviewer tells us that root could be null or a node. We shouldn't directly add it to our stack, but instead add an edge case to handle the root if root is null.
-//   if(root) stack.push(root);
-
-//   const maxes = [];
-
-//   root.level = 0;
-
-//   while (stack.length > 0) {
-//       const curr = stack.pop();
-
-//       //if the index value maxes[curr.level] (i.e. maxes[0]) exists, then we enter this statement, otherwise go else.
-//       if (maxes[curr.level]) {
-//           maxes[curr.level] = Math.max(curr.value, maxes[curr.level]);
-//       } else {
-//           maxes.push(curr.value);
-//       }
-//       //as long as left exist, go left to check the node, compare the level, and then see if the node's value is the greatest in its level
-//       if (curr.left ) {
-//           curr.left.level = curr.level + 1;
-//           stack.push(curr.left);
-//       }
-
-//       //as long as right exist, go right to check the node, compare the level, and then see if the node's value is the greatest in its level
-//       if (curr.right ) {
-//           curr.right.level = curr.level + 1;
-//           stack.push(curr.right);
-//       }
-//   }
-
-//   return maxes;
-// }
-
-
+// -----------------------------------method 1 (original debug)------------------------------------
 function findMaxEachLevel(root) {
   debugger;
-  //first off we need a queue and add root to it
-  //our queue has the root, which also current represents the level at 0.
-  let queue = [];
-  if (root) queue.push(root);
+  const stack = [];
+  //if our interviewer tells us that root could be null or a node. We shouldn't directly add it to our stack, but instead add an edge case to handle the root if root is null.
+  if(root) stack.push(root);
 
+  const maxes = [];
 
-  //create an array result that will contain all the result of the max at each level
-  const result = [];
+  root.level = 0;
 
-  //while the queue is not empty
-  while (queue.length > 0) {
+  while (stack.length > 0) {
+      const curr = stack.pop();
 
-    let currentBiggestVal = -Infinity;
+      //if the index value maxes[curr.level] (i.e. maxes[0]) exists, then we enter this statement, otherwise go else.
+      if (maxes[curr.level]) {
+          maxes[curr.level] = Math.max(curr.value, maxes[curr.level]);
+      } else {
+          maxes.push(curr.value);
+      }
+      //as long as left exist, go left to check the node, compare the level, and then see if the node's value is the greatest in its level
+      if (curr.left ) {
+          curr.left.level = curr.level + 1;
+          stack.push(curr.left);
+      }
 
-    let nextLevelNodes = [];
-
-    for (let i = 0; i < queue.length; i++) {
-      //1)) compare to find the biggest value in our queue. By iterating through the queue, and comparing each one until we get the biggest one at that current level.
-      let currentNode = queue[i];
-      if (currentNode.value > currentBiggestVal) currentBiggestVal = currentNode.value;
-
-
-      //2) maybe we can reassign the queue each time to represent the nodes of the next level.
-      //create a new array that will take in every node's left and right at this current level (iterate over the q to get all the nodes and add its left and its right --> which represents the next level)
-
-      //if left of current node exist, add it to the next level
-      if (currentNode.left) nextLevelNodes.push(currentNode.left);
-      //if right of current node exist, add it to the next level
-      if (currentNode.right) nextLevelNodes.push(currentNode.right);
-
-    }
-
-    //once we find the biggest node val at the level, add it to result arr
-    result.push(currentBiggestVal);
-
-    //once we have the next level built, reassign our queue to  = the nextLevelNodes
-    queue = nextLevelNodes;
-
-    //repeat the while loop until we run out of levels to process (queue is empty)
+      //as long as right exist, go right to check the node, compare the level, and then see if the node's value is the greatest in its level
+      if (curr.right ) {
+          curr.right.level = curr.level + 1;
+          stack.push(curr.right);
+      }
   }
 
-  return result;
-
+  return maxes;
 }
 
 
+// -----------------------------------method 2------------------------------------
+
+// function findMaxEachLevel(root) {
+//   debugger;
+//   //first off we need a queue and add root to it
+//   //our queue has the root, which also current represents the level at 0.
+//   let queue = [];
+//   if (root) queue.push(root);
+
+
+//   //create an array result that will contain all the result of the max at each level
+//   const result = [];
+
+//   //while the queue is not empty
+//   while (queue.length > 0) {
+
+//     let currentBiggestVal = -Infinity;
+
+//     let nextLevelNodes = [];
+
+//     for (let i = 0; i < queue.length; i++) {
+//       //1)) compare to find the biggest value in our queue. By iterating through the queue, and comparing each one until we get the biggest one at that current level.
+//       let currentNode = queue[i];
+//       if (currentNode.value > currentBiggestVal) currentBiggestVal = currentNode.value;
+
+
+//       //2) maybe we can reassign the queue each time to represent the nodes of the next level.
+//       //create a new array that will take in every node's left and right at this current level (iterate over the q to get all the nodes and add its left and its right --> which represents the next level)
+
+//       //if left of current node exist, add it to the next level
+//       if (currentNode.left) nextLevelNodes.push(currentNode.left);
+//       //if right of current node exist, add it to the next level
+//       if (currentNode.right) nextLevelNodes.push(currentNode.right);
+
+//     }
+
+//     //once we find the biggest node val at the level, add it to result arr
+//     result.push(currentBiggestVal);
+
+//     //once we have the next level built, reassign our queue to  = the nextLevelNodes
+//     queue = nextLevelNodes;
+
+//     //repeat the while loop until we run out of levels to process (queue is empty)
+//   }
+
+//   return result;
+
+// }
+
+
+
+// -----------------------------------method 3------------------------------------
+// function findMaxEachLevel(root) {
+
+//   let queue = [];
+//   if (root) queue.push(root);
+
+//   const result = [];
+
+//   while (queue.length > 0) {
+
+//     let currentBiggestVal = -Infinity;
+
+//     //keep track of the level by the number of nodes that we count at the current level  (length of the queue)
+//     let numsOfNodesAtLv = queue.length;
+
+//     for (let i = 0; i < numsOfNodesAtLv; i++) {
+//       //1)) compare to find the biggest value in our level
+//       let currentNode = queue.shift();
+//       if (currentNode.value > currentBiggestVal) currentBiggestVal = currentNode.value;
+
+//       //2) add thhe next nodes in for the next level
+//       if (currentNode.left) queue.push(currentNode.left);
+//       if (currentNode.right) queue.push(currentNode.right);
+
+//     }
+//     //once we find the biggest node val at the level, add it to result arr
+//     result.push(currentBiggestVal);
+
+//     //repeat the while loop until we run out of levels to process (queue is empty)
+//   }
+
+//   return result;
+
+// }
 
 
 
