@@ -3,7 +3,9 @@
 ## Project Setup Walkthrough
 
 - Setup repo
-- run `npm install`
+- Run `git remote remove origin`
+- Connect your Github repo using commands provided
+- Run `npm install`
 - Test mocha
 - Test Node
 
