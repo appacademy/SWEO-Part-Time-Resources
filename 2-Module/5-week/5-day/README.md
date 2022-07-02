@@ -19,7 +19,9 @@
 ## Practice Assessment
 - (bug) on PA, the question `What order would a depth-first traversal print the nodes in this tree?` has `two correct answers`, but it will only accept one.
 
-- Debugging Tips to ISOLATE the BUG
+- Build the function from scratch (on exam, you'll be given a bugged function, you can either restart w/ your own code or debug the problem)
+
+- Debugging Tips to ISOLATE the BUG if we run into one:
   - `mocha -b`: 
     - check error message to see what the output was vs. correct answer.
     - check test specs file for more examples
