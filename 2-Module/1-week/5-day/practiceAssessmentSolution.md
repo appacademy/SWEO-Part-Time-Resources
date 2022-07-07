@@ -21,7 +21,7 @@
     - It can be achieved by *inheriting* methods. `(correct)`
 
 4. Which of the following is are methods to approach OOP design?
-    - Break down the problem into logical equations
+    - Break down the problem into logical equations ***** talk to curriculum about this one
     - Design classes with intuitive interfaces  `(correct)`
     - Eliminate unnecessary repetition with inheritance  `(correct)`
     - Label _POJO_s with intuitive keys and values
