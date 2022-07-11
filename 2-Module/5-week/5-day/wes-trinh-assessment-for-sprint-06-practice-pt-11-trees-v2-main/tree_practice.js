@@ -112,39 +112,39 @@ function findMaxEachLevel(root) {
 
 
 // -----------------------------------method 3------------------------------------
-// function findMaxEachLevel(root) {
+function findMaxEachLevel(root) {
 
-//   let queue = [];
-//   if (root) queue.push(root);
+  let queue = [];
+  if (root) queue.push(root);
 
-//   const result = [];
+  const result = [];
 
-//   while (queue.length > 0) {
+  while (queue.length > 0) {
 
-//     let currentBiggestVal = -Infinity;
+    let currentBiggestVal = -Infinity;
 
-//     //keep track of the level by the number of nodes that we count at the current level  (length of the queue)
-//     let numsOfNodesAtLv = queue.length;
+    //keep track of the level by the number of nodes that we count at the current level  (length of the queue)
+    let numsOfNodesAtLv = queue.length;
 
-//     for (let i = 0; i < numsOfNodesAtLv; i++) {
-//       //1)) compare to find the biggest value in our level
-//       let currentNode = queue.shift();
-//       if (currentNode.value > currentBiggestVal) currentBiggestVal = currentNode.value;
+    for (let i = 0; i < numsOfNodesAtLv; i++) {
+      //1)) compare to find the biggest value in our level
+      let currentNode = queue.shift();
+      if (currentNode.value > currentBiggestVal) currentBiggestVal = currentNode.value;
 
-//       //2) add thhe next nodes in for the next level
-//       if (currentNode.left) queue.push(currentNode.left);
-//       if (currentNode.right) queue.push(currentNode.right);
+      //2) add thhe next nodes in for the next level
+      if (currentNode.left) queue.push(currentNode.left);
+      if (currentNode.right) queue.push(currentNode.right);
 
-//     }
-//     //once we find the biggest node val at the level, add it to result arr
-//     result.push(currentBiggestVal);
+    }
+    //once we find the biggest node val at the level, add it to result arr
+    result.push(currentBiggestVal);
 
-//     //repeat the while loop until we run out of levels to process (queue is empty)
-//   }
+    //repeat the while loop until we run out of levels to process (queue is empty)
+  }
 
-//   return result;
+  return result;
 
-// }
+}
 
 
 
