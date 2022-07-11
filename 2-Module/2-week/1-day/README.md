@@ -3,7 +3,7 @@
 ## Assessment(40m)
 
 - All MC
-- Need 6/8 to pass
+- Need 7/8 to pass
 - If you aren't sure on what the question is asking or want clarity on what it is trying to ask, let us know!
 - You can reference anything on aa-open (practice assessment, formative quizzes, homework, etc.), MDN, code you wrote. (All of the answers are at your fingertips, look it up if you're not sure!)
 
