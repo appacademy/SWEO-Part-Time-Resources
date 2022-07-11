@@ -85,10 +85,10 @@ Write a higher order function called printVals that:
 
 ---
 
-[First Class Objects Lecture]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-lecture
-[First Class Objects Demo]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-demo
+[First Class Objects Lecture]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-lecture
+[First Class Objects Demo]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/functions-as-first-class-objects-demo
 [First-class Function]:https://developer.mozilla.org/en-US/docs/Glossary/First-class_Function
-[Callbacks Reading]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/callbacks-reading
-[Using Callbacks Pt 1]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-1
-[Using Callbacks Pt 2]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-2
-[Multiple Callbacks]:https://open.appacademy.io/learn/js-py---pt-jun-2021-online/week-4---callbacks--scope--and-closure/multiple-callbacks-demo
+[Callbacks Reading]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/callbacks-reading
+[Using Callbacks Pt 1]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-1
+[Using Callbacks Pt 2]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/using-callback-functions-demo-2
+[Multiple Callbacks]:https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-4---callbacks--scope--and-closure/multiple-callbacks-demo
