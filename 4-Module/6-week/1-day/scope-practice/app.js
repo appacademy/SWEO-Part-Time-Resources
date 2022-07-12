@@ -3,21 +3,24 @@ require('dotenv').config();
 const express = require('express')
 
 
-const {User} = require('./db/models')
+const {User} = require('./db/models');
 
 
 const app = express()
 app.use(express.json())
 
 app.get('/users', async(req, res) => {
-    // default scope applied to all queries 
     const users = await User.findAll()
     res.json(users)
+
 })
 
 app.get('/users/inactive', async(req, res) => {
-    // calling multiple scopes
-    const users = await User.scope( ['isActive', 'isInactive']).findAll()
+    // calling a scope that takes args
+    // const inactiveUsers = await User.scope({method : ['isInactive', 3]}).findAll()
+
+    //calling multiple scopes
+    const users = await User.scope(['isInactive', 'isActive']).findAll()
     res.json(users)
 })
 

@@ -1,9 +1,11 @@
 'use strict';
+var exclude =['password', 'createdAt', 'updatedAt']
 const {
   Model
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class User extends Model {
+    exclude = {exclude : ['password', 'createdAt', 'updatedAt']}
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -21,33 +23,35 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'User',
     defaultScope: {
-      where: {
-        isActive: true
-      },
-      attributes: {
-        exclude: ['password', 'createdAt', 'updatedAt']
-      }
+        where :{
+          isActive : true
+        },
+        attributes : {
+          exclude : exclude
+        }
     },
-    scopes: {
-      isInactive() {
+    scopes :{
+      isInactive(){
+        // console.log(args)
         return {
-          where: {
-            isActive: false,
-          }, attributes: {
-            exclude: ['password', 'createdAt', 'updatedAt']
+          where :{
+            isActive : false,
+          },
+          attributes : {
+            exclude : exclude
           }
         }
       },
-      isActive() {
+      isActive(){
         return {
-          where: {
-            isActive: false,
-          }, attributes: {
-            exclude: ['password', 'createdAt', 'updatedAt']
+          where :{
+            isActive : true,
+          },
+          attributes : {
+            exclude : exclude
           }
         }
-      },
-
+      }
     }
   });
   return User;
