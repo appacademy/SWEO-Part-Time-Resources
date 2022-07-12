@@ -16,15 +16,6 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false
       },
-      bandId : {
-        type : Sequelize.INTEGER,
-        references : {
-          model : 'Bands',
-          key : 'id'
-        },
-        allowNull : false,
-        onDelete : 'cascade'
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,

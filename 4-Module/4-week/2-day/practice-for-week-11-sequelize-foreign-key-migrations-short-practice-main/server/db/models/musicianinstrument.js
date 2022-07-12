@@ -14,8 +14,8 @@ module.exports = (sequelize, DataTypes) => {
     }
   };
   MusicianInstrument.init({
-    musicianId: DataTypes.INTEGER,
-    instrumentId: DataTypes.INTEGER
+    instrumentId: DataTypes.INTEGER,
+    musicianId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'MusicianInstrument',

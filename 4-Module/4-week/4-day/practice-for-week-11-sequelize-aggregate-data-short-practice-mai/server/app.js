@@ -10,6 +10,7 @@ require('express-async-errors');
 // Import the models used in these routes - DO NOT MODIFY
 const { Cat, Toy, sequelize } = require('./db/models');
 const { Op } = require("sequelize");
+const { count } = require('console');
 
 
 // Express using json - DO NOT MODIFY
@@ -23,7 +24,8 @@ app.get('/toys', async (req, res, next) => {
 
     // A. Create an `allToys` variable that returns all toys
     // Your code here
-    const allToys  = await Toy.findAll()
+    const allToys = await Toy.findAll()
+
     // B. Create a `toysCount` variable that returns the total number of toy
     // records
     // Your code here
@@ -68,11 +70,12 @@ app.get('/cats/:id/toys', async (req, res, next) => {
             // Find the average price of this cat's toys, and display the
             // value with a key of `averageToyPrice`
             // Your code here
-            [sequelize.fn('AVG', sequelize.col('Toys.price')), 'averageToyPrice'],
+            [sequelize.fn('AVG', sequelize.col('price')), 'averageToyPrice'],
+            // Select count(price) as averageToyPrice from Toys
             // Find the total price of this cat's toys, and display the
             // value with a key of `totalToyPrice`
             // Your code here
-            [sequelize.fn('SUM', sequelize.col('price')), 'totalToyPrice']
+            [sequelize.fn('TOTAL', sequelize.col('price')), 'totalToyPrice']
         ],
         raw: true
     });
@@ -80,24 +83,25 @@ app.get('/cats/:id/toys', async (req, res, next) => {
     const cat = await Cat.findByPk(req.params.id, {
         include: { model: Toy }
     });
-    
 
     // STEP 2b: Format the cat object to add the aggregate keys and values to it
 
     // Define a new variable, `catData`, and set it equal to the `cat` variable converted to JSON 
     // Your code here
     const catData = cat.toJSON()
-    // console.log(catData)
     // Add the `toyCount`, `averageToyPrice`, and `totalToyPrice` keys to the
     // catData object, with their aggregate values from `catToysAggregateData`
     // Your code here
     catData.toyCount = catToysAggregateData.toyCount
     catData.averageToyPrice = catToysAggregateData.averageToyPrice
     catData.totalToyPrice = catToysAggregateData.totalToyPrice
-
     // After the steps above are complete, refactor the line below to only
     // display `catData`
-    res.json(catData);
+    res.json({
+        // catToysAggregateData,
+        // cat,
+        catData
+    });
 })
 
 

@@ -12,7 +12,7 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       Musician.belongsTo(
         models.Band,
-        {foreignKey : 'bandId', onDelete: 'cascade'}
+        { foreignKey: 'bandId' }
       )
       Musician.belongsToMany(
         models.Instrument,

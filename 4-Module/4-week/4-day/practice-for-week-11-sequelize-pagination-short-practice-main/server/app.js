@@ -1,5 +1,6 @@
 // Instantiate Express and the application - DO NOT MODIFY
 const express = require('express');
+const { off } = require('process');
 const app = express();
 
 // Import environment variables in order to connect to database - DO NOT MODIFY
@@ -14,44 +15,33 @@ app.use(express.json());
 
 
 app.get('/musicians', async (req, res, next) => {
-
     // Parse the query params, set default values, and create appropriate
+    let page = parseInt(req.query.page, 10)
+    let size = parseInt(req.query.size, 10)
+    console.log(page, size)
     // offset and limit values if necessary.
     // Your code here
-    let size = parseInt(req.query.size, 10)
-    let page = parseInt(req.query.page, 10)
-
-    if (size === 0 || page === 0) {
-        return res.json(await Musician.findAll({
-            attributes: ['id', 'firstName', 'lastName'],
-            include: [{
-                model: Band,
-                attributes: ['id', 'name']
-            }],
-        }))
-    }
-    if (Number.isNaN(size)) size = 5
     if (Number.isNaN(page)) page = 1
-
+    if (Number.isNaN(size)) size = 5
     // Query for all musicians
     // Include attributes for `id`, `firstName`, and `lastName`
     // Include associated bands and their `id` and `name`
     // Order by musician `lastName` then `firstName`
     const musicians = await Musician.findAll({
-        order: [['lastName'], ['firstName']],
+        order: [['id'], ['lastName'], ['firstName']],
         attributes: ['id', 'firstName', 'lastName'],
         include: [{
             model: Band,
             attributes: ['id', 'name']
         }],
-        limit: size,
-        offset: size * (page - 1),
-        order: [
-            ['id']
-        ]
         // add limit key-value to query
+        limit: size,
         // add offset key-value to query
+        offset: size * (page - 1),
         // Your code here
+        // order : [
+        //     ['id']
+        // ]
     });
 
     res.json(musicians)

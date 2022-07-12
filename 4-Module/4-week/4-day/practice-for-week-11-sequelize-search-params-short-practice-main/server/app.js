@@ -31,17 +31,18 @@ app.get('/musicians', async (req, res, next) => {
         query.limit = size;
         query.offset = size * (page - 1);
     }
-
+    
 
     // STEP 1: WHERE clauses on the Musician model
     // ?firstName=XX&lastName=YY
-    // Add keys to the WHERE clause to match the firstName query param, if it exists.
+    // Add keys to the WHERE clause to match the firstName param, if it exists.
     // End result: { where: { firstName: req.query.firstName } }
     // Your code here
     if(req.query.firstName) query.where.firstName = req.query.firstName
-    // Add keys to the WHERE clause to match the lastName query param, if it exists.
+    
+    // Add keys to the WHERE clause to match the lastName param, if it exists.
     // End result: { where: { lastName: req.query.lastName } }
-
+    
     // Your code here
     if(req.query.lastName) query.where.lastName = req.query.lastName
 
@@ -50,7 +51,6 @@ app.get('/musicians', async (req, res, next) => {
     // Add an object to the `include` array to include the Band model where the 
     // name matches the bandName param, if it exists.
     // End result: { include: [{ model: Band, where: { name: req.query.bandName } }] }
-
     // Your code here
     if(req.query.bandName) query.include.push({
         model : Band,
@@ -58,7 +58,6 @@ app.get('/musicians', async (req, res, next) => {
             name : req.query.bandName
         }
     })
-    
     // STEP 3: WHERE Clauses on the associated Instrument model 
     // ?instrumentTypes[]=XX&instrumentTypes[]=YY
     // Add an object to the `include` array to include the Instrument model 
@@ -74,13 +73,18 @@ app.get('/musicians', async (req, res, next) => {
         }] } 
     */
     // Your code here
-    if(req.query.instrumentTypes){
+    if(req.query.instrumentTypes) {
         query.include.push({
-            model: Instrument, 
-            where: { type: req.query.instrumentTypes }, 
-            through: { attributes: [] }
+            model : Instrument,
+            where : {
+                type : req.query.instrumentTypes
+            },
+            through : {
+                attributes : []
+            }
         })
     }
+
 
     // BONUS STEP 4: Specify Musician attributes to be returned
     // ?&musicianFields[]=XX&musicianFields[]=YY
@@ -88,11 +92,18 @@ app.get('/musicians', async (req, res, next) => {
     // returned to those specified by the query param musicianFields, if it 
     // exists
     // If keyword 'all' is used, do not specify any specific attributes
-    // If keyword 'none' is used, do not include any Musician attributes
+    // If keyword 'none' is used, \only include the id
     // If any other attributes are provided, only include those values
-
     // Your code here
-
+    if(req.query.musicianFields !== undefined){
+        if(!req.query.musicianFields.includes('all') && typeof req.query.musicianFields === 'object'){
+            query.attributes = req.query.musicianFields
+        }
+        else if(req.query.musicianFields === "none") {
+                query.attributes = ['id']
+        }
+    }
+    console.log(query)
 
     // BONUS STEP 5: Specify attributes to be returned
     // These additions should be included in your previously implemented
@@ -140,9 +151,7 @@ app.get('/musicians', async (req, res, next) => {
 
 // Root route - DO NOT MODIFY
 app.get('/', async (req, res) => {
-    res.json(
-        await Musician.findAll()
-    );
+    res.json(await Musician.findAll());
 });
 
 // Set port and listen for incoming requests - DO NOT MODIFY

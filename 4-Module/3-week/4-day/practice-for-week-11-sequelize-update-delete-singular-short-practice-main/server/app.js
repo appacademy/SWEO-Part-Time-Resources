@@ -20,44 +20,33 @@ app.get('/puppies', async (req, res, next) => {
 
 // STEP 1: Update a puppy by id
 app.put('/puppies/:puppyId', async (req, res, next) => {
-    const {puppyId} = req.params
-    let puppy = await Puppy.findByPk(puppyId)
     const {age_yrs, weight_lbs, microchipped} = req.body
-    if(age_yrs){
-        puppy.age_yrs = age_yrs
-    }
-    if(weight_lbs){
-        puppy.weight_lbs = weight_lbs
-    }
-    if(microchipped){
-        puppy.microchipped = microchipped
-    }
-    await puppy.save()
+    let puppy = await Puppy.findByPk(req.params.puppyId)
+    await puppy.update({
+        age_yrs : age_yrs,
+        weight_lbs : weight_lbs,
+        microchipped : microchipped
+    })
     res.json({
-        msg : 'It worked',
-        puppy : puppy
+        puppy
+        // message : `${puppy.name} was updated`
     })
 })
 
 
 // STEP 2: Delete a puppy by id
 app.delete('/puppies/:puppyId', async (req, res, next) => {
-    const {puppyId} = req.params
-    let puppy = await Puppy.findByPk(puppyId)
-    if(puppy){
-        await puppy.destroy()
-        res.json({msg : `${puppy.name} was destroyed`})
-    }else{
-        res.json("Puppy Not Found")
-    }
+    let puppy = await Puppy.findByPk(req.params.puppyId)
+    await puppy.destroy()
+    res.json({
+        msg: `${puppy.name} ran away to a farm in vermont`
+    })
 })
 
 
 // Root route - DO NOT MODIFY
 app.get('/', (req, res) => {
-    res.json({
-        message: "API server is running"
-    });
+
 });
 
 // Set port and listen for incoming requests - DO NOT MODIFY

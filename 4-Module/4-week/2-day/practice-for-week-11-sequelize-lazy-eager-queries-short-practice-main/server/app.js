@@ -11,10 +11,14 @@ const { Band, Musician } = require('./db/models');
 // Express using json - DO NOT MODIFY
 app.use(express.json());
 
+app.get('/bands/musicians/:bandId', async(req, res) => {
+    const band = await Band.findByPk(req.params.bandId)
+    res.json(await band.getMusicians())
+})
 // STEP 1: Example of lazy loading
 app.get('/bands-lazy/:id', async (req, res, next) => {
     const band = await Band.findByPk(req.params.id);
-    const bandMembers = await band.getMusicians({ order: [ ['firstName'] ] });
+    const bandMembers = await band.getMusicians({ order: [['firstName']] });
     const payload = {
         id: band.id,
         name: band.name,
@@ -28,18 +32,21 @@ app.get('/bands-lazy/:id', async (req, res, next) => {
 // STEP 1: Example of eager loading
 app.get('/bands-eager/:id', async (req, res, next) => {
     const payload = await Band.findByPk(req.params.id, {
-        include: { model: Musician },
-        order: [ [Musician, 'firstName'] ]
+        include: {
+            model: Musician,
+            // If you want only certain columns
+            // attributes : ['firstName', 'createdAt']
+        },
+        order: [[Musician, 'firstName']]
     });
     res.json(payload);
 });
 
 // STEP 2: Lazy loading all bands
 app.get('/bands-lazy', async (req, res, next) => {
-    const allBands = await Band.findAll({ order: [ ['name'] ] })
-    // console.log(allBands)
+    const allBands = await Band.findAll({ order: [['name']] })
     const payload = [];
-    for(let i = 0; i < allBands.length; i++){
+    for (let i = 0; i < allBands.length; i++) {
         const band = allBands[i];
         // Your code here
         const bandData = {
@@ -47,7 +54,8 @@ app.get('/bands-lazy', async (req, res, next) => {
             name: band.name,
             createdAt: band.createdAt,
             updatedAt: band.updatedAt,
-            Musicians : await band.getMusicians({order : [['firstName']]})
+            // Your code here
+            Musicians: await band.getMusicians({ order: [['firstName']] })
         };
         payload.push(bandData);
     }
@@ -58,9 +66,7 @@ app.get('/bands-lazy', async (req, res, next) => {
 app.get('/bands-eager', async (req, res, next) => {
     const payload = await Band.findAll({
         include : {
-            model : Musician,
-            // if you want to include only some of the associated columns
-            // attributes : ['firstName', 'createdAt']
+            model : Musician
         },
         order : [
             ['name'],
@@ -78,5 +84,5 @@ app.get('/', (req, res) => {
 });
 
 // Set port and listen for incoming requests - DO NOT MODIFY
-const port = 5000;
+const port = 5001;
 app.listen(port, () => console.log('Server is listening on port', port));
