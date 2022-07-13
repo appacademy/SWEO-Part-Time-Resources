@@ -24,7 +24,7 @@ You can look up any error on MDN and get a detailed account of why that error wi
 
 ### Creating errors
 
-To create a new error, you just create an instance of the Error class that's built into JS.
+To create a new error, you just create an instance of the Error Object (class) that's built into JS.
 
 ```js
 const err = new Error('I am an error')
@@ -36,7 +36,7 @@ The Error constructor is unique in that you dont need the `new` keyword, but can
 const alsoAnErr = Error('I am also an error')
 ```
 
-We use the `throw` keyword to make an error happen and stop the execution of our code.
+We use the `throw` keyword to make an error happen and **stop the execution of our code**.
 
 ```js
 function giveMeNumber(num) {
@@ -52,8 +52,8 @@ console.log(giveMeNumber("apple")); // Uncaught Error: Give me a number!
 console.log(giveMeNumber(1)); // doesn't get run because execution was stopped.
 ```
 
-If you don't want to stop the execution of the program, but still want an error to be thrown, you use the `try...catch` block.
-One thing to note is that most SyntaxErrors wont be caught using `try...catch`, because those errors happen when the code is compiled (loaded), not when it is running.
+If you don't want to **stop the execution of the program**, but still want an error to be thrown, you use the `try...catch` block.
+One thing to note is that most SyntaxErrors **wont be caught** using `try...catch`, because those errors happen *when the code is compiled* (loaded), not when it is running.
 
 ```js
 try {
@@ -67,7 +67,7 @@ try {
 
 If you want your program execution to stop if there's an error, then just `throw` one. If you don't want it to block execution, use a `try...catch` block ~
 
-- One final piece of the `try...catch` is the `finally` keyword. This bit of code will always run. No matter what happens. Every. Single. Time.
+- One final piece of the `try...catch` is the `finally` keyword. This bit of code will **always** run. No matter what happens. **Every. Single. Time.**
 
 ```js
 function trySafeDivide(n) {
