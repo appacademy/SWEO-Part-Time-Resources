@@ -85,6 +85,13 @@ function sayHungry() {
 sayHungry();
 ```
 
+- Hoisting
+  - "Hoisting is a JavaScript mechanism where variables and function declarations are moved to the top of their scope (figuratively not physically) before code execution."
+  - In reality - JavaScript engine is not physically moving your code, your code stays where you typed it.
+  - During compile phase, just microseconds before your code is executed, it is scanned for function and variable declarations. All these functions and variable declarations are added to the memory inside a JavaScript data structure called Lexical Environment.
+    - The variables and function declarations will be hoisted to the top of their particular scope.
+    - `const` and `let` are **block-scoped** while `var` is **function-scoped**.
+
 ### `Let, Const, and Var`
 
 - `Let` is block scoped and CAN be reassigned.
