@@ -8,9 +8,9 @@ let myFunction = function(functionScope){
   };
 };
 
-/****************************************/
-
 myFunction("I am function scoped");
+
+/****************************************/
 
 let car = "vroom";
 function makeSounds(dogSound) {
