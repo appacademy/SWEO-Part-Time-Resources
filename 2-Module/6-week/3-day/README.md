@@ -9,5 +9,5 @@
   - When moving on to the next question, `AVOID LOOKING AT PREVIOUS SOLUTION`.
   - Remember that we `learn from pulling the information from within us` not looking at our answers.
 - `Avoid the snowball effect:` We `won't be releasing the solutions or doing walkthroughs` until the end in order to give every pair the equal opportunity to learn. `therefore it's important we ask questions when we are stuck!!!!`
-- Help each other!! We learn by teaching, so if our pair is a bit behind, provide guidance and allow each other to grow and learn
+- Help each other!! If we can teach it, then we know it. So if our pair is a bit behind, provide guidance and allow each other to grow and learn
 
