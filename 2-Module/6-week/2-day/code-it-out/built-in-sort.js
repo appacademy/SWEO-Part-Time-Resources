@@ -16,18 +16,42 @@ function compareNumbers(a, b) {
 
     // -----------sort in ascending order implicit--------
     // comment this out
-    return a - b; //if a - b (2 - 4) returns a negative number, negative number means sort `a` before `b` so 2 before 4.
+    // return a - b; //if a - b (2 - 4) returns a negative number, negative number means sort `a` before `b` so 2 before 4.
 
     //-----------sort in ascending order explicit--------
     //i.e. a = 2, b = 4, we want a to go before b when comparing.
-
-    //i.e a = 4, b = 1,  I want `b` to be sorted first before `a` (1 should go before 4 in ascending order)
-
-    //otherwise, do sort nothing
-
+    // if(a < b){
+    //     //it doesn't matter what negative num we return, as long as it's a negative number
+    //     return -1
+    //     // return -1000
+    // }
+    // //i.e a = 4, b = 1,  I want `b` to be sorted first before `a` (1 should go before 4 in ascending order)
+    // if(a > b){
+    //     return 1; //positive means we will swap and b will go before a
+    //     // return 1000000;
+    // }
+    // //otherwise, do sort nothing
+    // else{
+    //     return 0;
+    // }
 
     //-----------sort in DESCENDING order --------
     //YOUR CODE HERE: refactor above to sort the numbers in descending order (biggest to smallest)
+    //----implicity------
+    return b - a;
+
+    //----explicit------
+    // if(a < b){
+    //     //if a is less than b, that means b is bigger so it needs to go before a (descending order). So return positive number to swap.
+    //     return 1;
+    // }
+    // if(a > b){
+    //     //we want to keep a before b, so no need to swap
+    //     return -1;
+    // }
+
+    // return 0;
+
 
     
 }
@@ -44,13 +68,13 @@ const words = ["ccc", "zeeeebra", "a", "bb", ] // final result --> [ 'a', 'bb', 
 const compareWords = (a, b) => {
     if(a.length < b.length){
         //a ("ccc") should go before b ("zeeeebra")
-        //your code here
+        return -1; 
 
     }
     if(a.length > b.length){
         //b ("a") should go before a ("zeeeebra")
         //your code here
-
+        return 1; //this will do the swap where b will now go before a 
     }
     else{
         return 0;
