@@ -7,60 +7,50 @@ const sha256 = require('sha256')
 const hash = (string) => sha256(string)
 
 class User {
-    constructor(password){
-        password = 'SuperSecret' + password + 'SuperSecret'// SuperSecretpasswordSuperSecret
+    constructor(password) {
+        password = '123' + password + '123' // '123password123'
         this.password = hash(password)
     }
 
-    checkPassword(string){
+    checkPassword(string) {
         if (this.password === hash(string)) return "Thats The correct Password"
         else return "the password you entered is incorrect"
     }
 
-    changePassword(string){
-        string = 'SuperSecret' + string + 'SuperSecret'
+    changePassword(string) {
+        string = '123' + string + '123'
         this.password = hash(string)
     }
 }
 
 const baylen = new User('password')
 
-// console.log(baylen.password === hash('password1'))
-// console.log(hash('password1'))
-console.log(baylen.password)
-console.log(hash('password'))
+// console.log(baylen.password)
 
+const commonPassword = ['password', '1234', 'Password1234!', 'admin']
 
-const commonPasswords = ['1234', 'password', 'admin', 'superSecret']
-
-const rainbowTable = (array) => {
+const makeRainbowTable = (array)  => {
     const rainbow = {}
+
     array.forEach(el => {
         rainbow[el] = hash(el)
     });
+
     return rainbow
 }
 
-const hackObj = rainbowTable(commonPasswords)
+const rainbow = makeRainbowTable(commonPassword)
 
-// console.log(hackObj)
-
-
-const tryToHackUser = (user) => {
-    for(key in hackObj){
-       let value = hackObj[key]
-       if(user.password === value){
-        return `this user has been hacked, and their password is ${key}`
-       }
-       return 'They were too smart to be hacked'
+const tryToHack = (user) => {
+    for(let key in rainbow){
+        let value = rainbow[key]
+        if(user.password === value){
+            return `this user has been hacked, and their password is ${key}`
+        }
     }
+    return 'this user is too smart to be hacked'
 }
-baylen.changePassword('1234')
 
-console.log(tryToHackUser(baylen))
+// baylen.changePassword('Password1234!')
 
-
-
-
-
-
+console.log(tryToHack(baylen))
