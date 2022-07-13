@@ -24,7 +24,7 @@ You can look up any error on MDN and get a detailed account of why that error wi
 
 ### Creating errors
 
-To create a new error, you just create an instance of the Error class that's built into JS.
+To create a new error, you just create an instance of the Error Object (class) that's built into JS.
 
 ```js
 const err = new Error('I am an error')
