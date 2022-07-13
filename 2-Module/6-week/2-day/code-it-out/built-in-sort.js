@@ -3,7 +3,9 @@
 
 //---------------------rules for compare callback function--------------------
 //Positive rule: if compare callback return val is positive number (greater than 0) then sort `b` BEFORE `a`
+
 //Negative rule: if compare callback return val is negative number (less than 0) then sort `a` BEFORE `b`
+
 //Neutral rule: if compare callback return 0, then keep original order.
 
 console.log("---------------------Problem 1----------------------")
@@ -12,10 +14,21 @@ console.log("---------------------Problem 1----------------------")
 function compareNumbers(a, b) {
     debugger;
 
-    //comment this out
+    // -----------sort in ascending order implicit--------
+    // comment this out
     return a - b; //if a - b (2 - 4) returns a negative number, negative number means sort `a` before `b` so 2 before 4.
 
+    //-----------sort in ascending order explicit--------
+    //i.e. a = 2, b = 4, we want a to go before b when comparing.
+
+    //i.e a = 4, b = 1,  I want `b` to be sorted first before `a` (1 should go before 4 in ascending order)
+
+    //otherwise, do sort nothing
+
+
+    //-----------sort in DESCENDING order --------
     //YOUR CODE HERE: refactor above to sort the numbers in descending order (biggest to smallest)
+
     
 }
 
