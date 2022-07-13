@@ -2,6 +2,11 @@
 
 ## Error Handling and TDD
 
+## Error Quizzes (20m)
+
+- [Error Types Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/error-types-quiz)
+- [Error Handling Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/error-handling-quiz)
+
 ### Error Handling (15m)
 
 When you get an error, we say that an error has been `thrown`. In fact when you create custom errors you will use the `throw` keyword.
@@ -77,11 +82,19 @@ function trySafeDivide(n) {
 }
 ```
 
-## Quizzes and mini project (45m)
+## Error project (25m)
 
-- [Error Types Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/error-types-quiz)
-- [Error Handling Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/error-handling-quiz)
 - [Error Handling Practice](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/practice--error-handling)
+
+---
+
+## Testing
+
+## Testing Quizzes (30m)
+
+- [Testing Pyramid Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/testing-pyramid-quiz)
+- [TDD Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/tdd-quiz)
+- [Mocha and Chai Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/mocha-and-chai-quiz)
 
 ### Testing (15m)
 
@@ -203,11 +216,8 @@ describe ('User class', function () {
 });
 ```
 
-## Testing Quizzes and mini project (60m)
+## Testing project (35m)
 
-- [Testing Pyramid Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/testing-pyramid-quiz)
-- [TDD Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/tdd-quiz)
-- [Mocha and Chai Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/mocha-and-chai-quiz)
 - [Unit Tests w/ Mocha and Chai Project](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-8---context-and-tdd/practice--units-test-w--mocha-and-chai)
 
 ## Long Project (until EOD)
