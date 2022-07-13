@@ -22,7 +22,7 @@
       scope represents the window when running js locally (Node) it represents the
       global object.
     - If you initialize a variable without a declaration it defaults to the
-      global scope.
+      global scope. *In Node, it is scoped locally to the module/file
   - `Local or Function` - Global, Parameters, Variables in the function
   - `Block`- Global, Local, Variables in the block
 
