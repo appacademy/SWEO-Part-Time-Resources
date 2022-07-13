@@ -98,7 +98,7 @@ sayHungry();
 - `Const` is also block scoped, but CANNOT be reassigned.
 - reassign !== mutable
 - `Var` is function scoped, and CAN be reassigned.
-- `Temporal Dead Zone` The state where variables are un-reachable. They are in scope, but they aren't declared.
+- `Temporal Dead Zone` The state where variables are un-reachable. They are in scope, but they aren't initialized.
 
 |       | declaration | assignment  |  initialization  |  scope   |        hoisting        |
 | :---: | :---------: | :---------: | :--------------: | :------: | :--------------------: |
