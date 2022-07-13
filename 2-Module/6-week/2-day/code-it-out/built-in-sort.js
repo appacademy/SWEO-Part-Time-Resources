@@ -2,9 +2,9 @@
 
 
 //---------------------rules for compare callback function--------------------
-//Rule 1: if compare callback return val is positive number (greater than 0) then sort `b` BEFORE `a`
-//Rule 2: if compare callback return val is negative number (less than 0) then sort `a` BEFORE `b`
-//Rule 3: if compare callback return 0, then keep original order.
+//Positive rule: if compare callback return val is positive number (greater than 0) then sort `b` BEFORE `a`
+//Negative rule: if compare callback return val is negative number (less than 0) then sort `a` BEFORE `b`
+//Neutral rule: if compare callback return 0, then keep original order.
 
 console.log("---------------------Problem 1----------------------")
 //task: refactor and sort the numbers in descending order (biggest to smallest) by updating the compare callback that will be passed to javascript built-in `sort`
@@ -13,19 +13,7 @@ function compareNumbers(a, b) {
     debugger;
 
     //comment this out
-    // return a - b; //if a - b (2 - 4) returns a negative number, negative number means sort `a` before `b` so 2 before 4.
-
-    if(b > a){
-        return -1
-    }
-
-    //i.e a = 4, b = 2,  I want b to be sorted first before a
-    if(a > b){
-        return 1
-    }
-    else{
-        return 0;
-    }
+    return a - b; //if a - b (2 - 4) returns a negative number, negative number means sort `a` before `b` so 2 before 4.
 
     //YOUR CODE HERE: refactor above to sort the numbers in descending order (biggest to smallest)
     
