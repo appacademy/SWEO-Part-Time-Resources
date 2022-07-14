@@ -4,6 +4,11 @@
 // Your code here, 1 has been done for us:
 const adjList = {
     1: [2,5],
+    2: [1,3,5],
+    3: [2,4],
+    4: [3,5,6],
+    5: [1,2,4],
+    6: [4]
 }
 
 
@@ -13,3 +18,6 @@ const startNode = 1;
 //result should be: [2,5]
 
 //write your code here  
+const neighborsArr = adjList[1]; //bracket notation to access the pojo object using 1 as the key
+console.log(neighborsArr);
+
