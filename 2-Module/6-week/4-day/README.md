@@ -14,6 +14,8 @@
 
 - If we're stuck, remember to take it step by step, don't try to eat the whole pie. Ask ourselves questions like `how can we find the neighbors of this node here`
 
+- recommend to switch roles after 15 minutes for this project, but ultimately up to what is comfortable for everyone
+
 ![](https://i.imgur.com/FhE6ZjM.png)
 
 
