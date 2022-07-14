@@ -2,6 +2,7 @@
 
 ## Warmup (15m)
 
+```js
 /***********************************************************************
 Write or convert the functionbe low to an ARROW function `updateScores(people)` 
 that takes in an array of score objects (people) as its input. 
@@ -19,7 +20,6 @@ let peeps = [
 console.log(updateScores(peeps)); //=> [ {name: "Anthony", score: 10}, {name: "Winnie", score: 20},  {name: "Fred", score: 30}];
 ***********************************************************************/
 
-```js
 let updateScores = function(people){
 
 }
