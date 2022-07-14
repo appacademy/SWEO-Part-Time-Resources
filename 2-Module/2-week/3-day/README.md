@@ -102,7 +102,7 @@ The general idea behind testing frameworks is to allow devs to write code that w
 
 - Testing allows us to refactor with confidence. If anything breaks, you'll know. Also, you'll know **the expectations** for the module you're refactoring, so if it meets the specs, you're good.
   - If anyone modifies your code in the future, they wont break anything important as long as they are following the test specs.
-  - Tests also make collaboration easier. Most things are built by teams of engineers that may not get to talk to each other.
+  - Tests also make collaboration easier. Most things these days are built by teams of engineers that may not get to talk to each other.
   - If the tests are written well they can serve as documentation for the code as well.
 
 Tests are basically the rules or specifications of how your app should behave.
@@ -193,8 +193,8 @@ describe('TruthyBunny Function', () => {
 #### Keeping your test files dry
 
 - We have `Mocha` hooks to help us keep our code dry, even in our tests. A few examples:
-  - `before` and `after` hooks are run before and after each test.
-  - `beforeEach` and `afterEach` hooks are run before and after each spec.
+  - `before` and `after` hooks are run before and after each group of tests (`describe` blocks).
+  - `beforeEach` and `afterEach` hooks are run before and after each spec (`it` blocks).
 
 ```js
 describe ('User class', function () {
