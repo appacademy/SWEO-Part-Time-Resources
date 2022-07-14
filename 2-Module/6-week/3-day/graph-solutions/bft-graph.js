@@ -8,7 +8,7 @@ const adjList = {
 }
 
 function printBreadthFirst(start) {
-    //create a queue and set then onboard the first start vertex into there
+    //create a queue and set then onboard the first starting node/vertext in there
     const queue = [start];
     const visitedSet = new Set([start]);
 
@@ -19,22 +19,22 @@ function printBreadthFirst(start) {
         //do whatever we need to with the currentNode
         console.log(currentNode);
 
-        //access the adjList w/ the currentNode as the key to get neighbors 
+        //access the adjList (w/ the currentNode as the key) to get neighbors array. i.e. for currentNode = 1, neighborsArr = [2,5]
         const neighborsArr = adjList[currentNode];
 
-        //for each node in neighbors array, 
+        //for each neighbor node in neighbors array, 
         for (let i = 0; i < neighborsArr.length; i++) {
             const neighbor = neighborsArr[i];
-            //if it's not in visitedSet, 
+            //if it's not in visitedSet (it hasn't been accessed yet),
             if (!visitedSet.has(neighbor)) {
                 //then add it to visitedSet
                 visitedSet.add(neighbor);
                 //then add it to queue as well.
                 queue.push(neighbor);
             }
-
         }
 
+        //continue repeating the process of traversing the next items in the queue until the queue is empty
     }
 
 }
