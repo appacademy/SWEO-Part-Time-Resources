@@ -20,4 +20,8 @@
 ## Preview Practice Assessment
 - This is one of the hardest assessment if not the hardest one at App Academy
 - We'll preview the practice assessment so we can get a foothold of what we'll need to focus our studies on for friday + weekend.
-- `work on the CODING PORTION` for right now
+- `work on the CODING PORTION` for now.
+- remember to take it:
+  - `one function at a time`
+  - `one step at a time.`
+  - `Break it down to smaller workable goals.` (i.e. how do I get the top neighbor, the bottom neighbor, right, etc.)
