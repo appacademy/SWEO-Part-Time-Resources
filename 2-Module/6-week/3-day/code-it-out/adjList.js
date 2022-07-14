@@ -8,6 +8,8 @@ const adjList = {
 
 
 //-----------------problem 2------------------
-const startNode = 3;
-//take the adjList and grab the neighbors array for the startNode of 3 (remember Pojos?)
+const startNode = 1;
+//create a variable called `neighborsArr` and take the adjList, grab the neighbors array for the startNode of 1 (remember Pojos?)
+//result should be: [2,5]
+
 //write your code here  
