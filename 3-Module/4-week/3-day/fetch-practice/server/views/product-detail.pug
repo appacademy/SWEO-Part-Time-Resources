@@ -1,0 +1,35 @@
+extends layout.pug
+
+block title
+  title #{title}#{product.name}
+
+block body
+  h1 #{title}#{product.name}
+  div.product-details
+    div= product.description
+    div $#{product.price.toFixed(2)}
+    a(href="/products/" + product.productId + "/edit") Edit Product
+    form(action="/products/" + product.productId + "/delete" method="post")
+      button(type="submit") Delete Product
+    div Categories
+      ul.categories
+        each category in product.categories
+          li= category.name
+    form(action="/products/" + product.productId + "/reviews" method="post")
+      h3 Post a Review
+      label Comment
+        textarea(name="comment")
+      label Star Rating
+        input(type="number" min=1 max=5 name="starRating")
+      button(type="submit") Submit
+    div Reviews
+      ul.reviews
+      each review in product.reviews
+        li
+          div= review.comment
+          div= review.starRating
+          a(href="/reviews/" + review.reviewId + "/edit") Edit Review
+          form(action="/reviews/" + review.reviewId + "/delete" method="post")
+            button(type="submit") Delete Review
+      else
+        li There are no reviews for this product
