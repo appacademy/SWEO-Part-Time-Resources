@@ -61,9 +61,11 @@ let matrix = [
   
       // DO THE THING (increment size by 1)
       size += 1;
-      // Then push all the UNVISITED neighbors on top of the stack
       // HINT: This is what your helper function `getNeighbors` is for
+      // GET NEIGHBORS!
       const neighborArr = getNeighbors(currentRow, currentCol, graph);
+
+      // Then traverse neighbors array and push all the UNVISITED neighbors on top of the stack and set
       for (let i = 0; i < neighborArr.length; i++) {
         const neighborEl = neighborArr[i]; //i.e. neighborEl = [1,2]
         // HINT: Remember, you're storing your visited nodes as strings!
