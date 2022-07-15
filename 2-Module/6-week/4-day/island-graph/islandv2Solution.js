@@ -11,21 +11,21 @@ let matrix = [
     //crate an array to host the neighbors.
     const neighborArr = [];
     // we need to becareful and make sure the row doesn't go out of bounds as well as the value of the neighbor has to be 1.
-    if (matrix[row - 1] !== undefined && matrix[row - 1][col] === 1) {
+    if (matrix[row - 1] !== undefined && graph[row - 1][col] === 1) {
       neighborArr.push([row - 1, col])
     }
   
     // Check bottom
-    if (matrix[row + 1] !== undefined && matrix[row + 1][col] === 1) {
+    if (graph[row + 1] !== undefined && graph[row + 1][col] === 1) {
       neighborArr.push([row + 1, col])
     }
     // Check left
-    if (matrix[row][col - 1] !== undefined && matrix[row][col - 1] === 1) {
+    if (graph[row][col - 1] !== undefined && graph[row][col - 1] === 1) {
       neighborArr.push([row, col - 1])
     }
   
     // Check right
-    if (matrix[row][col + 1] !== undefined && matrix[row][col + 1] === 1) {
+    if (graph[row][col + 1] !== undefined && graph[row][col + 1] === 1) {
       neighborArr.push([row, col + 1])
     }
     // Return neighbors
