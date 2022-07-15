@@ -14,7 +14,7 @@ function getNeighbors(row, col, graph) {
   // THIS ERROR: graph[row-1][col] -->  console.log("testing:", graph[row-1]) //graph[-1] ==> undefined // graph[-1][col] ==> undefined[col]
 
   // Check top, get neighbor from the top if it's equal to one
-  // we want row - 1 to always be greater than or equal to 0, so we have to make sure row > 0.
+  // We need to check the bounds: we want row - 1 to always be greater than or equal to 0, so we have to make sure row > 0.
   if(row > 0  && graph[row-1][col] === 1){ //this will work too: if(graph[row-1] !== undefined &&  graph[row-1][col] === 1)
     neighborsArr.push([row-1, col]) //[0, 1]
   }

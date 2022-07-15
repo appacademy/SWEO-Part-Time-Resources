@@ -12,7 +12,7 @@ const matrix = [
 ];
 
 
-//prompt: implement the matrixIsValid func, traverse through the 2d matrix, find if any of the element is divisibleBy5.
+//prompt: implement the matrixIsValid func, traverse through the 2d matrix, find if any of the element is divisibleBy5, return true. After traversing all the elements, if nothing was divisibleBy5, default to return false.
 
 //our task is to find a single VALID number that is divisible by 5. if no VALID number are found after checking every element, return false by default at the end. Think Rows and Columns.
 
@@ -43,3 +43,16 @@ const matrix2 = [
 ];
 
 console.log(matrixIsValid(matrix2)); //false
+
+// -----------------------Problem 2--------------------------
+//What happens if we tried something like this:
+// let element = matrix2[-1][0]; //uncomment 
+// console.log(element); //uncomment 
+
+
+//your answer, and why:
+/*
+
+
+
+*/
