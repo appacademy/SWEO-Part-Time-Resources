@@ -4,7 +4,7 @@
 
 ```js
 /***********************************************************************
-Write or convert the functionbe low to an ARROW function `updateScores(people)` 
+Write or convert the function below to an ARROW function `updateScores(people)` 
 that takes in an array of score objects (people) as its input. 
 An object inside the array has two key-value pairs:
 the scorer's name (string) and a point value score (number). 
