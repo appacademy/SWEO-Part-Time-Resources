@@ -18,18 +18,7 @@ const matrix = [
 
 //******your code here */
 const matrixIsValid = function(matrix){
-    //traverse the matrix, get the element, determine if it is divisible by 5, return true, at the very end if no trues were hit, return false by default
-    for(let row=1; row < matrix.length; row++){
-        const subArr = matrix[row];
-        for(let col = 2; col < subArr.length; col++){
-            const ele = matrix[row][col]; //subArr[col] will work too
-            if(divisibleBy5(ele)){
-                return true;
-            }
-        }
-    }
-    //default to return false if no true were found (nothing divisible by 5)
-    return false;
+
 }
 
 
