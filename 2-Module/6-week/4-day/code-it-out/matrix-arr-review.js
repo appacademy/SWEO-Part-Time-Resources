@@ -18,7 +18,6 @@ const matrix = [
 
 //******your code here */
 const matrixIsValid = function(matrix){
-
 }
 
 
@@ -38,8 +37,10 @@ console.log(matrixIsValid(matrix2)); //false
 // let element = matrix2[-1][0]; //uncomment 
 // console.log(element); //uncomment 
 
-
 //your answer, and why:
+
+
+
 /*
 
 
