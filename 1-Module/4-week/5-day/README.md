@@ -19,8 +19,5 @@ Things to study:
 - Additional Practice Problems
   - in particular: #4, #6, #8, #9
   - ![](https://i.imgur.com/KteH6ir.png)
-  
-  
-- Continue Project
 
 ---
