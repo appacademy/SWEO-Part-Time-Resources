@@ -14,12 +14,11 @@ Things to study:
 - Practice Assessment 
   - Rinse and Repeat
 - Callback and Scope projects
-- Additional **Practice Assessment** Problems
-  - HIGHLY Recommend.
-  - ![](https://i.imgur.com/pCbF2Cx.png)
 - Additional Practice Problems
   - In particular: #4, #6, #8, #9
   - ![](https://i.imgur.com/KteH6ir.png)
+- Additional **Practice Assessment** Problems
+  - ![](https://i.imgur.com/pCbF2Cx.png)
 - Objects
   - Make sure you know how to work the fundamentals (Pojo Project problems 1-10)
     - GET keys and its corresponding values
