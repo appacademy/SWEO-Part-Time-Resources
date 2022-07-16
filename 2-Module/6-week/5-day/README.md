@@ -5,6 +5,8 @@
 - 2) `bug isolation`: if you do run into a bug: 
     - isolate it, go `top to bottom and console log` (or debugger) your variables one at a time!!!
 
+- 3) if we are doing something where we are adding to an a datatype like an array, queue, set, etc. PLEASE console.log the queue, array, set, etc. afterwards to check if it's actually the data that we've added.
+
 ## Code-it-out
 - `sort-which-sort.js`
 - `set-review.js`
