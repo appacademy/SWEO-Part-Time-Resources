@@ -13,6 +13,7 @@
 Things to study:
 - Practice Assessment 
   - Repeat until you don't need to reference anything
+- Callback and Scope projects
 - Additional **Practice Assessment** Problems
   - HIGHLY Recommend.
   - ![](https://i.imgur.com/pCbF2Cx.png)
