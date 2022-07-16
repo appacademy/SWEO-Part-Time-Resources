@@ -12,7 +12,7 @@
 
 Things to study:
 - Practice Assessment 
-  - Repeat until you don't need to reference anything
+  - Rinse and Repeat
 - Callback and Scope projects
 - Additional **Practice Assessment** Problems
   - HIGHLY Recommend.
