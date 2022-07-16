@@ -19,5 +19,11 @@ Things to study:
 - Additional Practice Problems
   - in particular: #4, #6, #8, #9
   - ![](https://i.imgur.com/KteH6ir.png)
-
+- Objects
+  - Make sure you know how to work the fundamentals (Pojo Project problems 1-10)
+    - GET keys and its corresponding values
+    - SET (or assign) a new value to the key
+    - UPDATE (or Re-assign) a new value to the key's original value
+    - Loop through an object
+    - Be able to work with objects that are stored in array --> [{...}, {...}, {...}]
 ---
