@@ -1,16 +1,15 @@
 # W4D5
 
-## Project Time - Scope / Closure (Solo 1hr)
+## Project Time - Scope / Closure (Solo 1hr 30m)
 - Start from problem 6 or beyond
 - Ask lots of questions!
 - As long as you are at problems 10-12 you are in great shape!
 
-## Practice Assessment (1hr 30m)
+## Practice Assessment + Walkthrough (1hr 30m)
 
 ## Lunch (30m)
 
-## Study Time (1hr) 
-Note: Must be sharing screen and cameras on.
+## Study Time (3hr) 
 
 Things to study:
 - Practice Assessment 
@@ -18,7 +17,7 @@ Things to study:
 - Additional **Practice Assessment** Problems
   - HIGHLY Recommend.
   - ![](https://i.imgur.com/pCbF2Cx.png)
-- Additiona Practice Problems
+- Additional Practice Problems
   - in particular: #4, #6, #8, #9
   - ![](https://i.imgur.com/KteH6ir.png)
   
