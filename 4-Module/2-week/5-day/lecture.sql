@@ -22,7 +22,6 @@ values
 	('resto C', 'sushi', 25, 18.60);
 
 
-
 select count(*) as number_of_orders, sum(amount) as total_food_purchases
 from orders
 where orders.location = 'resto C';
@@ -32,6 +31,11 @@ select count(*) as number_of_orders, sum(amount) as total_food_purchases,
 	   amount * food_price as total_earned
 from orders
 where orders.location = 'resto C';
+
+select total(amount) as total_food_purchases, total(amount * food_price) as total_price, location
+from orders
+where orders.location = 'resto C'
+group by location;
 
 
 select sum(amount) as total_food_purchases, location
@@ -97,6 +101,7 @@ select (
 	select id
 	from users
 	where users.username = 'patrick'
-), id
+	),
+id
 from users
 where users.username = 'alex' or users.username = 'tristan';
