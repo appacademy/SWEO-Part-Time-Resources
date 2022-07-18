@@ -8,7 +8,7 @@
 
 ### Coding Portion Advice
 
-- If we're stuck, always check the **inputs** and **outputs**, then **write a plan** in english (pseudo-code) then implement it - use Polya's plan
+- If you are stuck, always check the **inputs** and **outputs**, then **write a plan** in english (pseudo-code) then implement it - use Polya's plan
 
 - If you don't know where to start, ask us a question in live-questions channel to help clarify the prompt even if you think you understood it.
 
