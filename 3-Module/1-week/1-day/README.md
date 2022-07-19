@@ -1,6 +1,6 @@
 # W13D1 - Monday
 
-## Assessment (1h15m)
+## Assessment (2h20m)
 - 2 hr 20m
   
 - 7 MC; 12 Specs; 
@@ -17,7 +17,11 @@
 - Don't hesitate to ask questions if something is confusing or we require clarity! We cannot help you code, but we can explain the question and point you to available resources.
 
 ### Coding Portion
+- `Ask questions to clarify prompt`: 
+  - this is a big long assessment, so if we don't understand a particular part of the prompt or if we're stuck, then ask question!! We can't help you with the code, but we can help you understand the problem.
+
 - bit more edge cases, i.e. conditions to check certain things, or keep track of certain data (for ex, island project kept track of size), etc.
+
 - Write Comments! i.e. the steps we need to take for the traversal(pop node, then do the thing, etc.)
 
 - PLEASE: `DO SOME BUG PREVENTION`!!
