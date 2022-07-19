@@ -24,6 +24,8 @@ the plumbing, electrical wiring and internet connection.
 - `!` vsCode has shortcuts that allow us to quickly embed an html starter template
   - ![](https://i.imgur.com/TQrxUKN.png)
 
+  - If we don't see it try updating your `vscode`
+    - ![](https://i.imgur.com/taaOCPb.png)
 
 ## Wireframe
 ![](https://i.imgur.com/JrEQnBi.png)
