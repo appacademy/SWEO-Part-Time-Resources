@@ -1,4 +1,4 @@
-# W13D2 - Teusday
+# W13D2 - Tuesday
 
 ## HTML, CSS, JS
 
