@@ -1,6 +1,6 @@
 # W1D2
 
-## First Things First NOTES:
+## First Things First NOTES (10 mins):
 
 1. Run the following command (Once)
 
