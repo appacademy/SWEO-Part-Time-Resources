@@ -172,3 +172,7 @@ console.log(hexToDecimal('F23C')) // 62012
 [JavaScript Arrays Big-O Project](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-9---big-o/javascript-arrays-big-o-project)
 
 - If you finish the project, please do your Formative Quiz and get started on your homework.
+
+## EOD (30m before class ends)
+
+- Walkthru of the project
