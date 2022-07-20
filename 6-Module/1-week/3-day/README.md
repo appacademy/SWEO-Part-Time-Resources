@@ -8,15 +8,15 @@ Duck typing is a philosophy of type checking that cares less about whether
 something has the correct type, but whether something can use a particular
 method.
 
-### [EAFP](https://docs.python.org/3/glossary.html#term-eafp) vs [LBYL](https://docs.python.org/3/glossary.html#term-LBYL)
+## [EAFP](https://docs.python.org/3/glossary.html#term-eafp) vs [LBYL](https://docs.python.org/3/glossary.html#term-LBYL)
 
-#### Easier to ask for forgiveness than permission
+### Easier to ask for forgiveness than permission
 
 >Easier to ask for forgiveness than permission. This common Python coding style
 >assumes the existence of valid keys or attributes and catches exceptions if the
 >assumption proves false.
 
-#### Look before you leap
+### Look before you leap
 
 >Look before you leap. This coding style explicitly tests for pre-conditions before making calls or lookups.
 
@@ -33,6 +33,25 @@ if hasattr(a, '__len__'):
 b = "5555"
 if hasattr(b, '__len__'):
     print(len(b))
+```
+
+```py
+person = {'first_name': 'William', 'last_name': 'Vincent'}
+# person = {'first_name': 'William'}
+
+# LBYL
+if 'first_name' in person and 'last_name' in person:
+  print(f'Hello, {person["first_name"]} {person["last_name"]}!')
+else:
+  print('Missing keys')
+
+# EAFP
+
+try:
+   print(f'Hello, {person["first_name"]} {person["last_name"]}!')
+except:
+  print('Missing keys')
+
 ```
 
 ## Assigning and Manipulating Variables
