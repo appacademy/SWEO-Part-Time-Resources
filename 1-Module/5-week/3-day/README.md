@@ -9,12 +9,6 @@
 
 ---
 
-## Recursion project pt 2 (1hr, Paired)
-
-## Discussion
-
----
-
 ## Default Parameters
 
 ```js
@@ -42,9 +36,10 @@ const range = (start, end) => {
 
 console.log(range(4, 12));
 ```
+---
+
+## Recursion project pt 2 (Paired)
 
 ---
 
-## Recursion project pt 2 continued
-
----
+## Discussion
