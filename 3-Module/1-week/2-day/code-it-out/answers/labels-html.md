@@ -8,6 +8,6 @@ Options:
 `Tag`
 
 Your Answers:
-- Red: tags
-- Green: element
-- Purple: attribute
+- Red:
+- Green:
+- Purple:
