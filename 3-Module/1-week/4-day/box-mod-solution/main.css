@@ -1,3 +1,5 @@
+
+
 html, body {
     /* DO NOT EDIT */
     font-family: sans-serif;
@@ -32,13 +34,16 @@ h1 {
     width: 120px;
     height: 120px;
     margin: 10px;
-    padding: 20px;
+    padding: 30px;
+    /* default is display:block which will take up the whole width for each element */
     display: inline-block;
+
 }
 
 .alternate {
     /* Your code here */
     box-sizing: border-box;
+    
 }
 
 /* Phase 3 */
