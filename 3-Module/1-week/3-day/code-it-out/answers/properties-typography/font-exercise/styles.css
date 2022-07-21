@@ -2,19 +2,23 @@
 
 h1 {
     font-family: sans-serif;
-    font-size: 3rem;
-    /* font-size: 48px; */
+    font-size: 3rem; /* rem --> relative unit: relative to the root element's (the HTML element) font size which is typically 16px, so 3 * 16 is 48px! */
+
+    /* font-size: 3em; em --> relative unit: relative to the direct PARENT'S element, What is the direct parent of h1? */
 }
 
-h2{
+h2 {
     font-family: 'New Rocker', cursive;
-    font-size: 35px;
-    font-style: italic;
+    font-size: 35px; /* px --> absolute unit: every screen will have h2 text at 35px */
+
     text-decoration: underline;
+    font-style: italic;
     text-align: center;
 }
 
 p{
-    font-size: 1.5em;
+    /* font-size --> 1.5em means 1.5x the PARENT. Which is `main`. `main` default size: 16px */
+    font-size: 1.5em; /* if main font-size is 16px, same as 1.5em = 24px */ 
     font-weight: 700;
+  
 }
