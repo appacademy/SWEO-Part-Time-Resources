@@ -1,0 +1,53 @@
+html,
+body{
+    /* default font family */
+    font-family: sans-serif, Georgia, 'Times New Roman', Times, serif;
+    /* we want box sizing because it's easy to work with and account for the sizing of padding, borders, content w/ element */
+    box-sizing: border-box;
+    /* margin set to 0 for this */
+    margin: 0;
+}
+.header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav__upper a{
+    padding: 20px;
+    position: relative;
+    border-bottom: black solid 2px;
+}
+
+.upper__left {
+    height: 32px;
+    width: 32px;
+}
+
+.upper__right {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+}
+
+.sign-in,
+.get-started {
+    display: inline-block;
+    padding: 12px;
+}
+
+.nav__lower {
+  text-align: center;
+  border-bottom: solid 2px black;
+
+}
+
+/* select every a in .nav__lower and give it */
+.nav__lower a {
+  display: inline-block;
+  margin: 0 16px; /*top/bottom - left/right*/
+  padding: 7px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #757575;
+
+}
