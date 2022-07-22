@@ -15,6 +15,7 @@ body {
 
 }
 
+
 .header {
     /* border: 1px solid gray; */
     /* margin-top/margin-bottom = 0 , margin-right/margin-left  = auto*/
@@ -24,47 +25,48 @@ body {
     width: 80%;
 }
 
-.upper__left {
-    width: 30px;
-    height: 30px;
-}
+/* IMPORTANT: Uncomment one at a time and really play around with it, uncommenting everything won't help, it will just overload you */
 
-
-
+/*
 .nav__upper {
     padding: 20px;
     position: relative;
     border-bottom: black solid 2px;
 }
 
+/*
 .upper__left {
     height: 32px;
     width: 32px;
-}
+} 
 
+/*
 .upper__right {
     display: inline-block;
     vertical-align: middle;
     position: absolute;
     right: 0;
-}
+} 
 
+/*
 .sign-in,
 .get-started {
     display: inline-block;
     width: fit-content;
     margin: 0 auto;
     padding: 12px;
-}
+} 
 
+/*
 .sign-in {
     padding: 7px 16px 9px;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     color: #416440;
     text-decoration: none;
-}
+} 
 
+/*
 .get-started {
     color: #1a8917;
     font-size: 14px;
@@ -76,6 +78,7 @@ body {
     text-decoration: none;
 }
 
+/*
 .nav__lower {
     text-align: center;
     margin: 0 auto;
@@ -83,11 +86,13 @@ body {
 
 }
 
+/*
 .get-started:hover {
     background-color: #1a8917;
     color: white;
 }
 
+/*
 .nav__lower a {
     display: inline-block;
     margin: 0 16px;
@@ -97,7 +102,9 @@ body {
     color: #757575;
     font-size: 16px;
 }
+/* -----------------content-------------- */
 
+/*
 .content {
     width: 35%;
     padding: 1em;
@@ -105,10 +112,12 @@ body {
     position: relative;
 }
 
+/*
 .main__img {
     width: 100%;
 }
 
+/*
 h1 {
     box-sizing: border-box;
     display: block;
@@ -120,43 +129,51 @@ h1 {
     overflow-wrap: break-word;
 }
 
+/*
 p {
     font-size: 21px;
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     margin: 42px 0px -9.66px;
 }
 
+/*
 h2 {
     font-size: 30px;
     margin: 58.5px 0px -8.4px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*
 .external_links {
     padding: 1em;
 }
 
+/*
 ul {
     font-size: 18px;
     display: inline-block;
 }
 
+/*
 li a {
     color: blue;
     font-size: 18px;
 }
 
+/*
 .external_img {
     height: 15px;
     width: 15px;
 }
 
+/*
 .grid {
     margin: 0 auto;
     padding: 1em;
     width: 60%;
 }
 
+/*
 .grid a {
     text-decoration: none;
     color: #272727;
@@ -166,14 +183,17 @@ li a {
     padding-bottom: 25px;
 }
 
+/*
 .grid a:nth-child(odd) {
     float: left;
 }
 
+/*
 .grid a:nth-child(even) {
     float: right;
 }
 
+/*
 .footer {
     position: relative;
     margin: 0 auto;
@@ -181,12 +201,14 @@ li a {
     clear: both;
 }
 
+/*
 .footer__left {
     position: absolute;
     height: 32px;
     width: 32px;
 }
 
+/*
 .footer__right a {
     right: 5px;
     text-decoration: none;
@@ -195,6 +217,7 @@ li a {
     color: #272727;
 }
 
+/*
 .footer__right {
     position: absolute;
     right: 0%;
