@@ -15,6 +15,14 @@ body{
 
 }
 
+.header{
+    border: 1px solid gray;
+    /* margin-top/margin-bottom = 0 , margin-right/margin-left  = auto*/
+    margin: 0 auto;
+
+    /* 80% of the parent width */
+    width: 80%;
+}
 
 .upper__left{
     width: 30px;
