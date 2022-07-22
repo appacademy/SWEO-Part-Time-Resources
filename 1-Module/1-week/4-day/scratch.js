@@ -138,3 +138,48 @@ function logBetweenWhile(lowNum, highNum) {
 
 // console.log(combineArray([1, 2], [3, 4])); // => [1, 2, 3, 4]
 // console.log(combineArray([17, 5], [6, 7]));  // => [17, 5, 6, 7]
+
+
+// DOUBLER
+
+// function doubler(numbers) {
+// 	let newArr = []
+//     for(let i = 0; i < numbers.length; i++){
+//     	let ele = numbers[i]
+//         let doubled = ele * 2
+//         newArr = newArr.concat(doubled)
+//     }
+//     return newArr
+// }
+
+// console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+// console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+
+//VOWEL COUNTER
+
+/* 
+store count var
+store a variable of all of the vowels 
+loop through the word
+check if current element is a vowel
+if it is increment the count
+return the count
+*/
+
+// function countVowels(word) {
+//   // your code here...
+//   let count = 0
+//   let vowels = 'aeiou' 
+
+
+//   for(let i = 0; i < word.length; i++){
+//   	if(vowels.includes(word[i])){
+//     	count++ 
+//     }
+//   }
+//   return count
+// };
+
+// console.log(countVowels("bootcamp")); // => 3
+// console.log(countVowels("apple")); // => 2
+// console.log(countVowels("pizza")); // => 2
