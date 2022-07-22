@@ -1,0 +1,77 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.pre-container{
+    background-color: #779fc7;
+    height: 500px;
+}
+
+.container {
+    background-color: #2b2d2f;
+    position: relative;
+    height: 2000px;
+}
+
+.element {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 280px;
+    font-size: 20px;
+}
+
+#yellow-box {
+    background-color: #ffff00;
+    position: static;
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; */
+    z-index: 1000;
+}
+
+#pink-box {
+    /* relative to where it was originally */
+    background-color: #ff69b4;
+
+    position: relative;
+    bottom: 0;
+    left: -50px;
+    right: 0;
+    /* starting from top, increase 200 px */
+    top: 200px;
+    z-index: 3;
+}
+
+#blue-box {
+    background-color: #00eeee;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* move down 50px relative to the parent that has a position (in this case it is caontainer, so move 50px down from the top of the black container)  */
+    top: 50px;
+    z-index: 2;
+}
+
+#red-box {
+    background-color: #ff0000;
+
+    position: fixed;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    /* top: 0; */
+    z-index: 3;
+}
+
+#orange-box {
+    background-color: #ffa500;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}
