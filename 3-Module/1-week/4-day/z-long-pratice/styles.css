@@ -1,0 +1,22 @@
+html,
+body{
+    /* these are common setup properties for html / body that typically you will see in each css file */
+    
+    /* font family */
+    font-family: sans-serif;
+
+    /* border box set here so we don't have to account for padding and border (it's all included in the width / height instead) */
+    box-sizing: border-box;
+
+
+    /* setting desired margins */
+    margin: 0;
+
+
+}
+
+
+.upper__left{
+    width: 30px;
+    height: 30px;
+}
