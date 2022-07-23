@@ -53,6 +53,7 @@
   // ------- AAOPEN PROBLEMS -------------
 // IS FIVE
 function isFive(num) {
+
   if (num === 5) {
     return true;
   }
@@ -60,6 +61,8 @@ function isFive(num) {
   // run then the number can't be 5 so we can just return false!
   return false
 }
+
+
 
 // console.log(isFive(5)); // => true
 // console.log(isFive(13)); // => false
@@ -142,18 +145,19 @@ function logBetweenWhile(lowNum, highNum) {
 
 // DOUBLER
 
-// function doubler(numbers) {
-// 	let newArr = []
-//     for(let i = 0; i < numbers.length; i++){
-//     	let ele = numbers[i]
-//         let doubled = ele * 2
-//         newArr = newArr.concat(doubled)
-//     }
-//     return newArr
-// }
+function doubler(numbers) {
+	let newArr = []
+    for(let i = 0; i < numbers.length; i++){
+    	let ele = numbers[i]
+        let doubled = ele * 2
+        // newArr = newArr.concat(doubled)
+        newArr.push(doubled)
+    }
+    return newArr
+}
 
-// console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
-// console.log(doubler([7, 1, 8])); // => [14, 2, 16]
+console.log(doubler([1, 2, 3, 4])); // => [2, 4, 6, 8]
+console.log(doubler([7, 1, 8])); // => [14, 2, 16]
 
 //VOWEL COUNTER
 
