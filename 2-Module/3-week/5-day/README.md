@@ -3,7 +3,7 @@
 Things to focus on while studying:
 
 - All of the questions/answers folders in 4-day.
-- Converting binary, hexadecimal, and decimal numbers to each other, including to ASCII ( for example: String.fromCharCode(parseInt(binary, 2))) (project from 4-day and project from today are great for this practice).
+- Converting binary, hexadecimal, and decimal numbers to each other, including to ASCII ( for example: `String.fromCharCode(parseInt(binary, 2))`) (project from 4-day and project from today are great for this practice).
 - For every function you write today, please figure out the time and space complexity before you move on!
 - Arrays and Array methods complexities.
 - Characteristics of stacks
