@@ -1,0 +1,75 @@
+/* Your code here */
+body {
+    background-color: #EFEFEF;
+}
+
+fieldset {
+    background-color: white;
+}
+
+.outer-layer-2 {
+    position: relative;
+
+}
+
+.blue-box {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    position: absolute;
+}
+
+.orange-box {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    position: absolute;
+    top: -40px;
+}
+
+
+/* -------------roberts #2 solution */
+/* .blue-box {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    position: relative;
+    top: 40px;
+}
+
+#problem-2b {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    position: relative;
+    bottom: 40px;
+} */
+
+#problem-3a+p,
+#problem-3b+p {
+    color: orange;
+}
+
+/* -----Christopher's and Jack's #3---- */
+/* .outer-layer-3>p+p {
+    color: orange;
+  } */
+
+.outer-layer-4{
+    box-shadow: 0 0 4px 0 rgba(0, 0, 255, 0.6)
+}
+
+.outer-layer-5{
+    /* overflow-x: hidden;
+    overflow-y: scroll; */
+
+    /* shorthand for above */
+    overflow: hidden scroll;
+}
+
+/* if this element has uppercase class AND bold class, then apply these properties */
+.uppercase.bold{
+    font-family: 'Courier New', Courier, monospace
+}

@@ -1,6 +1,7 @@
 # W13D5 - Saturday
 
 ## Code-it-out
+- `order-specificity.md`
 
 ## Assessment Breakdown + Short Review
 - Open assessment breakdown to go over
