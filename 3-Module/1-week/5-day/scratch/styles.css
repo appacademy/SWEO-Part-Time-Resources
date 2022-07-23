@@ -1,0 +1,27 @@
+/* expect that every span should have this property applied except for the "highlighted" class one */
+body{
+    height: 3000px;
+}
+
+span:not(.highlighted){
+    color: red;
+}
+
+
+.test-text{
+    /* font-size: 200%; */
+    /* font-size: 1200; <- invalid*/
+}
+
+
+.box{
+    width: 40px;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    background-color: red;
+}
+
+div#main p.text{
+    color: blue;
+}
