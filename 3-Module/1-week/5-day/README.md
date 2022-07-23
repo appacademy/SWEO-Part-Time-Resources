@@ -13,9 +13,7 @@
 
 ## Practice Assessment Walkthrough
 
-## Project (Phase 1-3)
-- Do at least up to and including phase 3.
-
 ## Study Time
 - Remainder Study!
+- try Project (Phase 1-3)
 
