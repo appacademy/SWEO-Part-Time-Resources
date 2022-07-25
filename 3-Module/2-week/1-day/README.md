@@ -8,6 +8,7 @@
 
 - Remember that these are `also available resources`:
   - practice assessment
+  - Projects you've written
   - any code you've written on `coding problems` like `code-it-outs` that you've done.
   - Formative quizzes on AA open
   - Homework and readings on AA open
