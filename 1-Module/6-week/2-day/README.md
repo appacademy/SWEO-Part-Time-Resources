@@ -20,6 +20,3 @@
 - Timeouts and Intervals (reading - 10m)
 
 ## Homework
-- Avoid that **SNOWBALL EFFECT**! Start on homework right away and get it done first!
-- Assessment will have concepts of the event loop (callstack / message), async JS, and coding problems like setTimeout on it. 
-- SetTimeout Lecture homework & SetInterval Lecture homework are especially important as your projects will be based on this.
