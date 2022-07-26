@@ -1,4 +1,4 @@
-# W5D1
+# W6D1
 
 ## Assessment (1h35m)
 - Every multiple choice counts! Double-check your answers. You can always use Node to test code, reference homework on a/A Open, BUT NOT NOTES! 
