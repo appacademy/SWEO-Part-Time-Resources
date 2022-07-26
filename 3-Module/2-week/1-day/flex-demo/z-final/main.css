@@ -21,9 +21,7 @@ body {
   align-items: center;
   /* as the container get smaller, we should wrap this around */
   /* flex-wrap: wrap;  */
-
 }  
-
 .flex-item {
   background-color: pink;
   border: 2px solid red;
@@ -32,8 +30,6 @@ body {
   width: 90px;
   height: 80px;
   text-align: center;
-
-
   /* ----------CSS Flex item Properties-------- */
 
   /* flex-grow: as our container expand, how much space will the elements / content be given / grow */
@@ -44,7 +40,8 @@ body {
   
   /* flex-basis: give the element this amount of space within the container before shrinking/growing, etc. */
   /* giving every flex item a flex-basis of 20% --> fill up 20% of the container */
-  flex-basis: 10%;
+  flex-basis: 20%;
+  /* try flex-basis: 10% */
 
 
 }
