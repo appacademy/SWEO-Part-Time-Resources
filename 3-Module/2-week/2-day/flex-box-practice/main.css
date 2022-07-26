@@ -1,0 +1,103 @@
+.example1 {
+    width: 200px;
+    height: 200px;
+    background-color: palegoldenrod;
+    border: solid black 2px;
+    font-size: 42pt;
+
+    /* Phase 1 */
+
+    /* Your code here */
+    /* center flex items from a flex container */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    align-items: center;
+}
+
+.example2 {
+    border: dashed grey 1px;
+    border-radius: 16px;
+    padding: 16px;
+
+    /* Phase 2 */
+
+    /* Your code here */
+    /* display inline-flex will make our FLEX-CONTAINER into an inline element wrapping around the width of our flex items. */
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.example2 > button {
+    padding: 6px;
+    font-size: 16px;
+}
+.example2 > input {
+    font-size: 24px;
+    background-color: teal;
+    color: lightcyan;
+}
+
+.example3 {
+    min-width: 550px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.example3 > div {
+    border: solid black 2px;
+    background-color: #9999ff;
+    border-radius: 25px;
+    padding: 12px;
+
+    /* Phase 3 */
+
+    /* Your code here */
+    flex-basis: 33%;
+
+    /* making the elements into another display flex in order to layout the content within this element */
+    /* display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between; */
+
+    /* --another way-- */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row */
+    justify-content: flex-end;
+    align-content: space-between;
+}
+
+.example4 {
+    /* Phase 4 - Part 1 of 2 */
+
+    /* Your code here */
+    display: flex;
+}
+
+.sidebar {
+    background-color: black;
+    padding: 8px;
+
+    /* Phase 4 - Part 2 of 2 */
+
+    /* Your code here */
+    display: flex;
+    flex-direction: column;
+}
+.content-area {
+    background-color: #E8EFF0;
+    padding: 8px;
+}
+
+blockquote {
+    font-family: sans-serif;
+}
+
+blockquote:first-letter {
+    font-size: 18pt;
+}
