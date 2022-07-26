@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Bubbling</title>
+    <script src="scratch.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #outer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        width: 500px;
+        height: 500px;
+      }
+      #inner {
+        background-color: red;
+        width: 250px;
+        height: 250px;
+      }
+
+      #other-inner {
+        background-color: green;
+        width: 250px;
+        height: 250px;
+      }
+      input {
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="outer" class="blue">
+      <div id="inner" class="red"></div>
+      <div id="other-inner" class="green"></div>
+    </div>
+    <label
+      >Haha you can't click me
+      <input id="unclickable" type="checkbox" />
+    </label>
+  </body>
+</html>
