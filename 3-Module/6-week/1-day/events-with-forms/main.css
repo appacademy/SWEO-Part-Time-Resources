@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  background-color: #f5f5f6;
+}
+
+body {
+  margin: 0;
+}
+
+.title {
+  background-color: #d70000;
+  padding: 20px 50px 50px;
+}
+
+.title > h1 {
+  color: white;
+  font-weight: 100;
+  font-size: x-large;
+  margin: 0;
+}
+
+#playground {
+  padding: 20px 50px 50px;
+}
+
+.button {
+  padding: 20px 50px 50px;
+}
+
+.red-ball {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.red {
+  color: red;
+}
+
+#modal {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal-content {
+  width: 550px;
+  height: fit-content;
+  padding: 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px gray;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
