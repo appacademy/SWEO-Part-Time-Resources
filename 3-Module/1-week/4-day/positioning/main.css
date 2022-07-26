@@ -1,0 +1,77 @@
+html, body {
+    font-family: sans-serif;
+}
+
+.pre-container{
+    background-color: #a7bcd1;
+    position: relative;
+    height: 500px;
+}
+
+.container {
+    background-color: #2b2d2f;
+    position: relative;
+    height: 2000px;
+}
+
+.element {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100px;
+    height: 280px;
+    font-size: 20px;
+}
+
+#yellow-box {
+    background-color: #ffff00;
+    position: static;
+    /* bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; */
+    z-index: 0;
+}
+
+#pink-box {
+    background-color: #ff69b4;
+    position: relative;
+    bottom: 0;
+    left: 30px;
+    right: 0;
+    /* starting from top, go 200px down */
+    top: -200px;
+    z-index: 1;
+}
+
+#blue-box {
+    background-color: #00eeee;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* starting from the top... (relative to the container - since container has a position of relative) */
+    top: 50px;
+    z-index: 2;
+}
+
+#red-box {
+    background-color: #ff0000;
+    
+    position: fixed ;
+    bottom: 0;
+    /* left: 0; */
+    right: 0;
+    /* top: 0; */
+    z-index: 3;
+}
+
+#orange-box {
+    background-color: #ffa500;
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 4;
+}

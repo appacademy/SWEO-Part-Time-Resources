@@ -1,0 +1,35 @@
+/* UNCOMMENT EACH PROPERTY (ctrl/cmd + /) , ONE AT A TIME, BUT MORE IMPORTANTLY: ANALYZE WHAT IS HAPPENING EACH STEP! */
+
+/* Type / tag selector */
+div {
+    background-color: #000000;
+}
+
+/* Class selector */
+.active {
+    background-color: rgb(255, 255, 255);
+}
+/* .active {
+    background-color: red;
+} */
+
+/* ID selector */
+#list-1 {
+    border: 1px solid gray;
+
+    /*---- below is the same, above is just shorthand way of writing below ----*/
+
+    /* border-width: 1px;
+    border-color: rgb(247, 0, 0);
+    border-style: solid; */
+}
+
+/* Universal selector */
+* {
+    font-family: sans-serif;
+}
+
+/* Attribute selector */
+a[title] {
+    font-size: 2em; /* em just means the relative size compared to the parent size. 2em => 2x the font size of the parent (2 x 16px = 32px) */
+}
