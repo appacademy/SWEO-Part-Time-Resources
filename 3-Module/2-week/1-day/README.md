@@ -16,6 +16,9 @@
 
 - Don't hesitate to ask questions if something is confusing or we require clarity! We cannot help you code, but we can explain the question and point you to available resources.
 
+- Important: follow the instructions as it will tell you what needs to be done, read it twice and carefully!!
+- Everything can be solved using the concepts we learned this week
+
 ## CSS Flexbox + Homework Start
 - Work on readings
 - go to `Homework for Tuesday` and try: `Flexbox Fun`

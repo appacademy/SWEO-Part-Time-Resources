@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightgray;
+}
+
+
+.flex-container {
+  background-color: white;
+  width: 80%;
+  margin: 50px;
+  height: fit-content;
+ 
+  /* ----------CSS FLEX container properties---------- */
+
+}  
+
+.flex-item {
+  background-color: pink;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 20px;
+  width: 90px;
+  height: 80px;
+  text-align: center;
+
+  /* ----------CSS Flex item Properties-------- */
+
+  /* flex-grow:  */
+
+  /* flex-shrink:  */
+  
+  /* flex-basis: */
+
+
+}
+
+.flex-item.two{
+  width: 130px;
+  height: 120px;
+}
+
+.flex-item.three{
+  width: 150px;
+  height: 150px;
+}
+
+.flex-item.four{
+  width: 130px;
+  height: 120px;
+}
