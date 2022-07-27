@@ -1,7 +1,7 @@
 // Let's create a Singly Linked List class and discuss how it works!
 
 class LinkedListNode {
-  constructor(value, next){
+  constructor(value, next = null){
     this.value = value;
     this.next = next;
   }
@@ -19,11 +19,18 @@ class LinkedList {
     // if there is not a head (meaning there is no tail either)
     // 1. create new node with next set to null
     // 2. set this.head and this.tail to point to the new node
-    
+
     // if there is already a head, replace it with a new node
     // 1. create new node with it's next set to the current head
     // 3. set this.head to point to the new node
-
+    const newNode = new LinkedListNode(value)
+    
+    if (!this.head){
+      this.tail = newNode;
+    } else {
+      newNode.next = this.head;
+    }
+    this.head = newNode;
   }
   // time complexity of each of these steps is O(1). (unlike array.unshift()
   // which is linear!) There is no iteration or updating indices.
@@ -37,6 +44,16 @@ class LinkedList {
     // 1. create new node with it's next set to null
     // 2. set the current tail's next to point to the new node
     // 3. set this.tail to point to the new node
+
+    const newNode = new LinkedListNode(value)
+
+    if (!this.tail){
+      this.head = newNode;
+    } else {
+      this.tail.next = newNode;
+    }
+
+    this.tail = newNode;
   }
   // O(1) time complexity for this one as well!
 
@@ -46,6 +63,13 @@ class LinkedList {
 
     // if the current head has a next, just remove it
     // 1. set this.head to be the current head's next.
+    
+    if (!this.head.next){
+      this.head = null;
+      this.tail = null;
+    } else {
+      this.head = this.head.next;
+    }
   }
   // Once again, O(1) time complexity here!
 
@@ -53,9 +77,16 @@ class LinkedList {
     // traverse the list until we find the second to last node
     // 1. traverse the list until we find a nodes who's next.next is null.
     // 2. set that nodes next to be null
+
+    let current = this.head;
+    while (current.next){
+      current = current.next;
+    }
+    current.next = null;
+    this.tail = current;
   }
   // this is O(n) time complexity since we have to traverse the list to find
-  // the node that is second to last.
+  // the node that is second to last. See doubly linked lists for O(1) time optimization 
 
 }
 
