@@ -1,26 +1,32 @@
 //EAST
 
-// let arr = [[1, 2, 3], [4,5,6], [7,8,9]]
 
-
-//INDEXING 2d Array
 // console.log(arr[0][0])
 // console.log(arr[1][0])
-// console.log(arr[2][1])
-// console.log(arr[0][0])
+// console.log(arr[2][2])
+
+//INDEXING 2d Array
+
 
 //Iterating 2d Array
+// let arr = [
+//     [1, 2, 3], 
+//     [4, 5, 6], 
+//     [7, 8, 9]
+// ]
+
 // for(let i = 0; i < arr.length; i++){
 //     let subArr = arr[i]
-//     console.log(subArr, 'outter loop grabbing each subArr')
+//     console.log(subArr, 'in outter for loop arr[i]')
+//     // console.log()
 //     for(let j = 0; j<subArr.length; j++){
-//         console.log(subArr[j], 'inner loop grabbing each element in subArr')
+//         let ele = subArr[j]
+//         // console.log()
+//         console.log(ele, 'in inner for loop subArr[j]')
 //     }
 // }
 
-// split
 
-// join
 
 
 
@@ -35,35 +41,46 @@
 
 
 make a plan
-declare variable containing vowels
-declare another variable containing empty string
-split the string into array
-iterate over split array using for loop
-check if the vowels contain the current element
-splice the consonant out
+write a function removeCons takes in string as param
+save a vowels variable of a string of all vowels
+split string into an array
+iterate over our split string
+    create letters variable of each element
+check if vowels includers our current letter
+    splice our newArr 
+
+return our newArr joined into a string 
+
+*/
+/*
+
+
+
+let removeCons = function(str){
+    let vowels = 'aeiou '
+    let stringArr = str.split('')
+    for(let i = 0; i < stringArr.length; i++){
+        let letter = stringArr[i]
+        let lower = letter.toLowerCase()
+        if(!vowels.includes(lower)){
+            stringArr.splice(i, 1)
+            // console.log(stringArr)
+            i--
+        }
+    }
+    return stringArr.join('')
+}
+
+
+
+console.log(removeCons('keyboard')); // eoa
+console.log(removeCons('avocado')); // aoao
+console.log(removeCons('myrmecophilous')); // eoiou
+console.log(removeCons('happy birthdAay')); // a iAa
+
 
 
 */
-
-
-// let removeCons = function (str) {
-//     let arr = str.split('')
-//     let vowels = 'aeiou '
-//     for(let i = 0; i<arr.length; i++){
-//         let char = arr[i]
-//         if(!vowels.includes(char)){
-//             arr.splice(i, 1, '')
-//             // i--
-//         }
-//     }
-//     return arr.join('')
-// };
-
-// console.log(removeCons('keyboard')); // eoa
-// console.log(removeCons('avocado')); // aoao
-// console.log(removeCons('myrmecophilous')); // eoiou
-// console.log(removeCons('happy birthday')); // a ia
-
 
 // SUM ARRAY 
  /* 
