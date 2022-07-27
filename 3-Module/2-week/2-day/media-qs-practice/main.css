@@ -92,19 +92,43 @@ header {
 }
 
 @media(min-width: 1220px){
-    
+    .page{
+        flex-direction: row;
+    }
 }
 
 /* ----- Phase 1 - Wide Screen ----- */
 
 /* Your code here */
 
+
 /* ===== PRINTING ===== */
 
 
 /* Phase 2 */
-@media(print){
-    
+/* select this and apply these properties when we are in print preview  */
+/* @media print --> print is a media TYPE */
+@media print{
+    header, .sidebar, .image-box{
+        display: none;
+    }
+
+    .story-box{
+        padding: 0;
+        border-radius: 0%;
+        background-color: white;
+        filter:none;
+    }
+
+    /* position property will allow us to move an element relative to the last parent that has a position or the HTML element */
+    .image-box{
+        display: block;
+        width: 80px;
+        position: absolute;
+        /* in conjunction with position, we need to use properties like top,left,bottom, right in order to move the element */
+        top: 30px;
+        right: 20px;
+    }
 }
 
 /* Your code here */
