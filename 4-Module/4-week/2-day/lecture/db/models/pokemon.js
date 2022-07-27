@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+	  // one to many with Trainer
 	  Pokemon.belongsTo(
 		models.Trainer,
 		{
@@ -18,6 +19,7 @@ module.exports = (sequelize, DataTypes) => {
 		}
 	  )
 
+	  // many to many with Move
 	  Pokemon.belongsToMany(
 		models.Move,
 		{

@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+	  // one to many with Pokemon
 	  Trainer.hasMany(
 		models.Pokemon,
 		{

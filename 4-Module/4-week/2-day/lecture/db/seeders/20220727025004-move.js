@@ -6,19 +6,12 @@ const moves = require('../../data/moves.json');
 
 module.exports = {
   async up (queryInterface, Sequelize) {
-    /**
-     * Add seed commands here.
-     *
-     * Example:
-     * await queryInterface.bulkInsert('People', [{
-     *   name: 'John Doe',
-     *   isBetaMember: false
-     * }], {});
-    */
-	for(const move of moves){
-		const { ename: name, type, power, accuracy } = move
+
+	for(let i = 0; i < moves.length; i++){
+
+		const { ename, type, power, accuracy } = moves[i]
 		await Move.create({
-			name,
+			name: ename,
 			type,
 			power,
 			accuracy
@@ -33,10 +26,5 @@ module.exports = {
      * Example:
      * await queryInterface.bulkDelete('People', null, {});
      */
-	const moves = await Move.findAll();
-
-	for(const move of moves){
-		await move.destroy()
-	}
   }
 };

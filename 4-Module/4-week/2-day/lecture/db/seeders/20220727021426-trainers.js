@@ -1,6 +1,9 @@
 'use strict';
 
-const { Pokemon, Move } = require('../models')
+const { Trainer } = require('../models');
+
+const trainer = require('../../data/trainers.json');
+
 
 module.exports = {
   async up (queryInterface, Sequelize) {
@@ -13,19 +16,21 @@ module.exports = {
      *   isBetaMember: false
      * }], {});
     */
-   const pokemon = await Pokemon.findOne({
-		where : {
-			name: 'Haunter'
-		}
-   });
+	for(let i = 0; i < trainer.length; i++){
+		await Trainer.create({
+			name: trainer[i].name,
+			money: trainer[i].money
+		})
+	}
 
-   const move = await Move.findAll({
-		where: {
-			type: 'Ghost'
-		}
-   });
+	// for(let i = 0; i < trainer.length; i++){
+	// 	const {name, money} = trainer[i]
+	// 	await Trainer.create({
+	// 		name,
+	// 		money
+	// 	})
+	// }
 
-   pokemon.addMoves(move.slice(14))
   },
 
   async down (queryInterface, Sequelize) {
