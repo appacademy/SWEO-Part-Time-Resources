@@ -1,0 +1,94 @@
+/* header nav */
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
+body{
+  font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 14px;
+  margin: 0;
+
+}
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
+.header-nav__container {
+  background-color: #026AA7;
+  color: #FFFFFF;
+  padding: 4px;
+  line-height: 20px;
+  font-size: 16px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+}
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
+.header-nav__button#alerts {
+  background-color: #CF513D;
+}
+
+
+/* Supplied CSS follows. */
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
+.header-nav__group{
+  display: flex;
+}
+
+.header-nav__button {
+  display: inline;
+  border-radius: 3px;
+  border: 0;
+  cursor: pointer;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  background-color: hsla(0,0%,100%,.3);
+  box-shadow: none;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 4px 0 0;
+  padding: 0;
+  transition: .1s ease;
+  white-space: nowrap;
+  padding: 8px;
+  height: 32px;
+  width: 32px;
+}
+
+.header-nav__button#search > input {
+  border-style: none;
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.header-nav__button > .boards-label {
+  font-weight: 700;
+  padding-left: 4px;
+}
+
+.header-nav__trello-logo {
+  opacity: 0.5;
+  display: block;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 5px;
+}
+
+
+.header-nav__button > i{
+  width: 24px;
+}
+
+
+
+/* ------------Responsive Styles------------ */
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
+
+@media screen and (max-width: 730px) {
+  .header-nav__button#search > input,
+  .boards-label {
+    display: none;
+  }
+}
