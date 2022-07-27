@@ -15,6 +15,7 @@ body{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+
 }
 
 .header-nav__button#alerts {
@@ -108,7 +109,8 @@ body{
   line-height: 20px;
   font-weight: 400;
 }
-
+/* -------------tabbed nav--------------*/
+/*UNCOMMENT THIS PART BY DELETING THIS LINE
 .tabbed-nav__container {
   background-color: #f4f5f7;
 }
@@ -186,7 +188,7 @@ body{
   justify-content: space-between;
 }
 
-/* Responsive Styles */
+/* ------------Responsive Styles------------ */
 /*UNCOMMENT THIS PART BY DELETING THIS LINE
 
 @media screen and (max-width: 730px) {
