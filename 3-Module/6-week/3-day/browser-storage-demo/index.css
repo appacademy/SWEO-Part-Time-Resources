@@ -1,0 +1,46 @@
+html {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+body.dark {
+  background-color: #121212;
+}
+
+h1.dark,
+h2.dark {
+  color: white;
+}
+
+#container {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  border-radius: 5px;
+  background: white;
+  border: none;
+  box-shadow: 0 0 5px grey;
+  margin: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 100px;
+  font-size: 20px;
+}
+
+button.dark {
+  background-color: #121212;
+  color: white;
+}
+
+button.dark:hover {
+  background-color: rgb(68, 68, 68);
+}
+
+button:hover {
+  background-color: lightgray;
+  border-radius: 10px;
+}
