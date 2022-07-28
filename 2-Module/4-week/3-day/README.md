@@ -2,9 +2,9 @@
 
 ## Quick Note!
 
-During lecture, I expect everyone to be paying attention. You should not be chatting in discord (or any other app) while I'm teaching. At the end of the day this is job training, and a certain amount of professionalism is expected! Thank you!
+During lecture, I expect everyone to be paying attention. You should not be chatting in discord (or any other app) while I'm teaching. At the end of the day this is job training, and *a certain amount of professionalism is expected*! Thank you!
 
-Also, please remember that if you have a question about something, usually if you ask it during lecture, it's going to benefit someone else that was too shy to ask. We're all here to help each other, and this is a judgement free zone. Even senior engineers get things wrong sometimes. 😊
+Also, please remember that if you have a question about something, usually if you ask it during lecture, it's going to benefit someone else that was too shy to ask. We're all here to help each other, and this is **a judgement free zone**. Even senior engineers get things wrong sometimes. 😊
 
 ## Hash functions
 
