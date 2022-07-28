@@ -1,5 +1,9 @@
 # M2W4D3
 
+## Quick Note!
+
+During lecture, I expect everyone to be paying attention. You should not be chatting or cracking jokes while I'm teaching. At the end of the day this is job training, and a certain amount of professionalism is expected! Thank you! 😊
+
 ## Hash functions
 
 A `hash function` takes in an input, runs it through a set of **deterministic** steps, and returns a scrambled output. Given the same input, it will **ALWAYS** return the same output.
