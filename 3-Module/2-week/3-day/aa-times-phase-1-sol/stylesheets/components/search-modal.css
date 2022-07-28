@@ -1,0 +1,10 @@
+.search-modal {
+  margin-left: 10px;
+}
+
+
+.search-modal__input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: .4em;
+}

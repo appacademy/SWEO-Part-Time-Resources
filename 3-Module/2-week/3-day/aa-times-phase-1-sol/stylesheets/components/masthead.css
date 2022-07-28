@@ -1,0 +1,110 @@
+/* Your code here */
+
+/* ---parent masthead container--- */
+.masthead {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+
+    grid-template-areas:
+        "search . actionButtons"
+        ". littleTech ."
+        "date logo paper";
+}
+/* ---------------ROW 1-----------------*/
+/* ---search and menu--- */
+.masthead__menu-and-search {
+    grid-area: search;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.masthead__icon-button {
+    font-size: 11px;
+    padding: 7px 9px;
+}
+
+.masthead__icon-button:hover {
+    background-color: #f7f7f5;
+}
+
+
+/* ---action buttons--- */
+.masthead_actions {
+    grid-area: actionButtons;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 10px 0;
+}
+
+/* ---------------ROW 2-----------------*/
+/* ---little technologies--- */
+.masthead__technologies {
+    grid-area: littleTech;
+    display: flex;
+    justify-content: center;
+}
+
+.masthead__technology-list {
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    color: #6f6f6f;
+    font-size: 10px;
+    position: relative;
+    top: 1px;
+}
+
+.masthead__technologies span {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #6f6f6f;
+    margin: 10px;
+}
+
+
+/* ---------------ROW 3-----------------*/
+/* ---left date--- */
+.masthead__date {
+    grid-area: date;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    align-items: flex-end;
+    font-size: 11px;
+    padding-bottom: 11px;
+}
+
+/* ---Logo--- */
+.masthead__logo {
+    grid-area: logo;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    padding-bottom: 11px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* ---right paper--- */
+.masthead__paper {
+    grid-area: paper;
+    border-bottom: 1px solid #e2e2e2;
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    align-items: flex-end;
+    font-size: 11px;
+    justify-content: flex-end;
+    padding-bottom: 11px;
+}
+
+.fa-newspaper {
+    height: 14px;
+    width: 14px;
+}
+
+
