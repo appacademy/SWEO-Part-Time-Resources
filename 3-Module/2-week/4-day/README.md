@@ -29,7 +29,7 @@
 2) Think of a theme that you want to base the application around
    - I.e. `soundcloud` like website but for retro classic video game songs 
    - `flickr` like website but for horror post apocalyptic images
-
+   - i.e. space, futuristic, mobile, animal, food, mordern urban city, anime, game, etc.
 3)  go to those websites that we like a lot for inspiration or checkout css frameworks
     - https://nostalgic-css.github.io/NES.css/
     - http://ronenness.github.io/RPGUI/
