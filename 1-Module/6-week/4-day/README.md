@@ -2,8 +2,8 @@
 
 ## Practice Day
 
-- REPL problems from Wednesday
-- Week 6 Additional Problems
+- REPL problems (Wed)
+- Week 6 Additional Problems (Sat)
 
 ## Study Guide
 - Practice Assessment
