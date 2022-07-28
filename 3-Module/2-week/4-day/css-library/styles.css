@@ -31,6 +31,16 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: Berkshire, Arial, Helvetica, sans-serif;
+ 
+}
+
+h1{
+    color: #3367d6;
+}
+
+h2{
+    color: #D0012B;
+    font-family: cursive;
 }
 
 p {
