@@ -22,8 +22,18 @@
   - https://terminalcss.xyz/
   - http://ronenness.github.io/RPGUI/
 
+### Option 1: If you just want practice coding/styling
+If you are feeling overwhelmed and would just like to practice your `css styling` skills, then that's fine too! Follow below: 
 
-### Option 1: Build Your Own CSS Framework!
+1) download the `CSS-Long-Practice` starter on aa-open.   
+2) open `clone-optons.js` choose an application that you would like to clone in your future project
+   1) i.e. `airbnb`, `flickr`, `behance`
+
+3) Eyeball the site's buttons, headers, card, etc. and recreate that in your framework folder.
+   1) I.e. go on `airbnb` select a component like the `search-bar` or `signup button` and replicate it
+   2) This will provide really good practice 
+   
+### Option 2: Build Your Own CSS Framework!
 1) download the `CSS-Long-Practice` starter on aa-open. 
 2) open `clone-optons.js` and think of an application from there that you're planning to clone the functionality of for `your future first project`
    - I.e. `soundcloud`
@@ -40,13 +50,3 @@
       - https://nostalgic-css.github.io/NES.css/
     - Download the starter and create a few basic components!
 
-### Option 2: If you just want practice coding/styling
-If you are feeling overwhelmed and would just like to practice your `css styling` skills, then that's fine too! Follow below: 
-
-1) download the `CSS-Long-Practice` starter on aa-open.   
-2) open `clone-optons.js` choose an application that you would like to clone in your future project
-   1) i.e. `airbnb`, `flickr`, `behance`
-
-3) Eyeball the site's buttons, headers, card, etc. and recreate that in your framework folder.
-   1) I.e. go on `amazon` select a component like the `button` and replicate it
-   2) This will provide really good practice 
