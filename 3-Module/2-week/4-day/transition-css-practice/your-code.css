@@ -5,9 +5,9 @@
     width: auto;
     margin-left: 300px;
     /* Your code here */
-    transition-property: transform;
+    /* transition-property: transform;
     transition-duration: 2s;
-    transition-delay: 0.1s;
+    transition-delay: 0.1s; */
 
     /* single shorthand property */
     transition: transform 2s 0.1s;
