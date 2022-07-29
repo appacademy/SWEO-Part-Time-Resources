@@ -34,7 +34,8 @@ class HashTable {
     const kvp = new KeyValuePair(key, value); // create our new key value pair
     let i = this.hashMod(key); // get our index
 
-    // this.data[i] = 2;
+    // 2 -> 3
+    // this.data[i] = 2; (2.next = 3, 3.next = null)
     // newKvp = 6;
     // 6.next = 2
     // 6 -> 2 -> 3
