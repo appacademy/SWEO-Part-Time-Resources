@@ -10,5 +10,5 @@
 - Week 6 Additional Problems (1-4)
 - Timeout Project
 - Formative Quizzes/Concepts
-  - Asyncronicity
+  - Asynchronicity
   - Event Loop
