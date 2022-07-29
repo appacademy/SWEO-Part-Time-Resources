@@ -1,0 +1,34 @@
+[
+	{
+		"name": "RED",
+		"money": 2000000000
+	},
+	{
+		"name": "BLUE",
+		"money": 300000000
+	},
+	{
+		"name": "BROCK",
+		"money": 1400003
+	},
+	{
+		"name": "MISTY",
+		"money": 60000000
+	},
+	{
+		"name": "JESSIE",
+		"money": 0
+	},
+	{
+		"name": "JAMES",
+		"money": 0
+	},
+	{
+		"name": "ALEX HILLER",
+		"money": 3000
+	},
+	{
+		"name": "Fisherman Joe",
+		"money": 150
+	}
+]
