@@ -43,6 +43,11 @@ h2{
     font-family: cursive;
 }
 
+h3{
+    color: rgb(33, 176, 62);
+    font-family: 'Courier New', Courier, monospace;
+}
+
 p {
     font-family: Redressed, serif;
     font-size: 20px;
