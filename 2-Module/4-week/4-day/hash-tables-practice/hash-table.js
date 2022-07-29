@@ -36,11 +36,11 @@ class HashTable {
 
     // 2 -> 3
     // this.data[i] = 2; (2.next = 3, 3.next = null)
-    // newKvp = 6;
+    // newKvp.key = 6;
     // 6.next = 2
     // 6 -> 2 -> 3
     // this.data[i] = 6;
-    // newKvp = 32
+    // newKvp.key = 32
     // 32.next = 6
     // 32 -> 6 -> 2 -> 3
     // this.data[i] = 32;
