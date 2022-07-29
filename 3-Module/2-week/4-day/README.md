@@ -23,21 +23,23 @@
   - http://ronenness.github.io/RPGUI/
 
 
-### Build Your Own!
-1) open `clone-optons.js` and think of an application from there that you're planning to clone the functionality of.
+### Option 1: Build Your Own CSS Framework!
+1) open `clone-optons.js` and think of an application from there that you're planning to clone the functionality of for `your future first project`
    - I.e. `soundcloud`
 2) Think of a theme that you want to base the application around
    - I.e. `soundcloud` like website but for retro classic video game songs 
-   - `flickr` like website but for horror post apocalyptic images
-   - i.e. space, futuristic, mobile, animal, food, mordern urban city, anime, game, etc.
+   - I.e. `flickr` like website but for horror post apocalyptic images
+   - other themes/topics/genres example: space, futuristic, mobile, animal, food, mordern urban city, anime, game, etc.
 3)  go to those websites that we like a lot for inspiration or checkout css frameworks
     - https://nostalgic-css.github.io/NES.css/
     - http://ronenness.github.io/RPGUI/
 
-4) Create your own theme
+4) Create your own CSS theme
+    - i.e. for my `souncloud` clone it will be for retro classic video game songs, so my CSS Framework might look something like this:
+      - https://nostalgic-css.github.io/NES.css/
     - Download the starter and create a few basic components!
 
-### If you aren't sure or feel overwhelmed
+### Option 2: If you aren't sure or feel overwhelmed
 1) Find a website that you like or choose a CSS framework 
    1) https://semantic-ui.com/elements/button.html
    2) https://materializecss.com/buttons.html
