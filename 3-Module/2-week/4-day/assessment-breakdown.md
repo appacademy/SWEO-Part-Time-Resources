@@ -4,9 +4,11 @@
 - On the assessment, if you're not sure what to do after reading the question, `Ask a question`, we can help clear up the prompt
 
 - Breakdown:
+  - time: 1hr10m
   - 6 MC 
   - 4 Coding Questions (2pts each)
     - 1 flexbox, 1 grid, 2 media query 
+    - Similar to our excerises that we did (short 20m practices)
   - passing score: 11/14
 
 ## CSS Flexbox
