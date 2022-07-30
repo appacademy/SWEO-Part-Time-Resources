@@ -41,4 +41,6 @@
   - Event Loop
 - Week 7 Content
 
+---
+
 ## Fun activity to close out Mod 1 during EOD
