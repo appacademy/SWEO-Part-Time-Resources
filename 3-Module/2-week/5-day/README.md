@@ -25,10 +25,10 @@
   - 1) Create a new github repository
   - 2) Copy the remote `url`
   - 3) in the `aa-times` project run `git remote set-url origin YOUR-NEW-URL-HERE` to redirect your local project repository to be linked to the new one.
-  - 4) If you need help, raise a hand in slack!
+  - 4) Then `git push`
+  - 5) If you need help, raise a hand in slack!
 
 ## SOLO Practice: Deploy a Static Project (30m)
 - Now deploy your `aa-times` project!
-
 
 ## Study / Work on `Pixel Perfect Clone Long Practice`
