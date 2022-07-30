@@ -43,4 +43,4 @@
 
 ---
 
-## Fun activity to close out Mod 1 during EOD
+## Kahoot to close out Mod 1 during EOD
