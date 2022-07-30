@@ -12,7 +12,7 @@ A `set` is a collection of **unique**, *unordered* values.
 
 > The main reason to use a `set` over an `array` beyond wanting to guarantee that only unique values are stored is that when comparing `set.has()` vs `array.includes()`, `set.has` has an `O(1)` lookup time vs. `array.includes()` that has an `O(n)` lookup time.
 
-### `**Implementation**`
+### **`Implementation`**
 
 Since a `set` is an ADT we usually use `hash tables` (`hash maps`) to achieve the `O(1)` `.has()` functionality.
 
