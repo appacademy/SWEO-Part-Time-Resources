@@ -16,7 +16,7 @@
 
 ---
 
-#### Study - This Week Objectives
+## Study - This Week Objectives
 - Async (non-blocking) vs. Sync Code (blocking)
 - Event Loop
   - Call Stack
