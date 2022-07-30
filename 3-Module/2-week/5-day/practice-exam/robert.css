@@ -16,9 +16,9 @@
     /* adjust the size of columns if necessary   */
 
     /* layout the grid, how it should look like */
-    grid-template-areas: 
+    /* grid-template-areas: 
     ". box box box box"
-    ". . . . ."
+    ". . . . ." */
 
 }
 
@@ -26,21 +26,4 @@
     /* label the grid area */
     grid-area: 1 / span 4 / 1 / -1;
 
-}
-
-
-@media screen and (max-width: 600px){
-    /* up to this maximum width of 600px (0-600px) apply / override the css below */
-    .tree{
-        display: block;
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 600px){
-    /* when the screen is at least 600px or the minimum width is at least 600pxm, then apply or override the css below */
-    .tree{
-        display: inline-block;
-        width: 600px;
-    }
 }
