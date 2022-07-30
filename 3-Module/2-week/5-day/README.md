@@ -7,14 +7,14 @@
   -  and media queries
 - Open `assessment-breakdown.md` go over outline + readings
 ## Practice Assessment (1hr)
+- If we're already done with this and we're comfortable with this week's content, go ahead and continue with instructions below (`aa-times` project + deployment)
 
 ## Coding Portion Walkthrough  (20m)
 
 ## Continue Working on AA-Times
 - If we finished this project, go to the `SOLO Practice` and deploy `aa-times` project
 - You'll be:
-  - deploying this later today (finished or unfinished product)
-  - submission is `MANDATORY` !! (avoid a potential strike)
+  - deploying this later today (whether we finished it or not)
 
 
 ## Lunch
