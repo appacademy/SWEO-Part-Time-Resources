@@ -29,6 +29,5 @@
 
 ## SOLO Practice: Deploy a Static Project (30m)
 - Now deploy your `aa-times` project!
-- **IMPORTANT:** deployment is a must, we will require a `link` to your uploaded `aa-times` by the end of the day!
 
 ## Study / Work on `Pixel Perfect Clone Long Practice`
