@@ -23,11 +23,7 @@
   - Message Queue
 - Be able to work with async code like setTimeout
 - Previous concepts from earlier weeks like closure, scope, recursion, first class objects, etc.
-- Be able to solve problems with recursion
-  - Understand terminologies like:
-    -  base case, recursive case, recursive step
-    -  Using recursion to help solve the original problem by...
-       -  solving many smaller sub-problems first.
+- Be able to solve problems with recursion or iteration
 - Understand how to debug problems
 - Work with big problems and know how to break them down to smaller ones to tackle
 
