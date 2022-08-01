@@ -1,0 +1,29 @@
+.outer-layer-1{
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-end;
+
+    /* this doesn't work for horizontal alignment when flex-direction is column (reverse!) */
+    /* justify-content: flex-end; */
+}
+
+
+.outer-layer-2{
+    /* display container as grid */
+    display: grid;
+
+    /* adjust the size of columns if necessary   */
+
+    /* layout the grid, how it should look like */
+    /* grid-template-areas: 
+    ". box box box box"
+    ". . . . ." */
+
+}
+
+.inner-layer-2{
+    /* label the grid area */
+    grid-area: 1 / span 4 / 1 / -1;
+
+}
