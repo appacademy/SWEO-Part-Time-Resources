@@ -8,7 +8,7 @@
 - Reading Tests
 - Exercise: Reading Tests
 
-## Discussion: Intro + Reading Tests (5m)
+## Discussion: Intro + Reading Tests (10m)
 
 - Upgrade to how we ask questions
 
