@@ -1,0 +1,34 @@
+- Access the home page
+  - `GET /`
+  - `GET /home`
+- Submit a contact form
+  - `answer here`
+  
+- Access the posts page
+  - 
+- Access the edit page for a post
+  - 
+- Access the create page for a post
+  - 
+- Create a new user
+  - 
+- Log In
+  - 
+
+- Log Out
+  - 
+- Access the comments for a post page
+  - 
+- Access the create page for a post's comment
+  - 
+- Access the edit page for a comment
+  - 
+- Submit a like for a post
+  - 
+- Delete a like for a post
+  - 
+- Access all the posts of a user
+  - 
+- Submit a search on posts
+  - 
+  - 
