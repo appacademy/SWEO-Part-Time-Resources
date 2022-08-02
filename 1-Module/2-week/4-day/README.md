@@ -38,4 +38,8 @@ These are a pretty large step up in difficulty. Make sure to request help when y
 [Alternating Words]:https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/alternating-words
 [Repeating Translate]:https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/repeating-translate
 [Max In Matrix]:https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/max-in-matrix
+<<<<<<< HEAD
 [Max In Column]:https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/max-in-columns
+=======
+[Max In Column]:https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/max-in-columns
+>>>>>>> 2022-Jul-W

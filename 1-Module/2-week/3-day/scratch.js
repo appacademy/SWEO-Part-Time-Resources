@@ -133,7 +133,6 @@ save variable of splitting the sentence
 create a neww array variable
 loop over our split array
 grab our first letter of each element and push into new array
-
 return our new array joined to a string
 */
 
@@ -162,7 +161,6 @@ loop over outter array
 grab each sub array
 loop over the sub array
 multiply our product to our current element
-
 return our product
 */
 
@@ -301,7 +299,6 @@ save a new string variable as an empty string
 loop over our word
 check if current letter is not a vowel
 add current letter to our new string
-
 return our new string
 */
 
