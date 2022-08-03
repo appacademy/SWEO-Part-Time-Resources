@@ -127,6 +127,7 @@ res.status(404).send('Page Not Found');
 
 - Reference the [Express Request/Response Objects](https://open.appacademy.io/learn/js-py---pt-mar-2022-online/week-19---express/express-request-response-objects) reading and/or watch [the code demo video](https://open.appacademy.io/learn/js-py---pt-mar-2022-online/week-19---express/express-request-response-objects-code-demo)
 - Express Route Handlers
+  - Server is created for you, write Phase 1 in "Your code here"
   - `res.status()`, NOT `res.statusCode()`
 - Walkthrough
 - Route Order Matters!
