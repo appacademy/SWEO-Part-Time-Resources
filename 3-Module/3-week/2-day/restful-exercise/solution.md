@@ -19,7 +19,7 @@
 - Access the create page for a post
   - `GET /posts/new`
 - Create a new user
-  - `POST /users`
+  - `POST /users/signup`
 - Log In
   - `POST /users/login`
   - `POST /login`
