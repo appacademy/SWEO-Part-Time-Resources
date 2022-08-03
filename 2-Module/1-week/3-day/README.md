@@ -1,4 +1,4 @@
-# M2W7D3
+# M2W1D3
 
 ## Quizzes(25m)
 
