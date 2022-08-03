@@ -15,7 +15,7 @@ let obj = {
   game: {
     name: "Rocket League",
     hours: 135,
-    Rank: "Platinum",
+    rank: "Platinum",
     cars: [
       "Octane", 
       "Venom", 
