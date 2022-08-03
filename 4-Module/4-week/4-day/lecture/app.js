@@ -35,6 +35,8 @@ app.get('/pokemons/search', async (req, res) => {
 			// 	// [Op.any]: [startsWith, hasLetter],
 			// 	[Op.like] : ''
 			// }
+
+			// requested by andre
 			name: {
 				[Op.or] : [
 					{
