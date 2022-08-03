@@ -12,7 +12,12 @@ What is `OOP`?
 - The **main concept** behind `OOP` is the idea that you can group data and related actions together and treat them as a single entity within a larger system.
 - The characteristics of an `object` are called `properties` or `attributes` of the object. (*keys and values that are just data*)
 - The actions of the `object` are called `methods`. (*the objects functions*)
-- If it helps, you can think of `properties` as an `object`'s 'Adjectives' and `methods` as the 'Verbs'.
+- Think of `properties` as an `object`'s 'Adjectives' and `methods` as the 'Verbs'.
+- 4 Main Pillars
+  - Encapsulation
+  - Abstraction
+  - Inheritance
+  - Polymorphism (Tomorrow)
 
 What is a `class`?
 
@@ -27,15 +32,15 @@ What is a `class`?
 
 Why does OOP use Classes?
 
-- Classes are a clean way to `Encapsulate` our code.
-- They provide an API that hides the internal complexity(logic) and manages the data of our `object`
+- Classes are a clean way to `Encapsulate` our code. (Encapsulation)
+- They provide an API that hides the internal complexity(logic) and manages the data of our `object` (Abstraction)
 - Classes allow us to model real world entities in an organized way
 
-### Encapsulation
+### Encapsulation + Abstraction
 
-- `Encapsulation` means to put behavior and data together behind an API that hides the implementation details.
-- We dont need to know how it works, we just need to know how to use it.
-- Basically it's configuring your code to hide the complexity of a behavior in an API.
+- `Encapsulation` means to put behavior and data together in a single unit.
+- `Abstraction` means to hide internal implementation and show only the required features.
+  - We dont need to know how it works, we just need to know how to use it.
 
 ## Classes and Inheritance Demo
 
