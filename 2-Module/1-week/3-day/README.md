@@ -32,7 +32,7 @@ What is a `class`?
 
 Why does OOP use Classes?
 
-- Classes are a clean way to `Encapsulate` our code. (Encapsulation)
+- Classes are a clean way to `enclose` our data/behavior. (Encapsulation)
 - They provide an API that hides the internal complexity(logic) and manages the data of our `object` (Abstraction)
 - Classes allow us to model real world entities in an organized way
 
