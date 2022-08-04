@@ -28,7 +28,7 @@
 ### Array Destructuring
 
   ```js
-    // let arr = ["Elden Ring", "Zaviar", "Radahn"];
+    // let arr = ["Rocket League", "James", "Radahn"];
     // let game = arr[0]
     // let player = arr[1]
 
