@@ -46,7 +46,7 @@
     
     - Inheritance is done through the **`extends`** keyword
     
-    - **super** keyword: calls the constructor method of the parent class (keeps code DRY)
+    - **`super`** keyword: calls the constructor method of the parent class (keeps code DRY)
         - Used if you want to use the code from parent's constructor but define new properties in child constructor  
 
 - <span style="color:#cd1d1d;">**Static Methods**</span>: A **class method**: Invoke it from a **CLASS** & (**they belong to the entire class, not the instance**)
