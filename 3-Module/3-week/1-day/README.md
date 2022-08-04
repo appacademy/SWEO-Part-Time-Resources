@@ -7,6 +7,9 @@
   - 4 Coding Questions (2pts each)
   - passing score: 11/14
 
+- **Important**: the question - "Which of the following CSS properties is used on a container in the Flexible Box model to specify how its children elements will be laid out?" 
+  - will be a freebee, so don't worry about getting it wrong or right. 
+
 - Remember that these are `also available resources`:
   - practice assessment
   - Projects you've written
@@ -19,6 +22,8 @@
 
 - Important: follow the instructions as it will tell you what needs to be done, read it twice and carefully!!
 - Everything can be solved using the concepts we learned this week
+
+
 
 ## Monday HTTP Readings
 - Do all exercise and readings for today and the quizzes

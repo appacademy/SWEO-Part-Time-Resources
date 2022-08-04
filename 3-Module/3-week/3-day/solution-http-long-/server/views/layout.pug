@@ -1,0 +1,15 @@
+doctype
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    block title
+    link(rel="stylesheet" href="/assets/css/application.css")
+  body
+    nav
+      ul 
+        li: a(href="/products") See all Products 
+        li: a(href="/products/best-selling") Best-Selling Product
+        each category in categories 
+          li: a(href="/categories/" + category.tag + "/products")= category.name
+      button: a(href="/products/new") Add a Product
+    block body
