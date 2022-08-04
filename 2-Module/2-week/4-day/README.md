@@ -1,4 +1,4 @@
-# M2W2D4 (TDD Practice)
+# M2W2D4 (TDD Practice) :)
 
 ## TDD Pair Programming
 - TDD Style Project phase 3-4
@@ -11,8 +11,8 @@
 
 - inside the `twitter-lite-tdd` folder, open `README.md` and code out the classes from the test specs.
 
-- HINTs: 
-  - Comment out the tests one by one to see which one you are failing. 
+- HINTs:
+  - Comment out the tests one by one to see which one you are failing.
   - another option is to run the examples (i.e. the ones provided here) in the corresponding class file to test.
   - Remember your exports and imports!
 
@@ -24,4 +24,3 @@
 - Go over the `employee and manager salaries` project
   - From the test specs and reading the test files, could you write the classes for that project?
   - ![](https://i.imgur.com/IV03ER9.png)
-
