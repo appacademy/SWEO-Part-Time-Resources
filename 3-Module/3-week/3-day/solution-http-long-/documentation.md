@@ -278,7 +278,7 @@ After successful submission, user should be looking at the product detail page.
 Request components:
 - Method: POST
 - URL: /reviews/:reviewId/delete
-- Headers: no additional headers need to be added
+- Headers: content-type: application/x-www-form-urlencoded
 - Body: none
 
 Response components:
