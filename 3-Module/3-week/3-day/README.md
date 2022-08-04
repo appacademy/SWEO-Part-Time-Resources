@@ -8,6 +8,7 @@
 
 ## HTTP Basics Long Practice
 - Really work through the project as it will be reflective and similar to what you will be doing on the assessment
+  - **do not feel the need to rush this!! We have all day today for this project, let our each other take our time!!**
   
 - Steps generalized (look at documentation for full)
   - `1st`: write out our documentation (`DO NOT do any of step 2, until we finish step 1`)
