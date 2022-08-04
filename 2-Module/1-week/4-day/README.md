@@ -36,7 +36,7 @@ even though it has the same name because the result is equivalent
 - [Class Syntax Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/class-syntax-ii-quiz)
 - [Polymorphism Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/polymorphism-quiz)
 
-- [Firendly and Evil Dragons](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/friendly-and-evil-dragons-phase-1-and-2)
+- [Friendly and Evil Dragons](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/friendly-and-evil-dragons-phase-1-and-2)
 
 - If you finish early do homework or go back and create flash cards from readings
 - Remember the test is MCQ only, please study accordingly
