@@ -1,0 +1,30 @@
+{
+  "grocery": {
+    "tag": "grocery",
+    "name": "Grocery"
+  },
+  "electronics": {
+    "tag": "electronics",
+    "name": "Electronics"
+  },
+  "beauty": {
+    "tag": "beauty",
+    "name": "Beauty"
+  },
+  "toys-games": {
+    "tag": "toys-games",
+    "name": "Toys and Games"
+  },
+  "health": {
+    "tag": "health",
+    "name": "Health"
+  },
+  "furniture": {
+    "tag": "furniture",
+    "name": "Furniture"
+  },
+  "clothing": {
+    "tag": "clothing",
+    "name": "Clothing"
+  }
+}
