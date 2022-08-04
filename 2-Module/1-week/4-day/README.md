@@ -22,7 +22,7 @@ even though it has the same name because the result is equivalent
 - Methods that are invoked on a class, instead of an instance of the class
 - Use the static keyword
 - Because they aren't invoked on an instance, they cant use the `this` keyword to access an instance
-  - You can however pass one or more instances to a static method in the params to perform actions on those instances
+  - Can pass one or more instances to a static method as params
 - Can be used to perform utility actions (independent of any instance, but related to the object type in some way) like comparing two instances
 
 ### Static Variables
