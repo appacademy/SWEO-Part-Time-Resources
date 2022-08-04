@@ -2,7 +2,7 @@
 
 ## `Binary Search Trees Cont'd`
 
-### `Preorder Traversal vs. Inorder Traversal vs Postorder Traversal`
+### `Preorder vs. Inorder vs Postorder`
 
 The main difference between these three types of traversals is **when you take action** on the current node.
 
