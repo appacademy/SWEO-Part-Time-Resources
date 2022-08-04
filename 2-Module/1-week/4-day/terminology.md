@@ -3,7 +3,7 @@
     - Object Oriented Programming is one of many **design patterns** to **break down a complex problem** into **smaller parts** that are readable, maintainable, and interactive (API).
     - The main concept behind **OOP** is the idea that we can **identify, group, and organize related data and behaviors together** in order to treat them as a single entity within a larger system.
     
-- <span style="color:#cd1d1d;">**Classes**</span> (**Special Functions**): are blueprint to create our very own objects which has attributes & behaviors that emulates or models a problem we are trying to represent
+- <span style="color:#cd1d1d;">**Classes**</span> (**Special Functions**): are blueprints to create our very own objects which have attributes & behaviors that emulate or model a problem we are trying to represent
     - Classes are a clean way to `Encapsulate` our code. 
         - They provide an API that hides the internal complexity(logic) and manages the data of our object
      - Example of a **car class API** (think real world representations)
