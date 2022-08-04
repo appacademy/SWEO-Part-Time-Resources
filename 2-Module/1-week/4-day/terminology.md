@@ -7,8 +7,8 @@
     - Classes are a clean way to `Encapsulate` our code. 
         - They provide an API that hides the internal complexity(logic) and manages the data of our object
      - Example of a **car class API** (think real world representations)
-        - properties (data): model, year, type
-        - action (verbs): stop, move, drive, park
+        - properties/attributes (data): model, year, type
+        - actions (verbs): stop, move, drive, park
     - **`Classes in Two Parts`**:
         - **Interface(the what)**: what can this class do for us or other code?
         - **Implementation(the how)**: how the class actually does what it does
