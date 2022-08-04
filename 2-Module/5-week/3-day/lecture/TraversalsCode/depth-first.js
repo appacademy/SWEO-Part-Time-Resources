@@ -18,7 +18,16 @@ const bst = require('./utils/bst');
 // to be 4, 2, 1, 3, 6, 5, 7 -- this is pre-order traversal!
 
 const depthFirstTraversal = (root) => {
-  // our code here
+  const s = new Stack();
+  s.push(root);
+  
+  while (s.length > 0){
+    const current = s.pop();
+    console.log(current.val);
+
+    if (current.right) s.push(current.right)
+    if (current.left) s.push(current.left)
+  }
 }
 
 depthFirstTraversal(bst.root);
