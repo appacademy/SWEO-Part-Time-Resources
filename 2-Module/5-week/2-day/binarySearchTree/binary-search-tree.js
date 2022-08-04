@@ -52,45 +52,67 @@ class BinarySearchTree {
 
 
   preOrderTraversal(currentNode = this.root) {
-    // Your code here
+    if (!currentNode) return;
+
+    console.log(currentNode.val);
+    this.preOrderTraversal(currentNode.left);
+    this.preOrderTraversal(currentNode.right);
   }
 
 
   inOrderTraversal(currentNode = this.root) {
-    // Your code here
+    if (!currentNode) return;
+
+    this.inOrderTraversal(currentNode.left);
+    console.log(currentNode.val);
+    this.inOrderTraversal(currentNode.right);
   }
 
 
   postOrderTraversal(currentNode = this.root) {
-    // Your code here
+    if (!currentNode) return;
+
+    this.postOrderTraversal(currentNode.left);
+    this.postOrderTraversal(currentNode.right);
+    console.log(currentNode.val);
   }
 
     // Breadth First Traversal - Iterative
-  breadthFirstTraversal() {
-    // your code here
+  breadthFirstTraversal() { // O(n)
+    let queue = [this.root];
+
+    while (queue.length > 0){ // O(n)
+      const current = queue.shift() // O(n)
+
+      console.log(current.val); // O(n)
+      if (current.left) queue.push(current.left); // average O(1) worst O(n)
+      if (current.right) queue.push(current.right); // average O(1) worst O(n)
+    }
   }
 
   // Depth First Traversal - Iterative
-  depthFirstTraversal() {
-    // your code here
-}
+  depthFirstTraversal() { // O(n)
+    let stack = [this.root];
+
+    while (stack.length > 0){ // O(n)
+      const current = stack.pop() // O(1)
+
+      console.log(current.val); // O(n)
+      if (current.left) stack.push(current.left); // average O(1) worst O(n)
+      if (current.right) stack.push(current.right); // average O(1) worst O(n)
+    }
+  }
 }
 
-const bst = new BinarySearchTree();
-bst.insert(4);
-bst.insert(2);
-bst.insert(6);
-bst.insert(1);
-bst.insert(3);
-bst.insert(5);
-bst.insert(7);
+// const bst = new BinarySearchTree();
+// bst.insert(4);
+// bst.insert(2);
+// bst.insert(6);
+// bst.insert(1);
+// bst.insert(3);
+// bst.insert(5);
+// bst.insert(7);
 
-console.log(bst.search(1))//.to.be.true;
-console.log(bst.search(2))//.to.be.true;
-console.log(bst.search(3))//.to.be.true;
-console.log(bst.search(4))//.to.be.true;
-console.log(bst.search(5))//.to.be.true;
-console.log(bst.search(6))//.to.be.true;
-console.log(bst.search(7))//.to.be.true;
+
 
 module.exports = { BinarySearchTree, TreeNode };

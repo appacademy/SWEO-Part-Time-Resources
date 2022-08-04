@@ -2,7 +2,6 @@ const Stack = require('./utils/stack');
 const bst = require('./utils/bst');
 
 // Code a Depth First Traversal using a Stack
-// please don't copy from aaOpen. Try to do this yourself and think through it.
 
 // our bst looks like this 
 
@@ -18,7 +17,16 @@ const bst = require('./utils/bst');
 // to be 4, 2, 1, 3, 6, 5, 7 -- this is pre-order traversal!
 
 const depthFirstTraversal = (root) => {
-  // our code here
+  const stack = new Stack();
+  stack.push(root);
+
+  while (stack.length > 0){
+    const current = stack.pop();
+    console.log(current.val);
+
+    if (current.right) stack.push(current.right);
+    if (current.left) stack.push(current.left);
+  }
 }
 
 depthFirstTraversal(bst.root);

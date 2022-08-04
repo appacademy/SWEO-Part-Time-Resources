@@ -11,11 +11,22 @@ class TreeNode {
 class BinarySearchTree {
 
   constructor() {
-    // your code here
+    this.root = null;
   }
 
   insert(val, currentNode=this.root) {
-    // your code here
+    if (!this.root) {
+      this.root = new TreeNode(val);
+      return;
+    } 
+
+    if (val < currentNode.val){
+      if (!currentNode.left) currentNode.left = new TreeNode(val);
+      else this.insert(val, currentNode.left);
+    } else {
+      if (!currentNode.right) currentNode.right = new TreeNode(val);
+      else this.insert(val, currentNode.right);
+    }
   }
 }
 
@@ -27,5 +38,6 @@ bst.insert(1);
 bst.insert(3);
 bst.insert(5);
 bst.insert(7);
+// console.log(bst)
 
 module.exports = bst;
