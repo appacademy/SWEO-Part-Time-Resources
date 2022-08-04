@@ -15,7 +15,7 @@
 
 
 
-- <span style="color:#cd1d1d;">**instantiate**</span> (invoking): Class is just a framework (blueprint) until it is **instantiated** (built).
+- <span style="color:#cd1d1d;">**Instantiate**</span> (invoking): Class is just a framework (blueprint) until it is **instantiated** (built).
     - think function declarations vs. function invocations
 
 - <span style="color:#cd1d1d;">**Instance**</span>: Object made from a class. 
