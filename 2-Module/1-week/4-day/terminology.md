@@ -46,7 +46,7 @@
     
     - Inheritance is done through the **`extends`** keyword
 
-- <span style="color:#cd1d1d;">**Static Methods**</span>: A class's **static method**: Invoke it from a **CLASS** & (**they belong to the entire class, not the instance**)
+- <span style="color:#cd1d1d;">**Static Methods**</span>: A **class method**: Invoke it from a **CLASS** & (**they belong to the entire class, not the instance**)
     - Remember `Object.keys(fruitsObj)`?
         - `.keys` is a static method from the `Object` class!
     
