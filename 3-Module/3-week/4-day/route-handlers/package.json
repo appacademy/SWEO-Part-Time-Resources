@@ -1,0 +1,16 @@
+{
+  "name": "route-handlers",
+  "version": "1.0.0",
+  "description": "In this practice, you will be creating route handlers in a server that will return different responses to the client based on a request's method and URL.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dogs": "^0.2.0"
+  }
+}
