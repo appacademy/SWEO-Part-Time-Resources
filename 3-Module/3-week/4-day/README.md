@@ -6,9 +6,11 @@
 - This is important to practice as sometimes the URL might not be given in the user interface or it may not be obvious on the assessment.
 
 ## Guided Practices
-- Writing our first node server
-- Routing for server
-- Working with sending a response
+- Practice: Parse the Request Body Phase 1 & 2
+- Practice: Formulate a Response in http
+- Practice: Create Route Handlers in http
 
 ## Early look at what to expect for the assessment
 - Assessment breakdown
+- Try practice assessment coding portion
+- Walkthrough
