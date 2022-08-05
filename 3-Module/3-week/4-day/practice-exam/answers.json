@@ -1,0 +1,32 @@
+{
+  "1": {
+    "endpoint": "Get all the colors",
+    "request": {
+      "method": "GET",
+      "URL": "/colors",
+      "headers": false,
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type":"text/html"
+      },
+      "statusCode": 200,
+      "body": true
+    }
+  },
+  "2": {
+    "endpoint": "Form submission for adding a color",
+    "request": {
+      "method": "",
+      "URL": "",
+      "headers": null,
+      "body": null
+    },
+    "response": {
+      "headers": null,
+      "statusCode": null,
+      "body": null
+    }
+  }
+}
