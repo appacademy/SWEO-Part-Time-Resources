@@ -41,3 +41,11 @@
   - if UI doesn't exist (since it might not be given in the UI in certain cases):
     - try your best with restful convention to come up with a URL, enter it into the address bar
     - try reading the server file and see which route is the URL we are looking for
+
+
+## Focus Points
+- Practice Assessment (alot less problems than assessment and easier)
+- [Wed HTTP Basics Long Pratice(highly recommend)](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-15---http--rest--and-servers/http-basics-long-practice)
+- [Exercise: HTML Web Server RESTful Endpoints](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-15---http--rest--and-servers/exercise--html-web-server-restful-endpoints)
+- `Code-it-out for day 4: more-restful.md`
+- Readings and Formative Quizzes for MC.
