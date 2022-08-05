@@ -1,81 +1,66 @@
-//   let obj = { person: "Caleb", animal: "elephant" };
-  
-//   let person = obj.person
-//   let animal= obj.animal
-//   console.log(person, animal)
-// let {person, animal} = obj
-// person = 'james thompson'
-//   console.log(person, animal)
-//   console.log(obj)
+// let company = {
+//   name: "Coffee Co.",
+//   product: "coffee",
+//   location: "Seattle",
+//   ceo: {
+//     name: "Jared",
+//     age: 34,
+//   }
+// }
 
-//  let {person: personAlias, animal: animalAlias} = obj
+// // let name = company.name;
+// // let product = company.product;
+// // let location = company.location;
 
-//  console.log(personAlias, animalAlias)
-//  console.log(person)
-//  console.log(obj)
-  
+// let location = "Chicago";
 
-// let arr = ["Rocket League", "James"];
-// //   let game = arr[0]
-// //   let player = arr[1]
-// //   console.log(game, player)
-// let [game, player] = arr;
+// let { product, location: city, name, ceo: { name: ceoName, age } } = company;
 
-// [game, player] = [player, game];
+// console.log(ceoName, age)
 
-// console.log(game)
-// console.log(game)
+// let arr = [1, 2, 3];
 
-//     arr = [player, game]
-//     console.log(game)
+// let [banana, _cat, ant] = [1, 2, 3];
 
-// console.log(game) // 
-// let [game, player] = ['rocket league', 'james']
-// let game = 'Rocket Leageue';
-// let player = 'James';
+// console.log(banana, ant);
 
-// [game, player] = [player, game]
-// console.log(player, game)
+// let mylo = 300;
+// let jm = 1001;
 
-//   let yellEverything = function (str1, ...strings) {
-//     for (let i = 0; i < strings.length; i++) {
-//       strings[i] = strings[i].toUpperCase();
-//     }
-//     return str1 + ' ' +  strings.join(' ');
+// // let temp = mylo;
+// // mylo = jm;
+// // jm = temp;
+
+// console.log(mylo, jm);
+// [mylo, jm] = [jm, mylo];
+// console.log(mylo, jm);
+
+// function sum(message, ...nums) {
+//   console.log(nums);
+//   let sum = 0;
+//   for (let i = 0; i < nums.length; i++) {
+//     let num = nums[i];
+//     sum += num;
+//   }
+//   return message + sum;
+// }
+
+// console.log(sum("This is the sum: ",1,2,3,4,5));
+
+// Spread Operator
+
+// let biff = {
+//   type: "dog",
+//   age: 10,
 // };
 
-// console.log(yellEverything('this', 'funciton', 'is', 'yelling', 'at', 'me'))
+// let buster = { ...biff };
+// buster.age = 0;
 
+// console.log(biff, buster); // Two objs with age 0
+// console.log(biff === buster);
 
 // let arr1 = [1, 2, 3];
 // let arr2 = [4, 5, 6];
-// let arr3 = arr1.concat(arr2)
-// let arr3 = [...arr1, ...arr2]
+// let arr3 = [...arr1, "s", ...arr2, 9, 10, 12];
 // console.log(arr3)
-
-// console.log([...arr1, ...arr2])
-
-//  let obj1 = { person: "Caleb", animal: "elephant" };
-//  let obj2 = {name: 'James', person: 'baseball'}
-
-//  let spreadObj = {...obj1, ...obj2}
-
-//  let arr = [...Object.keys(obj1), ...Object.values(obj2)]
-// //  arr.push(spreadObj)
-
-// console.log(arr)
-
-
-// function adder(num1, ...otherNums) {
-//     console.log("The first number is: " + num1);
-//     let sum = num1;
-  
-//     // captures all other arguments into an array and adds them to our sum
-//     for(let i = 0; i < otherNums.length; i++){
-//         sum += otherNums[i]
-//     }
-  
-//     console.log("The sum is: " + sum);
-//   }
-  
-//   adder(2, 3, 4, 4, 5,6,7,8,9,10);
