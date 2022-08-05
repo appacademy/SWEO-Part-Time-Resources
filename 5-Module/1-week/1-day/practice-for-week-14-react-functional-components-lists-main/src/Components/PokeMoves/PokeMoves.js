@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {moves} from '../../data'
 import PokeMoveCard from '../PokeMoveCard'
 function PokeMoves(){
@@ -19,6 +20,22 @@ function PokeMoves(){
                     )
                 })
             }
+=======
+import { moves } from '../../data'
+import PokeMoveCard from '../PokeMoveCard'
+function PokeMoves() {
+
+    return (
+        <div>
+            <ul>
+                {moves.map(item => {
+                    return (
+                        <PokeMoveCard
+                        {...item}
+                        key={item.id} />
+                    )
+                })}
+>>>>>>> 2022-Jan-E
             </ul>
         </div>
     )

@@ -1,5 +1,9 @@
 import Showcase from './Showcase';
+<<<<<<< HEAD
 import BaseStats from './Components/BaseStats';
+=======
+import BaseStats from './Components/BaseStats/BaseStats';
+>>>>>>> 2022-Jan-E
 import './App.css';
 
 function App() {
@@ -11,7 +15,10 @@ function App() {
     spDef: 65,
     speed: 45,
   };
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2022-Jan-E
   const handleClick = () => {
     alert(
       `Special Stats\n\tSpecial Attack: ${baseStats.spAttack}\n\tSpecial Defense: ${baseStats.spDef}`
@@ -20,11 +27,22 @@ function App() {
   return (
     <div className='main-wrapper background'>
       <Showcase />
+<<<<<<< HEAD
       <BaseStats 
         stats={baseStats}
         click={handleClick}
       />
       
+=======
+      <BaseStats
+        hp={baseStats.hp}
+        attack={baseStats.attack}
+        defense={baseStats.defense}
+        speed={baseStats.speed}
+        clicker={handleClick}
+        
+      />
+>>>>>>> 2022-Jan-E
     </div>
   );
 }

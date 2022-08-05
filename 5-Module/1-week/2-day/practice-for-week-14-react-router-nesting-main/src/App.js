@@ -3,7 +3,6 @@ import Home from './components/Home';
 import Stocks from './components/Stocks';
 import Movies from './components/Movies';
 import {movies} from './data/movieData'
-
 function App() {
   return (
     <div className='main'>
@@ -53,7 +52,7 @@ function App() {
           <Stocks />
         </Route>
         <Route path='/movies'>
-          <Movies
+          <Movies 
           movies={movies}
           />
         </Route>

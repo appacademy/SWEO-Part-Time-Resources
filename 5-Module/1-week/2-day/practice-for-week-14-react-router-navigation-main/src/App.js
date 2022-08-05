@@ -7,6 +7,7 @@ function App() {
   return (
     <div className='main'>
       <h1>App Component</h1>
+<<<<<<< HEAD
       <ul>
         <li>
           <NavLink exact
@@ -28,6 +29,28 @@ function App() {
             to='/stocks'> Stocks</NavLink>
         </li>
       </ul>
+=======
+      <nav className='comp nav'>
+        <ul>
+          <li>
+            <NavLink activeStyle={{
+              backgroundColor: 'green',
+              color: 'white',
+              fontSize: '20px'
+            }} exact to='/'>Home</NavLink>
+
+          </li>
+          <li>
+            <NavLink activeClassName='purple' to='/movies'>Movies</NavLink>
+
+          </li>
+          <li>
+
+            <NavLink activeClassName='purple' to='/stocks'>Stocks</NavLink>
+          </li>
+        </ul>
+      </nav>
+>>>>>>> 2022-Jan-E
       <Switch>
         <Route exact path='/'>
           <Home />

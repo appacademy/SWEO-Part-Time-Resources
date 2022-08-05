@@ -1,6 +1,10 @@
 import Showcase from './Showcase';
 import BaseStats from './BaseStats';
+<<<<<<< HEAD
 import PokeMoves from './Components/PokeMoves';
+=======
+import PokeMoves from './Components/PokeMoves/PokeMoves';
+>>>>>>> 2022-Jan-E
 import './App.css';
 
 function App() {
