@@ -33,6 +33,16 @@
 
 ### [DRY Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/dry-quiz)
 
+### [What is OOP? Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/what-is-oop--quiz)
+
+### [Encapsulation Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/encapsulation-quiz)
+
+### [Class Syntax I Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/class-syntax-i-quiz)
+
 ### [Inheritance Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/inheritance-quiz)
 
 ### [Formative Quiz - Thursday](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/formative-quiz---thursday-)
+
+### [Class Syntax II Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/class-syntax-ii-quiz)
+
+### [Polymorphism Quiz](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-7---oop/polymorphism-quiz)
