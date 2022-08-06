@@ -11,7 +11,7 @@ let object1 = {name: 'Rupert', age: 5, speak: 'Meow'};
 breakDownObj(object1); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
 
 let object2 = {location: 'NY', borough: 'Brooklyn'};
-breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
+breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]//
 ***********************************************************************/
 
 function breakDownObj(obj) {

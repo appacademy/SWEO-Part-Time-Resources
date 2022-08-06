@@ -10,7 +10,7 @@ let obj = {}
 setKeyInObject(obj, "apple", "yum"); // => {apple: "yum"}
 
 let obj1 = {str: "hello"}
-setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}
+setKeyInObject(obj1, "num", 3); // => {str: "hello", num: 3}//
 ***********************************************************************/
 
 function setKeyInObject(obj, string, value) {

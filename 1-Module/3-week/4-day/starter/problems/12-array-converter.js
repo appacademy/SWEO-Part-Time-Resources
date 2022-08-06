@@ -4,7 +4,7 @@ array as an argument and returns an object representing the count of each
 value in the array. **Hint:** don't forget you can check if a key is present
 in an object by using `obj[key] === undefined`.
 
-Examples:
+Examples://
 
 ***********************************************************************/
 

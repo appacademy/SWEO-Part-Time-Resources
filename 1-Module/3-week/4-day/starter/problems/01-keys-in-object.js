@@ -9,7 +9,7 @@ Examples:
 let animals = {dog: 'Wolfie', cat: 'Jet', bison: 'Bilbo'}
 let foods = {apple: 'tart', lemon: 'sour', mango: 'sweet'}
 keysInObject(animals); // => ["dog", "cat", "bison"]
-keysInObject(foods); // => ["apple", "lemon", "mango"]
+keysInObject(foods); // => ["apple", "lemon", "mango"] //
 ***********************************************************************/
 
 function keysInObject(obj) {

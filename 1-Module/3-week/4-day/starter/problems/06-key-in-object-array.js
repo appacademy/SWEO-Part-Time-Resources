@@ -15,7 +15,7 @@ let objArray = [
 keyInObjectArray(objArray, 'planet'); // => true
 keyInObjectArray(objArray, 'age'); // => true
 keyInObjectArray(objArray, 'food'); // => false
-keyInObjectArray(objArray, 'animal'); // => false
+keyInObjectArray(objArray, 'animal'); // => false//
 
 ***********************************************************************/
 

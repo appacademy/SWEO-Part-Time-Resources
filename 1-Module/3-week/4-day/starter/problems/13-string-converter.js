@@ -4,7 +4,7 @@ string as an argument and returns an object representing the count of each
 character in the string. **Hint:** don't forget you can check if a key is present
 in an object by using `obj[key] === undefined`.
 
-Examples:
+Examples://
 
 ***********************************************************************/
 

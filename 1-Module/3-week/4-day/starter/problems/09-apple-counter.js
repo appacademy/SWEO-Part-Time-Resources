@@ -8,7 +8,7 @@ function will be in charge of returning the number of keys that contain the word
 searching.
 
 
-Example:
+Example://
 ***********************************************************************/
 
 function appleCounter(appleObj) {
