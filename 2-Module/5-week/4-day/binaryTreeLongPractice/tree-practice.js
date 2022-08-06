@@ -5,25 +5,26 @@ const { BinarySearchTree, TreeNode } = require('./binary-search-tree.js');
 // Practice problems on binary trees
 
 function findMinBST (current) {
-  if (!current.left) return current.val; // if this is the bottom most node on the left, return its value.
+  if (!current.left) return current.val;
 
-  return findMinBST(current.left); // travel all the way to the bottom left
+  return findMinBST(current.left);
 }
 
 function findMaxBST (current) {
-  if (!current.right) return current.val; // if this is the bottom most node on the right, return its value
+  if (!current.right) return current.val;
 
-  return findMaxBST(current.right) // travel all the way to the bottom right
+  return findMaxBST(current.right);
 }
 
 function findMinBT (current) { // breadth first search
   const queue = [current];
-  let min = current.val; // set min
+  let min = current.val;
 
-  while (queue.length > 0){ // check every val and compare with min
-    let current = queue.shift(); // grab first item in queue
-    if (current.val < min) min = current.val; // if its val is less than min, update min
-    // add all children to the queue
+  while (queue.length > 0){
+    current = queue.shift();
+
+    if (current.val < min) min = current.val;
+
     if (current.left) queue.push(current.left);
     if (current.right) queue.push(current.right);
   }
@@ -31,89 +32,87 @@ function findMinBT (current) { // breadth first search
 }
 
 function findMaxBT (current) { // depth first search
-  let stack = [current]; 
-  let max = current.val // set max
+  const stack = [current];
+  let max = current.val;
 
-  while (stack.length > 0){ // check every val and compare with max
-    let current = stack.pop(); // get the last item added
-    if (current.val > max) max = current.val; // update max if this val is greater
-    // add all of the children to the stack
-    if (current.left) stack.push(current.left); 
-    if (current.right) stack.push(current.right); 
+  while (stack.length > 0){
+    current = stack.pop();
+
+    if (current.val > max) max = current.val;
+
+    if (current.left) stack.push(current.left);
+    if (current.right) stack.push(current.right);
   }
   return max;
 }
 
-findHeight = (current, count = 0) => { // depth first traversal
+function findHeight (current, count = 0){
   if (!current) return count;
 
-  let stack = [current];
+  const stack = [current];
 
-  while (stack.length){
-    let current = stack.pop()
+  while (stack.length > 0){
+    let current = stack.pop();
 
-    if (current.left) {
-      stack.push(current.left);
-    }
-    if (current.right) {
-      stack.push(current.right);
-    }
-    if (current.right || current.left) count++ // if there is an edge (a pointer to another node on either the left or right) increment our count
-  }  
-  return count + 1; // add 1 to account for the rootNode edge not being counted (rootNode.left or rootNode.right)
+    if (current.left) stack.push(current.left);
+    if (current.right) stack.push(current.right);
+
+    if (current.left || current.right) count++;
+  }
+  return count + 1;
 }
 
 function getHeight (rootNode) {
-  // find the height of each subTree of the rootNode
-  let left = findHeight(rootNode.left);
-  let right = findHeight(rootNode.right);
-  
-  // return whichever is greater, that is the height of the tree.
+  const left = findHeight(rootNode.left);
+  const right = findHeight(rootNode.right);
+
   return Math.max(left, right);
 }
 
+function countNodes (current, count = 0) { // depth first traversal
+    const stack = [current];
 
-function countNodes (current) { // breadth first traversal
-  let count = 0;
-  let queue = [current];
+    while (stack.length > 0){
+      current = stack.pop();
 
-  while (queue.length){
-    current = queue.shift();
-
-    if (current.left) queue.push(current.left);
-    if (current.right) queue.push(current.right);
-    count++;
-  }
-  return count;
+      if (current.left) stack.push(current.left);
+      if (current.right) stack.push(current.right);
+      count++;
+    }
+    return count;
 }
 
 function balancedTree (current) {
-  let leftHeight = findHeight(current.left);
-  let rightHeight = findHeight(current.right);
-  
-  return leftHeight === rightHeight;
+  const left = findHeight(current.left);
+  const right = findHeight(current.right);
+
+  return left === right;
 }
 
-function getParentNode (current, target) {
+function getParentNode (current, target) { // breadth first traversal
   if (current.val === target) return null;
-  let stack = [current];
+  
+  const queue = [current];
 
-  while (stack.length){
-    current = stack.pop();
+  while (queue.length > 0){
+    current = queue.shift();
 
-    if (current.left) {
+    if (current.left){
       if (current.left.val === target) return current;
-      else stack.push(current.left)
-    }
-    if (current.right) {
+      else queue.push(current.left);
+    } 
+
+    if (current.right){
       if (current.right.val === target) return current;
-      else stack.push(current.right)
+      else queue.push(current.right);
     }
   }
-  return undefined;
+  return;
 }
 
-function inOrderPredecessor (current, target) {
+function inOrderPredecessor (rootNode, target) {
+  //!!START
+  let current = rootNode;
   let stack = [];
   let predecessor = null;
 
@@ -136,66 +135,81 @@ function inOrderPredecessor (current, target) {
       break;
     }
   }
-}
-
-function findMinNode (current) {
-  if (!current.left) return current; // if this is the bottom most node on the left, return it.
-
-  return findMinNode(current.left); // travel all the way to the bottom left
+  //!!END
 }
 
 
+function deleteNodeBST(rootNode, target) {
+  // Do a traversal to find the node. Keep track of the parent
 
-const determineCase = (node) => {
+  // Undefined if the target cannot be found
+
+  // Set target based on parent
+
+  // Case 0: Zero children and no parent:
+  //   return null
+
   // Case 1: Zero children:
-  // set the parent that points to it to null
-  if (!node.left && !node.right) return null;
+  //   set the parent that points to it to null
 
   // Case 2: Two children:
-  // set the value to its in-order predecessor, then delete the predecessor
-  else if (node.left && node.right){
-    let newNode = findMinNode(node)
-    // console.log(newNode)
-    newNode.right = node.right;
-    return newNode;
+  //   set the value to its in-order predecessor, then delete the predecessor
+
+  // Case 3: One child:
+  //   Make the parent point to the child
+
+  //!!START SILENT
+  // Do a traversal to find the node. Keep track of the parent
+  let parentNode = getParentNode(rootNode, target);
+
+  // Undefined if the target cannot be found
+  if (parentNode === undefined) return undefined;
+
+  // Set target based on parent
+  let targetNode;
+  let isLeftChild = false;
+  if (!parentNode) {
+    targetNode = rootNode;
+  } else if (parentNode.left && parentNode.left.val === target) {
+    targetNode = parentNode.left;
+    isLeftChild = true;
+  } else if (parentNode.right && parentNode.right.val === target) {
+    targetNode = parentNode.right;
+  } else {
+    throw Error("Algorithm Error: This should never happen");
+  }
+
+  // Case 0: Zero children and no parent:
+  //   return null
+  if (!parentNode && !targetNode.left && !targetNode.right) return null;
+
+  // Case 1: Zero children:
+  //   set the parent that points to it to null
+  else if (!targetNode.left && !targetNode.right) {
+    if (isLeftChild) parentNode.left = null;
+    else parentNode.right = null;
+  }
+
+  // Case 2: Two children:
+  //   set the value to its in-order predecessor, then delete the predecessor
+  else if (targetNode.left && targetNode.right) {
+    let predecessor = inOrderPredecessor(rootNode, target);
+    deleteNodeBST(rootNode, predecessor);
+    targetNode.val = predecessor;
   }
 
   // Case 3: One child:
-  // Make the parent point to the child
-  else if (!node.left) return node.right;
-  else return node.left;
-}
-
-function deleteNodeBST(current, target) { // breadth first traversal;
-  // Case 0: Zero children and no parent:
-  //   return null
-  if (!current || (!current.left && !current.right)) return null;
-
-  if (current.val === target){
-    current = determineCase(current)
-    return;
-  }
-
-  let queue = [current];
-
-  while (queue.length){
-    current = queue.shift();
-
-    if (current.left){
-      if (current.left.val === target){
-        current.left = determineCase(current.left);
-        return;
-      } else queue.push(current.left);
-    }
-    if (current.right){
-      if (current.right.val === target){
-        current.right = determineCase(current.right);
-        return;
-      } else queue.push(current.right);
+  //   Make the parent point to the child
+  else {
+    if (targetNode.left) {
+      if (isLeftChild) parentNode.left = targetNode.left;
+      else parentNode.right = targetNode.left;
+    } else {
+      if (isLeftChild) parentNode.left = targetNode.right;
+      else parentNode.right = targetNode.right;
     }
   }
-  // Undefined if the target cannot be found
-  return;
+  //!!END
 }
 
 module.exports = {
