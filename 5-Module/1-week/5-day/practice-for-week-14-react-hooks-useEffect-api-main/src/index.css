@@ -41,3 +41,8 @@ h2.body {
 .serverContainer:last-child {
   margin-bottom: 0;
 }
+
+.news-item{
+  height: 500px;
+  width: 500px;
+}
