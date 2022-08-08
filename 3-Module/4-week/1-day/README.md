@@ -1,10 +1,10 @@
 # W16D1 - Monday
 
 ## Assessment (1h50m)
-- Breakdown:
-  - 9 MC 
-  - 70 Specs
-  - passing score: 63/79
+- Breakdown: 
+  - 9 MC x 4 = 36 points
+  - 70 Specs = 70 points
+  - passing score:  84/106
 
 - **Important**: For the coding portion the last question 10 - "10 - Form submission for deleting a painting" 
   -  `REQUEST header` value is `false`.
