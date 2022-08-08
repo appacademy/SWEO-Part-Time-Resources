@@ -13,7 +13,6 @@
 ```js
 class Test {
   testFunc() {
-    debugger;
     console.log(this);
     console.log(`this is equal to test1: ${this === test1}`);
   }
