@@ -45,3 +45,10 @@ function someFunc() {
 }
 someFunc(); // 
 ```
+
+---
+
+## Context Project Pair Programming
+- If you finish phase 3:
+  - PAUSE
+  - Start on the homework early
