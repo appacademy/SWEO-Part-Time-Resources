@@ -4,6 +4,13 @@
 
 ---
 
+## Context Readings, Quiz (40m)
+  - Context (objectives)
+  - Context (reading)
+  - Context in Regular Functions Quiz (quiz)
+
+---
+
 ## Context
 ### Context refers to the value of `this` within a function and `this` refers to where a function is invoked.
 - If a function is invoked on the object it was created in, its context stays the same
