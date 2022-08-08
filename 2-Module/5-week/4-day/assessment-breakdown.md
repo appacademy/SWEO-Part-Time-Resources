@@ -4,7 +4,7 @@
   
 - Binary search concepts (not just tree, reference day 1)
 - Trees: binary trees, BST
-- Different tree traversals: BFS, DFS (inorder, preorder, postorder), etc.
+- Different tree traversals: BFS, DFS (using a STACK, inorder, preorder, postorder), etc.
   - i.e. given a tree, can you provide the output for if asked for pre-order, etc?
 - Big O and Time complexity of binary tree operations
 - Go Over `tree-terminology.md`

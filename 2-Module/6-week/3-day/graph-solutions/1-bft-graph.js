@@ -16,6 +16,7 @@ function printBreadthFirst(start) {
     while (queue.length > 0) {
         //dequeue the front of q and store it in a variable
         let currentNode = queue.shift();
+        
         //do whatever we need to with the currentNode
         console.log(currentNode);
 

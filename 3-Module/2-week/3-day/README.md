@@ -12,4 +12,5 @@
 - We saw me code out the solution and understood it, but can we confirm that we can do it ourselves?
 
 ## AA Times Project
-- Work on each phase
+- Work on each phase (if you get through phase 1 by the end, you're in good shape)
+- Project is long, but it's a good one to work on our time!!
