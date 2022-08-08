@@ -28,8 +28,8 @@
 
 ### Tips
 - Content-Type
-  - "Content-Type": "text/html"
-  - "Content-Type": "application/x-www-form-urlencoded"
+  - "text/html"
+  - "application/x-www-form-urlencoded"
 
 - to determine the url :
   - if UI exists for the URL: 
