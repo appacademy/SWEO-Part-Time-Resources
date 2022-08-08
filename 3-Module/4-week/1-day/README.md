@@ -7,7 +7,7 @@
   - passing score: 63/79
 
 - **Important**: For the coding portion the last question 10 - "10 - Form submission for deleting a painting" 
-  -  `headers` value is `false`.
+  -  `REQUEST header` value is `false`.
 
 - **Important**: 
   - If you feel that you have the correct answer even after verifying the URL response and request, `then check for typos / syntax errors`
