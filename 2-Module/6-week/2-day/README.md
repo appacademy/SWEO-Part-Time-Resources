@@ -32,6 +32,8 @@ If a is larger than b, it will return a positive value and b will be sorted ahea
 
 Take this example, it will order the nums from lowest to greatest with the even numbers first and the odd numbers last.
 
+> the callback will be called repeatedly until no swaps happen.
+
 ```js
 nums = [9, 8, 7, 6, 5, 4, 3, 2, 1];
 
