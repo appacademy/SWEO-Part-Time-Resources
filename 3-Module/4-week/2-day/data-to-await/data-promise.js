@@ -28,7 +28,7 @@ function fetchData(){
 
 // -------------consuming the promise--------------
 // fetchData() will return a promise. Promise is an object that has a .then method
-// .then will then take the return data of the promise and then we can execute a callback to do what we want with the data
+// .then will then typically take the resolved promise's value (so after it successfully resolves) and then we can execute a callback to do what we want with the data
 
 function puppyFun(){
     fetchData()
