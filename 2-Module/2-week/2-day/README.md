@@ -74,7 +74,7 @@ boundAging(); // prints `Happy birthday! Joe is 25 years old!`
 
 ### Arrow Functions
 
-- Context works differently in arrow functions. Instead of applying the context based on where the code is `called` (`invoked`), the context of an arrow function is based on where the function was `defined`
+- Context based on where the code is `called` (`invoked`), the context of an arrow function is based on where the function was `defined`
 
 ```js
 class Person{
