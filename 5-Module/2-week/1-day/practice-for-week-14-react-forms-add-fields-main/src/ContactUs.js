@@ -16,10 +16,10 @@ function ContactUs() {
     const contactUsInformation = {
       name,
       email,
-      phone,
-      comments,
+      phone: +phone,
+      body: comments,
       phoneType,
-      attending, 
+      attending: attending,
       submittedOn: new Date()
     };
 
@@ -31,7 +31,7 @@ function ContactUs() {
     setName('');
     setEmail('');
     setPhone('');
-    setComments('');
+    setComments('')
     setPhoneType('')
     setAttending('')
   };
@@ -89,16 +89,16 @@ function ContactUs() {
           <option>Mobile</option>
         </select>
         <select
-          name='attending'
+          name='phoneType'
           onChange={e => setAttending(e.target.value)}
           value={attending}
         >
           <option value='' disabled>
-            Select a phone type...
+            Are you attending
           </option>
           <option value={true}>yes</option>
           <option value={false}>no</option>
-        </select>
+          </select>
         <button>Submit</button>
       </form>
     </div>
