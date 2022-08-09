@@ -13,11 +13,7 @@ console.log(result2);   // [ 'RUN!', 'FORREST!' ]
 *******************************************************************************/
 
 let myMap = function (arr, cb) {
-  let newArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(cb(arr[i]));
-  }
-  return newArr;
+
 };
 
 /*******************************************************************************
@@ -40,11 +36,7 @@ console.log(result3); // hi!!!!!
 *******************************************************************************/
 
 let multiMap = function (val, num, cb) {
-  for (let i = 0; i < num; i++) {
-    val = cb(val);
-  }
 
-  return val;
 };
 
 /*******************************************************************************
@@ -77,18 +69,7 @@ console.log(selectiveMap([-10, 4, 7, 6, -2, -9], isPositive, square));
 *******************************************************************************/
 
 let selectiveMap = function (arr, cb1, cb2) {
-  let newArr = [];
 
-  for (let i = 0; i < arr.length; i++) {
-    let el = arr[i];
-    // console.log(cb1(el))
-    if (cb1(el)) {
-      newArr.push(cb2(el));
-    } else {
-      newArr.push(el);
-    }
-  }
-  return newArr;
 };
 
 /*******************************************************************************
@@ -113,15 +94,7 @@ console.log(result3);   // true
 *******************************************************************************/
 
 let mySome = function (array, cb) {
-  let bool = false;
 
-  array.forEach(function (el, i) {
-    if (cb(el, i)) {
-      bool = true;
-    }
-  });
-
-  return bool;
 };
 
 /*******************************************************************************
@@ -157,47 +130,11 @@ console.log(suffixCipher('incremental progress is very instrumental', cipher2));
 // For Each
 
 let suffixCipher = function (sent, obj) {
-  let stringArr = sent.split(' ');
 
-  let finalArr = [];
-
-  stringArr.forEach(function (el) {
-    let modified = false;
-
-    for (let key in obj) {
-      let currFunc = obj[key];
-
-      if (el.endsWith(key)) {
-        // obj[key](el)
-        el = currFunc(el);
-        finalArr.push(el);
-        modified = true;
-      }
-    }
-
-    if (!modified) {
-      finalArr.push(el);
-    }
-  });
-
-  return finalArr.join(' ');
 };
 
 // Map
 
 // let suffixCipherWithMap = function (sent, obj) {
-//   let stringArr = sent.split(' ');
 
-//   return stringArr.map(function (el) {
-//       for (let key in obj) {
-//         let currFunc = obj[key];
-
-//         if (el.endsWith(key)) {
-//           // obj[key](el)
-//           el = currFunc(el);
-//           return el;
-//         }
-//       }
-//       return el;
-//     }).join(' ');
 // };
