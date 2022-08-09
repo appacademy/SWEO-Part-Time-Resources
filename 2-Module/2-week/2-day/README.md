@@ -79,31 +79,25 @@ boundAging(); // prints `Happy birthday! Joe is 25 years old!`
 
 ```js
 class Person{
-	constructor(name, age){
-		this.name = name;
-		this.age = age;
-	}
+  constructor(name, age){
+    this.name = name;
+    this.age = age;
+  };
 
-	showContext(){
-		// console.log(this);
-		// console.log(this.name);
-		// console.log(this.age);
+  showContext(){
+    function declaredFunc(){
+      console.log(this)
+    };
 
-		function declaredFunc(){
-			console.log(this)
-		}
+    declaredFunc(); 
+    
+    const arrowFunc = () => {
+      console.log(this)
+    };
 
-		declaredFunc() //
-
-		// does not have the this keyword
-		// does not have the super keyword
-		const arrowFunc = () => {
-			console.log(this)
-		}
-
-		arrowFunc() //
-	}
-}
+    arrowFunc(); 
+  };
+};
 
 const newPerson = new Person('Alex', 30);
 
