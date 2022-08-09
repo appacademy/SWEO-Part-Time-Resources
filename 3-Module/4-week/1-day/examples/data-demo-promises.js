@@ -3,7 +3,7 @@
 // reading a file from a server,
 // or reading user input since we might not know "when" it will be done.
 
-
+// -------------creating the promise--------------
 function fetchData(){
     return new Promise((resolve, reject)=>{
         // here we are going to emulate the server request however this is not real request
@@ -23,11 +23,12 @@ function fetchData(){
     })
 }
 
+// -------------consuming the promise--------------
 // .then will then take the return data of the promise and then we can execute a callback to do what we want with the data
-console.log(fetchData())
-    // .then((data)=>{
-    //     console.log("pet " + data);
-    //     return data;
-    // }) //we need to pass the data in our callback
-    // .then((data)=>console.log("feed " + data)) 
-    // .catch(err=>console.log("haa sucker we didn't send you data"))
+fetchData()
+    .then((data)=>{
+        console.log("pet " + data);
+        return data;
+    }) //we need to pass the data in our callback
+    .then((data)=>console.log("feed " + data)) 
+    .catch(err=>console.log("haa sucker we didn't send you data"))
