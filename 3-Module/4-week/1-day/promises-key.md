@@ -1,15 +1,18 @@
 # Promises
 - A Promise in JavaScript is a commitment that sometime in the future, our code will get a value from some operation. A Promise at its core is just an OBJECT.
-- Another alternative to handling async operations without dealing with callbacks.
+- Another alternative to handling async operations without dealing with callback nesting (callback hell) to get sync behaviors.
+  - I.e. running another setTimeout only after the first one is executed (requires nesting another setTimeout within the first setTimeout's callback)
 
 ## Promises allow us to
 - promises are really great to handle something that takes really long in the background, 
   - like dowloading a high quality image from a different server,
   - reading a file from a server,
   - or reading user input since we might not know "when" it will be done. 
-- write async code in a sync manner
-- write code that relies on the completion of async code
-  - avoids callback hell
+
+- handle async code and write manageable code that deals with asynchronous operation
+  - write async code in a sync manner
+  - write code that relies on the completion of async code
+    - avoids callback hell
 
 
 ```js
