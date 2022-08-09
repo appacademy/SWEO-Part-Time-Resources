@@ -1,5 +1,6 @@
 # Promises
 - A Promise in JavaScript is a commitment that sometime in the future, our code will get a value from some operation. A Promise at its core is just an OBJECT.
+- Another alternative to handling async operations without dealing with callbacks.
 
 ## Promises allow us to
 - promises are really great to handle something that takes really long in the background, 
