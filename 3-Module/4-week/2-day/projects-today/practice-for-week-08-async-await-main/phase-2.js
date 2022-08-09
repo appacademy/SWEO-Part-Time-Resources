@@ -1,15 +1,20 @@
 function stretch(timeLeft) {
-  // refactor your code from phase 1
-  // Your code here
-  return new Promise((resolve, reject)=>{
-    if(timeLeft < 1000){
-      reject("not enough time to stretch");
-    }
-    else{
+  return new Promise((resolve, reject) => {
+    if (timeLeft < 1000) {
+
+      // if we dont have enough time to complete the action
+      // reject the promise with the reason 
+      reject('you dont have enough time to stretch')
+
+    } else {
+
+      // decrement timeLeft by time it takes to stretch
       timeLeft -= 1000;
-      setTimeout(()=>{
-        console.log("done stretching");
-        // the item inside the resolve is the value of our promise that will be passed on
+
+      setTimeout(() => {
+        console.log('done stretching');
+
+        // promise resolves with updated amount of time left
         resolve(timeLeft)
       }, 1000)
     }
@@ -18,48 +23,55 @@ function stretch(timeLeft) {
 
 
 function runOnTreadmill(timeLeft) {
-  // refactor your code from phase 1
   return new Promise((resolve, reject) => {
     if (timeLeft < 500) {
-      reject('you dont have enough time to run on treadmill');
+      reject('you dont have enough time to run on treadmill')
     } else {
       timeLeft -= 500;
 
       setTimeout(() => {
         console.log('done running on treadmill');
-        resolve(timeLeft);
-      }, 500);
+        resolve(timeLeft)
+      }, 500)
     }
 
-  });
+  })
 }
 
 
 function liftWeights(timeLeft) {
-  // refactor your code from phase 1
   return new Promise((resolve, reject) => {
     if (timeLeft < 2000) {
-      reject('you dont have enough time to lift weights');
+      reject('you dont have enough time to lift weights')
     } else {
       timeLeft -= 2000
 
       setTimeout(() => {
         console.log('done lifting weights');
-        resolve(timeLeft);
-      }, 2000);
+        resolve(timeLeft)
+      }, 2000)
     }
-  });
+  })
 }
 
 
-function workout(totalTime) {
-  // refactor your code from phase 1
-  stretch(totalTime)
-    .then(timeLeftAfterStretch => runOnTreadmill(timeLeftAfterStretch))
-    .then(timeLeftAfterTreadmill => liftWeights(timeLeftAfterTreadmill))
-    .then(res => console.log(`done working out with ${res/1000} seconds left`))
-    .catch(err => console.log(`Error: `, err))
+// refactor this function to handle Promises using async/await instead of
+  // .then and .catch
+async function workout(totalTime) {
+
+  try {
+    const stretchingTime = await stretch(totalTime);
+
+    const runningTime = await runOnTreadmill(stretchingTime);
+  
+    const liftTimeLeft = await liftWeights(runningTime)
+  
+    console.log(`done working out with ${liftTimeLeft/1000} seconds left`);
+  } catch (err) {
+    console.log('Error: ', err);
+  }
 }
+
 
 /* ============================ TEST YOUR CODE ============================
 
@@ -68,7 +80,7 @@ Comment in each invocation of your workout function below and run the file
 */
 
 
-workout(500);
+// workout(500);
   // should print out the following:
     // Error:  you dont have enough time to stretch
 
