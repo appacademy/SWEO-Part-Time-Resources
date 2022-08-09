@@ -6,8 +6,7 @@
 // -------------creating the promise--------------
 function fetchData(){
     return new Promise((resolve, reject)=>{
-        // here we are going to emulate the server request however this is not real request
-        // setTimeout(callback,delay) takes in a cb and delay then executes the cb after the delay has expired
+        // setTimeout(callback,delay) takes in a cb and delay then executes the cb after the delay has expired. We are using setTimeout to emulate a delay when making a request to the server for data.
         setTimeout(()=>{
             const receivedData = true;
             let data = "puppy!";
