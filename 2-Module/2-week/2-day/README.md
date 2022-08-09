@@ -79,39 +79,35 @@ boundAging(); // prints `Happy birthday! Joe is 25 years old!`
 
 ```js
 class Person{
-  constructor(name,age){
-    this.name = name;
-    this.age = age;
-  };
+	constructor(name, age){
+		this.name = name;
+		this.age = age;
+	}
 
-  // to test, copy these functions and paste into the setTimeout in ageUp.
+	showContext(){
+		// console.log(this);
+		// console.log(this.name);
+		// console.log(this.age);
 
-  // function(){
-  //   console.log(`Happy birthday! ${this.name} is ${this.age} years old!`);
-  // }
-  
-  // () => {
-  //   console.log(`Happy birthday! ${this.name} is ${this.age} years old!`);
-  // }
+		function declaredFunc(){
+			console.log(this)
+		}
 
-  ageUp(){
-    this.age++;
-    setTimeout(() => {
-      console.log(`Happy birthday! ${this.name} is ${this.age} years old!`);
-    }, 2500);
-  };
+		declaredFunc() //
+
+		// does not have the this keyword
+		// does not have the super keyword
+		const arrowFunc = () => {
+			console.log(this)
+		}
+
+		arrowFunc() //
+	}
 }
 
-const joe = new Person('Joe', 24);
-// try the function declaration syntax first
-joe.ageUp(); // prints Happy birthday! undefined is undefined years old!
-// the context of this has been lost!
+const newPerson = new Person('Alex', 30);
 
-// try the arrow syntax next
-joe.ageUp(); // prints Happy birthday! Joe is 25 years old!
-// the context is correct because the arrow function was
-// defined in the class itself, so this is referring to the instance
-// at the time the function was defined.
+newPerson.showContext();
 ```
 
 Why not just define all methods with arrows so the context is never lost?
