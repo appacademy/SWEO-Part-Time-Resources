@@ -2,6 +2,10 @@
 
 ## Callbacks Project - Part 1 (60 min)
 
+### If it says "Do not use the built in ___" DON'T USE IT
+
+### If it doesn't say that, USE EVERYTHING!!!
+
 - Make sure to `npm install` before running the test specs
 - Test specs are run with the `mocha` command
 - Problems 1-6
