@@ -9,7 +9,7 @@
 function go(){
     console.log("go");
 }
-go().then(()=>console.log("stop")); 
+go().then(()=>console.log("stop")).catch(()=>console.log("houston we have a problem")); 
 
 // 4) The three state of a promise object: resolved, rejected, pending
 // ------Answer t/f:
