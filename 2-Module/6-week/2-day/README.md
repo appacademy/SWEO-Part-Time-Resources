@@ -18,6 +18,12 @@ JavaScript's sort method sorts numbers in *alphabetical*, **NOT** numerical orde
 function compareNums(a,b){
   return a - b;
 }
+
+nums.sort(compareNums);
+// or
+nums.sort((a, b) => {
+  return a - b;
+});
 ```
 
 If a is larger than b, it will return a positive value and b will be sorted ahead of a. Otherwise it will return a negative number and the values wont be swapped.
