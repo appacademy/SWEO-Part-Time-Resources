@@ -8,7 +8,7 @@
 
 ## Async Await Demo
 - A third way of handling async operations! (it's still working with promises under the hood)
-- Take a look at `data-to-async` folder and look at `data-promise.js`
+- Take a look at `data-to-await` folder and look at `data-promise.js`
 
 ## Practice: async/await
 - Try out this practice on aa-open

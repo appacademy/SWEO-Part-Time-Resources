@@ -8,18 +8,18 @@
 // or reading user input since we might not know "when" it will be done.
 
 // -------------creating the promise--------------
-function fetchData(){
-    return new Promise((resolve, reject)=>{
+function fetchData() {
+    return new Promise((resolve, reject) => {
         // setTimeout(callback,delay) takes in a cb and delay then executes the cb after the delay has expired. We are using setTimeout to emulate a delay when making a request to the server for data.
-        setTimeout(()=>{
+        setTimeout(() => {
             const receivedData = true;
             let data = "puppy!";
-            if(receivedData === true){
+            if (receivedData === true) {
                 // once we receive the data, we will pass it along and this data will be the value of our promise after it exits the "pending state" and goes into the "resolved state"
                 resolve(data);
             }
-            else{
-                const err ="Error 401 was unable to receive the data"
+            else {
+                const err = "Error 401 was unable to receive the data"
                 reject(err)
             }
         }, 3000)
@@ -28,18 +28,29 @@ function fetchData(){
 
 // -------------consuming the promise--------------
 // fetchData() will return a promise. Promise is an object that has a .then method
-// .then will then take the return data of the promise and then we can execute a callback to do what we want with the data
+// .then will then typically take the resolved promise's value (so after it successfully resolves) and then we can execute a callback to do what we want with the data
 
-function puppyFun(){
-    fetchData()
-    .then((data)=>{
+async function puppyFun() {
+
+    try {
+
+        const data = await fetchData(); 
+
+        console.log("hello " + data)
         console.log("pet " + data);
-        return data;
-    }) //we need to pass the data in our callback
-    .then((data)=>console.log("feed " + data)) 
-    .catch(err=>console.log("haa sucker we didn't send you data"))
+        //we need to pass the data in our callback
+        console.log("feed " + data);
+        console.log("last comment")
+    } catch (error) {
 
-    console.log("last comment");
+        console.log("haa sucker we didn't send you data, here is the error: ", error)
+    }
+
+
+
+
+    // return ("hello puppy!")
 }
 
+// console.log(puppyFun()); //what will this return value of the async function be?
 puppyFun();
