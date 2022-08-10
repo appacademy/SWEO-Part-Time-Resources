@@ -10,11 +10,19 @@ Paste your code for fetch requests here once you finish each task.
 fetch("/products")
   .then(res => console.log(res.status));
 
-// using async/await
+// using async/await w/ IIFE
 (async function() {
   const res = await fetch("/products");
   console.log(res.status);
 })();
+
+// async function w/ name
+async function getProducts() {
+  const res = await fetch("/products");
+  console.log(res.status);
+};
+// getProducts(); //run both function and execution of the function in the browser to test
+
 //!!END
 
 
