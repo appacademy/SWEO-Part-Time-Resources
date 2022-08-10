@@ -57,12 +57,12 @@ function liftWeights(timeLeft) {
 
 // refactor this function to handle Promises using async/await instead of
   // .then and .catch
-function workout(totalTime) {
+async function workout(totalTime) {
 
   try {
-    const stretchTimeLeft =  stretch(totalTime);
-    const runTimeLeft =  runOnTreadmill(stretchTimeLeft);
-    const liftTimeLeft =  liftWeights(runTimeLeft);
+    const stretchTimeLeft = await stretch(totalTime);
+    const runTimeLeft = await runOnTreadmill(stretchTimeLeft);
+    const liftTimeLeft = await liftWeights(runTimeLeft);
 
     console.log(`done working out with ${liftTimeLeft/1000} seconds left`);
 
