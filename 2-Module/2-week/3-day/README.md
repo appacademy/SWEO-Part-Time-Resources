@@ -166,6 +166,10 @@ Steps:
     - is a group of tests.
   - `it` block
     - tests a single spec.
+    - 3 A's
+      - Assemble
+      - Act
+      - Assert
   - `expect` is an assertion that defines what we *expect* to happen.
 
 ```js
