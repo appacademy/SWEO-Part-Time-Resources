@@ -1,6 +1,6 @@
 # M1W4D3
 
-## Scope - 1 hour
+## Scope 
 
 ### `Overview`
 

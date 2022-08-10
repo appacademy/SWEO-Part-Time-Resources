@@ -38,10 +38,10 @@ let globalScope = "this is global scope";
 
 // dontUseVar();
 
-const dontUseVar2 = function(){
-  // var test = undefined;
-  console.log(test);
-  let test = "test";
-}
+// const dontUseVar2 = function(){
+//   // var test = undefined;
+//   console.log(test);
+//   var test = "test";
+// }
 
-dontUseVar2();
+// dontUseVar2();
