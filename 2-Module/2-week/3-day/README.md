@@ -161,7 +161,7 @@ Steps:
 
 - Create test folder with spec.js files.
 - Import `Chai` and the module you'll be testing
-- Aetup a test for the basic functionality of your code.
+- Setup a test for the basic functionality of your code.
   - `describe` block
     - is a group of tests.
   - `it` block
