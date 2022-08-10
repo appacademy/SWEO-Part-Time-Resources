@@ -286,27 +286,27 @@ use rest operator to take in any number of callbacks
 *******************************************************************************/
 
 let chainMap = function(val, ...callbacks) {
-  // for(let i = 0; i < callbacks.length; i++){
-  //   let cb = callbacks[i]
-  //   val = cb(val)
-  // }
-  callbacks.forEach(function(cb){
+  for(let i = 0; i < callbacks.length; i++){
+    let cb = callbacks[i]
     val = cb(val)
-  })
+  }
+  // callbacks.forEach(function(cb){
+  //   val = cb(val)
+  // })
   return val
 };
 
-// let add5 = function(n) {
-//     return n + 5;
-// };
+let add5 = function(n) {
+    return n + 5;
+};
 
-// let half = function(n) {
-//     return n / 2;
-// };
+let half = function(n) {
+    return n / 2;
+};
 
-// let square = function(n) {
-//     return n * n;
-// };
+let square = function(n) {
+    return n * n;
+};
 
 // console.log(chainMap(25, add5));                // 30
 // console.log(chainMap(25, add5, half));          // 15
@@ -347,25 +347,25 @@ let exactly = function(arr, num, cb) {
   return count === num
 };
 
-let result1 = exactly([18, 5, 32, 7, 100], 3, function (n) {
-    return n % 2 === 0;
-});
-console.log(result1); // true
+// let result1 = exactly([18, 5, 32, 7, 100], 3, function (n) {
+//     return n % 2 === 0;
+// });
+// console.log(result1); // true
 
-let result2 = exactly([18, 5, 32, 7, 100], 2, function (n) {
-    return n % 2 === 0;
-});
-console.log(result2); // false
+// let result2 = exactly([18, 5, 32, 7, 100], 2, function (n) {
+//     return n % 2 === 0;
+// });
+// console.log(result2); // false
 
-let result3 = exactly(['follow', 'the', 'yellow', 'brick', 'road'], 1, function (str) {
-    return str.includes('x');
-});
-console.log(result3); // false
+// let result3 = exactly(['follow', 'the', 'yellow', 'brick', 'road'], 1, function (str) {
+//     return str.includes('x');
+// });
+// console.log(result3); // false
 
-let result4 = exactly(['follow', 'the', 'yellow', 'brick', 'road'], 0, function (str) {
-    return str.includes('x');
-});
-console.log(result4); // true
+// let result4 = exactly(['follow', 'the', 'yellow', 'brick', 'road'], 0, function (str) {
+//     return str.includes('x');
+// });
+// console.log(result4); // true
 
 /*******************************************************************************
 Write a function `suffixCipher` that accepts a sentence and object as arguments.
