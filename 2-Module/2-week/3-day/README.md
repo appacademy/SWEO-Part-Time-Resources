@@ -160,12 +160,16 @@ The practice of writing tests before writing code is called Test-driven developm
 Steps:
 
 - Create test folder with spec.js files.
-- import `Chai` and the module you'll be testing
-- setup a test for the basic functionality of your code.
+- Import `Chai` and the module you'll be testing
+- Aetup a test for the basic functionality of your code.
   - `describe` block
     - is a group of tests.
   - `it` block
     - tests a single spec.
+    - 3 A's
+      - Arrange
+      - Act
+      - Assert
   - `expect` is an assertion that defines what we *expect* to happen.
 
 ```js
