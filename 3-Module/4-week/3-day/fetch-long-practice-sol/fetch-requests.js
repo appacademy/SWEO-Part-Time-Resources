@@ -26,7 +26,7 @@ async function phase1() {
             },
             body: "name=Caribbean+Delight+Coffee&description=Made+by+Manatee+Coffee&price=11%2E99&categories=grocery"
         }
-        const data = await fetch(url, options);
+        const data = await fetch(url, options); //promise returned by fetch could pontentially fail, this is why we add try/catch (there are many reasons why a request might be unsuccessful)
         return data;
     } catch (error) {
         console.log("Error:", error);
