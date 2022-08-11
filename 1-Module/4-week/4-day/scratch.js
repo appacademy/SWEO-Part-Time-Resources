@@ -29,15 +29,15 @@ Customers would like it if the robots kept track of ALL the names they've spoken
 */
 
 const factory = function (voiceChip) {
-    console.log('Booting up factory...');
-    console.log('Creating a new empty array...');
+    // console.log('Booting up factory...');
+    // console.log('Creating a new empty array...');
     let names = [];
-    console.log('Returning a new robot that says ' + voiceChip + '...');
+    // console.log('Returning a new robot that says ' + voiceChip + '...');
     return function robot(name) {
-        console.log('Booting up ' + voiceChip + ' robot...');
-        console.log('Adding ' + name + ' to names...');
+        // console.log('Booting up ' + voiceChip + ' robot...');
+        // console.log('Adding ' + name + ' to names...');
         names.push(name);
-        console.log('Returning the correct phrase...');
+        // console.log('Returning the correct phrase...');
         return voiceChip + ' ' + names.join(' and ');
     };
 };
@@ -52,23 +52,23 @@ console.log('---Done---');
 console.log('This is the return of byeBot: ', byeBot); // function
 console.log('---Done---');
 
-console.log(hiBot('Mylo'));
-console.log('---Done---');
-console.log(hiBot('JM'));
-console.log('---Done---');
+// console.log(hiBot('Mylo'));
+// console.log('---Done---');
+// console.log(hiBot('JM'));
+// console.log('---Done---');
 
-console.log(byeBot('JM'));
-console.log('---Done---');
-console.log(byeBot('Mylo'));
-console.log('---Done---');
+// console.log(byeBot('JM'));
+// console.log('---Done---');
+// console.log(byeBot('Mylo'));
+// console.log('---Done---');
 
-let str = 'hello';
+// let str = 'hello';
 
-function something(str) {
-    return str;
-}
+// function something(str) {
+//     return str;
+// }
 
-something(str);
+// something(str);
 // First Class Function - A feature of a coding language (JavaScript)
 /* 
 JavaScript functions are first-class function

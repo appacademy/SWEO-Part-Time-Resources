@@ -13,11 +13,11 @@
   const multilineName = name => {
     return 'My name is '+ name;
   };
-  multilineName('Mylo');
+  multilineName('James');
   
   // Single Line
   const returnName = name => 'My name is ' + name;
-  console.log(returnName('JM'));
+  console.log(returnName('Crystal'));
 
   // Anonymous callback
   const arr = [1, 2, 3];
