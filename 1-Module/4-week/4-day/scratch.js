@@ -1,16 +1,24 @@
-// function sum(num1, num2) {
-//     return num1 + num2;
+// let sumFunc = function(arr){
+//     let sum = 0
+//     arr.forEach(function(ele){
+//         sum += ele
+//     })
+//     return sum
 // }
 
-// let sum = (num1, num2) => num1 + num2;
+// const sumArrowFunc = arr => {
+//     let sum = 0
+//     arr.forEach(ele => sum += ele)
+//     return sum
+// }
 
-// console.log(sum(3, 4));
+// console.log(sumFunc([1,2,3,4]))
+// console.log(sumArrowFunc([1,2,3,4]))
 
-// const arr = [1, 2, 3];
 
-// const tripler = (arr) => arr.map((el) => el * 3);
+const tripler = (arr) => arr.map((el) => el * 3);
 
-// console.log(tripler(arr));
+console.log(tripler([1,2,3,4]));
 
 /*
 I want to start a new business that sells robots to people.
@@ -42,15 +50,15 @@ const factory = function (voiceChip) {
     };
 };
 
-const hiBot = factory('Hello');
-console.log('---Done---');
-const byeBot = factory('Goodbye');
-console.log('---Done---');
+// const hiBot = factory('Hello');
+// console.log('---Done---');
+// const byeBot = factory('Goodbye');
+// console.log('---Done---');
 
-console.log('This is the return of hiBot: ', hiBot); // function
-console.log('---Done---');
-console.log('This is the return of byeBot: ', byeBot); // function
-console.log('---Done---');
+// console.log('This is the return of hiBot: ', hiBot); // function
+// console.log('---Done---');
+// console.log('This is the return of byeBot: ', byeBot); // function
+// console.log('---Done---');
 
 // console.log(hiBot('Mylo'));
 // console.log('---Done---');
