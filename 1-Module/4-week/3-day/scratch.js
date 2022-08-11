@@ -352,10 +352,12 @@ the accumulator should be set to the result of the callback.
 
 let mySimpleReduce = function (arr, cb) {
   let accum = arr[0]
-  for(let i = 1; i < arr.length; i++){
-    let ele = arr[i]
-    accum = cb(accum,ele)
-  }
+  // for(let i = 1; i < arr.length; i++){
+  //   let ele = arr[i]
+  //   accum = cb(ele)
+  // }
+  let arrCopy = arr.slice(1)
+  arr.slice(1).forEach(ele => accum = cb(accum, ele))
   return accum
 };
 
