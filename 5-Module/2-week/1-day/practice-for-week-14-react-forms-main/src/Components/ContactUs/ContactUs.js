@@ -1,72 +1,72 @@
-import {useState} from 'react'
+import { useState } from 'react'
 
-function ContactUS(){
-    const [name, setName] =  useState('')
-    const [email, setEmail] =  useState('')
-    const [phone, setPhone] =  useState('')
-    
-    const handleSubmit = async (e) => {
+function ContactUs() {
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+
+const handleNameChange = (e) => {
+    setName(e.target.value)                
+}
+
+
+    const handleSubmit = async(e) => {
         e.preventDefault()
-
         const data = {
-            name, 
+            name,
             email, 
             phone
         }
+        console.log(data)
         // possible actions
-        // const newUser =  await fetch('/some/api/signup', {
-        //     method : 'POSt',
-        //     headers : {
-        //         'Content-Type' : 'application/JSon'
+        // let res = await  fetch('/users/signup', {
+        //     method: 'POST',
+        //     headers:{
+        //         'Content-Type'  : 'application/json'
         //     },
         //     body : JSON.stringify(data)
         // })
-        // let something = await newUser.json()
-        console.log(data)
-        
-        setEmail('')
+        // res = await res.json()
+
         setName('')
+        setEmail('')
         setPhone('')
     }
 
+
+
     return (
         <div>
-      <h2>Contact Us</h2>
-      <form
-      onSubmit={handleSubmit}
-      >
-        <div>
-          <label htmlFor='name'>Name:</label>
-          <input
-          onChange={(e) => {
-            setName(e.target.value)
-            // console.log(e.target.value)
-          }} 
-            value={name}
-          id='name' type='text' />
+            <h2>Contact Us</h2>
+            <form
+            onSubmit={handleSubmit}
+            >
+                <div>
+                    <label htmlFor='name'>Name:</label>
+                    <input
+                    onChange={handleNameChange}
+                    // 
+                    value={name}
+                    id='name' type='text' />
+                </div>
+                <div>
+                    <label htmlFor='email'>Email:</label>
+                    <input
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    id='email' type='text' />
+                </div>
+                <div>
+                    <label htmlFor='phone'>Phone:</label>
+                    <input
+                    value={phone}
+                    onChange={(e) => setPhone(e.target.value)}
+                    id='phone' type='text' />
+                </div>
+                <button>Submit</button>
+            </form>
         </div>
-        <div>
-          <label htmlFor='email'>Email:</label>
-          <input
-          onChange={(e) => {
-            setEmail(e.target.value)
-          }} 
-          value={email}
-          id='email' type='text' />
-        </div>
-        <div>
-          <label htmlFor='phone'>Phone:</label>
-          <input
-          onChange={(e) => {
-            setPhone(e.target.value)
-          }} 
-          value={phone}
-          id='phone' type='text' />
-        </div>
-        <button>Submit</button>
-      </form>
-    </div>
     )
 }
 
-export default ContactUS
+export default ContactUs
