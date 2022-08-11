@@ -35,7 +35,7 @@ async function jsonRquest(){
     }
     const resObj = await fetch(url, options);
 
-    // NOTE IMPORTANT: Server will return JSON data but the fetch will wrap it in a response object. We will need to parse that response object to get our data.
+    // NOTE IMPORTANT: Server will return JSON data but the fetch will wrap it in a response object. We will need to parse that response object `using response.json()` to get our data.
     const data = await resObj.json();
     console.log("our data from the server after parsing it:", data);
     return data;
@@ -43,9 +43,11 @@ async function jsonRquest(){
     // ------------------UNDER THE HOOD--------------
     // 1) we made the request with fetch,  
     // but now we need to handle the response from the server!!!!
-    // 2) fetch: returns a promise with a value of Promise {responseObject}
-    // 3) await will take the VALUE of promise and store in resObj => responseObject
-    // 4) in order to parse the response obj to get our data, we need to use .text or .json, etc. (look up `RESPONSE` on mdn)
-    // 5) .json() method from the response object will take our json data inside of our response and give us the OBJECT DATA.
+    // 2) fetch: returns a promise with a value of a response object, looks something like this: Promise {responseObject}
+    // 3) await will take the VALUE of the promise (responseObject) and store in resObj => responseObject
+    // 4) in order to parse the responseObject to get our data (data is inside response object), we need to use .text or .json, etc. (look up `RESPONSE` on mdn). 
+    // 5) In this case we are using .json because it's in json format and we need to parse it.
+    // 6) await the .json() method since the .json() is in fact asynchronous, so we have to await for it to finish.
+    // 7) after all that we finally have our data!.
 }
 jsonRquest()

@@ -2,9 +2,6 @@
 // 2) Write a function `jsonRequest` Try to see if you can make a FETCH post request to the the url '/' to get your json data.  
 // 3) enter it into the browser's console and see if you can log the data
 
-
-
-
 // --------method 1 with promise chaining--------
 // note: this has already been done, convert this to async await in step two.
 // regular promise chaining
