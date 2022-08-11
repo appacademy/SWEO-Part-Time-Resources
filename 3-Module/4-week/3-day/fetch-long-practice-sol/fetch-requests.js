@@ -13,13 +13,6 @@ fetch("/products", {
     headers: {
         "Content-Type": "application/x-www-form-urlencoded"
     }
-}).then(res => {
-    console.log({
-        status: res.status, // 200
-        contentType: res.headers.get('Content-Type'), // "text/html; charset=utf-8"
-        redirected: res.redirected, // true
-        url: res.url // /products/2
-    });
 });
 // ----------------wrapping fetch request in an async function----------------
 async function phase1() {
@@ -86,7 +79,7 @@ async function phase3() {
                 "Content-Type": "application/x-www-form-urlencoded"
             }
         });
-        
+
         const answers = {
             status: resObjData.status, // 200
             contentType: resObjData.headers.get('Content-Type'), // "text/html; charset=utf-8"
