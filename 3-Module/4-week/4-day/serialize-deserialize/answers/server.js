@@ -16,19 +16,21 @@ const server = http.createServer((req, res) => {
       if (req.headers['content-type'] === "application/json") {
         //----------YOUR CODE HERE-----------:
         //turn the `reqBody` from JSON to data and then log it. Hint: use a JSON method to help ya out
-
+        const data = JSON.parse(reqBody); //extra data from JSON string (parsing it)
+        console.log("request data from client:", data);
       }
     }
 
     const resBody = {
-      "Hello": "World!"
+      "Hello": "World!",
+      "april-cohort": ["very", "cool"]
     };
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'application/json');
     //----------YOUR CODE HERE-----------:
     // use res.write to write a response back to the client with the resBody turned into JSON (what is the opposite of parse).
-
+    res.write(JSON.stringify(resBody))
     return res.end();
 
     // now make a request with postman! You should see your request body logged in the server output if it's json
