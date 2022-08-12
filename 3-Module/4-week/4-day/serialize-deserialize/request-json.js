@@ -19,5 +19,5 @@ fetch("/", {
 // use this mdn if you need reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 // --------method 2: async await--------
 async function jsonRquest(){
-    
+    // YOUR CODE HERE. Use MDN Link above to help you
 }
