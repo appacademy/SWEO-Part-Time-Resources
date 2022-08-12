@@ -1,4 +1,4 @@
-# W16D2 - Tuesday
+# W16D3 - Wed
 
 ## Exploring Promises Long Practice 45m (from tuesday)
 - Work on the [promises long practice](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-16---apis--promises--and-deployment/exploring-promises-long-practice)
