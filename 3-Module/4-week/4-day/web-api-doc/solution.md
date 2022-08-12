@@ -25,5 +25,5 @@
 - Get all the posts of a user
   - `GET /users/:userId/posts`
 - Submit a search on posts
-  - `POST posts/search`, {the content I'm searching for}
-  - `GET posts/search/theContentImSearchingFor`
+  - `POST /posts/search`, {the content I'm searching for}
+  - `GET /posts/search/theContentImSearchingFor`
