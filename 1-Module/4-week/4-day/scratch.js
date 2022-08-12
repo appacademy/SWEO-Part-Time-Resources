@@ -16,9 +16,9 @@
 // console.log(sumArrowFunc([1,2,3,4]))
 
 
-const tripler = (arr) => arr.map((el) => el * 3);
+// const tripler = arr => arr.map((el, i) => (el * 3) + i);
 
-console.log(tripler([1,2,3,4]));
+// console.log(tripler([1,2,3,4]));
 
 /*
 I want to start a new business that sells robots to people.
@@ -36,6 +36,10 @@ Level Four
 Customers would like it if the robots kept track of ALL the names they've spoken to.
 */
 
+
+// const someFunction = (name) => {return name}
+// console.log(someFunction)
+
 const factory = function (voiceChip) {
     // console.log('Booting up factory...');
     // console.log('Creating a new empty array...');
@@ -50,19 +54,19 @@ const factory = function (voiceChip) {
     };
 };
 
-// const hiBot = factory('Hello');
-// console.log('---Done---');
-// const byeBot = factory('Goodbye');
-// console.log('---Done---');
+const hiBot = factory('Hello');
+console.log('---Done---');
+const byeBot = factory('Goodbye');
+console.log('---Done---');
 
-// console.log('This is the return of hiBot: ', hiBot); // function
-// console.log('---Done---');
+console.log('This is the return of hiBot: ', hiBot); // function
+console.log('---Done---');
 // console.log('This is the return of byeBot: ', byeBot); // function
 // console.log('---Done---');
 
-// console.log(hiBot('Mylo'));
+console.log(hiBot('James')); // 
 // console.log('---Done---');
-// console.log(hiBot('JM'));
+// console.log(hiBot('Crystal'));
 // console.log('---Done---');
 
 // console.log(byeBot('JM'));
