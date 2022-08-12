@@ -55,6 +55,13 @@ function islandSize(row, col, graph) {
         stack.push(neighbor);
       }
     }
+    // for (let i = 0; i < currentNeighbors.length; i++){
+    //   let neighbor = currentNeighbors[i];
+    //   if (!visited.has(neighbor.toString())){ 
+    //     visited.add(neighbor.toString());
+    //     stack.push(neighbor);
+    //   }
+    // }
   }
   // return size
   return size;
