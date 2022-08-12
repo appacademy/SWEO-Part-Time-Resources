@@ -4,7 +4,7 @@
 //   [0,1,1,0,1],
 // ]
 
-function getNeighbors(row, col, graph) {
+function getNeighbors(row, col, graph) { 
   let neighbors = [] // create an array to hold locations of neighbors in the matrix
 
   // Check top
