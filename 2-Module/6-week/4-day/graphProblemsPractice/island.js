@@ -49,7 +49,7 @@ function islandSize(row, col, graph) {
     // HINT: This is what your helper function `getNeighbors` is for
     // HINT: Remember, you're storing your visited nodes as strings!
     const currentNeighbors = getNeighbors(currentNode[0], currentNode[1], graph);
-    for (let neighbor of currentNeighbors){ // for..of works for arrays, while for..in works for objects
+    for (let neighbor of currentNeighbors){ // for..of works for arrays, for..in works for objects
       if (!visited.has(neighbor.toString())){ 
         visited.add(neighbor.toString());
         stack.push(neighbor);
@@ -68,10 +68,12 @@ function islandSize(row, col, graph) {
   // Your code here
 }
 
-
-// let arr1 = [1, 1].toString();
-// let arr2 = [1, 1].toString();
-// console.log(arr1)
-// console.log(arr1 === arr2)
+// let arr1 = [1, 1];
+// let arr2 = [1, 1];
+// let arr3 = [1, 1].toString();
+// let arr4 = [1, 1].toString();
+// console.log(arr1 === arr2);
+// console.log(arr3);
+// console.log(arr3 === arr4);
 
 module.exports = [getNeighbors, islandSize];
