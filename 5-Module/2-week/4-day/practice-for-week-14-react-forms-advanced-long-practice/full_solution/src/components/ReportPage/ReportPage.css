@@ -1,0 +1,39 @@
+.report-content {
+  width: 300px;
+  padding: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.sensory-result {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sensory-result:last-child, .answers > *:last-child {
+  margin-bottom: 0;
+}
+
+.answers {
+  margin-top: 20px;
+}
+
+.answers > * {
+  margin-bottom: 30px;
+}
+
+.answer-header {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.answer-response {
+  text-align: center;
+}

@@ -1,0 +1,42 @@
+{
+  "id":3,
+  "code": "aa-bonus",
+  "name": "Bonus Survey",
+  "logo": "images/logo.png",
+  "description": "Likert Questions",
+  "instructions": "Answer the questions to see how they work.",
+  "thankyou": "Thank you for exploring!",
+  "copyright": "&copy; 2020 a/A Forms, Inc. Bonus survey is for illustrative purposes only. All rights reserved.",
+  "questions": [
+    {
+      "stimulus": {
+        "text":"How satisfied are you with..."
+      },
+      "stem": "your job",
+      "type": "likert",
+      "scale": "Satisfaction",
+      "includeNA": false
+    },
+    {
+      "stimulus": {
+        "text": "How confident are you with..."
+      },
+      "stem": "your current survey tool",
+      "type": "likert",
+      "scale": "Confidence",
+      "includeNA": true
+    },
+    {
+      "stem": "How often do you distribute surveys?",
+      "type": "likert",
+      "scale": "Frequency",
+      "includeNA": false
+    },
+    {
+      "stem": "This tool is awesome!",
+      "type": "likert",
+      "scale": "Agreement",
+      "includeNA": false
+    }
+  ]
+}
