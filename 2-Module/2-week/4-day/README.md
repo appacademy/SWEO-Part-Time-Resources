@@ -13,4 +13,7 @@
     - Bind, Call, Apply
     - Arrow Functions
   - Errors
+    - Different types
+    - How to create and throw Error
   - TDD
+    - What, Why, How
