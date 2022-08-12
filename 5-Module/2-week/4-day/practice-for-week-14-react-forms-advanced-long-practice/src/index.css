@@ -1,0 +1,18 @@
+.inventory-question {
+    display: flex;
+    flex-direction: row;
+    margin: 12px;
+    max-width: 512px;
+}
+
+.inventory-prompt {
+    flex: 1 1 100%;
+}
+.inventory-select {
+    flex: 0 0 120px;
+    margin-left: 12px;
+}
+
+.form-buttons {
+    margin: 12px 0;
+}

@@ -1,0 +1,126 @@
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+form h2 {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+form .description {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+form .instructions {
+  background-color: black;
+  color: white;
+  padding: 12px 30px;
+  margin: 0;
+}
+
+form .copyright {
+  padding: 12px 30px;
+  margin: 0;
+  margin-bottom: 20px;
+  color: darkgray;
+}
+
+form .question {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  margin: 10px 0;
+  border-radius: 10px
+}
+
+form .question-header {
+  display: flex;
+  font-size: 1.2rem;
+  margin-bottom: 4px;
+}
+
+form .question.section {
+  padding: 0;
+  background-color: white;
+}
+
+form .question.section .question-header {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  font-size: 24px;
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  align-self: center;
+}
+
+button[type="submit"]:disabled {
+  background-color: darkgray;
+  cursor: default;
+}
+
+hr {
+  width: 100%;
+  margin: 40px 0;
+  border: 3px solid black;
+}
+
+form .narrow {
+  width: 300px;
+  max-width: 100%;
+}
+
+form .moderate {
+  width: 500px;
+  max-width: 100%;
+}
+
+form .wide {
+  width: 600px;
+  max-width: 100%;
+}
+
+form .full {
+  width: 100%;
+  min-width: 100%;
+}
+
+form .error {
+  color: red;
+  font-size: .9rem;
+  height: 15px;
+}
+
+form .optional {
+  color: darkslategrey;
+}
+
+.alert-box {
+  position: fixed;
+  bottom: 20px;
+  right: 0;
+  left: 0;
+}
+
+.thank-you {
+  width: fit-content;
+  min-width: 380px;
+  padding: 20px;
+  background-color: red;
+  color: white;
+  margin: 0 auto;
+  border-radius: 10px;
+}

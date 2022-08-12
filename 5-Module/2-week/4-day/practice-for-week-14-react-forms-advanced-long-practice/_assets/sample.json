@@ -1,0 +1,94 @@
+{
+    "id":1,
+    "code": "sample",
+    "name": "Sample Survey",
+    "description": "For Testing Question Types and Features",
+    "instructions": "Take your time. Look around. See that there are many types of questions. Answer the questions to see how they work.",
+    "thankyou": "Thank you for exploring our amazing features. We look forward to working with you soon!",
+    "copyright": "&copy; 2020 a/A Forms, Inc. Sample survey is for illustrative purposes only. All rights reserved.",
+    "questions": [{
+            "stem": "What is your reason for considering a survey?",
+            "type": "mcq",
+            "includeOther": true,
+            "options": [{
+                    "text": "Employee Engagement",
+                    "label": "",
+                    "value": 1
+                },  
+                {
+                    "text": "Team Dynamics",
+                    "label": "",
+                    "value": 2
+                },
+                {
+                    "text": "Student Safety",
+                    "label": "",
+                    "value": 3
+                },
+                {
+                    "text": "Parent Involvement in Schooling",
+                    "label": "",
+                    "value": 4
+                }
+            ]
+        },
+        {
+            "stem": "Are you planning to use this tool?",
+            "type": "mcq",
+            "options": [{
+                    "text": "Yes",
+                    "label": "",
+                    "value": 1
+                },
+                {
+                    "text": "No",
+                    "label": "",
+                    "value": -1
+                },
+                {
+                    "text": "Don't Know",
+                    "label": "",
+                    "value": 0
+                }
+            ]
+        },
+        {
+            "stem": "Why or Why Not?",
+            "type": "cr",
+            "lines": 3,
+            "size": "moderate",
+            "charlimit": 250,
+            "optional": false,
+            "pagebreak": true
+        },
+        {
+            "type":"section",
+            "title":"Follow Up",
+            "instructions":"Please let us know how to connect with you."
+        },
+        {
+            "stem": "What is your first name?",
+            "type": "cr",
+            "size": "narrow",
+            "lines": 1,
+            "charlimit": 25,
+            "optional": true
+        },
+        {
+            "stem": "What is your email address?",
+            "type": "cr",
+            "size": "wide",
+            "lines": 1,
+            "charlimit": 100,
+            "optional": true
+        },
+        {
+            "stem": "Additional Feedback",
+            "type": "cr",
+            "lines": 25,
+            "size": "full",
+            "charlimit": 500,
+            "optional": true
+        }
+    ]
+}
