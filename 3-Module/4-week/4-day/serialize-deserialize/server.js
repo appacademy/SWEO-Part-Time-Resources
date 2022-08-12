@@ -28,6 +28,7 @@ const server = http.createServer((req, res) => {
     res.setHeader('Content-Type', 'application/json');
     //----------YOUR CODE HERE-----------:
     // use res.write to write a response back to the client with the resBody turned into JSON (what is the opposite of parse).
+    res.write()
 
     return res.end();
 
