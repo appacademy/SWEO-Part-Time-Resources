@@ -2,7 +2,7 @@
 
 ## Solving Matrix `Graph` Problems
 
-**`3 Steps to solving almost any `graph` problem:`**
+**`3 Steps to solving almost any graph problem:`**
 
 1. Identify the type of `graph`
 2. Implement the getNeighbors function
