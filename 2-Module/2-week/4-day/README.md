@@ -5,8 +5,8 @@
 ### Practice Assessment
 ### Week 7 Projects
   - Wed: Manager + Employee Salaries
-  - Thurs: Friendly + Evil Dragons
   - Sat: Adventure Project + Combat
+  - Thurs: Friendly + Evil Dragons
 ### TDD Style Project
 ### Concepts
   - Context
