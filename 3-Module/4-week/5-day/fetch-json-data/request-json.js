@@ -10,7 +10,30 @@
 // use this mdn if you need reference: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
 // -------- async await--------
 async function jsonRquest(){
-    
+
+    const url = "/"
+    //options: method, content-type if we have a body, body
+
+    const bodyObj = {
+        "august": "is cool too"
+    }
+    const options = {
+        // request components will go here
+        method: "POST",
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(bodyObj)
+    } 
+    // the fetch api requires url and options
+    const response = await fetch(url, options);
+
+    // handle the response from fetch api which will return to us a promise with the response obj in it (if it resolved successfully)
+
+    // test what would happen if we didn't await response.json() 
+    const data =  await response.json();
+    console.log(data);
+    return data;
 }
 
 jsonRquest()
