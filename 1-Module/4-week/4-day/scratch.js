@@ -55,17 +55,17 @@ const factory = function (voiceChip) {
 };
 
 const hiBot = factory('Hello');
-console.log('---Done---');
-const byeBot = factory('Goodbye');
-console.log('---Done---');
+// console.log('---Done---');
+// // const byeBot = factory('Goodbye');
+// // console.log('---Done---');
 
 console.log('This is the return of hiBot: ', hiBot); // function
-console.log('---Done---');
-// console.log('This is the return of byeBot: ', byeBot); // function
 // console.log('---Done---');
+// // console.log('This is the return of byeBot: ', byeBot); // function
+// // console.log('---Done---');
 
 console.log(hiBot('James')); // 
-// console.log('---Done---');
+console.log('---Done---');
 // console.log(hiBot('Crystal'));
 // console.log('---Done---');
 
@@ -73,7 +73,13 @@ console.log(hiBot('James')); //
 // console.log('---Done---');
 // console.log(byeBot('Mylo'));
 // console.log('---Done---');
+let helper = (str) => {
+    return str
+}
 
+let helloString = helper('hello')
+
+console.log(helloString)
 // let str = 'hello';
 
 // function something(str) {
