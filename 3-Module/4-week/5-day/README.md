@@ -5,6 +5,7 @@
 - Review the concepts we are struggling & give the practices this week a revisit
 
 ## Fetch API POST Request Review
+- inside `fetch-json-data` try `request-json.js`
 
 ## Practice Assessment (1hr)
 
