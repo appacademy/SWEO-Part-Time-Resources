@@ -17,7 +17,6 @@
 */
 
 const bestStudent = (...args) => {
-    //!!START
     let max = 0;
     let maxStudentName = "";
     for(let student of args) {
@@ -28,7 +27,6 @@ const bestStudent = (...args) => {
     }
 
     return maxStudentName;
-    //!!END
 }
 
 

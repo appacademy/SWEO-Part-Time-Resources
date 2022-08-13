@@ -21,11 +21,9 @@
 */
 
 function dynamicModulus(num) {
-  //!!START
   return (val) => {
     return val % num;
   };
-  //!!END
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
