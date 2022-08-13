@@ -1,6 +1,6 @@
 // 1) run: node server.js
 // 2) Write a function `jsonRequest` Try to see if you can make a POST FETCH request to the the url '/'  
-// 3) your REQUEST BODY should be a json version of: {"april":["is", "cool"]}
+// 3) your REQUEST BODY should be a json version of: {Hello: 'World!', april: 'is cool'}
 // 4) your jsonRquest() should return after logging the data.
 // 5) test by entering your fetch request into the browser's console
 // 6) your BROWSER'S console should output: {Hello: 'World!', april: 'is cool'}
