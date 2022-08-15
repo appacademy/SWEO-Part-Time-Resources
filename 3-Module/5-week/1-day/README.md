@@ -3,12 +3,12 @@
 ## Week 16 Assessment (1h50m)
 - Breakdown:
   - time: 1hr50m
-  - 4 MC x 4pt = 16pts 
+  - 4 MC x 4pt = 16pts
   - code challenge 1 = 6specs x 4pt = 24pts
-  - document Web API = 59 x 1pt = 59pts
+  - document Web API = 63 x 1pt = 59pts
   - Passing Score: 79 / 99
 
-- **Important**: 
+- **Important**:
   - If you feel that you have the correct answer even after verifying the URL response and request, `then check for typos / syntax errors`
 
 
