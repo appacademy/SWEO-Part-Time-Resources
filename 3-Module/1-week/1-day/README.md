@@ -8,25 +8,27 @@
 
 - Passing score **`16/19`**
 
-- **Remember not to spend too much time on one thing, if you get stuck for more than 15m on something move on and finish everything else, then come back to it.**
+---
 
-- **`You have access to the following resources during your test`**
+**Remember not to spend too much time on one thing, if you get stuck for more than 15m on something move on and finish everything else, then come back to it.**
 
-  - `aA open`
-    - including homework
-    - problems you did
-    - REPL (to run code)
-  - `MDN`
-  - `any code you have written` *outside of code from previous assessments*. (**`Practice Assessments are okay to reference!`**)
-  - `US!` (*to clarify and explain question*)
-  - `VSCode`
+**`You have access to the following resources during your test:`**
 
-  You are **not** permitted to use:
+- `aA open`
+  - including homework
+  - problems you did
+  - REPL (to run code)
+- `MDN`
+- `any code you have written` *outside of code from previous assessments*. (**`Practice Assessments are okay to reference!`**)
+- `US!` (*to clarify and explain question*)
+- `VSCode`
 
-  - **`Google`**
-  - **`Notes`**
-  - **`PREVIOUS ASSESSMENTS ARE NOT ALLOWED`**
-  - **`anything not in the listed resources`**
+You are **not** permitted to use:
+
+- **`Google`**
+- **`Notes`**
+- **`PREVIOUS ASSESSMENTS ARE NOT ALLOWED`**
+- **`anything not in the listed resources`**
 
 ### This is the last assessment for Mod 2! You guys have got this! 🙂
 
