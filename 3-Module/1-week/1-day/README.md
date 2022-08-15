@@ -79,7 +79,7 @@ Good design:
 
         <img src='./lecture/sansSerif.png' ref='serif' width='300'>
 
-
+---
 
 ### **`Accessibility`**
 
