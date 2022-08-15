@@ -5,7 +5,7 @@
   - time: 1hr50m
   - 4 MC x 4pt = 16pts
   - code challenge 1 = 6specs x 4pt = 24pts
-  - document Web API = 63 x 1pt = 59pts
+  - document Web API = 63 x 1pt = 63pts
   - Passing Score: 82 / 103
 
 - **Important**:
