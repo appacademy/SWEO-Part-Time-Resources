@@ -108,6 +108,8 @@ You can use this [Accessibility Checker](https://www.accessibilitychecker.org/) 
 
 **You're not expected to be come an accessibility expert here**. Most of the time your company will work with a UI/UX designer that will help with accessibility.
 
+---
+
 ### `Project Time`
 
 [Design Principles](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-13---html-and-css/exercise--design-principles)
