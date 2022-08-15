@@ -64,17 +64,22 @@ Good design:
   - Your colors should be easily distinguishable, even for the color blind. You can use the [color-blindness simulator](https://www.color-blindness.com/coblis-color-blindness-simulator/) to help you decide what colors to use.
 - `Typography`
   - Choosing readable fonts is very important!
-  - Two types of fonts are important:
+  - Two types of fonts:
     - `Serif`
       - Serif's are the small strokes on the ends of letters in fonts like Times New Roman, Palatino, and Georgia.
       - Improve readibility of text blocks, used in newspapers and early books.
       - still used to improve long-form readability.
-      <img src='./lecture/serif.png' ref='serif' width='300'>
+
+        <img src='./lecture/serif.png' ref='serif' width='300'>
+
     - `Sans-serif`
       - These have no serifs. They are minimal and clean, examples include Helvetica, Arial, and Verdana.
       - Ideal for single words or short-form phrases like headlines, icons, and navigation.
       - Usually used with larger text size.
-      <img src='./lecture/sansSerif.png' ref='serif' width='300'>
+
+        <img src='./lecture/sansSerif.png' ref='serif' width='300'>
+
+
 
 ### **`Accessibility`**
 
