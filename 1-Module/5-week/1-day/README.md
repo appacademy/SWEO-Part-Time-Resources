@@ -4,7 +4,7 @@
 
 ```js
 let firstName = "Doctor";
-let lastName = "Who";
+let lastName = "Strange";
 
 let greeting = `Hello, ${firstName} ${lastName}!`;
 

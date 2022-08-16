@@ -1,10 +1,11 @@
-// let firstName = "Doctor";
-// let lastName = "Who";
+let firstName = "Doctor";
+let lastName = "Strange";
 
-// let greeting = `Hello, ${firstName} ${lastName}!`;
+let greeting = `hello, ${firstName} ${lastName}`
+// const oldWay = 'hello, ' + firstName + ' ' + lastName
 
-// let greeting = "Hello, " + firstName + " " + lastName + "!"
-// console.log(greeting);
+const greetingFunc = str => str
 
-// let sentence = `5 + 5 = ${5 + 5}`;
-// console.log(sentence);
+const newGreeting = `${greeting} my name is ${greetingFunc('james')}`
+
+console.log(newGreeting)
