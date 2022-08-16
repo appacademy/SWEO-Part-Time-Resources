@@ -258,6 +258,23 @@ Now let's take a look at this function! We are no longer creating a new array in
 
 If space is an issue, this may be the way to go when you are dealing with large data sets, However if you want to keep a clean copy of the original array, you will need to sacrifice space complexity and go with the first option.
 
+- Some questions to start us off...
+  - Why can't we effectively use 'time' to test the efficiency of our code?
+    - answer
+  - What is Big-O notation concerned with?
+    - Best, average or worst case?
+      - answer
+    - Specific tests run or general trend of many tests run?
+      - answer
+    - Tests with similar sizes, or tests with different sizes?
+      - answer
+    - What are the three complexities we read about?
+      - answer
+      - answer
+      - answer
+    - So... what is Big-O?
+      - answer
+
 ## Project Time
 
 - [Timing Benchmarks Part 1](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-9---big-o/timing-benchmarks-practice-part-1)(20m)
