@@ -94,8 +94,8 @@ Helper Pseudocode:
 
 ### `Quick Sort`
 
-- Time Complexity: `O(n log n)`
-- Space Complexity: `O(n)` if recursive, `O(1)` if iterative
+- Time Complexity: average `O(n log n)` worst case `O(n^2)`
+- Space Complexity: `O(n log n)` if recursive, `O(1)` if done in-place iteratively.
 
 **Quick Sort** is a divide and conquer algorithm. It works by choosing a 'pivot' element and if using an out-of-place solution creating a left and right array. All elements less than the pivot are put in the left array, and all elements greater than the pivot are put in the right array. Then the two arrays are merged together with the pivot in the middle. Can be optimized using in-place solutions.
 
