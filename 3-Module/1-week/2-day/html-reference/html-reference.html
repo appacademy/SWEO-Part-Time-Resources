@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Hovering over things will give you more information about what that thing is used for. -->
+<!-- The information in your head will not show on the page, this is for extra info only. -->
+<head>
+    <!-- -------------Header and Document Metadata!----------------- -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css-scratch.css">
+</head>
+
+<!-- the items in your body are what will actually go on the page. -->
+<body>
+    <!-- -------------Headings & Divs!----------------- -->
+    <h1 class="header">My HTML Cheat Sheet</h1>
+    <h2>Heading h2</h2>
+    <div class="item1"> From Div!!!!!!!!</div>
+    <!-- -------------paragraph text----------------- -->
+    <h2>Paragraphs</h2>
+    <p>
+        Paragraphs of text go in `p` tags.
+    </p>
+    <!-- ------------type of lists------------------ -->
+    <h2>Lists</h2>
+    <h3>Unordered Lists</h3>
+    <p>
+        Unordered lists are marked with bullet points and go in `ul` tags. Each list item goes in an `li` tag.
+    </p>
+    <ul>
+        <li>Unordered lists (`ul`)</li>
+        <li>Ordered lists (`ol`)</li>
+    </ul>
+
+    <h3>Ordered Lists</h3>
+    <p>
+        Ordered lists are numbered and go in `ol` tags. Each list item goes in an `li` tag.
+    </p>
+    <h4>Polya's Problem Solving Framework</h4>
+    <ol>
+        <li>Understand the problem</li>
+        <li>Come up with a plan</li>
+        <li>Carry out the plan</li>
+        <li>Go back and improve your solution</li>
+    </ol>
+    <!-- --------------anchor links---------------- -->
+    <h2>Anchors (i.e. links)</h2>
+    <p>
+        Anchor tags create links to other pages. The URL goes in the `href` attribute.
+        <a href="https://duckduckgo.com"> Go to DuckDuckGo to search for more information.</a>
+    </p>
+    <p>
+        Setting `target="_blank"` will open the link in a new window. See
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">
+            MDN
+        </a>
+        for more details.
+    </p>
+    <!-- -------------images----------------- -->
+    <h2>Images</h2>
+    <p>
+        You can use the img tag to add images to your page.
+        <img src="../lecture/wireframe.png" alt="wireframe" width="200">
+        <!-- It is also important for accessibility reasons to use the alt attribute. Visually impaired internet users may browse the web with assistance of a screen reader. These will read the alt text aloud to the user, allowing them to understand the image without seeing it. -->
+    </p>
+    <!-- -------------Tables----------------- -->
+    <table>
+        <!-- -------------headers----------------- -->
+        <thead>
+            <!--table row -->
+            <tr>
+                <!-- table headers -->
+                <th scope="col">Insect</th>
+                <th scope="col">Family</th>
+                <th scope="col">Fact</th>
+            </tr>
+        </thead>
+        <!-- -------------body----------------- -->
+        <tbody>
+            <!-- table row -->
+            <tr>
+                <th scope="row">Ladybug</th>
+                <!-- table data -->
+                <td>Coccinellidae</td>
+                <td>Can eat more than 5,000 insects!</td>
+            </tr>
+            <tr>
+                <th scope="row">Fruit flies</th>
+                <td>Drosophilidae</td>
+                <td>First living creatures in outer space!</td>
+            </tr>
+            <tr>
+                <th scope="row">Caterpillars</th>
+                <td>Heterobathmiidae</td>
+                <td>Have 12 eyes!</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>I had no ideas!</td>
+                <td>Those are neat!</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
