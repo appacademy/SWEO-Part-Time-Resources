@@ -258,7 +258,7 @@ Now let's take a look at this function! We are no longer creating a new array in
 
 If space is an issue, this may be the way to go when you are dealing with large data sets, However if you want to keep a clean copy of the original array, you will need to sacrifice space complexity and go with the first option.
 
-- Some questions to start us off...
+- Some questions...
   - Why can't we effectively use 'time' to test the efficiency of our code?
     - answer
   - What is Big-O notation concerned with?
