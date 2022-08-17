@@ -45,7 +45,12 @@ We also have the logical XOR (`^`) operator, which is the exclusive OR operator.
 
 ### Base-10 Decimal
 
-This is how we all learn to count. The 'base' refers to how many digits there are in the counting system: 0-9 in this case. once you get to the last digit, you increment the number on the left by 1 and start over.
+You learned to count in a base 10 system. All numbers are based on a 0-9
+counting pattern.
+0, 1, 2, 3, 4, 5, 6, 7, 8, 9....
+
+- when you get to the last digit, you simply increase the number to the left and
+ start over from 0
 
 ```js
 00
@@ -65,7 +70,10 @@ This is how we all learn to count. The 'base' refers to how many digits there ar
 
 ### Base-2 Binary
 
-Binary is another word for base-2. In this base, there are only 2 digits (0 and 1). In order to count in Binary we do the following:
+- 2 Key points:
+  - binary is all 0s and 1s
+  - binary digits are called bits
+    - a group of 8 bits is a byte
 
 ```js
   B   D
@@ -80,7 +88,10 @@ Binary is another word for base-2. In this base, there are only 2 digits (0 and 
 1000 (8)
 ```
 
-We use the same method of starting with the number on the far right and incrementing the number on the left once we get to 1 for the next number, then doing it over and over again. To prevent confusion we usually write Binary numbers prefixed with 0b, so 8 in binary would be written as 0b1000.
+- The pattern is: 0 and 1 are the same a base 10, but then you run out of digits.
+  - The right most digit returns to 0 and the digit to the left increments by 1
+- '0b' prefix identifies string/num as binary:  0b0100 -> 4
+- Avoids confusion, 8 -> 0b1000 to differentiate from base 10 number 1000
 
 ### Translating from binary to decimal
 
