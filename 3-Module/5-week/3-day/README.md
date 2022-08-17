@@ -1,6 +1,10 @@
 # W17D3 - Wednesday
 ## Learning Boost
 
+## Useful Resource
+- [MDN Document API (Particularly the "Methods" section)](https://developer.mozilla.org/en-US/docs/Web/API/Document)
+- [HTMLElement.style](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/style)
+
 ## Exercise: NodeList vs. HTMLCollection
 
 ## Practice: Element Selection
