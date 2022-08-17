@@ -1,0 +1,61 @@
+#nav{
+  height: 50px;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link{
+  font-size: x-large;
+  font-weight: 700;
+}
+
+#top{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+#right-btn_container{
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-btn{
+  background: none;
+  font-size: large;
+}
+
+.signin{
+  border: none;
+
+}
+
+h1{
+  border: 3px solid black;
+}
+
+p{
+  border: 1px solid black;
+}
+
+h2{
+  padding-left: 10px;
+}
+
+footer{
+  border-top: 3px solid black;
+  padding: 10px;
+}
+
+.footer-btn{
+  background: none;
+  border: none;
+}
+
+.home{
+  border: 1px solid black;
+}
