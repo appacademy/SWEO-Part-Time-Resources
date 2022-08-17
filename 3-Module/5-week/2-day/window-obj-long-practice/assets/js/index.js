@@ -1,10 +1,7 @@
 // Phase 1:
 console.log("hello world");
-import {
-    changeTitle,
-    changeHeader,
-    changeAboutMe
-} from './manipulate.js';
+import { changeTitle, changeHeader, changeAboutMe} from './manipulate.js';
+
 import {
     findElementById,
     findFirstElementOfTag,
