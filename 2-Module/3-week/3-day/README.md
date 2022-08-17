@@ -172,12 +172,12 @@ Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 #### Recall from grade school
 
 ```
-kilo - thousand
-mega - million
-giga - billion
-tera - trillion
-peta - quadrillion
-exa - quintillion
+kilo  - thousand
+mega  - million
+giga  - billion
+tera  - trillion
+peta  - quadrillion
+exa   - quintillion
 zetta - sextillion
 yotta - septillion
 ```
