@@ -1,0 +1,5 @@
+/* your code here */
+/* just the direct child, not its grandchild, great great grandchild, etc. */
+.active > h2 {
+    color: purple;
+}
