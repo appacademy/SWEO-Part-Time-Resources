@@ -28,6 +28,8 @@
   - **`PREVIOUS ASSESSMENTS ARE NOT ALLOWED`**
   - **`anything not in the listed resources`**
 
+> **Please delete your node modules before you submit, and don't forget to rename your test file to begin with your name. Thank you!**
+
 ### This is the last assessment for Mod 2! You guys have got this! 🙂
 
 ---
