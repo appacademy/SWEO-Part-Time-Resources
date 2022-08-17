@@ -97,8 +97,8 @@ Webpages are comprised of **3 major components**.
 
 Wireframes are a rough representation of the layout of a web page.
 
-<img src="./lecture/pics/wireframe2.png" ref="wireframe" width="500">
-<img src="./lecture/pics/wireframe.png" ref="wireframe" width="500">
+<img src="./lecture/pics/wireframe2.png" ref="wireframe" width="400">
+<img src="./lecture/pics/wireframe.png" ref="wireframe" width="400">
 
 - to see an example of the `HTML` for this wireframe, see the `profile.html` file in the lecture folder.
 
@@ -111,6 +111,8 @@ When looking at a wireframe, you'll determine the `elements` needed to create it
 - `Classes` are used to style `elements`. In the `profile.html` example we have a `ul` `element` with many `li` `elements` nested inside of it. We can style all of the `li` `elements` with one CSS rule if they all have the same `class` name.
 
 ## `Project Time`
+
+You might want to use this [list of HTML elements](https://developer.mozilla.org/en-US/docs/Web/HTML/Element) as a reference when doing this project.
 
 [HTML from Wireframes](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-13---html-and-css/html-from-wireframes-long-practice) (2h)
 
