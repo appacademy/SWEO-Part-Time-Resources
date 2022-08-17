@@ -1,0 +1,29 @@
+/* UNCOMMENT EACH PROPERTY (ctrl/cmd + /) , ONE AT A TIME, BUT MORE IMPORTANTLY: ANALYZE WHAT IS HAPPENING EACH STEP! */
+
+/* Type / tag selector */
+div {
+    /* background-color: #000000; */
+}
+
+/* Class selector */
+.active {
+    /* background-color: rgb(255, 255, 255); */
+}
+/* .active {
+    background-color: red;
+} */
+
+/* ID selector */
+#list-1 {
+    /* border: 1px solid gray; */
+}
+
+/* Universal selector */
+* {
+    /* font-family: sans-serif; */
+}
+
+/* Attribute selector */
+a[title] {
+    /* font-size: 2em; */
+}

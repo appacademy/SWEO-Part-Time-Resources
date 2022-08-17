@@ -1,0 +1,37 @@
+/* UNCOMMENT EACH PROPERTY (ctrl/cmd + /) , ONE AT A TIME, BUT MORE IMPORTANTLY: ANALYZE WHAT IS HAPPENING EACH STEP! */
+
+/* Type / tag selector */
+div {
+    background-color: #000000;
+}
+
+/* Class selector */
+.active {
+    background-color: rgb(255, 255, 255);
+}
+
+/* .active {
+    background-color: red;
+} */
+
+/* ID selector */
+#list-1 {
+    /* border: 1px solid gray; */
+
+    /* above is the shorthand way of applying these three properties below */
+    border-color: rgb(255, 0, 0);
+    border-width: 1px;
+    border-style: solid;
+}
+
+/* Universal selector */
+* {
+    font-family: sans-serif;
+}
+
+/* Attribute selector */
+a[title] {
+    /* font-size: 2em;  */
+
+    /* 2em --> em is a relative unit of measurement that will take 2x the parent's (li is the parent) font-size (li default font size is 16px) */
+}
