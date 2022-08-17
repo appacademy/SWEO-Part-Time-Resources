@@ -49,7 +49,7 @@ The rules of priority are:
 - if above equal, whichever has the most `tags` (`a`, `div`, `h1`, etc.) wins.
 - if above equal, whichever is added last in the file wins.
 
-> **Inline styling is bad practice and should be avo`id`ed.**
+> **Inline styling is bad practice and should be avoided.**
 
 Here are some examples and how they would be applied.
 
