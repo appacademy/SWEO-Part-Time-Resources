@@ -101,14 +101,14 @@ is its position _starting from the right_. Then, add all of the results together
 To convert 0b11001010 to decimal, remember the base is 2:
 
 ```
-2^0 *0 = 0
-2^1* 1 = 2
-2^2 *0 = 0
-2^3* 1 = 8
-2^4 *0 = 0
-2^5* 0 = 0
-2^6 *1 = 64
-2^7* 1 = 128
+2^0 * 0 = 0
+2^1 * 1 = 2
+2^2 * 0 = 0
+2^3 * 1 = 8
+2^4 * 0 = 0
+2^5 * 0 = 0
+2^6 * 1 = 64
+2^7 * 1 = 128
 ```
 
 Add all of those sums together to get 2 + 8 + 64 + 128 = 202
