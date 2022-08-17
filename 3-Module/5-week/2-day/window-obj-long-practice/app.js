@@ -36,6 +36,8 @@ const server = http.createServer((req, res) => {
   
     if (req.method === "GET" && ext) {
       try {
+        console.log("--------------req url:", req.url);
+        //go get the file from where it's located
         const resBody = readFileSync('.' +  req.url);
         res.statusCode = 200;
         if (ext === ".jpg" || ext === ".jpeg") {
