@@ -165,6 +165,25 @@ Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 
 ---
 
+### Bytes, kilobytes, megabytes, gigabytes, terabytes
+
+1 byte = 8 bits
+
+#### Recall from grade school
+
+```
+kilo - thousand
+mega - million
+giga - billion
+tera - trillion
+peta - quadrillion
+exa - quintillion
+zetta - sextillion
+yotta - septillion
+```
+
+---
+
 ### Letters in Binary
 
 <img src='https://i.ibb.co/PGySkMS/ASCIITable.png' ref ='letters in binary' width='600'>
