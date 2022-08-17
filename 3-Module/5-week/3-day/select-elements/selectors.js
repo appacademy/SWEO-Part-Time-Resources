@@ -4,9 +4,9 @@ const select = () => {
 
     console.log('------------- Section 1 -------------');
     // 1. Get all seeded fruit elements
-    const seeded = document.getElementsByClassName("seed"); //returns HTML Collection, need to convert into an array to use array methods
-    // const seeded = document.querySelectorAll(".seed"); //return a NodeList, need to convert into an array to use array methods
-    [...seeded].forEach((el)=>console.log(el))
+    // const seeded = document.getElementsByClassName("seed"); //returns HTML Collection, need to convert into an array to use array methods
+    const seeded = document.querySelectorAll(".seed"); //return a NodeList, need to convert into an array to use array methods
+    seeded.forEach((el)=>console.log(el))
     console.log({ seeded });
 
     
@@ -23,7 +23,7 @@ const select = () => {
 
     console.log('------------- Section 2 -------------');
     // 4. Get inner span with text "you"
-    // note that since getElementsByTagName returns an HTML collection, we can use array methods like .filter, .amp on it. NodeLists cannot use these array methods.
+    // note that we need to convert to an array first before we can use array methods
     const you = Array.from(document.getElementsByTagName("span"))
         .filter(span => span.innerText === 'you');
     console.log({ you });
