@@ -70,7 +70,7 @@ counting pattern.
 
 ### Base-2 Binary
 
-- 2 Key points:
+2 Key points:
   - binary is all 0s and 1s
   - binary digits are called bits
     - a group of 8 bits is a byte
@@ -95,15 +95,33 @@ counting pattern.
 
 ### Translating from binary to decimal
 
-To translate a binary number to decimal you multiply each digit by the number base raised to the nth power, then add all of the results together. You have to start with the rightmost number, which will be at position 0 (n) and work your way to the left.
+Formula: Multiply each digit by the number base raised to the nth power, where n
+is its position _starting from the right_. Then, add all of the results together.
 
-You can `console.log(0b11001010)` to see the binary number in decimal. Below is a function that will translate it as well. I feel like seeing it this way helped me understand the math.
+To convert 0b11001010 to decimal, remember the base is 2:
+
+```
+2^0 *0 = 0
+2^1* 1 = 2
+2^2 *0 = 0
+2^3* 1 = 8
+2^4 *0 = 0
+2^5* 0 = 0
+2^6 *1 = 64
+2^7* 1 = 128
+```
+
+Add all of those sums together to get 2 + 8 + 64 + 128 = 202
 
 ### Hexadecimal
 
-The third common number base in CS is base-16, or hexadecimal. The digits are 0-9 and A-F which represents 10-15. The numbers are prepended with an 0x to differentiate them as base-16.
+Counting follows this pattern:
+The digits are 0-9 with A, B, C, D, E and F representing 10, 11, 12, 13, 14 and
+15, respectively. Hexadecimal numbers (sometimes called 'hex' for short) are
+prepended with an '0x' to differentiate them as base-16.
 
-- Often used as shorthand for binary, one hex digit can represent 4 bits.
+- Hexadecimal is often used as shorthand for representing binary values:
+  - one hex digit can represent four bits.
 
 ```js
  D     B       H
@@ -126,6 +144,26 @@ The third common number base in CS is base-16, or hexadecimal. The digits are 0-
 ```
 
 You can use the same formula to translate to decimal from hexadecimal, but you'll use 16 as your base instead of 2.
+
+To convert 0xA1:
+```
+16^0 *1      =   1 *  1  = 1
+16^1 *A (10) =   16 * 10 = 160
+```
+
+160 + 1 = 161
+
+To convert the hex number 0xF23C:
+```
+16^0 *C =    1 * 12 = 12
+16^1 *3 =   16 *  3 = 48
+16^2 *2 =  256 *  2 = 512
+16^3 *F = 4096 * 15 = 61440
+```
+
+Add the sums together to get 61440 + 512 + 48 + 12 = 62012
+
+---
 
 ### Letters in Binary
 
