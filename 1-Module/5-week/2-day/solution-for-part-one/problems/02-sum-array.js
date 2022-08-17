@@ -12,6 +12,9 @@ sumArray([1, 2, 3, 4, 5]); // 15
 
 function sumArray(arr) {
   // Your code here
+  if(!arr.length) return 0
+  let lastEle = arr.pop()
+  return lastEle + sumArray(arr)
 }
   
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
