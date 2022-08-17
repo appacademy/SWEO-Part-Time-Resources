@@ -4,8 +4,9 @@ const select = () => {
 
     console.log('------------- Section 1 -------------');
     // 1. Get all seeded fruit elements
-    const seeded = document.getElementsByClassName("seed");
-    // const seeded = document.querySelectorAll(".seed");
+    const seeded = document.getElementsByClassName("seed"); //returns HTML Collection, can use array methods with this
+    // const seeded = document.querySelectorAll(".seed"); //return a NodeList and we cannot use every array method with this
+    [...seeded].forEach((el)=>console.log(el))
     console.log({ seeded });
 
     
