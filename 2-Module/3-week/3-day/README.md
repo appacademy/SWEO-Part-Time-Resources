@@ -69,7 +69,7 @@ Binary is another word for base-2. In this base, there are only 2 digits (0 and 
 
 ```js
   B   D
-0000 (0) = 1 bit
+0000 (0)
 0001 (1)
 0010 (2)
 0011 (3)
@@ -77,7 +77,7 @@ Binary is another word for base-2. In this base, there are only 2 digits (0 and 
 0101 (5)
 0110 (6)
 0111 (7)
-1000 (8) = 1 byte
+1000 (8)
 ```
 
 We use the same method of starting with the number on the far right and incrementing the number on the left once we get to 1 for the next number, then doing it over and over again. To prevent confusion we usually write Binary numbers prefixed with 0b, so 8 in binary would be written as 0b1000.
