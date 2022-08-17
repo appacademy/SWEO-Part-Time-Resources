@@ -1,6 +1,8 @@
-# M2W3D3
+# Binary Logic
 
-## Binary Logic
+## Learning Boost (5m)
+
+## Lecture (15m)
 
 <img src="https://i.ibb.co/sPqcd8D/control-Flow-Input-CPURAMOutput.png" ref='flow' width="500" />
 
