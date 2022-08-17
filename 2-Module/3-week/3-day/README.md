@@ -88,18 +88,6 @@ To translate a binary number to decimal you multiply each digit by the number ba
 
 You can `console.log(0b11001010)` to see the binary number in decimal. Below is a function that will translate it as well. I feel like seeing it this way helped me understand the math.
 
-```js
-const binaryToDecimal = (ob) => {
-  const revOb = ob.toString().split('').reverse();
-  const products = revOb.map((num, i) => {
-    return Math.pow(2, i) * num;
-  });
-  const sum = products.reduce((acc, num)=> acc += num)
-  return sum;
-}
-console.log(binaryToDecimal(11001010)) // 202
-```
-
 ### Hexadecimal
 
 The third common number base in CS is base-16, or hexadecimal. The digits are 0-9 and A-F which represents 10-15. The numbers are prepended with an 0x to differentiate them as base-16.
@@ -128,41 +116,12 @@ The third common number base in CS is base-16, or hexadecimal. The digits are 0-
 
 You can use the same formula to translate to decimal from hexadecimal, but you'll use 16 as your base instead of 2.
 
-```js
-const determineNum = (hexNum) => {
-  const nums = {
-    'A': 10,
-    'B': 11,
-    'C': 12,
-    'D': 13,
-    'E': 14,
-    'F': 15,
-  }
-  return hexNum in nums ? nums[hexNum] : hexNum;
-}
-const hexToDecimal = (hex) => {
-  const revHex = hex.split('').reverse();
-  const products = revHex.map((num, i) => {
-    return Math.pow(16, i) * determineNum(num);
-  });
-  
-  const sum = products.reduce((acc, num)=> acc += num)
-  
-  return sum;
-}
-console.log(hexToDecimal('F23C')) // 62012
-```
-
 ### Letters in Binary
 
 <img src='https://i.ibb.co/PGySkMS/ASCIITable.png' ref ='letters in binary' width='600'>
 
 ## Project time (until EOD)
 
-[JavaScript Arrays Big-O Project](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-9---big-o/javascript-arrays-big-o-project)
+[JavaScript Arrays Big-O Project](https://open.appacademy.io/learn/js-py---pt-jun-2022-online/week-9---big-o/javascript-arrays-big-o-project)
 
 - If you finish the project, please do your Formative Quiz and get started on your homework.
-
-## EOD (30m before class ends)
-
-- Walkthru of the project
