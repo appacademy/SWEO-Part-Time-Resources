@@ -43,7 +43,7 @@ div {
 
 The rules of priority are:
 
-- inline writes over everything... but we rarely want this. Avo`id` this.
+- inline writes over everything... but we rarely want this. Avoid this.
 - whichever has the most `IDs`, wins.
 - if above equal, whichever has the most `classes`, `pseudo-classes`, and `attributes` wins.
 - if above equal, whichever has the most `tags` (`a`, `div`, `h1`, etc.) wins.
