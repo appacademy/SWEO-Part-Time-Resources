@@ -11,3 +11,8 @@
 - second do: `inner-html.js`
 
 ## Element Manipulation Long Practice
+- result should look something similar to this: https://prnt.sc/ASqCZT8EUY5m 
+- useful things to look up on mdn:
+  - `createElement`
+  - `appendChild`
+  - `setAttribute`
