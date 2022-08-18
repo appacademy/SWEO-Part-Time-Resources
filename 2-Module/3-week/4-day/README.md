@@ -53,3 +53,30 @@ A stack is an *abstract data type* (ADT) that stores a collection of data
 
 - **Minimum space complexity of Linear O(n)**
   - If space is an issue, and your input is large, it's usually better to use an iterative solution
+
+## ASCII:
+
+-   `String.fromCharCode()`
+
+```javascript
+console.log(String.fromCharCode(65)); // = A;
+console.log(String.fromCharCode(66)); // = B;
+console.log(String.fromCharCode(67)); // = C;
+```
+
+-   `String.prototype.charCodeAt()`
+
+```javascript
+const str = 'ABC';
+console.log(str.charCodeAt(0)); // 65 => A;
+console.log(str.charCodeAt(1)); // 66 => B;
+console.log(str.charCodeAt(2)); // 67 => C;
+```
+
+## More Built in JavaScript Conversion Methods:
+
+```javascript
+// Convert Hexadecimal to Base10 & back`
+let num = parseInt('0xa1', 16); // 161
+let str = num.toString(16); // 'a1'
+```
