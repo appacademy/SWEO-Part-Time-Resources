@@ -70,15 +70,17 @@ CREATE TABLE Users (
 
 ## Important Notes For Models
 
-Models DO NOT insert tables into our database.
+Model files DO NOT insert tables into our database.
 
-Models DO NOT make changes to our database/tables.
+Model files DO NOT make changes to our database/tables.
 
 - Changing a model WILL NOT automatically change the table in the database
 
 Models are simply the **_STRUCTURE_** for our tables.
 
 - Any new data being created through the model will follow the model's structure
+
+**_Special note_: We will use Models to create data later based on User Input. Right now we're referring to the _Model files_ themselves.**
 
 ---
 
@@ -201,6 +203,8 @@ A Migration will NOT automatically update the related Model
 
 - If a change affects a Model, we need to manually update the Model file as well
   - Change column phone to phone_number must be done in BOTH the Model and Migration file
+
+Migration: communicates with the db. Model: intermediary between the User and the db.
 
 ---
 
