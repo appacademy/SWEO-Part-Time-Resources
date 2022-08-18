@@ -10,16 +10,16 @@ recursive call -- spreading our recursive calls passing in start + 1 and end
 ***********************************************************************/
 
 
-function range(start, end) {
-  // Your code here
-  debugger
+function range(start, end, resArr = []) {
+
   if(start >= end){
-    return []
+    return resArr
   }
-  let res = [start, ...range(start + 1, end)]
-  debugger 
-  // console.log(res)
-  return res
+  // resArr.push(start)
+  // return range(start + 1, end, resArr)
+  return [start, ...range(start + 1, end)]
+  // let newArr = [start]
+  // return newArr.concat(range(start + 1, end))
 }
 
 console.log(range(1, 5)); // [1, 2, 3, 4]
