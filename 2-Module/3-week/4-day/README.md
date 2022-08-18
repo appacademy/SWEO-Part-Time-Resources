@@ -80,3 +80,5 @@ console.log(str.charCodeAt(2)); // 67 => C;
 let num = parseInt('0xa1', 16); // 161
 let str = num.toString(16); // 'a1'
 ```
+
+![Nummeric Conversion Chart](./image.png)
