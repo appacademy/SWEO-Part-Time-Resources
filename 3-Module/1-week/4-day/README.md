@@ -79,7 +79,7 @@ Other elements like `span`, `a`, and `img` (etc.) have a default display value o
 
 <img src=./lecture/pics/borderBox.png ref='border box' width='500'>
 
-### `box-sizing: inline-block`
+### `display: inline-block`
 
 - used to layout block elements left to right in a single row.
 - still takes into account the width and height properties.
