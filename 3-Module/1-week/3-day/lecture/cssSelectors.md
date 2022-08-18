@@ -1,5 +1,13 @@
 # Css Selectors
 
+## Helpful Links
+
+> You can use [this MDN reference](https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector) for more information on `selectors` and how to use them.
+
+> Here is a list of [Psuedo-`Classes`](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-`classes`) from MDN!
+
+---
+
 A `CSS` `selector` applies styles to `elements`. There are a few basic types of `selectors`:
 
 - `Type Selectors`: Matches `elements` by tag.
@@ -53,20 +61,18 @@ A `CSS` `selector` applies styles to `elements`. There are a few basic types of 
   }
   ```
 
-> You can use [this MDN reference](https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector) for more information on `selectors` and how to use them.
-
-### Compound `Class` `Selectors`
+### `Compound Class Selectors`
 
 If you use more than one `class` on your `elements`, you can select them with a compound `class` `selector`.
 
 ```html
-<div `class`="special active">
+<div class="special active">
     <p>I am special and active!</p>
 </div>
-<div `class`="special">
+<div class="special">
     <p>I am special!</p>
 </div>
-<div `class`="active">
+<div class="active">
     <p>I am active!</p>
 </div>
   ```
@@ -112,7 +118,7 @@ In order to use this `selector`, you just use two `selectors` with a space betwe
     <p>Hello</p>
     <span>I love coding in the following languages!</span>
     <abbr title="HyperText Markup Language">html</abbr>
-    <abbr title="Cascading Style Sheets">`css`</abbr>
+    <abbr title="Cascading Style Sheets">css</abbr>
   </div>
   <ul>
     <li>
@@ -129,7 +135,7 @@ In order to use this `selector`, you just use two `selectors` with a space betwe
   div abbr{
     text-transform: uppercase;
   }
-  /* Only the text 'html' and '`css`' will be uppercased, because it is in an abbr `element` that is ins`id`e of a div. 'gif' and 'ted' are not ins`id`e of a div, so wont be changed! */
+  /* Only the text 'html' and 'css' will be uppercased, because it is in an abbr element that is inside of a div. 'gif' and 'ted' are not inside of a div, so wont be changed! */
   ```
 
 #### `Direct Child Selector`
@@ -154,7 +160,7 @@ div > p {
 
 #### `Adjacent Sibling Selector`
 
-The `+ selector` will select all **adjacent** siblings of the first `selector`. (this means that the second `element` directly follows the first `element`.)
+The `+` `selector` will select all **adjacent** siblings of the first `selector`. (this means that the second `element` directly follows the first `element`.)
 
 ```html
 <h1>Big header</h1>
@@ -173,7 +179,7 @@ h1 + h2 {
 These specify a special state of the `element`. It's a `selector` followed by a colon folowed by the `pseudo-`class`` name.
 
 ```html
-<div `class`="special">
+<div class="special">
   <p>I am special!</p>
 </div>
 ```
@@ -182,10 +188,8 @@ These specify a special state of the `element`. It's a `selector` followed by a 
 .special:hover {
   color: red;
 }
-/* Anytime we hover over the div with the special `class`, the text color will be red. */
+/* Anytime we hover over the div with the special class, the text color will be red. */
 ```
-
-> Here is a list of [Psuedo-`Classes`](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-`classes`) from MDN!
 
 ### `Pseudo-Selectors`
 
