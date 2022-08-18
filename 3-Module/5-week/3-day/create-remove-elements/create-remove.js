@@ -14,6 +14,7 @@ add.addEventListener("click", async () => {
 
         /*------------ Create new dog card with the url above ------------- */
         const newDog = document.createElement("li");
+        console.log("newDog", newDog);
 
         const newFigure = document.createElement("figure");
 
