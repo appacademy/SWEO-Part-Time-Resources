@@ -1,20 +1,19 @@
 import './SingleArticle.css';
-import {useSelector} from 'react-redux'
-import {useParams} from 'react-router-dom'
-const SingleArticle = () => {
-  const articles = useSelector((state) => state.articleState.entries)
+import { useParams } from 'react-router';
+
+const SingleArticle = ({articles}) => {
+  console.log(articles)
   const {id} = useParams()
-  const article = articles[id]
-  console.log(article)
+  
   return (
     <div className='singleArticle'>
-      <h1>{article.title}</h1>
+      <h1>{articles[id].title}</h1>
       <img
-        src={article.imageUrl}
-        alt='home'
+      src={articles[id].imageUrl}
+        alt={articles[id].title}
       />
       <p>
-       {article.body}
+        {articles[id].body}
       </p>
     </div>
   );

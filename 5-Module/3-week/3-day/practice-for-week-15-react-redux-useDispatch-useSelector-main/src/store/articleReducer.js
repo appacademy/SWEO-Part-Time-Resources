@@ -12,11 +12,8 @@ export const loadArticles = () => {
 const initialState = { entries: [], isLoading: true };
 
 const articleReducer = (state = initialState, action) => {
-  // const newState = {articles : {...state}}
   switch (action.type) {
     case LOAD_ARTICLES:
-      // newState.articles.entries = action.articles
-      // return  newState
       return { ...state, entries: [...action.articles] };
     default:
       return state;

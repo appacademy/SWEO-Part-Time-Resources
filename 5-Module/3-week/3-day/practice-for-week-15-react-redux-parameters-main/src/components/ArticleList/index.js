@@ -6,27 +6,28 @@ import { loadArticles } from '../../store/articleReducer';
 
 const ArticleList = () => {
   const dispatch = useDispatch();
-  const articles = useSelector(state=>state.articleState);
-  console.log(articles)
+  const articles = useSelector(state=>state.articleState.entries);
   useEffect(() => {
     dispatch(loadArticles());
   }, [dispatch]);
-
+  console.log('hello', articles)
+  
   return (
     <div>
       <h1>Article List</h1>
       <ol>
-        {Object.keys(articles.entries).map((articleId) => (
-          <li key={articleId}><NavLink to={`/article/${articleId}`}>{articles.entries[articleId].title}</NavLink></li>
+        {Object.keys(articles).map((id) => (
+          <li key={id}><NavLink to={`/article/${id}`}>{articles[id].title}</NavLink></li>
         ))}
       </ol>
 
       <Switch>
         <Route path='/article/:id'>
-          <SingleArticle articles={articles}/>
+          <SingleArticle articles={articles} />
         </Route>
       </Switch>
     </div>
+    
   );
 };
 

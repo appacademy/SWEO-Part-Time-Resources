@@ -12,13 +12,14 @@ export const loadArticles = () => {
 const initialState = { entries: {}, isLoading: true };
 
 const articleReducer = (state = initialState, action) => {
+  const newState = {...state}
   switch (action.type) {
     case LOAD_ARTICLES:
-      const newState = {...state}
       action.articles.forEach(article => {
         newState.entries[article.id] = article
       })
       return newState
+      // return { ...state, entries: [...action.articles] };
     default:
       return state;
   }

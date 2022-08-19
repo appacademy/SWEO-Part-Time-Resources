@@ -1,13 +1,13 @@
 import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
 import fruitReducer from './fruitReducer';
-import articlesReducer from './articlesReducer';
+import articleReducer from './articleReducer';
 // `combineReducers` combines all the reducer functions into one big reducer
 // function, which is typically called `rootReducer`. This is the most important
 // part of this file. You will add your reducers here to work with your various
 // components.
 const rootReducer = combineReducers({
   fruitState: fruitReducer,
-  articleState : articlesReducer
+  articleState : articleReducer 
 });
 
 // `enhancer` allows you to alter the store and add functionality such as the

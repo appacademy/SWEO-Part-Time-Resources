@@ -1,27 +1,32 @@
-import { Route, Switch, NavLink } from 'react-router-dom';
-import SingleArticle from '../SingleArticle';
-import { useEffect } from 'react'
+import { Route, Switch, NavLink} from 'react-router-dom';
+import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux'
-import { loadArticles } from '../../store/articleReducer'
+import {loadArticles} from '../../store/articleReducer'
+import SingleArticle from '../SingleArticle';
 
 const ArticleList = () => {
+  const dispatch = useDispatch()
   const articles = useSelector((state) => state.articleState.entries)
   console.log(articles)
-  const dispatch = useDispatch()
   useEffect(() => {
     dispatch(loadArticles())
-  }, [])
+  },[])
+
   return (
     <div>
       <h1>Article List</h1>
       <ol>
-        {articles?.map(({ id, title }) => (
-          <li key={id}>
-            <NavLink to={`/article/${id}`}>
-              {title}
-            </NavLink>
-          </li>
-        ))}
+        {
+          articles.map(article => {
+            return (
+              <li key={article.id}>
+                <NavLink to={`/articles/${article.id}`}>
+                  {article.title}
+                </NavLink>
+              </li>
+            )
+          })
+        }
       </ol>
 
       <Switch>
