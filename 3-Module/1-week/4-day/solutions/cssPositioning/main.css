@@ -5,6 +5,8 @@ html, body {
 .container {
     background-color: #2b2d2f;
     position: relative;
+    height: 50vh;
+    overflow: scroll;
 }
 
 .element {
@@ -15,57 +17,64 @@ html, body {
     font-size: 36px;
 }
 
+/* For these, just change the bottom, left, right, and top
+one at a time and see the behavior you get. If your box
+disappears when you add the position, try setting your 
+z-index to be 1 or greater and setting the z-index of 
+the element on top of it to 0. that will bring your box
+forward.  */
+
 #yellow-box {
     background-color: #ffff00;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+    /* Fill these in */
+    /* position: static; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: ; */
 }
 
 #pink-box {
     background-color: #ff69b4;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+    /* Fill these in */
+    /* position: relative; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: ; */
 }
 
 #blue-box {
     background-color: #00eeee;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+    /* Fill these in*/
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: ; */
 }
 
 #red-box {
     background-color: #ff0000;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+    /* Fill these in*/
+    /* position: fixed; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: ; */
 }
 
 #orange-box {
     background-color: #ffa500;
-    /* Fill these in
-    position: ;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    top: 0;
-    z-index: ;
+    /* Fill these in*/
+    /* position: sticky; */
+    /* bottom: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: 0; */
+    /* z-index: ; */
 }
