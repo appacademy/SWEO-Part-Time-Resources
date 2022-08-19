@@ -1,0 +1,69 @@
+.box1 {
+  background-color: blueviolet;
+  border: 5px solid blue;
+}
+
+.box2 {
+  background-color: greenyellow;
+  border: 2px dotted red;
+}
+
+.text1 {
+  background-color: blue;
+  color: #FFC300
+}
+
+.text2 {
+  background-color: burlywood;
+  color: rgb(214,122,127)
+}
+
+.box3 {
+  background-color: rgba(230, 230, 250, .6); /*a = alpha = transparency. 0 is transparent 1 is opaque*/
+}
+
+h2{
+  opacity: .5; /* all the text is half transparent */
+}
+
+.box5 {
+  background-color: lemonchiffon;
+  box-shadow: 2px 8px 15px teal; /* right to left, up and down, blur-radius, color */
+}
+
+.box6 {
+  background-color: papayawhip;
+  box-shadow: 5px -10px #800000; /* right to left, up and down, blur-radius, color */
+}
+
+
+/* do not change below this line */
+
+body {
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.box4 {
+  top: 0;
+  left: 5px;
+  background-color: hotpink;
+  position: absolute;
+  z-index: -1;
+}
+
+.text {
+  width: 500px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  box-sizing: border-box;
+}
