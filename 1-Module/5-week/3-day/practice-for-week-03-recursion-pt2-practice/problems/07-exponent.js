@@ -16,6 +16,7 @@ of the numerator:
 Examples:
 
 exponent(3, 2); // 9
+<<<<<<< HEAD
 exponent(5, 5); // 3125
 ***********************************************************************/
 
@@ -35,6 +36,29 @@ function exponent(num, power) {
 }
 
 exponent(2, -2); // 1/4 (or 0.25)
+=======
+exponent(2, -2); // 1/4 (or 0.25)
+exponent(5, 5); // 3125
+
+base case(s) -- power is 1 return num
+recursive step -- decrementing power by 1 
+recursive case(s) -- calling our function either passing in the num and power - 1 or math.abs(power)
+***********************************************************************/
+
+function exponent(num, power, count = 0) {
+    // Your code here
+    if(power === 1) return num
+    if(power < 0){
+        return 1 / exponent(num, Math.abs(power))
+    }
+
+    return num * exponent(num, power - 1)
+}
+  
+
+exponent(3, 2); // 9
+
+>>>>>>> 2022-Jul-E
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
     module.exports = exponent;

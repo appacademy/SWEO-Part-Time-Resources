@@ -1,8 +1,5 @@
-
-// const sumFunc = arr => {
-//     let sum = 0
-//     arr.forEach(ele => sum += ele)
-//     return sum
+// function sum(num1, num2) {
+//     return num1 + num2;
 // }
 
 // console.log(sumFunc([1,2,3,4]))
@@ -13,12 +10,7 @@
 
 // // console.log(sumFunc)
 
-// const arrayConcat = (arr1, arr2) => [...arr1, ...arr2]
-
-
-// console.log(arrayConcat([1,2,3], [4,5,6]))
-
-
+// console.log(tripler(arr));
 
 /*
 I want to start a new business that sells robots to people.
@@ -36,11 +28,15 @@ Level Four
 Customers would like it if the robots kept track of ALL the names they've spoken to.
 */
 
+
+// const someFunction = (name) => {return name}
+// console.log(someFunction)
+
 const factory = function (voiceChip) {
     // console.log('Booting up factory...');
     // console.log('Creating a new empty array...');
     let names = [];
-    console.log('Returning a new robot that says ' + voiceChip + '...');
+    // console.log('Returning a new robot that says ' + voiceChip + '...');
     return function robot(name) {
         // console.log('Booting up ' + voiceChip + ' robot...');
         // console.log('Adding ' + name + ' to names...');
@@ -51,25 +47,35 @@ const factory = function (voiceChip) {
 };
 
 const hiBot = factory('Hello');
-// console.log('---Done---');
-const byeBot = factory('Leave me alone')
-
-// console.log('This is the return of hiBot: ', hiBot); // 
+console.log('---Done---');
+const byeBot = factory('Goodbye');
 console.log('---Done---');
 
-
-// console.log(hiBot('James'));
+console.log('This is the return of hiBot: ', hiBot); // function
 // console.log('---Done---');
+// // console.log('This is the return of byeBot: ', byeBot); // function
+// // console.log('---Done---');
+
+console.log(hiBot('James')); // 
+console.log('---Done---');
 // console.log(hiBot('Crystal'));
 // console.log('---Done---');
 
-
-console.log(byeBot('James'));
-console.log('---Done---');
-console.log(byeBot('Crystal'));
+// console.log(byeBot('JM'));
 // console.log('---Done---');
+// console.log(byeBot('Mylo'));
+// console.log('---Done---');
+let helper = (str) => {
+    return str
+}
 
-let str = 'hello';
+console.log(byeBot('JM'));
+console.log('---Done---');
+console.log(byeBot('Mylo'));
+console.log('---Done---');
+
+console.log(helloString)
+// let str = 'hello';
 
 // function something(str) {
 //     return str;

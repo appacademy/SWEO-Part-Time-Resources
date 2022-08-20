@@ -95,7 +95,11 @@ The two important pieces of an IIFE. [MDN](https://developer.mozilla.org/en-US/d
 
 (function(name){
   console.log(`Hello, ${name}!`)
+<<<<<<< HEAD
 })("Zaviar");
+=======
+})("James");
+>>>>>>> 2022-Jul-E
 ```
 
 Primarily used to avoid polluting the global namespace. Useful for situations
