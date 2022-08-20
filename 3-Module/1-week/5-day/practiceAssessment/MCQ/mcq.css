@@ -33,16 +33,87 @@ body{
 }
 
 img{
-  width: 60vw;
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 5px 5px 10px 7px teal;
+  width: 100%;
+  box-shadow: 3px 3px 10px 3px teal;
   border-radius: 10px;
+  padding: 30px;
+  box-sizing: border-box;
 }
 
-img:hover {
+.gray-bg{
+  background-color: lightgrey;
+  display: inline;
+}
+
+/* img:hover {
   width: 71vw;
   box-shadow: 5px 5px 10px 7px coral;
   transform: rotate(360deg);
   transition-duration: 1000ms;
+} */
+
+.qna{
+  width: 60vw;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
 }
+
+.question{
+  font-family: fantasy, sans-serif;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0;
+  padding: 50px;
+  width: fit-content;
+
+}
+
+.li{
+  font-family: 'Franklin Gothic Medium', sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  list-style: square;
+}
+
+.html{
+  font-size: 1.5rem;
+}
+
+.active{
+  position: absolute;
+  background-color: white;
+  box-shadow: 3px 3px 10px 3px coral;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.active:active{
+  visibility: hidden;
+}
+
+.active:hover{
+  box-shadow: 3px 3px 10px 3px teal;
+}
+
+.ul{
+  /* width: 100%; */
+  margin: auto;
+}
+
+
+
