@@ -1,0 +1,31 @@
+#box-1{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+
+#box-2{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(175, 30, 30);
+    margin-top: 10px;
+}
+
+#box-3{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(30, 100, 175);
+    margin-top: 10px;
+}
+
+#box-4{
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgb(203, 93, 196);
+    margin-top: 10px;
+}
+
+.purple{
+    background-color: rgb(212, 153, 212)
+}
