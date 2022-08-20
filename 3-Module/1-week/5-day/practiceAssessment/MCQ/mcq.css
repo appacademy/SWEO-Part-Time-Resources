@@ -40,11 +40,6 @@ img{
   box-sizing: border-box;
 }
 
-.gray-bg{
-  background-color: lightgrey;
-  display: inline;
-}
-
 /* img:hover {
   width: 71vw;
   box-shadow: 5px 5px 10px 7px coral;
