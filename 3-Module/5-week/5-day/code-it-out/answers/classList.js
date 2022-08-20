@@ -15,7 +15,7 @@ export const addClassPurple = function(){
     //     box.classList.add("purple");
     // }
 
-    const allBoxesArray = Array.from(allBoxes);
+    const allBoxesArray = Array.from(allBoxes); //[...allBoxes]
     console.log(allBoxesArray);
     allBoxesArray.forEach(el => el.classList.add("purple"))
 
