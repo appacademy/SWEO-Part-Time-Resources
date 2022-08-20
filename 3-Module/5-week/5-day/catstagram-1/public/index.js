@@ -1,8 +1,8 @@
-import { createMainContent, initializePage} from './main.js';
-
+import { createMainContent } from './main.js';
+import createContainer from "./container.js"
 
 
 window.onload = () => {
-    initializePage();
+    createContainer();
     createMainContent();
 };
