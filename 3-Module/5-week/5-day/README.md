@@ -20,6 +20,9 @@
 
 ## Catstagram Day 1
 - [Catstagram Day 1](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-17---browser--dom--and-events/catstagram-day-1)
+- Work by creating the container first. Should our container have a defined width? What elements should go in the container?
+- Then determine what elements we should create and add to that container, do we need an image element to hold the image(hint: we'll add the actual image link later, first create the image element to hold it!)? Do we need a header text?
+- Now let's use the API to fetch the image, now we fetch the image, should we update the empty image element with the new image?
 
 ## After Finishing
 - go over `assessment-breakdown.md` and review
