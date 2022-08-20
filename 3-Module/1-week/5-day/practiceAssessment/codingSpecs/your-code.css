@@ -1,0 +1,47 @@
+/* Your code here */
+
+body{
+  background-color: #EFEFEF;
+}
+
+fieldset{
+  background-color: white;
+}
+
+.outer-layer-2{
+  position: relative; /* to use position absolute, your container must be positioned as well! */
+}
+
+.blue-box, .orange-box{
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  position: absolute; /* using absolute position to move orange box above blue*/
+}
+
+.blue-box{
+  background-color: blue;
+}
+
+.orange-box{
+  background-color: orange;
+  top: -40px; /*move the orange box up 40px (height of the blue box) */
+}
+
+p + p{
+  color: #ff0000;
+}
+
+.outer-layer-4{
+  box-shadow: 0 0 4px rgba(0, 0, 255, .6);
+}
+
+.outer-layer-5{
+  overflow-y: auto; /* y axis is vertical, setting to auto makes the scrollbar appear when needed*/
+  overflow-x: hidden; /* hide the horizontal scrollbar */
+}
+
+.uppercase.bold{
+  font-family: 'Courier New', Courier, monospace;
+}
+
