@@ -1,5 +1,8 @@
-import {fetchCat} from "./fetch.js"
+import { createMainContent, initializePage} from './main.js';
 
-window.onload = function(){
-    fetchCat();
-}
+
+
+window.onload = () => {
+    initializePage();
+    createMainContent();
+};
