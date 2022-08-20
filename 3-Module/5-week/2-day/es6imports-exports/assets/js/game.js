@@ -1,6 +1,7 @@
-import { mrPotatoHeadQuotes } from "./quotes/mrPotatoHead.js";
-import mrsPotatoHeadQuotes from "./quotes/mrsPotatoHead.js";
 import {getIndex} from "./utilities.js"
+// note here we can import in multiple named functions, objects from a single file using DESTRUCTURING. we just need the name of the thing we are exporting.
+import { mrPotatoHeadQuotes, potatoSpeaks } from "./quotes/mrPotatoHead.js";
+import mrsPotatoHeadQuotes from "./quotes/mrsPotatoHead.js";
 
 export default class Game {
 

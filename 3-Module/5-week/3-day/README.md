@@ -18,3 +18,7 @@
 
 ## Practice: Create/Remove Elements
 - reference the [homework here](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-17---browser--dom--and-events/create-remove-elements) and MDN
+
+## Homework
+- No readings to do tonight
+- REVIEW the practices today and code-it-out, as this material will be on your assessment
