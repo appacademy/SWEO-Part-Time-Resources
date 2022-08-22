@@ -3,7 +3,7 @@
 
 
 // script.js
-// 1) our window listen for "DOMContentLoaded" event (which means wait for page to load html) then trigger the callback (2nd argument).
+// 1) our window listen for "DOMContentLoaded" event (which means wait for page to load html) then trigger the callback (2nd argument). If we do not wait, we will get undefined
 window.addEventListener("DOMContentLoaded", event => {
     // 2) once loaded, select the `button` and `count`
     const button = document.getElementById("increment-count");
