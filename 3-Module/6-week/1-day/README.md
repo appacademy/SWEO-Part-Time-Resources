@@ -13,7 +13,7 @@
   - Formative quizzes on AA open
   - Homework and readings on AA open
   - MDN
-  - drawing or diagram tool (has to be blank no previous tabs or work)
+  - `vsCode node` to run and execute code
 
 - Don't hesitate to ask questions if something is confusing or we require clarity! We cannot help you code, but we can explain the question and point you to available resources.
 
