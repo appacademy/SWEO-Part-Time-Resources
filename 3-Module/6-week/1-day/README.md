@@ -21,6 +21,7 @@
 - Go to last week's Event Readings and review
   - [What are events?](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-17---browser--dom--and-events/what-are-events-)
   - [Add/Remove Event Listeners](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-17---browser--dom--and-events/add-remove-event-listeners)
+    - As you do these reviews, go to the `event-listeners-examples FOLDER` and actively play around with the code. `comment in script.js in the html import and see what happens`
 - Work on `today's readings` 
   - [DOMContentLoaded vs. window.onload](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-18---events-and-storage/domcontentloaded-vs--window-onload)
   - [Event Propagation](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-18---events-and-storage/event-propagation)
