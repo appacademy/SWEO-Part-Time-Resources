@@ -1,6 +1,7 @@
 # W18D2 - Tuesday
 - These MDN resources below are great to look around and reference 
 - [Events exhaustive list](https://developer.mozilla.org/en-US/docs/Web/Events)
+  - click, mouseover, input, change, submit, scroll event, focus, resize, and more!
 - [Event Object API](https://developer.mozilla.org/en-US/docs/Web/API/Event)
 - [Event Listener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
 
