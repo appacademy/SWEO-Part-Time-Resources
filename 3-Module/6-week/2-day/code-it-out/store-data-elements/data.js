@@ -27,13 +27,10 @@ window.addEventListener("DOMContentLoaded", e => {
 
 
         //set li attribute: get the value of the `select element` and set the attribute on the li to have a "data-type" w/ the value of the `select element's` value. Hint: reference the hoemwork on data-
-  
-
-        //console log the li to see if you're getting everything correct when entering a new input
 
         //now take the li element and log the data- attribute's value using "dataset." 
 
-
         //append the child li to its ul parent.
 
+        //console log the li to see if you're getting everything correct when entering a new input
 })
