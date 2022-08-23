@@ -115,4 +115,31 @@ function sort(nums, sorted = []) {
     return sort(nums, sorted)
 }
 
-console.log(sort([4,1,6,3,1,7])); // [1, 1, 3, 4, 6, 7]
+// console.log(sort([4,1,6,3,1,7])); // [1, 1, 3, 4, 6, 7]
+
+
+// const alphabetical = (arr, sorted = []) => {
+//     if(!arr.length) return sorted
+//     let minIndex = 0
+//     for(let i = 1; i < arr.length; i++){
+//         let ele = arr[i]
+//         if(typeof ele === 'number'){
+//             if(ele <= arr[minIndex]){ 
+//                 minIndex = i
+//             }
+//         }
+//         else if(ele < arr[minIndex]){
+//             minIndex = i
+//         }
+//     }
+//     sorted.push(arr[minIndex])
+
+//     arr.splice(minIndex, 1)
+
+//     return alphabetical(arr, sorted)
+// }
+
+
+// const arr1 = [3, 2, 1, 4, 'james', 'hanan', 'helffffffffffffflo', 'caitlyn', 'kelly']
+
+// console.log(alphabetical(arr1))
