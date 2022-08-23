@@ -1,0 +1,21 @@
+body {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    text-align: center;
+}
+img {
+    width: 50%;
+}
+a {
+    color: #E8EFF0;
+}
+
+a.backButton {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/* Your code here */

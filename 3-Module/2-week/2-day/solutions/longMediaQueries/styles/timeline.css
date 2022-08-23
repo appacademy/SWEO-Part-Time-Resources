@@ -1,0 +1,87 @@
+.timeline-scroll-area {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.timeline {
+    border: solid #000021 10px;
+    background-color: #000021;
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    min-width: 1024px;
+}
+
+.timeline .milestone {
+    color: #E8EFF0;
+    width: 25px;
+    height: 150px;
+    white-space: nowrap;
+    text-align: center;
+}
+.timeline .year {
+    transform: rotate(-90deg) translate(-60px, -60px);
+    width: 150px;
+    height: 25px;
+}
+
+.timeline .era1 {
+    background-color: #1CB0F6;
+    flex: 1 1 50%;
+}
+.timeline .era2 {
+    background-color: #1e87f0;
+    flex: 1 1 20%;
+}
+.timeline .era3 {
+    background-color: #0f6ecd;
+    flex: 1 1 15%;
+}
+.timeline .era4 {
+    background-color: #0D47A1;
+    color: #E8EFF0;
+    flex: 1 1 10%;
+}
+.timeline .era5 {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    flex: 1 1 5%;
+}
+
+/* ------ */
+
+.timeline-labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+    min-width: 1024px;
+}
+
+.timeline-labels .item {
+    background-color: #000021;
+    color: #E8EFF0;
+    text-align: center;
+    padding: 10px;
+}
+
+.timeline-labels .left {
+    flex: 1 1 28%;
+}
+.timeline-labels .item1 {
+    flex: 1 1 25%;
+}
+.timeline-labels .item2 {
+    flex: 1 1 20%;
+}
+.timeline-labels .item3 {
+    flex: 1 1 15%;
+}
+.timeline-labels .item4 {
+    flex: 1 1 10%;
+}
+.timeline-labels .right {
+    flex: 1 1 2%;
+}
+
+/* Your code here */

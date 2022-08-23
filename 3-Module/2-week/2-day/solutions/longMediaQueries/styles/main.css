@@ -1,0 +1,55 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 20px;
+}
+
+h1 {
+    font-family: 'Tangerine', serif;
+}
+
+header {
+    background-color: #1d3e81;
+    background-image: url("images/8048.jpg");
+    background-size: cover;
+    background-position: top;
+    color: #E8EFF0;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 0 -40px;
+}
+header.homepage {
+    height: 440px;
+}
+
+nav {
+    background-color: #000021;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px;
+    gap: 2px;
+    margin: 0 -40px;
+}
+nav a {
+    background-color: #1d3e81;
+    text-decoration: none !important;
+    color: #E8EFF0;
+    padding: 12px;
+    flex: 1 1 100%;
+    text-align: center;
+    display: grid;
+}
+nav a:hover {
+    background-color: #0D47A1;
+}
+nav a.selected {
+    background-color: #0D47A1;
+    color: #000021;
+    cursor: default;
+}
+
+/* Your code here */
