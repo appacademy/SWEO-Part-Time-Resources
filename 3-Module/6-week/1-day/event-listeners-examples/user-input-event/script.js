@@ -5,5 +5,6 @@ window.addEventListener("DOMContentLoaded", event => {
         let text = originalText.value;
         // make the new mirror the original text, so change will reflect
         mirroredDiv.innerText = text;
+
     })
 });
