@@ -1,4 +1,4 @@
-//context: Whenever you click an element on the page, the browser will bubble that event up through every ancestor of the element you clicked on. If you have any event listeners on those elements, those will be called on its way up.
+//context: Whenever you click an element on the page, the browser will bubble that event up through every ancestor of the element you clicked on. If you have any event listeners on those elements, those listeners will be called on its way up.
 
 window.addEventListener("DOMContentLoaded", e => {
     // this is a helper function that will log the id of our element that the event is happening on
