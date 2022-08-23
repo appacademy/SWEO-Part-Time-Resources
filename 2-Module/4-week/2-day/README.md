@@ -56,3 +56,29 @@ very similar traits, the difference is how data is stored.
 
 - addToHead: Adds a new node to the front of the list. - O(1)
 - removeHead: Removes the first node of the list. - O(1)
+
+## Linked List Types
+
+| List Type         | Description                                                                                                   | Direction                     |
+| ----------------- | ------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| Singly Linked     | Nodes have a single pointer connecting                                                                        | Head→Tail                     |
+| Doubly Linked     | Nodes have two pointers connecting them bi-directionally.                                                     | Head⇄Tail                     |
+| Multi Linked   | Nodes have two or more pointers, providing a variety of potential node orderings.                             | Head⇄Tail, A→Z, Jan-Dec, etc. |
+| Circularly Linked | Final node's next pointer points to the first node, creating a non-linear, circular version of a Linked List. | Head→Tail→Head→Tail           |
+
+## Linked List Methods
+
+- addToTail: Adds a new node to the end of the list.
+- addToHead: Adds a new node to the front of the list.
+- insertAt: Adds a new node at the specified position (we need to traverse to
+  that point, then update pointers)
+- removeTail: Removes the last node of the list.
+- removeHead: Removes the first node of the list.
+- removeFrom: Removes the node at the specified position.
+- contains: Traverses the list and returns a boolean to indicate if the value
+  was found at any node.
+- get: Returns a reference to the node at the specified position.
+- set: Updates the value of the node at the specified position.
+- size: Returns the current length of the list.
+
+---
