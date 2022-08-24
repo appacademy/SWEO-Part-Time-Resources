@@ -44,10 +44,10 @@
 
 //setInterval
 
-const test = (a, b) => {
-  console.log("time is up");
-  console.log(`${a} ${b}`);
-};
+// const test = (a, b) => {
+//   console.log("time is up");
+//   console.log(`${a} ${b}`);
+// };
 
 // setInterval(test, 1000, "hello", "world");
 // let timeoutObj = setInterval(test, 1000, "hello", "world");
@@ -55,14 +55,14 @@ const test = (a, b) => {
 
 
 const wrapperFunc = (count, delay) => {
-  const intervalObj = setInterval(() => {
-    console.log('interval');
-    count--;
-    if(count === 0){
-      console.log('end');
-      clearInterval(intervalObj);
-    }
-  }, delay)
-}
+//   const intervalObj = setInterval(() => {
+//     console.log('interval');
+//     count--;
+//     if(count === 0){
+//       console.log('end');
+//       clearInterval(intervalObj);
+//     }
+//   }, delay)
+// }
 
-wrapperFunc(10, 1000);
+// wrapperFunc(10, 1000);
