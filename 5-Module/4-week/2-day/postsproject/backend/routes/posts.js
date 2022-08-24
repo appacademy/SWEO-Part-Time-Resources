@@ -11,7 +11,9 @@ postRouter.get('/', async (req, res) => {
 })
 
 postRouter.post('/new', async (req, res) => {
+    console.log(req.body)
     const post = await Post.create(req.body)
+    console.log(post)
     res.json(post)
 })
 postRouter.delete('/:id/delete', async (req, res) => {
@@ -28,5 +30,16 @@ postRouter.patch('/:id/edit', async (req, res) => {
     await post.update({body: body})
     res.json(post)
 })
+<<<<<<< HEAD:5-Module/4-week/2-day/postsproject/backend/routes/posts.js
+=======
+
+postRouter.patch('/:id/update', async (req, res) => {
+    const id = parseInt(req.params.id, 10)
+    const post = await Post.findByPk(id)
+    await post.update(req.body)
+    res.json(post)
+})
+
+>>>>>>> 2022-Jan-W:5-Module/4-week/2-day/postAndComments/routes/posts.js
 module.exports = postRouter
 
