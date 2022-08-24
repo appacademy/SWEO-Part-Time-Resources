@@ -16,6 +16,38 @@ Implement a queue using a linked list instead of an array. Adding and removing e
   - find method (will traverse the list and return the node containing the search value)
   - size method (will return how many nodes are in the queue)
 
+```js
+class Node {
+  constructor(val){
+    
+  };
+};
+
+class Queue {
+  constructor(){
+    
+  };
+
+  //addToTail
+  enqueue(val){
+    
+  };
+
+  //removeFromHead
+  dequeue(){
+    
+  };
+
+  find(searchVal){
+    
+  };
+
+  size(){
+    
+  };
+};
+```
+
 Make sure to run some tests with node for this implementation to make sure all
 of these methods are working correctly!
 
