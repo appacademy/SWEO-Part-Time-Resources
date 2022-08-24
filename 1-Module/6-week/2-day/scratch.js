@@ -14,9 +14,10 @@
 
 //Async
 // console.log('one');
+
 // setTimeout(() => {
 //     console.log('two2')
-// }, 1001)
+// }, 0)
 
 // setTimeout(() => {
 //   console.log('two');
@@ -38,31 +39,38 @@
 //   console.log(`${a} ${b}`);
 // };
 
-// let timeoutObj = setTimeout(test, 1000, "hello", "world");
+// let timeoutObj = setTimeout(test, 0, "hello", "world");
+
+// console.log(timeoutObj)
 
 // clearInterval(timeoutObj);
 
 //setInterval
 
-// const test = (a, b) => {
-//   console.log("time is up");
-//   console.log(`${a} ${b}`);
-// };
+const test = (a, b) => {
+  console.log("time is up");
+  console.log(`${a} ${b}`);
+};
 
 // setInterval(test, 1000, "hello", "world");
 // let timeoutObj = setInterval(test, 1000, "hello", "world");
-// clearInterval(timeoutObj);
+
+// setTimeout(() => {
+//     clearInterval(timeoutObj);
+// }, 5000)
 
 
 const wrapperFunc = (count, delay) => {
-//   const intervalObj = setInterval(() => {
-//     console.log('interval');
-//     count--;
-//     if(count === 0){
-//       console.log('end');
-//       clearInterval(intervalObj);
-//     }
-//   }, delay)
-// }
 
-// wrapperFunc(10, 1000);
+  const intervalObj = setInterval(() => {
+    console.log('interval');
+    count--;
+    if(count === 0){
+      console.log('end');
+      clearInterval(intervalObj);
+    }
+  }, delay)
+
+}
+
+wrapperFunc(10, 1000);
