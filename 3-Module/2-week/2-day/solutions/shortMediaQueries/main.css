@@ -85,13 +85,38 @@ header {
 /* ----- Phase 1 - Moderate Screen ----- */
 
 /* Your code here */
+@media screen and (min-width: 820px){
+    .content{
+        flex-direction: row;
+    }
+}
 
 /* ----- Phase 1 - Wide Screen ----- */
 
 /* Your code here */
+@media screen and (min-width: 1220px){
+    .page{
+        flex-direction: row;
+    }
+}
 
 /* ===== PRINTING ===== */
 
 /* Phase 2 */
 
 /* Your code here */
+@media print{
+    header, .sidebar, .image-box{
+        visibility: hidden;
+    }
+
+    .story-box{
+        background-color: white;
+        padding: 0;
+        filter: none;
+    }
+
+    .page, .content{
+        padding: 0;
+    }
+}
