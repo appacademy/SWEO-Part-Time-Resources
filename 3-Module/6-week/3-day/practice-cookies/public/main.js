@@ -26,32 +26,32 @@ function getCookieValue(cookieName) {
 // set the theme cookie name to a constant to prevent spelling errors
 const THEME_KEY = "theme";
 
-//!!END
+
 // For storing user's theme selection in cookies
 function storeTheme(themeName) {
-    //!!START
+   
     // Phase 1
     // document.cookie = `${THEME_KEY}=${themeName}`;
     // Phase 2
     document.cookie = `${THEME_KEY}=${themeName};max-age=15`;
-    //!!END
+    
 }
 
 // For restoring theme from cookies, if selected by the user in the past
 function restoreTheme() {
-    //!!START
+   
     const storedTheme = getCookieValue(THEME_KEY);
     if (storedTheme) {
         setTheme(storedTheme);
     }
-    //!!END
+    
 }
 
 // For clearing theme selection from cookies (reset to default)
 function clearTheme() {
-    //!!START
+   
     document.cookie = `${THEME_KEY}=; max-age=0`;
-    //!!END
+    
 }
 
 /* ================================ PHASE 3 ================================ */
@@ -59,29 +59,29 @@ function clearTheme() {
 // set the name cookie name to a constant to prevent spelling errors
 const NAME_KEY = "displayName";
 
-//!!END
+
 // For storing user's display name in cookies
 function storeName(displayName) {
-    //!!START
+   
     document.cookie = `${NAME_KEY}=${displayName}`;
-    //!!END
+    
 }
 
 // For restoring user's display name from cookies, if set in the past
 function restoreName() {
-    //!!START
+   
     const storedName = getCookieValue(NAME_KEY);
     if (storedName) {
         setInputValue('display-name', storedName);
     }
-    //!!END
+    
 }
 
 // For clearing user's display name from cookies
 function clearName() {
-    //!!START
+   
     document.cookie = `${NAME_KEY}=; max-age=0`;
-    //!!END
+    
 }
 
 /* ========================================================================= */
