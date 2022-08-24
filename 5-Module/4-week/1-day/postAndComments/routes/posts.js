@@ -11,7 +11,9 @@ postRouter.get('/', async (req, res) => {
 })
 
 postRouter.post('/new', async (req, res) => {
+    console.log(req.body)
     const post = await Post.create(req.body)
+    console.log(post)
     res.json(post)
 })
 postRouter.delete('/:id/delete', async (req, res) => {
@@ -20,6 +22,13 @@ postRouter.delete('/:id/delete', async (req, res) => {
     console.log(post)
     await post.destroy()
     res.json({id})
+})
+
+postRouter.patch('/:id/update', async (req, res) => {
+    const id = parseInt(req.params.id, 10)
+    const post = await Post.findByPk(id)
+    await post.update(req.body)
+    res.json(post)
 })
 
 module.exports = postRouter

@@ -1,5 +1,6 @@
 import {useDispatch} from 'react-redux'
 import {useState} from 'react'
+import { addPostThunk } from '../../store/post'
 import './NewPost.css'
 function NewPost({setShowNew}){
     const dispatch = useDispatch()
@@ -7,7 +8,7 @@ function NewPost({setShowNew}){
 
     const handleSubmit = async (e) => {
         e.preventDefault()
-     
+        dispatch(addPostThunk({body, userId: 4}))
     }
 
     return (
