@@ -33,6 +33,7 @@ function storeTheme(themeName) {
     // Phase 1
     // document.cookie = `${THEME_KEY}=${themeName}`;
     // Phase 2
+    // max-age is another way to expire; syntax: max-age=<seconds> (31536000 for a year)
     document.cookie = `${THEME_KEY}=${themeName};max-age=15`;
     
 }
