@@ -52,4 +52,46 @@ nav a.selected {
     cursor: default;
 }
 
-/* Your code here */
+/*!!START */
+/* Phase 1: Hide nav buttons when printing */
+@media print {
+    nav {
+        display: none;
+        visibility: hidden;
+    }
+}
+
+/* Phase 2: Keep header from covering more than ~50% of the page */
+@media (max-height: 640px) {
+    header.homepage {
+        height: 220px;
+    }
+}
+
+/* Phase 3: Hide underline on links unless hovering... */
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ...while keeping underline for links only on devices without hover mode */
+@media (hover: none) {
+    a {
+        text-decoration: underline;
+    }
+
+    body {
+        padding-bottom: 50px;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0;
+    }
+}
+/*!!END */

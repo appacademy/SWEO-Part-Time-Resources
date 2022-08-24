@@ -84,4 +84,17 @@
     flex: 1 1 2%;
 }
 
-/* Your code here */
+/*!!START */
+/* Phase 7: Allow the full timeline to fit within the print page (not cut off) */
+@media print {
+    .timeline, .timeline-labels {
+        min-width: 0;
+    }
+    
+    /* Bonus: Improve visual connection of the years to labels on printout */
+    .timeline-scroll-area {
+        transform: scale(0.75, 0.75) translate(-18%, 0);
+        width: 140%;
+    }
+}
+/*!!END */
