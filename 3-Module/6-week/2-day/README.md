@@ -14,3 +14,4 @@
 ## Catastagram Pt 2
 - Finish catstagram pt. 1 with your pair
 - Start working on Catstagram pt. 2
+- Things you'll be doing today: Create elements, append elements, select elements, listen for events and manipulate (then updating, deleting, creating elements) DOM using javascript.
