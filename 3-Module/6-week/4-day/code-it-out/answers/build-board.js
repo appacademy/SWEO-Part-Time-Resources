@@ -18,39 +18,45 @@ const createGrid = () => {
 
 const populateGrid = (rowNum, colNum) => {
     // select the "gridContainer" we created in createGrid. 
-    // --------your code-------
+    const gridContainer = document.querySelector("div.grid");
 
     //now create a 2d ui where the first loop will represent the row, and the inner loop will be the cells(column)
     for(let i=0; i<rowNum; i++){
         // first loop will give us the rows, so create a variable called "rowEl" that willl be a container div element that will later host the cells. 
-        // --------your code-------
+        // let row =
+        const rowEl = document.createElement("div");
 
-        //set the class attribute of the element we just created (rowEl) to have a class of "row"
-        // --------your code-------
+        //set the class attribute of the element we just created to have a class of "row"
+        rowEl.className = "row"; //you can also use setAttribute
 
-        // add the row element to the end of the "gridContainer"
-        // --------your code-------
+        // add the row element to the end of the gridContainer
+        gridContainer.appendChild(rowEl);
 
-        // now work on the inner loop that will loop through "colNum"
+        // now work on the inner loop that will loop through
         for(let j=0; j<colNum; j++){
              // create a div element for the cell , store it in a variable called "cell"
-            // --------your code-------
+            const cell = document.createElement("div");
 
             // set the "cell" class attribute to have the value of "col"
-            // --------your code-------
+            cell.className = "col";
 
             // now add the cell we created to the end of the "rowEl" as a child
-            // --------your code-------
+            rowEl.appendChild(cell);
 
 
-            //add to the cell the coordinates of its `row - i` and `column - j` by using data- (hint, use setAttribute or dataset)
-            // --------your code-------
+            //add to the cell the coordinates of its row and column by using data- (hint, use setAttribute or dataset)
+            cell.setAttribute("data-row", i) // same as: cell.dataset.row = i
+            cell.setAttribute("data-col", j) // same as: cell.dataset.col = j
 
-            // then add an "event listener" to the cell, so that when it is clicked, we can add some logic to it, like logging out the row number and col number of the cell. 
+            // then add an event listener to the cell, so that when it is clicked, we can add some logic to it, like logging out the row number and col number of the cell. (bonus if you can change the inner text of the cell to display the col and row)
+            cell.addEventListener("click", ()=>{
                 // log the cell's row and cell's col (hint use cell.dataset from data-)
-                // change the inner text of the cell to display the col and row
-            // --------your code-------
-            
+                const numberRow = cell.dataset.row
+                const numberCol = cell.dataset.col
+        
+                console.log("row/col:", numberRow  + "/" + numberCol)
+                cell.innerText = `${cell.dataset.row}:${cell.dataset.col}`
+            });
         }
     }
 
