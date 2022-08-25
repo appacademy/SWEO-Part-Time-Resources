@@ -13,6 +13,44 @@ Implement a doubly linked list.
 Avoid looking at any previous code until you have tried to implement each method
 on your own!
 
+```js
+class Node {
+  constructor(val){
+    this.val = val;
+    this.next = null;
+    this.prev = null;
+  }
+}
+
+class DoublyLinkedList {
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
+
+  addToHead(val){
+   
+  }
+
+  addToTail(val){
+   
+  }
+
+  removeFromHead(){
+    
+  }
+
+  removeFromTail(){
+    
+  }
+
+  contains(searchVal){
+    
+  }
+}
+```
+
 ---
 
 ## Sets
