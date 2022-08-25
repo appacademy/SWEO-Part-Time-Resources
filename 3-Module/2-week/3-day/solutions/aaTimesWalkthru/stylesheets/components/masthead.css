@@ -1,0 +1,70 @@
+/* Your code here */
+.masthead{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "menu . action"
+  ". techs ."
+  "date logo paper";
+}
+
+.masthead__menu-and-search{
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding: 10px 0;
+}
+
+.masthead__actions{
+  grid-area: action;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  /* padding: 10px 0; */
+}
+
+.masthead__technologies{
+  grid-area: techs;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.masthead__date{
+  grid-area: date;
+}
+
+.masthead__logo{
+  grid-area: logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+}
+
+.masthead__paper{
+  grid-area: paper;
+  justify-content: flex-end;
+}
+
+.menu-and-search__btns{
+  font-size: 11px;
+  padding: 7px 9px;
+}
+
+.menu-and-search__btns:hover{
+  background-color: #f7f7f5;
+}
+
+.tech{
+  font-size: 10px;
+  color: #6f6f6f;
+  margin: 3px;
+}
+
+.masthead__date, .masthead__paper{
+  font-size: 11px;
+  display: flex;
+  align-items: flex-end;
+}

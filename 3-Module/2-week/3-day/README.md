@@ -1,6 +1,5 @@
 # `M3W2D3`
 
-
 > ## `Helpful Links` <br>
 > [Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) <br>
 [MDN CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) <br>
