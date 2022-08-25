@@ -37,11 +37,11 @@ document.cookie = firstCookie;
 const secondCookie = "favoriteDog=bambi";
 document.cookie = secondCookie;
 
-document.cookie; // returns favoriteDog=bambi
+document.cookie; // returns all cookies as a STRING
 
 // specify the cookies "name" (the key) with an "=" to set to nothing
 // and set the expiration date to the past
-document.cookie = "favoriteCat=; expires = Thu, 01 Jan 2222 00:00:00 GMT"; //expired and removed
+document.cookie = "favoriteCat=; expires = Thu, 01 Jan 1999 00:00:00 GMT"; //expired and removed
 // document.cookie = `favoriteCat=million; expires = ${new Date(2023, 1, 1).toUTCString()}`; //expires next year
 document.cookie; // ""
 ```
