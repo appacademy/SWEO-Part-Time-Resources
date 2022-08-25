@@ -11,5 +11,5 @@
 
 ## Catastagram Pt. 3
 - strategy:
-  - when first entering, application should try to load data (i.e. cat image) first from local storage.
-  - Else If there is nothing to be loaded from the storage, then 
+  - check if data is in local storage first to load in
+  - else continue and store data (i.e image) to local storage
