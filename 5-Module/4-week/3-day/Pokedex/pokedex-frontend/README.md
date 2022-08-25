@@ -76,4 +76,4 @@ Dispatch the thunk action returned from the `getPokemon` thunk action creator
 after the `PokemonBrowser` component first renders.
 
 If done correctly, you should see the list of all the Pokemon in the side of the
-browser.
+browser.# revised-pokemon-frontend
