@@ -6,6 +6,8 @@ const createNewKittenBtn = () => {
     
     // add an event listener to the newly created button, when clicked used fetch image
     newKittenBtn.addEventListener('click', fetchImage);
+
+    
     return newKittenBtn;
 };
 
