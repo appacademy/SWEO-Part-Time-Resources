@@ -3,7 +3,7 @@
 
 // set the localStorage theme key name to a constant to prevent spelling
 // errors
-const THEME_KEY = 'theme';
+const THEME_KEY = 'apple';
 
 
 // For storing user's theme selection in the browser
