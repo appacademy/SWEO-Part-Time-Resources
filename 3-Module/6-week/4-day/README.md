@@ -3,9 +3,5 @@
 ## Code-it-out
 - try: `build-board.js`
 
-## Practices 
-- Persistent Storage Quiz
-- Practice: Web Storage
-- Practice: Cookies
+## Battlship Project
 
-## Catastagram Pt. 3
