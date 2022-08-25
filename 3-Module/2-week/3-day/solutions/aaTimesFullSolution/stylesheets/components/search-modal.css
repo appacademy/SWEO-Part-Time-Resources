@@ -1,0 +1,15 @@
+.search-modal {
+  margin-left: 10px;
+}
+
+/*!!START SILENT */
+.search-modal--hidden {
+  display: none;
+}
+/*!!END */
+
+.search-modal__input {
+  border: 1px solid #dedede;
+  border-radius: 2px;
+  padding: .4em;
+}

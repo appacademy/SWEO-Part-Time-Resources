@@ -1,0 +1,55 @@
+.masthead{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 
+  "menu . action"
+  ". techs ."
+  "date logo paper";
+}
+
+.masthead__menu-and-search{
+  grid-area: menu;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.masthead__actions{
+  grid-area: action;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.masthead__technologies{
+  grid-area: techs;
+}
+
+.masthead__date{
+  grid-area: date;
+}
+
+.masthead__logo{
+  grid-area: logo;
+}
+
+.masthead__paper{
+  grid-area: paper;
+}
+
+.ms-btns{
+  font-size: 11px;
+  padding: 7px 9px;
+}
+
+.ms-btns:hover{
+  background-color: #f7f7f5;
+}
+
+.tech{
+  text-transform: uppercase;
+  font-size: 10px;
+  color: #6f6f6f;
+  margin: 3px;
+}
