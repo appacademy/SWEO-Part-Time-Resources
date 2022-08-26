@@ -105,7 +105,7 @@ const removeCellEventListeners = () => {
 
     for (let i = 0; i < grid.length; i++) {
         for (let j = 0; j < grid[0].length; j++) {
-            const cell = document.querySelector(`div[data-row="${i}"][data-col="${j}]"`);
+            const cell = document.querySelector(`div[data-row="${i}"][data-col="${j}"]`);
             // OR:
             // const boardContainer = document.querySelector("div.board");
             // const cell = boardContainer.children[i].children[j]
