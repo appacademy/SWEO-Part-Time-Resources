@@ -20,7 +20,16 @@ app.get('/musicians', async (req, res, next) => {
     include: [],
   };
 
-  const { firstName, lastName, bandName, instrumentTypes } = req.query;
+  const {
+    firstName,
+    lastName,
+    bandName,
+    instrumentTypes,
+    musicianFields,
+    bandFields,
+    instrumentFields,
+    order,
+  } = req.query;
 
   // Pagination Options
   // ?page=XX&size=YY
@@ -28,6 +37,7 @@ app.get('/musicians', async (req, res, next) => {
   // object.
   const page = req.query.page === undefined ? 1 : parseInt(req.query.page);
   const size = req.query.size === undefined ? 5 : parseInt(req.query.size);
+
   if (page >= 1 && size >= 1) {
     query.limit = size;
     query.offset = size * (page - 1);
@@ -39,14 +49,16 @@ app.get('/musicians', async (req, res, next) => {
   // End result: { where: { firstName: req.query.firstName } }
 
   if (firstName) {
-    query.where.firstName = firstName;
+    // query.where.firstName = firstName; //! before bonus
+    query.where.firstName = { [Op.like]: `%${firstName}%` };
   }
 
   // Add keys to the WHERE clause to match the lastName param, if it exists.
   // End result: { where: { lastName: req.query.lastName } }
 
   if (lastName) {
-    query.where.lastName = lastName;
+    // query.where.lastName = lastName; //! before bonus
+    query.where.lastName = { [Op.like]: `%${lastName}%` };
   }
 
   // STEP 2: WHERE clauses on the associated Band model
@@ -55,12 +67,31 @@ app.get('/musicians', async (req, res, next) => {
   // name matches the bandName param, if it exists.
   // End result: { include: [{ model: Band, where: { name: req.query.bandName } }] }
 
+  // //! Before bonus
+  // if (bandName) {
+  //   query.include.push({
+  //     model: Band,
+  //     where: {
+  //       name: bandName,
+  //     },
+  //   });
+  // }
+
   if (bandName) {
+    let bandAttributes = {};
+    if (bandFields && bandFields.length) {
+      if (!bandFields.includes('all')) {
+        if (bandFields.includes('none')) {
+          bandAttributes.attributes = [];
+        } else {
+          bandAttributes.attributes = bandFields;
+        }
+      }
+    }
     query.include.push({
       model: Band,
-      where: {
-        name: bandName,
-      },
+      where: { name: { [Op.like]: `%${bandName}%` } },
+      ...bandAttributes,
     });
   }
 
@@ -77,17 +108,38 @@ app.get('/musicians', async (req, res, next) => {
             where: { type: req.query.instrumentTypes }, 
             through: { attributes: [] } // Omits the join table attributes
         }] } 
-    */
+  */
 
-  if (instrumentTypes && instrumentTypes.length) {
+  // //! Before bonus
+  // if (instrumentTypes && instrumentTypes.length) {
+  //   query.include.push({
+  //     model: Instrument,
+  //     where: {
+  //       type: instrumentTypes,
+  //     },
+  //     through: { attributes: [] },
+  //   });
+  // }
+
+  if (instrumentTypes && instrumentTypes.length >= 1) {
+    let instrumentAttributes = {};
+    if (instrumentFields && instrumentFields.length) {
+      if (!instrumentFields.includes('all')) {
+        if (instrumentFields.includes('none')) {
+          instrumentAttributes.attributes = {};
+        } else {
+          instrumentAttributes.attributes = instrumentFields;
+        }
+      }
+    }
+
     query.include.push({
       model: Instrument,
       where: {
         type: instrumentTypes,
       },
-      through: {
-        attributes: [],
-      },
+      through: { attributes: [] },
+      ...instrumentAttributes,
     });
   }
 
@@ -100,7 +152,17 @@ app.get('/musicians', async (req, res, next) => {
   // If keyword 'none' is used, do not include any Musician attributes
   // If any other attributes are provided, only include those values
 
-  // Your code here
+  if (musicianFields) {
+    if (!musicianFields.includes('all')) {
+      let musicAttributes = {};
+      if (musicianFields.includes('none')) {
+        musicAttributes.attributes = [];
+      } else {
+        musicAttributes.attributes = musicianFields;
+      }
+      query = { ...query, ...musicAttributes };
+    }
+  }
 
   // BONUS STEP 5: Specify attributes to be returned
   // These additions should be included in your previously implemented
@@ -120,7 +182,7 @@ app.get('/musicians', async (req, res, next) => {
                 attributes: req.query.bandFields
             }]
         }
-    */
+  */
 
   // BONUS STEP 6: Order Options
   // ?order[]=XX,xx&order[]=YY&order[]=ZZ,zz
@@ -135,7 +197,18 @@ app.get('/musicians', async (req, res, next) => {
   // Example: ?order[]=firstName,asc&order[]=lastName&order[]=createdAt,desc
   // End result: { order: [['firstName', 'asc'], ['lastName'], ['createdAt', 'desc']] }
 
-  // Your code here
+  if (order && order.length) {
+    let organize = [];
+
+    order.forEach((str) => {
+      organize.push(str.split(','));
+    });
+
+    query.order = organize;
+  } else {
+    let organize = [['firstName'], ['lastName']];
+    query.order = organize;
+  }
 
   // Perform compiled query
   const musicians = await Musician.findAndCountAll(query);
