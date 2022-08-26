@@ -1,0 +1,145 @@
+/* ===== Problem 1 ===== */
+
+.rocket_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    /* Your code here */
+    transition-duration: 2s;
+}
+
+/* Create rocket hover animation here */
+
+.rocket_svg:hover{
+    transform: rotate(250deg);
+}
+
+
+/* ===== Problem 2 ===== */
+
+.astronaut_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 200px;
+    /* Your code here */
+    transition-duration: 1.5s;
+}
+
+/* Create astronaut hover animation here*/
+
+.astronaut_svg:hover{
+    transform: translate(100px);
+}
+
+/* ======= BONUS ======= */
+
+.earth_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+   from{
+        transform: rotate(0deg);
+   }
+   to{
+        transform: rotate(360deg);
+   }
+}
+
+/* I wanted to include some extra fun stuff from 
+todays project, go through and try out some 
+different effects and create keyframes to make 
+them do something different! This is one of 
+the most fun parts of css. :)  */
+
+/* make the rocket fly! You can
+ use more than one keyframe if you comma 
+ separate them like this*/
+.rocket_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    animation: startup .5s, fly 2s linear infinite .5s;
+}
+
+@keyframes startup {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(3deg);}
+    20% {transform: rotate(0deg);}
+    30% {transform: rotate(-3deg);}
+    40% {transform: rotate(0deg);}
+    50% {transform: rotate(3deg);}
+    60% {transform: rotate(0deg);}
+    70% {transform: rotate(-3deg);}
+    80% {transform: rotate(0deg);}
+    90% {transform: rotate(3deg);}
+    100% {transform: rotate(0deg);}
+}
+
+@keyframes fly {
+    0% {
+        transform: rotate(0deg);
+        transform: translateY(0px);
+    }
+    25% {
+        transform: translateY(5px);
+        transform: rotate(2deg);
+    }
+    50% {
+        transform: rotate(0deg);
+        transform: translateY(10px);}
+    75% {
+        transform: translateY(5px);
+        transform: rotate(-2deg);
+    }
+    100% {
+        transform: rotate(0deg);
+        transform: translateY(0px);
+    }
+}
+
+/* get a closer look at the rocket! */
+/* .rocket_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    transition: transform 0.3s ease-in;
+    transform-origin: top left;
+}
+
+.rocket_svg:hover { 
+    -webkit-transform: scale3d(5, 5, 5);
+    transform: scale3d(1);
+} */
+
+/* make your astronaut excited */
+.astronaut_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 200px;
+    animation: bounce .3s cubic-bezier(.47,1.64,.41,.8) infinite;
+}
+
+@keyframes bounce{
+    0%{transform: translateY(0px);}
+    50%{transform: translateY(7px);}
+    100%{transform: translateY(0px);}
+    
+}
+
+/* the earth is flat and round */
+.earth_svg {
+    height: 200px;
+    width: auto;
+    margin-left: 300px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate3d(0, 0, 0, 0deg); }
+    50% { transform: rotate3d(0, 1, 0, 180deg); }
+    100% { transform: rotate3d(0, 0, 0, 360deg); }
+}
