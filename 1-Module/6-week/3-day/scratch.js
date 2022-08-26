@@ -77,9 +77,6 @@ const recursiveSolution = (data, byCompletion = { complete: [], incomplete: []})
 }
 
 
-
-
-
 // const data1 = [
 //     { name: "Johann", score: 0, isComplete: true},
 //     { name: "Vanessa", score: 50, isComplete: false},
@@ -119,3 +116,4 @@ function isPalindrome(string) {
 //   console.log(isPalindrome("abc")); // false
 //   console.log(isPalindrome("racecar")); // true
 //   console.log(isPalindrome("A man, a plan, a canal, Panama")); // true
+//adding comment
