@@ -15,6 +15,45 @@ on your own!
 
 ---
 
+```js
+class Node {
+  constructor(val){
+    this.val = val;
+    this.next = null;
+    this.prev = null;
+  }
+}
+
+class DoublyLinkedList {
+  constructor(){
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
+
+  addToHead(val){
+   
+  }
+
+  addToTail(val){
+   
+  }
+
+  removeFromHead(){
+    
+  }
+
+  removeFromTail(){
+    
+  }
+
+  contains(searchVal){
+    
+  }
+}
+```
+---
+
 ## Sets
 
 A set is a math term that means a collection of distinct elements. In computer
