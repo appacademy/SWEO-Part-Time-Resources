@@ -100,11 +100,27 @@ const createGameOverMessage = () => {
     document.body.appendChild(gameOver);
 };
 
+const removeCellEventListeners = () => {
+    const { grid } = board;
+
+    for (let i = 0; i < grid.length; i++) {
+        for (let j = 0; j < grid[0].length; j++) {
+            const cell = document.querySelector(`div[data-row="${i}"][data-col="${j}]"`);
+            // OR:
+            // const boardContainer = document.querySelector("div.board");
+            // const cell = boardContainer.children[i].children[j]
+            cell.removeEventListener("click", chooseSquare);
+        }
+    }
+};
 
 const endGame = () => {
     const gameOver = document.querySelector(".game-over");
     gameOver.innerText = "YOU WIN!"
     alert('YOU WIN!');
+    removeCellEventListeners();
+
+    
 };
 
 // --------------Reset Handlers---------------
