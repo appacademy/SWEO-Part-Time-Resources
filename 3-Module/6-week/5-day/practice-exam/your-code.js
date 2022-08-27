@@ -41,6 +41,35 @@ window.addEventListener("DOMContentLoaded", () => {
   })
 
 
+  // problem 4
+  // 1) add cookie to our text input if it exists in storage
+  const cookieString = document.cookie;
+  if(cookieString){
+   
+    console.log("cookieString:", cookieString);
+    const cookieSplit = cookieString.split("; ")
+    console.log("cookieSplit:", cookieSplit);
+    const cookieMatch = cookieSplit.find((cookie) => {
+      return cookie.startsWith("favCookie")
+    })
+    console.log("cookieMatch:", cookieMatch);
+    const cookieValue = cookieMatch.split("=")[1];
+    console.log("cookieValue:", cookieValue);
+
+    // check if cookieValue exists, and add it to the input field
+    document.getElementById("fav-cookie").value = cookieValue;
+  }
+
+  // 2) store cookie
+  const storeCookieButton = document.getElementById("store-cookie");
+  storeCookieButton.addEventListener("click", e=>{
+    // add our input field data into the storage 
+    const inputEl = document.getElementById("fav-cookie");
+    console.log(inputEl.value);
+    document.cookie = `favCookie=${inputEl.value}; max-age=${30*60}`;
+  })
+
+
   // problem 5
   // select button
   const p5_button = document.getElementById("save-pie");
@@ -64,12 +93,12 @@ window.addEventListener("DOMContentLoaded", () => {
   // 1) if that thing we are looking for already is stored/exists in the storage, then get it. 
   const inputEl = document.getElementById("fav-ice-cream");
   const alreadyStored = localStorage.getItem("fav");
-  if(alreadyStored){
+  if (alreadyStored) {
     inputEl.value = alreadyStored;
   }
   // 2) store / set the thing that we want to keep track of in the storage
   const save = document.getElementById("save-ice-cream");
-  save.addEventListener("click", e=>{
+  save.addEventListener("click", e => {
     const textToSave = inputEl.value;
     localStorage.setItem("fav", textToSave);
   })
@@ -78,34 +107,34 @@ window.addEventListener("DOMContentLoaded", () => {
   // problem 7
   // select the basket 
   const basket = document.getElementById("fruit-storage");
-  
+
   // select the total pieces of fruit and update that as we go
   const totalFruits = document.getElementById("total-fruit");
   totalFruits.innerText = 0;
-  
+
   // select apple button and add logic
   const appleButton = document.getElementById("add-apple");
-  appleButton.addEventListener("click", e=>{
+  appleButton.addEventListener("click", e => {
     basket.innerText += "🍎"
     totalFruits.innerText = Number(totalFruits.innerText) + 1;
   })
-  
+
   // select orange button and add logic
   const orangeButton = document.getElementById("add-orange");
-  orangeButton.addEventListener("click", e=>{
+  orangeButton.addEventListener("click", e => {
     basket.innerText += "🍊"
     totalFruits.innerText = Number(totalFruits.innerText) + 1;
   })
   // select empty basket and add logic
   const emptyBasketButton = document.getElementById("reset-basket");
-  emptyBasketButton.addEventListener("click", e=>{
+  emptyBasketButton.addEventListener("click", e => {
     basket.innerText = "";
     totalFruits.innerText = 0;
   })
 
   // problem 8
   const p8_button = document.getElementById("bubble-maker");
-  p8_button.addEventListener("click", eventApple=>{
+  p8_button.addEventListener("click", eventApple => {
     eventApple.stopPropagation();
   })
 
@@ -130,9 +159,9 @@ window.addEventListener("DOMContentLoaded", () => {
     const liWord = document.createElement("li");
     liWord.innerText = data[0].word; //"definition"
     ul.appendChild(liWord);
-    
+
     const liDef = document.createElement("li");
-    liDef.innerText = `${definition}`;
+    liDef.innerText = `definition: ${definition}`;
     ul.appendChild(liDef);
 
     console.log("ul:", ul);
@@ -140,5 +169,8 @@ window.addEventListener("DOMContentLoaded", () => {
     const resultDiv = document.getElementById("results-area");
     resultDiv.appendChild(ul);
   })
+
+
+
 
 });
