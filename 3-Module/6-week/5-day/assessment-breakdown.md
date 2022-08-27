@@ -50,6 +50,11 @@
 - Working with web storage, being able to get and set the items into the storage. And being able to save user input into storage so even afer closing browser, the input will not disappear.  
   - check if data is in local storage first to load in
   - select and store the data (i.e image) to local storage
+- situations where we would use different storage mechanism, i.e. 
+  - `server storage` - cloud information that can be accessed on multiple devices like user setting, preferences, shared data, etc.
+  - `local storage` - singular device, data not cleared
+  - `cookies` - transmission of small data w/ request and response
+  - `session storage` -singular device, data cleared after session ends
 
 ## Fetch API + DOM Manipulation
 [catstagram-day-1 is a great project](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-17---browser--dom--and-events/catstagram-day-1)
