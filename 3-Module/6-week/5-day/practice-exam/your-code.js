@@ -50,7 +50,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const cookieSplit = cookieString.split("; ")
     console.log("cookieSplit:", cookieSplit);
     const cookieMatch = cookieSplit.find((cookie) => {
-      return cookie.startsWith("cookie-fav")
+      return cookie.startsWith("favCookie")
     })
     console.log("cookieMatch:", cookieMatch);
     const cookieValue = cookieMatch.split("=")[1];
@@ -66,7 +66,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // add our input field data into the storage 
     const inputEl = document.getElementById("fav-cookie");
     console.log(inputEl.value);
-    document.cookie = `cookie-fav=${inputEl.value}; max-age=${30*60}`;
+    document.cookie = `favCookie=${inputEl.value}; max-age=${30*60}`;
   })
 
 
