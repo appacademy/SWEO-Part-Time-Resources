@@ -22,7 +22,8 @@
 
 - `Problem 5 hint:` 
   - Go into the full `documentation` and see if we can find what the exam means by `sub-breed` (i.e. we want all the sub-breeds of hound)
-  - `Follow the data`; We can always test the get request and `see what JSON data` it is sending back by entering the `API URL` into the `browser`.
+  - `Follow the data:` what datatype are we working with? Objects, arrays? etc.
+    - We can always test the get request and `see what JSON data` it is sending back by entering the `API URL` into the `browser`.
 
 ## Welcome to Mod 4!!! Backend, Databases, Servers, and More!
 
