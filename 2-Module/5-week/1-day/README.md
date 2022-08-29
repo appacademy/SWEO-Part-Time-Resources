@@ -2,14 +2,12 @@
 
 ## Logarithms & Binary Search
 
-### Readings & Practice (50m)
+### Readings (15m)
 
 - Intro to CS 2
 - Logarithms Objectives
 - Logarithms
-
 - Binary Search
-- Binary Search Practice
 
 ### Discussion
 
@@ -48,3 +46,12 @@ Math.log2(1024); // 10
 ![bigO-chart](./bigO_chart.png)
 
 ---
+
+In order to perform a binary search in logartihmic time, the following 2 conditions must be true.
+
+- Data is sorted
+- Data can be accessed by index in constant time
+
+### Practice
+
+- Binary Search
