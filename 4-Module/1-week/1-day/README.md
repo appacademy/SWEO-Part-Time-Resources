@@ -21,7 +21,7 @@
 - Don't hesitate to ask questions if something is confusing or we require clarity! We cannot help you code, but we can explain the question and point you to available resources.
 
 - `Problem 5 hint:` 
-  - Go into the full `documentation` and see if we can find what the exam means by `sub-breed` (i.e. we want all the sub-breeds of hound)
+  - Go into the full `documentation` and see if we can find what the exam means by `sub-breed` (i.e. we want all the sub-breeds of terrier)
   - `Follow the data:` what datatype are we working with? Objects, arrays? etc.
     - We can always test the get request and `see what JSON data` it is sending back by entering the `API URL` into the `browser`.
 
