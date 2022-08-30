@@ -105,8 +105,6 @@ Access each value as you traverse the tree before recursing.
 
 The order would be:  `4 -> 2 -> 1 -> 3 -> 6 -> 5 -> 7`
 
-Code it out
-
 ---
 
 ### In-Order Traversal
@@ -119,8 +117,6 @@ Access each value in order as you traverse.
 
 The order would be: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
 
-Code it out
-
 ---
 
 ### Post-order Traversal
@@ -132,8 +128,6 @@ Access each value as you traverse after recursing.
 3. Print the current node
 
 The order would be: `1 -> 3 -> 2 -> 5 -> 7 -> 6 -> 4`
-
-Code it out
 
 ---
 
@@ -153,7 +147,5 @@ Breadth First Traversals follow a different pattern. They check every node on a
 given level before descending another level until the reach the bottom.
 
 Breadth First order would be: `4 -> 2 -> 6 -> 1 -> 3 -> 5 -> 7`
-
-Code it out
 
 ---
