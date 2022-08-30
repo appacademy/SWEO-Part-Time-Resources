@@ -95,6 +95,8 @@ node6.right = node7;
 
 ---
 
+![bst_traversals](./Sorted_binary_tree_ALL.svg)
+
 ### Pre-order Traversal
 
 Access each value as you traverse the tree before recursing.
