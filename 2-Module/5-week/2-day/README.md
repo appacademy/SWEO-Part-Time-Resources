@@ -1,4 +1,4 @@
-# M2-W5-D2
+# M2W5D2
 
 ## Intro to Trees (30m)
 
