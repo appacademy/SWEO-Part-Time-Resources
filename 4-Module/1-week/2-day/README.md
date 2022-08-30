@@ -1,4 +1,4 @@
-# W18D2 - Tuesday
+# W19D2 - Tuesday
 - These resources below are great to look around and reference 
 - [express docs](https://expressjs.com/en/4x/api.html)
 - [mdn express tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
