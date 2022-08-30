@@ -1,0 +1,10 @@
+extends layout.pug
+
+block title
+  title Posts Index
+
+block body
+  h1 Posts Index
+  ul.posts
+    each post in posts
+      li: a(href="/posts/" + post.postId)= post.title
