@@ -109,7 +109,7 @@ The order would be:  `4 -> 2 -> 1 -> 3 -> 6 -> 5 -> 7`
 
 ---
 
-### In-Order Traversal (Green)
+### In-Order Traversal (Yellow)
 
 Access each value in order as you traverse.
 
@@ -121,7 +121,7 @@ The order would be: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
 
 ---
 
-### Post-order Traversal (Blue)
+### Post-order Traversal (Green)
 
 Access each value as you traverse after recursing.
 
