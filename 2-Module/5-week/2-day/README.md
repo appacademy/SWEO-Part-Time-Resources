@@ -97,7 +97,7 @@ node6.right = node7;
 
 ![bst_traversals](./Sorted_binary_tree_ALL.svg)
 
-### Pre-order Traversal
+### Pre-order Traversal (Red)
 
 Access each value as you traverse the tree before recursing.
 
@@ -109,7 +109,7 @@ The order would be:  `4 -> 2 -> 1 -> 3 -> 6 -> 5 -> 7`
 
 ---
 
-### In-Order Traversal
+### In-Order Traversal (Green)
 
 Access each value in order as you traverse.
 
@@ -121,7 +121,7 @@ The order would be: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
 
 ---
 
-### Post-order Traversal
+### Post-order Traversal (Blue)
 
 Access each value as you traverse after recursing.
 
