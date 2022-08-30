@@ -89,7 +89,8 @@ const chooseSquare = e => {
     // after making a guess, check if the game is over after we makeHit
     // check if the game is over
     if (board.isGameOver()) {
-        endGame()
+        endGame();
+
     };
 };
 
