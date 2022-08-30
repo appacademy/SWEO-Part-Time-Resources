@@ -1,4 +1,4 @@
-# M2-W5-D2
+# M2W5D2
 
 ## Intro to Trees (30m)
 
@@ -31,11 +31,11 @@
 
 ---
 
-## Practice: Pt1 (20m)
+## Practice: Pt1 + Pt2 (40m)
 
 ---
 
-## Walkthrough: Pt1
+## Walkthrough
 
 ---
 
@@ -155,13 +155,5 @@ given level before descending another level until the reach the bottom.
 Breadth First order would be: `4 -> 2 -> 6 -> 1 -> 3 -> 5 -> 7`
 
 Code it out
-
----
-
-## Practice: Pt2 (20m)
-
----
-
-## Walkthrough: Pt2
 
 ---
