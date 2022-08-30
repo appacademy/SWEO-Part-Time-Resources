@@ -18,6 +18,7 @@
   - should look something like this: 
     - ![](https://i.imgur.com/7hwiMj1.png)
   - now add your express server, convert the `http-server.png` to express logic
+  - run your server: `node app.js`
   - bonus: add and use `nodemon` package and 
     - change the `package.json` to have a script of `dev` that runs `nodemon app.js`.
     - now execute: `npm run dev` and you should have hot reload
