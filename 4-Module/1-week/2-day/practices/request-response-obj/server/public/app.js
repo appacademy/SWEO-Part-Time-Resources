@@ -107,7 +107,7 @@ app.get("/movies", (req,res)=>{
 })
 app.post("/movies", (req,res)=>{
     console.log("POST movies hit");
-    const reqData = req.body;
+    const reqData = req.body; //{ name: 'up', year: '2009', favorite: 'on' }
     console.log("reqData:", reqData)
 
     const resData = {
@@ -117,7 +117,7 @@ app.post("/movies", (req,res)=>{
         favorite: Boolean(reqData.favorite)
 
     }
-    res.send(resData);
+    res.json(resData);
 })
 
 /**
