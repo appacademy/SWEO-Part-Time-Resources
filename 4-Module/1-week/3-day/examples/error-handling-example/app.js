@@ -5,6 +5,12 @@ const port = 5000;
 
 app.use(express.json()) // for parsing application/json
 
+app.use((req, res, next)=>{
+    console.log(" 0) this is our 0 middleware that will throw an error (not handling one, but throwing one)")
+    const error = new Error("0) error from 0 middleware")
+    throw error;
+})
+
 
 // when we use app.use this middleware will be mounted on the application level meaning that it will be executed if we reach this point. Order matters, if we add this after a route has been matched, it will not execute.
 app.use((req, res, next)=>{
@@ -82,6 +88,28 @@ app.get("*", (req, res)=>{
     res.set("random-header", "random header value");
     res.send("Not Found");
 })
+
+// error handler that will catch and not have the default one ran.
+app.use((err, req, res, next)=>{
+    console.log("error1:", err);
+    next(err); //if we do not have something that can handle the error after doing next(err), then the default error handler will be executed.
+})
+
+app.use((err, req,res,next)=>{
+    console.log("error2", err);
+    res.status(500);
+
+    // this error handler middleware will handle the error and send a response back to the client, so we don't have to ever hit the DEFAULT ERROR HANDLER (built in)
+    res.json({
+        error: `${err}`
+    })
+    // res.send(`error: ${err}`)
+})
+
+
+
+
+
 
 app.listen(5000, ()=>{
     console.log("listening on port:", port)
