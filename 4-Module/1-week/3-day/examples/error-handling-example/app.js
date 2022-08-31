@@ -97,7 +97,7 @@ app.use((err, req, res, next)=>{
 
 app.use((err, req,res,next)=>{
     console.log("error2", err);
-    res.status(500);
+    res.status(err.status || 500);
 
     // this error handler middleware will handle the error and send a response back to the client, so we don't have to ever hit the DEFAULT ERROR HANDLER (built in)
     res.json({
