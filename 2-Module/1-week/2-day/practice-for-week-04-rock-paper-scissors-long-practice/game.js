@@ -58,13 +58,13 @@ function processMove(cmd, cpu) {
 
   if(res === 0){
     console.log('You tie.\n')
-    ties++
+    // ties++
   } else if(res === 1){
     console.log('You win!\n')
-    wins++
+    // wins++
   } else{
     console.log('You lose...\n')
-    losses++
+    // losses++
   }
 }
 
