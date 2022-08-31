@@ -67,7 +67,7 @@ class Instrument {
   class Guitar extends Instrument {
     constructor() {
       Guitar.total += 1;
-      super(`Guitar ${Guitar.total}`, 'Woodwinds');
+      super(`Guitar ${Guitar.total}`, 'Strings');
     }
   
     static total = 0;
@@ -101,10 +101,7 @@ jamesGuitar.strumGuitar();
 jamesTrumpet.releaseSpitValve();
 
 /* 
-We all know that Saxophones make more of a 'squawk squawk squawk'
-How can I change just the Saxophones to squawk instead of toot?
+We all know that guitars make more of a guitar sound lol
+How can I change just the guitar to shringggg instead of toot?
 */
-```
-
-
-
+``` 
