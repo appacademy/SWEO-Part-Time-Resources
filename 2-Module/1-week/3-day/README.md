@@ -4,7 +4,7 @@
 
 ## Quiz Discussion - 25 mins
 
-## Classes Lecture - 15 Min
+## Classes Lecture - 25 Min
 
 What is a class?
 
@@ -106,9 +106,5 @@ How can I change just the Saxophones to squawk instead of toot?
 */
 ```
 
-### Group Activity - 20 min
 
-- Lets come up with some things that would be easy to model with a class
-- Lets come up with some attributes and actions that these objects could have
 
-## 
