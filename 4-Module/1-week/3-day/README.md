@@ -1,8 +1,7 @@
 # W19D2 - Tuesday
 - These resources below are great to look around and reference 
 - [express docs](https://expressjs.com/en/4x/api.html)
-- [mdn express tutorial](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs)
-
+  
 ## Code-it-out
 - Open `http-to-express` folder and your task is to convert the image in `http-server.png` to an express server from scratch
 
