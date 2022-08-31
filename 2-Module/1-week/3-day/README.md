@@ -50,25 +50,65 @@ const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
 console.log(carnitasTaco.assemble())
 ```
 
+
+### Inheritence 
+
+```js
+class Instrument {
+  constructor(name, family) {
+    this.name = name;
+    this.family = family;
+  }
+
+  play() {
+    console.log('toot toot toot');
+  }
+}
+  class Guitar extends Instrument {
+    constructor() {
+      Guitar.total += 1;
+      super(`Guitar ${Guitar.total}`, 'Woodwinds');
+    }
+  
+    static total = 0;
+  
+    strumGuitar() {
+      console.log('strumming guitar');
+    }
+    
+  }
+
+class Trumpet extends Instrument {
+  constructor() {
+    Trumpet.total += 1;
+    super(`Trumpet ${Trumpet.total}`, 'Brass');
+  }
+
+  static total = 0;
+
+  releaseSpitValve() {
+    console.log('releasing spit valve');
+  }
+}
+
+
+// What will print to the console?
+const jamesGuitar = new Guitar();
+const jamesTrumpet = new Trumpet();
+jamesGuitar.play();
+jamesTrumpet.play();
+jamesGuitar.strumGuitar();
+jamesTrumpet.releaseSpitValve();
+
+/* 
+We all know that Saxophones make more of a 'squawk squawk squawk'
+How can I change just the Saxophones to squawk instead of toot?
+*/
+```
+
 ### Group Activity - 20 min
 
-- Lets come up with some tings that would be easy to model with a class
+- Lets come up with some things that would be easy to model with a class
 - Lets come up with some attributes and actions that these objects could have
 
-## Create a Dog - 20 mins
-
-- Should have minimum of three instance variables assigned
-- Should have a minimum of three instance methods
-- TEST YOUR CODE!!!!
-
-## Create a Dog Discussion - 20 mins
-
-## Create a Bicycle - 40 mins
-
-- Should have minimum of 5 instance variables assigned
-- Should have a minimum of 5 instance methods
-- TEST YOUR CODE!!!!
-
-## Create a Bicycle Discussion - 20 mins
-
-## Extra Time Read HW
+## 
