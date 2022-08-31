@@ -229,16 +229,20 @@ If you need to go into a specific resource and get specific information from it,
 /my/comments/25 // get details of this comment
 ```
 
-## Quizzes
+## `Postman Demo`
 
-### Group 1 (20m)
+Check out the One API To Rule Them All in the lecture directory.
+
+## `Quizzes`
+
+### `Group 1` (20m)
 
 - [HTTP Request Components](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/http-request-components-quiz)
 - [HTTP Request Scenario](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/http-request-scenario-practice)
 
 - Go over `Request` quizzes together
 
-### Group 2 (30m)
+### `Group 2` (30m)
 
 - [HTTP Response Components](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/http-response-components-quiz)
 - [HTTP Response Scenario](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/http-response-scenario-practice)
@@ -246,7 +250,7 @@ If you need to go into a specific resource and get specific information from it,
 
 - Go over `Response` and Restful Routes quizzes together
 
-## Projects
+## `Projects`
 
 - [ReSTful Endpoints](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/exercise--html-web-server-restful-endpoints)
 - [Postman Requests](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/exercise--postman-requests)
