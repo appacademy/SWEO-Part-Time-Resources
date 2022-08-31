@@ -19,7 +19,7 @@ app.get("/users/:userId", (req, res)=>{
 
 app.get("/", (req,res)=>{
     console.log("hello from root using nodemon");
-    // res.send("this was sent using `send`"); //.send will send a response with data that matches the data sent
+    // res.send("this was sent using `send`"); //.send will send a response with data that matches the data that we are sending
 
     res.json("this is json data")
     //.json will send a response in json
