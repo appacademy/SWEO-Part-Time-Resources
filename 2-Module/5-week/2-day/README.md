@@ -148,6 +148,6 @@ It traverses until it hits a dead end and then backtracks to the next branch.
 Breadth First Traversals follow a different pattern. They check every node on a
 given level before descending another level until the reach the bottom.
 
-Breadth First order would be: `4 -> 2 -> 6 -> 1 -> 3 -> 5 -> 7`
+Breadth First order would be: `F -> B -> G -> A -> D -> I -> C -> E -> H`
 
 ---
