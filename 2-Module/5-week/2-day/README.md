@@ -105,7 +105,7 @@ Access each value as you traverse the tree before recursing.
 2. Recursively call left subtree
 3. Recursively call right subtree
 
-The order would be:  `4 -> 2 -> 1 -> 3 -> 6 -> 5 -> 7`
+The order would be:  `F -> B -> A -> D -> C -> E -> G -> I -> H`
 
 ---
 
@@ -117,7 +117,7 @@ Access each value in order as you traverse.
 2. Print the current node
 3. Recursively call the right subtree
 
-The order would be: `1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7`
+The order would be: `A -> B -> C -> D -> E -> F -> G -> H -> I`
 
 ---
 
@@ -129,7 +129,7 @@ Access each value as you traverse after recursing.
 2. Recursively call the right subtree
 3. Print the current node
 
-The order would be: `1 -> 3 -> 2 -> 5 -> 7 -> 6 -> 4`
+The order would be: `A -> C -> E -> D -> B -> H -> I -> G -> F`
 
 ---
 
