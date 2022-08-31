@@ -12,7 +12,7 @@ app.get("/users/:userId", (req,res )=>{
     const userId = req.params.userId; //parse userId from parameters to grab the exact user id
     res.status(200);
     // -----------sending plain text--------
-    // res.set("content-type", "text/plain") //you don't need this, res.send will default to text as content type
+    // res.set("content-type", "text/plain")
     // res.send(`User details for userId: ${userId}`)
     // -----------sending json--------
     res.json(`User details in JSON for userId: ${userId}`)
