@@ -15,7 +15,7 @@ The first paragraph with essential information is the fourth from the top.
 
 <img src='../pics/lotrformats.png' width='500'>
 
-- Here we learn that the response will come back as `JSON`. Now we know what `Content-Type` to use in our header! `Application/JSON` is the most common `Content-Type` I've seen used.
+- Here we learn that the response will come back as `JSON`. `Application/JSON` is the most common `Content-Type` I've seen used.
 - We also learn that we are going to need an *`Authorization`* header, and that is where we will need to paste our `access token`.
 
 The next box beneath this one holds the available `endpoints`. This API is only for `GET` requests.
