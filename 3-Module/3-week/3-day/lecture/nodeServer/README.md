@@ -128,7 +128,7 @@ A `static asset` is something that will never change, no matter how many times i
 const fs = require('fs');
 
 const server = http.createServer((req, res) => {
-  if (req.method === 'POST' && req.url === '/cat') {
+  if (req.method === 'GET' && req.url === '/cat') {
       const catImage = fs.readFileSync('./images/cat.png');
 
       res.statusCode = 200;
