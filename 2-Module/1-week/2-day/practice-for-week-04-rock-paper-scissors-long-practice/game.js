@@ -64,7 +64,7 @@ function processMove(cmd, cpu) {
     wins++
   } else{
     console.log('You lose...\n')
-    losses
+    losses++
   }
 }
 
