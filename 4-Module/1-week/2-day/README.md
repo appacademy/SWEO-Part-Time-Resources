@@ -9,6 +9,7 @@
   - [express starter example](https://expressjs.com/en/starter/hello-world.html)
   - [working with req.body](https://expressjs.com/en/4x/api.html#req.body)
   - [basic routing](https://expressjs.com/en/starter/basic-routing.html)
+  - [req.params](https://expressjs.com/en/4x/api.html#req.params)
 
 - To start:
   - inside of folder run `npm init -y`
