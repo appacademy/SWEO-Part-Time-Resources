@@ -5,6 +5,10 @@ app.get('/', (req, res) => {
   res.send('GET / This is the root URL');
 });
 
+// app.use((req,res,next)=>{
+//   const err = new ReferenceError("This was a reference error!");
+//   next(err);
+// })
 
 // "Resource Not Found Error" middleware
 app.use((req, res, next) => {
@@ -15,6 +19,17 @@ app.use((req, res, next) => {
   // go to the next ERROR HANDLER MIDDLEWARE
   next(err);
 });
+
+app.use((err, req, res, next)=>{
+  if(err instanceof ReferenceError){
+    err.statusCode = 401
+    err.message = "Reference Error! Bananas!!"
+    next(err);
+  }
+  else{
+    next(err);
+  }
+})
 
 // Catch-all error-handling middleware
 app.use((err, req, res, next) => {
