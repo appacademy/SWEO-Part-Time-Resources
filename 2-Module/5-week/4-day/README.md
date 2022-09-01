@@ -6,6 +6,19 @@
   - i.e. Given a tree, can you provide the output if asked for pre-order, etc?
 - Big O and Time complexity of binary tree operations
 - Go over terms:
+  - Node: An element in a graph
+  - Edges: The connections between nodes, also called a pointer.
+  - Root: The ultimate parent, the node of a tree that can access all other nodes
+    through edges. The root cannot have a parent.
+  - Parent/Child: A Parent node points to a child node.
+  - Neighbors: The connections to a given node.
+  - Subtree: A Tree whose root node is a child of another node in the tree.
+  - Internal Node: A node that has children and has a parent, also called a branch
+    node.
+  - Leaf: A node that does not have any children. An outer node.
+  - Path: A series of nodes that can be traversed through edges.
+  - Level: The number of edges between a node and the root node.
+  - Height: The number of edges between the root node and the bottom-most node.
 
 - Coding Portion: Analyze and Debug
   - Given almost working code, get it to work (debug).
