@@ -97,12 +97,12 @@ class Saxophone extends Instrument {
 }
 
 // What will print to the console?
-const zaviar = new Saxophone();
-const mylo = new Trumpet();
-mylo.play();
-zaviar.play();
-mylo.soakReed();
-zaviar.soakReed();
+const james = new Saxophone();
+const crystal = new Trumpet();
+crystal.play();
+james.play();
+crystal.soakReed();
+james.soakReed();
 
 /* 
 We all know that Saxophones make more of a 'squawk squawk squawk'
