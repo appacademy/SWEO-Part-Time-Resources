@@ -14,6 +14,5 @@ class Employee{
     }
 }
 
-let james = new Manager()
 
 module.exports = Employee
