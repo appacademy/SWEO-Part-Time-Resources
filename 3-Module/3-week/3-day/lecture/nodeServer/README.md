@@ -65,13 +65,33 @@ let reqBody = '';
 });
 ```
 
-Once we've done this, if we have this `content type`, the `request` `body` will be a string with the key-value pairs of our form `inputs` separated by `&` with a `=` between each key and value. If there are any spaces, they will be replaced with `%21` or something similar.
+Once we've done this, if we have this `content type`, the `request` `body` will be a string with the key-value pairs of our form `inputs` separated by `&` with a `=` between each key and value. If there are any spaces, they will be replaced with `%21` or something similar. If we add:
+
+```js
+req.on('end', () => {
+    console.log(reqBody);
+  });
+
+  
+
+// if our form data was: 
+// {
+//   animal: Alaskan Bull Worm,
+//   name: Mittens,
+//   isAlive: true
+// }
+// we would get the following log back:
+
+animal=Alaskan%20Bull%20Worm&name=Mittens&isAlive=true
+```
+
+> We have to wait until the request is completely finished coming in before we can console.log that variable.
 
 If we want to be able to use this information to add this item to our `database`, we need to parse it into a `javascript` `object`.
 
-- First you need to `split` our `body` on the `&` to separate the pairs.
+- First we need to `split` our `body` on the `&` to separate the pairs.
 - Next we need to `split` on the `=` to get an arr of our key and value.
-- Next we use the `decodeURIComponent(item)` function to get rid of the `%`'s.
+- Next we use the `decodeURIComponent(item)` function to get rid of the `%`'s (the spaces).
 - Finally we need to create a `JS object` and add our keys and values to it.
 
 ## `Responses`
