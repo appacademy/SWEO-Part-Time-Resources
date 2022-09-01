@@ -112,8 +112,3 @@ How can I change just the Saxophones to squawk instead of toot?
 
 ## Friendly and Evil Dragons Phase (Today and Friday HW)
 
-## Bonus: Manager and Employee Salaries (Wednesday)
-
-[Class Syntax II Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/static-methods-and-variables
-[Inheritance Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/inheritance-quiz
-[Polymorphism Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/polymorphism-quiz
