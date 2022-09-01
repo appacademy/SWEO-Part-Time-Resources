@@ -15,9 +15,8 @@ app.get("/", (req,res)=>{
 // if our path pattern starts with /static, go to this resource here!!
 app.use("/static", express.static('public'))
 
-// if we only want to server the css assets directly
 // express.static(path starts with this, where is this resource located)
-app.use("/css", express.static('public/css'))
+app.use("/css", express.static('public/css')) //// if we only want to serve the css assets directly
 app.use("/javascript", express.static('public/js'))
 
 app.listen(port, ()=>{
