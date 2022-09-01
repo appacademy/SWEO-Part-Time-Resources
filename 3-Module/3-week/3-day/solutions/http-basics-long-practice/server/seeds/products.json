@@ -1,0 +1,12 @@
+{
+  "1": {
+    "productId": 1,
+    "name": "Facial Cleansing Brush",
+    "description": "Reaches deep pores to cleanse oil, dirt, and blackheads.",
+    "price": 23.99,
+    "categories": [
+      "beauty",
+      "electronics"
+    ]
+  }
+}
