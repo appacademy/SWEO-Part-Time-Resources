@@ -1,33 +1,31 @@
-const Employee = require('./employee');
+const Employee = require('./employee.js')
 
 class Manager extends Employee {
-  constructor(name, salary, title, manager) {
-		super(name, salary, title, manager);
-        this.employees = [];
-  }
+    constructor(name, salary, title, manager){
+        super(name, salary, title, manager)
+        this.employees = []
+    }
 
-  addEmployee(employee) {
+    addEmployee(employee){
+        this.employees.push(employee)
+    }
 
-    this.employees.push(employee);
-    return employee;
-  }
+    calculateBonus(multipler){
+        return (this.salary + this._totalSubSalary()) * multipler
+    }
 
-  calculateBonus(multiplier) {
-    return (this.salary + this._totalSubSalary()) * multiplier;
-  }
-
-  _totalSubSalary() {
-	let totalSubSalary = 0;
-    
-    this.employees.forEach((employee) => {
-      if (employee instanceof Manager) {
-        totalSubSalary += employee.salary + employee._totalSubSalary();
-      } else {
-        totalSubSalary += employee.salary;
-      }
-    });
-    return totalSubSalary;
-  }
+    _totalSubSalary(){
+        let sum = 0
+        this.employees.forEach(employee => {
+           if(employee instanceof Manager){
+            sum += employee.salary + employee._totalSubSalary()
+           } else {
+            sum += employee.salary
+           }
+        })
+        return sum
+    }
 }
 
-module.exports = Manager;
+
+module.exports = Manager
