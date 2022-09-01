@@ -19,7 +19,10 @@
   - Path: A series of nodes that can be traversed through edges.
   - Level: The number of edges between a node and the root node.
   - Height: The number of edges between the root node and the bottom-most node.
-
+- Projects
+  - Practice Assessment
+  - Binary Search Tree Practice
+  - Binary Trees Long Practice (Min/Max BST - countNodes)   
 - Coding Portion: Analyze and Debug
   - Given almost working code, get it to work (debug).
   - Understand the different traversals: DFS, BFS, etc.
