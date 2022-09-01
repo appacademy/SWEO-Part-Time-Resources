@@ -1,0 +1,89 @@
+.nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+}
+
+.nav-link{
+  font-size: x-large;
+}
+
+.top{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+#signin{
+  background: none;
+  border: none;
+  font-size: large;
+}
+
+.top-btn{
+  background: white;
+}
+
+#content{
+  width: 75vw;
+  padding: 25px;
+  margin: auto;
+}
+
+#h1{
+  border: 3px solid black;
+}
+
+p{
+  border: 1px solid black;
+  padding: 5px;
+}
+
+/* this wont work on the image itself, but if you put it in a div it will work. */
+/* .img{ 
+  display: flex;
+  justify-content: center;
+} */
+
+.img-container{
+  display: flex;
+  justify-content: center;
+}
+
+h2{
+  margin-left: 10px;
+}
+
+#footer{
+  border-top: 4px solid black;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#footer-btns_container{
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-btn{
+  background: none;
+  border: none;
+  font-size: x-large;
+}
+
+#home-icon{
+  border: 2px solid gray;
+  font-size: large;
+  height: fit-content;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+

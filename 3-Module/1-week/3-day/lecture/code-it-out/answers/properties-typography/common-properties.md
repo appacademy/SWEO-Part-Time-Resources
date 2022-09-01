@@ -1,0 +1,25 @@
+## Some Common CSS Properties Applied to Elements
+Google is your friend in CSS!! Explore!! If you need to be able to do something, try looking it up with `css` prefix (i.e. `css how to center an element`)
+- color
+- background-color
+- background-image
+- display
+- width
+- height
+- min-width
+- min-height
+- max-width
+- max-height
+- margin
+- padding
+- border
+- border-color
+- border-width
+- border-style
+- border-radius
+- font
+- font-family
+- font-style
+- font-weight
+- position
+- z-index

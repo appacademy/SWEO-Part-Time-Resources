@@ -93,16 +93,12 @@ You can `console.log(0b11001010)` to see the binary number in decimal. Below is 
 ```js
 const binaryToDecimal = (ob) => {
   const revOb = ob.toString().split('').reverse();
-
   const products = revOb.map((num, i) => {
     return Math.pow(2, i) * num;
   });
-
   const sum = products.reduce((acc, num)=> acc += num)
-
   return sum;
 }
-
 console.log(binaryToDecimal(11001010)) // 202
 ```
 
@@ -144,13 +140,10 @@ const determineNum = (hexNum) => {
     'E': 14,
     'F': 15,
   }
-
   return hexNum in nums ? nums[hexNum] : hexNum;
 }
-
 const hexToDecimal = (hex) => {
   const revHex = hex.split('').reverse();
-
   const products = revHex.map((num, i) => {
     return Math.pow(16, i) * determineNum(num);
   });
@@ -159,7 +152,6 @@ const hexToDecimal = (hex) => {
   
   return sum;
 }
-
 console.log(hexToDecimal('F23C')) // 62012
 ```
 

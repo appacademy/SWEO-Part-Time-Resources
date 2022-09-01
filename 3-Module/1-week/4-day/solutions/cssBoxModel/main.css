@@ -1,0 +1,71 @@
+html, body {
+    /* DO NOT EDIT */
+    font-family: sans-serif;
+}
+
+/* Phase 1 */
+
+#logo {
+    /* DO NOT EDIT */
+    vertical-align: bottom;
+
+    /* Your code here */
+    height: 30px;
+    width: 30px;
+    margin-bottom: 3px;
+}
+
+
+h1 {
+    /* Your code here */
+    display: inline; /* set everything to a row */
+}
+
+/* Phase 2 */
+
+.box {
+    /* DO NOT EDIT */
+    vertical-align: top;
+
+    /* Your code here */
+    border: 2px dotted black;
+    background-color: rgb(255, 255, 0);
+    width: 120px;
+    height: 120px;
+    margin: 10px; /* add space between the boxes */
+    padding: 20px; /* add space between the border and content */
+    display: inline-block; /* boxes are now left to right */
+}
+
+.alternate {
+    /* Your code here */
+    box-sizing: border-box; /* height and width apply to whole box now */
+}
+
+/* Phase 3 */
+
+.footer {
+    /* DO NOT EDIT */
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.quote {
+    /* DO NOT EDIT */
+    background-color: lightgray;
+    font-size: larger;
+
+    /* Your code here */
+    width: fit-content; /* set width to be that of the content */
+    margin: 0 auto 10px; /* top, left/right (auto will center), bottom */
+    padding: 40px; /* give space around text */
+}
+
+.attribution {
+    /* DO NOT EDIT */
+    font-style: italic;
+
+    /* Your code here */
+    display: block; /* make the name in the quote be on its own line */
+}

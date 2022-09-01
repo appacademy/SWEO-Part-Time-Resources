@@ -1,0 +1,18 @@
+/* Your code here */
+
+/* Problem 1 */
+.outer-layer-1{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Problem 2 */
+
+.inner-layer-2 {
+  grid-column: 2 / 6;
+  grid-row: 1 / 2;
+}
+
+/* If the last problem gave you trouble, go replay the 
+css grid garden game! */
