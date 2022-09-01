@@ -109,6 +109,26 @@ app.get("*", (req, res)=>{
     res.send("Not Found");
 })
 
+// ---------------add one or more custom error handlers-------------
+app.use((err, req, res, next)=>{
+    console.log("error:", err); //err is an object, we can attach properties to it
+    err.status = 501 //err.statusCode //err.banana
+    next(err);//passing the error along to the next error handler
+    // res.json({
+    //     error: `${err}`,
+    //     statusCode: err.status
+    // })
+})
+
+app.use((err,req, res, next)=>{
+    res.json({
+        error: `${err}`,
+        statusCode: err.status
+    })
+})
+
+
+
 app.listen(5000, ()=>{
     console.log("listening on port:", port)
 })
