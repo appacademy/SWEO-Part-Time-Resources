@@ -5,7 +5,7 @@ const app = express();
 app.use('/', (req, res, next) => {
   console.log('First');
   const error = new Error('First');
-  next(error);
+  next(error); //next(error) when we pass error --> find a suitable handler that meets the requirements to handle an error
 });
 
 // Second
@@ -24,17 +24,20 @@ app.get('/other-resource', (req, res, next) => {
 
 // Fourth
 const fourth = (req, res, next) => {
+  // this throws an error, BUT IS NOT AN ERROR HANDLER MIDDLEWARE
   console.log('Fourth');
   const error = new Error('Fourth');
   throw error;
 };
 
 // Fifth
+// to be an error handler middleware, the middleware must take in 4 PARAMS, not 3 PARAMS.
 const fifth = (err, req, res, next) => {
   console.log('Fifth');
-  next();
+  next(); //not throwing an error, only invoking a regular next()
 };
 
+// [fourth, fifth] ==> either hit fourth, or fifth or BOTH or NONE, if conditions are met.
 app.use('/', [fourth, fifth]);
 
 // Sixth
