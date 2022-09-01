@@ -1,0 +1,107 @@
+:root {
+  --main-border-color: rgb(47, 51, 54);
+}
+
+main {
+  border-left-width: 1px;
+  border-right-width: 1px;
+  border-color: var(--main-border-color);
+  border-style: solid;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+
+h1 {
+  margin: 0;
+  padding: 16px 16px;
+  border-bottom: 1px solid var(--main-border-color);
+  font-size: 20px;
+}
+
+#tweet-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#tweet-list li, #create-tweet {
+  padding: 16px 16px;
+  border-bottom: 1px solid var(--main-border-color);
+  display: flex;
+}
+
+#tweet-list li .tweet-header {
+  color: rgb(110, 118, 125);
+  margin-bottom: 2px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+#tweet-list li .tweet-header .dot-separator {
+  margin: 0 4px;
+}
+
+.user-profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  border-radius: 50%;
+  border: 1px solid white;
+  color: white;
+  font-size: 36px;
+  margin-right: 12px;
+}
+
+.user-profile-image.malicious {
+  color: crimson;
+  border-color: crimson;
+}
+
+#tweet-list li .tweet-author {
+  font-size: 15px;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+#create-tweet .tweet-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#create-tweet .tweet-form textarea {
+  background-color: black;
+  color: white;
+  outline: 0;
+  border: 0;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-bottom: 1px solid var(--main-border-color);
+}
+
+#create-tweet .tweet-form input[type="submit"] {
+  width: fit-content;
+  align-self: flex-end;
+  margin-top: 12px;
+  color: white;
+  background-color: crimson;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  height: 36px;
+  padding: 0 16px;
+  border-radius: 36px;
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.form-error {
+  color: red;
+}
