@@ -13,7 +13,7 @@ class Employee{
         return this.salary * multiplier
     }
 }
-// let spinter = new Manager('spinter', 10000, 'something')
-// let james = new Employee('james', 10000000, 'teach', spinter)
-// console.log(james)
+
+let james = new Manager()
+
 module.exports = Employee
