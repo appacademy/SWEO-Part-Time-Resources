@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Form</title>
+</head>
+
+<body>
+  <img src="/assets/images/dog.jpg" />
+  <form method="post" action="/dog">
+    <label>
+      Name
+      <input type="text" name="name" />
+    </label>
+    <br>
+    <label>
+      Color
+      <select name="color">
+        <option value="black">Black</option>
+        <option value="brown">Brown</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">White</option>
+      </select>
+    </label>
+    <br>
+    <label>
+      Age
+      <input type="number" name="age" />
+      years old
+    </label>
+    <br>
+    <label>
+      Description
+      <textarea name="description"></textarea>
+    </label>
+    <br>
+    <input type="submit" value="Create Dog" />
+  </form>
+</body>
+
+</html>
