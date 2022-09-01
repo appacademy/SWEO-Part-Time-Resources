@@ -17,14 +17,30 @@ I want to see how much money I've made on ALL iceCream
 */
 class IceCream {
   constructor(flavor, toppings) {
+    // this = {};
     this.flavor = flavor;
+    // {flavor: "Vanilla"};
     this.toppings = toppings || [];
-    this.price = 1.5;
+    this.price = this.toppings.length * 0.5 + 1.5;
+    //{ flavor: 'Chocolate',toppings: [ 'peanut butter', 'caramel', 'Oreo' ],price: };
+    IceCream.iceCreamTracker.push(this)
   }
+
+  static iceCreamTracker = [];
 
   addToppings(...toppings) {
     this.toppings.push(...toppings);
     this.price = 1.5 + this.toppings.length * 0.5;
+  }
+
+  static getPrices() { 
+    let sum = 0;
+    let arr = IceCream.iceCreamTracker;
+    for (let i = 0; i < arr.length; i++) { 
+      let obj = arr[i];
+      sum += obj.price;
+    }
+    return sum;
   }
 }
 
