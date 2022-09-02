@@ -7,7 +7,7 @@ app.get("/", (req,res)=>{
     res.send("request to / received");
 })
 
-// go ahead and import the router under "routes/posts.js"
+// go ahead and import the router under "./routes/posts.js"
 const postsRouter = require("./routes/posts.js")
 
 // task: add the code necessary so we can access the router, and mount it to the express application and go to: http://localhost:5000/posts/apple (hint: what is the prefix before /:page?)
