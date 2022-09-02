@@ -1,0 +1,16 @@
+{
+  "name": "real-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "install": "npm install --prefix backend",
+    "start": "npm start --prefix backend",
+    "dev": "npm run dev --prefix backend",
+    "migrate": "npm run migrate --prefix backend",
+    "seed": "npm run seed --prefix backend"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
