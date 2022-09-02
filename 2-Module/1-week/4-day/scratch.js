@@ -1,3 +1,4 @@
+
 /* 
 I want to keep track of ALL instances of iceCream
   [x] Create a Static variable that will hold all of the iceCream Instances
@@ -40,11 +41,16 @@ class IceCream {
 // let chocolate = new IceCream('Chocolate', ['peanut butter', 'caramel', 'Oreo']);
 // let orange = new IceCream('Orange Sherbert');
 // console.log(vanilla.flavor);
-// console.log(vanilla.iceCreamTracker);
+// console.log(vanilla.iceCreamTracker); // undefined because we are calling a static variable through an instance of our class, not our class
 // console.log(IceCream.iceCreamTracker);
 // // console.log(vanilla, chocolate, orange);
-// console.log(IceCream.getPrices()); // Should return 7
-// console.log(vanilla.getPrices());
+// console.log(IceCream.getPrices()); 
+// console.log(vanilla.getPrices());  // throw an error because getPrices is a static method and we are trying to call it on an instance of our class
+
+
+
+
+
 
 
 class Instrument { 
@@ -56,6 +62,7 @@ class Instrument {
   play() { 
     console.log('toot toot toot');
   }
+
 }
 
 class Trumpet extends Instrument { 
@@ -64,10 +71,15 @@ class Trumpet extends Instrument {
     this.spitValveLevel = spitValveLevel;
   }
 
+  play(){
+    console.log('squak squak squak')
+  }
+
   emptyValve() { 
     console.log('emptying valve...')
     this.spitValveLevel = 0;
   }
+
 }
 
 class Saxophone extends Instrument { 
@@ -75,20 +87,15 @@ class Saxophone extends Instrument {
     super('saxophone', 'woodwind');
   }
   
-  play() { 
-    console.log('squawk squawk squawk');
-  }
 }
 
-const flute = new Instrument('flute', 'woodwinds'); 
-const trumpet = new Trumpet()
-const saxophone = new Saxophone();
-console.log(flute)
-console.log(trumpet);
-console.log(saxophone)
-flute.play();
-trumpet.play();
-saxophone.play();
-// flute.emptyValve(); //error
-// saxophone.emptyValve(); //error
-trumpet.emptyValve();
+const nelson = new Instrument('clarinet', 'woodwinds')
+
+nelson.play()
+
+// const james = new Saxophone();
+const crystal = new Trumpet(2);
+crystal.play(); // squak squak squak
+// james.play();
+// crystal.soakReed();
+// james.soakReed();
