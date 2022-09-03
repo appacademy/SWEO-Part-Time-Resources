@@ -1,5 +1,4 @@
 // if we are exporting this router to its own module, we need to also import express
-const { application } = require("express");
 const express = require("express");
 
 // 1) start server: npm run dev
