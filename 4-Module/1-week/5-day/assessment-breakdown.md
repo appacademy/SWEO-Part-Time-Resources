@@ -79,4 +79,5 @@
 ## Focus Points
 - Practice Assessment 
 - Formative Quizzes
-- Projects (like catstagram) / Practices and `code-it-outs`
+- Practices and `code-it-outs`
+- Projects
