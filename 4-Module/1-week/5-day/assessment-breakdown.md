@@ -2,7 +2,7 @@
 - Topics: Express, routing (route handlers), express routers, middlewares, errorhandling, serving static files
 
 - Breakdown:
-  - time: 1hr45m
+  - time: 1hr
   - 17 MC x 1pt = 17pts 
   - Passing Score: 13 / 17
 
