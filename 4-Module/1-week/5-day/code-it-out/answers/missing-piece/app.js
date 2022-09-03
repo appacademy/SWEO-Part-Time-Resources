@@ -6,19 +6,19 @@ const users = []
 // add in the missing piece of code to make this post request work for the post request at /users. Try running it first to see what happens.
 
 /*
-INPUT:
 go on POSTMAN and make a POST request with the body of: 
     {
         "name":"ava"
     }
 
-OUTPUT:
 if fixed correctly, your response from the server should be a json string of:
 
     "ava has been added"
 
 */
 
+// Answer: we didn't parse the body to handle requests with a JSON body!
+app.use(express.json())
 
 app.post("/users", (req,res)=>{
     console.log("request body data:", req.body); //hint, what is this logging in the terminal when we make the request?
