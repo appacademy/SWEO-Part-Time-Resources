@@ -1,0 +1,31 @@
+{
+  "name": "express-long-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "!!ADD ": "",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "!!END_ADD ": "",
+    "!!START ": " SILENT ",
+    "start": "dotenv node app.js",
+    "dev": "dotenv nodemon app.js",
+    "!!END ": "",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "!!START ": " SILENT ",
+    "dotenv": "^9.0.2",
+    "dotenv-cli": "^4.0.0",
+    "!!END ": "",
+    "express": "^4.17.1",
+    "express-async-errors": "^3.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
