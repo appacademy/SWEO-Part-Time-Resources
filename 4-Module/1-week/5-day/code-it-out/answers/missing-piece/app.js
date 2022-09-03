@@ -17,6 +17,8 @@ if fixed correctly, your response from the server should be a json string of:
 
 */
 
+// Answer: we didn't parse the body to handle requests with a JSON body!
+app.use(express.json())
 
 app.post("/users", (req,res)=>{
     console.log("request body data:", req.body); //hint, what is this logging in the terminal when we make the request?
