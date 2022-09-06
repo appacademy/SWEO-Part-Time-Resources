@@ -37,7 +37,7 @@
 
 ## Promises
 
-Please do your readings over promises and work through the short practices for today. If you have any questions please ask while working on the practices. Today should be used to get familiar with promises and to experiment with the code and come up with questions. We will have a demo during lecture tomorrow.
+Please do your readings over promises and work through the short practices for today. If you have any questions, please ask! Today should be used to get familiar with promises, experiment with the code, and come up with questions. We will have a demo during lecture tomorrow.
 
 ## Practices
 
