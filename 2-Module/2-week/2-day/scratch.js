@@ -23,19 +23,20 @@ class Test {
 //   test1Func(); // 
 //   test1.testFunc() // 
   
+
   // // Using this in Function Declaration Syntax
   // function someFunc() {
   //   console.log(this);
   // }
-  // someFunc(); // 
+  // someFunc(); // Global Object
   
   // let someFunc = function () {
   //   console.log(this);
   // };
-  // someFunc(); // 
+  // someFunc(); // Global Object
   
   // const someFunc = () => {
   //   console.log(this);
   // };
   
-  // someFunc(); // 
+  // someFunc(); // undefined
