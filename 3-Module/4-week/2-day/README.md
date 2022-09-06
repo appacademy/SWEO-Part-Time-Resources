@@ -6,12 +6,12 @@
 - **`MCQ`:**
   - **9 questions**
   - **4 point each**
-  - **total of 36 points**
+  - **`total of 36 points`**
 - **`Coding Challenge`:**
   - **10 questions**
   - **70 specs**
-  - **total of 70 points**
-- **`Passing score`:** **84/106**
+  - **`total of 70 points`**
+- **`Passing score`:** **`84/106`**
 
 > **Remember not to spend too much time on one thing, if you get stuck for more than 15m on something move on and finish everything else, then come back to it.**
 
@@ -35,11 +35,11 @@
 
 ---
 
-## Promises
+## `Promises`
 
-Please do your readings over promises and work through the short practices for today. If you have any questions, please ask! Today should be used to get familiar with promises, experiment with the code, and come up with questions. We will have a demo during lecture tomorrow.
+> Please do your readings over promises and work through the short practices for today. If you have any questions, please ask! Today should be used to get familiar with promises, experiment with the code, and come up with questions. We will have a demo during lecture tomorrow.
 
-## Practices
+## `Practices`
 
 [Create and Handle Promises](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-16---apis--promises--and-deployment/practice--create-and-handle-promises)
 
