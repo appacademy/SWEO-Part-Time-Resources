@@ -1,3 +1,16 @@
+# M2W2D1
+
+## Assessment
+
+---
+
+## Context
+### Context refers to the value of `this` within a function and `this` refers to where a function is invoked.
+- If a function is invoked on the object it was created in, its context stays the same
+- If a function (not invoked) is assigned to variable, its context changes
+- If a function (not invoked) is passed as a callback, its context changes
+
+```js
 class Test {
   testFunc() {
     debugger;
@@ -25,3 +38,4 @@ function someFunc() {
   console.log(this);
 }
 someFunc(); // 
+```
