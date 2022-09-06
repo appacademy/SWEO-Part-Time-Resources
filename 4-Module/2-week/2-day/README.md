@@ -35,7 +35,9 @@
   - Do all of `USING SQLITE3` as it will help setup SQLite and allow you to code-along in the `Basic SQL section`
   - the `Basic SQL` section `will be for homework`
 
-- Let us know if you're having issues setting up!
+- If not installed - Let us know if you're having issues setting up!
+  - wsl: `sudo apt install sqlite3`
+  - mac: `brew install sqlite`
 
 ### Actualy Homework: Basic SQL (tuesday)
 - Go back and complete the `Basic SQL` section in Tuesday for homework
