@@ -14,8 +14,8 @@ Learning our sorts will teach us techniques like in-place array swaps, sliding w
 
 ### `Bubble Sort`
 
-- Time Complexity: `O(n^2)`
-- Space Complexity: `O(1)`
+Time Complexity: `O(n^2)`
+Space Complexity: `O(1)`
 
 - simplest sorting algorithm
 - Iterating through the array, comparing each element to the one next to it and swapping if necessary
