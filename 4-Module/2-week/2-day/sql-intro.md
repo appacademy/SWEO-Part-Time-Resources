@@ -46,6 +46,7 @@
 
 
 ### Quick SQLite Commands Refrence
+Think as SQLite CLI commands like node commands.
 - `sqlite3 name-of-database.db`
   - to run a specific database w/ sqlite3
   - open sqlite3 software RDBMS
@@ -57,6 +58,7 @@
 
 ### Basic Intro SQL syntax 
 **IMPORTANT: note the `;` at the end of each**
+Think of this syntax as something like javascript or css that we then execute to CREAT, READ, UPDATE, DELETE from a table.
 - `CREATE TABLE <tableName> (...);`
   - generate the schema / structure layout of the table
 - `SELECT <colName, ...> FROM <tableName>;`
