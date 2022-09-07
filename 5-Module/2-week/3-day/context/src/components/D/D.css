@@ -1,0 +1,7 @@
+.D {
+	border: 7px solid rgb(250, 9, 9);
+	height: 30%;
+	width: 30%;
+	display: flex;
+	align-items: center;
+}
