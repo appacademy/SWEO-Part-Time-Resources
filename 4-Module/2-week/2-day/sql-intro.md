@@ -46,7 +46,8 @@
 
 
 ### Quick SQLite Commands Refrence
-- `sqlite3`
+- `sqlite3 name-of-database.db`
+  - to run a specific database w/ sqlite3
   - open sqlite3 software RDBMS
 - `.read name-of-file.sql`
   - read the sql file into the sqlite db
