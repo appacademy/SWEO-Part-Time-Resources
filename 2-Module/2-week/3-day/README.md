@@ -28,6 +28,13 @@ boundCat(); // prints "meow"
 - Notice that call and apply are essentially interchangeable and follow the same rules as bind with the main difference being that call and apply invoke the function they're being called on, whereas bind returns the function with its context set.
 
 
+## Arrow functions
+
+- Arrow functions do not have inherent bindings to a this object based on context; instead, their *this* is lexically bound.
+
+- This just means that an arrow function's this refers to whatever code contains it, not calls it. This makes them much more flexible for use in method callbacks than normal anonymous functions.
+
+
 ## Quizzes + Lecture
 
 - Bind Quiz
