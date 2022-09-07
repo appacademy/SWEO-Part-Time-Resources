@@ -43,3 +43,29 @@
   - Are we comfortable finding the syntax for how to do something?
   - Heavily lean on your readings to guide you
 - Practice makes perfect, Bonus Practice makes a passing exam score
+
+
+### Quick SQLite Commands Refrence
+- `sqlite3`
+  - open sqlite3 software RDBMS
+- `.read name-of-file.sql`
+  - read the sql file into the sqlite db
+- `.schema`
+  - Grab the schema (structure of how database looks like)
+
+
+### Basic Intro SQL syntax 
+**IMPORTANT: note the `;` at the end of each**
+- `CREATE TABLE <tableName> (...);`
+  - generate the schema / structure layout of the table
+- `SELECT <colName, ...> FROM <tableName>;`
+  - SQL syntax to get all records from a given table
+  - the one you'll see often: `SELECT * FROM <tableName>;`
+    - `*` === select all from this table.
+- `DROP TABLE <tableName>;`
+  - drops and removes the table with that specified name
+  - drop the table if we're trying to read from the .sql file again
+
+- `INSERT INTO <tableName> VALUES (col1_val, col2_val, ...);`
+  - inserting a record (row) into the table
+
