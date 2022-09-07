@@ -57,3 +57,18 @@ let cat = new Cat();
 console.log(cat.purrMore) // 
   
 setTimeout(cat.purrMore, 2000);  // 2 sec later: error because setTimeout is on the global object, so we lose context of this when calling purrMore()
+
+
+class Car {
+  constructor(brand, model) {
+    this.brand = 'Honda';
+    this.model = 'Civic';
+  }
+
+  carInfo() {
+    return `${this.brand} ${this.model}`;
+  }
+}
+
+const merc = new Car('Mercedes', 'C-Class');
+console.log(merc.carInfo());
