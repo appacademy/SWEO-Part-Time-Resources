@@ -53,3 +53,27 @@ class Cat {
 //   cat.purrNTimes.apply(dog, [5]);
 
 
+// class Dog {
+//     // ...constructor same as before
+//     arrowBoundBark() {
+//       setTimeout(() => {
+//         console.log(this.name);
+//       }, 1000);
+//     }
+//   }
+  
+//   let dog = new Dog("Fido");
+//   dog.arrowBoundBark();   
+
+
+// class Dog {
+//     // ...constructor same as before
+//     arrowBoundBark() {
+//       setTimeout(() => {
+//         console.log(this.name);
+//       }, 1000);
+//     }
+//   }
+  
+//   let dog = new Dog("Fido");
+//   dog.arrowBoundBark();     // "Fido" (after 1 second)
