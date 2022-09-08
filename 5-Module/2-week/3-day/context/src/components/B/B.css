@@ -1,0 +1,7 @@
+.B {
+	border: 5px solid black;
+	height: 80%;
+	width: 80%;
+	display: flex;
+	align-items: center;
+}

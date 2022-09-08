@@ -1,0 +1,7 @@
+.C {
+	border: 7px solid black;
+	height: 50%;
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
