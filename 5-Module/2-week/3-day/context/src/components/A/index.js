@@ -1,4 +1,5 @@
-import { useState, useEffect } from 'react';
+import { useContext, useState } from 'react';
+import { PokemonContext } from '../../context/PokemonContext';
 
 import B from '../B';
 
@@ -6,18 +7,8 @@ import './A.css'
 
 function A(){
 
-	const [ pokemon, setPokemon ] = useState('')
-
-	useEffect(()=>{
-		async function getPokemon(){
-			const resObj = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonApi}`)
-			const resJson = await resObj.json();
-
-			setPokemon(resJson)
-		}
-
-		getPokemon();
-	},[pokemonApi])
+	const { setPokemonApi } = useContext(PokemonContext)
+	const [currPokemon, setCurrPokemon] = useState('')
 
 	return (
 		<div className='A'>
@@ -25,10 +16,22 @@ function A(){
 				position: 'absolute',
 				top: '0%'
 			}}>
-
+				{/* {pokemon?.name} */}
 			</h1>
 			A
-			<B />
+			<B/>
+
+			<input onChange={(e)=>{
+				setCurrPokemon(e.target.value)
+			}}>
+
+			</input>
+
+			<button onClick={()=>{
+				setPokemonApi(currPokemon)
+			}}>
+				New Pokemon
+			</button>
 		</div>
 	)
 }
