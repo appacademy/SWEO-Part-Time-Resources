@@ -1,29 +1,41 @@
-class Cat {
-    constructor(name) {
-      this.name = name;
-    }
-    sayName() {
-        console.log(this.name);
-    }
-  }
+// class Cat {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//     sayName(someString) {
+//         console.log(someString)
+//         console.log(this.name);
+//         console.log(this)
+//     }
+//   }
   
-  let cat = new Cat("Meowser");
   
-  class Dog {
-    constructor(name) {
-      this.name = name;
-    }
-  }
+//   class Dog {
+//       constructor(name) {
+//           this.name = name;
+//         }
+//     }
   
-  let dog = new Dog("Fido");
+
+//     let cat = new Cat("Meowser");
+//     let dog = new Dog("Fido");
+    
+//   let sayNameFunc = cat.sayName;
+
+//   cat.sayName() // 
+//   console.log(sayNameFunc) // function: sayName
+//   sayNameFunc() // throws error, because this is undefined and there is no name property
+
   
-  let sayNameFunc = cat.sayName;
+//   let sayHelloCat = sayNameFunc.bind(cat);
+// let bound = cat.sayName.bind(cat)
+//   sayHelloCat(); // print meowser because we bind sayNameFunc to our cat instance so cat === 'this'
+
+
+//   console.log(bound) // !!!bind evaluates to the function that is being bound !!!
   
-  let sayHelloCat = sayNameFunc.bind(cat);
-  sayHelloCat(); // prints Meowser
-  
-  let sayHelloDog = sayNameFunc.bind(dog);
-  sayHelloDog(); // prints Fido
+//   let sayHelloDog = sayNameFunc.bind(dog)
+//   sayHelloDog(); // Fido
 
 
 // class Dog {
@@ -34,46 +46,61 @@ class Cat {
   
 //   class Cat {
 //     constructor(name) {
-//         this.name
+//         this.name = name
 //     }
-//     purrNTimes(n) {
+
+//     purrNTimes(n, sound) {
 //         for(let i = 0; i < n; i++) {
-//             console.log(`${this.name} says: meow`);
+//             console.log(`${this.name} says: ${sound}`);
 //         }
+//         return this
 //     }
 //   }
   
 //   let dog = new Dog('Fido');
 //   let cat = new Cat('Meowser');
   
-//   // make Fido meow 5 times using `call`
-//   cat.purrNTimes.call(dog, 5);
+// //   // make Fido meow 5 times using `call`
+// let callPurrTimes = cat.purrNTimes
+//  let called = callPurrTimes.call(dog, 5, 'bark'); // Fido says: meow 5, times
+
+
+//  console.log(called) //  !!!call and apply evaluate to the functions return value!!!
   
 //   // make Fido meow 5 times using `apply`
-//   cat.purrNTimes.apply(dog, [5]);
-
+    // let applyPurrTimes = cat.purrNTimes
+    // applyPurrTimes.apply(dog, [5, 'meow']);
 
 // class Dog {
-//     // ...constructor same as before
-//     arrowBoundBark() {
-//       setTimeout(() => {
+//     constructor(name) {
+//       this.name = name;
+//     }
+
+//     delayedBark() {
+//       setTimeout(function() {
 //         console.log(this.name);
 //       }, 1000);
 //     }
+
 //   }
   
 //   let dog = new Dog("Fido");
-//   dog.arrowBoundBark();   
+//   dog.delayedBark() // undeefined 
 
+class Dog {
+    constructor(name) {
+      this.name = name;
+    }
 
-// class Dog {
-//     // ...constructor same as before
-//     arrowBoundBark() {
-//       setTimeout(() => {
-//         console.log(this.name);
-//       }, 1000);
-//     }
-//   }
+    arrowBoundBark() {
+      setTimeout(() => {
+        console.log(this.name);
+      }, 1000);
+    }
+
+  }
   
-//   let dog = new Dog("Fido");
-//   dog.arrowBoundBark();     // "Fido" (after 1 second)
+  let dog = new Dog("Fido");
+  dog.arrowBoundBark(); // 
+
+
