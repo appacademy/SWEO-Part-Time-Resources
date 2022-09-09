@@ -25,3 +25,5 @@
     - `Solving graph problems`
     - `Practice assessment`
     - Basic `breadth/depth first traversal`
+
+![sorting_algos](./sorting_algos.png)
