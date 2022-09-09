@@ -11,6 +11,18 @@
 ### Error Handling Discussion
 
 - Purpose of Error Handling
+- One thing to note about Syntax Errors is that many of them can't be caught using try catch blocks.
+
+```js
+try {
+  // statements that will be attempted here
+} catch (error) {
+  // if an error is thrown it will be "caught"
+  // allowing the program to continue execution
+  // these statements will be run and the program will continue!
+}
+
+```
 
 ```js
 const add = (num1, num2) => num1 + num2;
