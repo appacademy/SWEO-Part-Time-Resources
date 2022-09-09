@@ -1,4 +1,4 @@
-- Understand the basics of javascript's built in `sort` function and how the comparison callback function works
+- Understand the basics of JavaScript's built in `sort` function and how the comparison callback function works
 - Different sorting algorithms
   - Bubble
   - Insertion
