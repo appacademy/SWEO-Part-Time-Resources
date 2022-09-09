@@ -1,0 +1,22 @@
+- Understand the basics of javascript's built in `sort` function and how the comparison callback function works
+- Different sorting algorithms
+  - Bubble
+  - Insertion
+  - Selection
+  - Quicksort
+  - Mergesort
+- Difference between binary tree and binary search tree
+- Graph concepts, terminologies, and traversals like BFT, DFT, and which traversal will yield us the shortest path.
+
+- Coding Portion
+  - Be able to work with a 2d matrix that represents the graph 
+  - Be able to `read mocha spec files for more context`
+  - Build a neighbor finder, graph traversal, and apply it to solve a problem
+  - Understand the 3 principle of solving graphs
+    - `Identify graph type`: and define the type of graph
+    - `getNeighbors function`: how to implement this to get the neighbors of a given node from a graph
+    - `Traverse graph`: BFT/DFT and do the thing.
+  - Recommended projects
+    - `Solving graph problems`
+    - `Practice assessment`
+    - Basic `breadth/depth first traversal`
