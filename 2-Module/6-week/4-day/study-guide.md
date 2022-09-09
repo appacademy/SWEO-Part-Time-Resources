@@ -1,10 +1,15 @@
 - Understand the basics of JavaScript's built in `sort` function and how the comparison callback function works
 - Different sorting algorithms
   - Bubble
+    - Swapping adjacent pairs until array is sorted
   - Insertion
+    - Values chosen randomly to be placed in the correct spot in a sorted array
   - Selection
+    - Selecting the smallest value and sorting it until array is sorted
   - Quicksort
+    - Divides an array around a pivot then sort the left and right sides
   - Mergesort
+    - Divides an array in half, sorts each half, then recombines the halves together in order
 - Difference between binary tree and binary search tree
 - Graph concepts, terminologies, and traversals like BFT, DFT, and which traversal will yield us the shortest path.
 
