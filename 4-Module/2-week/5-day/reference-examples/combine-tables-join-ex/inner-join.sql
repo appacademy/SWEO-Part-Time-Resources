@@ -38,7 +38,7 @@ CREATE TABLE puppies (
 INSERT INTO puppies (name, age_yrs, breed, weight_lbs, microchipped, owner_id)
 VALUES
   ('Cooper', 1, 'Miniature Schnauzer', 18, 1, 1),
-  ('Indie', 0.5, 'Yorkshire Terrier', 13, 1, 2),
+  ('Indie', 0.5, 'Yorkshire Terrier', 13, 1, 2), 
   ('Kota', 0.7, 'Australian Shepherd', 26, 0, 5),
   ('Zoe', 0.8, 'Korean Jindo', 32, 1, 2),
   ('Charley', 1.5, 'Basset Hound', 25, 0, 3),
@@ -49,8 +49,12 @@ VALUES
   ('Max', 1.6, 'German Shepherd', 65, 0, 6);
 
 -- *********Run each one in the sqlite command line for this database******
--- select * from puppies;
--- SELECT * FROM puppies JOIN owners ON (puppies.owner_id = owners.id);
--- SELECT puppies.id, puppies.name, owners.first_name FROM puppies JOIN owners ON (puppies.owner_id = owners.id);
+select * from puppies;
+SELECT * FROM puppies JOIN owners ON (puppies.owner_id = owners.id);
 
+-- grab puppies.id, puppies.name, owners.first_name columns for each record after joining the two tables based on puppies.owner_id = owners.id
+SELECT puppies.id, puppies.name, owners.first_name FROM puppies JOIN owners ON (puppies.owner_id = owners.id);
+
+-- If I wanted to see specificall who cooper's owner is
+SELECT puppies.id, puppies.name, owners.first_name FROM puppies JOIN owners ON (puppies.owner_id = owners.id) WHERE puppies.name = "Cooper";
 

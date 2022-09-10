@@ -38,6 +38,6 @@ SELECT name, breed, age_yrs
 
 -- **** ORDER BY Advance****
 -- Order by microchipper ascending first, then if tied, order by age_yrs descending
-SELECT name, breed, age_yrs
+SELECT name, breed, microchipped, age_yrs
   FROM puppies
-  ORDER BY microchipped ASC, age_yrs DESC;
+  ORDER BY microchipped ASC, age_yrs DESC

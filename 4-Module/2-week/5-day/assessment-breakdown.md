@@ -29,6 +29,8 @@
 
 ## Relationships and Querying In Databases
 [One-To-Many Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-20---sql/one-to-many-relationships)
+[Many-To-Many Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-20---sql/many-to-many-relationships--recall-)
+
 [Create-Related-Tables Practice](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-20---sql/practice--create-related-tables)
 [Delete Cascade](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-20---sql/practice--delete-cascade)
 [Intermediate Querying](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-20---sql/practice--intermediate-querying)
