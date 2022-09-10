@@ -19,7 +19,15 @@ INSERT INTO owners(first_name, last_name) VALUES
     ("Sadie", "Kafka"),
     ("Jake", "Laughlin"),
     ("Laney", "Rous"),
-    ("Alexander", "Lee");
+    ("Alexander", "Lee"),
+    ("David1", "Lee"),
+    ("David2", "Lee"),
+    ("David3", "Lee"),
+    ("David4", "Lee"),
+    ("David4", "Lee"),
+    ("David4", "Lee"),
+    ("David4", "Lee"),
+    ("David4", "Lee");
 
 -- child
 CREATE TABLE puppies (
@@ -52,7 +60,7 @@ VALUES
 -- SELECT * FROM puppies JOIN owners ON (puppies.name = owners.first_name);
 
 -- SELECT * FROM puppies JOIN owners ON (puppies.id = owners.id);
--- SELECT * FROM puppies LEFT JOIN owners ON (puppies.id = owners.id);
--- SELECT * FROM puppies RIGHT JOIN owners ON (puppies.id = owners.id);
+SELECT * FROM puppies LEFT JOIN owners ON (puppies.id = owners.id);
+SELECT * FROM puppies RIGHT JOIN owners ON (puppies.id = owners.id);
 -- SELECT * FROM puppies FULL JOIN owners ON (puppies.id = owners.id);
 
