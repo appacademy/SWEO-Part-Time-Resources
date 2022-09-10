@@ -11,6 +11,10 @@ CREATE TABLE owners (
   name VARCHAR(50) NOT NULL
 );
 
+INSERT INTO owners(name) VALUES
+  ("Wes"),
+  ("Jesse");
+
 -- child (one with the foreign key that points to an owner)
 CREATE TABLE puppies (
   id INTEGER PRIMARY KEY,
@@ -22,8 +26,11 @@ CREATE TABLE puppies (
 
   -- correct syntax for adding relationship using FOREIGN KEY
   owner_id INTEGER,
-  FOREIGN KEY(owner_id) REFERENCES owners(id)
+  FOREIGN KEY(owner_id) REFERENCES owners(id) ON DELETE CASCADE
 );
 
+INSERT INTO puppies(name, age_yrs, breed, weight_lbs, owner_id) VALUES
+  ("Tofu", 1, "Shiba", 20, 1),
+  ("Soup", 1, "Shiba", 19, 1);
 
 
