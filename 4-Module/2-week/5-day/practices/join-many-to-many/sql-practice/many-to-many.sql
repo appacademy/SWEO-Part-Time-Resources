@@ -13,3 +13,9 @@ SELECT * from musician_instruments JOIN musicians ON (musician_instruments.music
 
 -- now grab the specific columns that we want from our mega table (joined all 3 together)
 SELECT instruments.type, musicians.first_name from musician_instruments JOIN musicians ON (musician_instruments.musician_id = musicians.id) JOIN instruments ON (musician_instruments.instrument_id = instruments.id);
+
+
+
+-- --------------step 2: musician name that only plays piano------------
+SELECT musicians.first_name, musicians.last_name FROM musician_instruments JOIN musicians ON (musician_instruments.musician_id = musicians.id) JOIN instruments ON (musician_instruments.instrument_id = instruments.id) 
+    WHERE instruments.type = "piano";
