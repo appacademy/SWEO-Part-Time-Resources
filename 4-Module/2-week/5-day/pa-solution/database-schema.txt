@@ -1,0 +1,32 @@
+Paste the following in https://dbdiagram.io to visualize the schema:
+
+Table departments {
+  id int [pk, increment]
+  name varchar [not null, unique]
+}
+
+Table tools {
+  id int [pk, increment]
+  name varchar [not null, unique]
+  price numeric(6,2)
+  department_id int [not null, ref: > departments.id]
+}
+
+Table tool_purchases {
+  id int [pk, increment]
+  tool_id int [not null, ref: > tools.id]
+  purchase_id int [not null, ref: > purchases.id]
+  quantity int
+}
+
+Table purchases {
+  id int [pk, increment]
+  customer_id int [not null, ref: > customers.id]
+}
+
+Table customers {
+  id int [pk, increment]
+  first_name varchar(60) [not null]
+  last_name varchar(60) [not null]
+  phone numeric(10, 0)
+}
