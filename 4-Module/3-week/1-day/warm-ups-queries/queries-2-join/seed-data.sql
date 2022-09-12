@@ -12,7 +12,8 @@ CREATE TABLE albums (
   band_id INTEGER,
   year INTEGER NOT NULL,
   num_sold INTEGER NOT NULL DEFAULT 0,
-  FOREIGN KEY (band_id) REFERENCES bands(name) ON DELETE CASCADE
+  -- FOREIGN KEY (band_id) REFERENCES bands(name) ON DELETE CASCADE
+  FOREIGN KEY (band_id) REFERENCES bands(id) ON DELETE CASCADE
 );
 
 INSERT INTO bands
