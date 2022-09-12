@@ -1,3 +1,5 @@
+-- sqlite> .mode column
+
 -------------------------- Query --------------------------
 -- From the albums, select: title, num_sold, year
 -- Where the year is between 2010 and 2020.

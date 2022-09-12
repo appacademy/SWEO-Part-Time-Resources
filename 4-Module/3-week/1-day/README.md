@@ -8,7 +8,7 @@
   - Passing Score: 18 / 24
 
 ## Tips
-- Ask questions if you don't understand something. We cannot give you the answer, but we can clarify the question.
+
 - `transient` definition means `temporary / lasting for a short time`.
 
 - Use `single quotes`!!!
@@ -17,8 +17,11 @@ INSERT INTO holidays (name, month) VALUES
     ('Father''s Day', 'June'),
     ( 'Aliens''s Day', null);
 ```
+- You can do the queries in any order (i.e. file 5 then file 3). So if we're stuck, just move to the next one.
 
 ## Resources 
+- Ask questions if you don't understand something. We cannot give you the answer, but we can clarify the question.
+
 - Remember that these are `also available resources`:
   - `sqlite.org` docs
   - `aa-readings` docs
