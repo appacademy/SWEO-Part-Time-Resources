@@ -22,7 +22,8 @@ while true; do
     # check if cohortID is a full match that begins and ends a line
     # this prevents "Jan" from creating a false positive due to matching
     # multiple lines but not being an actual match.
-    if [ -z $(grep "^$cohortID$" ./cohorts.txt) ]; then
+    # TODO ----- CHANGE TO MAIN BRANCH IN URL BEFORE MERGING
+    if [ -z $(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/cohorts.txt | grep "^$cohortID$") ]; then
         echo -e "${RED} -> Incorrect Cohort ID, check again with your cohort lead!${NO_COLOR}"
         echo
         continue
@@ -124,6 +125,7 @@ while true; do
     fi
     echo -e "${GREEN}All finished! Happy programming :)${NO_COLOR}"
     echo
+    source $HOME/$PROFILE_FILE
     exit 0
 
 done
