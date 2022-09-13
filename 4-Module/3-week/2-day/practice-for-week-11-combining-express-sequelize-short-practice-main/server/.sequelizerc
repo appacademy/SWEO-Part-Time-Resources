@@ -1,0 +1,12 @@
+const path = require("path");
+
+/*
+This object is instructing Sequelize to create a config/database.js file to store the configuration details for how it will connect to a database. The other keys in this object are instructing Sequelize where to create directories for the models, seeders, and migrations for the application.
+*/
+
+module.exports = {
+    config: path.resolve("config", "database.js"),
+    "models-path": path.resolve("db", "models"),
+    "seeders-path": path.resolve("db", "seeders"),
+    "migrations-path": path.resolve("db", "migrations"),
+};
