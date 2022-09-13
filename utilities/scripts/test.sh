@@ -1,18 +1,25 @@
 #!/bin/bash
 
+# ---------------------------------------------------------------
+# ------------------- VARIABLE DECLARATION ----------------------
+# ---------------------------------------------------------------
+
 RED="\033[0;31m"
 GREEN="\033[0;32m"
 NO_COLOR="\033[0m"
 
 # Start script loop
 while true; do
+    # ---------------------------------------------------------------
+    # ----------------- DETERMINE COHORT BRANCH ---------------------
+    # ---------------------------------------------------------------
 
-    # ask a question, store the answer into cohortID variable
+    # ask a question & store the answer into the cohortID variable
     echo "What is your Cohort ID?"
     read -p "> " cohortID
     echo
 
-    # check if length of string is zero (-z)
+    # check if input is empty
     if [ -z "$cohortID" ]; then
         echo -e "${RED} -> Course ID cannot be blank please try again!${NO_COLOR}"
         echo
@@ -22,21 +29,28 @@ while true; do
     # check if cohortID is a full match that begins and ends a line
     # this prevents "Jan" from creating a false positive due to matching
     # multiple lines but not being an actual match.
-    # TODO ----- CHANGE TO MAIN BRANCH IN URL BEFORE MERGING
+
+    # -------------------------------------------------------
+    # TODO ----- CHANGE TO MAIN BRANCH IN URL BEFORE MERGING / REMOVE COMMENT
+    # AFTER CHANGE
+    # -------------------------------------------------------
     if [ -z $(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/cohorts.txt | grep "^$cohortID$") ]; then
         echo -e "${RED} -> Incorrect Cohort ID, check again with your cohort lead!${NO_COLOR}"
         echo
         continue
     fi
 
-    # ALl checks have been made, create file structure and add vars to profile file
+    # ---------------------------------------------------------------
+    # ----------------- MAKE FOLDER STRUCTURE -----------------------
+    # ---------------------------------------------------------------
+
     echo -e "Your cohort's branch ${GREEN}[${cohortID}]${NO_COLOR} will be downloaded now!"
 
     cd $HOME
 
     echo
 
-    # Creates an appacademy folder if there isn't one already
+    # Create an appacademy-${cohortID} folder if there isn't one already
     echo "Making Primary Folder..."
 
     mkdir -p "appacademy-${cohortID}"
@@ -53,6 +67,11 @@ while true; do
 
     echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
+
+
+    # ---------------------------------------------------------------
+    # ----------- CLONE REPO AND TRACK CORRECT BRANCH ---------------
+    # ---------------------------------------------------------------
 
     # Create a PT Resource repo if it doesn't exist or pull it
     echo "Cloning Repo..."
@@ -73,6 +92,10 @@ while true; do
 
     echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
+
+    # ---------------------------------------------------------------
+    # ----------- DETERMINE CONFIG FILE AND ADD ALIASES -------------
+    # ---------------------------------------------------------------
 
     # Find the correct startup file
     echo "Checking Startup File..."
