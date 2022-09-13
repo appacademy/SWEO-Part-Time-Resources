@@ -1,16 +1,5 @@
 # M2W3D2
 
-## `aa_update` update
-
-```bash
-mv ~/appacademy ~/appacademy-2021-Sept-E && curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
-```
-
-```text
-Your Cohort's Code
-2021-Sept-E
-```
-
 ## Practice Pt. 1: 20 mins
 
 - If your `should run in O(n) time` test fails, call in a TA
@@ -31,7 +20,7 @@ Your Cohort's Code
 - You will ACTUALLY copy/paste your code from pt.2 then add timings
 - [Class Google Sheet]
 - You'll each present your findings and tell me, based on your graph, what time\
-complexity you think we see here.
+  complexity you think we see here.
   - If you need help Google sheet instructions are in the homework/Google
 
 ## Big-O Notation: Rest of Class
@@ -56,6 +45,7 @@ complexity you think we see here.
 ## Simplifying Big-O
 
 - We can remove coefficients
+
   - n is going to affect the trend MUCH more than a constant number.
 
     ```text
@@ -73,7 +63,7 @@ complexity you think we see here.
 
 - Let's simply!
   - 5n^2 + 2n + 5 => ??
-  - n * 5n + n => ??
+  - n \* 5n + n => ??
   - 2 + 3 => ??
 
 ## If time is left
@@ -81,4 +71,4 @@ complexity you think we see here.
 - Look through some past weeks functions, can you define their time complexity?
   - If not, ask a TA
 
-[Class Google Sheet]: https://docs.google.com/spreadsheets/d/1EcieWUaYYBa7MHq7ekGHW8_AO80VPC3n1JeI9FMAbV0/edit?usp=sharing
+[class google sheet]: https://docs.google.com/spreadsheets/d/1EcieWUaYYBa7MHq7ekGHW8_AO80VPC3n1JeI9FMAbV0/edit?usp=sharing
