@@ -41,6 +41,8 @@ while true; do
 
     mkdir -p "appacademy-${cohortID}"
     cd "appacademy-${cohortID}"
+
+    echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
 
     # Make the PT Folder Structure
@@ -48,6 +50,8 @@ while true; do
 
     mkdir -p {1-Module,2-Module,3-Module,5-Module}/{1-week,2-week,3-week,4-week,5-week,6-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
     mkdir -p {4-Module,6-Module,7-Module}/{1-week,2-week,3-week,4-week,5-week,6-week,7-week,8-week}/{1-day,2-day,3-day,4-day,5-day}/{projects,homework}
+
+    echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
 
     # Create a PT Resource repo if it doesn't exist or pull it
@@ -67,6 +71,7 @@ while true; do
     # Delete main branch
     git branch -D -q main &> /dev/null
 
+    echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
 
     # Find the correct startup file
@@ -102,6 +107,7 @@ while true; do
       exit 1
     fi
 
+    echo -e "  ...${GREEN}Done [$PROFILE_FILE]${NO_COLOR}"
     echo
 
     # aa_update alias setup
@@ -112,7 +118,6 @@ while true; do
     if [ $UPDATE_ALIAS_IN_START != 1 ]; then
         echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
     fi
-    echo
 
     # check if branch name variable already exists
     UPDATE_BRANCH_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'AA_RESOURCES_BRANCH_NAME')
@@ -123,6 +128,9 @@ while true; do
         grep -v "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE > tmpfile && mv tmpfile $HOME/$PROFILE_FILE
         echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     fi
+
+    echo -e "  ...${GREEN}Done${NO_COLOR}"
+    echo
     echo -e "${GREEN}All finished! Happy programming :)${NO_COLOR}"
     echo
     source $HOME/$PROFILE_FILE
