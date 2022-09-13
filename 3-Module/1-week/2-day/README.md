@@ -2,15 +2,20 @@
 
 ## Website Building Blocks
 
-- HTML: Provides structure and layout.
-- CSS: Provides look, feel, and positioning.
-- JavaScript: Provides interactivity and complex functionality.
+- HTML: Provides structure and layout
+- CSS: Provides look, feel, and positioning
+- JavaScript: Provides interactivity and complex functionality
 
-**Today** we will be focusing on pure HTML.
+You can think of a webpage like a house 
+  - HTML is the frame, rooms, and foundations
+  - CSS is the paint, flooring and finished surfaces
+  - JavaScript is the plumbing, electrical wiring and internet connection
 
-**Tomorrow** we will start adding in CSS.
+**Today** we will be focusing on pure HTML
 
-**Later** we will reintroduce JavaScript in the context of the browser.
+**Tomorrow** we will start adding in CSS
+
+**Later** we will reintroduce JavaScript in the context of the browser
 
 ## Wireframes and HTML Intro
 
