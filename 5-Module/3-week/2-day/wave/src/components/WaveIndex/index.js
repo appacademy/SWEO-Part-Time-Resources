@@ -15,8 +15,12 @@ export const WaveIndexFunction = () => {
 	const [accessToken, setAccessToken] = useState( window.localStorage.getItem("access_token"))
 	const [user, setUser] = useState('')
 	const [songs, setSongs] = useState('')
-	const [currentTrack, setCurrentTrack] = useState('')
+	const [currentTrack, setCurrentTrack] = useState({ uri : "spotify:track:5tz69p7tJuGPeMGwNTxYuV"})
 	const [artist, setArtist] = useState('')
+
+	// const [currentSongUri, setCurrentSongUri] = useState('spotify:track:5tz69p7tJuGPeMGwNTxYuV');
+
+	console.log(currentTrack.uri, 'test')
 
 	useEffect(()=>{
 		const hash = window.location.hash
@@ -51,6 +55,11 @@ export const WaveIndexFunction = () => {
 	}, [accessToken, artist])
 
 
+	// useEffect(()=>{
+	// 	setCurrentTrack()
+	// },[currentSongUri])
+
+
 
 	function logOut(){
 		window.localStorage.removeItem("access_token")
@@ -59,7 +68,7 @@ export const WaveIndexFunction = () => {
 
 	function updateSongs(songs){
 		setSongs(songs);
-		setCurrentTrack(songs[0].name)
+		// setCurrentTrack(songs)
 	}
 
 
@@ -91,17 +100,19 @@ export const WaveIndexFunction = () => {
 				(songs && accessToken) ?
 					<div>
 						<div>
-							Song Name: {currentTrack}
+							Song Name: {currentTrack.name}
 						</div>
 						<SpotifyPlayer
 								token={accessToken}
+								// uris={
+								// 	songs.map((song)=> song.uri)
+								// }
 								uris={
-									songs.map((song)=> song.uri)
+									[currentTrack.uri]
 								}
-								autoPlay={true}
-								callback={(state)=>{
-									setCurrentTrack(state.track.name)
-								}}
+								// callback={(state)=>{
+								// 	setCurrentTrack(state.track.name)
+								// }}
 						/>
 
 						<label>
@@ -111,7 +122,10 @@ export const WaveIndexFunction = () => {
 							{
 								songs.map((song, i)=>{
 									return (
-									<li key={i+song.name} className={currentTrack === song.name ? 'active' : ''}>
+									<li onClick={()=> {
+											setCurrentTrack(song)
+											setPlay(true)
+										}} key={i+song.name} className={currentTrack.name === song.name ? 'active' : ''}>
 										{song.name}
 									</li>)
 								})
