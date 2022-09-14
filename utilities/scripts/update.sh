@@ -24,7 +24,7 @@ if [ $SHELL = '/bin/bash' ]; then
     fi
     # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
     if [ $PROFILE_FILE != '.bashrc' ]; then
-        BASHRC_IN_BASH_PROFILE=$((cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc' + 0))
+        BASHRC_IN_BASH_PROFILE=$(((cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc') + 0))
         # pretty sure this line is what gives the rouge 0 file in the home directory
         if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             PROFILE_FILE='.bashrc'
