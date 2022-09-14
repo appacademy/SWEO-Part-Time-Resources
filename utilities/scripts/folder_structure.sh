@@ -172,7 +172,9 @@ while true; do
     echo -e "  ...${GREEN}Done${NO_COLOR}"
     echo
     echo  "You will run the command 'aa_update' to get your daily lecture notes"
+    echo
     echo -e "Please run the command ${GREEN}'source ~/${PROFILE_FILE}'${NO_COLOR} to get aa_update working!"
+    echo
     echo -e "${GREEN}All finished! Happy programming :)${NO_COLOR}"
     echo
     exit 0
