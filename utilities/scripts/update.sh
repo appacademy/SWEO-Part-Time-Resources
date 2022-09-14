@@ -50,51 +50,63 @@ echo
 # Reassign the variable set in config file so it is available in the script
 AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
+# ---------------------------------------------------------------
+# ------------------ CHECK MOD/WEEK/DAY -------------------------
+# ---------------------------------------------------------------
+
 while true; do
-    read -p "What is the current MODULE? (1 - 7): `echo $'\n> '`" mod < /dev/tty
+    echo "What is the current MODULE? (1 - 7)"
+    read -p "`echo $''`> " mod < /dev/tty
+    echo
+
     if [ -z "$mod" ]; then
-        echo "Module cannot be blank please try again! `echo $'\n '`"
+        echo "Module cannot be blank please try again!"
         continue
     fi
+
     if ! [[ "$mod" =~ ^\s*[1-7]{1}\s*$ ]]; then
-        echo
-        echo "Module must be number between 1 and 7 `echo $'\n '`"
+        echo "Module must be a number between 1 and 7!"
         continue
     else
         break
     fi
 done
+
 while true; do
-    read -p "What is the current WEEK? (1 - 8): `echo $'\n> '`" week < /dev/tty
+    echo "What is the current WEEK? (1 - 8)"
+    read -p "`echo $''`> " week < /dev/tty
+    echo
+
     if [ -z "$week" ]; then
         echo "Week cannot be blank please try again! `echo $'\n '`"
         continue
     fi
+
     if ! [[ "$week" =~ ^\s*[1-8]{1}\s*$ ]]; then
-        echo
         echo "Week must be number between 1 and 8 `echo $'\n '`"
         continue
     else
         break
     fi
 done
-echo
+
 while true; do
-    read -p "What is the current DAY? (1 - 5): `echo $'\n> '`" day < /dev/tty
+    echo "What is the current DAY? (1 - 5)"
+    read -p "`echo $''`> " day < /dev/tty
+    echo
 
     if [ -z "$day" ]; then
         echo "Day cannot be blank please try again! `echo $'\n '`"
         continue
     fi
+
     if ! [[ "$day" =~ ^\s*[1-5]{1}\s*$ ]]; then
-        echo
         echo "Day must be a number between 1 and 5 `echo $'\n '`"
         continue
     else
         break
     fi
 done
-echo
 
 cd ~/appacademy-$AA_RESOURCES_BRANCH_NAME/SWEO-Part-Time-Resources
 
