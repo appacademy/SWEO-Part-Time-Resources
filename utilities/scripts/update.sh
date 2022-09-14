@@ -14,7 +14,9 @@ NO_COLOR="\033[0m"
 
 echo "Checking Startup File..."
 
+# if the shell is bash
 if [ $SHELL = '/bin/bash' ]; then
+    # if there is a .bash_profile
     if [ -e $HOME/.bash_profile ]; then
         PROFILE_FILE='.bash_profile'
     elif [ -e $HOME/.profile ]; then
@@ -22,18 +24,24 @@ if [ $SHELL = '/bin/bash' ]; then
     else
         PROFILE_FILE='.bashrc'
     fi
+
     # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
     if [ $PROFILE_FILE != '.bashrc' ]; then
-        BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
-        BASHRC_IN_BASH_PROFILE=$(($BASHRC_IN_BASH_PROFILE + 0))
-        echo "Config File grep result -- $BASHRC_IN_BASH_PROFILE"
-        # pretty sure this line is what gives the rouge 0 file in the home directory
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE -gt 0 ]; then
+        BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c '$HOME/.bashrc')
+
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
+
+# If the shell is zsh
 elif [ $SHELL = '/bin/zsh' ]; then
     PROFILE_FILE='.zshrc'
+
+# Unsupported SHELL or other error catching
+else
+    echo -e "${RED}Unable to determine shell profile file, reach out to your cohort lead for debugging!${NO_COLOR}"
+    exit 1
 fi
 
 echo -e "  ...${GREEN}Done [$PROFILE_FILE]${NO_COLOR}"
