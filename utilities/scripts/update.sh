@@ -156,7 +156,7 @@ if [ -d "./appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${d
         break
     done
 fi
-echo -e "${Green}Copying Files for mod:${mod}, week:${week}, day:${day}...${NO_COLOR}"
+echo -e "${GREEN}Copying Files for mod:${mod}, week:${week}, day:${day}...${NO_COLOR}"
 cp -rp ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/SWEO-Part-Time-Resources/${mod}-Module/${week}-week/${day}-day ~/appacademy-${AA_RESOURCES_BRANCH_NAME}/${mod}-Module/${week}-week/${day}-day/lecture
 echo "Done."
 exit 0
