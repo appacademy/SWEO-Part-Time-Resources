@@ -1,9 +1,11 @@
-import WaveIndex from "./components/WaveIndex";
+import {WaveIndexFunction} from "./components/WaveIndex";
+
 
 function App() {
+
   return (
     <>
-		<WaveIndex/>
+		<WaveIndexFunction/>
 	</>
   );
 }
