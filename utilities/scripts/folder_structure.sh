@@ -16,7 +16,8 @@ while true; do
 
     # ask a question & store the answer into the cohortID variable
     echo "What is your Cohort ID?"
-    read -p "> " cohortID < /dev/tty
+    exec temp <> /dev/tty
+    read -u temp -p "> " cohortID
     echo
 
     # check if input is empty
