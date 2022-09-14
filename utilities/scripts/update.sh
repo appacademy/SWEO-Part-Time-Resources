@@ -61,11 +61,13 @@ while true; do
 
     if [ -z "$mod" ]; then
         echo -e "${RED}Module cannot be blank please try again!${NO_COLOR}"
+        echo
         continue
     fi
 
     if ! [[ "$mod" =~ ^\s*[1-7]{1}\s*$ ]]; then
         echo -e "${RED}Module must be a number between 1 and 7!${NO_COLOR}"
+        echo
         continue
     else
         break
@@ -79,11 +81,13 @@ while true; do
 
     if [ -z "$week" ]; then
         echo -e "${RED}Week cannot be blank please try again!${NO_COLOR}"
+        echo
         continue
     fi
 
     if ! [[ "$week" =~ ^\s*[1-8]{1}\s*$ ]]; then
         echo -e "${RED}Week must be number between 1 and 8!${NO_COLOR}"
+        echo
         continue
     else
         break
@@ -97,11 +101,13 @@ while true; do
 
     if [ -z "$day" ]; then
         echo -e "${RED}Day cannot be blank please try again!${NO_COLOR}"
+        echo
         continue
     fi
 
     if ! [[ "$day" =~ ^\s*[1-5]{1}\s*$ ]]; then
         echo -e "${RED}Day must be a number between 1 and 5!${NO_COLOR}"
+        echo
         continue
     else
         break
