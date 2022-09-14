@@ -173,7 +173,6 @@ while true; do
     echo
     echo -e "${GREEN}All finished! Happy programming :)${NO_COLOR}"
     echo
-    source $HOME/$PROFILE_FILE
     exit 0
 
 done
