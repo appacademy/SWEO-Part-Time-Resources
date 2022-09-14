@@ -27,20 +27,23 @@
 
 - Some questions to start us off...
   - Why can't we effectively use 'time' to test the efficiency of our code?
-    - answer
+    - too many factors to play, ie machine speed, weather, different conditions
   - What is Big-O notation concerned with?
     - Best, average or worst case?
-      - answer
+      - we are usually concerned with the worst case of big-O
     - Specific tests run or general trend of many tests run?
-      - answer
+      - general tests run, not just specific instances of a test being run
     - Tests with similar sizes, or tests with different sizes?
-      - answer
+      - different sizes because we want to think about all different applications when running a program
     - What are the three complexities we read about?
-      - answer
-      - answer
-      - answer
+      - constant
+      - linear
+      - quadratic
     - So... what is Big-O?
-      - answer
+      - You can measure the speed of code using timing benchmarks but there's a faster, more descriptive way of evaluating code performance at scale. Instead of running the code under various conditions and recording the results, you will instead learn to read code and determine the rate of growth through analysis. This is called complexity analysis and expressed using big-O notation.
+      - standard mathematical notation that shows how efficient an algorithm is in the worst-case scenario relative to its input size
+
+
 
 ## Simplifying Big-O
 
@@ -62,9 +65,9 @@
   ```
 
 - Let's simply!
-  - 5n^2 + 2n + 5 => ??
-  - n \* 5n + n => ??
-  - 2 + 3 => ??
+  - 5n^2 + 2n + 5 => On^2
+  - n \* 5n + n => On^2
+  - 2 + 3 => O(1)
 
 ## If time is left
 
