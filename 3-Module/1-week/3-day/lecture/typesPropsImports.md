@@ -4,6 +4,8 @@
 
 > You can use [this MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) for exhaustive list of CSS properties.
 
+---
+
 ## `Fonts`
 
 - `font-family`
