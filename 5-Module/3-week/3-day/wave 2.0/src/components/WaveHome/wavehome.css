@@ -1,0 +1,38 @@
+.toggleButton {
+	position: relative;
+	margin-right: 20px;
+}
+
+.search {
+	display: none;
+	width: 385px;
+}
+
+.search.active {
+	display: block;
+	display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+
+.playlist {
+    border: 5px solid #FEE715FF ;
+	border-radius: 12px;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+	display: none;
+}
+
+.playlist.active {
+	display: block;
+}
+
+ul {
+	overflow: auto;
+	display:flex;
+	flex-direction: column;
+    align-items: center;
+}

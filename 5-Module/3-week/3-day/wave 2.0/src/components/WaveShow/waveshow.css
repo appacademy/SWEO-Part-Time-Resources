@@ -1,0 +1,9 @@
+li {
+	color: #C5FAD5;
+	font-size: 20px;
+	padding: 5px;
+}
+
+.active {
+	color:  #FFFFD2
+}
