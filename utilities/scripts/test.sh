@@ -34,7 +34,10 @@ while true; do
     # TODO ----- CHANGE TO MAIN BRANCH IN URL BEFORE MERGING / REMOVE COMMENT
     # AFTER CHANGE
     # -------------------------------------------------------
-    if [ -z $(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/cohorts.txt | grep "^$cohortID$") ]; then
+
+    COHORT_EXISTS=$(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/cohorts.txt | grep "^$cohortID$")
+
+    if [ -z $COHORT_EXISTS ]; then
         echo -e "${RED} -> Incorrect Cohort ID, check again with your cohort lead!${NO_COLOR}"
         echo
         continue
@@ -136,7 +139,7 @@ while true; do
     # aa_update alias setup
     echo "Configuring aa_update command..."
 
-    UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE| grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
+    UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE | grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
     # If not append it to the profile file
     if [ $UPDATE_ALIAS_IN_START != 1 ]; then
         echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
@@ -148,6 +151,9 @@ while true; do
     if [ $UPDATE_BRANCH_IN_START != 1 ]; then
         echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     else
+        # take everything but this alias from the profile file
+        # copy it into a tempfile
+        # then overwrite the original
         grep -v "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE > tmpfile && mv tmpfile $HOME/$PROFILE_FILE
         echo -e "\nAA_RESOURCES_BRANCH_NAME=$cohortID" >> $HOME/$PROFILE_FILE
     fi
