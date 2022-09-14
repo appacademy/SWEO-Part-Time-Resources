@@ -53,8 +53,8 @@ The rules of priority are:
 
 Here are some examples and how they would be applied.
 
-  <img src='./lecture/pics/cssSelectorExample.png' ref='css selectors example' width=600>
-  <img src='./lecture/pics/csswinners.png' ref='css selectors example' width=600>
+  <img src='./cssSelectorExample.png' ref='css selectors example' width=600>
+  <img src='./csswinners.png' ref='css selectors example' width=600>
 
 ---
 
