@@ -1,5 +1,11 @@
 #!/bin/bash
-# Find the correct startup file
+
+# ---------------------------------------------------------------
+# ------------------ DETERMINE CONFIG FILE ----------------------
+# ---------------------------------------------------------------
+
+echo "Checking Startup File..."
+
 if [ $SHELL = '/bin/bash' ]; then
     if [ -e $HOME/.bash_profile ]; then
         PROFILE_FILE='.bash_profile'
@@ -12,7 +18,7 @@ if [ $SHELL = '/bin/bash' ]; then
     if [ $PROFILE_FILE != '.bashrc' ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
         # pretty sure this line is what gives the rouge 0 file in the home directory
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
+        if [ -e $HOME/.bashrc ] && [[ $BASHRC_IN_BASH_PROFILE > 0 ]]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
@@ -20,8 +26,10 @@ elif [ $SHELL = '/bin/zsh' ]; then
     PROFILE_FILE='.zshrc'
 fi
 
-echo $PROFILE_FILE
-# Reassign the variable set in ZSHRC so it is available in the
+echo -e "  ...${GREEN}Done [$PROFILE_FILE]${NO_COLOR}"
+echo
+
+# Reassign the variable set in config file so it is available in the script
 AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
 while true; do
