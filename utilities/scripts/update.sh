@@ -20,7 +20,7 @@
         PROFILE_FILE='.zshrc'
     fi
 
-
+    echo $PROFILE_FILE
 # Reassign the variable set in ZSHRC so it is available in the
 AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
