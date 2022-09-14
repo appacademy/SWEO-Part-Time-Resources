@@ -18,7 +18,7 @@ while true; do
     echo "What is your Cohort ID?"
     exec temp<>/dev/tty
     read -u temp -p "> " cohortID
-    echo
+    echo cohortID
 
     # check if input is empty
     if [ -z "$cohortID" ]; then
