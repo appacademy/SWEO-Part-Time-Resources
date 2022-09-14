@@ -29,7 +29,7 @@ if [ $SHELL = '/bin/bash' ]; then
     if [ $PROFILE_FILE != '.bashrc' ]; then
         BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep '$HOME/.bashrc')
 
-        if [ -e $HOME/.bashrc ] && [ ! -z $BASHRC_IN_BASH_PROFILE ]; then
+        if [[ -e $HOME/.bashrc  && ! -z $BASHRC_IN_BASH_PROFILE ]]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
