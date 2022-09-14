@@ -26,22 +26,21 @@
 
 - Some questions to start us off...
   - Why can't we effectively use 'time' to test the efficiency of our code?
-    - too many factors to play, ie machine speed, weather, different conditions
+    - too many variables, ie machine, weather, other factors.
   - What is Big-O notation concerned with?
     - Best, average or worst case?
-      - we are usually concerned with the worst case of big-O
+      - more concerned with worst case scenarios, but an average is definitely notable. 
     - Specific tests run or general trend of many tests run?
-      - general tests run, not just specific instances of a test being run
+      - general trend. 
     - Tests with similar sizes, or tests with different sizes?
-      - different sizes because we want to think about all different applications when running a program
+      - different sizes for sure, because we want to see how our code reacts with different inputs. 
     - What are the three complexities we read about?
-      - constant
       - linear
-      - quadratic
+      - constant
+      - quadrratic
     - So... what is Big-O?
-      - You can measure the speed of code using timing benchmarks but there's a faster, more descriptive way of evaluating code performance at scale. Instead of running the code under various conditions and recording the results, you will instead learn to read code and determine the rate of growth through analysis. This is called complexity analysis and expressed using big-O notation.
-      - standard mathematical notation that shows how efficient an algorithm is in the worst-case scenario relative to its input size
-
+      - how code slows as data grows. 
+      - The "O" in big-O stands for "order" which means that it is not concerned with exact values: instead, it is used to describe the general shape of the growth curve.
 
 
 ## Simplifying Big-O
@@ -53,7 +52,7 @@
     ```text
       5n => On
       2n^2 => On^2
-      5 => O1
+      5 => O(1)
     ```
 
 - We can remove the smaller complexity when using addition
@@ -64,8 +63,8 @@
   ```
 
 - Let's simply!
-  - 5n^2 + 2n + 5 => On^2
-  - n \* 5n + n => On^2
+  - 5n^2 + 2n + 5 => O(n^2)
+  - n \* 5n + n => O(n^2)
   - 2 + 3 => O(1)
 
 ## If time is left
