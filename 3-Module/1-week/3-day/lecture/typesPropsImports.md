@@ -1,4 +1,4 @@
-# Css Types Properties and Imports
+# CSS Types Properties and Imports
 
 ## `Fonts`
 
