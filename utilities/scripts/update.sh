@@ -108,6 +108,10 @@ while true; do
     fi
 done
 
+# ---------------------------------------------------------------
+# ------------------ PULL AND COPY DATA -------------------------
+# ---------------------------------------------------------------
+
 cd ~/appacademy-$AA_RESOURCES_BRANCH_NAME/SWEO-Part-Time-Resources
 
 git reset --hard -q
