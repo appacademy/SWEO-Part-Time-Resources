@@ -27,9 +27,9 @@ if [ $SHELL = '/bin/bash' ]; then
 
     # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
     if [ $PROFILE_FILE != '.bashrc' ]; then
-        BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c '$HOME/.bashrc')
+        BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep '$HOME/.bashrc')
 
-        if [ -e $HOME/.bashrc ] && [[ $BASHRC_IN_BASH_PROFILE -gt 0 ]]; then
+        if [ -e $HOME/.bashrc ] && ! [ -z $BASHRC_IN_BASH_PROFILE ]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
@@ -78,12 +78,12 @@ while true; do
     echo
 
     if [ -z "$week" ]; then
-        echo "Week cannot be blank please try again! `echo $'\n '`"
+        echo "Week cannot be blank please try again!"
         continue
     fi
 
     if ! [[ "$week" =~ ^\s*[1-8]{1}\s*$ ]]; then
-        echo "Week must be number between 1 and 8 `echo $'\n '`"
+        echo "Week must be number between 1 and 8!"
         continue
     else
         break
@@ -96,12 +96,12 @@ while true; do
     echo
 
     if [ -z "$day" ]; then
-        echo "Day cannot be blank please try again! `echo $'\n '`"
+        echo "Day cannot be blank please try again!"
         continue
     fi
 
     if ! [[ "$day" =~ ^\s*[1-5]{1}\s*$ ]]; then
-        echo "Day must be a number between 1 and 5 `echo $'\n '`"
+        echo "Day must be a number between 1 and 5!"
         continue
     else
         break
