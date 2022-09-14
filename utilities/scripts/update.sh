@@ -1,26 +1,26 @@
 #!/bin/bash
 # Find the correct startup file
-    if [ $SHELL = '/bin/bash' ]; then
-        if [ -e $HOME/.bash_profile ]; then
-            PROFILE_FILE='.bash_profile'
-        elif [ -e $HOME/.profile ]; then
-            PROFILE_FILE='.profile'
-        else
+if [ $SHELL = '/bin/bash' ]; then
+    if [ -e $HOME/.bash_profile ]; then
+        PROFILE_FILE='.bash_profile'
+    elif [ -e $HOME/.profile ]; then
+        PROFILE_FILE='.profile'
+    else
+        PROFILE_FILE='.bashrc'
+    fi
+    # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
+    if [ $PROFILE_FILE != '.bashrc' ]; then
+        BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
+        # pretty sure this line is what gives the rouge 0 file in the home directory
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
             PROFILE_FILE='.bashrc'
         fi
-        # Check if the .bashrc is loaded in the startup file, if so we'll use the .bashrc
-        if [ $PROFILE_FILE != '.bashrc' ]; then
-            BASHRC_IN_BASH_PROFILE=$(cat $HOME/$PROFILE_FILE | grep -c 'source $HOME/.bashrc')
-            # pretty sure this line is what gives the rouge 0 file in the home directory
-            if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
-                PROFILE_FILE='.bashrc'
-            fi
-        fi
-    elif [ $SHELL = '/bin/zsh' ]; then
-        PROFILE_FILE='.zshrc'
     fi
+elif [ $SHELL = '/bin/zsh' ]; then
+    PROFILE_FILE='.zshrc'
+fi
 
-    echo $PROFILE_FILE
+echo $PROFILE_FILE
 # Reassign the variable set in ZSHRC so it is available in the
 AA_RESOURCES_BRANCH_NAME=$(grep "AA_RESOURCES_BRANCH_NAME" $HOME/$PROFILE_FILE | cut -d'=' -f 2)
 
