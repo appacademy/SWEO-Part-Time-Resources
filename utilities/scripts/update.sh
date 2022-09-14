@@ -28,7 +28,7 @@ if [ $SHELL = '/bin/bash' ]; then
         BASHRC_IN_BASH_PROFILE=$(($BASHRC_IN_BASH_PROFILE + 0))
 
         # pretty sure this line is what gives the rouge 0 file in the home directory
-        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE > 0 ]; then
+        if [ -e $HOME/.bashrc ] && [ $BASHRC_IN_BASH_PROFILE -gt 0 ]; then
             PROFILE_FILE='.bashrc'
         fi
     fi
