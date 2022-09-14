@@ -1,0 +1,6 @@
+REACT_APP_CLIENT_ID=
+REACT_APP_CLIENT_SECRET=
+REACT_APP_REDIRECT_URI="http://localhost:3000"
+REACT_APP_AUTH_ENDPOINT="https://accounts.spotify.com/authorize"
+REACT_APP_RESPONSE_TYPE=token
+REACT_APP_TOKEN_SCOPE="streaming%20user-read-email%20user-read-private%20user-read-playback-state%20user-modify-playback-state%20user-library-read%20user-library-modify"
