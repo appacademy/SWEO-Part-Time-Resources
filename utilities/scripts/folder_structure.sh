@@ -30,13 +30,7 @@ while true; do
     # this prevents "Jan" from creating a false positive due to matching
     # multiple lines but not being an actual match.
 
-
-    # -------------------------------------------------------
-    # TODO CHANGE TO MAIN BRANCH IN URL BEFORE MERGING
-    # REMOVE COMMENT AFTER CHANGE
-    # -------------------------------------------------------
-
-    COHORT_EXISTS=$(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/cohorts.txt | grep "^$cohortID$")
+    COHORT_EXISTS=$(curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/cohorts.txt | grep "^$cohortID$")
 
     if [ -z $COHORT_EXISTS ]; then
         echo -e "${RED} -> Incorrect Cohort ID, check again with your cohort lead!${NO_COLOR}"
@@ -140,20 +134,10 @@ while true; do
     # aa_update alias setup
     echo "Configuring aa_update command..."
 
-    # -------------------------------------------------------
-    # TODO CHANGE TO MAIN BRANCH IN URL BEFORE MERGING
-    # REMOVE COMMENT AFTER CHANGE
-    # -------------------------------------------------------
-    UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE | grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/update.sh')
-
-    # -------------------------------------------------------
-    # TODO CHANGE TO MAIN BRANCH IN URL BEFORE MERGING
-    # REMOVE COMMENT AFTER CHANGE
-    # -------------------------------------------------------
-
+    UPDATE_ALIAS_IN_START=$(cat $HOME/$PROFILE_FILE | grep -c 'https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh')
     # If not append it to the profile file
     if [ $UPDATE_ALIAS_IN_START != 1 ]; then
-        echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/testing-cleanup/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
+        echo -e "\nalias aa_update='curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/update.sh | bash'" >> $HOME/$PROFILE_FILE
     fi
 
     # check if branch name variable already exists
