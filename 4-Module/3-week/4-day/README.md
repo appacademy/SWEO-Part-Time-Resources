@@ -2,6 +2,9 @@
 - Don't be afraid to use google to search for things from the official docs.
   - i.e. `sequelize migrations docs`
 
+- Remember to run this command if you need Sequelize CLI help:
+  - `npx sequelize --help`
+
 - Docs:
   - [migrations docs](https://sequelize.org/docs/v6/other-topics/migrations/)
   - [Query Interface](https://sequelize.org/docs/v6/other-topics/query-interface/)
