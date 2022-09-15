@@ -1,21 +1,26 @@
 // const binary = '0b11001010'
 
+// // console.log(true ^ true, 'linee 3')
+
 // const binaryToDecimal = (binaryStr) => {
 //   // Remove the "Ob" prepended to the str
 //   const raw = binaryStr.slice(2)
 //   // Reverse the string for the next step
 //   const reversed = raw.split('').reverse().join('')
+//   console.log(reversed)
 //   // crete a sum to return
 //   let sum = 0
 //   // loop over our reversedstring
 //   for(let i = 0; i < reversed.length; i++){
-//     let ele = parseInt(reversed[i])
 //     // Convert string to integer
-//     const expo = 2 ** i
-//     // add number to sum
-//     sum += expo * ele
-
+//     let char = parseInt(reversed[i])
+//     let expo = 2 ** i
+//     sum += expo * char
 //   }
+
+//     // add number to sum
+
+
 
 //   return sum
 //   // return sum
@@ -50,13 +55,15 @@
 //       sum += expo * hexChars[char]
 //     } else {
 //       // If it is a number we will convert the currentChar to a string
-//       sum += expo * Number(char)
+//       sum += expo * parseInt(char)
 //     }
+
 //   }
+
 //   return sum
 // }
 
-// console.log(hexToDecimal(hex1))
+// console.log(hexToDecimal(hex1), 'answer 66')
 
 
 // console.log(String.fromCharCode(65)); // prints ascii A
@@ -64,10 +71,10 @@
 // const str = 'ABC';
 // console.log(str.charCodeAt(0)); // converts ascii to decimal passing in index of the string which is A // returns 65
 
-// let hexNum = parseInt('0xa1', 16);      // 161
-// console.log(hexNum)
-// let hexStr = Number(hexNum).toString(16);  // 'a1'
-// console.log(hexStr)
+let hexNum = parseInt('0xa1', 16);      // 161
+console.log(hexNum)
+let hexStr = Number(hexNum).toString(16);  // 'a1'
+console.log('0x' + hexStr)
 
 let binNum = parseInt('10110', 2);      // 22
 console.log(binNum)
