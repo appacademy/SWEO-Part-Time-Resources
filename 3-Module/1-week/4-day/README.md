@@ -136,7 +136,7 @@ Can make entire `elements` transparent by using the `opacity` property.
 
 ## `Positioning`
 
-Allows your to manipulate where an element will appear on the page.
+Allows you to manipulate where an element will appear on the page.
 
 Can accept 1 of 5 values:
 
