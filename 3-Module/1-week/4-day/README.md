@@ -4,7 +4,7 @@
 
 Everything in `HTML` has a box around it. 
 
-<img width='500' src=./lecture/pics/boxModel.png ref='box model'>
+<img width='500' src=./pics/boxModel.png ref='box model'>
 
 - You can change the size of the content with width and height.
 - You can change the padding, border and margin using those properties respectively.
@@ -43,7 +43,7 @@ Other elements like `span`, `a`, and `img` (etc.) have a default display value o
 }
 ```
 
-<img src=./lecture/pics/standardBoxModel.png ref='standard box model' width='500'>
+<img src=./pics/standardBoxModel.png ref='standard box model' width='500'>
 
 ### `box-sizing: border-box`
 
@@ -63,7 +63,7 @@ Other elements like `span`, `a`, and `img` (etc.) have a default display value o
 }
 ```
 
-<img src=./lecture/pics/borderBox.png ref='border box' width='500'>
+<img src=./pics/borderBox.png ref='border box' width='500'>
 
 ### `display: inline-block`
 
@@ -151,7 +151,7 @@ Can accept 1 of 5 values:
     }
     ```
 
-    <img src=./lecture/pics/static.png ref='static' width='500'>
+    <img src=./pics/static.png ref='static' width='500'>
 
 - `relative`
   - `element` will be positioned *relative* to its `parent element`.
@@ -169,7 +169,7 @@ Can accept 1 of 5 values:
     }
     ```
 
-    <img src=./lecture/pics/relative.png ref='relative' width='500'>
+    <img src=./pics/relative.png ref='relative' width='500'>
 
 - `absolute`
   - `element` is removed from the page flow
@@ -189,7 +189,7 @@ Can accept 1 of 5 values:
   }
   ```
 
-  <img src=./lecture/pics/absolute.png ref='absolute' width='500'>
+  <img src=./pics/absolute.png ref='absolute' width='500'>
 
 - `fixed`
   - `element` is removed from the page flow
@@ -206,8 +206,8 @@ Can accept 1 of 5 values:
   }
   ```
 
-  <img src=./lecture/pics/fixed1.png ref='fixed' width='500'>
-  <img src=./lecture/pics/fixed2.png ref='fixed' width='500'>
+  <img src=./pics/fixed1.png ref='fixed' width='500'>
+  <img src=./pics/fixed2.png ref='fixed' width='500'>
 
 - `sticky`
   - `element` remains in its original position in the page flow
@@ -224,8 +224,8 @@ Can accept 1 of 5 values:
   }
   ```
 
-  <img src=./lecture/pics/sticky1.png ref='sticky' width='500'>
-  <img src=./lecture/pics/sticky2.png ref='sticky' width='500'>
+  <img src=./pics/sticky1.png ref='sticky' width='500'>
+  <img src=./pics/sticky2.png ref='sticky' width='500'>
 
 ---
 
