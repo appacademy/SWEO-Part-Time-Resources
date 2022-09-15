@@ -95,7 +95,7 @@ Other elements like `span`, `a`, and `img` (etc.) have a default display value o
 #### `Border`
 
 - is located between the `padding` and `margin`
-- values are `border-width`, `border-style`, `border-color` in that order.
+- values are `border-width`, `border-style`, `border-color`. Order does not matter.
 
 #### `Margin`
 
