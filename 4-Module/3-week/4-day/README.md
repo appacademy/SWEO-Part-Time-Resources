@@ -17,7 +17,7 @@ Practice(15m):
 ## Long Practice: Sequelize Fundamentals (1hr)
 - Phase 1
 - Phase 2
-- Phase 3
+- Phase 3/4(Extra Practice)
 
 # Manipulating the database using an ORM (Sequelize)
 
