@@ -37,7 +37,8 @@ if [ $SHELL = '/bin/bash' ]; then
 # If the shell is zsh
 elif [ $SHELL = '/bin/zsh' ]; then
     PROFILE_FILE='.zshrc'
-
+elif [ $SHELL = '/usr/bin/zsh' ]; then
+    PROFILE_FILE='.zshrc'
 # Unsupported SHELL or other error catching
 else
     echo -e "${RED}Unable to determine shell profile file, reach out to your cohort lead for debugging!${NO_COLOR}"

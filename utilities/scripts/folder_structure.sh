@@ -121,6 +121,8 @@ while true; do
     # If the shell is zsh
     elif [ $SHELL = '/bin/zsh' ]; then
       PROFILE_FILE='.zshrc'
+    elif [ $SHELL = '/usr/bin/zsh' ]; then
+      PROFILE_FILE='.zshrc'
 
     # Unsupported SHELL or other error catching
     else
