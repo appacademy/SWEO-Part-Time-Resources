@@ -25,7 +25,7 @@ const WaveFormFunction =({access_token, updateSongs, togglePlayer, setPlayerOffs
 				Authorization: `Bearer ${access_token}`
 			}
 		})
-		
+
 		if(resObj.status !== 200){
 			alert('No results found!')
 		} else {
