@@ -131,18 +131,18 @@ def list_loop(my_list):
 # else
 # finally
 # file = None
-try:
-    file = open('somefilee.txt')
-    print('hi')
-except FileNotFoundError as e:
-    print('The file does not exist')
-except NameError as e:
-    print('you have tried to print a variable that isnt real')
-else:
-    print(file.read())
-    file.close()
-finally:
-    print('finally will run  no matter what')
+# try:
+#     file = open('somefilee.txt')
+#     print('hi')
+# except FileNotFoundError as e:
+#     print('The file does not exist')
+# except NameError as e:
+#     print('you have tried to print a variable that isnt real')
+# else:
+#     print(file.read())
+#     file.close()
+# finally:
+#     print('finally will run  no matter what')
 # print('more code to execute')
 
 # print('Code executed smoothly')
@@ -170,4 +170,3 @@ finally:
 #     print(hi)
 # except NameError as e:
 #     print('A name Error has been raised', e)
-
