@@ -14,3 +14,8 @@
 ## AA Times Project
 - Work on each phase (if you get towards the end of phase 1 by the end, you're in good shape)
 - Project is long, but it's a good one to work on our time!!
+
+## Homework For Tonight
+- Finish up phase 1, then compare w/ `aa-times-phase-1` solution
+- Do the readings
+- Continue on project `aa-times` if time permits

@@ -13,6 +13,9 @@ module.exports = {
         allowNull: false,
         unique: true
       },
+      hue:{
+        type: Sequelize.STRING(100)
+      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
