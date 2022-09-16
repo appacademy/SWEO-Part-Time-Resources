@@ -15,9 +15,20 @@ module.exports = (sequelize, DataTypes) => {
   };
   Color.init({
     name: {
-      allowNull: false,
       type: DataTypes.STRING,
+      allowNull: false,
       unique: true,
+      validate:{
+        len: {
+          args: [2,20],
+          msg: 'name must be between 2 and 20 characters'
+        },
+        notYEnd (name){
+          if(name[name.length-1].toLowerCase() === "y"){
+            throw new Error("word ends in y, that is not valid!!")
+          }
+        }
+      }
     }
   }, {
     sequelize,
