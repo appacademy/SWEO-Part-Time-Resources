@@ -1,4 +1,4 @@
-- for `npm test test/01-model-spec.js`
+- for `npm test test/00-flightNumber-spec.js`
   - you can use the javascript Number method `isNaN` to check if the data is NOT a number
     - i.e. 
       - `isNaN("h")` --> true
