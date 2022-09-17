@@ -1,0 +1,7 @@
+Table WarehouseItems {
+  id int [pk, increment] // auto-increment
+  name varchar [not null]
+  price decimal [not null]
+  quantity integer [not null]
+  isUsed boolean [not null, default: false]
+}
