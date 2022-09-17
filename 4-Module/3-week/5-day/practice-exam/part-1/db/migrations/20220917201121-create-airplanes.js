@@ -10,9 +10,8 @@ module.exports = {
       },
       flightNumber: {
         type: Sequelize.STRING,
-        unique: true,
         allowNull: false,
-
+        unique: true,
       },
       model: {
         type: Sequelize.STRING,
@@ -20,12 +19,12 @@ module.exports = {
       },
       inService: {
         type: Sequelize.BOOLEAN,
+        allowNull: false,
         defaultValue: true,
-        allowNull: false
       },
       homeBase: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: false
       },
       maxNumPassengers: {
         type: Sequelize.INTEGER,
@@ -35,7 +34,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       cruisingAltitudeFt: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER,
       },
       firstFlightDate: {
         type: Sequelize.DATE
@@ -43,16 +42,29 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP")
+        defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
       }
     });
+
+    await queryInterface.addIndex(
+      'Airplanes',
+      ['homeBase', 'cruisingAltitudeFt'],
+      {
+        unique: true
+      }
+    );
   },
   async down(queryInterface, Sequelize) {
     await queryInterface.dropTable('Airplanes');
+
+    await queryInterface.removeIndex(
+      'Airplanes',
+      ['homeBase', 'cruisingAltitudeFt'],
+    );
   }
 };
