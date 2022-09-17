@@ -80,9 +80,10 @@ app.get('/puppies/shepherds', async (req, res, next) => {
             breed:{
                 [Op.endsWith]: 'Shepherd'
             },
-            // clause 2:
-            order: [['name', 'DESC']]
-        }
+            
+        },
+        // clause 2:
+        order: [['name', 'DESC']]
     })
 
     res.json(shepherds);
