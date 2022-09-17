@@ -2,11 +2,11 @@
 
 ## Review: 
 - Practice: Sequelize SELECT Queries
-- Long Practice: Sequelize Foundation (Phases 1-4)
+- Long Practice: Sequelize Foundation (Phases 1-4) - FROM **THURSDAY**
   - covers: `migration files`, `models`, `seeders`, and `model validation/database constraints` which will be the **biggest part of your exam**.
 
 ## Practice: Sequelize INSERT Data (THURSDAY)
-- Homework and Sequelize docs for reference
+- Homework and Sequelize docs for reference`
 
 ## Practice: Sequelize UPDATE and DELETE Singular Records (THURSDAY)
 - Homework and Sequelize docs for reference
