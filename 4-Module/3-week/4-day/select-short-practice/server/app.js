@@ -76,13 +76,11 @@ app.get('/puppies/shepherds', async (req, res, next) => {
     
     shepherds = await Puppy.findAll({
         where:{
-            // clause 1:
             breed:{
                 [Op.endsWith]: 'Shepherd'
             },
             
         },
-        // clause 2:
         order: [['name', 'DESC']]
     })
 
