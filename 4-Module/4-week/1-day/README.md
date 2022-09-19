@@ -1,8 +1,8 @@
 # W20D2 - Tuesday
 
-## Assessment (2h05m)
+## Assessment (2h)
 - Breakdown:
-  - time: 2hr5m
+  - time: 2hr
   - 16 MC x 1pt = 16pts 
   - 16 Specs = 16pts
   - Passing Score: 25/32
