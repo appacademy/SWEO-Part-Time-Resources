@@ -108,3 +108,49 @@ full size screens and then changing the layout for mobile browsing.
 ![responsive vs unresponsive](./images/responsive-vs-unresponsive-website.jpg)
 
 ---
+
+## Atomic Design ([reference](https://atomicdesign.bradfrost.com/chapter-2/))
+
+It can be helpful to have a structure or methodology to inform your design
+decisions and to organize your process. The atomic design methodology is a great
+way to help with that, in particular when working with something like react that
+already breaks up content into components.
+
+### Atoms
+
+Atoms are the basic building blocks of the universe, similarly they can be the
+basic building blocks of your web design. A label, an input, a button, things
+that cant be broken down any smaller and still be functional. What
+styles are you applying to those base elements?
+
+![atoms](./images/atoms-form-elements.png)
+
+### Molecules
+
+Molecules are groups of atoms that form a meaningful cluster that serve a single
+purpose. What styles can be applied to a group of atoms to provide a meaningful
+base component, the simplest structure larger than a single atom.
+
+![molecules](./images/molecule-search-form.png)
+
+### Organisms
+
+Organisms are a standalone portion of your interface, a collection of molecules.
+
+![organisms](./images/organism-header.png)
+
+### Templates
+
+Templates are a collection of organisms, ready to be filled with content, but
+not the actual content
+
+![templates](./images/template.png)
+
+### Pages
+
+Pages are a template that has been filled with actual content, you take a
+template and inject data into it to produce a page.
+
+![pages](./images/page.png)
+
+---
