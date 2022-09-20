@@ -8,10 +8,6 @@
 
 - Reference the queryInterface's api of [addColumn](https://sequelize.org/api/v6/class/src/dialects/abstract/query-interface.js~queryinterface#instance-method-addColumn) to do this
 
-- 
-- Associations
-- Lazy/Earger Queries
-- Insert with Associations
 
 ## Migrations for Relationships
 - Practice: Foreign Key Migrations
