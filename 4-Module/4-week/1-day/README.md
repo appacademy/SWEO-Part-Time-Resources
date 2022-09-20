@@ -10,6 +10,7 @@
 ## Tips
 - Take your time, ask questions if we don't understand something or if the prompt doesn't make sense during the assessment, we can clarify the prompt
 - Remember to run each test one at a time and reach the error message it gives
+- Models are singular like `Airplane` and tables created in Migrations are plural like `Airplanes`
 - If undoing seeders, migrations, and migrate/seed still doesn't work, `DROP DATABASE (delete file)` and try again, if that doesn't work, something is wrong with the code
 
 
