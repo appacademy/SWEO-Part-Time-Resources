@@ -8,6 +8,10 @@
 ## Order Query Results
 - Practice: Order Query Results
 
+- Step 1: Order by one attribute
+- Step 2: Order by multiple attributes
+- Step 3: Order by multiple nested attributes
+
 
 ## Long Practice: Intermediate Sequelize
 - Long Practice: Intermediate Sequelize (setup)
