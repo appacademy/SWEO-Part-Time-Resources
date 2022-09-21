@@ -1,6 +1,7 @@
 //ARRAYS
 
 let array = []
+// console.log(array === [])
 // let arr1 = ["hi", "bye"]
 // let arr2 = ["hi", "bye"]
 // console.log(arr1 == arr2)
@@ -19,11 +20,12 @@ let array = []
 //2D Array
 let twoDimensional = [["a", "b", "c"], [1, 2, 3], [true, false, true]];
 
-// console.log("twoDimensional[1]:",twoDimensional[1]); // [1, 2, 3]
-// console.log("twoDimensional[1][0]:",twoDimensional[1][0]); // 1
+// console.log("twoDimensional[1]:",twoDimensional[2]); // [1, 2, 3]
+// console.log("twoDimensional[1][0]:",twoDimensional[2][0]); // 1
 
-let subArr = twoDimensional[1]; //subArr = [1, 2, 3]
-// console.log("subArr[0]:", subArr[0]); // 1
+let subArr = twoDimensional[0]; //subArr = [1, 2, 3]
+// console.log("----------------------------")
+// console.log("here is sub array at 0", subArr[0]); // 1
 
 
 
@@ -37,7 +39,7 @@ let words = sandyQuote.split(' ')
 
 
 //JOIN
-let strArr = ["What", "is", "your", "name", "?"]
+let strArr = ["What", "is", "your", "name?"]
 let sentence = strArr.join(' ')
 // console.log(sentence);
 
@@ -54,7 +56,7 @@ let newString = splitArr.join('pizza')
 // console.log(newString)
 // console.log(planktonQuote)
 
-let newMeal = planktonQuote.split('meatloaf').join('spaghetti');
+// let newMeal = planktonQuote.split('meatloaf').join('spaghetti');
 // console.log(newMeal);
 
 
@@ -63,10 +65,19 @@ let newMeal = planktonQuote.split('meatloaf').join('spaghetti');
 
 //SLICE
 const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
-let copyArr = animals.slice()
-console.log(copyArr)
-console.log(animals)
-console.log(copyArr === animals)
+// let copyArr = animals.slice()
+// console.log(copyArr)
+// console.log(animals)
+
 // console.log(animals.slice(1));
-// console.log(animals.slice(1, 3));
+// let newAnimalArr = animals.slice(1, 3);
+
+// console.log(animals[1])
+// console.log(newAnimalArr[0])
+let newAnimalArr = animals.slice(1, 3);
+console.log(newAnimalArr)
+
+for (let i = 0; i < animals.length; i++){
+console.log(animals[0])
+}
 // console.log(animals)
