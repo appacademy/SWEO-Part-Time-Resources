@@ -77,7 +77,7 @@ const animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 let newAnimalArr = animals.slice(1, 3);
 console.log(newAnimalArr)
 
-for (let i = 0; i < animals.length; i++){
-console.log(animals[0])
-}
+// for (let i = 0; i < animals.length; i++){
+// console.log(animals[0])
+// }
 // console.log(animals)
