@@ -15,7 +15,10 @@ app.use(express.json());
 app.get('/bands-lazy/:id', async (req, res, next) => {
     // lazy loaded the band, then later got the data for the band (i.e. all band members, band id, etc.)
     const band = await Band.findByPk(req.params.id);
+
+    // later
     const bandMembers = await band.getMusicians({ order: [ ['firstName'] ] });
+    
     const payload = {
         id: band.id,
         name: band.name,
@@ -30,7 +33,7 @@ app.get('/bands-lazy/:id', async (req, res, next) => {
 app.get('/bands-eager/:id', async (req, res, next) => {
     const payload = await Band.findByPk(req.params.id, {
         include: { model: Musician },
-        order: [ [Musician, 'firstName'] ]
+        order: [ [Musician, 'firstName', 'DESC'] ]
     });
     res.json(payload);
 });
@@ -63,8 +66,7 @@ app.get('/bands-eager', async (req, res, next) => {
         include: {model:Musician},
         // order by the current property `name`, then order the children Musicians.firstName
         order: [ 
-        //    ['name'], [Musician, 'id', "ASC"]
-           ['name'], [Musician, 'firstName', "ASC"]
+           ['name'], [Musician, 'id', "ASC"]
         ]
     });
     res.json(payload);
