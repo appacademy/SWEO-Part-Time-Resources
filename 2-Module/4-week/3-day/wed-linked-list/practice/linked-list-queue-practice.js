@@ -102,7 +102,7 @@ class SinglyLinkedList {
             curr = curr.next;
             index++;
         }
-        if (index === midIndex && curr) return curr;
+        if (index === midIndex) return curr;
         return null;
         // Write your hypothesis on the time complexity of this method here
     }
@@ -192,7 +192,20 @@ class DoublyLinkedList {
             // How do the implementation for singly and doubly vary if at all?
 
         // Your code here
+        let firstPointer = this.head;
+        let secondPointer = this.tail;
+        let atFirst = true;
 
+        while (firstPointer !== secondPointer) {
+            if (atFirst) {
+                firstPointer = firstPointer.next;
+            } else {
+                secondPointer = secondPointer.prev;
+            }
+            atFirst = !atFirst;
+        }
+
+        return firstPointer;
         // Write your hypothesis on the time complexity of this method here
     }
 
@@ -200,7 +213,15 @@ class DoublyLinkedList {
         // Returns a new reversed version of the linked list
 
         // Your code here
+        const newList = new DoublyLinkedList();
+        let curr = this.tail;
 
+        while (curr) {
+            newList.addToTail(curr.value);
+            curr = curr.prev;
+        }
+
+        return newList;
         // Write your hypothesis on the time complexity of this method here
     }
 
@@ -208,6 +229,17 @@ class DoublyLinkedList {
         // Reverses the linked list in-place
 
         // Your code here
+        let curr = this.head;
+
+        let prev;
+        while (curr.next) {
+            prev = curr;
+            [curr.prev, curr.next] = [curr.next, curr.prev];
+            curr = curr.prev;
+        }
+        this.head = curr;
+        this.head.next = prev;
+        return this;
 
         // Write your hypothesis on the time complexity of this method here
     }

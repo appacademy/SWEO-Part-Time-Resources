@@ -71,7 +71,7 @@ describe('Part 2: Linked Lists', () => {
     list.addToTail(5);
     list.addToTail(6);
 
-    expect(list.findMid().value).to.equal(3);
+    expect(list.findMid().value).to.equal(4);
   });
 
 
@@ -138,7 +138,7 @@ describe('Part 3: Doubly Linked Lists', () => {
     dll.addToTail(5);
     dll.addToTail(6);
 
-    expect(dll.findMid().value).to.equal(3);
+    expect(dll.findMid().value).to.equal(4);
   });
 
 
