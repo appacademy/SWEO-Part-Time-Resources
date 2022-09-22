@@ -15,8 +15,10 @@ let changeWordsNoHelper = function(sentence){
       return words.join(' ');
     }
 
+    // let tweet = 'I just spent 3 hours walking around town playing pokemon go and I feel great!'
+    // console.log(changeWordsNoHelper(tweet));
 
-
+//HELPER FUNCTION
  let removeVowels = function(word){
     let vowels = 'aeiou';
     let newWord = '';
@@ -27,7 +29,7 @@ let changeWordsNoHelper = function(sentence){
     return newWord;
   }
 
-
+//FUNCTION USING HELPER FUNCTION
   let changeWords = function(sentence){
     let words = sentence.split(' ');
 
@@ -42,4 +44,3 @@ let changeWordsNoHelper = function(sentence){
 
   let tweet = 'I just spent 3 hours walking around town playing pokemon go and I feel great!'
   console.log(changeWords(tweet));
-  console.log(changeWordsNoHelper(tweet));
