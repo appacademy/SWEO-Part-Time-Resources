@@ -1,9 +1,24 @@
-const hashIt = (word) => {
-  return word
-    .split('')
-    .reduce((res, char) => Number(char.charCodeAt().toString(2)) + res, 0);
-};
+function simpleHash(str) {
+  let hashValue = 0;
 
-console.log(hashIt('listen'));
-console.log(hashIt('brooooo'));
-console.log(hashIt('silent'));
+  for (let i = 0 ; i < str.length ; i++) {
+    hashValue += str.charCodeAt(i);
+  }
+
+  return hashValue;
+}
+console.log(simpleHash('listen'));
+console.log(simpleHash('brooooo'));
+console.log(simpleHash('Its brittney'));
+
+
+
+// const isUnique = (arr) => {
+//   let set = new Set(arr);
+//   return set.size === arr.length;
+// };
+
+// console.log(isUnique([1, 2, 3]));
+// console.log(isUnique([1, 2, 3, 1]));
+
+
