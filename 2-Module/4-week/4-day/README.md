@@ -11,11 +11,15 @@
   - Here's a super simple hashing function
 
   ```js
-  const hashIt = (word) => {
-  return word
-    .split('')
-    .reduce((res, char) => Number(char.charCodeAt().toString(2)) + res, 0);
-  }; 
+  function simpleHash(str) {
+    let hashValue = 0;
+
+    for (let i = 0 ; i < str.length ; i++) {
+      hashValue += str.charCodeAt(i);
+    }
+
+    return hashValue;
+  }
   ```
 
   - Not great, that's why we have some better hashing algorithms out there.\
@@ -36,5 +40,29 @@
 
 ## Project
 
-- `SLACK MYLO WHEN DONE WITH EACH SECTION`
+- `SLACK JAMES WHEN DONE WITH EACH SECTION`
 - Try not to use the reading as much as asking a TA
+
+## Sets
+
+- Sets are a collection of unique members
+  - Can't have multiples which is cool
+  - Constant lookup time, also cool
+
+- Methods/Properties
+  - new Set(`/* something to create set from */`) - creates a set
+  - Set.add() - adds something to a set
+  - Set.delete() - deletes something from a set
+  - Set.size - gives you the 'length' of a set
+  - Set.has() - let's you know if it's in the set
+  - Set.clear() - removes everything from the set
+
+```js
+const isUnique = (arr) => {
+  let set = new Set(arr);
+  return set.size === arr.length;
+};
+
+console.log(isUnique([1, 2, 3]));
+console.log(isUnique([1, 2, 3, 1]));
+```
