@@ -7,9 +7,14 @@ function simpleHash(str) {
 
   return hashValue;
 }
-console.log(simpleHash('listen'));
+console.log(simpleHash('haha suhh dude'));
 console.log(simpleHash('brooooo'));
 console.log(simpleHash('Its brittney'));
+console.log(simpleHash('haha suhh dude'));
+console.log(simpleHash('haha suhh dude'));
+console.log(simpleHash('haha suhh dude'));
+console.log(simpleHash('haha suhh dude'));
+
 
 
 
