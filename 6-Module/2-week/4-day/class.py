@@ -35,14 +35,21 @@ class Associate(Employee):
         super().__init__(name)
         self.title = title
 
+    def parent_printer(self):
+        super().parent_printer()
+        print('this is coming from the child')
+
+yake = Employee('Yake')
+
 baylen = Associate('baylen')
-# print(type(baylen.class_factory(['james'])[0]))
-baylen.parent_printer()
+
+print(baylen.parent_printer())
 
 
 
 
 
-
+# # print(type(baylen.class_factory(['james'])[0]))
+# baylen.parent_printer()
 # print(baylen.class_factory(['zavier', 'james', 'yake']))
 # print(Employee.status_checker('incomplete', baylen))
