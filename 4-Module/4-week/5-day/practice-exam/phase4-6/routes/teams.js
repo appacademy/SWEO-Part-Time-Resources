@@ -6,7 +6,7 @@ const {Team, Player} = require('../db/models');
 // /teams/1/players
 router.post('/:id/players', async (req,res)=>{
     // we're going to need req object data
-    const teamId = req.params.id
+    const teamId = Number.parseInt(req.params.id);
     const {firstName, lastName, number, isRetired} = req.body;
 
     // find the team that we want to add the player to
