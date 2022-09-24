@@ -104,6 +104,8 @@ done
 ### User Input
 
 ```sh
+# live read user input
+
 # -p means prompt
 # $'text' is how to interpret ascii in the bash prompt. \n cant be interpreted normally
 # name is the variable to store the read value into
@@ -111,6 +113,9 @@ done
 read -p "What is your name?"$'\n  > ' name
 
 echo "Hello $name"
+
+# positional arguments on invocation
+echo "Hello $1"
 ```
 
 ---
