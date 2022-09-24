@@ -15,7 +15,8 @@ module.exports = (sequelize, DataTypes) => {
       } )
 
       Team.hasMany(models.Player, {
-        foreignKey: "currentTeamId"
+        foreignKey: "currentTeamId",
+        as: "TeamRoster"
       })
     }
   }
