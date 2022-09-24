@@ -1,7 +1,8 @@
-# W22D4 - Thursday
+# W22D4 - Saturday
 
 ## Study Review (25m)
 - open the `assessment-breakdown.md` and get a feel for which section you'll need practice the most
+- Starting reading the `practice-assessment`
 
 ## Code-it-out
 - try `associations.js`
@@ -18,7 +19,7 @@
     - "Help in room x please, I got this error, after establishing my associations on model x and y. I tried deleting the dev.db, and restarting but it still gave me z error."
 
 ## Practice Assessment
-- IMPORTANT: for the `Express and Sequelize Search Filter/ Pagination` section
+- `IMPORTANT`: for the `Express and Sequelize Search Filter/ Pagination` section
 	- also run: `npm install dotenv-cli` since package.json doesn't have it so your dotenv commands won't work
 
 - Double check syntax errors, models = singular, tables = plural
