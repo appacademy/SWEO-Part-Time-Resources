@@ -2,6 +2,7 @@
 
 const { Fan } = require('../models');
 
+
 const fans = [
   {
     username: "FootballFan",
@@ -21,13 +22,14 @@ const fans = [
 ];
 
 module.exports = {
-  async up (queryInterface, Sequelize) {
+  async up(queryInterface, Sequelize) {
     await Fan.bulkCreate(fans, { validate: true });
   },
 
-  async down (queryInterface, Sequelize) {
+  async down(queryInterface, Sequelize) {
+
     await queryInterface.bulkDelete('Fans', {
-      where: { username: fans.map(sport => sport.username) }
-    }, {});
+      where: { username: fans.map(ele => ele.username) }
+    }, {}, {});
   }
 };
