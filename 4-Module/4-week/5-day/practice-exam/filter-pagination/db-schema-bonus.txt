@@ -1,0 +1,39 @@
+Table Sports {
+  id integer [pk, increment] // auto-increment
+  name varchar [not null, unique]
+}
+
+Table Teams {
+  id integer [pk, increment] // auto-increment
+  name varchar [not null]
+  homeCity varchar [not null]
+  sportId integer [not null, ref: > Sports.id]
+}
+
+Table Players {
+  id integer [pk, increment] // auto-increment
+  firstName varchar [not null]
+  lastName varchar [not null]
+  number integer [not null]
+  isRetired boolean [not null, default: false]
+  currentTeamId integer [ref: > Teams.id]
+}
+
+Table DraftPicks {
+  id integer [pk, increment]
+  fanId integer [not null, ref: > Fans.id]
+  playerId integer [not null, ref: > Players.id]
+}
+
+Table Fans {
+  id integer [pk, increment]
+  username varchar [not null, unique]
+}
+
+Table Matches {
+  id integer [pk, increment]
+  homeTeamId integer [not null, ref: > Teams.id]
+  awayTeamId integer [not null, ref: > Teams.id]
+  winner integer [not null, ref: > Teams.id]
+  matchDate date [not null]
+}
