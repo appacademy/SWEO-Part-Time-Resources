@@ -62,8 +62,10 @@ Below is the NumSorter class that is to be refactored
 class NumSorter {
   constructor() {
     this.numList = new LinkedList();
+    // this.numList = []
 
     this.allowedNums = new Set();
+    // this.allowedNums = []
   }
 
   /*
