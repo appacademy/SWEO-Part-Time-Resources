@@ -1,6 +1,6 @@
 # M2W5D1
 
-## Readings - Intro to Algorithms (7 min)
+## Readings - Intro to Algorithms (10 min)
 
 1. Intro to CS 2
 2. Logarithms Objectives
