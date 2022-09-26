@@ -28,7 +28,7 @@ First lets clear up what `Full-Stack` means. A `full-stack` app is an app that h
   - `servers` receive the `request`, `fetch` the needed data, and send a `response` back with that data
   
   <br>
-  <img src='./lecture/pics/httpReq.png' width='500'>
+  <img src='./httpReq.png' width='500'>
 
 ### `Properties of HTTP`
 
@@ -40,11 +40,11 @@ First lets clear up what `Full-Stack` means. A `full-stack` app is an app that h
   - **`tunnel`**: simply passes the request along
 
 <br>
-<img src='./lecture/pics/intermediaries.png' width='500'>
+<img src='./intermediaries.png' width='500'>
 
 ## `Request/Response Cycle`
 
 <br>
-<img src='./lecture/pics/reqrescycle.png' width='500'>
+<img src='./reqrescycle.png' width='500'>
 
 The browser parses `HTML`, `CSS`, and `JS`, then renders that info to the user by constructing and rendering as a [DOM tree](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
