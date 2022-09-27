@@ -6,6 +6,22 @@
 
 ## `Request Overview`
 
+```js
+POST / HTTP/1.0
+Host: appacademy.io
+Content-Length: 31
+Content-Type: application/x-www-form-urlencoded
+Host: appacademy.io
+Connection: keep-alive
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.132 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+
+username=azure&password=hunter2
+```
+
 Made up of the following information:
 
 - **`Request-line`**
