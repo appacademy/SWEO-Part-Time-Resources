@@ -27,7 +27,7 @@ Made up of the following information:
 - lets the server know the format of the body data and how to process it
 - values are MIME Types (Media Types)
 
-<img src='./lecture/pics/mimetypes.png' width='500'>
+<img src='./mimetypes.png' width='500'>
 
 ### `HTTP Verbs`
 
@@ -172,6 +172,6 @@ Usually when a form is submitted, the server will redirect upon a successful req
 
 #### `Examples of ReSTful paths that return HTML`
 
-<img src='./lecture/pics/htmlrest.png' width='500'>
+<img src='./htmlrest.png' width='500'>
 
-<img src='./lecture/pics/tweetrest.png' width='500'>
+<img src='./tweetrest.png' width='500'>
