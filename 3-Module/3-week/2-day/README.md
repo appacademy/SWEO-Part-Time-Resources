@@ -92,7 +92,7 @@ Made up of the following information:
 
 ## `Response Overview`
 
-```js
+```
 // Status
 HTTP/1.1 200 OK
 
