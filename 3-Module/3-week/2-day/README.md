@@ -93,6 +93,36 @@ Made up of the following information:
 
 ## `Response Overview`
 
+```js
+// Status
+HTTP/1.1 200 OK
+
+// Headers
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: close
+X-Frame-Options: SAMEORIGIN
+X-Xss-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Cache-Control: max-age=0, private, must-revalidate
+Set-Cookie: _rails-class-site_session=BAh7CEkiD3Nlc3Npb25faWQGOgZFVEkiJTM5NWM5YTVlNTEyZDFmNTNlN; path=/; secure; HttpOnly
+X-Request-Id: cf5f30dd-99d0-46d7-86d7-6fe57753b20d
+X-Runtime: 0.006894
+Strict-Transport-Security: max-age=31536000
+Vary: Origin
+Via: 1.1 vegur
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Server: cloudflare
+CF-RAY: 51d641d1ca7d2d45-TXL
+
+// Body
+<!DOCTYPE html>
+<html>
+...
+...
+</html>
+```
+
 Made up of the following information:
 
 - `Status`
