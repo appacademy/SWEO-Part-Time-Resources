@@ -6,7 +6,7 @@
 
 ## `Request Overview`
 
-```js
+`
 // Request-Line
 POST / HTTP/1.0
 
@@ -23,7 +23,7 @@ Accept-Language: en-US,en;q=0.9
 
 // Body
 username=azure&password=hunter2
-```
+`
 
 Made up of the following information:
 
