@@ -7,7 +7,10 @@
 ## `Request Overview`
 
 ```js
+// Request-Line
 POST / HTTP/1.0
+
+// Headers
 Host: appacademy.io
 Content-Length: 31
 Content-Type: application/x-www-form-urlencoded
@@ -19,6 +22,7 @@ Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/a
 Accept-Encoding: gzip, deflate
 Accept-Language: en-US,en;q=0.9
 
+// Body
 username=azure&password=hunter2
 ```
 
