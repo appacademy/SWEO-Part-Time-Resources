@@ -3,7 +3,7 @@
 ## Assessment (2h)
 - Breakdown:
   - time: 2hr
-  - 5 MC x 1pt = 5pts 
+  - 5 MC x 1pt = 5pts
   - 13 Specs = 13pts
   - Passing Score: 14/18
 
@@ -13,7 +13,7 @@
 
 - Remember that these are `also available resources`:
   - Sequelize Docs (have it opened)
-  - Express Docs 
+  - Express Docs
   - practice assessment
   - any code you've written on coding problems, projects, practice assessment, etc. BUT NOT NOTES.
   - Formative quizzes on AA open
@@ -23,7 +23,5 @@
 
 
 - `Question freebees` (We didn't have time to cover due to time constraints):
-  - True or False: The code above is using N + 1 queries.  
+  - True or False: The code above is using N + 1 queries.
     - Answer: `true`
-
-
