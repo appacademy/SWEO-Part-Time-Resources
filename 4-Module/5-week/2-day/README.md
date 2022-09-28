@@ -1,6 +1,5 @@
 # Welcome to project planning week!
 
-
 ## What is polymorphism and how can we use it with a db schema?
 
 Discussion: Sequelize Polymorphism
@@ -16,11 +15,10 @@ Practice: Sequelize Polymorphism (30 Minutes)
 - There will be test specs, specs in general will be testing your routes to see if you are able to perform CRUD (Create, Read, Update, Delete)
 - Projects must be chosen by end of day, your project MUST be approved by me before you begin working on it.
 - Every day we have a a daily standup where you and I will talk about:
-    - what you worked on in the past day
-    - what you will work on today
-    - does anything need to be reviewed by me?
-    - what are your blockers, if any?
-
+  - what you worked on in the past day
+  - what you will work on today
+  - does anything need to be reviewed by me?
+  - what are your blockers, if any?
 
 # Projects
 
@@ -34,7 +32,6 @@ ALL projects will require USER AUTHENTICATION/AUTHORIZATION
 - Comments
 - Albums
 - Artists
-
 
 ## Meetup
 
