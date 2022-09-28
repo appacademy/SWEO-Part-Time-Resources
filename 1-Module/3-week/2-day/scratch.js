@@ -1,10 +1,13 @@
-// let createObj = {
-//     key: "value"
+
+// let myObj = {
+//     apple: "Granny Smith",
+//     key2: 1
 // }
 
-// //how to key into an object
-// // console.log(createObj.key)
-// console.log(createObj["key"])
+
+// //how to key into an myObj
+// console.log(myObj.apple)
+// console.log(myObj["apple"])
 
 
 
@@ -22,15 +25,16 @@
 //     },
 //   };
 // obj.stockPortfolio.tickers.push("AMC")
-//  obj.stockPortfolio.tickers.push("GME")
-//  console.log(obj)
-//How would I print my name from the object?
-// console.log(obj.name)
-// console.log(obj["name"])
-//How would I add a key of location and assign its value to Texas?
-// obj['location'] = "Texas"
-// obj.location = "Texas"
 // console.log(obj)
+
+//How would I print my name from the object?
+// console.log(obj["name"])
+// console.log(obj.name)
+//How would I add a key of location and assign its value to Texas?
+// obj.location = "Texas"
+// obj["location"] = "Texas"
+// console.log(obj)
+
 //How would I change occupation to CEO?
 // obj.occupation = "CEO"
 // obj['occupation'] = "CEO"
@@ -58,10 +62,10 @@
 //   firstName: "Ramen",
 //   secondName: "Noodles",
 //   frequency: "everyday",
-//   firstName: "test"
 // };
-
-// console.log(obj[someVariable]); // obj["fistName"]
+// // obj.newKey = "THIS IS NEW"
+// // console.log(obj)
+// // console.log(obj[someVariable]); // obj["fistName"]
 // console.log(obj.someVariable); //  obj."firstName"  BAD EXAMPLE DONT DO
 // console.log(obj[some + variable]); //
 // console.log(obj[time.toLowerCase()]); //
@@ -73,33 +77,34 @@
 // };
 
 //Checking if a key exists
-//obj[key] !== undefined
-// obj.apple = "Granny Smith"
-// console.log(obj)
+// console.log(obj.firstName)
+// if(obj[key] !== undefined){
+//     //DO XYZ
+//     obj[key] = "NEW VALUE"
+// }
+
 // console.log(obj.apple !== undefined)
 
 //key in obj
-// console.log('apple' in obj)
+// console.log('firstName' in obj)
 
 
 
-//Iterating over an Object
+// //Iterating over an Object
 // let willObj = {
 //     firstName: "Will",
 //     lastName: "Duffy",
 //     Occupation: "Instructor"
 // }
 
-// let willObj = {
-//     firstName: "Will",
-//     lastName: "Duffy",
-//     Occupation: "Instructor"
-// }
-// //for in loop
+// // // //for in loop
+
 // for (let key in willObj){
+//     let value = willObj[key]
+//     // console.log(value)
 //     // console.log("HOW MANY TIMES WILL I PRINT?")
-//     console.log("apple", key)
-//     // console.log("VALUE", willObj[key])
+//     console.log("KEY", key)
+//     console.log("VALUE", value)
 // }
 
 
@@ -108,10 +113,10 @@
 //     lastName: "Duffy",
 //     Occupation: "Instructor"
 // }
-// // let willKeys = Object.keys(willObj)
-// // console.log("KEYS", willKeys)
-// // let willValues = Object.values(willObj)
-// // console.log("VALUES", willValues)
+// let willKeys = Object.keys(willObj)
+//  console.log("KEYS", willKeys)
+// let willValues = Object.values(willObj)
+// console.log("VALUES", willValues)
 // let entries = Object.entries(willObj)
 // console.log(entries)
 
@@ -126,4 +131,4 @@
 // let buster = biff;
 // buster.age = 0;
 // //what do you think Biff's age will be?
-// console.log(biff, buster)
+// console.log(biff.age, buster.age)
