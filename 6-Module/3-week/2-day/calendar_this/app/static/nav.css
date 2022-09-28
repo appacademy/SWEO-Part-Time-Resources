@@ -1,0 +1,15 @@
+.nav{
+    padding : 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 2px 2px 3px 1px;
+    border-radius: 5px;
+}
+
+.appoint{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
