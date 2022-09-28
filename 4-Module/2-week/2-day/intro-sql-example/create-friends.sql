@@ -9,4 +9,5 @@ CREATE TABLE friends(
 
 INSERT INTO friends(first_name, last_name, middle_name) VALUES 
     ("wes", "trinh", "t"), 
-    ("jesse", "brooks", "t");
+    ("jesse", "brooks", "t"),
+    ("john", "quach", "t");

@@ -88,9 +88,9 @@ async function asyncAwaitRefactor(){
         
         console.log("data after awaitng the promise:", data);
 
-        await timeoutLog("2ND setTimeout only after 1st finishes logging", 1000)
+        await timeoutLog("2ND setTimeout only after 1st finishes logging", 5000)
 
-        await timeoutLog("3RD setTimeout only after 2nd finishes logging", 1000)
+        await timeoutLog("3RD setTimeout only after 2nd finishes logging", 7000)
 
         await timeoutLog("4RD setTimeout only after 3rd finishes logging", 1000)
 
