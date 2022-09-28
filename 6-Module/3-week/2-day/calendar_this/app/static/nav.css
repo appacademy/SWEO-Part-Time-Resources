@@ -1,0 +1,11 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.appointment-container{
+    display: flex;
+    flex-direction: row;
+    gap : 10px
+
+}
