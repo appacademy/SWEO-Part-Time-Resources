@@ -58,7 +58,8 @@ SELECT * FROM users WHERE username = 'Jesse' ORDER BY users.username ASC
 ```js
 const user = User.findAll({
     order: [
-        ['username', 'ASC']
+        ['username', 'ASC'],
+        ['age', 'DESC']
     ]
 })
 ```
