@@ -27,7 +27,13 @@ function arrayConverter(array) {
   }
   return arrayObject;
   //!!END
+
+
 }
+
+console.log(arrayConverter(["apple", "apple", "pear"])); // => {apple: 2}
+console.log(arrayConverter(["mango", "mango", "pineapple"])); // => {mango: 1, pineapple: 1}
+console.log(arrayConverter(["apple", "apple", "banana", "potato", "banana"])); // => {apple: 1, banana: 2, potato: 1}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = arrayConverter;
