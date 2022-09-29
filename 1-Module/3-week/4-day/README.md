@@ -10,7 +10,7 @@
 // Destructuring Discussion
 // Destructuring is just matching a pattern.
 
-let animals = ["dragon", "panda", "gorilla", "lion"];
+```let animals = ["dragon", "panda", "gorilla", "lion"];
 
 // instead of doing this:
 // let firstAnimal2 = animals[0]
@@ -59,7 +59,7 @@ let {
 
 let william2 = cohort.instructors[0].name;
 console.log("William: ", William);
-console.log("Blake: ", Blake);
+console.log("Blake: ", Blake);```
   ```
 
 ## Rest and Spread
