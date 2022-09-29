@@ -7,22 +7,59 @@
 
 ## Destructuring Discussion
 
-- Destructuring is just matching a pattern.
+// Destructuring Discussion
+// Destructuring is just matching a pattern.
 
-  ```js
-    let person = "Emily";
-    let { person: person2, animal } = { person: "Caleb", animal: "elephant" };
-    // let person = (the Object).person
-    // let animal = (the Object).animal
-    console.log(person, person2, animal);
+let animals = ["dragon", "panda", "gorilla", "lion"];
 
-    let [game, player] = ["Dota 2", "Mylo"];
-    // let game = (the Array)[0]
-    // let player = (the Array)[1]
-    console.log(game, player);
+// instead of doing this:
+// let firstAnimal2 = animals[0]
+// let firstAnimal3 = animals[1]
+// let firstAnimal4 = animals[2]
+// let firstAnimal5 = animals[3]
 
-    [player, game] = [game, player];
-    console.log(game, player);
+let [firstAnimal, secondAnimal, thirdAnimal] = animals; //firstAnimals variable holds the first animal "dragon";
+
+// console.log("firstAnimal:", firstAnimal);
+// console.log("secondAnimal:", secondAnimal);
+
+let cohort = {
+  startMonth: "September",
+  instructors: [
+    {
+      name: "William",
+      currentGame: "Dark Souls",
+      mostPlayed: ["Knight", "Mage"],
+    },
+    {
+      name: "Blake",
+      currentGame: "Escape from Tarkov",
+      hours: 50,
+    },
+  ],
+};
+
+// //what is the value of the variable `startMonth`?
+// let { startMonth } = cohort;
+let { startMonth } = cohort;
+let cohortArr = [startMonth];
+// console.log(cohortArr);
+// console.log("startMonth: ", startMonth);
+
+// //given this cohort obj, destructure the "instructors" and give instructors an alias of `teachers`
+let { instructors: teachers } = cohort;
+// console.log(instructors);
+// console.log("teachers: ", teachers);
+// console.log(cohort);
+
+// //given this cohort obj, destructure the object inside of instructors array
+let {
+  instructors: [William, Blake],
+} = cohort;
+
+let william2 = cohort.instructors[0].name;
+console.log("William: ", William);
+console.log("Blake: ", Blake);
   ```
 
 ## Rest and Spread
