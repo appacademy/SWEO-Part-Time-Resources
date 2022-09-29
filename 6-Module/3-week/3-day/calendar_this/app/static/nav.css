@@ -28,5 +28,21 @@ body{
     padding: 10px;
     border : 1px solid red;
     width: 90vw;
-    height: 250px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    gap : 10px
+    
+}
+
+.appoint-form{
+    border-radius: 10px;
+    border: 2px solid teal;
+    padding : 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 6px 6px 10px 1px;
+    margin-bottom: 20px;
 }

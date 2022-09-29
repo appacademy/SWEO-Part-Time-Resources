@@ -9,10 +9,34 @@
 </head>
 <body>
     {% include 'header.html' %}
+    <h4>Current User : {{user}}</h4>
+    <form class="appoint-form" method="POST" action="/">
+        {{form.csrf_token}}
+        {{form.name.label}}
+        {{form.name}}
+        {{form.start_date.label}}
+        {{form.start_date}}
+        {{form.start_time.label}}
+        {{form.start_time}}
+        {{form.end_date.label}}
+        {{form.end_date}}
+        {% if form.end_date.errors %}
+            {% for error in form.end_date.errors %}
+            <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+        {{form.end_time.label}}
+        {{form.end_time}}
+        {{form.description.label}}
+        {{form.description}}
+        {{form.private.label}}
+        {{form.private}}
+        {{form.submit}}
+    </form>
     <div class="appointment-container">
         <h3>Current appointments</h3>
+        {% for row in rows %}
         <div class="appoint">
-            {% for row in rows %}
                 <div class="name-container">
                     <div>Name of appointment</div>
                     <div>-</div>
@@ -28,8 +52,8 @@
                     <div>-</div>
                     <div>{{datetime.strptime(row[3], '%Y-%m-%d %H:%M:%S').strftime("%H:%M")}}</div>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
     </div>
     {% include 'footer.html' %}
 </body>
