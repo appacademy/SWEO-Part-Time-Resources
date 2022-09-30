@@ -3,7 +3,7 @@ import sqlite3
 import sqlite3
 import os
 from flask import Blueprint, render_template, session, redirect, url_for
-from datetime import datetime
+from datetime import datetime, timedelta
 from app.forms import AppointmentForm
 
 
@@ -22,6 +22,11 @@ def index():
 def daily (year, month, day):
     print(year, month, day)
     form = AppointmentForm()
+    date = datetime(year, month, day)
+    day = timedelta(days=1)
+    print(date + day)
+
+    # print(date)
     if form.validate_on_submit():
         params = (
             form.name.data,
@@ -42,8 +47,9 @@ def daily (year, month, day):
     with sqlite3.connect(DB_FILE) as conn:
         curs = conn.cursor()
         curs.execute('''SELECT id, name, start_datetime, end_datetime
-        FROM appointments
-        ORDER BY start_datetime;''')
+            FROM appointments
+            WHERE start_datetime BETWEEN ? AND ?
+            ORDER BY start_datetime;''', (date, date + day))
         rows = curs.fetchall()
     return render_template('main.html', rows=rows, datetime=datetime, user=session['user'], form=form)
 
