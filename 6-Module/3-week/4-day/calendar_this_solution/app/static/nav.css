@@ -1,0 +1,49 @@
+.nav{
+    padding : 10px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    box-shadow: 2px 2px 3px 1px;
+    border-radius: 5px;
+    width: 90vw;
+}
+
+.appoint{
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 1px;
+    padding: 20px;
+    border : 1px solid blue;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 200px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.appointment-container{
+    margin-top: 20px;
+    box-shadow: 5px 5px 10px 1px;
+    border-radius: 10px;
+    padding: 10px;
+    border : 1px solid red;
+    width: 90vw;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.appoint-form{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px 1px;
+    padding: 10px;
+    border: 1px solid thistle;
+    gap : 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/nav.css">
+    <title>Document</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <h4>Current Logged in user {{user}}</h4>
+    <form class='appoint-form' method="POST" action="/">
+        {{form.csrf_token}}
+        {{form.name.label}} 
+        {{form.name}}
+        {{form.start_date.label}} 
+        {{form.start_date}}
+        {{form.start_time.label}} 
+        {{form.start_time}}
+        {{form.end_date.label}} 
+        {{form.end_date}}
+        {% if form.end_date.errors %}
+            <div class="errors">
+            {% for error in form.end_date.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+            </div>
+        {% endif %}
+        {{form.end_time.label}} 
+        {{form.end_time}}
+        {{form.description.label}} 
+        {{form.description}}
+        {{form.private.label}} 
+        {{form.private}}
+        {{form.submit}}
+    </form>
+    <div class="appointment-container">
+        <h3>Current appointments</h3> 
+        {% for row in rows %}
+        <div class="appoint">
+                <div class="name-container">
+                    <div>Name of appointment</div>
+                    <div>-</div>
+                    <div>{{row[1]}}</div>
+                </div>
+                <div class="start-container">
+                    <div>Start time</div>
+                    <div>-</div>
+                    <div>{{datetime.strptime(row[2], '%Y-%m-%d %H:%M:%S').strftime("%H:%M")}}</div>
+                    <div>{{datetime.strptime(row[2], '%Y-%m-%d %H:%M:%S').strftime("%d:%m:%Y")}}</div>
+                </div>
+                <div class="end-container">
+                    <div>End Time</div>
+                    <div>-</div>
+                    <div>{{datetime.strptime(row[3], '%Y-%m-%d %H:%M:%S').strftime("%H:%M")}}</div>
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+    {% include 'footer.html' %}
+</body>
+</html>
