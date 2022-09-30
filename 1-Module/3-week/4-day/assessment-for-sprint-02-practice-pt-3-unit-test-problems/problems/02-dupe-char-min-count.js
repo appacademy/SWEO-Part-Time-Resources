@@ -46,6 +46,6 @@ return arr
 console.log(duplicateCharMinCount("apple", 2)) // ["p"]
 console.log(duplicateCharMinCount("banana", 2)) // ["a", "n"]
 console.log(duplicateCharMinCount("What about a longer string?", 3)) // ["a", "t", " "]
-
+//test
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = duplicateCharMinCount;
