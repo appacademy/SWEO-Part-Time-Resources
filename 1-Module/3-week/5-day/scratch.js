@@ -98,3 +98,59 @@ console.log(sum);
 // // countedNames is:
 // // { 'Alice': 2, 'Bob': 1, 'Tiff': 1, 'Bruce': 1 }
 // console.log(countedNames)
+
+
+
+//PRACTICE ASSESSMENT:
+
+function keyAdderUniqueVal(object, key, value) {
+    // console.log(object)
+    let values = Object.values(object)  // this returns an array of the object's values
+    // let keys = Object.keys(object)
+    // console.log(values)
+    // console.log(keys)
+    // let newArr = []
+    // for (let keys in object){
+    //     // let key = keys
+    //     // console.log(key)
+    //     let val = object[keys]
+    //     newArr.push(val)
+    // //     console.log(values)
+    // }
+    // console.log(newArr)
+    if(!values.includes(value)){
+        object[key] = value
+    }
+    return object
+
+    }
+
+
+    
+function duplicateCharMinCount(string, minCount) {
+	// Your code here
+	let obj = {}
+	for (let i = 0; i < string.length; i++){
+		let letter = string[i]
+		// console.log(letter)
+		if(obj[letter] === undefined){
+			obj[letter] = 1
+		} else {
+			obj[letter] += 1
+		}
+	}
+	// console.log(obj)
+
+	let returnArr = []
+	console.log(obj)
+for (let key1 in obj){
+	// console.log("KeY at iteration:", key1) // this key is a p l e
+	let values = obj[key1] // BAD obj."a"
+	console.log(key1, values)
+	if (values >= minCount){
+		returnArr.push(key1)
+	}
+}
+
+	return returnArr
+}
