@@ -69,12 +69,12 @@ console.log(myNumber); // 5
 
 // Function causing a side effect
 
-const impure = (num) => {
-    num += 5;
-    return num;
+const impure = () => {
+    myNumber += 5;
+    return myNumber;
 };
 
-impure(myNumber); // 10
+impure(); // 10
 console.log(myNumber); // 10
 ```
 
