@@ -1,4 +1,4 @@
-
+//FOREACH
 let friends = ['Ludo', 'Hoggle', 'Sarah', 'Sir Didymus']
 // for each example
 // YOU CANNOT RETURN FROM A FOREACH
@@ -6,9 +6,10 @@ let friends = ['Ludo', 'Hoggle', 'Sarah', 'Sir Didymus']
 // but will not return anything.
 // this method can mutate the original array if the
 // code in your callback function mutates it.
-
+let newArr = []
 friends.forEach(function(str, i){
-  friends[i] = str.toUpperCase();
+//   friends[i] = str.toUpperCase(); //mutates original
+console.log(str)
 })
 
 console.log(friends);
