@@ -1,0 +1,45 @@
+/* TODO Add site wide styles */
+* {
+    background-color: #121212;
+    color: #00bfac;
+}
+
+nav {
+    display: flex;
+    margin: 20px auto;
+    padding: 5px;
+    justify-content: space-around;
+    /* background-color: rgb(15, 52, 96); */
+    /* background-color: #627D98; */
+    background-color: #102a43;
+    font-size: 32px;
+    border-radius: 15px;
+}
+
+.active {
+    color: #00bfac;
+}
+
+a {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: #bdbdbd;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 200px;
+}
+
+button {
+    font-size: 100px;
+    height: 150px;
+    width: 150px;
+    margin: 30px;
+    background-color: #102a43;
+}
