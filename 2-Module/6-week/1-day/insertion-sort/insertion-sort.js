@@ -1,4 +1,13 @@
+/*
+Insertion Sort gradually builds up a larger and larger sorted region at the 
+left-most end of the array. Insertion sort focuses on sorting each element in 
+the order they appear from left to right, regardless of their value, and 
+inserting them into the most appropriate position in the already sorted region.
+*/
+
+
 // Insertion Sort out-of-place
+
 // Do not modify the original array
 function insertionSort(arr) {
   /*
@@ -19,6 +28,27 @@ function insertionSort(arr) {
   */
 
   // Your code here
+  let copyArr = [...arr]
+
+  const sorted = []
+  while(copyArr.length){
+    console.log(sorted.join(','))
+
+    let curr = copyArr.pop()
+    sorted.push(null)
+
+    let i = sorted.length - 1
+    while(i){
+      if(sorted[i - 1] < curr){
+        break
+      } else{
+        sorted[i] = sorted[i - 1]
+        i--
+      }
+    }
+    sorted[i] = curr
+  }
+  return sorted
 }
 
 // In-place Insertion Sort
@@ -39,8 +69,25 @@ function insertionSortInPlace(arr) {
   - Increment the dividing pointer and repeat
   Return the mutated array
   */
-
   // Your code here
+  let divider = 1
+  while(divider < arr.length){
+    console.log(arr.join(','))
+    let curr = arr[divider]
+
+    let i = divider
+    while(i > 0){
+      if(arr[i -1] < curr){
+        break
+      } else {
+        arr[i] = arr[i - 1]
+        i--
+      }
+    }
+    arr[i] = curr
+    divider++
+  }
+  return arr
 }
 
 module.exports = [insertionSort, insertionSortInPlace];
