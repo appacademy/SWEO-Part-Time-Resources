@@ -1,16 +1,16 @@
 let higherOrderFunction = function (callback) {
   callback();
 };
-
+// let returnSTrings = function(string, cb)
 let intoAFunction = function () {
   console.log("I'm being passed into a function");
 };
 
-let intoAFunctionPt2 = function () {
-  console.log("I'm ALSO being passed into a function");
-};
+// let intoAFunctionPt2 = function () {
+//   console.log("I'm ALSO being passed into a function");
+// };
 
-console.log(intoAFunction)
+console.log(intoAFunction())
 
-higherOrderFunction(intoAFunction);
-higherOrderFunction(intoAFunctionPt2);
+// higherOrderFunction(intoAFunction);
+// higherOrderFunction(intoAFunctionPt2);

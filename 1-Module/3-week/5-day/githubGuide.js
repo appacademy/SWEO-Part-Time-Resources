@@ -1,5 +1,5 @@
 // In your terminal, CD into the folder where you want to save your project.
-// cd appacademy-2022-Sep-EW/1-Module/3-week/5-day/projects
+// i.e.: cd appacademy-2022-Sep-EW/1-Module/3-week/5-day/projects
 
 // Click the download project button in appacademy Open for the project you want to work on.  This will open a new tab with the appacademy github repo
 
