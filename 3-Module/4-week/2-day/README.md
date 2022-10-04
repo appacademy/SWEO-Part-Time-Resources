@@ -1,10 +1,10 @@
-# Promises
+# `M3W4D2`
 
 ## Promises allow us to
 
 - write async code in a sync manner
 - write code that relies on the completion of async code
-  - avoids 🔥🔥🔥callback hell🔥🔥🔥
+  - avoids callback hell
 
 ```js
 const callbackHell = () => {
@@ -25,26 +25,26 @@ callbackHell();
 ## A promise comes in one of three states
 
 - resolved : a promise that has completed successfully
-- rejected : a promise that is fails to complete
+- rejected : a promise that has failed to complete
 - pending : a promise that is not yet resolved nor rejected
 
 ---
 
 ### Key functional notes
 
-- A promise can only succeed or fail once: callbacks will not be invoked multiple times.
+- A promise can only succeed or fail once: callbacks will not be invoked multiple times
 
 - A promise cannot change its state from fulfilled to rejected or vice-versa
 
-- A promise is a JavaScript Class and has methods, ie .then()
+- A promise is a JavaScript class and has methods, ie .then()
 
 ---
 
 ## Creating your own promises
 
-If your async function does not automatically return a promise, like setTimeout/setInterval, you can use the promise constructor.
+If your async function does not automatically return a promise, like setTimeout/setInterval, you can use the promise constructor
 
-Some asyc code, like fetch(), returns a promise by default. You would NOT use the promise constructor in that case!
+Some async code, like fetch(), returns a promise by default. You would NOT use the promise constructor in that case
 
 ```js
 const wait = (seconds) => {
@@ -104,4 +104,19 @@ add5AfterPause(0)
   .then((anotherNum) => add5AfterPause(anotherNum))
   // anotherNum = undefined, returns NaN (undefined + 5 = NaN)
   .then((thisWontWork) => console.log(thisWontWork)); // NaN
+```
+
+---
+
+We can fix this by simply opening up some curly bois
+
+```js
+add5AfterPause(0)
+  .then((nextNum) => add5AfterPause(nextNum))
+  .then((sum) => {
+    console.log(sum); // 10
+    return sum;
+  })
+  .then((anotherNum) => add5AfterPause(anotherNum))
+  .then((thisWontWork) => console.log(thisWontWork)); // 15
 ```
