@@ -108,7 +108,7 @@ add5AfterPause(0)
 
 ---
 
-We can fix this by simply opening up some curly bois
+We can fix this by simply opening up some curly brackets
 
 ```js
 add5AfterPause(0)
