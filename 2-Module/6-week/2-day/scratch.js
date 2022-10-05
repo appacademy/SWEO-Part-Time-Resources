@@ -140,40 +140,40 @@
 // console.log(breadthFirstSearch('F', 'A'))
 
 
-// const adjList = {
-//     1: [2, 5],
-//     2: [1, 3, 5],
-//     3: [2, 4],
-//     4: [3, 5],
-//     5: [1, 2, 4],
-//     6: []
-// }
+const adjList = {
+    1: [2, 5],
+    2: [1, 3, 5],
+    3: [2, 4],
+    4: [3, 5],
+    5: [1, 2, 4],
+    6: []
+}
 
-// function breadthFirstSearch(start, end) {
-//   let queue = [[start]];
-//   let visited = new Set();
-//   visited.add(start);
+function breadthFirstSearch(start, end) {
+  let queue = [[start]];
+  let visited = new Set();
+  visited.add(start);
 
-//   while (queue.length > 0) {
-//     let path = queue.shift()
-//     let curr = path[path.length - 1] 
-//     if (curr === end) return path
-//     for(let neighbor of adjList[curr]){
-//       if (!visited.has(neighbor)) {
-//         queue.push([...path, neighbor]);
-//         visited.add(neighbor);
-//       }
-//     }
-//   }
-//   return false;
-// }
+  while (queue.length > 0) {
+    let path = queue.shift()
+    let curr = path[path.length - 1] 
+    if (curr === end) return path
+    for(let neighbor of adjList[curr]){
+      if (!visited.has(neighbor)) {
+        queue.push([...path, neighbor]);
+        visited.add(neighbor);
+      }
+    }
+  }
+  return false;
+}
 
-// console.log("First Test:");
-// console.log(breadthFirstSearch(1, 3)); // -> [ 1, 2, 3 ] (One possible solution)
-// console.log("Second Test:");
-// console.log(breadthFirstSearch(4, 1)); // -> [ 4, 5, 1 ] (One possible solution)
-// console.log("Third Test:");
-// console.log(breadthFirstSearch(6, 1)); // false
+console.log("First Test:");
+console.log(breadthFirstSearch(1, 3)); // -> [ 1, 2, 3 ] (One possible solution)
+console.log("Second Test:");
+console.log(breadthFirstSearch(4, 1)); // -> [ 4, 5, 1 ] (One possible solution)
+console.log("Third Test:");
+console.log(breadthFirstSearch(6, 1)); // false
 
 
 // const adjList = {
