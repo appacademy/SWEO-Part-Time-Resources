@@ -9,17 +9,26 @@ all of the given callbacks. In other words, if three callbacks are given then:
 - the result of the third callback is the final result
 
 Examples:
+*******************************************************************************/
+function chainMap(val, ...callbacks) {
+  // console.log("CALLBACKS", callbacks)
+  callbacks.forEach(function(cb) {
+    // console.log("ELEMENTS", cb)
+    val = cb(val)
+  })
+  return val
+}
 
 let add5 = function(n) {
-    return n + 5;
+  return n + 5;
 };
 
 let half = function(n) {
-    return n / 2;
+  return n / 2;
 };
 
 let square = function(n) {
-    return n * n;
+  return n * n;
 };
 
 console.log(chainMap(25, add5));                // 30
@@ -27,11 +36,6 @@ console.log(chainMap(25, add5, half));          // 15
 console.log(chainMap(25, add5, half, square));  // 225
 console.log(chainMap(4, square, half));         // 8
 console.log(chainMap(4, half, square));         // 4
-*******************************************************************************/
-
-function chainMap(val, ...callbacks) {
-  // Your code here
-}
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
