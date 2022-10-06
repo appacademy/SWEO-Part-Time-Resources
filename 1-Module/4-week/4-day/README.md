@@ -14,7 +14,7 @@
     return 'My name is '+ name;
   };
   multilineName('Mylo');
-  
+
   // Single Line
   const returnName = name => 'My name is ' + name;
   console.log(returnName('JM'));
@@ -29,6 +29,9 @@
 
 - An inner function that uses or changes variables that were initialized\
 in an outer function.
+
+- A function that is bundled together with references with any of its surrounding state (lexical scope)
+- lexical environment consists of any variables available within the scope in which the closure was declared (which are the local inner scope, outer function's scope, and global scope).
 
 `Overview`
 
