@@ -1,46 +1,32 @@
 //Truthy vs true
-// let cat = "null"
+// let cat = "cat"
+// // console.log(cat == true)
 // if(cat){
 //   console.log(cat)
 // }
 
-// let func = function(firstArg) {
-//   return (function(secondArg) {
-//       console.log(firstArg(secondArg));
-//   });
-// };
 
-// let triple = function(num) {
-//   return num * 3;
-// }
-// let newFunc = func(triple)
-// newFunc(9)
-
-
-// let newFunc2 = func(triple, 9)
-// console.log(newFunc2)
-// newFunc2(9)
 
 
 // scope
 // global scope
-let animal = 'cow';
+// let animal = 'cow';
 
 // // local scope (function scope)
+// let animal
+// const theAnimal = function(){ // local or function scope
+//     animal = 'dog';
+//   // block scope
+//   if (true){
+//     let animal = 'pig';
+//     console.log('block ', animal)
+//       }
+//   // animal = "cat"
+//   console.log('function ', animal)
+// }
+// console.log("global ", animal)
 
-const theAnimal = function(){ // local or function scope
-  let animal = 'dog';
-  // block scope
-  if (true){
-    let animal = 'pig';
-    console.log('in the block scope', animal)
-
-  }
-  console.log('in the function scope', animal)
-}
-console.log("global scope", animal)
-
-theAnimal();
+// theAnimal();
 
 //------------------------------------------------------------------
 // console.log('in the global scope', animal);
@@ -53,7 +39,7 @@ theAnimal();
 //     // let blockScope = 'Block Scoped';
 //     console.log("BLOCK SCOPE:", blockScope)
 //   }
-//   console.log("GLOBAL:", blockScope)
+//   console.log("Function:", blockScope)
 // };
 
 // myFunction('I am function scoped');
@@ -69,12 +55,13 @@ theAnimal();
 //     let turkey = 'gobble';
 //     for (let i = 0; i < 2; i++) {
 //       let turkey = "don't gobble";
+//       console.log(car, dogSound, cow, turkey, i);
 //     }
+//     console.log(turkey)
 //   }
-//   console.log(car, dogSound, cow, turkey);
+//   console.log(turkey)
 // }
-// // console.log("TURKEY", turkey)
-// // console.log(dogSound)
+
 
 // makeSounds('woof');
 
@@ -108,11 +95,12 @@ theAnimal();
 //   let test = "hello";
 //   if(true){
 //     let test = "hi";
+//     console.log(test);
 //   }
-// 	console.log(test);
+
 // }
 
-// // dontUseVar();
+// dontUseVar();
 // useLet()
 
 //-----------------------------------------------------------
