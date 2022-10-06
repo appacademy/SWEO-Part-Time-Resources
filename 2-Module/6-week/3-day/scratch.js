@@ -5,6 +5,30 @@ const matrix = [
     // 0 1 2 3 4
   ];
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   function getNeighbors(row, col, graph) {
     const neighbors = [];
   
