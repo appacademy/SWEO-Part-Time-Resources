@@ -24,23 +24,23 @@
 
 // scope
 // global scope
-// let animal = 'cow';
+let animal = 'cow';
 
-// // // local scope (function scope)
+// // local scope (function scope)
 
-// const theAnimal = function(){ // local or function scope
-//   let animal = 'dog';
-//   // block scope
-//   if (true){
-//     let animal = 'pig';
-//     console.log('in the block scope', animal)
+const theAnimal = function(){ // local or function scope
+  let animal = 'dog';
+  // block scope
+  if (true){
+    let animal = 'pig';
+    console.log('in the block scope', animal)
 
-//   }
-//   console.log('in the function scope', animal)
-// }
-// console.log("global scope", animal)
+  }
+  console.log('in the function scope', animal)
+}
+console.log("global scope", animal)
 
-// theAnimal();
+theAnimal();
 
 //------------------------------------------------------------------
 // console.log('in the global scope', animal);
@@ -148,11 +148,11 @@
 
 //---------------------------------------
 // let cat = "cat"
-const cat = "cat"
-if(cat){
-  const cat = "dog"
-  // cat = "apple"
-  console.log("BLOCK:", cat)
-}
+// const cat = "cat"
+// if(cat){
+//   const cat = "dog"
+//   // cat = "apple"
+//   console.log("BLOCK:", cat)
+// }
 
-console.log(cat)
+// console.log(cat)
