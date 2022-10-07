@@ -1,6 +1,6 @@
 # Week 16 Assessment
 ## Topics 
-- Promises!!
+- Promises
 - Promise Chaining & Async-await
 - Fetch API
 - API Web Server Restful Conventions
