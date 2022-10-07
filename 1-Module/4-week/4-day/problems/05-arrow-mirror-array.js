@@ -11,22 +11,28 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 ***********************************************************************/
 
 //!!START
-let arrowMirrorArray = (array) => {
-  let newArray = [];
+// let arrowMirrorArray = (array) => {
+//   let newArr = []
 
-  for (let i = 0; i < array.length; i += 1) {
-    let el = array[i];
-    newArray.push(el);
-  }
+//   array.forEach(el =>{
+//     newArr.push(el)
+//   })
 
-  for (let i = array.length - 1; i >= 0; i -= 1) {
-    let el = array[i];
-    newArray.push(el);
-  }
+//   for (let i = array.length -1; i >= 0; i--){
+//     let el = array[i]
+//     newArr.push(el)
+//   }
 
-  return newArray;
-};
+// return newArr
+//   // return [...newArr, ...array.reverse()]
+// };
+
+const arrowMirrorArray = array => array = [...array, ...array.reverse()];
+
 //!!END
+
+console.log(arrowMirrorArray([1,2,3])); // => [ 1, 2, 3, 3, 2, 1 ]
+console.log(arrowMirrorArray(['a', 'b', 'c', 'd'])); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b', 'a' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
