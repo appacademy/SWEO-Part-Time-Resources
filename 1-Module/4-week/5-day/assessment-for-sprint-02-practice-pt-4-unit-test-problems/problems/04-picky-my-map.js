@@ -23,7 +23,6 @@ function pickyMyMap(arr, cb) {
 let newArr = []
 for (let i = 0; i < arr.length; i++){
 	let el = arr[i]
-	// console.log(el)
 	//call cb on our el
 	if(cb(el)){
 		newArr.push(cb(el))

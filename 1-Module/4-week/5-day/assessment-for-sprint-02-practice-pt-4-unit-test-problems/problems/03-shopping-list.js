@@ -21,7 +21,6 @@ console.log(clothesList); // ['tshirt', 'pants']
 
 function shoppingList(list) {
   // Your code here
-// console.log(list)
 
   return function (item)  {
 

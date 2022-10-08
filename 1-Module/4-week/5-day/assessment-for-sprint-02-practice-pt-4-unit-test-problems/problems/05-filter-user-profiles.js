@@ -25,7 +25,6 @@ function filterUserProfiles(users, filter) {
 //   let newArr = []
 
 //   users.forEach(user =>{
-//     // console.log(user)
 //     if(filter(user)){
 //       // console.log("NAME", user.name)
 //       newArr.push(user.name)

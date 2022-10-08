@@ -13,7 +13,7 @@ sentenceMaker('The', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'd
 
 // Your code here
 
-const sentenceMaker = (...strings) => {
+// const sentenceMaker = (...strings) => {
 // // console.log(strings)
 
 // let newSent = ''
