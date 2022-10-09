@@ -1,11 +1,11 @@
 function findPeak(matrix) {
   let highest = 0;
   for (let i = 0; i < matrix.length; i++) {
-    for (let k = 0; k < matrix[0].length; k++) {
-      if (matrix[i][k] > highest) {
-        highest = matrix[i][k];
+      for (let k = 0; k < matrix[0].length; k++) {
+          if (matrix[i][k] > highest) {
+              highest = matrix[i][k];
+          }
       }
-    }
   }
 
   return highest;
@@ -16,30 +16,30 @@ function findStarts(matrix) {
 
   // Top Row
   for (let i = 0; i < matrix[0].length; i++) {
-    if (matrix[0][i] == 0) {
-      starts.push([0, i]);
-    }
+      if (matrix[0][i] == 0) {
+          starts.push([0, i])
+      }
   }
 
   // Bottom Row
-  for (let i = 0; i < matrix[matrix.length - 1].length; i++) {
-    if (matrix[matrix.length - 1][i] == 0) {
-      starts.push([matrix.length - 1, i]);
-    }
+  for (let i = 0; i < matrix[matrix.length-1].length; i++) {
+      if (matrix[matrix.length-1][i] == 0) {
+          starts.push([matrix.length-1, i])
+      }
   }
 
   // Left except first and last
-  for (let i = 1; i < matrix.length - 1; i++) {
-    if (matrix[i][0] == 0) {
-      starts.push([i, 0]);
-    }
+  for (let i = 1; i < matrix.length-1; i++) {
+      if (matrix[i][0] == 0) {
+          starts.push([i, 0])
+      }
   }
 
   // Right except first and last
   for (let i = 1; i < matrix.length - 1; i++) {
-    if (matrix[i][matrix[0].length - 1] == 0) {
-      starts.push([i, matrix[0].length - 1]);
-    }
+      if (matrix[i][matrix[0].length - 1] == 0) {
+          starts.push([i, matrix[0].length-1])
+      }
   }
 
   return starts;
@@ -94,14 +94,56 @@ function findNeighbors(node, matrix) {
 }
 
 function pathTraversal(node, matrix, visited, peak) {
-  // Your code here
+
+  let row = node[0]
+  let col = node[1]
+
+  // Traverse the potential path looking for the peak
+  let stack = [node];
+  visited.add(`${row},${col}`)
+
+  while (stack.length > 0) {
+      let current = stack.pop();
+
+       // DO THE THING!
+      let currentHeight = matrix[current[0]][current[1]]
+
+      if (currentHeight == peak) {
+          return true;
+      }
+
+      let neighbors = findNeighbors(current, matrix);
+
+      for (let neighbor of neighbors) {
+          neighborString = `${neighbor[0]},${neighbor[1]}`
+          if (!visited.has(neighborString)) {
+              visited.add(neighborString)
+              stack.push(neighbor)
+          }
+      }
+  }
+
+  return false;
 }
 
 function identifyPath(mountain) {
   // Find the peak
   // Find the start
+
   // Traverse from the starts and try to get to the top
-  // Your code here
+  let visited = new Set();
+
+  let peak = findPeak(mountain);
+  let starts = findStarts(mountain);
+
+  for (let start of starts) {
+      if (pathTraversal(start, mountain, visited, peak)) {
+          return start;
+      }
+  }
+
+  return false;
+
 }
 
 // Uncomment for local testing
@@ -146,6 +188,8 @@ function identifyPath(mountain) {
 // ];
 
 // console.log(identifyPath(mountain_3)) // <- Expect '[ 0, 0 ]'
+
+
 
 /*************DO NOT MODIFY UNDER THIS LINE ***************/
 
