@@ -93,8 +93,37 @@ function findNeighbors(node, matrix) {
     return neighbors
   }
 
-function pathTraversal(node, matrix, visited, peak) {
-    // Your code here
+  function pathTraversal(node, matrix, visited, peak) {
+
+    let row = node[0]
+    let col = node[1]
+
+    // Traverse the potential path looking for the peak
+    let stack = [node];
+    visited.add(`${row},${col}`)
+
+    while (stack.length > 0) {
+        let current = stack.pop();
+
+         // DO THE THING!
+        let currentHeight = matrix[current[0]][current[1]]
+
+        if (currentHeight == peak) {
+            return true;
+        }
+
+        let neighbors = findNeighbors(current, matrix);
+
+        for (let neighbor of neighbors) {
+            neighborString = `${neighbor[0]},${neighbor[1]}`
+            if (!visited.has(neighborString)) {
+                visited.add(neighborString)
+                stack.push(neighbor)
+            }
+        }
+    }
+
+    return false;
 }
 
 function identifyPath(mountain) {
@@ -102,7 +131,19 @@ function identifyPath(mountain) {
     // Find the start
 
     // Traverse from the starts and try to get to the top
-    // Your code here
+    let visited = new Set();
+
+    let peak = findPeak(mountain);
+    let starts = findStarts(mountain);
+
+    for (let start of starts) {
+        if (pathTraversal(start, mountain, visited, peak)) {
+            return start;
+        }
+    }
+
+    return false;
+
 }
 
 // Uncomment for local testing
