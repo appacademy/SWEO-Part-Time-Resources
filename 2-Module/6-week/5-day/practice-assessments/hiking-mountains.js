@@ -47,9 +47,51 @@ function findStarts(matrix) {
 
 function findNeighbors(node, matrix) {
     // Don't forget to include diagonal neighbors!!!
-
+  
     // Your code here
-}
+    const row = node[0];
+    const col = node[1];
+    const neighbors = [];
+  
+    // top
+    if (row > 0 && Math.abs(matrix[row - 1][col] - matrix[row][col]) <= 1) {
+      neighbors.push([row - 1, col]);
+    }
+  
+    // top left
+    if (row > 0 && Math.abs(matrix[row - 1][col - 1] - matrix[row][col]) <= 1) {
+      neighbors.push([row - 1, col - 1]);
+    }
+    // top right
+    if (row > 0 && Math.abs(matrix[row - 1][col + 1] - matrix[row][col]) <= 1) {
+      neighbors.push([row - 1, col + 1]);
+    }
+  
+    // bottom
+    if (row < matrix.length - 1 && Math.abs(matrix[row + 1][col] - matrix[row][col]) <= 1) {
+      neighbors.push([row + 1, col]);
+    }
+  
+    // bottom left
+    if (row < matrix.length - 1 && Math.abs(matrix[row + 1][col - 1] - matrix[row][col]) <= 1) {
+      neighbors.push([row + 1, col - 1]);
+    }
+  
+      // bottom right
+      if (row < matrix.length - 1 && Math.abs(matrix[row + 1][col + 1] - matrix[row][col]) <= 1) {
+          neighbors.push([row + 1, col + 1]);
+        }
+      // left
+      if (col > 0 && Math.abs(matrix[row][col - 1] - matrix[row][col]) <= 1) {
+          neighbors.push([row, col - 1]);
+        }
+      // right
+      if (col < matrix[row].length - 1 && Math.abs(matrix[row][col + 1] - matrix[row][col]) <= 1) {
+          neighbors.push([row, col +  1]);
+      }
+    console.log(neighbors);
+    return neighbors
+  }
 
 function pathTraversal(node, matrix, visited, peak) {
     // Your code here
