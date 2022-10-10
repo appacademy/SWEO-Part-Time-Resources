@@ -84,3 +84,12 @@ You may not use the following resources during the assessment:
 - Start implementing backend endpoints for first CRUD feature
 	- Models, Migrations, Seeders
 	- Read, Create, Update, Delete 
+
+## Grading Criteria
+
+- all parts of user auth/signup with no errors
+  - (project score cards with requirements will be sent out tomorrow)
+- Completed all requirements for 2 full features with no errors
+  - i.e. full CRUD for `Songs` and full CRUD for `Albums`
+  - (project score cards with requirements will be sent out tomorrow)
+- Worked on and attempted the listed API Routes listed in the documentation
