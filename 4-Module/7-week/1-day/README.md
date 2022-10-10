@@ -11,6 +11,8 @@
 ## Assessment Breakdown
 - Passing score: 9/12
 - Time for test: 1hr
+  - if we finish early, take a look at this video in week 25 if we haven't yet:
+    - [First Steps After Completing Auth Me](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-25---project-week-1/first-steps-after-completing-auth-me-backend)
 
 ### Allowed Resources
 For this assessment, you may use the following resources:
@@ -29,8 +31,6 @@ For this assessment, you may use the following resources:
     your code is doing, that is appropriate. If your comments are about concepts
     and based on the readings, then that counts as notes. Those would not be
     appropriate.
-* Official documentation including:
-  * [Express Documentation]
 
 ### Resources NOT allowed
 You may not use the following resources during the assessment:
@@ -43,6 +43,19 @@ You may not use the following resources during the assessment:
 
 
 ## Welcome to the official start of Project Week!
+- This is basically a 2 week assessment!!!
+- What instructors can do:
+  - help you understand what is being asked i.e. the routes, etc.
+  - help you understand the problem that you're having
+  - Direct you to relevant resources that can help you solve the problem
+    - provide/lead/direct you with resources that could help you with your problem.
+  - We're allowed to debug and fix heroku issues
+  - We're allowed to debug and help you with github issues
+- What instructors cannot do:
+  - we aren't allowed to help with students in terms of providing them:
+    - code
+      - i.e. show you how to do migrations, seeders, etc.
+    - answers
 
 ## Github Work Flow
 - [Git command Cheatsheet](https://github.com/joshnh/Git-Commands)
