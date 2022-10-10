@@ -1,10 +1,6 @@
-// let firstName = "Doctor";
-// let lastName = "Who";
+let firstName = "Will";
+let lastName = "Duffy";
 
-// let greeting = `Hello, ${firstName} ${lastName}!`;
+let greeting = `Hello, ${firstName} ${lastName}!`;
 
-// let greeting = "Hello, " + firstName + " " + lastName + "!"
-// console.log(greeting);
-
-// let sentence = `5 + 5 = ${5 + 5}`;
-// console.log(sentence);
+console.log(greeting);
