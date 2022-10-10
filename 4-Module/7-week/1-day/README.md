@@ -10,7 +10,7 @@
 
 ## Assessment Breakdown
 - Passing score: 9/12
-- Time for test: 50m
+- Time for test: 1hr
 
 ### Allowed Resources
 For this assessment, you may use the following resources:
