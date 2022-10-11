@@ -29,7 +29,7 @@ router.get('/trees-insects', async (req, res, next) => {
             model: Insect,
             attributes:  [ 'id', 'name' ],
             through: {
-                attributes: []
+                attributes: ['insectId','treeId']
             },
             required: true,
         },
