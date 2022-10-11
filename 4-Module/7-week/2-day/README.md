@@ -33,7 +33,6 @@
 - `I will be asking for you to show your kanban board in stand ups`
 
 ## Project Roadmap for Today (Week 25 Day 2)
-- Go through `standup` and prepare for these questions with your Project Advisor
 - Goals and Tasks by Tomorrow
     - Find your strategy and get started
 	- `In Good Shape:` Implemented half of the first CRUD feature
