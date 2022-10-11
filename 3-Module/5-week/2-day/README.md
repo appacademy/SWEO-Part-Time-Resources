@@ -32,8 +32,7 @@ Common methods include:
 ### Document Object Model (DOM)
 
 - Your html page, the document that you are rendering and manipulating
-- A collection of nodes (HTML elements) which we can
-access and manipulate
+- A collection of nodes (HTML elements)
 - Easy to `console.log` with `window.document` or just `document` as
 an alias
 
