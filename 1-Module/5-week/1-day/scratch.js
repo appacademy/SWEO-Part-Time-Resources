@@ -1,36 +1,51 @@
 // let firstName = "Will";
 // let lastName = "Duffy";
+// // console.log("Hello," + " " + firstName + " " + lastName + "!")
 
-// let greeting = `Hello, ${firstName} ${lastName}!`;
+// // console.log('That\'s')
+// let obj = {
+//     name: "IN THE OBJ"
+// }
+// // console.log(`that's ${firstName} \$\{\}`)
+// let greeting = `Hello, ${obj.name} ${lastName}!`;
 
 // console.log(greeting);
 
 
-// const nameFunc = str => {
-// 	return str
-// }
+// // const nameFunc = str => {
+// // 	return str
+// // }
 
-// let greeting = `Hello, ${nameFunc(firstName)} ${lastName}!`;
+// // let greeting = `Hello, ${nameFunc(firstName)} ${lastName}!`;
 // console.log(greeting);
 
 //--------------------------------------------------------------------------------------
 const arr = [1, 2, 3, 4, 5];
+const myFunc = (arr) =>{
 
-// let sum = 0;
-// for (let i = 0; i < arr.length; i++) {
-// 	let eachNum = arr[i]
-// 	sum += eachNum
-// }
-
-// console.log(sum)
-
-
-const recurseSum = (arr) => {
     debugger
-    if (arr.length === 1) {
-          return arr.pop();
-      }
-    return arr.pop() + recurseSum(arr);
-  };
+    let sum = 0;
+    debugger
+    for (let i = 0; i < arr.length; i++) {
+        debugger
+        let eachNum = arr[i]
+        debugger
+        sum += eachNum
+    }
+    return sum
+}
 
-  console.log(recurseSum(arr));
+console.log(myFunc(arr))
+
+
+// const recurseSum = (arr) => {
+//     debugger;
+//     if (arr.length === 1) {
+//         debugger;
+//           return arr.pop();
+//       }
+//       debugger;
+//     return arr.pop() + recurseSum(arr);
+//   };
+
+//   console.log(recurseSum(arr));
