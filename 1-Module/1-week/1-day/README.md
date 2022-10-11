@@ -40,7 +40,7 @@ talking over me or other students.
 
 ## Lecture Notes
 
-- All of the lecture notes can be found in the [SWEO-Part-Time-Resources](https://github.com/appacademy/SWEO-Part-Time-Resources/tree/2022-Oct-E) repo
+- All of the lecture notes can be found in the [SWEO-Part-Time-Resources](https://github.com/appacademy/SWEO-Part-Time-Resources/tree/2022-Oct-W) repo
 
 How to use:
 
