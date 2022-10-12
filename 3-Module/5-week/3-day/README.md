@@ -34,7 +34,7 @@ newDiv.appendChild(newText)
 // here is a much simpler approach in creating new text without using
 // createTextNode
 
-newDiv.innerText = "Hi! I love javascript" // this line here does lines 44-45
+newDiv.innerText = "Hi! I love javascript"
 newDiv.innerHTML = "Hi! I love javascript"
 newDiv.innerHTML = "<span>New child</span>"
 ```
