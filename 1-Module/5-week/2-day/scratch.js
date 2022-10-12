@@ -32,7 +32,7 @@ console.log(foo());
 // A function that calls itself, until it doesn't
 // What are the 'parts' of a recursive function?
 // Base Case (When should we stop)
-// Recursive Case (When should we recurse)
+// Recursive Case (When should we recurse/call the function(itself))
 // Recursive Step (How do I move toward the BC or move out of the RC)
 
 //-------------------------------------------------------------------
@@ -43,23 +43,24 @@ console.log(foo());
 //         console.log(i);
 //     }
 
-//     console.log("Time's up!");
+//     return "Time's up!";
 // }
 
+
 // let countdown = (startingNumber) => {
-// 	//base case starting num === 0
+// 	//BASE CASE
 //     if (startingNumber === 0) {
-//         console.log("Time's up!");
-//         return;
+//         return "Time's up";
 //     }
 
 //     console.log(startingNumber);
 
-// 	//recursive case calling itself
-
-// 	//Recursive Step = starting num - 1
-//     countdown(startingNumber - 1);
+// 	//RECURSIVE CASE
+// 	//RECURSIVE STEP
+//    return countdown(startingNumber - 1);
 // }
+
+
 
 // console.log(countdown(5))
 
@@ -67,16 +68,18 @@ console.log(foo());
 // const recurseSum = (arr) => {
 //     console.log("ARR", arr)
 
-// 	//base case arr.length === 1
+// 	//BASE CASE
 //     if (arr.length === 1) {
 //           return arr.pop();
 //       }
-// 	  //recursive step
+// 	  //RECURSIVE STEP
 //       let popped = arr.pop()
-//     //   console.log("POPPED", popped)
-// 	//recursive case
+
+// 	  //recursive case
 //     return popped + recurseSum(arr);
 //   };
+
+
 
 //   console.log(recurseSum(arr));
 
