@@ -25,6 +25,8 @@ them. Just be respectful!
 If you are unable to join breakout rooms without being moved directly by a host,
 make sure that you have updated zoom to its latest version.
 
+---
+
 ### Live Questions Channel
 
 Make sure to use the live questions channel when asking questions during
