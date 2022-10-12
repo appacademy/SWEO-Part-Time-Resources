@@ -1,6 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { useState } from 'react'
-import { addTrack, deleteTrack } from "../../store/songs";
+import { useState } from 'react';
+import { addUser } from "../../store/user";
+import { addMember, deleteMember } from "../../store/groups";
 
 import urlString from "../utils/ulrString";
 
@@ -10,25 +11,32 @@ import './waveindex.css'
 
 
 export const WaveIndexFunction = () => {
+	const dispatch = useDispatch()
 
 	const [i, setI] = useState(1)
 
-	const dispatch = useDispatch()
+	const members = useSelector((state)=> state.groups.members)
 
-	const tracks = useSelector(state => {
-		return state.songs.tracks
-	})
+	const buttonAddUser = () => {
+		const obj = {
+			'firstName' : 'Alex',
+			'lastName' : 'betta',
+			'username' : 'alexbetita'
+		}
+		dispatch(addUser(obj))
+	}
 
-	const sendDispatch = () => {
-		dispatch(addTrack({
+	const buttonAddMember = () => {
+		dispatch(addMember({
 			id: i,
-			title: 'dancing in the dark'
+			'name' : 'alex'
 		}))
+
 		setI(i+1)
 	}
 
-	const deleteTrackFunction = (id) => {
-		dispatch(deleteTrack(id))
+	const deleteMemberInput = (id) => {
+		dispatch(deleteMember(id))
 	}
 
 	return (
@@ -44,20 +52,25 @@ export const WaveIndexFunction = () => {
 			<a href={urlString}>
 				Login to Wave
 			</a>
-			<button onClick={sendDispatch}>
-				Send Dispatch
+
+			<button onClick={buttonAddUser}>
+				Add User
 			</button>
 
-			<input onChange={(e)=>{
-				deleteTrackFunction(e.target.value)
-			}}>
+			<button onClick={buttonAddMember}>
+				Add Member
+			</button>
+
+			<input onChange={(e) => deleteMemberInput(e.target.value)}>
 
 			</input>
+
 			{
-				Object.entries(tracks).map(([key,value], i)=> {
+				Object.entries(members).map(([key, value], i) => {
 					return (
 					<div key={i}>
-						{value.title}
+						{value.id}
+						{value.name}
 					</div>)
 				})
 			}

@@ -3,8 +3,6 @@ import { useState } from 'react'
 import './waveform.css'
 import combineParams from '../utils/combineParams';
 
-
-
 const WaveFormFunction =({access_token, updateSongs, togglePlayer, setPlayerOffset}) => {
 
 	const [params, setParams] = useState({

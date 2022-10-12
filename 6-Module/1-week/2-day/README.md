@@ -21,6 +21,31 @@ True and False
 True or False
 True and not False
 ```
+```js
+//falsy values for js
+false
+0
+-0
+0n
+"",'',``
+null
+undefined
+NaN
+```
+
+```py
+#falsy values for py
+None
+False
+0
+0.0
+'', ""
+list_ = []
+tuple_ = ()
+dict_ = {}
+set()
+range(0)
+```
 
 Truthy and Falsy values (Boolean type coercion) differ in JS and Python. One common gotcha is empty
 collections (reference types) are truthy in JS and falsy in Python.

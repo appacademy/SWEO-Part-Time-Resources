@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+
 import { findToken } from "../utils/tokenFinder";
 import { useHistory } from "react-router-dom";
 import WaveFormFunction  from "../WaveForm";
@@ -11,12 +12,12 @@ const WaveHome = () => {
 
 	const history = useHistory();
 
-	const [accessToken, setAccessToken ] = useState(localStorage.getItem("access_token"));
-	const [songs, setSongs ] = useState([])
-	const [currentTrack, setCurrentTrack ] = useState('');
+	const [accessToken, setAccessToken] = useState(localStorage.getItem("access_token"))
+	const [ songs, setSongs ] = useState([])
+	const [ currentTrack, setCurrentTrack ] = useState('');
 	const [ playerOffset, setPlayerOffset ] = useState(0);
-	const [playlistClassName, setPlaylistClassName] = useState('playlist')
-	const [searchClassName, setSearchClassName] = useState('search active')
+	const [ playlistClassName, setPlaylistClassName] = useState('playlist')
+	const [ searchClassName, setSearchClassName] = useState('search active')
 
 	useEffect(() => {
 		const hash = window.location.hash
@@ -26,6 +27,7 @@ const WaveHome = () => {
 			window.location.hash = ''
 			localStorage.setItem("access_token", current_token)
 			setAccessToken(current_token)
+			// dispatch(addAccessToken(current_token))
 		}
 		if(!current_token){
 			history.push('/')

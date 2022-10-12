@@ -1,17 +1,16 @@
 import { applyMiddleware, compose, combineReducers, createStore } from 'redux';
-import songReducer from './songs';
-import testReducer from './test';
+import userReducer from './user';
+import groupsReducer from './groups';
 
 const logger = require("redux-logger").default;
 
-const composeEnhancers =
-   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const enhancer = composeEnhancers(applyMiddleware(logger));
 
 const rootReducer = combineReducers(({
-	songs: songReducer,
-	test: testReducer
+	user: userReducer,
+	groups: groupsReducer
 }));
 
 export const configureStore = (prevState) => {
