@@ -1,0 +1,94 @@
+.nav-bar  {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+}
+
+.left-nav {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.home {
+    margin-left: 50px;
+    background-color: white;
+    height: 40px;
+    width: 80px;
+    font-size: large;
+}
+
+.right-nav {
+    width: 50vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.sign-in{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    height: 40px;
+    font-size: large;
+}
+
+.get-started {
+    background-color: white;
+    height: 40px;
+    width: 120px;
+    font-size: large;
+}
+
+.lower-nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+#lower-nav{
+    background-color: thistle;
+}
+
+.list-flow {
+    width: 100vw;
+    margin-right: 60px;
+    margin-left: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list{
+    list-style: none;
+    font-size: large;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    height: 100px;
+    width: 80%;
+    border: 1px solid black;
+    font-size: 40px;
+}
+
+.html-awesome {
+    height: 400px;
+    width: 400px;
+}
+
+.paragraphs {
+    height: 100px;
+    width: 80%;
+    border: 1px solid black;
+    font-size: 25px;
+}
