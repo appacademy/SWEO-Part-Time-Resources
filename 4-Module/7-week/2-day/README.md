@@ -1,95 +1,59 @@
-# Week 23 Assessment
+# Week 24 Day 2
 
-## First Task
-- Send me an invitation link to your projects (the other ones expired)
-  - 1) go to your project
-  - 2) go to `settings`
-  - 3) go to `Collaborators` section on the left
-  - 4) add people and enter my email `trinhpt@uci.edu`
+## Tasks and Tips
+- Whenever we do the migrations, models, and seed data --> `ABC = Always Be referencing the DB Diagram`
+- Re-emphasize to Reference the 4 Videos in week 25:
+  - `How to use Postman Test Specs`
+  - `First Steps After Completing Auth Me Backend` 
+  - `How to use API Docs to Code API Endpoint`
+    - good if we want to revisit migration, model, seed, and then building out a full route
+  - `Review on How to Manipulate POJOs` 
+    - If you have questions about how to format, move data around, and manipulate your data from the database 
+- make daily commits, quota of 5-10
 
+## Continue Watching Videos as I do one on ones
+- Pause on coding for now, watch the videos if we haven't yet or work on fixing our kanban board
+- I will be going around to check your repo and make sure it's all working fine and everything is in one place. This is important for organization and the next steps we are going to do
 
-## Assessment Breakdown
-- Passing score: 9/12
-- Time for test: 1hr
-  - if we finish early, take a look at this video in week 25 if we haven't yet:
-    - [First Steps After Completing Auth Me](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-25---project-week-1/first-steps-after-completing-auth-me-backend)
+## Starting Strategy
+  - take a look at `starting-strat.md` in the todays folder
+  - Keep these strategies in mind as I do walk through the flow of it with the kanban board so you can decide how to tackle it
+  - If you are `soundcloud`, let me know, there's an issue with the official diagram
 
-### Allowed Resources
-For this assessment, you may use the following resources:
-* AppAcademy Open
-* MDN
-* A whiteboard or paper to work out problems/code, but they must be within
-  camera range
-* VScode or a console for testing and experimentation during any part of the
-  test, including multiple-choice questions
-* Node
-* Postman (when useful)
-* Previously written code you wrote yourself
-  * Except for code from previous assessment submissions
-* Comments within code
-  * If there are comments in your code about your specific code and about what
-    your code is doing, that is appropriate. If your comments are about concepts
-    and based on the readings, then that counts as notes. Those would not be
-    appropriate.
+## Kanban Walkthrough
+- like promised I shall do a kanban walkthrough
+- They are now a **mandatory tool** as it will help a lot of us to find a starting point and see progress
+- They are `basically identical to your grading score card`
+- Instead of having to reference your score card, it would be better to interact with the kanban cards because it's way more flexible since they are the same. `So follow the data requirements on the card`
 
-### Resources NOT allowed
-You may not use the following resources during the assessment:
-* Discord
-* Google / other search engines
-* StackOverflow, etc.
-* GeeksForGeeks, or any tutorial site
-* Notes
-* Code from previous assessment submissions
+### Organize Kanban / continue working on project 30m 
+- Next 30m, migrate the content from the Kanban into your kanban board 
+- you can use either classic or the newer project format
+- If you have questions on how to get the format you want, etc. let me know!
+- `I will be asking for you to show your kanban board in stand ups`
 
-
-## Welcome to the official start of Project Week!
-- This is basically a 2 week assessment!!!
-- What instructors can do:
-  - help you understand what is being asked i.e. the routes, etc.
-  - help you understand the problem that you're having
-  - Direct you to relevant resources that can help you solve the problem
-    - provide/lead/direct you with resources that could help you with your problem.
-  - We're allowed to debug and fix heroku issues
-  - We're allowed to debug and help you with github issues
-- What instructors cannot do:
-  - we aren't allowed to help with students in terms of providing them:
-    - code
-      - i.e. show you how to do migrations, seeders, etc.
-    - answers
-
-## Github Work Flow
-- [Git command Cheatsheet](https://github.com/joshnh/Git-Commands)
-- Workflow Resources
-  - [Git Branching](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-24---authorization-and-authentication/git-branching-refresher)
-    - 1 `main` branch, 1 `dev` branch, and `x many feature branches`
-      - Recommended flow:
-        - Once you complete part of a feature i.e. `Create song`, 
-        - merge this feature into the `dev` branch
-        - Once you complete **ALL** of a feature i.e. Full CRUD for songs
-        - merge `dev` to `main`
-  - [Mod 4 Project Workflow](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-24---authorization-and-authentication/mod-4-project-workflow)
-
-## How to ask Good Question
-- reference the file `asking-good-question.md`
-
-## Project Roadmap for Today (Week 25 Day 1)
-- Share project with advisors if we haven't yet
-- Go through `standup` and prepare for these questions with your Project Advisor
-  - `What did we do yesterday `
-    - Did we run into any roadblocks or problems 
-  - `What are our plans and goals for today. `
-    - What are features do we hope to accomplish or complete by today?
-  - `Are there any current or anticipated blockers preventing your progress?`
-- Deploy backend authentication endpoints
-- Start implementing backend endpoints for first CRUD feature
-	- Models, Migrations, Seeders
-	- Read, Create, Update, Delete 
+## Project Roadmap for Today (Week 25 Day 2)
+- Goals and Tasks by Tomorrow
+    - Find your strategy and get started
+	- `In Good Shape:` Implemented half of the first CRUD feature
+	- `Stretch Goal:` Implement and finish backend endpoints for first CRUD feature
+- Things that I am reviewing today:
+  - Move everything into your Backend API Repo 
+  	- I will be reviewing your Auth Me (login, signup, etc) and adding it to score card. (MUST BE DEPLOYED ON HEROKU)
+  	- Then I will send out the scorecard once that is done
+  - Have your Kanban Board and the first CRUD moved over
+  
+## Postman Routes
+- For postman routes:
+	- Test after implementing a part of a feature 
+		- you can either find the route to test, or write your own
+	- some of the provided postman tests require other routes to be built in order to test so it's good for when you have most of your CRUD done (they are for me to grade you guys with :3)
+		- If there is a case where a test doesn't work if it requires another route to populate the environment variables then: 
+			- I highly recommend writing your own routes to test as this will help you develop your skill to test endpoints
+- Finally: Remember to ask questions!!! If I didn't answer your question, message me again. I am human so I make errors! 
 
 ## Grading Criteria
-
 - all parts of user auth/signup with no errors
-  - (project score cards with requirements will be sent out tomorrow)
 - Completed all requirements for 2 full features with no errors
   - i.e. full CRUD for `Songs` and full CRUD for `Albums`
-  - (project score cards with requirements will be sent out tomorrow)
 - Worked on and attempted the listed API Routes listed in the documentation

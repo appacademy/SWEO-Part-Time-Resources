@@ -1,0 +1,36 @@
+- `Strategy 1: DB first then CRUD API routes`(This is a good strategy since we have the DB Schema Diagram already):
+	- `Why do this?`
+		- Harder, but good for fast development. Can knock out the bare minimum DB in a few hours (based on diagram)
+		- Good for if you want to focus on one related thing first, like building your database out first instead of switching back and forth between your API Routes and Database as you go
+		- However, this can slow you down if you run into a lot of database bugs/issues and have to fix them (darn those typos)
+	- `General plan of attack:`
+		- do all migrations & models, and seeders first for each table resource first (i.e. spots, then reviews, bookings, etc.)
+			- reference the DB Schema Diagram to build all tables, associations, seeder data first (don't need so many seed data)
+				- Be careful the order in which you create the tables 
+					- does the table exist already for the foreign key to reference? (this is where the tricky part comes in if we have a lot of tables)
+					- Work on Tables that do not have foreign keys first (i.e. users). Then work on the tables where the its foreign key have an existing table that they can reference / point to. (ABC = always be looking at your db diagram)
+			- migrate and seed after each one
+		- then go through each CRUD API routes 
+			- move the CRUD you're currently working into the correct kanban board column
+			- By doing all the backend first, you do not have to worry about pausing your current API CRUD Route to do create a migration, model, etc.
+		- most bugs you will encounter at first will be typos or syntax.
+- `Strategy 2: Build the DB as you Build your CRUD API routes`
+	- `Why do this?`
+		- Good for linear progression i.e. 
+			- build the Spots in the DB (table, models, seed data) --> build out spots CRUD API routes
+				- building spots API --> you notice that a route --> requires data from Reviews table,
+					- Now you build your Reviews in the DB --> then continue on with your spots API
+						- ...process repeats until you finish your Spots CRUD API
+		- Good if you want to focus on getting 2 CRUDs done
+		- Good at identifying obvious bugs (if something isn't working, you don't have to look far and wide to isolate the bug)
+		- However, this might slow you down since you'll have to switch back and forth from API routes to DB, but it's a lot more straightforward and easy
+	- `General plan of attack:`
+		- Go through the API-docs , Select 1 Full CRUD (i.e. Spots)
+			- Move the related cards for the CRUD over to its correct kanban column
+		- Reference the DB Diagram for the schema of the table (i.e. Spots)
+		- Work through the CRUD API, and build any associated tables, models, seeders that you need in order to get that API to work.
+- `Strategy 3: Both`
+	- can do a combination of both at anytime i.e.
+		- doing strategy 2 first to complete the first 2 CRUD
+		- Then switch over to strategy 1 for faster development
+    - good for big projects like `meetup`
