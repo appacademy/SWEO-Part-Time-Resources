@@ -27,6 +27,18 @@ make sure that you have updated zoom to its latest version.
 
 ---
 
+### Live Questions Channel
+
+Make sure to use the live questions channel when asking questions during
+breakout sessions.
+
+Feel free to comment and discuss with each other in that channel but please use
+the thread feature rather than replying with a new post, that makes it much
+easier for us to keep track of who is asking questions, who we have answered,
+and who is still waiting. Thanks!
+
+---
+
 ## Strings
 
 ---
