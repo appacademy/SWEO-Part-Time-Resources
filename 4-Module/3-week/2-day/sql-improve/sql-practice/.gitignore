@@ -1,0 +1,3 @@
+*.sqlite
+*.db
+node_modules/
