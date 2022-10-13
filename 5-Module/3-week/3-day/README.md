@@ -205,10 +205,20 @@ const CatComponent = () => {
     return (
         <div>
             <button onClick={() => dispatch(addCat('Tenten'))}>
-                Add a cat named Tenten!
+                Add a cat named Tenten using an action creator!
             </button>
             <button onClick={() => dispatch(addCat('Kiki'))}>
-                Add a cat named Kiki!
+                Add a cat named Kiki using an action creator!
+            </button>
+            <button
+                onClick={() => dispatch({ type: 'ADD_CAT', payload: 'Tenten' })}
+            >
+                Add a cat named Tenten with an action!
+            </button>
+            <button
+                onClick={() => dispatch({ type: 'ADD_CAT', payload: 'Kiki' })}
+            >
+                Add a cat named Kiki with an action!
             </button>
         </div>
     );
@@ -440,7 +450,7 @@ const CatComponent = () => {
     return (
         <ul>
             {cats.map((cat, i) => (
-                <li key={i}>{cat.name}</li>
+                <li key={i}>{cat}</li>
             ))}
         </ul>
     );
