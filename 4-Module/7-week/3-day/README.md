@@ -30,11 +30,11 @@
 - `By end of Today (Wednesday)`
   - Fully deployed Authentication 
   - Kanban Board Cards Moved to its proper columns
-  - `1/4 of your first full CRUD` (about 2 cards) fully completed
+  - `1/4 of your first feature (i.e. songs)` (about 2 cards) fully completed
 - `By end of Thursday`
-  - `Half of the first full CRUD` (i.e. 4/8) cards should be done
+  - `Half of the first full feature` (i.e. 4/8 cards) should be done
 - `By end of Friday`
-  - `First full CRUD` fully completed and Deployed
+  - `First full feature done (i.e. all CRUDs for Songs)` fully completed and Deployed
   - I will be pre-grading this so you can see where you are, so have this ready by the end of saturday
   
 ## Grading Criteria
