@@ -119,7 +119,7 @@ count = 0
 while count < 5:
   print(count)
   count += 1
-
+  break
   #break
   #pass
 ```
@@ -165,10 +165,12 @@ a = 100
 
 try:
     print(a / b)
+	return 'hello'
 except ZeroDivisionError:
     pass
 except (TypeError, NameError) as e:
     print("ERROR!", e)
 finally:
     print("Finally...")
+	return 'hello world'
 ```
