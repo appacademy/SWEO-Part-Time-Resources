@@ -1,0 +1,57 @@
+html{
+    font-size: 100px;
+}
+
+h1 {
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 50px;
+    margin: 100px;
+    font-weight: bolder;
+    text-decoration: wavy underline;
+    color: blue;
+    background-color: fuchsia;
+    border-radius: 15px;
+}
+
+.h2-holder{
+    height: 50px;
+    font-size: 100px;
+}
+
+h2 {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 50px;
+    margin: 2px 2px 2px;
+    font-weight: bolder;
+    color: turquoise;
+    background-color: black;
+    border-radius: 15px;
+    box-shadow: 10px 10px tomato;
+}
+
+p {
+    font-family: cursive;
+    font-size: 15px;
+    padding: 10px;
+    margin: 50px;
+    color: olivedrab;
+    background-color:darkblue;
+    border-radius: 10px;
+    box-shadow: 10px 10px tomato
+}
+
+.logo {
+    background-size: cover;
+    background-image: url("https://appacademy.github.io/styleguide/assets/logo/logo-emblem-black-1000.png");
+    background-color:indianred;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    box-shadow: 5px 5px peru;
+}
+
+body{
+    background-color: darkkhaki;
+}

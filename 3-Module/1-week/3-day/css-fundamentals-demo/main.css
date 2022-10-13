@@ -4,13 +4,20 @@
 Make the title a sans serif font
 Show some of the generic font families: serif, sans-serif, monospace, cursive, and fantasy
 */
-
+.title{
+    font-family: serif;
+}
 
 /* Make the body tag have light gray background */
-
+body {
+    background-color: lightgray;
+}
 
 /* Use the compound class selector for div red-border white-background */
-
+.red-border.white-background{
+    background-color: white;
+    border: 1px solid red;
+}
 
 /* Make p tags that are descendants of .parent have a white background */
 /* .parent p {
@@ -18,15 +25,27 @@ Show some of the generic font families: serif, sans-serif, monospace, cursive, a
 } */
 
 /* Make p tags that are direct descendant of .parent have a white background */
-
+.parent > p {
+    background-color: white;
+}
 /* Make li that are not selected color gray https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
-
+li:not(.selected){
+    color: gray;
+}
 
 /* Adjacent sibling selector */
-
+li.selected+li.selected{
+    color: red;
+}
 
 /* Change the pointer when hovering over the button, hover as a pseudo class */
-
+button:hover{
+    cursor: pointer;
+    border: 3px solid grey;
+    background-color: black;
+    color: white;
+    /* box-shadow: 2px 2px fuchsia; */
+}
 
 /* Which one has more specificity id or tag + class */
 
@@ -37,3 +56,13 @@ font-weight,
 color black in hex, rgb, rgba (talk about alpha value), 
 text transform uppercase 
 */
+
+.subtitle-container{
+    font-size: 20px;
+}
+
+.subtitle {
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
