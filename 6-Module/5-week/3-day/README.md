@@ -37,3 +37,57 @@
 ## 5. Direct Messaging (Bonus)
 ## 6. Hashtags (Bonus)
 ## 7. Search (Bonus)
+
+# If you finish this early, please start another wiki page called User Stories
+
+## User stories will tell the begining to end User experience of your application
+- You should at minimum have a user story for each crud functionality of each one of your features
+- Include stories for logged in and logged out users
+- Start with a small example of how you would like to see that feature used
+### Then give Acceptance criteria below
+- acceptance criteria will be a description of everything that will happen to make this user experience possible 
+
+# Example of a one features user stories for Instagram 
+
+## 1. POSTS
+### CREATE
+- As a logged in user, I would like to make a post so that I can share my day with other people.
+
+#### Acceptance Criteria: I should be able to...
+- Click a button on the home/feed page that takes me to a 'create new post' form
+- Click a button on my user page that takes me to a 'create new post' form
+- Choose the picture/video that I want to post
+- Know whenever the picture/video is done loading (uploading to S3)
+- Enter in a caption for the post
+- Receive error messages if I type too many characters for my caption
+- Click a button to cancel the upload if needed and get redirected back to the page I came from
+- Click a button that uploads my post when I'm done
+- See my new post on my feed after getting redirected to the feed
+- See the new post on my profile page
+### READ
+- As a logged in user, I want to be able to see every user's posts.
+
+#### Acceptance Criteria: I should be able to...
+- Go to my home page/feed and see the posts from the people that I follow in chronological order
+- Go to someone's profile page and see all of their posts in chronological order
+- Go to my profile page and see all of my posts in chronological order
+- See the post image/video, author, and caption of all of the posts
+- Click on a post to see more details such as the post caption and comments
+### UPDATE
+- As a logged in user, I want to update a post of mine so that I can correct any mistakes I've made.
+
+#### Acceptance Criteria: I should be able to...
+- Click a button on the post's page to take me to a form that has the existing caption there for me to edit
+- Change my post's caption
+- Receive error messages if I type too many characters
+- Click a button to cancel the edit if needed and take me back to the post page
+- Click a button that posts the update when I'm ready
+- See my updated post on the post page once the edit goes through
+### DELETE
+- As a logged in user, I want to be able to delete a post of mine.
+
+#### Acceptance Criteria: I should be able to...
+- Click a button on the post page that will pop up a confirmation message before completely deleting the post
+- Cancel or confirm deletion
+- See my post disappear off the page so that I know it's been deleted
+- Never see the post on the site again
