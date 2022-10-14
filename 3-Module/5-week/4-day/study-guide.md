@@ -4,7 +4,7 @@
 ## BOM and DOM
 
 ## ES6 Import / Export
-- Be able to import javascript module
+- Be able to import JavaScript module
 
 ## DOM manipulation
 - Be able to work with the DOM API
