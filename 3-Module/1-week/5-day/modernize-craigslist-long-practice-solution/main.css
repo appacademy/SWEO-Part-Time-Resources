@@ -1,0 +1,186 @@
+.homepage #catAbb,
+.homepage #go,
+.homepage .leftlinks #cl_app_beta,
+.no-js,
+p.more {
+  display: none;
+}
+
+#logo {
+  font-size: 2.5rem;
+}
+
+.homepage-search .querybox {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid #464646;
+  font-size: 16px;
+}
+
+.menu.collapsible > li {
+  cursor: pointer;
+}
+
+.menu.collapsible > li.expand.s ul {
+  display: block;
+}
+
+.menu.collapsible > li ul {
+  display: none;
+}
+
+/*** Main Project Styles ***/
+
+/* Universal selector */
+* {
+  font-family: 'Helvetica Neue', sans-serif;
+  background-color: #F5F5F5;
+  color: #464646;
+}
+
+/* Tag selector */
+ul {
+  padding: 0;
+}
+/* Child combinator selector */
+ul > li {
+  list-style: none;
+}
+
+/* Tag selector */
+a {
+  text-decoration: none;
+}
+/* Pseudo-classes for hover and visited states */
+a:hover,
+a:visited,
+a:hover > span,
+a:visited > span {
+  color: #800080;
+}
+
+a:hover,
+a:hover > span {
+  font-weight: 700;
+}
+
+/* Class selector */
+.page-container {
+  width: 1200px;
+}
+
+/* Style the main three sections by ID */
+#leftbar,
+#center,
+#rightbar {
+  float: left;
+  padding: 0 30px;
+  box-sizing: border-box;
+}
+
+/* Clear the footer */
+footer {
+  clear: both;
+}
+
+#leftbar,
+#rightbar {
+  width: 25%;
+}
+
+#center {
+  width: 50%;
+  border: 1px solid #464646;
+  border-radius: 10px;
+}
+
+/* Style DIVs that are direct children of the #center element */
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+/* Style H2 that is a descendant of element with the ID "topban" */
+#topban h2 {
+  text-align: center;
+}
+
+ul.clfooter {
+  text-align: center;
+  border-top: 1px solid gray;
+  padding: 10px 0;
+}
+
+/* Style LIs that are direct children of the UL with the "clfooter" class */
+ul.clfooter > li {
+  display: inline;
+  padding-right: 5px;
+}
+
+/* Create a pseudo-element before every H4 with the "ban" class */
+h4.ban::before {
+  content: "☮️";
+}
+
+/* More pseudo-selectors */
+input:focus {
+  background-color: lightyellow;
+}
+
+h4.ban:first-child {
+  font-size: 1.2rem;
+}
+
+.menu.collapsible .acitem:last-child {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #464646;
+}
+
+/*** Responsive Styles
+-- Will be covered in more detail in future lessons. ***/
+
+@media (max-width:1200px) {
+  .page-container,
+  #center,
+  #leftbar,
+  #rightbar {
+    width: 100%;
+  }
+  #center > div {
+    width: 30%;
+  }
+  #center {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  #center > div {
+    padding-right: 20px;
+  }
+  #leftbar > *,
+  #center > *,
+  #rightbar > * {
+    text-align: center;
+  }
+  #leftbar > table {
+    margin: 0 auto;
+  }
+  .page-container > * {
+    margin-bottom: 20px;
+  }
+  #calban,
+  .cal,
+  .leftlinks {
+    display: none;
+  }
+  .menu.collapsible > li.expand.s ul {
+    display: none;
+  }
+}
+
+@media (max-width:800px) {
+  #center > div {
+    width: 100%;
+  }
+}
