@@ -1,0 +1,16 @@
+{
+    "name": "selection-manipulation-project",
+    "private": true,
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+      "test": "cypress run --spec 'cypress/integration/test.spec.js'"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "cypress": "^8.3.0"
+    },
+    "author": "curriculum@appacademy.io",
+    "license": "ISC"
+}
+  
