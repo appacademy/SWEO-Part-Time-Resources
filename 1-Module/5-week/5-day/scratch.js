@@ -1,39 +1,40 @@
-// var sayHello = undefined;
+//IIFE
+// (Immediately Invoked Function Expression)
 
-// const myFunc = () => {
-//   console.log(animal);
-//   const animal = "cat";
-// }
+// (function () {
+//     let a = 10
+//   console.log("I run immediately");
+// })();
+//  console.log(a)
 
-// console.log(myFunc());
 
-// sayHello(); //Error?
+// (function (name) {
+//   console.log(`Hello, ${name}!`);
+// })('Will');
 
-// var sayHello = function(){
-//   console.log("Hey there!")
-// }
+// let test = (function() {
+//   const test = "Hello world!";
+// 	return test
+// })();
+// console.log(test)
 
-// (function(name){
-//   console.log(`Hello, ${name}!`)
-// })("William");
+//-------------------------------------------------------
 
-// const greet = (name) => {
-//   console.log(`Hello, ${name}`);
-// };
 
-// greet("Mylo");
-// function notIFFE(){
-//   console.log("I will not run until invoked");
-// }
+ let myFunc = function (name){
+        let greeting = "Namaste"
+        console.log(greeting + ' ' + name);
+    }
 
-// notIFFE();
+    myFunc("Will")
+    console.log(greeting)
 
-// console.log(0 == false); //falsy is not false
-// console.log(1 == true); //truthy is not true
-// console.log(1 == "1");
+    let greeting = 'Hello';
 
-// if(""){
-//   console.log("I am truthy");
-// } else {
-//   console.log("I am falsey");
-// }
+
+(function (name) {
+   let greeting = 'Namaste';
+   console.log(greeting + ' ' + name);
+})('Will');
+
+console.log(greeting)
