@@ -1,43 +1,47 @@
 // import the readline module into our file
-const readline = require('readline')
+const readline = require('readline');
 
 // create an interface where we can talk to the user
 const rl = readline.createInterface({
   input: process.stdin,
   output: process.stdout,
-})
+});
 
-const answers = {}
+const answers = {};
 
 // ask the user a question
 // Main thread is freed up while we wait for user input. HandleResponeOne will
 // be executed when the user has submitted their response.
 
-rl.question("What's up, doc? ", handleResponseOne)
+rl.question("What's your favorite game? ", handleResponseOne);
 
-// first calback
+// first callback
 function handleResponseOne(firstAnswer) {
-  console.log(firstAnswer + ' is up.')
+  console.log('Oh ' + firstAnswer + "? I hear that's a really good game!");
   // save firstAnswer to answer object
-  answers['up'] = firstAnswer
-  debugger
-  rl.question("What's down, clown? ", handleResponseTwo)
+  answers['favGame'] = firstAnswer;
+  rl.question('How many hours have you put into it? ', handleResponseTwo);
+  // console.log('Another look at me');
 }
 
 // second callback (passed to `rl.question()` in handleResponseOne)
 function handleResponseTwo(secondAnswer) {
-  console.log(secondAnswer + ' is down.')
-  answers['down'] = secondAnswer
-  debugger
-  rl.question("What's left, Jeff? ", handleResponseThree)
+  console.log(`${secondAnswer} hours?! Wow man get a life...`);
+  answers['hours'] = secondAnswer;
+  rl.question('Have you at least beaten the game yet? ', handleResponseThree);
 }
 
 // third callback (passed to `rl.question()` in handleResponseTwo)
 function handleResponseThree(thirdAnswer) {
-  console.log(thirdAnswer + ' is left.')
-  answers['left'] = thirdAnswer
+  if (thirdAnswer.toLowerCase() === 'no') {
+    console.log('Sounds like you need to gitgud.');
+  } else if (thirdAnswer.toLowerCase() === 'yes') {
+    console.log("Well at least you've got that going for you.");
+  }
+  answers['completed'] = thirdAnswer.toLowerCase() === 'yes';
   // close the interface
-  rl.close()
-  debugger
-  console.log(answers)
+  rl.close();
+  console.log(answers);
 }
+
+// console.log('Hey look at meee!');
