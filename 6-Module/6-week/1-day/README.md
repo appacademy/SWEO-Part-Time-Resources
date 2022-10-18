@@ -13,7 +13,6 @@
 >* session: {}
 >* servers: {}
 >* currentServer: {}
->* channels: {}
 >* dmRooms: {}
 * }
 
