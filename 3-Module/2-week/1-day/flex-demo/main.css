@@ -1,0 +1,119 @@
+/* 
+In the flex layout model, the children of a flex container can be laid out in 
+any direction, and can “flex” their sizes, either growing to fill unused space 
+or shrinking to avoid overflowing the parent.
+- you change the display of the container to flex
+- justify-content: distributes children over the main axis (x-axis is the default)
+- align-items: distributes children over the secondary axis 
+*/
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: lightgray;
+  }
+  
+  .box > div {
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  
+  .box {
+    background-color: white;
+    width: 80%;
+    height: 500px;
+    margin: 50px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  
+  /* 
+  - display:inline-flex (an inline div will adjust to the width of its contents)
+  - gap spacing to apply space between the items.
+  */
+  .box2 > div {
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+  }
+  
+  .box2 {
+    background-color: white;
+    margin: 50px;
+    display: inline-flex;
+    padding: 20px;
+    gap: 100px;
+  }
+  
+  /* 
+  - A child also has flex properties
+  */
+  .box3 > div {
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .box3 {
+    background-color: white;
+    margin: 50px;
+    display: flex;
+  }
+  
+  /* 
+  flex property on a child of a flex-container as shorthand for grow, shrink, basis
+  */
+  /* .one {
+    flex: 0 1 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+  }
+  .two {
+    flex: 0 1 auto;
+  }
+  .three {
+    flex: 0 1 auto;
+  } */
+  
+  /* flex-grow: How much of the positive free space does this item get? */
+  /* .one {
+    flex: 2 0 auto;
+  }
+  .two {
+    flex: 1 0 auto;
+  }
+  .three {
+    flex: 1 0 auto;
+  } */
+  
+  /* flex-basis: What is the size of the item before growing or shrinking? */
+  .box3 > div {
+    flex: 0 1 200px;
+  } 
+  
+  /* flex-shrink: How much negative free space can be removed from this item? */
+  /* .box3 > div {
+    flex: 0 0 200px;
+  }
+  
+  div.one {
+    flex: 0 8 200px;
+  }
+  
+  div.two {
+    flex: 0 4 200px;
+  } */
