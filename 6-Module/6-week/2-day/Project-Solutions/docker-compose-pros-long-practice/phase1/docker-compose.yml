@@ -1,0 +1,15 @@
+#!!START SILENT
+version: '3'
+
+services:
+  web:
+    build: .
+    image: rkoron/flask-redis-app:latest
+    environment:
+      - FLASK_ENV=development
+    ports:
+      - 5000:5000
+
+  redis:
+    image: redis:4.0.11-alpine
+#!!END
