@@ -1,5 +1,5 @@
-console.log("----------------Asyncronous Javascript----------------")
-console.log("----Synchronous `blocking code`----")
+// console.log("----------------Asyncronous Javascript----------------")
+// console.log("----Synchronous `blocking code`----")
 //execution of code in order and is predictable / guaranteed
 let foo = function () {
     console.log("two");
@@ -19,45 +19,45 @@ let fibonacci = (term) => {
 
 
 
-console.log("one");
-// foo(); //foo is blocking "three" from being logged until it finishes evaluating.
+// console.log("one");
+// // foo(); //foo is blocking "three" from being logged until it finishes evaluating.
 // console.log(fibonacci(35)); //need to evaluate all recursive calls and finishes everything inside callstack before going on to the next.
-console.log("three");
+// console.log("three");
 
 
 
-console.log("----Asynchronous `NON-blocking code`----")
+// console.log("----Asynchronous `NON-blocking code`----")
 //- code that doesn't block up the callstack & is unpredictable / order not guaranteed.
 
 //- Why do we need non-blocking code? think of a request being made for data to a different server, or a user input (we don't ever know when they going to happen or resolve)
 
-console.log("synchronous code start....") //this line is synchronous code
+// console.log("synchronous code start....") //this line is synchronous code
 
 
-const requestForData = () => {
-    console.log("Here is your data...");
-    console.log("request did not block up the callstack!")
-    console.log("i.e. request was processed by another API / server on the web!")
-}
-setTimeout(requestForData, 3000); //this is asynchronous code
-// setTimeout, takes a callback (first arg) and then executes the callback after the given delay (second arg)
+// const requestForData = () => {
+//     console.log("Here is your data...");
+//     console.log("request did not block up the callstack!")
+//     console.log("i.e. request was processed by another API / server on the web!")
+// }
+// // setTimeout(requestForData, 3000); //this is asynchronous code
+// // // setTimeout, takes a callback (first arg) and then executes the callback after the given delay (second arg)
 // setTimeout(requestForData, 0); //what happens if I put the delay to 0?
 
 
-console.log("synchronous code end....") //this line is synchronous code
+// console.log("synchronous code end....") //this line is synchronous code
 
 //call stack is only empty, after EVERY line of synchronous code in the file has been executed.
 //after that, we dequeue the first thing in the message queue onto the main call stack to be evaluated.
 
-console.log("----------------Async & Event Loop in action----------------");
+// console.log("----------------Async & Event Loop in action----------------");
 //Event Loop is made up of 2 key components
 // - Call stack (stack datastructure, pop/push, Last in first out)
 // - Message Queue (queue datastructure, enqueue/dequeue, first in first out)
 
 //helloFunc callback
-const helloFunc = () => {
-    console.log("This is the settimeout helloFunc with 0 seconds delay!")
-}
+// const helloFunc = () => {
+//     console.log("This is the settimeout helloFunc with 0 seconds delay!")
+// }
 
 //setTimeout IS ASYNCRONOUS CODE. It takes a callback function, and then a delay as arguments
 setTimeout(helloFunc, 0);
