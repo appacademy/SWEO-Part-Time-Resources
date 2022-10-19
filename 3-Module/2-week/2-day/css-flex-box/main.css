@@ -8,6 +8,9 @@
     /* Phase 1 */
 
     /* Your code here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .example2 {
@@ -18,6 +21,9 @@
     /* Phase 2 */
 
     /* Your code here */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .example2 > button {
@@ -47,12 +53,18 @@
     /* Phase 3 */
 
     /* Your code here */
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 33%;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .example4 {
     /* Phase 4 - Part 1 of 2 */
 
     /* Your code here */
+    display: flex;
 }
 
 .sidebar {
@@ -62,6 +74,10 @@
     /* Phase 4 - Part 2 of 2 */
 
     /* Your code here */
+    display: inline-flex;
+    flex-direction: column;
+    /* flex: 0 0 fit-content;
+    justify-content: space-between; */
 }
 .content-area {
     background-color: #E8EFF0;
