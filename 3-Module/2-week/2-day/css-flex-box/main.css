@@ -1,0 +1,77 @@
+.example1 {
+    width: 200px;
+    height: 200px;
+    background-color: palegoldenrod;
+    border: solid black 2px;
+    font-size: 42pt;
+
+    /* Phase 1 */
+
+    /* Your code here */
+}
+
+.example2 {
+    border: dashed grey 1px;
+    border-radius: 16px;
+    padding: 16px;
+
+    /* Phase 2 */
+
+    /* Your code here */
+}
+
+.example2 > button {
+    padding: 6px;
+    font-size: 16px;
+}
+.example2 > input {
+    font-size: 24px;
+    background-color: teal;
+    color: lightcyan;
+}
+
+.example3 {
+    min-width: 550px;
+    max-width: 1280px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.example3 > div {
+    border: solid black 2px;
+    background-color: #9999ff;
+    border-radius: 25px;
+    padding: 12px;
+
+    /* Phase 3 */
+
+    /* Your code here */
+}
+
+.example4 {
+    /* Phase 4 - Part 1 of 2 */
+
+    /* Your code here */
+}
+
+.sidebar {
+    background-color: black;
+    padding: 8px;
+
+    /* Phase 4 - Part 2 of 2 */
+
+    /* Your code here */
+}
+.content-area {
+    background-color: #E8EFF0;
+    padding: 8px;
+}
+
+blockquote {
+    font-family: sans-serif;
+}
+
+blockquote:first-letter {
+    font-size: 18pt;
+}
