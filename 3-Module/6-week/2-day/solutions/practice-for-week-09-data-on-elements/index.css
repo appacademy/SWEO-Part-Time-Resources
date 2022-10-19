@@ -1,0 +1,18 @@
+li {
+    list-style-type: none;
+    width: 33%;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    border-radius: 25px;
+}
+
+li[data-type="drinks"] {
+    background-color: blue;
+    color: white;
+}
+
+
+
+li[data-type="dairy"] {
+    background-color: yellow;
+}
