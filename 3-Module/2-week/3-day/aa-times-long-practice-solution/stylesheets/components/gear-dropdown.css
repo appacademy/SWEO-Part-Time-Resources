@@ -1,0 +1,40 @@
+.pref {
+  background-color: white;
+  border: 1px solid #efefef;
+  border-radius: 2px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+  font-size: 12px;
+  padding: 0.5em;
+  position: absolute;
+  right: 5px;
+  top: 2.5em;
+  width: 200px;
+}
+
+.pref--hidden {
+  display: none;
+}
+
+.pref__section {
+  border-top: 1px solid #dedede;
+}
+
+.pref__section:first-child {
+  border-top: none;
+}
+
+.pref__section-header {
+  font-weight: bold;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pref__section-link {
+  margin: .5em;
+  padding: .5em;
+  text-transform: uppercase;
+}
+
+.pref__section-link:hover {
+  background-color: #dedede;
+}
