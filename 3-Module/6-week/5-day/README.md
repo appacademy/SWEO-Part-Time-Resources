@@ -2,15 +2,15 @@
 
 ## TLDR:
 
-- MAC Addresses - permanent ID on hardware. Think of this as your physical home
-- Ports - virtual connection points for services, devices, or applications
 - IP - communication protocol that allows the internet to be the ***inter*** - ***net***
   - IP addresses are the "real name" of the website we're trying to reach
   - Think of this as your home address
+- Ports - virtual connection points for services, devices, or applications
+- MAC Addresses - permanent ID on hardware. Think of this as your physical home
+- Domain Names - the "human" names for websites
+  - Hard to remember 199.223. 232.0 to get to YouTube
 - DNS - acts as an address book, or a post office
   - Looks up website IP's and connects you to it
-- Domain Names - the "human" names for websites
-  - It would suck to have to remember 199.223. 232.0 to get to YouTube
 
 ## Networking
 
