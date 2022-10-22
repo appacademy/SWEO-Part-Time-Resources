@@ -1,0 +1,38 @@
+{
+  "name": "pokedex-express-backend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "per-env",
+    "db:create": "dotenv sequelize-cli db:create",
+    "db:migrate": "dotenv sequelize-cli db:migrate",
+    "db:seed:all": "dotenv sequelize-cli db:seed:all",
+    "start:development": "dotenv nodemon ./bin/www",
+    "start:production": "dotenv ./bin/www"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "^4.16.4",
+    "express-async-handler": "^1.1.4",
+    "express-bearer-token": "^2.4.0",
+    "express-validator": "^6.4.1",
+    "faker": "^4.1.0",
+    "helmet": "^3.22.0",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "per-env": "^1.0.2",
+    "pg": "^8.5.1",
+    "sequelize": "^6.21.4",
+    "sqlite3": "^5.0.8",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^3.1.0",
+    "nodemon": "^2.0.3",
+    "sequelize-cli": "^6.4.1"
+  }
+}
