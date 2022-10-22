@@ -1,5 +1,17 @@
 # `M3W6D5`
 
+## TLDR:
+
+- MAC Addresses - permanent ID on hardware. Think of this as your physical home
+- Ports - virtual connection points for services, devices, or applications
+- IP - communication protocol that allows the internet to be the ***inter*** - ***net***
+  - IP addresses are the "real name" of the website we're trying to reach
+  - Think of this as your home address
+- DNS - acts as an address book, or a post office
+  - Looks up website IP's and connects you to it
+- Domain Names - the "human" names for websites
+  - It would suck to have to remember 199.223. 232.0 to get to YouTube
+
 ## Networking
 
 Networking part-1 is on week 16 homework for Saturday. (IP, TCP/UDP)
