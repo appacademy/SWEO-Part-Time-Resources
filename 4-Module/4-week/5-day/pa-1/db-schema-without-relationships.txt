@@ -1,0 +1,23 @@
+Table Sports {
+  id integer [pk, increment] // auto-increment
+  name varchar [not null, unique]
+}
+
+Table Teams {
+  id integer [pk, increment] // auto-increment
+  name varchar [not null]
+  homeCity varchar [not null]
+}
+
+Table Players {
+  id integer [pk, increment] // auto-increment
+  firstName varchar [not null]
+  lastName varchar [not null]
+  number integer [not null]
+  isRetired boolean [not null, default: false]
+}
+
+Table Fans {
+  id integer [pk, increment]
+  username varchar [not null, unique]
+}
