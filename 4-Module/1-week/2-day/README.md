@@ -104,7 +104,7 @@ console.log(req.params.city) // Seattle
 ### Response Object `res`
 
 - res.status() - set the HTTP status code for the response
-- res.send() - send plaintext response
+- res.send() - send HTTP response, Content-Type res header is auto set depending on argument passed in 
 - res.json() - send JSON response
 
 ```js
