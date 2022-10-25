@@ -65,7 +65,7 @@ Express has built in properties and methods to make dealing with requests and re
 app.use(express.json());
 ```
 
-- req.query - gives use query string parameters in an object
+- req.query - gives us query string parameters in an object
 
 ```js
 fetch('http://localhost:5000/items?coffee=Starbucks&music=lofi', {
