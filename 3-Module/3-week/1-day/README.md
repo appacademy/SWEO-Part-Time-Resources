@@ -25,16 +25,7 @@ I will be giving extra time for the reading today due to there being a lot of
 technical jargon thrown into the mix. Take your time to read them slowly,
 internalize the vocabulary, and think of any questions you might have!
 
----
 
-## Reading pt1 (10m)
-
-- Server Basics Learning Objectives
-- Intro to Servers
-
----
-
-## Lecture pt1
 
 ### What is a Server?
 
@@ -52,17 +43,7 @@ Examples:
 - Adding an item to an amazon shopping cart
 - Viewing an amazon shopping cart
 
----
 
-## Reading pt2 + Quiz (25m)
-
-- HTTP Basics
-- HTTP Request and Response Cycle
-- Servers and HTTP Quiz
-
----
-
-## Lecture pt2
 
 ### Quiz Walkthrough
 
