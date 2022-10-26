@@ -1,104 +1,75 @@
-// // Define a class with the class keyword followed by the name with the first
-// // letter capital and the rest of the words camel case
-// class Taco {
-//   // constructor is invoked when you create a new class such as:
-//   // new Taco("chicken", ["sour cream", "cheese"])
-//   constructor(meat, toppings = []) {
-//     // define any instance variables or logic that needs to be run when an
-//     // instance of the class is created
-//     this.meat = meat
-//     this.toppings = toppings
-//     this.tortillaType = 'corn'
-//   }
-//   // instance method
-//   assemble() {
-//     return `These are some delicious ${this.meat} tacos on a ${
-//       this.tortillaType
-//     } tortilla with all the toppings ${this.toppings.join(', ')}.`
-//   }
-// }
-// // create a instance of a Taco and store in a variable
-// const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
-// const chickenTaco = new Taco('chicken', ['sour cream', 'cheese'])
-// // call an instance method
-// console.log(carnitasTaco.assemble())
-// console.log(chickenTaco.assemble())
+// let obj = {a: "hello"}
 
-// IceCream
-// Properties:
-//  - flavor array
-//  - toppings array
-//  - iceCreamMantle string
-//  - amount number
-//  Actions:
-//  - melt() - decrement amount
-//  - togo() - put it all together
+class Pokemon {
+    constructor(name, level, type, trainer) {
+      this.name = name;
+      this.level = level;
+      this.type = type;
+      this.trainer = trainer;
+    }
 
-// class IceCream {
-//   constructor(flavors, toppings, iceCreamMantle, amount) {
-//     this.flavors = flavors
-//     this.toppings = toppings
-//     this.iceCreamMantle = iceCreamMantle
-//     this.amount = amount
-//   }
+    levelUp() {
+      this.level++;
+      console.log(`${this.name} has leveled up to ${this.level}!`);
+    }
 
-//   eat() {
-//     //  - eat() - decrement amount
-//     // amount = 3
-//     // eat()
-//     // amount = 2
-//     if (this.amount > 0) {
-//       console.log('This is some yummy ice cream!')
-//       this.amount--
-//     }
-//     if (this.amount === 0) {
-//       return 'This was some yummy ice cream!'
-//     }
-//   }
+    showName() {
+      console.log(`Hi my name is ${this.name}`);
+    }
 
-//   melt() {
-//     if (this.amount > 0) {
-//       const interval = setInterval(() => {
-//         console.log('Im melting...')
-//         this.amount--
-//         if (this.amount === 0) {
-//           console.log("I'm Melted")
-//           clearInterval(interval)
-//         }
-//       }, 1000)
-//     }
-//   }
+    run() {
+      console.log(
+        `${this.name} has fled from battle! ${this.trainer} must have been scared!`
+      );
+    }
 
-//   togo() {
-//     return {
-//       ingredients: [...this.toppings, ...this.flavors],
-//     }
-//   }
-// }
+    tackle() {
+      console.log(`${this.name} used tackle!`);
+    }
+  }
 
-// const chocolateIceCream = new IceCream(['chocolate'], ['nuts'], 'cone', 5)
-// console.log(chocolateIceCream.amount)
-// console.log(chocolateIceCream.togo())
-// console.log(chocolateIceCream.amount)
+//   const myFirstPoke = new Pokemon("Pikachu", 9000, 'Electric', "Ash");
+//   console.log(myFirstPoke)
+//   myFirstPoke.levelUp();
+//   myFirstPoke.levelUp();
+//   console.log(myFirstPoke)
+// myFirstPoke.showName()
+//   const myFirstPoke2 = new Pokemon('JigglyPuff', 9001, 'Electric', 'Ash');
 
-// Dog Ideas
-// Attributes:
-// -Size
-// -Breed
-// -Barks (Boolean)
-// -Color
-// -Age
-// -furType
-// -barkVolume
-// -Walked (Boolean)
-// -Listen (Boolean)
+// const nickName = "name"
+// console.log(myFirstPoke[nickName]);
+// console.log(myFirstPoke['name']);
+// console.log(myFirstPoke.type);
 
-// Methods:
-// -dogBark()
-// -walkingDog()
-// -findingDog()
-// -howOld()
-// -rollOver() - console.log("wheres my treat?")
-// -makePuppyDogEyes() - begs for treats
-// -walk() - update walked value and walks dog if they are not already walked
-// -praise() - if they listen you praise them otherwise you get mad
+
+
+
+
+
+  class Pikachu extends Pokemon {
+    constructor(name, level, trainer, moveSets) {
+      super(name, level, "Electric", trainer);
+      this.moveSets = moveSets;
+      this.atk = Math.floor(Math.random() * 10) + level;
+      this.def = Math.floor(Math.random() * 5) + level;
+      this.speed = Math.floor(Math.random() * 12) + level;
+    }
+
+    useThunderBolt() {
+      console.log(`${this.name} has used thunderbolt!!`);
+      console.log(
+        `${Math.floor(Math.random() * this.atk * 1.2)} damage has been dealt`
+      );
+    }
+  }
+
+  const moves = [`Tail Whip`, `Quick Attack`, `Thunder`, `Charm`, `Surf`];
+
+//   const myFirstPika = new Pikachu('MegaChu', 2, "Will", moves);
+
+//   console.log(myFirstPika)
+// console.log(myFirstPika.name);
+// console.log(myFirstPika.atk);
+// myFirstPika.useThunderBolt();
+// myFirstPika.tackle();
+
