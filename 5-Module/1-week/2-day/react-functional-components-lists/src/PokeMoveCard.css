@@ -1,0 +1,12 @@
+.poke-move-card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 15em;
+  width: 15em;
+  border: 4px solid rgb(19, 16, 16);
+  border-radius: 10px;
+  background-color: #322f2f;
+  color: white;
+}

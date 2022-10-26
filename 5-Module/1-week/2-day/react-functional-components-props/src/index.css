@@ -1,0 +1,8 @@
+/* TODO Add site wide styles */
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

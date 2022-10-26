@@ -1,0 +1,16 @@
+.showcase-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.poke-type {
+  background-color: #008000;
+  color: white;
+}
+
+.poke-move {
+  background-color: #fff;
+  color: #008000;
+}
