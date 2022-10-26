@@ -1,0 +1,23 @@
+extends layout.pug
+
+block title
+  title Post Details #{post.title}
+
+block body
+  h1 Post Details #{post.title}
+  div= post.description
+  a(href="/posts/" + post.postId + "/edit") Edit
+  form(action="/posts/" + post.postId + "/delete" method="post")
+    button(type="submit") Delete
+  div
+    h3 Add a Comment
+    form(action="/posts/" + post.postId + "/comments" method="post")
+      textarea(name="text")
+      button(type="submit") Submit
+  ul.comments
+    each comment in post.comments
+      li
+        div= comment.text
+        a(href="/comments/" + comment.commentId + "/edit") Edit
+        form(action="/comments/" + comment.commentId + "/delete" method="post")
+          button(type="submit") Delete
