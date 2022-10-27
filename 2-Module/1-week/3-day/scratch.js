@@ -28,7 +28,7 @@ class Pokemon {
     }
   }
 
-//   const myFirstPoke = new Pokemon("Pikachu", 9000, 'Electric', "Ash");
+  const myFirstPoke = new Pokemon("Pikachu", 9000, 'Electric', "Ash");
 //   console.log(myFirstPoke)
 //   myFirstPoke.levelUp();
 //   myFirstPoke.levelUp();
@@ -46,30 +46,29 @@ class Pokemon {
 
 
 
-  class Pikachu extends Pokemon {
-    constructor(name, level, trainer, moveSets) {
-      super(name, level, "Electric", trainer);
-      this.moveSets = moveSets;
-      this.atk = Math.floor(Math.random() * 10) + level;
-      this.def = Math.floor(Math.random() * 5) + level;
-      this.speed = Math.floor(Math.random() * 12) + level;
-    }
+//   class Pikachu extends Pokemon {
+//     constructor(name, level, trainer, moveSets) {
+//       super(name, level, 'Electric', trainer);
+//       this.moveSets = moveSets;
+//       this.atk = Math.floor(Math.random() * 10) + level;
+//       this.def = Math.floor(Math.random() * 5) + level;
+//       this.speed = Math.floor(Math.random() * 12) + level;
+//     }
 
-    useThunderBolt() {
-      console.log(`${this.name} has used thunderbolt!!`);
-      console.log(
-        `${Math.floor(Math.random() * this.atk * 1.2)} damage has been dealt`
-      );
-    }
-  }
+//     useThunderBolt() {
+//       console.log(`${this.name} has used thunderbolt!!`);
+//       console.log(
+//         `${Math.floor(Math.random() * this.atk * 1.2)} damage has been dealt`
+//       );
+//     }
+//   }
 
-  const moves = [`Tail Whip`, `Quick Attack`, `Thunder`, `Charm`, `Surf`];
+//   const moves = [`Tail Whip`, `Quick Attack`, `Thunder`, `Charm`, `Surf`];
 
-//   const myFirstPika = new Pikachu('MegaChu', 2, "Will", moves);
+//   const myFirstPika = new Pikachu('MegaChu', 2, "Will", "test", moves);
 
 //   console.log(myFirstPika)
 // console.log(myFirstPika.name);
 // console.log(myFirstPika.atk);
 // myFirstPika.useThunderBolt();
 // myFirstPika.tackle();
-
