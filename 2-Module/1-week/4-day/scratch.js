@@ -1,3 +1,4 @@
+
 class Pokemon {
   constructor(name, level, type, trainer, cry) {
     this.name = name;
@@ -27,9 +28,15 @@ class Pokemon {
     console.log(`${this.name} has fled from battle`);
   };
 };
+
 let newPoke = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
-let newPoke1 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
-console.log(Pokemon.seen)
+let newPoke2 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+// console.log(newPoke.seen)
+// newPoke.yell()
+// console.log(Pokemon.seen)
+
+
+
 
 class Pikachu extends Pokemon {
   constructor(level, trainer, moveSets, cry) {
@@ -39,7 +46,7 @@ class Pikachu extends Pokemon {
     this.spd = 100;
     this.moveSets = moveSets;
   };
-
+  //here, yell is overriding the parent class method (Polymorphism)
   yell() {
     console.log(`${this.name} cried "Hey"`);
   }
@@ -48,17 +55,19 @@ class Pikachu extends Pokemon {
     console.log(`${this.name} has used Thunderbolt`);
     console.log(`${this.atk * 1.2} damage has been dealt`);
   };
-  static seen = 100
+
 };
 
 // console.log(Pokemon.seen);
-const charizard = new Pokemon("Charizard", 36, "Fire", "Ash");
-console.log(Pikachu.seen)
+const charizard = new Pokemon("Charizard", 36, "Fire", "Ash", "yes");
+charizard.yell()
+// console.log(Pikachu.seen)
 
 const moves = ["Thunderbolt", "Quick Attack", "Iron Tail", "Surf"];
 const pikachu1 = new Pikachu(5, "Ash", moves, "Pika Pika");
-
+pikachu1.yell()
+// console.log(Pokemon.seen)
 // console.log(pikachu1.yell());
 
-console.log(Pokemon.pokemonSeen([charizard, pikachu1]))
+// console.log(pikachu1.pokemonSeen([charizard, pikachu1]))
 // console.log(Pokemon.seen)
