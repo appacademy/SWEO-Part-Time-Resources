@@ -1,94 +1,64 @@
-/* 
-I want to keep track of ALL instances of iceCream
-  [x] Create a Static variable that will hold all of the iceCream Instances
-  [x] Add each instance to iceCreamTracker at construction time
-I want to see how much money I've made on ALL iceCream
-  Create a Static method that will iterate over the static variable
-  Return the sum of all the prices 
-*/
-
-class IceCream {
-  constructor(flavor, toppings) {
-    // this = {};
-    this.flavor = flavor;
-    // {flavor: "Vanilla"};
-    this.toppings = toppings || [];
-    this.price = this.toppings.length * 0.5 + 1.5;
-    //{ flavor: 'Chocolate',toppings: [ 'peanut butter', 'caramel', 'Oreo' ],price: };
-    IceCream.iceCreamTracker.push(this)
-  }
-
-  static iceCreamTracker = [];
-
-  addToppings(...toppings) {
-    this.toppings.push(...toppings);
-    this.price = 1.5 + this.toppings.length * 0.5;
-  }
-
-  static getPrices() { 
-    let sum = 0;
-    let arr = IceCream.iceCreamTracker;
-    for (let i = 0; i < arr.length; i++) { 
-      let obj = arr[i];
-      sum += obj.price;
-    }
-    return sum;
-  }
-}
-
-// let vanilla = new IceCream('Vanilla', ['sprinkles', 'strawberry']);
-// let chocolate = new IceCream('Chocolate', ['peanut butter', 'caramel', 'Oreo']);
-// let orange = new IceCream('Orange Sherbert');
-// console.log(vanilla.flavor);
-// console.log(vanilla.iceCreamTracker);
-// console.log(IceCream.iceCreamTracker);
-// // console.log(vanilla, chocolate, orange);
-// console.log(IceCream.getPrices()); // Should return 7
-// console.log(vanilla.getPrices());
-
-
-class Instrument { 
-  constructor(name, family) { 
+class Pokemon {
+  constructor(name, level, type, trainer, cry) {
     this.name = name;
-    this.family = family;
+    this.level = level;
+    this.type = type;
+    this.trainer = trainer;
+    this.cry = cry;
+    Pokemon.seen += 1;
+  };
+
+  static seen = 0;
+
+  static pokemonSeen(pokemons) {
+    return pokemons.map((pokemon) => pokemon.name)
   }
 
-  play() { 
-    console.log('toot toot toot');
-  }
-}
-
-class Trumpet extends Instrument { 
-  constructor(spitValveLevel) { 
-    super('trumpet', 'brass')
-    this.spitValveLevel = spitValveLevel;
+  yell() {
+    console.log(`${this.name} cried ${this.cry.toUpperCase()}`)
   }
 
-  emptyValve() { 
-    console.log('emptying valve...')
-    this.spitValveLevel = 0;
-  }
-}
+  levelUp() {
+    this.level += 1;
+    console.log(`${this.name} has leveled up to ${this.level}`);
+  };
 
-class Saxophone extends Instrument { 
-  constructor() {
-    super('saxophone', 'woodwind');
-  }
-  
-  play() { 
-    console.log('squawk squawk squawk');
-  }
-}
+  run() {
+    console.log(`${this.name} has fled from battle`);
+  };
+};
+let newPoke = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+let newPoke1 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+console.log(Pokemon.seen)
 
-const flute = new Instrument('flute', 'woodwinds'); 
-const trumpet = new Trumpet()
-const saxophone = new Saxophone();
-console.log(flute)
-console.log(trumpet);
-console.log(saxophone)
-flute.play();
-trumpet.play();
-saxophone.play();
-// flute.emptyValve(); //error
-// saxophone.emptyValve(); //error
-trumpet.emptyValve();
+class Pikachu extends Pokemon {
+  constructor(level, trainer, moveSets, cry) {
+    super("Pikachu", level, "Electric", trainer, cry);
+    this.atk = 50;
+    this.def = 25;
+    this.spd = 100;
+    this.moveSets = moveSets;
+  };
+
+  yell() {
+    console.log(`${this.name} cried "Hey"`);
+  }
+
+  useThunderBolt() {
+    console.log(`${this.name} has used Thunderbolt`);
+    console.log(`${this.atk * 1.2} damage has been dealt`);
+  };
+  static seen = 100
+};
+
+// console.log(Pokemon.seen);
+const charizard = new Pokemon("Charizard", 36, "Fire", "Ash");
+console.log(Pikachu.seen)
+
+const moves = ["Thunderbolt", "Quick Attack", "Iron Tail", "Surf"];
+const pikachu1 = new Pikachu(5, "Ash", moves, "Pika Pika");
+
+// console.log(pikachu1.yell());
+
+console.log(Pokemon.pokemonSeen([charizard, pikachu1]))
+// console.log(Pokemon.seen)
