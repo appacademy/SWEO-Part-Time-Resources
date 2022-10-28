@@ -1,3 +1,7 @@
+// const x = 10;
+// const y = -20;
+// const z = Math.min(x, y); // -20
+
 class Pokemon {
   constructor(name, level, type, trainer, cry) {
     this.name = name;
@@ -27,9 +31,14 @@ class Pokemon {
     console.log(`${this.name} has fled from battle`);
   };
 };
+
 let newPoke = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
-let newPoke1 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
-console.log(Pokemon.seen)
+// newPoke.yell()
+// let newPoke2 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+// let newPoke3 = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+// console.log(Pokemon.seen)
+// let anotherPoke = new Pokemon("Tarnished", 100, "Electric", "Ash", "yes")
+// console.log(Pokemon.seen)
 
 class Pikachu extends Pokemon {
   constructor(level, trainer, moveSets, cry) {
@@ -41,24 +50,26 @@ class Pikachu extends Pokemon {
   };
 
   yell() {
-    console.log(`${this.name} cried "Hey"`);
+    console.log(`${this.name} is an AWESOME POKEMON"`);
   }
 
   useThunderBolt() {
     console.log(`${this.name} has used Thunderbolt`);
     console.log(`${this.atk * 1.2} damage has been dealt`);
   };
-  static seen = 100
+
 };
 
-// console.log(Pokemon.seen);
-const charizard = new Pokemon("Charizard", 36, "Fire", "Ash");
-console.log(Pikachu.seen)
+// console.log(Pokemon.seen); //1
+const charizard = new Pokemon("Charizard", 36, "Fire", "Ash", "YELLED");
+// console.log(Pikachu.seen) //2
 
 const moves = ["Thunderbolt", "Quick Attack", "Iron Tail", "Surf"];
 const pikachu1 = new Pikachu(5, "Ash", moves, "Pika Pika");
+charizard.yell()
+// pikachu1.yell()
 
 // console.log(pikachu1.yell());
 
-console.log(Pokemon.pokemonSeen([charizard, pikachu1]))
+// console.log(Pokemon.pokemonSeen([charizard, pikachu1]))
 // console.log(Pokemon.seen)
