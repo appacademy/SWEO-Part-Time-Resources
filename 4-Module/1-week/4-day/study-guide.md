@@ -1,6 +1,6 @@
 ## What and Why Express
 - Use cases for Express:
-  - Allow us to use javascript to write our server
+  - Allow us to use JavaScript to write our server
   - Reduces amount of boilerplate code
   - Unopinionated
 
