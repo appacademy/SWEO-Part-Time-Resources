@@ -235,7 +235,7 @@
     "endpoint": "Ask for all the products in a particular category by tag of the category",
     "request": {
       "method": "GET",
-      "URL": "/categories/:categoryName/products",
+      "URL": "/categories/:categoryTag/products",
       "headers": false,
       "body": false
     },
