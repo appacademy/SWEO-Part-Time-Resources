@@ -1,11 +1,17 @@
 import sqlite3
+from .models import Car, Owner
+
+# def get_all_cars():
+#     with sqlite3.connect("dev.db") as conn:
+#         curs = conn.cursor()
+#         curs.execute('SELECT * FROM cars;')
+#         cars = curs.fetchall()
+#         return cars
 
 def get_all_cars():
-    with sqlite3.connect("dev.db") as conn:
-        curs = conn.cursor()
-        curs.execute('SELECT * FROM cars;')
-        cars = curs.fetchall()
-        return cars
+    cars = Car.query.all()
+    print(cars)
+    return [(car.owner_id, car.manu_year, car.make, car.model) for car in cars]
 
 def get_owners_cars(owner_id):
     """
@@ -41,7 +47,7 @@ def add_new_car(manu_year, make, model, owner_id):
                       'make': make,
                       'model': model,
                       'owner_id': owner_id})
- 
+
 def change_car_owner(car_id, new_owner_id):
     """
     Update the owner of a car, both by record id
@@ -70,12 +76,8 @@ def delete_car(car_id):
                      {'car_id': car_id})
 
 def get_all_owners():
-  with sqlite3.connect("dev.db") as conn:
-        curs = conn.cursor()
-        curs.execute("""
-                     SELECT * FROM owners
-                     """)
-        return curs.fetchall()
+  owners = Owner.query.all()
+  return [(owner.id, owner.first_name, owner.last_name, owner.email) for owner in owners]
 
 BUNCH_OF_SQL = """
 CREATE TABLE owners (
