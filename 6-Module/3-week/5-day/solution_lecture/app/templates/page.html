@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>{{info.title}}</title>
+</head>
+
+<body>
+    <marquee>CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS</marquee>
+    <h1>{{info.header}}</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>CAR ID</th>
+                <th>MANUFACTURED YEAR</th>
+                <th>MODEL</th>
+                <th>MAKE</th>
+                <th>OWNER_ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for car in cars %}
+            <tr>
+                <td>{{ car[0]}}</td>
+                <td>{{ car[1]}}</td>
+                <td>{{ car[2]}}</td>
+                <td>{{ car[3]}}</td>
+                <td>{{ car[4]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% if owners %}
+    <table>
+        <thead>
+            <tr>
+                <th>OWNER ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for owner in owners %}
+            <tr>
+                <td>{{ owner[0]}}</td>
+                <td>{{ owner[1]}}</td>
+                <td>{{ owner[2]}}</td>
+                <td>{{ owner[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    {% if form %}
+    <h2>Form exists!</h2>
+    <!-- Form goes here! -->
+    <form action="" method="post">
+        {{form.hidden_tag()}}
+        <p>
+            {{form.manu_year.label}}
+            {{form.manu_year()}}
+        </p>
+        <p>
+            {{form.make.label}}
+            {{form.make()}}
+        </p>
+        <p>
+            {{form.model.label}}
+            {{form.model()}}
+        </p>
+        <p>
+            {{form.owner_id.label}}
+            {{form.owner_id()}}
+        </p>
+        <p>
+            {{form.submit.label}}
+            {{form.submit()}}
+        </p>
+    </form>
+    {% endif %}
+    <!-- Session info goes here! -->
+    {{ session }}
+</body>
+
+</html>
