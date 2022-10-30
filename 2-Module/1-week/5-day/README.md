@@ -65,3 +65,5 @@
     - Function **overriding** (I'm doing it my way...): child class has own implementation of a function from one of its ancestor classes (usually the parent).
         - parent's `toString()` method --> logs `"Hi I am John"`
         - child's `toString()` override --> logs array instead of string --> `["Hi", "I", "am", "John"]`
+//test
+
