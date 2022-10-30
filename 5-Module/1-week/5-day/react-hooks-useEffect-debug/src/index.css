@@ -1,0 +1,123 @@
+/* TODO Add site wide styles */
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,600;1,700;1,800&display=swap);
+
+*,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans, sans-serif;
+}
+
+label {
+  visibility: hidden;
+}
+
+.form-wrapper {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+button {
+  height: 3em;
+  width: 6em;
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: white;
+  background-color: #2fbdbd;
+  border: 2.5px solid rgb(224, 215, 215);
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #72eeee;
+  color: #19a4c7;
+  font-weight: bold;
+}
+
+input {
+  width: 200px;
+  height: 3em;
+  padding: 5px;
+  font-size: 1.1em;
+  margin-right: 20px;
+  border: 1.5px inset white;
+  border-radius: 5px;
+}
+
+img {
+  min-width: 200px;
+  min-height: 200px;
+  border: 2px inset #2fbdbd;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.3em;
+}
+
+.name {
+  color: #2fbdbd;
+  font-size: 1.5em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #0c9bbd;
+}
+
+.person {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+  width: 30vw;
+  height: 100vh;
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unmounted {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  background: black;
+}
+
+.unmounted h1 {
+  color: white;
+}
+
+.render-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .person {
+    width: 100vw;
+    height: 80vh;
+  }
+
+  .form-wrapper {
+    height: 20vh;
+  }
+}

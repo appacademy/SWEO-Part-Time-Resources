@@ -1,0 +1,43 @@
+/* TODO Add site wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,300&display=swap');
+
+*,
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1.title,
+h2.body {
+  text-align: center;
+  background: black;
+  padding: 5px 20px;
+}
+h1.title {
+  color: greenyellow;
+  font-weight: 500;
+}
+
+h2.body {
+  font-weight: 300;
+  font-style: italic;
+}
+
+.img {
+  width: 100%;
+}
+
+.serverContainer {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: black;
+  color: white;
+}
+
+.serverContainer:last-child {
+  margin-bottom: 0;
+}
