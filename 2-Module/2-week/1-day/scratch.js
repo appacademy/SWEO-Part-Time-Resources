@@ -20,5 +20,3 @@ function someFunc() {
   console.log(this);
 }
 someFunc(); // Global Object
-//test
-//test
