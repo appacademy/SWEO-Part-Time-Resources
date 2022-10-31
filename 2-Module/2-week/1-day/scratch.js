@@ -21,3 +21,4 @@ function someFunc() {
 }
 someFunc(); // Global Object
 //test
+//test
