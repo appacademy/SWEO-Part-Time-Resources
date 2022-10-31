@@ -1,65 +1,38 @@
-//? Context asks upon invoking: Where am I?
-// class Games {
-//   static library = [];
+//---------Context: the object that `this` references (value of `this`)---------
+//1) Context is the object that `this` inside of a function belongs to,
+//or what `this` represents when the function is executed
 
-//   constructor(name, genre) {
-//     this.name = name;
-//     this.genre = genre;
-//     // Games.library.push(this);
-// 		console.log(this)
-//   }
-// }
+//2) Whichever or wherever the object invokes the
+//function/method (that has `this` in it), that object becomes the context for `this` in that function
 
-// //? Which name and genre am I looking at?
-// const chess = new Games('Chess', 'Strategy');
-// console.log(chess)
-// const animalCrossing = new Games('Animal Crossing', 'Farming Sim');
-// console.log(Games.library)
-// console.log(chess.name)
 
-class Test {
-  testFunc() {
-    debugger;
-    console.log(this);
-    console.log(`this is equal to test1: ${this === test1}`);
+
+const helloWorld = function(){
+  console.log("helloWorld");
+  console.log(this); //console.log(global)
+
+}
+
+helloWorld(); // I'm invoking the function under the global context or the global object
+//so when invoked under the global object, `this` inside helloWorld function represents the global object (context).
+
+class Cat{
+  constructor(name, age){
+      this.name = name;
+      this.age = age;
+      console.log(this)
+  }
+
+  purr(){ //instance method
+      console.log("meow");
+  }
+
+  purrMore(){
+      this.purr(); //When we execute this method, the key word `this` inside of purrMore refers to the OBJECT that the method is executed in.
   }
 }
 
-//? Classes just create their methods, they don't invoke them
-const test1 = new Test();
-// Calling the method on the instance
-// test1.testFunc(); // true
+let tomTheCat = new Cat("tommmy", 5); //instantiated a new instance (tomTheCat) that is an object ob the Cat class.
+tomTheCat.purrMore(); //what is the value of `this` inside of that purrMore function  // what is the context? //the context: tomTheCat
 
-// // Calling on a different instance
-// const test2 = new Test();
-// test2.testFunc();
-
-//!
-
-// Calling the method outside the class
-// const test1Func = test1.testFunc;
-// console.log(test1Func, 41);
-// test1Func(); // false
-
-//!
-
-// Calling the method as a callback
-// setTimeout(test1.testFunc, 1000); // false
-// const arr = ["test",  "array"]
-// arr.map(test1.testFunc) // false
-// arr.map((el) => {
-// 	el += 1
-// })
-
-//!
-
-// Using this in Function Declaration Syntax
-function someFunc() {
-  console.log(this);
-}
-// someFunc(); // Global Object
-
-// const someFunc = () => {
-// 	console.log(this)
-// }
-// someFunc(); // Empty?
+//does tomTheCat have a purrMore method? Yes it does and does it also have a purr method? yes it does.
