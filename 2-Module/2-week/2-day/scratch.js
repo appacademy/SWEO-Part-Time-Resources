@@ -12,14 +12,26 @@ class Person {
   }
 
   eat(food) {
-    console.log(`yum i love ${food}`);
+    console.log(`${this.name} says yum i love ${food}`);
   }
 }
-let joe = new Person("Joe", 24);
-joe.ageUp("What we've seen")
+// let joe = new Person("Joe", 24);
+// // joe.ageUp("What we've seen")
 
-let aging = joe.ageUp;
 
+// //CALL AND APPLY
+// let boundEat = joe.eat
+// //comma separated args for call
+// boundEat.call(joe, "apples");
+// joe.eat.call(joe, "apples")
+
+//array of args for apply
+// boundEat.apply(joe, ["pears", "in an array"]);
+
+
+// let aging = joe.ageUp;
+// let example = joe.ageUp.bind(joe, "Yay")
+// example()
 //   aging() // TypeError: Cannot read properties of undefined (reading 'age')
 // once we assigned that method to a variable we lost the context.
 
@@ -30,25 +42,25 @@ let aging = joe.ageUp;
 
 // boundAging(); // prints `Happy birthday! Joe is 25 years old! YAY!
 
-//CALL AND APPLY
-// let boundEat = joe.eat
-//comma separated args for call
-// boundEat.call(joe, "apples");
-//array of args for apply
-// boundEat.apply(joe, ["pears"]);
+
+
+
+
+
 
 //ARROW FUNC
-// class Fruit {
-//     constructor(name) {
-//       this.name = name;
-//     }
+class Fruit {
+    constructor(name) {
+      this.name = name;
+    }
 
-//     eat = () => {
-//       console.log(`${this.name} has a bite mark`);
-//     };
-//   }
+    eat = () => {
+      console.log(`${this.name} has a bite mark`);
+    };
+  }
 
-//   const apple = new Fruit('apple');
-//   const eat = apple.eat;
-//   eat();
-//   setTimeout(eat, 1000);
+  const apple = new Fruit('apple');
+
+  const eat = apple.eat;
+  eat();
+  setTimeout(eat, 1000);
