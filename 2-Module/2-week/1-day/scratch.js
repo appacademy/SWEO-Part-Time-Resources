@@ -14,33 +14,37 @@
 
 // }
 
-// helloWorld(); // I'm invoking the function under the global context or the global object
+
+// helloWorld(); // I'm invoking the function under the global
+//context or the global object
 //so when invoked under the global object, `this` inside helloWorld
 //function represents the global object (context).
-//test
-// class Cat{
-//   constructor(name, age){
-//       this.name = name;
-//       this.age = age;
-//       console.log(this)
-//   }
 
-//   purr(){ //instance method
-//       console.log("meow");
-//   }
 
-//   purrMore(){
-//       this.purr(); //When we execute this method,
-// // the key word `this` inside of purrMore refers to the OBJECT that the method is executed in.
-//   }
-// }
 
-// let tomTheCat = new Cat("tommmy", 5); //instantiated a new instance (tomTheCat)
+class Cat{
+  constructor(name, age){
+      this.name = name;
+      this.age = age;
+      console.log(this)
+  }
+
+  purr(){ //instance method
+      console.log("meow");
+  }
+
+  purrMore(){
+      this.purr(); //When we execute this method,
+// the key word `this` inside of purrMore refers to the OBJECT that the method is executed in.
+  }
+}
+
+let tomTheCat = new Cat("tommmy", 5); //instantiated a new instance (tomTheCat)
 // // let tomTheCat2 = new Cat("NEW NAME", 5); //instantiated a new instance (tomTheCat)
 // //that is an object ob the Cat class.
 // tomTheCat.purrMore(); //what is the value of `this`
-// let newFunc = tomTheCat.purrMore()
-// console.log(newFunc)
+let newFunc = tomTheCat.purrMore
+console.log(newFunc)
 // setTimeout(tomTheCat.purrMore, 1000)
 //inside of that purrMore function  // what is the context? //the context: tomTheCat
 
