@@ -91,6 +91,7 @@ Normalizing a database ensures it's being as efficient as possible. When designi
   - Set a PK for each table
 
 | id | item | vendor 1 | vendor 2 |
+--- | --- | --- | --- |
 | 1 | apple | Shoprite | Costco |
 
 - Second normal form
