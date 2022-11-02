@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/assets/css/application.css" rel="stylesheet" />
+  <title>Edit a Dog</title>
+</head>
+
+<body>
+  <h1>Edit a Dog</h1>
+  <form action="/dogs/#{dogId}" method="post">
+    <label>
+      Name:
+      <input type="text" name="name" value="#{name}" />
+    </label>
+    <label>
+      Age:
+      <input type="number" name="age" value="#{age}" />
+    </label>
+    <button type="submit">Submit</button>
+  </form>
+  <a href="/" id="home_link">Home</a>
+</body>
+
+</html>
