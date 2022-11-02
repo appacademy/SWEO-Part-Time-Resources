@@ -89,12 +89,14 @@ Normalizing a database ensures it's being as efficient as possible. When designi
   - Remove repeats within a single table
   - Create different tables for each related piece of data
   - Set a PK for each table
-  
+
+```
 `Orders`
 
 | id | item | vendor 1 | vendor 2 |
 --- | --- | --- | --- |
 | 1 | apple | Shoprite | Costco |
+```
 
 - Second normal form
 
