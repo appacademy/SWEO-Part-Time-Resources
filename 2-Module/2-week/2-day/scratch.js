@@ -53,18 +53,19 @@ class Person {
 
 
   //ARROW FUNC
-  class Fruit {
-      constructor(name) {
-        this.name = name;
-      }
+  // class Fruit {
+  //     constructor(name) {
+  //       this.name = name;
+  //     }
 
-      eat = () => {
-        console.log(`${this.name} has a bite mark`);
-      };
-    }
+  //     eat = () => {
+  //       console.log(`${this.name} has a bite mark`);
+  //     };
+  //   }
 
-    const apple = new Fruit('apple');
+  //   const apple = new Fruit('apple');
 
-    const eatFruit = apple.eat;
-    eatFruit();
-    setTimeout(eatFruit, 1000);
+  //   const eatFruit = apple.eat;
+  //   eatFruit();
+  //   setTimeout(eatFruit, 1000);
+ 
