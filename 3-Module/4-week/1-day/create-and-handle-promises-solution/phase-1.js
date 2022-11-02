@@ -19,8 +19,8 @@ function runOnTreadmill() {
 function liftWeights() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-
-      resolve(console.log("done lifting weights"));
+      console.log("done lifting weights")
+      resolve();
     }, 2000);
   });
 }
