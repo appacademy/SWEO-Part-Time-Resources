@@ -15,29 +15,33 @@ class Person {
       console.log(`${this.name} says yum i love ${food}`);
     }
   }
-  // let joe = new Person("Joe", 24);
-  // // joe.ageUp("What we've seen")
-  // let aging = joe.ageUp;
+  let joe = new Person("Joe", 24);
+// joe.ageUp("What we've seen")
+  let aging = joe.ageUp;
 
-  //   aging() // TypeError: Cannot read properties of undefined (reading 'age')
-  // once we assigned that method to a variable we lost the context.
-
-
-    //BIND
-  // let boundAging = aging.bind(joe, "YAY!");
-  // notice we are using the function that wouldn't work before,
-  // can use the method as well by saying joe.ageUp.bind(joe);
-
-  // boundAging(); // prints `Happy birthday! Joe is 25 years old! YAY!
-
-  // //CALL AND APPLY
-  // let boundEat = joe.eat
-  // //comma separated args for call
-  // boundEat.call(joe, "apples");
+    // // //CALL AND APPLY
+    let boundEat = joe.eat
+    // boundEat()
+    // // //comma separated args for call
+    // boundEat.call(joe, "apples", "new arg");
 
 
-  //array of args for apply
-  // boundEat.apply(joe, ["pears", "in an array"]);
+    // //array of args for apply
+    // boundEat.apply(joe, ["pears", "in an array"]);
+
+
+//     aging() // TypeError: Cannot read properties of undefined (reading 'age')
+//   // once we assigned that method to a variable we lost the context.
+
+// let newBind = joe.ageUp.bind(joe, "New Arg")
+// newBind()
+//     //BIND
+//   let boundAging = aging.bind(joe, "YAY!");
+//   // notice we are using the function that wouldn't work before,
+//   // can use the method as well by saying joe.ageUp.bind(joe);
+
+//   boundAging(); // prints `Happy birthday! Joe is 25 years old! YAY!
+
 
 
 
@@ -49,18 +53,18 @@ class Person {
 
 
   //ARROW FUNC
-//   class Fruit {
-//       constructor(name) {
-//         this.name = name;
-//       }
+  class Fruit {
+      constructor(name) {
+        this.name = name;
+      }
 
-//       eat = () => {
-//         console.log(`${this.name} has a bite mark`);
-//       };
-//     }
+      eat = () => {
+        console.log(`${this.name} has a bite mark`);
+      };
+    }
 
-//     const apple = new Fruit('apple');
+    const apple = new Fruit('apple');
 
-//     const eat = apple.eat;
-//     eat();
-//     setTimeout(eat, 1000);
+    const eatFruit = apple.eat;
+    eatFruit();
+    setTimeout(eatFruit, 1000);
