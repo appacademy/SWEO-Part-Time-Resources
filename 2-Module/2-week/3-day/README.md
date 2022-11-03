@@ -39,35 +39,6 @@ add("banana", "orange");
 - [Mocha and Chai Quiz]
 - [Unit Tests with Mocha and Chai Practice]
 
-### TDD Discussion
-
-Testing Pyramid
-
-![testing_pyramid](./testing_pyramid.png)
-
-- Unit Tests: Smallest unit of testing. Focuses on individual functions or tasks
-  individually.
-- Integration Tests: Testing how separate pieces of code work with one another.
-- End-to-End Tests: Tests the whole application, high level functionality, close
-  to the user experience.
-
-TDD Process
-
-![tdd](./tdd.png)
-
-- Red: Write tests, watch them fail
-- Green: Write code, just enough to pass the previously written tests.
-- Refactor: Write more tests, watch them fail, pass the tests. The loop of
-  easily maintainable, fully tested, clean code.
-
-The general idea behind testing frameworks is to allow devs to write code that would *specify the behavior of a function or module or class*. We want to be able to run test code against our app code and **have confidence the code will work**.
-
-- Testing allows us to refactor with confidence. If anything breaks, you'll know. Also, you'll know **the expectations** for the module you're refactoring, so if it meets the specs, you're good.
-  - If anyone modifies your code in the future, they wont break anything important as long as they are following the test specs.
-  - Tests also make collaboration easier. Most things these days are built by teams of engineers that may not get to talk to each other.
-  - If the tests are written well they can serve as documentation for the code as well.
-
-Tests are basically the rules or specifications of how your app should behave.
 
 #### The Testing Pyramid
 
