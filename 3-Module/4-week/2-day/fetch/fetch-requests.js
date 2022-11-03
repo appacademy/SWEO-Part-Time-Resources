@@ -44,6 +44,20 @@ fetch('/products')
 
 // Your code here
 // fetch('/products').then(res => console.log(res.headers.get('Content-Type')))
-fetch('/products')
+fetch('https://dog.ceo/api/breeds/image/random')
     .then(res => res.text)
     .then(body => console.log(body))
+
+
+fetch('https://dog.ceo/api/breeds/image/random').then(res => res).then(body => console.log(body))
+
+
+
+(async () => {
+    const res = await fetch('https://dog.ceo/api/breeds/image/random')
+
+    if(res.ok){
+        const body = await res.json()
+        console.log(body)
+    }
+})()
