@@ -1,4 +1,4 @@
-// funtion broken () { // Uncaught SyntaxError: Unexpected identifier
+// function broken () { // Uncaught SyntaxError: Unexpected identifier
 //     console.log("I'm broke");
 //   }
 
@@ -16,8 +16,9 @@
 
   //ERRORS
   const err = new Error('I am an error')
+//   const err =  Error('I am an error')
 
-//   console.log(err)
+  console.log(err)
 
 //   function giveMeNumber(num) {
 //     if (typeof num !== "number") {
@@ -41,7 +42,7 @@
 //   }
 // function giveMeNumber(num) {
 //        if (typeof num !== "number") {
-//            throw new Error("Give me a number!");
+//            throw new TypeError("Give me a number!");
 //         } else {
 //       return "yay number!";
 //     }
@@ -49,9 +50,12 @@
 
 //   try{
 //       console.log(giveMeNumber("apple")); // Uncaught Error: Give me a number!
-//     } catch (error){
-//         console.error(error.name + ": " + error.message)
-//         console.log(giveMeNumber(1)); // doesn't get run because execution was stopped.
+//     } catch (e){
+//         // console.log(e)
+//         // console.error(e)
+//         console.error(e.name + ": " + e.message)
+//         console.log(e.name + ": " + e.message)
+//         console.log(giveMeNumber(1)); //Does Run
 //     } finally{
 //         console.log("This will always run")
 //     }
