@@ -180,8 +180,8 @@ describe ('User class', function () {
   });
 
 });
+```
 
-Practice Walkthrough
 
 [error types quiz]: https://open.appacademy.io/learn/part-time-canonical/week-8---context-and-tdd/error-types-quiz
 [error handling quiz]: https://open.appacademy.io/learn/part-time-canonical/week-8---context-and-tdd/error-handling-quiz
