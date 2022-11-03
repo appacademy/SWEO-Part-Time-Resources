@@ -1,0 +1,2 @@
+DELETE FROM bands
+WHERE id = 1;
