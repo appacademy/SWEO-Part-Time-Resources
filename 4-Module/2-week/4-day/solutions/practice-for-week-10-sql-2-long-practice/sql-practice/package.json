@@ -1,0 +1,15 @@
+{
+  "name": "sql-long-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sqlite3": "sqlite3"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}
