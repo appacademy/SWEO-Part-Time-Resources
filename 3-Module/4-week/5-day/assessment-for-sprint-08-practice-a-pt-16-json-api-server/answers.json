@@ -12,12 +12,12 @@
         "Content-Type": "application/json"
       },
       "statusCode": 200,
-      "body": [
+     "body": [
         {
             "colorId": true,
             "color": true
         }
-      ]
+    ]
     }
   },
   "2": {
