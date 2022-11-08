@@ -35,9 +35,6 @@ You can remove an index with the following syntax:
 DROP INDEX column_name;
 ```
 
-### Altering tables
-- Deleting a table or column does not remove the index / index name from other columns that have that index.
-
 ---
 
 ## SQL Injections
