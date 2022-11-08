@@ -144,7 +144,7 @@ Sequelize automatically generates migration files based on your models
 **Examples:**
 - **`adding new table:`** if you are starting a **new project**, you would run a **migration to create a new database table**. 
 - **`changing existing column:`** If you have an **existing project**, you might need to **run a migration to make a small change to a table, such as adding a new column**.
-- 
+
 - ---
 
 ## Plant Data With Seeds 🌱
