@@ -144,3 +144,13 @@ Sequelize automatically generates migration files based on your models
 **Examples:**
 - **`adding new table:`** if you are starting a **new project**, you would run a **migration to create a new database table**. 
 - **`changing existing column:`** If you have an **existing project**, you might need to **run a migration to make a small change to a table, such as adding a new column**.
+- 
+- ---
+
+## Plant Data With Seeds 🌱
+Think of it as **dummy data**. Seeder files are used to populate the database tables with sample data, or update the sample data as migrations are run. 
+
+This allows us to test your application to make sure that we are able to access, interact with, and manipulate our data as needed, especially as the database may evolve over time.
+
+
+Run a seeder to add or remove data from your db
