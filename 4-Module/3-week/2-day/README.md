@@ -70,8 +70,9 @@ You can avoid SQL injections by 'sanitizing' your dynamic SQL statements before 
 ## Writing SQL Using Javascript and Sequelize ORM!
 
 ## Sequelize has three major file types
-
-### Models | Migrations | Seeders
+- Models
+- Migrations
+- Seeders
 
 ---
 
