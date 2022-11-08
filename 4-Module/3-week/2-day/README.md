@@ -75,13 +75,13 @@ You can avoid SQL injections by 'sanitizing' your dynamic SQL statements before 
 
 ---
 
-## ORM (object relational mapping / mapper)
+## ORM (Object Relational Mapping / Mapper)
 **Object Relational Mapping**: is a technique that allows programmers to work with data in a relational database (such as a SQL database) using an object-oriented approach.
 - instances of an object in your code
 which are mapped directly to rows of data in the database table.
 
 **Mapper**: Library called Sequelize to work with your data directly using the JavaScript language, through a concept called Object Relational Mapping (ORM).
-- Using javascript and object oriented programming to write javascript logic, and manipulate our database, instead of SQL
+- Using JavaScript and OOP to write JavaScript logic, and manipulate our database, instead of SQL
 
 ## Database Model 
 
