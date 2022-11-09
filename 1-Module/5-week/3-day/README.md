@@ -46,15 +46,15 @@ console.log(range(4, 12));
 
 
 /*
-factorial(5, [1]) =
-  factorial(4, [1]) =
-    factorial(3, [1]) =
-      factorial(2, [1]) =
-        factorial(1, [1]) = [1,(n * 1)]
-      factorial(2, [1,1]) = [1,1,(n * 1)]
-    factorial(3, [1,1,2]) = [1,1,2,(n * 2)]
-  factorial(4, [1,1,2,6]) = [1,1,2,6,(n * 6)]
-factorial(5, [1,1,2,6,24]) = [1,1,2,6,24,(n * 24)]
+factorial(n=5, [1]) =
+  factorial(n=4, [1]) =
+    factorial(n=3, [1]) =
+      factorial(n=2, [1]) =
+        factorial(n=1, [1]) = [1,(n * 1)]
+      factorial(n=2, [1,1]) = [1,1,(n * 1)]
+    factorial(n=3, [1,1,2]) = [1,1,2,(n * 2)]
+  factorial(n=4, [1,1,2,6]) = [1,1,2,6,(n * 6)]
+factorial(n=5, [1,1,2,6,24]) = [1,1,2,6,24,(n * 24)]
 
 -> [1,1,2,6,24,120]
 
