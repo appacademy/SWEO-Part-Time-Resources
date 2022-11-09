@@ -3,6 +3,7 @@ const binary = '0b11001010'
 const binaryToDecimal = (binaryStr) => {
   // Remove the "Ob" prepended to the str
   const rawBinary = binaryStr.substring(2)
+  console.log(rawBinary)
   // Reverse the string for the next step
   const reversedBinary = rawBinary.split('').reverse().join('')
 
@@ -56,3 +57,24 @@ const hexToDecimal = (hexStr) => {
 }
 
 console.log(hexToDecimal(hex1))
+
+
+
+
+const str = 'ABC';
+console.log(str.charCodeAt(1));
+
+// //? Convert Hexadecimal to Base10 & back
+let hexNum = parseInt('0xA1', 16); // 161
+// let hexNum = parseInt('A1', 16); // 161
+console.log(hexNum);
+
+let hexStr = Number(hexNum).toString(16);  // 'a1'
+console.log(hexStr)
+
+// //? Convert Binary to Base10 & back
+let binNum = parseInt('10110', 2);      // 22
+console.log(binNum)
+let binStr = binNum.toString(2);   // '10110'
+console.log(binStr)
+
