@@ -59,10 +59,11 @@ function binaryToHexadecimal(blob) {
     //!!END
   }
 
+
   /* Base 16 to base 2 */
   function hexadecimalToBinary(blob) {
     //!!START
-    const decimal = parseInt(blob, 16);
+    const decimal = parseInt(blob.substring(2), 16);
     return `0b${decimal.toString(2)}`;
     //!!END
   }
