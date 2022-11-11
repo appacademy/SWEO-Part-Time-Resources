@@ -46,5 +46,58 @@ function decimalToBinary(blob) {
     //!!END
   }
   // console.log('Hexadecimal to decimal:')
-console.log(hexadecimalToDecimal('0x51'))    // 81
+// console.log(hexadecimalToDecimal('0x51'))    // 81
 // console.log(hexadecimalToDecimal('0x10ff'))  // 4351
+
+// SECOND PRACTICE ----------------------------------------------------------------------------------------------
+
+/* Base 2 to base 16 */
+function binaryToHexadecimal(blob) {
+    //!!START
+    const decimal = parseInt(blob.substring(2), 2);
+    return `0x${decimal.toString(16)}`;
+    //!!END
+  }
+
+  /* Base 16 to base 2 */
+  function hexadecimalToBinary(blob) {
+    //!!START
+    const decimal = parseInt(blob, 16);
+    return `0b${decimal.toString(2)}`;
+    //!!END
+  }
+
+  /* Base 10 to ASCII */
+  function decimalToAscii(blob) {
+    //!!START
+    return String.fromCharCode(blob);
+    //!!END
+  }
+
+  /* Base 2 to ASCII */
+  function binaryToAscii(blob) {
+    //!!START
+    return String.fromCharCode(blob);
+    //!!END
+  }
+
+  /* Base 16 to ASCII */
+  function hexadecimalToAscii(blob) {
+    //!!START
+    return String.fromCharCode(blob);
+    //!!END
+  }
+
+  /* ASCII to base 10 */
+  function asciiToDecimal(blob) {
+    //!!START
+    const charCodes = [];
+
+    for (let i = 0; i < blob.length; i++) {
+        charCodes.push(blob.charCodeAt(i));
+    }
+
+    return charCodes;
+    //!!END
+  }
+  console.log(asciiToDecimal("ABC"))
