@@ -81,4 +81,4 @@ let num = parseInt('0xa1', 16); // 161
 let str = num.toString(16); // 'a1'
 ```
 
-![Nummeric Conversion Chart](./image.png)
+ <img src="https://i.ibb.co/QQ0qkGG/image.png" width="700">
