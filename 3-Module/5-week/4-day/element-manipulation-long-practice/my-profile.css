@@ -1,0 +1,18 @@
+h1.my-name {
+  color: green;
+  padding: 40px 20px;
+}
+
+ul.my-details {
+  border: 1px solid gray;
+  padding: 40px;
+}
+
+li.detail {
+  list-style-type: square;
+  padding: 10px;
+}
+
+li.detail:hover {
+  background-color: lightgray;
+}
