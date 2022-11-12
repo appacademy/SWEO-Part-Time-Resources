@@ -23,6 +23,7 @@ window.addEventListener("DOMContentLoaded", () => {
     "I absolutely love to cook",
     "Catch me on da golfcourse how bout dat",
   ];
+  
   myDetailsArr.forEach((detail) => {
     const li = document.createElement("li");
     li.setAttribute("class", "details");
