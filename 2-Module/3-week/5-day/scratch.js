@@ -1,21 +1,21 @@
-const sum = (nums) => {
-  const sums = [0];
-  for (let i = 0; i < nums.length; i++) {
-    let num = nums[i];
-    sums.push(sums[sums.length - 1] + num);
-  }
-  return sums[sums.length - 1];
-};
+function binaryToString(binaryBlob) {
+  // Your code here
+let str = ''
 
-const sum = (nums) => {
-  return nums.reduce((sum, num) => sum + num);
-};
+//grab 8 chars from the blob
+for (let i = 0; i < binaryBlob.length; i += 8){
+  let binStr = binaryBlob.slice(i, i + 8)
+  // console.log(binStr)
+//first go go from bin to dec
+let dec = parseInt(binStr, 2)
+// console.log(dec)
+//the go ascii fromCharCode
+let ascii = String.fromCharCode(dec)
+// console.log(ascii)
 
-const sum = (nums) => {
-  for (let i = 1; i < nums.length; i++) {
-    nums[i] = nums[i - 1] + nums[i];
-  }
-  return nums[nums.length - 1];
-};
+str += ascii
 
-console.log(sum([1, 2, 3, 4, 5]));
+}
+
+return str
+}
