@@ -1,0 +1,8 @@
+{
+  "short_name": "Redux-Actions-Reducer",
+  "name": "Redux Actions and Reducer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

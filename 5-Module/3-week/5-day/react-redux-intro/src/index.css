@@ -1,0 +1,47 @@
+/* TODO Add site wide styles */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 10px;
+}
+
+h1 {
+  font-family: 'Abril Fatface', serif;
+  letter-spacing: 3px;
+}
+
+
+a {
+  color: rgb(77, 74, 74);
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+li {
+  color: rgb(77, 74, 74);
+}
+
+.active {
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  font-size: 1.2em;
+  background: rgb(240, 240, 179);
+  padding: 1px;
+}
+
