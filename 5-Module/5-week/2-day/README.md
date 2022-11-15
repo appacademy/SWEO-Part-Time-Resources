@@ -40,10 +40,9 @@ export const RECEIVE_FRUITS = 'RECEIVE_FRUITS';
 export const fetchFruits = () => async (dispatch) => {
   const res = await fetch(`/fruits`); // get the fruits at `/fruits`
   const data = await res.json();
-  res.data = data;
   if (res.ok) { // if response status code is less than 400
     // dispatch the receive fruits POJO action
-    dispatch(receiveFruits(data.fruits));
+    dispatch(receiveFruits(data));
   } else {
     // if response status code is 400 or greater, throw the response as an error
     throw res;
