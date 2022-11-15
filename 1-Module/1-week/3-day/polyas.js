@@ -1,4 +1,0 @@
-/* 
-Write a function called printer that intakes two strings
-and console.logs both strings on one line
-*/
