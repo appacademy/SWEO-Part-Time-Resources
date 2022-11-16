@@ -16,6 +16,8 @@ generated for each module, week, and day of your time at App Academy.
 The top level folder structure should look like this(the `{}` are situational
 file names):
 
+Make sure you read the output of the curl command and follow the given instructions!
+
 ```bash
 appacademy-{cohortID}
 ├── 1-Module
