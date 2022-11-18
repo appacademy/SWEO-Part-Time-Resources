@@ -19,3 +19,5 @@ str += ascii
 
 return str
 }
+console.log(Number(0b1010))
+console.log(parseInt(1010, 2))
