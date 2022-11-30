@@ -11,8 +11,8 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? Yes
+//Is this a valid binary SEARCH tree (BST)? Yes
      10
    /   \
   5     12
@@ -21,8 +21,8 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? Yes
+//Is this a valid binary SEARCH tree (BST)? No
      5
    /   \
   6     9
@@ -63,9 +63,66 @@ class TreeNode {
 
 
   */
-
+console.log("a" > "b")
 
 
 
   //IS THE TREE A BST?
 
+
+  //SOLUTION:
+  class BinarySearchTree {
+    constructor() {
+      this.root = null;
+    }
+
+    insert(val, currentNode = this.root) {
+      const newNode = new TreeNode(val);
+
+      if (currentNode === null) this.root = newNode;
+      else if (currentNode.val > val) {
+        if (currentNode.left === null) currentNode.left = newNode;
+        else this.insert(val, currentNode.left);
+      } else if (currentNode.val < val) {
+        if (currentNode.right === null) currentNode.right = newNode;
+        else this.insert(val, currentNode.right);
+      }
+    }
+//ITERATIVE INSERT:
+    // insert(val) {
+    //   const newNode = new TreeNode(val);
+    //   let currentNode = this.root;
+
+    //   if (!this.root) {
+    //     this.root = newNode;
+    //   } else {
+    //     while (newNode !== currentNode) {
+    //       if (val < currentNode.val) {
+    //         if (!currentNode.left) {
+    //           currentNode.left = newNode;
+    //           return;
+    //         }
+    //         currentNode = currentNode.left;
+    //       } else if (val > currentNode.val) {
+    //         if (!currentNode.right) {
+    //           currentNode.right = newNode;
+    //           return;
+    //         }
+    //         currentNode = currentNode.right;
+    //       }
+    //     }
+    //   }
+    // }
+
+    // search(val, currentNode = this.root) {
+    search(val) {
+      let currentNode = this.root;
+
+      while (currentNode) {
+        if (currentNode.val === val) return true;
+        if (currentNode.val > val) currentNode = currentNode.left;
+        else currentNode = currentNode.right;
+      }
+
+      return false;
+    }
