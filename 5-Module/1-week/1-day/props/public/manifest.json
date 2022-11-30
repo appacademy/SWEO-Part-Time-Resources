@@ -1,0 +1,8 @@
+{
+  "short_name": "FC-Props",
+  "name": "Functional Components Props",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
