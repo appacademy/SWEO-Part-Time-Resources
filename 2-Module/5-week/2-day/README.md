@@ -2,7 +2,6 @@
 
 ## `Trees and Graphs`
 
-`Trees` are a common data structure in computer science. You can think of them like a `singly-linked list`, except instead of having a single `.next` node, each node has one or more `child` nodes.
 
 ### `Graphs`
 
@@ -16,6 +15,8 @@ A `graph` is a collection of nodes and edges between those nodes. Each circle is
 - Example 5 is a `graph`, but it's not a `linked list` or a `tree` because it has a cycle.
 
 ### `Trees`
+
+`Trees` are a common data structure in computer science. You can think of them like a `singly-linked list`, except instead of having a single `.next` node, each node has one or more `child` nodes.
 
 A `tree` is a `graph` with no cycles. A cycle is a path that starts and ends at the same node.
 
