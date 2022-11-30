@@ -11,8 +11,8 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? Yes
+//Is this a valid binary SEARCH tree (BST)? Yes
      10
    /   \
   5     12
@@ -21,8 +21,8 @@ Properties of a binary SEARCH tree (BST):
 
 
 
-//Is this a valid binary tree?
-//Is this a valid binary SEARCH tree (BST)?
+//Is this a valid binary tree? Yes
+//Is this a valid binary SEARCH tree (BST)? No
      5
    /   \
   6     9
@@ -68,4 +68,53 @@ class TreeNode {
 
 
   //IS THE TREE A BST?
+console.log(b <a)
+
+class BinarySearchTree {
+
+    constructor() {
+      // Your code here
+      this.root = null;
+    }
+
+    insert(val, currentNode=this.root) {
+
+      const newNode = new TreeNode(val);
+
+      if(currentNode === null){
+        this.root = newNode;
+        return;
+      }
+
+      if(currentNode.val > val){
+        if(currentNode.left === null){
+          currentNode.left = newNode
+          return;
+        } else {
+          this.insert(val, currentNode.left)
+        }
+      }
+
+      if(currentNode.val < val){
+        if(currentNode.right === null){
+          currentNode.right = newNode
+          return;
+        } else {
+          this.insert(val, currentNode.right)
+        }
+      }
+
+    }
+
+    search(val) {
+      // Your code here
+      let currentNode = this.root;
+
+      while(!currentNode === null){
+        if(currentNode.val === val) return true;
+        if(currentNode.val > val) currentNode = currentNode.left;
+        else currentNode = currentNode.right
+      }
+      return false
+    }
 
