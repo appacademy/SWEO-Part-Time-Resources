@@ -1,72 +1,110 @@
 // POJOs (Plain Old JavaScript Objects)
-// let car = {
-//   make: 'Toyota',
-//   model: 'Celica',
-//   year: 2001,
-//   isInsured: true,
-//   trunkStuff: {},
-//   variable: 'here it is',
-//   timeTwo: (num) => { 
-//     return num * 2;
-//   },
-//   arr: [1, 2, 3]
-// };
-// console.log(car.arr[1])
 
-// let variable = [1, 2, 3];
-// variable[num](4);
-// console.log(car[model]);
+let car = {
+  make: 'Toyota',
+  model: 'Highlander',
+  year: 2002,
+  isInsured: false,
+  trunkStuff: {
+    maps: ['Ohio', 'Kansas', 'Arizona']
+  }
+}
+
+let obj = {}
+
+obj.first = 1;
+obj['second'] = 2;
 
 // console.log(car);
-// console.log( car.make );
-// console.log( car[variable] );
-
-// car['engine'] = 'k9'
+car.engine = '2.5 v6'
+car['tires'] = 'black ones'
 // console.log(car);
-// console.log( car.variable )
+car.trunkStuff.spare = true;
+car.trunkStuff.nevada = 'Nevada'
+let maps = car.trunkStuff.maps;
+// console.log(car)
 
-// console['log']('hello');
-// console.log( car.timeTwo(2) );
+let arr = [];
 
-//------------------------------------
+arr.push('hi');
+arr['push']('hi');
 
-// let keys = Object.keys( car );
-// let vals = Object.values( car );
-// let entries = Object.entries( car );
-// console.log( keys, vals );
-// console.log(entries);
-// if (keys.includes(vals)) console.log(true)
+let newKey = 'james';
 
-// if ( car[variable] !== undefined ) console.log(true);
+obj[newKey] = 'Harden';
+obj.newKey = 'Eldredge';
+// console.log(obj);
+ // ------------------------------------------
 
-//----------------------------------
+let keys = Object.keys(car); //[]
+let vals = Object.values(car); //[]
+// console.log(keys, vals);
 
-// for (let i in car) {
-//   console.log( i, car[i] );
-// }
-// car.trunkStuff.tire = 'big one';
-// car.trunkStuff.maps = ['Ohio State Map', 'Kansas Highways']
-// console.log(car.trunkStuff)
+let entries = Object.entries(obj) //[[key, values],[],[]]
+// console.log( entries );
 
-// object to keep track of the number of letters in a string
-let sentence = 'The Quick Brown Fox Jumped Over The Lazy Dog';
+// console.log( obj );
+// --------------------------------------------
+// if ( car.headlight !== undefined ) console.log( true );
+// console.log( car.headlight )
+// if ( !('headlight' in car) ) console.log( true );
+// --------------------------------------------
 
-const letterCounter = (string) => {
-  // let array = string.split(' ').join('').split('');
-  let counter = {};
-  // console.log( counter['T'] )
+// for...in 
+for (let key in car) {
+  // console.log( key );
+  // if (typeof car[key] === Object) {
+  //   for (let innerkey in key) {
+  //     console.log(key[innerkey]);
+  //   }
+  // }
+}
 
-  for (let i = 0; i < string.length; i++) {
-    if ( counter[ string[i] ] ) {
-      counter[ string[i] ]++;
+for (let key in car.trunkStuff) {
+  // console.log(key);
+}
+// -------------------------------------------
+
+const times2 = num => num * 2;
+// console.log( typeof times2 )
+obj.timesTwo = (num) => {
+  return num * 2;
+}
+
+// console.log(obj.timesTwo(3))
+
+
+// --------------------------------------------------
+
+// function, takes in a string, returns an object that counts the letters of the string
+// function
+ // res object = {}
+ // iterate over string
+  // get char
+  // if char is a key in res
+    // increment up
+  // add char as key in res
+    // set to val of 1
+ //return res
+
+let test = 'abcdefghiiiiiiiii'
+
+const strCount = str => {
+  let res = {}; // a: 4
+
+  for (let i = 0; i < str.length; i++) {
+    let char = str[i];
+
+    // res[char] !== undefined
+    // char in res
+    if ( res[char] ) {
+      res[char] += 1;
     } else {
-      counter[ string[i] ] = 1
+      res[char] = 1;
     }
   }
 
-  delete counter[' '];
-
-  return counter;
+  return res;
 }
 
-console.log( letterCounter(sentence) );
+// console.log( strCount(test) );
