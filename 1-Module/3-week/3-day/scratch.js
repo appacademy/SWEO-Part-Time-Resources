@@ -57,10 +57,17 @@ const letterCounter = (string) => {
   // console.log( counter['T'] )
 
   for (let i = 0; i < string.length; i++) {
-    if ( counter[ string[i] ] ) {
-      counter[ string[i] ]++;
+    // if ( counter[ string[i] ] ) {
+    //   counter[ string[i] ]++;
+    // } else {
+    //   counter[ string[i] ] = 1
+    // }
+
+    let char = string[i];
+    if ( char in counter ) {
+      counter[ char ]++;
     } else {
-      counter[ string[i] ] = 1
+      counter[ char ] = 1
     }
   }
 
