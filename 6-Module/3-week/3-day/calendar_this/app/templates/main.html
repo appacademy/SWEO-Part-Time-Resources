@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>My Calendar Thisisisisis</title>
+    </head>
+    <body>
+        <h1>Hey this sure looks like a working calendar!</h1>
+        <h2>These are the names of all upcoming appointments:</h2>
+        {% for el in rows %}
+        <h3>{{ el[1] }}</h3>
+        {% endfor %}
+    </body>
+</html>
