@@ -20,7 +20,7 @@ Routers are commonly stored in a "routes" folder. Within that folder you create 
 ```js
 // routes/eldenRing.js
 
-// url: localhost:5000/eldenRing
+// url: localhost:5000/albums
 router.get('/', (req, res) => {});
 
 // url: localhost:5000/albums/2
@@ -33,7 +33,7 @@ Finally, in app.js, we import our routers and `app.use()` them. The syntax is si
 // app.js
 const express = require('express');
 
-const albums = require('./routes/eldenRing');
+const albums = require('./routes/albums');
 
 const app = express();
 
