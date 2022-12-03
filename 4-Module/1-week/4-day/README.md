@@ -18,9 +18,9 @@ module.exports = router;
 Routers are commonly stored in a "routes" folder. Within that folder you create a file to handle your routes. To create a route, do as we normally would with app.methodName(), but use router instead.
 
 ```js
-// routes/eldenRing.js
+// routes/albums.js
 
-// url: localhost:5000/eldenRing
+// url: localhost:5000/albums
 router.get('/', (req, res) => {});
 
 // url: localhost:5000/albums/2
@@ -33,7 +33,7 @@ Finally, in app.js, we import our routers and `app.use()` them. The syntax is si
 // app.js
 const express = require('express');
 
-const albums = require('./routes/eldenRing');
+const albums = require('./routes/albums');
 
 const app = express();
 
