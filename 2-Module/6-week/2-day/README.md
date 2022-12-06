@@ -1,44 +1,59 @@
-# M2W3D3
+# `M2W6D2`
 
-## Graphs
+## `Graphs Overview`
 
-### What is a graph?
+All of the `node-and-pointer` data structures we've learned about recently (`linked lists`, `binary trees`, etc.) are forms of **`graphs`**!
 
-**...EVERYTHING!**
+To solve `graph` problems you'll use `arrays`, `hash tables`, `sets`, `stacks`, `queues`, `recursion`, `breadth` and `depth-first` search and more. They can be tricky, and as such will show up in advanced coding interviews (**FAANG companies love these**).
 
-- Linked Lists
-- Trees
-- anything with a node and a pointer!
+`Graphs`:
 
-### Graph Vocabulary
+- are an abstract data type
+- represent a collection of `nodes` and `edges`
+- each `node` represents one or more values
+- unlike `trees`, do not have to start from a `root node` and can have any number of `edges`.
 
-- Vertex: A node in the graph. Vertex and node can be used interchangeably
-- Directed edge: A one-way connection from one vertex to another
-- Undirected edge/Bidirectional edge: A two-way connection between two vertices
-  that can be traversed in either direction
-- Edge weight: The cost of traversing an edge. (This would be equivlent to the
-  lines/edges in the whole graph having lengths)
-- Cyclic/acyclic: A cyclic graph is a graph with at least 1 cycle, or the
-  potential to have a cycle
+### `Directed vs Undirected`
 
----
+If a `graph` diagram has arrows representing the `edges`, it's a `directed graph`, otherwise it's an `undirected graph`.
 
-### Adjacency Lists
+`Undirected`:
 
-![graphs](https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/2022-Jun-E/2-Module/6-week/3-day/graphs.png)
+- each `edge` represents a 2-way relationship
+
+`Directed`:
+
+- each `edge` only goes in one direction
+
+### `Cyclic vs Acyclic`
+
+The main difference between `trees` and `graphs` are that `graphs` can have `cycles` while `trees` cannot. Traversals can be tricky because `cycles` lead to infinite loops if not properly tracked.
+
+### `Weighted vs Unweighted`
+
+`Edges` can have *weight* to them. The weight is a number that can represent any extra data we need for that `edge`. For instance in a traffic `graph` the weight may indicate the time it takes to traverse from end to end. (if traffic is heavy or the speed limit is lower the weight of that `edge` will be higher). In an `unweighted graph`, every `edge` has a weight of 1.
+
+### `Adjacency Lists`
+
+The most standard way to represent a `graph` in code is an **`adjacency list`**. This is implemented as *an `object` with a `key` for each `node` with a `value` of an `array` containing all of the `nodes` it points to*.
+
+<!-- ![`graph` example](./lecture/pics/`graph`Example.png) -->
+<img width='500' src='https://github.com/appacademy/SWEO-Part-Time-Resources/raw/2022-May-E/2-Module/6-week/3-day/lecture/pics/graphExample.png' ref='bi-directional graph example'>
+
+For the above `graphs` the `adjacency lists` would be:
 
 ```js
 const graph1 = {
   T: ['V'],
   U: ['V'],
   V: [],
-}
+};
 
 const graph2 = {
   X: ['Y'],
   Y: ['Z'],
   Z: ['X'],
-}
+};
 
 const graph3 = {
   A: ['B', 'C', 'E'],
@@ -47,13 +62,25 @@ const graph3 = {
   D: [],
   E: ['A'],
   F: ['E'],
-}
+};
 ```
 
-![undirected](https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/2022-Jun-E/2-Module/6-week/3-day/undirected.svg)
+`Adjacency lists` are pretty simple compared to some other things we've worked with!
+
+- Unlike `binary search trees`, `graphs` don't have an order to their children.
+
+Since we can't guarantee an order, and we know that there cannot be any duplicate `edges`, you could use a `set` to represent adjacencies instead of an `array`.
+
+> **Using this format, we can check if 2 `nodes` are `neighbors` in `O(1)` time instead of `O(n)` with an `array`! If your input is very large, this is the most efficient way, otherwise an `array` will work fine.**
+
+#### `Bi-directional and Undirected edges`
+
+In this case the `edges` are represented by two directional `edges` in an `adjacency list`.
+
+<!-- ![bi-directional `graph`](./lecture/pics/bidirectional`Graph`Example.png) -->
+<img width='400' src='https://github.com/appacademy/SWEO-Part-Time-Resources/raw/2022-May-E/2-Module/6-week/3-day/lecture/pics/bidirectionalGraphExample.png' ref='bi-directional graph example'>
 
 ```js
-//an undirected graph may look like this:
 const undirected = {
   1: [2, 5],
   2: [1, 3, 5],
@@ -61,43 +88,5 @@ const undirected = {
   4: [3, 5, 6],
   5: [1, 2, 4],
   6: [4],
-}
+};
 ```
-
----
-
-## Traversing Graphs (Example Patterns)
-
-### BFS
-
-1. Create a queue and enqueue the starting node
-2. Create a set to store visited nodes
-3. While the queue is not empty, repeat steps 4-6
-4. Dequeue the first node
-5. DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
-6. For each unvisited neighbor, add it to the visited nodes and to the back of
-   the queue
-
-### DFS
-
-1. Create a stack and push the starting node
-2. Create a set to store visited nodes, and add the starting node
-3. While the stack is not empty, repeat steps 4-6
-4. Pop the node on the top of the stack.
-5. For example, add it to a running total, print it, or save it in an array
-6. For each unvisited neighbor, add it to the visited nodes and to the top
-   of the stack.
-
----
-
-## REPL Problems
-
-Feel free to copy these problems into VS-Code for a better working environment if you
-would like to.
-
-Please take your time to really understand the pattern of these problems,
-reference the readings, and ask questions!
-
-Think of today as an extended study day/intro to graphs.
-
----
