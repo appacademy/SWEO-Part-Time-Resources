@@ -29,10 +29,6 @@ If a `graph` diagram has arrows representing the `edges`, it's a `directed graph
 
 The main difference between `trees` and `graphs` are that `graphs` can have `cycles` while `trees` cannot. Traversals can be tricky because `cycles` lead to infinite loops if not properly tracked.
 
-### `Weighted vs Unweighted`
-
-`Edges` can have *weight* to them. The weight is a number that can represent any extra data we need for that `edge`. For instance in a traffic `graph` the weight may indicate the time it takes to traverse from end to end. (if traffic is heavy or the speed limit is lower the weight of that `edge` will be higher). In an `unweighted graph`, every `edge` has a weight of 1.
-
 ### `Adjacency Lists`
 
 The most standard way to represent a `graph` in code is an **`adjacency list`**. This is implemented as *an `object` with a `key` for each `node` with a `value` of an `array` containing all of the `nodes` it points to*.
