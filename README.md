@@ -50,5 +50,3 @@ If you ever change cohorts, contact your cohort lead for a new *cohortID* and
 run the file structure setup command again with your new ID. You will not lose
 any of your previous work. A new *appacademy-{cohortID}* folder will be created
 for your new cohort.
-
-:)
