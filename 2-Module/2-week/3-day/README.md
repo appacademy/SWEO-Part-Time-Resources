@@ -45,6 +45,12 @@ console.log(add(1,4))
 - Error Handling Quiz
 - Error Handling Practice
 
+---
+
+### Error Handling Practice Walkthrough
+
+---
+
 ## TDD
 
 ---
@@ -72,10 +78,19 @@ TDD Process
 
 ---
 
-### TDD Practices (Paired)
+### TDD Practices (Paired, 45m)
 
 - Testing Pyramid Quiz
 - TDD Quiz
 - Mocha and Chai Quiz
 - Unit Tests with Mocha and Chai Practice
-- TDD Style Project (Paired)
+
+---
+
+### Unit Tests with Mocha and Chai Practice Walkthrough
+
+---
+
+### TDD Style Project (Paired)
+
+---
