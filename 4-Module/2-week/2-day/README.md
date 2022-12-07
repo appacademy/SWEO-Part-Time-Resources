@@ -119,8 +119,7 @@ WHERE name = 'Max'
 ```
 
 ## Today
-```txt
-  Practice reading .sql Files
-  sql and express practice
-  basic sql long practice
-```
+
+  - Practice reading .sql Files
+  - sql and express practice
+  - basic sql long practice
