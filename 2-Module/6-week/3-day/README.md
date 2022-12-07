@@ -1,85 +1,128 @@
-# M2W3D3
+# M2W6D4
 
-## Graphs
+## Solving Matrix `Graph` Problems
 
-### What is a graph?
+**`3 Steps to solving almost any `graph` problem:`**
 
-**...EVERYTHING!**
+1. Identify the type of `graph`
+2. Implement the getNeighbors function
+3. Traverse the `graph`
 
-- Linked Lists
-- Trees
-- anything with a node and a pointer!
+## Matrices
 
-### Graph Vocabulary
+A `graph` is essentially an ADT used to represent relationships among objects (vertices). An Adjacency list is a way of representing a `graph` with an object.
 
-- Vertex: A node in the graph. Vertex and node can be used interchangeably
-- Directed edge: A one-way connection from one vertex to another
-- Undirected edge/Bidirectional edge: A two-way connection between two vertices
-  that can be traversed in either direction
-- Edge weight: The cost of traversing an edge. (This would be equivlent to the
-  lines/edges in the whole graph having lengths)
-- Cyclic/acyclic: A cyclic graph is a graph with at least 1 cycle, or the
-  potential to have a cycle
+A `matrix` is a way of representing a `graph` as a 2d `array`. The matrix includes `nodes` (the actual elements in the `arrays`) and `edges` (represented as adjacent `nodes` within the 2d `array`).
 
-### Adjacency Lists
-
-![graphs](https://s3-us-west-1.amazonaws.com/appacademy-open-assets/data_structures_algorithms/graphs/images/graphs.png)
+- To access a `node` (`vertex`) you key into the outer `array` first, then the inner `array`. (matrix[row][col])
 
 ```js
-const graph1 = {
-  T: ['V'],
-  U: ['V'],
-  V: [],
-}
-
-const graph2 = {
-  X: ['Y'],
-  Y: ['Z'],
-  Z: ['X'],
-}
-
-const graph3 = {
-  A: ['B', 'C', 'E'],
-  B: [],
-  C: ['B', 'D'],
-  D: [],
-  E: ['A'],
-  F: ['E'],
-}
-```
-
-![undirected](https://appacademy-open-assets.s3-us-west-1.amazonaws.com/Modular-Curriculum/content/computer-science/images/basic_graph.svg)
-
-```js
-//an undirected graph may look like this:
-const undirected = {
+// Adjacency List - represents relationships as an object data type
+const adjacencyList = {
   1: [2, 5],
   2: [1, 3, 5],
   3: [2, 4],
   4: [3, 5, 6],
   5: [1, 2, 4],
   6: [4],
-}
+};
+    // `Node` 1 has two neighbor `nodes` [2, 5]
+
+// Matrix - represents relationships as a two-dimensional (2-D) `array` data type
+const matrix = [
+    [ 0, 1, 0, 0, 1 ],
+    [ 1, 0, 0, 0, 1 ],
+    [ 1, 1, 0, 1, 1 ],
+    [ 0, 1, 1, 0, 0 ],
+    [ 0, 0, 0, 0, 0 ]
+];
+    // The [0,0] `node` has three neighbor `nodes` [ [0,1], [1,0], [1,1] ],
+    // if we are counting diagonals as valid neighbors
 ```
 
-### Traversing Graphs
+> It's important when choosing your variables for the indices to use **row** and **col** *instead of i and j or x and y* because you **WILL** get confused. matrix[row][col] is easier to understand than matrix[i][j] or matrix[x][y].
 
-#### BFS
+### 3 Steps
 
-1. Create a queue and enqueue the starting node
-2. Create a set to store visited nodes
-3. While the queue is not empty, repeat steps 4-6
-4. Dequeue the first node
-5. DO THE THING THAT YOU NEED TO FOR THE DEQUEUED NODE
-6. For each unvisited neighbor, add it to the visited nodes and to the back of
-   the queue
+**`1. Identify the type of graph`**
 
-#### DFS
+Ask yourself the following questions when trying to identify the type of `graph`:
 
-1. Create a stack and push the starting node
-2. Create a set to store visited nodes, and add the starting node
-3. While the stack is not empty, repeat steps 4-6
-4. Pop the node on the top of the stack.
-5. For example, add it to a running total, print it, or save it in an array
-6. For each unvisited neighbor, add it to the visited nodes and to the top
-   of the stack.
+- What is the problem asking you to do?
+- What does the `matrix` represent?
+- What does each `node` represent?
+- What relationship do the `edges` represent?
+- What is considered a valid neighbor, in the context of this problem?
+- Is this a search or traversal problem?
+- Does this require a `depth-first` or `breadth-first` approach?
+
+**`2. Implement the getNeighbors function`**
+
+Here is the psuedocode for a getNeighbors function for an adjacency `matrix`:
+
+```js
+const matrix = [
+[ 0, 1, 0, 0, 1 ],
+[ 1, 0, 0, 0, 1 ],
+[ 1, 1, 0, 1, 1 ],
+[ 0, 1, 1, 0, 0 ],
+[ 0, 0, 0, 0, 0 ]
+];
+
+function getNeighbors(`node`, matrix) {
+    // Create an `array` to hold the valid neighbors
+
+    // UP:
+        // Identify the `node` above the current `node`, if it exists
+        // Push that `node` into the new `array`
+
+    // DOWN:
+        // Identify the `node` below the current `node`, if it exists
+        // Push that `node` into the new `array`
+
+    // LEFT:
+        // Identify the `node` to the left of the current `node`, if it exists
+        // Push that `node` into the new `array`
+
+    // RIGHT:
+        // Identify the `node` to the right of the current `node`, if it exists
+        // Push that `node` into the new `array`
+
+    // Return the neighbors `array`
+}
+
+// returns the correct neighbors from an internal `node`
+getNeighbors([2,2], matrix) // returns [ [1,2], [3,2], [1,2], [3,2] ]
+
+// returns the correct neighbors from a corner `node`
+getNeighbors([0,0], matrix) // returns [ [1,0], [0,1] ]
+
+// returns the correct neighbors from an `edge` `node`
+getNeighbors([2,0], matrix) // returns [ [1,0], [3,0], [2,1] ]
+```
+
+#### Let's think about how to achieve these steps
+
+- How would you check to see if there is a `node` above the current `node`?
+  - We have our current `node`'s row and column. So to find the `node` above the current `node`, we just need to decrement the row by 1. The column will stay the same.
+- How would you check to see if there is a `node` to the right of the current `node`?
+  - the `node` to the right would be in the same row, but it's column would be 1 greater than the current `node`'s column.
+
+> Make sure you plan accordingly for corners and `edges`. Check that the index of the neighbor exists in your conditionals.
+
+**`3. Traverse the graph`**
+
+psuedocode:
+
+- Create a `queue` and enqueue the starting `node`
+- Create a `set` to store visited `nodes`
+- While the `queue` is not empty, repeat steps 4-6
+- Dequeue the first `node` and check if it's been visited
+- If not, mark it as visited and DO THE THING
+- Put all its neighbors in the back of the `queue`
+
+Traversing is going to be pretty much the same as we've been doing. **HOWEVER**, when storing your `matrix` locations in a `set`, you **MUST** use a **string representation** of the `matrix` location to guarantee the comparison when checking if the item exists in your set will be correct.
+
+```js
+console.log([1,2].toString()) // returns '1,2'
+```
