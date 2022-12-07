@@ -1,4 +1,4 @@
---!!START
+
 DROP TABLE IF EXISTS parties;
 DROP TABLE IF EXISTS performance_reviews;
 DROP TABLE IF EXISTS relationships;
@@ -190,4 +190,3 @@ INSERT INTO relationships
   (a_employee_id, b_employee_id)
 VALUES
   (4, 9);
---!!END

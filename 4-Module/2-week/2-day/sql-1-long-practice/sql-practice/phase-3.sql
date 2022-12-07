@@ -1,4 +1,4 @@
---!!START
+
 -- Rachel joins with a phone number
 INSERT INTO customers
   (name, phone)
@@ -205,4 +205,3 @@ INSERT INTO coffee_orders DEFAULT VALUES;
 UPDATE customers
 SET email = 'p_as_in_phoebe@friends.show'
 WHERE name = 'Phoebe';
---!!END

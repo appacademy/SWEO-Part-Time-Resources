@@ -1,4 +1,4 @@
---!!START
+
 DROP TABLE IF EXISTS customers;
 DROP TABLE IF EXISTS coffee_orders;
 
@@ -16,4 +16,4 @@ CREATE TABLE coffee_orders (
   is_redeemed BOOLEAN DEFAULT 0,
   ordered_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
---!!END
+
