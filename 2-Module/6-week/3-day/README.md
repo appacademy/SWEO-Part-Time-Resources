@@ -10,7 +10,7 @@
 
 ## Matrices
 
-A `graph` is essentially an ADT used to represent relationships among objects (vertices). An Adjacency list is a way of representing a `graph` with an object.
+An Adjacency list is a way of representing a `graph` with an object.
 
 A `matrix` is a way of representing a `graph` as a 2d `array`. The matrix includes `nodes` (the actual elements in the `arrays`) and `edges` (represented as adjacent `nodes` within the 2d `array`).
 
