@@ -4,26 +4,28 @@
 
 ---
 
-### Error Handling Practices (40m)
-
-- Error Types Quiz
-- Error Handling Quiz
-- Error Handling Practice
-
 ### Error Handling Discussion
 
 - Purpose of Error Handling
 
 ```js
+//Doesn't throw an error, but probably should
 const add = (num1, num2) => num1 - num2;
-add("banana", "orange");
+console.log(add("banana", "orange"));
 ```
 
 ```js
+
+try {
+  //code to attempt to run
+} catch(errorObj) {
+  //code to execute if the try block fails
+}
+
 const add = (num1, num2) => {
   try {
     if(typeof num1 === 'number' && typeof num2 === 'number'){
-      return num1 - num2;
+      return num1 + num2;
     } else {
       throw new TypeError('Type Error: Invalid Inputs')
     }
@@ -31,19 +33,21 @@ const add = (num1, num2) => {
     console.error(e.message);
   }
 };
-console.log(add("banana", "orange"));
+add("banana", "orange");
+console.log(add(1,4))
 ```
+
+---
+
+### Error Handling Practices (Solo, 40m)
+
+- Error Types Quiz
+- Error Handling Quiz
+- Error Handling Practice
 
 ## TDD
 
 ---
-
-### TDD Practices (1h)
-
-- Testing Pyramid Quiz
-- TDD Quiz
-- Mocha and Chai Quiz
-- Unit Tests with Mocha and Chai Practice
 
 ### TDD Discussion
 
@@ -66,4 +70,12 @@ TDD Process
 - Refactor: Write more tests, watch them fail, pass the tests. The loop of
   easily maintainable, fully tested, clean code.
 
-## TDD Style Project (Paired)
+---
+
+### TDD Practices (Paired)
+
+- Testing Pyramid Quiz
+- TDD Quiz
+- Mocha and Chai Quiz
+- Unit Tests with Mocha and Chai Practice
+- TDD Style Project (Paired)
