@@ -91,6 +91,9 @@ console.log(num);
 
 //NaN
 
+/*
 let num;
 
 console.log(num + 3);
+
+*/
