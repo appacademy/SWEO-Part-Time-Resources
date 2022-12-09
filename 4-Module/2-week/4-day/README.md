@@ -1,5 +1,3 @@
-# This is SQLite weight babyyyyy
-
 ## Aggregates
 
 - aggregate functions allow developers to run basic mathematical calculations within a query.
