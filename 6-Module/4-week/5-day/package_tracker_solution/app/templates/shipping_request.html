@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Send A Package</title>
+    </head>
+    <body>
+        <form method="POST" action="">
+            {{form.hidden_tag()}}
+            <div>{{form.sender_name.label}} {{form.sender_name()}}</div>
+            <div>{{form.recipient_name.label}} {{form.recipient_name()}}</div>
+            <div>{{form.origin.label}} {{form.origin()}}</div>
+            <div>{{form.destination.label}} {{form.destination()}}</div>
+            <div>{{form.express.label}} {{form.express()}}</div>
+            <div>{{form.submit()}}</div>
+            <div>{{form.cancel()}}</div>
+        </form>
+    </body>
+</html>
