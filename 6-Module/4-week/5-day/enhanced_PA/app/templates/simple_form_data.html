@@ -1,0 +1,7 @@
+{% extends "main_page.html" %} {% block content %} {% for person in people %}
+<div>{{ person.name }}</div>
+<div>{{ person.age }}</div>
+<div>{{ person.bio }}</div>
+<div>{{ person.birth_day }}</div>
+<div>{{ person.fav_language }}</div>
+{% endfor %} {% endblock %}

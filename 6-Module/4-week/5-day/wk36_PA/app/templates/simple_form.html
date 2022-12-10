@@ -1,0 +1,9 @@
+{% extends "main_page.html" %} {% block content %}
+<form method="post" action="/simple-form">
+    {{ form.csrf_token }}
+    <div>{{form.name.label}} {{form.name()}}</div>
+    <div>{{form.age.label}} {{form.age()}}</div>
+    <div>{{form.bio.label}} {{form.bio()}}</div>
+    <div>{{form.submit()}}</div>
+</form>
+{% endblock %}
