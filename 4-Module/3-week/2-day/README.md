@@ -6,7 +6,7 @@
 
 ---
 
-## Insta Model? 🤢 Database Model 😏
+## Models
 
 A 'model' for the data in our tables
 
@@ -51,7 +51,7 @@ Later we'll learn to create rows in our table using Sequelize syntax instead of 
 
 ---
 
-## Migrations == Mutations 🦠
+## Migrations 
 
 Any change to our database schema, including creating it!
 
@@ -62,7 +62,7 @@ Sequelize automatically generates migration files based on your models
 
 ---
 
-## Plant Data With Seeds 🌱
+## Seeders
 
 Seeder files are filled with dummy data to populate your site with
 
