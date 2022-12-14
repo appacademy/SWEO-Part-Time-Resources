@@ -83,6 +83,13 @@ print (2 is 2.0)    # => False
 ## Operator Practices Discussion (10-15 Minutes)
 
 ## Try Except
+- Same as try/catch in JavaScript
+- Can catch any error, or a specific error/(s)
+- Errors that occur while a program is executing are called exceptions. To detect these execution errors we call it "catching exceptions" or "catching errors"
+```python
+a = 321
+print(len(a))
+```
 
 ## While Loops
 - Also perform identically to JavaScript while loops
@@ -106,6 +113,22 @@ while True:
     while True:
     print('Hello world!')
     ```
+
+## For loops
+- JavaScript has multiple for loops: for(let i = 0; i < someValue; i++), for in, and for of.
+- Python only has one for loop!
+- Creating a for looping python:
+    - `for` keyword
+    - variable name
+    - `in` keyword
+    - something thats iterable
+    - colon
+    - an indented block of code on the next line
+```python
+print('My name is')
+for i in range(5):
+   print('Jesse Brooks (' + str(i) + ')')
+```
 
 
 ## AAO Practices(15 Minutes)
