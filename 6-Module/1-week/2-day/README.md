@@ -49,7 +49,7 @@
     - We will mostly be using `pipenv` to intall packages.
 - Extra math operators
     - `**` is used for exponents `2 ** 3 = 8`
-    - `//` is used for integer division (removes remainder `7 / 3 = 2`)
+    - `//` is used for integer division (removes remainder `7 // 3 = 2`)
 - Declaring functions
     - Since python is whitespace-aware you must indent the next line whenever a colon ends a line. Colons create new code blocks in Python.
     ```python
