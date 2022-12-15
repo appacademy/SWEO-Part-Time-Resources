@@ -2,13 +2,13 @@
 
 # def printer(arg):
 #     print(arg)
-
 # printer('Hello World')
 
 # # Default function parameters
 
-# def printer(name, saying = "What's up"):
-#     print(name, 'says', saying)
+def printer(name, saying = "What's up"):
+    print(name, 'says', saying)
+
 # printer('Jesse')
 # printer('Jesse', 'Welcome to class')
 # printer('Jesse', saying = 'Python is cool')
@@ -33,4 +33,19 @@
 # def multiply_string(string):
 #     return lambda i : string * i
 
-# print(multiply_string('hello ')(2))
+# print(multiply_string('hello '))
+
+# List examples
+# list1 = ['pens', 'staplers', 'flame-throwers', 'binders']
+
+# print(list1)
+
+# loop through list
+
+# for i in list1:
+#     print(i)
+
+# loop through list with index
+
+# for i in range(len(list1)):
+#     print('Index ' + str(i) + ' in supplies is: ' + list1[i])
