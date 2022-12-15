@@ -193,3 +193,31 @@ O(n) - it needs to move the entire array over, so it needs to do arr.length
 number of operations
 
 ---
+
+## Binary and Hexadecimal Practice (20m)
+
+---
+
+## Binary and Hexadecimal Walkthrough
+
+---
+
+## Advanced Conversion Functions Practice (20m)
+
+---
+
+## Advanced Conversion Functions Walkthrough
+
+---
+
+## Dynamic Arrays Practice (20m)
+
+---
+
+## Dynamic Arrays Walkthrough
+
+---
+
+## Array Practice (until EOD)
+
+---
