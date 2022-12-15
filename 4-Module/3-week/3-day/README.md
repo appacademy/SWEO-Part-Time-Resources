@@ -317,7 +317,7 @@ User.init(
       type: DataTypes.STRING,
       validate: {
         isNotMyEmail(value) {
-          if (value === 'zbrown@appacademy.io') {
+          if (value === 'jthompson@appacademy.io') {
             throw new Error("Hey wait that's my email!");
           }
         },
