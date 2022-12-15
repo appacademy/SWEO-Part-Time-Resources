@@ -130,15 +130,18 @@
 
 # Another way? Duck typing
 
-# # Try a number - nothing will print out
+# Try a number - nothing will print out
+
 # a = 321
 # if hasattr(a, '__len__'):
 #     print(len(a))
+#     print('hello')
 
 # # Try a string - the length will print out (4 in this case)
 # b = "5555"
 # if hasattr(b, '__len__'):
 #     print(len(b))
+#     print('hello')
 
 # raise errors
 
@@ -151,6 +154,9 @@
 # range(start, stop, step)
 # help(range)
 
+# print(range(5))
+# print(range(10, 20))
+
 # print('My name is')
 # for i in range(5):
 #    print('Jesse Brooks (' + str(i) + ')')
@@ -161,6 +167,58 @@
 #    print('Jesse Brooks (' + str(i) + ')')
 
 # range with start, stop, step
+# num = 10
 # print('My name is')
-# for i in range(0, 5, 5):
+# for i in range(0, num + 1, 5):
 #    print('Jesse Brooks (' + str(i) + ')')
+
+# spam = 0
+# while True:
+#   print('Hello, world.')
+#   spam = spam + 1
+#   if spam >= 5:
+#     break
+
+# while(True):
+#     print('infinite')
+
+# for loop with string
+
+# string = 'hello'
+# for i in string:
+#     print(i)
+
+# for loop with lists
+
+# list = [1, 2, 3, '3', '2', '1']
+# for i in list:
+#     print(i)
+
+# name= 'Monica'
+# if name == 'Monica':
+#     print('Hi, Monica.')
+# if (name == 'Monica'):
+#     print('Hi, Monica.')
+
+# age = 113
+# name = 'Jesse'
+# if name == 'Monica':
+#     print('Hi, Monica.')
+# elif age < 12:
+#     print('You are not Monica, kiddo.')
+
+# if name == 'Monica':
+#     print('Hi, Monica.')
+# if age < 12:
+#     print('You are under 12, kiddo.')
+# if age > 2000:
+#    print('Unlike you, Monica is not an undead, immortal vampire.')
+# if age > 100:
+#    print('You are not Monica, grannie.')
+
+# if name == 'Monica':
+#     print('Hi, Monica.')
+# elif age < 12:
+#     print('You are under 12, kiddo.')
+# else:
+#     print('You are neither Monica nor a little kid.')
