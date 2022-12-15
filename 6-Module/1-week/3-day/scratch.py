@@ -1,9 +1,15 @@
 # # Assigning Variables
 
-# count = max = min = 1
+# count = max = min = 0
 # print(count)
 # print(max)
 # print(min)
+
+# number = 12
+# number = number + 2
+# number += 2
+# print(number)
+
 
 #######################################
 
@@ -33,6 +39,13 @@
 # a = '7'
 # a /= 2
 # print(a)
+# print('hello world')
+# print(float('nan'))
+
+# def tester():
+#     print('hello')
+
+# print(tester())
 
 #######################################
 
@@ -72,7 +85,7 @@
 # try:
 #     a = 321
 #     print(len(a))
-# except AttributeError:
+# except (AttributeError, TypeError):
 #     a = str(321)
 #     print(len(a))
 
@@ -121,6 +134,8 @@
 # def greeting():
 #     try:
 #         return "Hey, friend."
+#     except:
+#         pass
 #     finally:
 #         return "Fun times!"
 
@@ -136,8 +151,9 @@
 # if hasattr(a, '__len__'):
 #     print(len(a))
 #     print('hello')
+# print('aftet if')
 
-# # Try a string - the length will print out (4 in this case)
+# Try a string - the length will print out (4 in this case)
 # b = "5555"
 # if hasattr(b, '__len__'):
 #     print(len(b))
@@ -167,9 +183,9 @@
 #    print('Jesse Brooks (' + str(i) + ')')
 
 # range with start, stop, step
-# num = 10
+# num = 20
 # print('My name is')
-# for i in range(0, num + 1, 5):
+# for i in range(0, num , 2):
 #    print('Jesse Brooks (' + str(i) + ')')
 
 # spam = 0
@@ -177,7 +193,8 @@
 #   print('Hello, world.')
 #   spam = spam + 1
 #   if spam >= 5:
-#     break
+#     # break
+#     pass
 
 # while(True):
 #     print('infinite')
