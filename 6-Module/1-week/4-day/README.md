@@ -25,7 +25,7 @@ printer('Hello World')
 - Collections
     - Unordered data structures
     - No indexs
-    -
+
 - Iterables
     - Anything that can be "iterated", (has a clear start and finish, such as beginning of string, end of string or beginning of list, end of a list)
     - Any object can be iterated
@@ -52,3 +52,17 @@ printer('Hello World')
     print(1 in [1, 2, 3]) #> True
     print(4 in [1, 2, 3]) #> False
     ```
+
+# Test Expectations
+
+## Python test, no JS
+- Know all of your math operators (+, -, *, /, **, //, %)
+- Know your truthy values, and falsey values
+- Know what keywords such as pass, continue, break, do
+- Know how to create/use anonymous functions in python (JS arrow function equivalent)
+- Know how to type cast basic data, str(1) would result in a string of '1', int(1.0) would result in an int of 1
+
+- Know how to use if, else, elif and make sure you understand how the code jumps from block to block depending on if the statements get evaluated or not.
+- Know how to implement for loops and perform operations on an iterable sequence
+- Know how to implement while loops and perform operations on an iterable sequence
+<!-- - Know how to use list comprehension  -->
