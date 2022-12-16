@@ -66,7 +66,7 @@ console.log(yelledStrings(arr))
 */
 
 //TRAVERSING THROUGH A NESTED ARRAY
-
+/*
 let nestedArray = [["a", "b", "c"], ["d", "e"], ["f", "g", "h"]];
 
 for (let i = 0; i < nestedArray.length; i++) {
@@ -75,3 +75,4 @@ for (let i = 0; i < nestedArray.length; i++) {
         console.log(subArr[j]);
     }
 }
+*/
