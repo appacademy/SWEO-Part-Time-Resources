@@ -24,7 +24,7 @@ console.log(rotateRight(arr, 2));
 //Example
 //Pair up our fruits- BUT we want all unique pairs
 /*
-let fruits = ["pear", "apple", "orange", "lemon", "grape"];
+let fruits = ["pear", "apple", "orange", "lemon", "grape"]; 
 
 for (let i = 0; i < fruits.length; i++) {
     let fruit1 = fruits[i];
@@ -45,7 +45,6 @@ for (let i = 0; i < fruits.length; i++) {
 
 /*
 let helloArray = ["hello", "hey", "hi"]; // Output - ["HELLO!", "HEY!", "HI!"];
-let fruit = ["apple", "pear"]
 
 //Our first helper function
 
@@ -65,7 +64,7 @@ function yellingArray(arr) {
     return result;
 }
 
-console.log(yellingArray(fruit));
+console.log(yellingArray(helloArray));
 */
 
 //TRAVERSING A 2D ARRAY
