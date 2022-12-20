@@ -16,7 +16,7 @@ Like with SQL, reference is made on the migration with the FK, not the PK
 userId: {
   type: Sequelize.INTEGER,
   references: {
-    model: 'Users', // the TABLE name, not Model name
+    model: 'Users', // the TABLE name, not Model name shorthaand for {table: 'Users'}
     key: 'id', // the column on the other Table
   },
 	onDelete: 'CASCADE'
