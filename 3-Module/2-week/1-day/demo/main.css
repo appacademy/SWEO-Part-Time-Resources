@@ -23,7 +23,7 @@ or shrinking to avoid overflowing the parent.
 
     /* ----------CSS FLEX container properties---------- */
     display: flex;
-    gap: 10px;
+    gap: 25px;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -39,11 +39,13 @@ or shrinking to avoid overflowing the parent.
     height: 80px;
     text-align: center;
 
+
   }
 
   .flex-item.two{
     width: 130px;
     height: 120px;
+    /* margin: 50px; */
   }
 
   .flex-item.three{

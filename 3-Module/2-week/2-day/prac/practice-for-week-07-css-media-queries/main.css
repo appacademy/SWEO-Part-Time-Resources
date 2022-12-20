@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #6C547B;
+    color: #E8EFF0;
+    padding: 0.5rem 2rem;
+}
+
+/* ===== MAIN AREA LAYOUT ===== */
+
+.page {
+    padding: 2rem;
+    gap: 1rem;
+    display: flex;
+}
+
+.content {
+    gap: 1rem;
+    display: flex;
+}
+.content > div {
+    flex: 1 1 100%;
+}
+.content > div:first-child {
+    flex: 0;
+}
+
+/* ===== MESSAGE BOXES ===== */
+
+.sidebar {
+    /*background-color: #6C547B;*/
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.ffe {
+    background-color: #6C547B;
+    filter: drop-shadow(4px 4px 4px black);
+    color: #E8EFF0;
+    font-size: 12px;
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ===== TEXT, IMAGE ===== */
+
+.story-box {
+    padding: 0 2rem;
+    border-radius: 0 45px;
+    background-color: #6C547B;
+    filter: drop-shadow(4px 4px 4px black);
+}
+
+.image-box img {
+    border: solid #6C547B 4px;
+    border-radius: 0 45px;
+    filter: drop-shadow(4px 4px 4px black);
+    width: 100%;
+}
+
+/* ===== LAYOUT VARIATIONS ===== */
+
+/* ----- Default Screen ----- */
+.page {
+    flex-direction: column;
+}
+.content {
+    flex-direction: column;
+}
+.sidebar {
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ----- Phase 1 - Moderate Screen ----- */
+
+/* Your code here */
+
+/* ----- Phase 1 - Wide Screen ----- */
+
+/* Your code here */
+
+/* ===== PRINTING ===== */
+
+/* Phase 2 */
+
+/* Your code here */
