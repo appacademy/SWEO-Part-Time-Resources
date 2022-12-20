@@ -28,7 +28,7 @@ or shrinking to avoid overflowing the parent.
     justify-content: center;
     align-items: center;
     /* as the container get smaller, we should wrap this around */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
   }
   .flex-item {
     background-color: pink;
