@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: lightgray;
+  }
+
+  /*
+In the flex layout model, the children of a flex container can be laid out in
+any direction, and can “flex” their sizes, either growing to fill unused space
+or shrinking to avoid overflowing the parent.
+- you change the display of the container to flex
+- justify-content: distributes children over the main axis (x-axis is the default)
+- align-items: distributes children over the secondary axis
+*/
+
+  .flex-container {
+    background-color: white;
+    width: 80%;
+    margin: 50px;
+
+
+    /* ----------CSS FLEX container properties---------- */
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* as the container get smaller, we should wrap this around */
+    /* flex-wrap: wrap; */
+  }
+  .flex-item {
+    background-color: pink;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 20px;
+    width: 90px;
+    height: 80px;
+    text-align: center;
+
+  }
+
+  .flex-item.two{
+    width: 130px;
+    height: 120px;
+  }
+
+  .flex-item.three{
+    width: 150px;
+    height: 150px;
+  }
+
+  .flex-item.four{
+    width: 130px;
+    height: 120px;
+    /* flex-basis: 50%; */
+  }
