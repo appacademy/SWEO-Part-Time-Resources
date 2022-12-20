@@ -25,11 +25,13 @@ toys = [
 # filtered_toys = filter(lambda toy: toy["on_sale"] == False, toys)
 # print(list(filtered_toys))
 
-def map_func(element):
-    return element * 0
+# def map_func(element):
+#     return element["price"] * 0
 
-free_toys = map()
-
+# free_toys = map(lambda toy: toy.update(price=0), toys)
+# free_toys = map(map_func, toys)
+# print(list(free_toys))
+# print(toys)
 
 # all(iteratable) Pass in an iterable and check to see if EVERYTHING in the iterable returns True
 # string = 'hello'
@@ -48,7 +50,7 @@ free_toys = map()
 # string = 'hello'
 # print("are strings truthy?", any(string))
 
-# num = [1,2,3]
+# num = [1,2,3, 0]
 # print("are nums that are not 0 truthy?", any(num))
 
 # tuple1 = (True, True, False)
@@ -60,8 +62,10 @@ free_toys = map()
 # list1 = [False, False, False]
 # print("does a list with all False pass the any check?", any(list1))
 
-# unsorted_list = [6,2,8,3,1,50,34,7]
-# print(unsorted_list)
+unsorted_list = [6,2,8,3,1,50,34,7]
+print(unsorted_list)
 
-# sorted_list = sorted(unsorted_list, reverse=False)
-# print(sorted_list)
+
+
+sorted_list = sorted(unsorted_list)
+print(sorted_list)
