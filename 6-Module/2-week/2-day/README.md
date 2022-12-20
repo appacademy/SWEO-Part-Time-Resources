@@ -14,8 +14,8 @@ set2 = {4,5,6}
 
 ## Set Operators
 - When working with sets, these symbols are not to be confused with their bitwise operator counterparts. 
-- `&` a "pipe", this operator gets the "intersection" of both sets (returns all elements, but leaves out elements if they have already been added)
-- `|` "ampersand", this operator gets the "union" of both sets (returns only the elements that are found in both sets)
+- `&` a "ampersand", this operator gets the "intersection" of both sets (returns all elements, but leaves out elements if they have already been added)
+- `|` "pipe", this operator gets the "union" of both sets (returns only the elements that are found in both sets)
 - `^` "caret", this operator adds both sets together and then returns all elements that do not appear in both sets(this is called the symmetric difference)
 ```python
 print(set1 ^ set2) # prints: {1,2,3,5,6}

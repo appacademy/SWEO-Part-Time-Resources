@@ -1,8 +1,8 @@
 # Dictionaries
 
-movie1 = {"name":"Star Wars", "rating": 6, "release_year": 1990, 2: "one"}
-print(True in movie1.keys())
-print(True is 1)
+# movie1 = {"name":"Star Wars", "rating": 6, "release_year": 1990, 2: "one"}
+# print(True in movie1.keys())
+# print(True is 1)
 # movie2 = {"name": "Star Trek", "rating": 9, "release_year": 2000}
 # movie3 = {"name": "Iron Man", "rating": 10, "release_year": 2009}
 # movie4 = dict({"name": "Avatar"})
