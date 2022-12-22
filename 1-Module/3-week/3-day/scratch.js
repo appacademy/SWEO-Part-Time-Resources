@@ -93,3 +93,56 @@ let cat = {
 
 console.log(Object.entries(cat));
 */
+
+//CATBUILDER
+/*
+function catBuilder(name, color, toys) {
+    let catObj = { 
+        "name": name, 
+        "color": color, 
+        "toys": toys 
+    }
+    return catObj
+}
+
+console.log(catBuilder("Whiskers", "black", ["scratching-post", "yarn"]));
+*/
+
+
+//ArrayOfObjects
+
+/*
+const users = [
+    {
+        name: "Gerald",
+        age: 23,
+        height: 68
+    },
+    {
+        name: "Winnie",
+        age: 35,
+        height: 62
+    },
+    {
+        name: "Peter",
+        age: 61,
+        height: 72
+    }
+]
+
+function printNames(array) {
+    for (let i = 0; i < array.length; i++) {
+        let obj = array[i];
+        console.log(obj.name)
+    }
+}
+
+printNames(users);
+*/
+
+//Rest & Spread Operator - ...
+//Javascript will take more or less arguments than specified without complaining.
+//We can take advantage of this by using rest and spread operators
+
+//REST
+//ALWAYS USED IN PARAMETERS
