@@ -1,7 +1,7 @@
-'use strict';
+"use strict";
 
-const { Insect, Tree} = require('../models');
-const { Op } = require('sequelize');
+const { Insect, Tree } = require("../models");
+const { Op } = require("sequelize");
 
 const insectsTrees = [
   {
@@ -15,11 +15,9 @@ const insectsTrees = [
   },
   {
     insect: { name: "Patu Digua Spider" },
-    trees: [
-      { tree: "Stagg" },
-    ],
+    trees: [{ tree: "Stagg" }],
   },
-]
+];
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -31,14 +29,13 @@ module.exports = {
      *   name: 'John Doe',
      *   isBetaMember: false
      * }], {});
-    */
+     */
 
     // Phase 6
-    for(let {insect, trees} of insectsTrees){
-
-       const insectToFind = await Insect.findOne({where: insect})
-      const treesToFind = await Tree.findAll({where: {[Op.or]: trees}})
-      await insectToFind.addTrees(treesToFind)
+    for (let { insect, trees } of insectsTrees) {
+      const insectToFind = await Insect.findOne({ where: insect });
+      const treesToFind = await Tree.findAll({ where: { [Op.or]: trees } });
+      await insectToFind.addTrees(treesToFind);
     }
     // for (let i = 0; i < insectsTrees.length; i++) {
     //   const data = insectsTrees[i];
@@ -63,5 +60,5 @@ module.exports = {
       const trees = await Tree.findAll({ where: { [Op.or]: data.trees } });
       await insect.removeTrees(trees);
     }
-  }
+  },
 };
