@@ -1,24 +1,37 @@
-# class Car:
-#     car_count = 0
-#     def __init__(self):
-#         self.make = "Toyota"
-#         self.model = "Prius"
-#         self.year = 2020
-#         # car_count += 1
-#     # @some_func
-#     def change_year(self, year):
-#         self.year = year
-#     def change_make(self, make):
-#         self.make = make
+class Car:
+    car_count = 0
+    def __init__(self):
+        self.make = "Toyota"
+        self.model = "Prius"
+        self.year = 2020
 
-# car = Car()
+    def change_year(self, year):
+        self.year = year
+        print(self)
+
+    def change_make(self, make):
+        self.make = make
+
+    def printer(val):
+        print(val)
+
+    @classmethod
+    def some_other_func(self, year):
+        pass
+
+    @staticmethod
+    def some_func():
+        pass
+
+car = Car()
 # car2 = Car()
 # print(car)
 # print(car.make)
 # print(car.model)
 # print(car.year)
 
-# car.change_year(2022)
+print(car)
+car.change_year(2022)
 # car2.change_year(2000)
 # car.year
 # print(car.year)
