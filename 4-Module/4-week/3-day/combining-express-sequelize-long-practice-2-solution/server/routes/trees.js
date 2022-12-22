@@ -1,11 +1,11 @@
 // Instantiate router - DO NOT MODIFY
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
 /**
  * BASIC PHASE 1, Step A - Import model
  */
-const { Tree } = require('../db/models');
+const { Tree } = require("../db/models");
 
 /**
  * INTERMEDIATE BONUS PHASE 1 (OPTIONAL), Step A:
@@ -23,15 +23,15 @@ const { Op } = require("sequelize");
  *   - Object properties: heightFt, tree, id
  *   - Ordered by the heightFt from tallest to shortest
  */
-router.get('/', async (req, res, next) => {
-    let trees = [];
+router.get("/", async (req, res, next) => {
+  let trees = [];
 
-    trees = await Tree.findAll({
-        attributes: ['heightFt', 'tree', 'id'],
-        order: [['heightFt','DESC']],
-    });
+  trees = await Tree.findAll({
+    attributes: ["heightFt", "tree", "id"],
+    order: [["heightFt", "DESC"]],
+  });
 
-    res.json(trees);
+  res.json(trees);
 });
 
 /**
@@ -43,28 +43,30 @@ router.get('/', async (req, res, next) => {
  * Response: JSON Object
  *   - Properties: id, tree, location, heightFt, groundCircumferenceFt
  */
-router.get('/:id', async (req, res, next) => {
-    let tree;
+router.get("/:id", async (req, res, next) => {
+  let tree;
 
-    try {
-        tree = await Tree.findByPk(req.params.id);
+  try {
+    tree = await Tree.findByPk(req.params.id);
 
-        if (tree) {
-            res.json(tree);
-        } else {
-            next({
-                status: "not-found",
-                message: `Could not find tree ${req.params.id}`,
-                details: 'Tree not found'
-            });
-        }
-    } catch(err) {
-        next({
-            status: "error",
-            message: `Could not find tree ${req.params.id}`,
-            details: err.errors ? err.errors.map(item => item.message).join(', ') : err.message
-        });
+    if (tree) {
+      res.json(tree);
+    } else {
+      next({
+        status: "not-found",
+        message: `Could not find tree ${req.params.id}`,
+        details: "Tree not found",
+      });
     }
+  } catch (err) {
+    next({
+      status: "error",
+      message: `Could not find tree ${req.params.id}`,
+      details: err.errors
+        ? err.errors.map((item) => item.message).join(", ")
+        : err.message,
+    });
+  }
 });
 
 /**
@@ -83,27 +85,29 @@ router.get('/:id', async (req, res, next) => {
  *   - Property: data
  *     - Value: object (the new tree)
  */
-router.post('/', async (req, res, next) => {
-    try {
-        const { name, location, height, size } = req.body;
-        const newTree = await Tree.create({
-            tree: name,
-            location,
-            heightFt: height,
-            groundCircumferenceFt: size
-        });
-        res.json({
-            status: "success",
-            message: "Successfully created new tree",
-            data: newTree
-        });
-    } catch(err) {
-        next({
-            status: "error",
-            message: 'Could not create new tree',
-            details: err.errors ? err.errors.map(item => item.message).join(', ') : err.message
-        });
-    }
+router.post("/", async (req, res, next) => {
+  try {
+    const { name, location, height, size } = req.body;
+    const newTree = await Tree.create({
+      tree: name,
+      location,
+      heightFt: height,
+      groundCircumferenceFt: size,
+    });
+    res.json({
+      status: "success",
+      message: "Successfully created new tree",
+      data: newTree,
+    });
+  } catch (err) {
+    next({
+      status: "error",
+      message: "Could not create new tree",
+      details: err.errors
+        ? err.errors.map((item) => item.message).join(", ")
+        : err.message,
+    });
+  }
 });
 
 /**
@@ -126,29 +130,31 @@ router.post('/', async (req, res, next) => {
  *   - Property: details
  *     - Value: Tree not found
  */
-router.delete('/:id', async (req, res, next) => {
-    try {
-        const deletedTree = await Tree.findByPk(req.params.id);
-        if (deletedTree) {
-            await deletedTree.destroy();
-            res.json({
-                status: "success",
-                message: `Successfully removed tree ${req.params.id}`,
-            });
-        } else {
-            next({
-                status: "not-found",
-                message: `Could not remove tree ${req.params.id}`,
-                details: 'Tree not found'
-            });
-        }
-    } catch(err) {
-        next({
-            status: "error",
-            message: `Could not remove tree ${req.params.id}`,
-            details: err.errors ? err.errors.map(item => item.message).join(', ') : err.message
-        });
+router.delete("/:id", async (req, res, next) => {
+  try {
+    const deletedTree = await Tree.findByPk(req.params.id);
+    if (deletedTree) {
+      await deletedTree.destroy();
+      res.json({
+        status: "success",
+        message: `Successfully removed tree ${req.params.id}`,
+      });
+    } else {
+      next({
+        status: "not-found",
+        message: `Could not remove tree ${req.params.id}`,
+        details: "Tree not found",
+      });
     }
+  } catch (err) {
+    next({
+      status: "error",
+      message: `Could not remove tree ${req.params.id}`,
+      details: err.errors
+        ? err.errors.map((item) => item.message).join(", ")
+        : err.message,
+    });
+  }
 });
 
 /**
@@ -185,51 +191,57 @@ router.delete('/:id', async (req, res, next) => {
  *   - Property: details
  *     - Value: Tree not found
  */
-router.put('/:id', async (req, res, next) => {
-    try {
-        const {id, name, location, height, size} = req.body;
-        if (!req.params.id || !req.body.id || req.params.id !== req.body.id.toString()) {
-            next({
-                status: "error",
-                message: "Could not update tree",
-                details: `${req.params.id} does not match ${req.body.id}`
-            });
-        } else {
-            const updatedTree = await Tree.findByPk(id);
-            if (updatedTree) {
-                if (name) {
-                    updatedTree.tree = name;
-                }
-                if (location) {
-                    updatedTree.location = location;
-                }
-                if (height) {
-                    updatedTree.heightFt = height;
-                }
-                if (size) {
-                    updatedTree.groundCircumferenceFt = size;
-                }
-                updatedTree.save();
-                res.json({
-                    status: "success",
-                    message: "Successfully updated tree",
-                    data: updatedTree
-                });
-            } else {
-                next({
-                    status: "not-found",
-                    message: `Could not update tree ${req.params.id}`,
-                    details: 'Tree not found'
-                });
-            }
+router.put("/:id", async (req, res, next) => {
+  try {
+    const { id, name, location, height, size } = req.body;
+    if (
+      !req.params.id ||
+      !req.body.id ||
+      req.params.id !== req.body.id.toString()
+    ) {
+      next({
+        status: "error",
+        message: "Could not update tree",
+        details: `${req.params.id} does not match ${req.body.id}`,
+      });
+    } else {
+      const updatedTree = await Tree.findByPk(id);
+      if (updatedTree) {
+        if (name) {
+          updatedTree.tree = name;
         }
-    } catch(err) {
-        next({
-            status: "error",
-            message: 'Could not update new tree',
-            details: err.errors ? err.errors.map(item => item.message).join(', ') : err.message
+        if (location) {
+          updatedTree.location = location;
+        }
+        if (height) {
+          updatedTree.heightFt = height;
+        }
+        if (size) {
+          updatedTree.groundCircumferenceFt = size;
+        }
+        updatedTree.save();
+        res.json({
+          status: "success",
+          message: "Successfully updated tree",
+          data: updatedTree,
         });
+      } else {
+        next({
+          status: "not-found",
+          message: `Could not update tree ${req.params.id}`,
+          details: "Tree not found",
+        });
+      }
     }
+  } catch (err) {
+    next({
+      status: "error",
+      message: "Could not update new tree",
+      details: err.errors
+        ? err.errors.map((item) => item.message).join(", ")
+        : err.message,
+    });
+  }
 });
 
 /**
@@ -243,16 +255,16 @@ router.put('/:id', async (req, res, next) => {
  *   - Object properties: heightFt, tree, id
  *   - Ordered by the heightFt from tallest to shortest
  */
-router.get('/search/:value', async (req, res, next) => {
-    let trees = [];
+router.get("/search/:value", async (req, res, next) => {
+  let trees = [];
 
-    trees = await Tree.findAll({
-        attributes: ['heightFt', 'tree', 'id'],
-        where: {tree: {[Op.like]: `%${req.params.value}%`}},
-        order: [['tree', 'ASC']],
-    });
+  trees = await Tree.findAll({
+    attributes: ["heightFt", "tree", "id"],
+    where: { tree: { [Op.like]: `%${req.params.value}%` } },
+    order: [["tree", "ASC"]],
+  });
 
-    res.json(trees);
+  res.json(trees);
 });
 
 // Export class - DO NOT MODIFY
