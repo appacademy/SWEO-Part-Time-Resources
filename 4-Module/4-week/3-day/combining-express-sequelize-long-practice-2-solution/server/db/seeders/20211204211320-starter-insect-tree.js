@@ -34,12 +34,18 @@ module.exports = {
     */
 
     // Phase 6
-    for (let i = 0; i < insectsTrees.length; i++) {
-      const data = insectsTrees[i];
-      const insect = await Insect.findOne({ where: data.insect });
-      const trees = await Tree.findAll({ where: { [Op.or]: data.trees } });
-      await insect.addTrees(trees);
+    for(let {insect, trees} of insectsTrees){
+
+       const insectToFind = await Insect.findOne({where: insect})
+      const treesToFind = await Tree.findAll({where: {[Op.or]: trees}})
+      await insectToFind.addTrees(treesToFind)
     }
+    // for (let i = 0; i < insectsTrees.length; i++) {
+    //   const data = insectsTrees[i];
+    //   const insect = await Insect.findOne({ where: data.insect });
+    //   const trees = await Tree.findAll({ where: { [Op.or]: data.trees } });
+    //   await insect.addTrees(trees);
+    // }
   },
 
   down: async (queryInterface, Sequelize) => {
