@@ -1,37 +1,37 @@
-class Car:
-    car_count = 0
-    def __init__(self):
-        self.make = "Toyota"
-        self.model = "Prius"
-        self.year = 2020
+# class Car:
+#     car_count = 0
+#     def __init__(self):
+#         self.make = "Toyota"
+#         self.model = "Prius"
+#         self.year = 2020
 
-    def change_year(self, year):
-        self.year = year
-        print(self)
+#     def change_year(self, year):
+#         self.year = year
+#         print(self)
 
-    def change_make(self, make):
-        self.make = make
+#     def change_make(self, make):
+#         self.make = make
 
-    def printer(val):
-        print(val)
+#     def printer(val):
+#         print(val)
 
-    @classmethod
-    def some_other_func(self, year):
-        pass
+#     @classmethod
+#     def some_other_func(self, year):
+#         pass
 
-    @staticmethod
-    def some_func():
-        pass
+#     @staticmethod
+#     def some_func():
+#         pass
 
-car = Car()
+# car = Car()
 # car2 = Car()
 # print(car)
 # print(car.make)
 # print(car.model)
 # print(car.year)
 
-print(car)
-car.change_year(2022)
+# print(car)
+# car.change_year(2022)
 # car2.change_year(2000)
 # car.year
 # print(car.year)
@@ -49,6 +49,7 @@ car.change_year(2022)
 
 #     @property
 #     def make(self):
+#         print("Hello from make getter")
 #         return self._make
 
 #     @property
@@ -61,6 +62,7 @@ car.change_year(2022)
 
 #     @make.setter
 #     def make(self, make):
+#         print("Hello from make setter")
 #         self._make = make
 
 #     @model.setter
@@ -79,34 +81,37 @@ car.change_year(2022)
 # print(car.make)
 # print(car.model)
 
-# class Employee:
-#     def __init__(self, id):
-#         self.id = id
+class Employee:
+    def __init__(self, id):
+        self.id = id
 
-#     def __repr__(self):
-#         if(isinstance(self, (Manager))):
-#             return f"Manager id: {self.id}"
-#         if(isinstance(self, (Employee))):
-#             return f"Employee id: {self.id}"
+    def __repr__(self):
+        if(isinstance(self, (Manager))):
+            return f"Manager id: {self.id}"
+        if(isinstance(self, (Employee))):
+            return f"Employee id: {self.id}"
 
+class Manager(Employee):
+    def __init__(self, id):
+        super().__init__(id)
+        self.employees = []
 
+    # def __repr__(self):
+    #     if(isinstance(self, (Manager))):
+    #         return f"Manager id: {self.id}"
+    #     if(isinstance(self, (Employee))):
+    #         return f"Employee id: {self.id}"
 
+manager = Manager(1)
+employee = Employee(2)
 
-# class Manager(Employee):
-#     def __init__(self, id):
-#         super().__init__(id)
-#         self.employees = []
-
-# manager = Manager(1)
-# employee = Employee(2)
-
-# print(manager.id)
-# print(manager)
-# print(type(manager))
-# print(" ")
-# print(employee.id)
-# print(employee)
-# print(type(employee))
+print(manager.id)
+print(manager)
+print(type(manager))
+print(" ")
+print(employee.id)
+print(employee)
+print(type(employee))
 
 # 3 sides - Triangle
 # 4 sides - Quadrilateral
@@ -119,31 +124,40 @@ car.change_year(2022)
 # Greater than 10 sides - Polygon with n sides
 
 
-# # Write your class here.
+# Write your class here.
 # class RegularPolygon:
-# 	type = "Polygon"
-    
-# 	def __init__(self, num_sides, length):
-# 		if(num_sides < 3):
-# 			raise Exception("A polygon must have at least 3 sides.")
-        
-# 		self.num_sides = num_sides
-# 		self.length = length
-	
-# 	def identify_polygon(self):
-# 		identifier = {1: "1"}
-# 		try:
-# 			self.type = identifier[self.num_sides]
-# 		except KeyError:
-# 			self.type = f"Polygon with {self.num_sides} sides"
-                
-# 	@classmethod
-# 	def polygon_factory(cls, values):
-# 		return [cls(num_sides, length) for num_sides, length in values]
-			
-# 	@staticmethod
-# 	def get_perimeter(polygon):
-# 		return polygon.num_sides * polygon.length
+#     type = "Polygon"
+
+#     def __init__(self, num_sides, length):
+#         if(num_sides < 3):
+#             raise Exception("A polygon must have 3 sides")
+#         self.num_sides = num_sides
+#         self.length = length
+
+#     def identify_polygon(self):
+#         identifier = {
+#             3: "Triangle",
+#             4: "Quadrilateral",
+#             5: "Pentagon",
+#             6: "Hexagon",
+#             7: "Heptagon",
+#             8: "Octagon",
+#             9: "Nonagon",
+#             10: "Decagon"
+#         }
+
+#         try:
+#             self.type = identifier[self.num_sides]
+#         except KeyError:
+#             self.type = f"Polygon with {self.num_sides} sides"
+
+#     @classmethod
+#     def polygon_factory(cls, values):
+#         return [cls(num_sides, length) for num_sides, length in values]
+
+#     @staticmethod        
+#     def get_perimeter(polygon):
+#         return polygon.num_sides * polygon.length
 
 # pentagon = RegularPolygon(5, 5)
 # octagon = RegularPolygon(8, 10)
