@@ -1,0 +1,53 @@
+body {
+    background-color: #1d3e81;
+    color: #E8EFF0;
+    text-align: center;
+}
+img {
+    width: 50%;
+}
+a {
+    color: #E8EFF0;
+}
+
+a.backButton {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 1;
+    text-decoration: none;
+}
+
+/*!!START */
+/* Phase 4: Make the printout look its best */
+@media print {
+    /* Fill the paper with the image */
+    img {
+        width: 100%;
+    }
+
+    /* Title on top of image near the top edge */
+    h1 {
+        position: absolute;
+        top: 24px;
+        left: 0;
+        right: 0;
+    }
+
+    /* No blue background leaking out around the photo */
+    body {
+        background-color: white;
+    }
+
+    /* Credit over image at the bottom */
+    p {
+        transform: translate(0, -45px);
+    }
+
+    /* Hide the license link and back button */
+    .notPrinted {
+        display: none;
+        visibility: hidden;
+    }
+}
+/*!!END */
