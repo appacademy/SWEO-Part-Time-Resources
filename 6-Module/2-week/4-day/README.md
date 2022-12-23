@@ -1,0 +1,22 @@
+# Test Topics
+- Classes
+    - [Classes in Python Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-34---python/classes-in-python)
+    - Class practices are in Wednesday.
+- Class getters and setters
+    - [Getters and Setters in Python Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-34---python/properties-for-classes)
+    - There is a getters and setters practice called "Getters and Setters" in  Wednesday
+- Inheritence 
+    - [Inheritance in Python Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-34---python/inheritance-in-python)
+    - The PA inheritence practice problem is more difficult than the assessment expectation.
+- Dictionaries 
+    - [Using For Statements with Dictionaries Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-34---python/for-statement-with-dictionaries)
+    - [Dictionaries in Python Code Demo Video](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-34---python/dictionaries-in-python)
+    - Dictionaries practices are in Tuesday.
+- Python built-in-functions (any, all, map, filter)
+    - Generally just be comfortable with manipulating data or filtering out results from lists or dictionaries using these built-in python methods.
+    - Practices are in Monday.
+- Importing
+    - Didn't cover in lecture, this will be a freebie
+- *args and **kwargs
+    - [*args and **kwargs Reading](https://open.appacademy.io/learn/js-py---pt-apr-2022-online/week-33---intro-to-python/more-on-functions)
+    - No specific practice on this, but just play around with printing out different sorts of data in lists or dictionaries that you have spread using the *args and **kwargs operators.
