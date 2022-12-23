@@ -12,6 +12,8 @@
 2022-Jun-W
 2022-Jul-E
 2022-Jul-W
+2022-Aug-E
+2022-Aug-W
 2022-Sep-E
 2022-Sep-W
 2022-Oct-E
