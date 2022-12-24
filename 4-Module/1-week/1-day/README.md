@@ -58,3 +58,72 @@ const express = require('express');
 const app = express();
 ```
 The app variable holds a reference to an Express Application (app) object. You'll call methods on the app object as you build out your web application.
+
+### What exactly is app?
+- You might be wondering now what exactly are we importing, why are we invoking it, luckily as devolper's we have the resources to find out... Lets go ahead and log our app to the console to see exactly what it is.
+
+``` 
+console.log('our express application', express)
+```
+
+- Inside of our log, you will notice that this is a fuction that creates an application and then also logs a huge object known as our application. If we look around inside of this object you will see a lot of key value pairs holding all sorts of things, things that we will be using in order to use express to build our applications.
+- for right now you will notice there is a listen, get and a send key in there that both hold functions.
+
+## using listen, get and send express methods
+- as developers if we dont know what these are, we should always research them, here is the link to express's documentation.
+[Express DOCS](https://expressjs.com/)
+
+- Now that we know what these methods do, lets try adding a app.listen()
+- for app.listen, we know it accepts a port and a callback.
+
+### Define your port
+
+```
+const port = 5000
+```
+
+### Invoke app.listen with your port
+
+```
+app.listen(port, () -> console.log(`...Now Listening on port ${port}))
+```
+
+### run our application
+- now lets run our application by typing 
+```
+node app.js
+```
+- We'll see on our log that we are now live and running on port 5000
+- If we navigate to local host 5000 we'll see that our application is running but we receive an error. 
+- If we take it one step further we will notice in our dev tools that we recieve a 404 not found. Why do we think that is?
+
+### using the get and send method
+- We now know that in order for our application to run correctly and respond with information to requests we need to tell our application to do so, so lets try it.
+- implement a get request and send a response to it
+
+```
+app.get('/', (req, res) => {
+  res.send('We responded to our request!')
+})
+```
+ - now if we navigate to local host again we will see we have officialy responded to our request and no longer receiving an error.
+
+## Tips and Tricks
+
+- You will notice that if we change something within our application that it wont be reflected or updated unless we terminate our application and restart it.
+- This can be time consuming and also cause bugs or slow down development because we simply forgot to restart our application.
+- To prevent this, for right now w will use nodemon, if you dont have it installed globally that is fine just make sure to install it for your project 
+
+```
+npm nodemon
+```
+- in order to speed our development up even more feel freee to add a start script to our application.
+- in our package.json under scripts add a key value pair of 
+
+```
+"start": "nodemon app.js"
+```
+- Now when we change anything in our application, nodemon will detect the changes and restart our application for us.
+
+
+# Congrats, we have created our first EXPRESS application!
