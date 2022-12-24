@@ -85,7 +85,7 @@ const port = 5000
 ### Invoke app.listen with your port
 
 ```
-app.listen(port, () -> console.log(`...Now Listening on port ${port}))
+app.listen(port, () -> console.log(`...Now Listening on port ${port}`))
 ```
 
 ### run our application
