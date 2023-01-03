@@ -53,10 +53,7 @@ First lets clear up what `Full-Stack` means. A `full-stack` app is an app that h
 
 The browser parses `HTML`, `CSS`, and `JS`, then renders that info to the user by constructing and rendering as a [DOM tree](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model).
 
-## `Quiz`
-
-[Server and HTTP Quiz](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-15---http--rest--and-servers/server-and-http-mc-quiz)
 
 ## `Homework`
 
-> Please follow along with the guided practice for today, and do your homework for Tuesday. **If you did not [download postman](https://open.appacademy.io/learn/js-py---pt-may-2022-online/week-14---css/download-postman) last week, please do so NOW**.
+> Please follow along with the guided practice for today, and do your homework for Tuesday. **If you did not download postman last week, please do so NOW**.
