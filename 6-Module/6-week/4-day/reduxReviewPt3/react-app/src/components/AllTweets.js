@@ -7,6 +7,7 @@ const AllTweets = () => {
     const dispatch = useDispatch();
 
     const tweets = useSelector((theEntireReduxStore) => {
+        // return theEntireReduxStore.spots
         return Object.values(theEntireReduxStore.tweets);
     });
 
