@@ -89,17 +89,8 @@ function App() {
 
 ## Practice: Functional Components - JSX (30 Minutes)
 
-<br>
-<br>
-
 ## Practice: Functional Components - Props (30 Minutes)
 
-<br>
-<br>
-
 ## Practice: Functional Components - Lists (30 Minutes)
-
-<br>
-<br>
 
 ## Create React App Practice (30 Minutes)
