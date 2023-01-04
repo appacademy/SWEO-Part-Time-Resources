@@ -87,6 +87,66 @@ function App() {
 export default App;
 ```
 
+## Sharing data with `props`
+
+Props are properties you want your component to have access to. This is just like passing arguments to a normal JS function
+
+`props` is an object, and you access its values like you would a normal object.
+
+```jsx
+// --------------Vanilla JS Example--------------
+
+const userData = {
+    name: 'Philip',
+    role: 'Instructor',
+};
+
+const myFunc = (props) => {
+    return props.name + ` is an ${props.role}`;
+};
+
+console.log(myFunc(userData)); // 'Philip is an Instructor'
+
+// --------------React Component Example--------------
+
+const MyComponent = (props) => {
+    return (
+        <div>
+            <p>My name is {props.name}</p>
+            <p>I am an {props.role}</p>
+        </div>
+    );
+};
+```
+
+For a component to have access to props, we must pass them into the component's tag.
+
+The values passed in get stored as key/value pairs in an object. Function components have access to that object through their first parameter
+
+```js
+const roleName = 'Instructor';
+
+const JuneStaff = () => {
+  return (
+    <MyComponent name="Philip" role={roleName} />;
+    <MyComponent name="Jorge" role="Assistant Instructor" />;
+  )
+}
+```
+
+We can also use object destructuring to give us immediate access to our prop data. This way, we don't have to key into the props object
+
+```js
+const MyComponent = ({ name, role }) => {
+    return (
+        <div>
+            <p>My name is {name}</p>
+            <p>I am an {role}</p>
+        </div>
+    );
+};
+```
+
 ## Practice: Functional Components - JSX (30 Minutes)
 
 ## Practice: Functional Components - Props (30 Minutes)
