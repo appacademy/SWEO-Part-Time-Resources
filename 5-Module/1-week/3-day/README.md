@@ -84,7 +84,7 @@ function App() {
 
 }
 
-    export default App;
+export default App;
 ```
 
 ## Practice: Functional Components - JSX (30 Minutes)
