@@ -1,4 +1,5 @@
 # Express Middleware and Router Objectives
+
 ## Below is a complete list of the Express middlewares and router learning objectives for this lesson. When you complete this lesson, you should be able to perform each of the following objectives. These objectives capture how you may be evaluated on the assessment for this lesson.
 
 - Compare and Contrast an Express application and an Express router
@@ -12,3 +13,5 @@
 - Serve a folder of static files using Express.static middleware
 
 ## Opening Homework Discussion
+
+- move to scratch.js
