@@ -12,6 +12,22 @@
 - Compare and contrast a regular Express middleware and an Express error handling middleware
 - Serve a folder of static files using Express.static middleware
 
-## Opening Homework Discussion
+# AA_UPDATE setup 15 min
 
-- move to scratch.js
+# Live Lecture 45 min
+
+# Short Solo Practice 15 min [Express Route Handlers](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--express-route-handlers)
+
+- Short Practice Q&A 15 min
+
+# Short Solo Practice 15 min [HTTP Server to Express Server](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--http-server-to-express-server)
+
+- Short Practice Q&A 15 min
+
+# Short Solo Practice 20 min [Request/Response Objects](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--express-request-response-objects)
+
+- Short Practice Q&A 15 min
+
+# Short Solo Practice 25 min [Error Handling Middleware](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--error-handling-middleware)
+
+# EOD/Office Hours
