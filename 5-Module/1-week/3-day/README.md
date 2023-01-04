@@ -16,8 +16,8 @@
 ## Why do we use React?
 
 - Modular
-    - React was made from the ground up to provide a modular way of rendering webpages.
-    - This is achieved using components.
+    - React was made from the ground up to provide a modular way of rendering webpages
+    - This is achieved using components
     - Handles event listeners/DOM manipulation through event handlers/hooks (syntactic sugar) and tucks the logic away so you see a much cleaner picture that achieves       the same result
 - Speed
     - Constantly monitors changes and compares the real DOM with the virtual DOM and only rerenders the part of the DOM that detected changes
