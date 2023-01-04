@@ -57,7 +57,7 @@ const list = (
 - JSX has been used to dynamically render content
 - JavaScript can be used above the return statement
 - Supporting logic, data fetching, and other React features that you will soon learn will be used in your component function, but above the return statement
-- Return the content you want to render (the html you want to send to the page) from a React component
+- Must return the content you want to render (the html you want to send to the page) or `null` (cannot return `undefined` or it will not build)
 
 ```jsx
 function App() {
