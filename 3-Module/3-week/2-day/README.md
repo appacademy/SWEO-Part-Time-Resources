@@ -15,7 +15,7 @@
 
 ```
 // Request-Line
-POST /posts HTTP/1.0
+GET /posts HTTP/1.0
 
 // Headers
 Host: appacademy.io
