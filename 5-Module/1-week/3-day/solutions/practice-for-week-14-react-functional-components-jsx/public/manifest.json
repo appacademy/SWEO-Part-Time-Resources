@@ -1,0 +1,8 @@
+{
+  "short_name": "FC-JSX",
+  "name": "Functional Components JSX",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
