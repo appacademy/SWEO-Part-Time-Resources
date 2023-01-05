@@ -16,7 +16,7 @@
 
 # Short Solo Practice 15 min [Express Router](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--express-router)
 
-# Short Solo Practice 15 min [Serving Static Files](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/bonus-practice--serving-static-files-in-express)
+# Short Solo Practice 15 min [Serving Static Files](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--serving-static-files-in-express)
 
 # Short Solo Practice 15 min [Environment Variables](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-19---express/practice--environment-variables)
 
