@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "!!ADD ": "",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "!!END_ADD ": "",
+  "!!START SILENT ": "",
+  "scripts": {
+    "start": "node app.js",
+    "start-with-dotenv": "dotenv node app.js"
+  },
+  "!!END ": "",
+  "author": "",
+  "!!ADD ": "",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "!!END_ADD ": "",
+  "!!START SILENT ": "",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "dotenv-cli": "^4.1.0",
+    "express": "^4.17.1"
+  },
+  "!!END ": "",
+  "license": "ISC"
+}
