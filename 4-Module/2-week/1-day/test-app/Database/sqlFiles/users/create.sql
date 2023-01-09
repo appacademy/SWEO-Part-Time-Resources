@@ -1,0 +1,4 @@
+CREATE TABLE users (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    first_name VARCHAR(50) NOT NULL,
+    job_title VARCHAR(50));
