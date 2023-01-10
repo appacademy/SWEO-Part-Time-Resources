@@ -1,3 +1,4 @@
+/*
 class Test {
   testFunc(name, num) {
     console.log(name, num)
@@ -9,10 +10,8 @@ const test1 = new Test();
 
 // setTimeout(test1.testFunc.bind(test1, "Mylo", 3), 1000); // wait 1 second, true
 
-/* 
-Using this in Function Declaration Syntax
-Could I make `this` equal to test1 in this function?
-*/
+// Using this in Function Declaration Syntax
+// Could I make `this` equal to test1 in this function?
 // function someFunc() {
 //   console.log(this);
 // }
@@ -49,3 +48,21 @@ const apple = new Fruit('apple');
 const eat = apple.eat;
 eat();
 setTimeout(eat, 1000);
+*/
+//* Bind
+class Cat {
+  purr() {
+    console.log("prrrrrrrrrrr")
+  }
+
+  purrMore() {
+    this.purr();
+  }
+}
+let whiskers = new Cat();
+
+let doThePurr = whiskers.purrMore;
+doThePurr() // TypeError
+//* Call and Apply
+
+//* Context in Arrow Functions
