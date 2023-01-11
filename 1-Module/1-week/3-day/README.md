@@ -50,7 +50,7 @@ To update the days notes run the command `aa_update` :)
 
 ---
 
-## First Practices (40m, SOLO)
+## First Practices (20m, SOLO)
 
 Extra time given here to allow time for getting aa_update set up. Please ask
 questions in the live-questions channel if you run into any issues getting this
