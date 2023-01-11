@@ -1,68 +1,62 @@
-/*
-class Test {
-  testFunc(name, num) {
-    console.log(name, num)
-    console.log(this === test1);
-  }
-}
-
-const test1 = new Test();
-
-// setTimeout(test1.testFunc.bind(test1, "Mylo", 3), 1000); // wait 1 second, true
-
-// Using this in Function Declaration Syntax
-// Could I make `this` equal to test1 in this function?
-// function someFunc() {
-//   console.log(this);
-// }
-
-// someFunc.call(test1); // (undefined) Test {...}
-
-
-
-
-// function greeting(...messages) {
-//   return messages.map((message) => {
-//     return `${this.firstName} says ${message}`;
-//   });
-// }
-
-// const derek = {
-//   firstName: 'Derek',
-// };
-
-// const derekMessages = greeting.bind(derek, 'Hello class!');
-// console.log(derekMessages('Goodbye class!'));
-
-class Fruit {
-  constructor(name) {
+//* Bind - bind a context to a function
+class Cat {
+  constructor( name ) {
     this.name = name;
   }
-
-  eat = () => {
-    console.log(`${this.name} has a bite mark`);
-  };
-}
-
-const apple = new Fruit('apple');
-const eat = apple.eat;
-eat();
-setTimeout(eat, 1000);
-*/
-//* Bind
-class Cat {
   purr() {
     console.log("prrrrrrrrrrr")
   }
 
   purrMore() {
-    this.purr();
+    return this.name;
+  }
+  doMath(x,y,z) {
+    return `${this.name} says ${x} + ${y} = ${z}`;
+  }
+  rando(array) {
+    console.log(array)
+    return array.map(el => el.toUpperCase());
   }
 }
-let whiskers = new Cat();
+class Dog {
+  constructor(name) {
+    this.name = name;
+    // this.bark = this.barkPrototype.bind(this);
+  }
+  bark = () => {
+    console.log(this.name);
+  }
+  // barkPrototype() {
+  //   console.log(this.name);
+  // }
+}
+let whiskers = new Cat('whiskers');
+let mittens = new Cat('mittens')
+let bowser = new Dog('bowser');
 
-let doThePurr = whiskers.purrMore;
-doThePurr() // TypeError
+let doThePurr = mittens.purrMore;
+// const doThePurr = () => console.log(this.name)
+// function.bind(context object, arg1, arg2, ...) => return the function bound
+// let doThePurr = whiskers.purrMore.bind(whiskers);
+let whiskersPurr = doThePurr.bind(whiskers);
+let mittensPurr  = doThePurr.bind(mittens);
+let bowserPurr   = doThePurr.bind(bowser);
+
+whiskersPurr();
+mittensPurr();
+bowserPurr();
 //* Call and Apply
+// return the return of function
+// function.call(context object, arg1, arg2, arg3, ...);
+// function.apply(context object, [...args]);
+let doTheMath = whiskers.doMath;
+let strings = ['apple', 'banana', 'coconut'];
+console.log( doTheMath.call(whiskers, ...strings) );
 
+let doRando = whiskers.rando;
+let applyRando = doRando.apply(whiskers, [strings]);
+console.log( applyRando );
 //* Context in Arrow Functions
+  // context based on location of declaration not invocation
+let speak = bowser.bark;
+speak();
