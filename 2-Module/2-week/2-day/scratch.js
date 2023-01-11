@@ -1,56 +1,9 @@
-/*
-class Test {
-  testFunc(name, num) {
-    console.log(name, num)
-    console.log(this === test1);
-  }
-}
-
-const test1 = new Test();
-
-// setTimeout(test1.testFunc.bind(test1, "Mylo", 3), 1000); // wait 1 second, true
-
-// Using this in Function Declaration Syntax
-// Could I make `this` equal to test1 in this function?
-// function someFunc() {
-//   console.log(this);
-// }
-
-// someFunc.call(test1); // (undefined) Test {...}
-
-
-
-
-// function greeting(...messages) {
-//   return messages.map((message) => {
-//     return `${this.firstName} says ${message}`;
-//   });
-// }
-
-// const derek = {
-//   firstName: 'Derek',
-// };
-
-// const derekMessages = greeting.bind(derek, 'Hello class!');
-// console.log(derekMessages('Goodbye class!'));
-
-class Fruit {
+//* Bind - function.bind(object, ...args)
+ // return the function bound
+class Cat {
   constructor(name) {
     this.name = name;
   }
-
-  eat = () => {
-    console.log(`${this.name} has a bite mark`);
-  };
-}
-
-const apple = new Fruit('apple');
-const eat = apple.eat;
-eat();
-setTimeout(eat, 1000);
-*/
-//* Bind
-class Cat {
   purr() {
     console.log("prrrrrrrrrrr")
   }
@@ -58,11 +11,54 @@ class Cat {
   purrMore() {
     this.purr();
   }
+  doMath( x, y) {
+    return `${this.name} says: ${x} + ${y} = ${x + y}`;
+  }
 }
-let whiskers = new Cat();
+class Dog {
+  constructor( name ) {
+    this.name = name;
+  }
+  bark = () => {
+    console.log(this.name);
+  }
+}
+let whiskers = new Cat('Whiskers');
+let bowser   = new Dog('Bowser');
 
 let doThePurr = whiskers.purrMore;
-doThePurr() // TypeError
-//* Call and Apply
+// doThePurr() // TypeError
+doThePurr = doThePurr.bind(whiskers);
+doThePurr();
+let doMathHere = whiskers.doMath;
 
+let whiskerMath = doMathHere.bind(whiskers, 2, 4);
+let bowserMath = doMathHere.bind(bowser, 3,7);
+console.log(typeof whiskerMath)
+// console.log(whiskerMath())
+// console.log(bowserMath());
+
+// setTimeout(whiskers.purrMore.bind(whiskers), 5000);
+//* Call and Apply
+ // call   => function.call(object, arg1, arg2)
+ // apply  => function.apply(object, [...args])
+ // return the return of our function
+
+let catMath1 = doMathHere.call(whiskers, 2, 4);
+let catMath2 = doMathHere.apply(whiskers, [2, 4]);
+
+console.log( typeof catMath1 );
+console.log( catMath2 );
 //* Context in Arrow Functions
+ // 'this' referes to  where where the code is contained not where it's called
+ class BigDog extends Dog{
+  constructor( name ) {
+    super(name);
+    // this.name = name;
+  }
+}
+
+let chompers = new BigDog('chompers');
+chompers.bark();
+let speak = chompers.bark;
+speak();
