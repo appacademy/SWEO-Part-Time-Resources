@@ -32,21 +32,13 @@ advantage of using JavaScript.
 
 ---
 
-## aa_update
+## code runner
 
-A tool that the instructional staff developed to automatically create a folder
-structure for you and to help you to access daily lecture notes.
+A vscode extension that enables you to run the code in your file immediately in vscode.
 
-Run this command to start the script, follow the script instructions.
+In your sidebar, go to the extensions and search for code runner. Install that extension and you're finished.
 
-`curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash`
-
-Your cohortId is `2023-Jan-E` for EST students and `2023-Jan-W` for PST students.
-
-If you run into any issues with this, I built in extra time for the following
-breakout session to help you all debug any issues that come up.
-
-To update the days notes run the command `aa_update` :)
+To use just write some code and push the play button above the file in vscode. (There will be a live demo.)
 
 ---
 
