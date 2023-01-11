@@ -114,9 +114,9 @@ DELETE * FROM table_name WHERE column_name = 'The columns value youre trying to 
         - DEFAULT - Sets a default value for a column if no value is specified
         - CREATE INDEX - Used to create and retrieve data from the database very quickly
 
-# Short Solo Practice 1  5 min [SQL Aggregates](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-20---sql/practice--sql-aggregates)
+# Short Solo Practice 15 min [SQL Aggregates](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-20---sql/practice--sql-aggregates)
 
-# Short Solo Practice 25 min [SQL Subqueries](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-20---sql/practice--sql-subqueries)
+# Short Solo Practice 15 min [SQL Subqueries](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-20---sql/practice--sql-subqueries)
 - Short Practice Q/A 10 min
 
 # Long Paired Practice: Rest of Class [Intermediate SQL](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-20---sql/long-practice--intermediate-sql)
