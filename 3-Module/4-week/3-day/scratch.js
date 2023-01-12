@@ -131,3 +131,37 @@ console.log(response.status)
 let responseBody = await response.json()
 console.log(responseBody)
 } )
+
+fetch('/posts')
+  .then(res => {
+    console.log(res)
+    console.log(res.status)
+    console.log(res.headers.get("Content-Type"))
+    return res.json()
+  })
+  .then(resBody => console.log(resBody));
+
+/* =============================== Phase 2 ================================ */
+/*
+  Make a request with fetch request to POST /posts and print the response
+  components to the console.
+*/
+
+// Your code here
+let options = {
+  method: 'POST',
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    message: "New Post!"
+  })
+}
+
+fetch('/posts', options)
+.then(async res => {
+  console.log(res)
+  console.log(res.headers.get("Content-Type"))
+  let resBody = await res.json()
+  console.log(resBody)
+})
