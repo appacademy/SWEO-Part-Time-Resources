@@ -65,9 +65,10 @@ function addTwo (num) {
     // take the num and increment once
     // add 7 to the num and reassign its value
     // console.log num plus 2
-    num++
-    num += 7
+    num++;
+    num += 7;
     console.log(num + 2);
+    return num + 2;
 };
 
 // addTwo(4)
