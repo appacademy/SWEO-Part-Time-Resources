@@ -126,11 +126,10 @@ let options = {
   },
   body: JSON.stringify({
     name: "New Album!",
-    year: 1900
   })
 }
 
-fetch('/artists/1/paintings', options)
+fetch('/artists/1/albums', options)
 .then(res => {
   console.log(res.headers.get("Content-Type"))
   return res.json()
@@ -139,6 +138,7 @@ fetch('/artists/1/paintings', options)
 fetch("/artists")
   .then(res => res.json())
   .then(resBody => console.log(resBody))
+  
 fetch('/artists', options)
 .then(async res => {
 
