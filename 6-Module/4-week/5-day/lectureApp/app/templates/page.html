@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <!-- Add title here! -->
+    <title>
+        {{ info.title }}
+    </title>
+</head>
+
+<body>
+    {% include 'nav.html' %}
+    <marquee>CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS CARS</marquee>
+    <h1>
+        {{ info.header }}
+    </h1>
+    {% if cars %}
+    <table>
+        <thead>
+            <tr>
+                <th>CAR ID</th>
+                <th>MANUFACTURED YEAR</th>
+                <th>MAKE</th>
+                <th>MODEL</th>
+                <th>OWNER FIRST NAME</th>
+                <th>OWNER LAST NAME</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for car in cars%}
+            <tr>
+                <td>{{ car[0]}}</td>
+                <td>{{ car[1]}}</td>
+                <td>{{ car[2]}}</td>
+                <td>{{ car[3]}}</td>
+                <td>{{ car[4]}}</td>
+                <td>{{ car[5]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    <!--  -->
+    {% if owners %}
+    <table>
+        <thead>
+            <tr>
+                <th>OWNER ID</th>
+                <th>FIRST NAME</th>
+                <th>LAST NAME</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for owner in owners %}
+            <tr>
+                <td>{{ owner[0]}}</td>
+                <td>{{ owner[1]}}</td>
+                <td>{{ owner[2]}}</td>
+                <td>{{ owner[3]}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    {% endif %}
+    <!--  -->
+    {% if form %}
+        {% include 'newcar.html' %}
+    {% endif%}
+    <!--  -->
+    {% if owner_form %}
+        {% include 'changeowner.html' %}
+    {% endif%}
+    <!-- Add new owner form! -->
+    {% if new_owner_form %}
+        {% include 'newowner.html' %}
+    {% endif %}
+    <!--  -->
+    {% if errors %}
+        {% include 'errors.html' %}
+    {% endif %}
+    <!-- Add Session data! -->
+    {{session}}
+
+</body>
+
+</html>

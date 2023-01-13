@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="workspace">
+  <header class="actions-header">
+    <form class="assignment-form" method="post" action="{{ url_for('.assign') }}">
+      {{ taf.csrf_token }}
+      <div class="assignment-form-title">Assign Table</div>
+      <div class="assignment-form-select">{{ taf.tables }}</div>
+      <div class="assignment-form-select">{{ taf.employees }}</div>
+      <div class="assignment-form-submit">{{ taf.assign(class="button assign") }}</div>
+    </form>
+    <form class="logout-form" method="post" action="{{ url_for('session.logout') }}">
+      <button class="logout">Logout</button>
+    </form>
+  </header>
+  <main>
+    <table class="orders-table">
+      <thead>
+        <tr>
+          <th colspan="4" class="table-title">Your Open Orders</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+          <tr class="order-row">
+            <td>Table {{ order.table.number }}</td>
+            <td>{{ "${:,.2f}".format(order.total) }}</td>
+            <td class="order-action-cell">
+              <form method="post" action="{{ url_for('.close', id=order.id) }}">
+                {{ taf.csrf_token }}
+                <button class="micro">Close table</button>
+              </form>
+            </td>
+            <td class="order-action-cell">
+              <button class="micro" form="food-list" formaction="{{ url_for('.add_to_order', id=order.id) }}">Add to order</button>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+    <aside class="food-list">
+      <form id="food-list" method="post">
+        {% for type, foods in foods_by_type.items() %}
+          {{ taf.csrf_token }}
+          <section class="food-type-group">
+            <header class="food-type-header">{{ type }}</header>
+            <div class="foods">
+              {% for food in foods %}
+                <div class="food-choice">
+                  <input type="checkbox" name="menu_item_ids" value="{{ food.id }}"> {{ food.name }}
+                </div>
+              {% endfor %}
+            </div>
+          </section>
+        {% endfor %}
+      </form>
+    </aside>
+  </main>
+</div>
+{% endblock %}
