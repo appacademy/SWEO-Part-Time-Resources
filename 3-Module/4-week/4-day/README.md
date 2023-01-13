@@ -130,7 +130,6 @@ let options = {
   })
 }
 
-
 fetch('/artists/1/paintings', options)
 .then(res => {
   console.log(res.headers.get("Content-Type"))
