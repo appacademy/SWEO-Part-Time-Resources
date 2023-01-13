@@ -1,0 +1,9 @@
+app
+migrations
+.flaskenv
+Pipfile
+Pipfile.lock
+templates
+.env.example
+.env
+.venv

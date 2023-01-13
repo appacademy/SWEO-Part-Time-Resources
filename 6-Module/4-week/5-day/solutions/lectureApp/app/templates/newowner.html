@@ -1,0 +1,20 @@
+<!-- Build the form template! -->
+<form action="" method="post">
+    {{new_owner_form.hidden_tag()}}
+    <p>
+        {{new_owner_form.first_name.label}}
+        {{new_owner_form.first_name()}}
+    </p>
+    <p>
+        {{new_owner_form.last_name.label}}
+        {{new_owner_form.last_name()}}
+    </p>
+    <p>
+        {{new_owner_form.email.label}}
+        {{new_owner_form.email()}}
+    </p>
+    <p>
+        {{new_owner_form.submit.label}}
+        {{new_owner_form.submit()}}
+    </p>
+</form>

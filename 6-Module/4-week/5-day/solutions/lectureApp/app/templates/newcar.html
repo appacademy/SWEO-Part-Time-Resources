@@ -1,0 +1,25 @@
+<h2>Form exists!</h2>
+<!-- Form goes here! We'll cover this tomorrow -->
+<form action="" method="post">
+    {{form.hidden_tag()}}
+    <p>
+        {{form.manu_year.label}}
+        {{form.manu_year()}}
+    </p>
+    <p>
+        {{form.make.label}}
+        {{form.make()}}
+    </p>
+    <p>
+        {{form.model.label}}
+        {{form.model()}}
+    </p>
+    <p>
+        {{form.owner_id.label}}
+        {{form.owner_id()}}
+    </p>
+    <p>
+        {{form.submit.label}}
+        {{form.submit()}}
+    </p>
+</form>

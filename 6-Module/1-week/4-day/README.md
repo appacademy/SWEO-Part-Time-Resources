@@ -65,4 +65,4 @@ printer('Hello World')
 - Know how to use if, else, elif and make sure you understand how the code jumps from block to block depending on if the statements get evaluated or not.
 - Know how to implement for loops and perform operations on an iterable sequence
 - Know how to implement while loops and perform operations on an iterable sequence
-<!-- - Know how to use list comprehension  -->
+- Know how to use list comprehension
