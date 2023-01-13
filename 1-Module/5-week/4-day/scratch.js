@@ -94,20 +94,19 @@ flatten([1, 2]); // [1, 2]
 flatten([1, [2, [3]]]); // [1, 2, 3]
 */
 
-/*
-function flatten(arr) {
-    let newArray = [];
+
+// function flatten(arr) {
+//     let newArray = [];
 
 
-    arr.forEach(function (el) {
-        if (Array.isArray(el)) {
-            newArray.push(...flatten(el))
-        } else {
-            newArray.push(el);
-        }
-    })
-
-    return newArray;
-}
-*/
+//     arr.forEach(function (el) {
+//         if (Array.isArray(el)) {
+//             newArray.push(...flatten(el))
+//         } else {
+//             newArray.push(el);
+//         }
+//     })
+//     console.log(newArray)
+//     return newArray;
+// }
 
