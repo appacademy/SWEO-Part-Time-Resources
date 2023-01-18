@@ -39,7 +39,7 @@ class ClassComponent extends React.Component {
   };
 
   componentWillUnmount() {
-    console.log('cleanup')
+    console.log('cleanup');
   };
 
   render() {
