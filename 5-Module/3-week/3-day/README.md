@@ -86,7 +86,11 @@ function FunctionComponent({ title }) {
 };
 ```
 
-|                 | Class                | Function      |
-|-----------------|----------------------|---------------|
-| Returning JSX   | Define render method | return value  |
-| Component State | this.state           | useState hook |
+|                   | Class                | Function                            |
+|-------------------|----------------------|-------------------------------------|
+| Returning JSX     | Define render method | return value                        |
+| Props             | this.props           | Passed in as argument               |
+| Component State   | this.state           | useState hook                       |
+| Initial Render    | componentDidMount    | useEffect (empty dependency array)  |
+| Re-renders        | componentDidUpdate   | useEffect (dependency array values) |
+| Component Removal | componentDidUnmount  | Return value of useEffect           |
