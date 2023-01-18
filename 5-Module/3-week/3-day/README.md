@@ -10,6 +10,8 @@
     - componentDidMount
     - componentDidUpdate
     - componentWillUnmount
+
+### Class vs Function
     
 ```
 import React from 'react';
@@ -83,3 +85,8 @@ function FunctionComponent({ title }) {
   );
 };
 ```
+
+|                 | Class                | Function      |
+|-----------------|----------------------|---------------|
+| Returning JSX   | Define render method | return value  |
+| Component State | this.state           | useState hook |
