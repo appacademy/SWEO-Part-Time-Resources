@@ -6,6 +6,8 @@
 - Stores information that can be accessed from any component in our app (just like Context)
 - Gives us access to powerful development tools to aid the dev & debugging process
 
+---
+
 ### 3 Principles of Redux
 
 - Single source of truth
@@ -14,6 +16,8 @@
   - State object is not modifiable directly, you must modify it by "dispatching actions"
 - Changes are made with pure functions (no side effects)
   - A "reducer" is a pure function that will receive the dispatched actions and return the updated state
+
+---
 
 ### Redux vs Context
 
@@ -65,6 +69,8 @@ const Root = () => {
 };
 ```
 
+---
+
 ### Redux Terms
 
 - State
@@ -92,6 +98,8 @@ import { createStore } from 'redux';
 const store = createStore(reducer, preloadedState, enhancer);
 ```
 
+---
+
 - Actions
   - POJO that has a `type` property (optional `payload` property)
   - Actions are used to update the store
@@ -112,6 +120,8 @@ const addGame = (data) => {
     };
 };
 ```
+
+---
 
 - Dispatch
   - Communicates with the store by "dispatching" an action, which is taken in by reducer
@@ -146,6 +156,8 @@ const CatComponent = () => {
     );
 };
 ```
+
+---
 
 - Reducer
   - Function that is invoked when a action is dispatched (only function to actually change store)
