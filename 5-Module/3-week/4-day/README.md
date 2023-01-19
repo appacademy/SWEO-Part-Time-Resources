@@ -73,8 +73,6 @@ const Root = () => {
 
 ### Redux Terms
 
-- State
-  - Information/data stored by the app at a particular point in time
 - Store
   - JavaScript object that has a few methods, `getState()`, `dispatch(action)`, `subscribe(listener)`
   - Responsible for handling Redux state
