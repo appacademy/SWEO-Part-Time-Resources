@@ -74,13 +74,13 @@ const Root = () => {
   - Responsible for handling Redux state
   - Store returns the current state
   - READ-ONLY
-  - `createStore` takes three arguments
-    -   `reducer`
-      -   Allows the store to be updated
-      -   Mandatory
-    -   A "starting" state
-      -   Anything you want to exist in the state by default
-      -   Optional
+  - `createStore` takes three arguments:
+    - `reducer`
+      - Allows the store to be updated
+      - Mandatory
+    - A "starting" state
+      - Anything you want to exist in the state by default
+      - Optional
     - An enhancer function
       - Allows us to use cool developer tools and features
       - Not something we'll ever have to setup on our own
