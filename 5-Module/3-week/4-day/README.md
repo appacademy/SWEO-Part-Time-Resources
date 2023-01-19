@@ -113,6 +113,40 @@ const addGame = (data) => {
 };
 ```
 
+- Dispatch
+  - Communicates with the store by "dispatching" an action, which is taken in by reducer
+  - Can use dispatch method on store but will be using useDispatch() hook
+
+```js
+import { createStore } from 'redux';
+
+const store = createStore(reducer, preloadedState, enhancer);
+
+store.dispatch(someAction);
+```
+
+---
+
+```js
+import { useDispatch } from 'react-redux';
+import { addCat } from 'the/cat/example';
+
+const CatComponent = () => {
+    const dispatch = useDispatch();
+
+    return (
+        <div>
+            <button onClick={() => dispatch(addCat('Tenten'))}>
+                Add a cat named Tenten!
+            </button>
+            <button onClick={() => dispatch(addCat('Kiki'))}>
+                Add a cat named Kiki!
+            </button>
+        </div>
+    );
+};
+```
+
 - Reducer
   - Function that is invoked when a action is dispatched (only function to actually change store)
   - Receives an action and the current redux state as arguments, and then returns an updated state
