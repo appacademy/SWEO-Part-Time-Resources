@@ -10,7 +10,14 @@ Define this function using function expression syntax.
 HINT: you can use Array's slice() method to create a copy of an array
 ******************************************************************************/
 // your code here
-
+function rotateRight(arr, num){
+    let newArr = arr.slice()
+    // console.table(newArr)
+    for (let loopCount = 0; loopCount < num; loopCount++){
+        newArr.unshift(newArr.pop())
+    }
+    return newArr;
+}
 
 
 

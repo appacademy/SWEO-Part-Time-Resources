@@ -7,6 +7,15 @@ without using Array.indexOf.
 ******************************************************************************/
 // your code here
 
+let myIndexOf = (arr, target) =>{
+    for (let banana = 0; banana < arr.length; banana++){
+        let currentEle = arr[banana]
+        if (currentEle === target) {
+            return banana
+        }
+    }
+    return -1
+}
 
 
 

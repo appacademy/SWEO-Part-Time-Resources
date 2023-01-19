@@ -5,7 +5,18 @@ The function should return the largest number of the array. If the array is
 empty, the function should return null.
 ******************************************************************************/
 // your code here
-
+function maxValue(nums){
+    if (nums.length === 0) return null
+    let max = -Infinity;
+    // for (let num of nums){
+    //     if (num > max) max = num
+    // }
+    for(let i = 0; i < nums.length; i++){
+        let num = nums[i]
+        if (num > max) max = num
+    }
+    return max
+}
 
 
 

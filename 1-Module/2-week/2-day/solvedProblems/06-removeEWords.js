@@ -5,6 +5,16 @@ arg. The function should return a new string, containing only the words that
 don't have the letter "e" in them.
 ******************************************************************************/
 // your code here
+function removeEWords(sentence){
+    let wordsArr = sentence.split(" ");
+    let result = []
+    for (let i  = 0; i < wordsArr.length; i++){
+        let currentWord = wordsArr[i].toLowerCase()
+        if (!(currentWord.includes("e"))) result.push(currentWord)
+    }
+    return result.join(" ")
+}
+
 
 
 

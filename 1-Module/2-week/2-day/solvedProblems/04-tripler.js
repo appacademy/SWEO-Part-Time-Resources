@@ -6,7 +6,15 @@ array.
 ******************************************************************************/
 // your code here
 
-
+function tripler(nums){
+    let result = []
+    for (let i = 0; i < nums.length; i++){
+        // let currentNum = nums[i]
+        // result.push(currentNum*3)
+        result[result.length] = nums[i] * 3
+    }
+    return result
+}
 
 
 
