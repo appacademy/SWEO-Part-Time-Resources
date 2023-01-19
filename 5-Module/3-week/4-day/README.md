@@ -64,3 +64,67 @@ const Root = () => {
     );
 };
 ```
+
+### Redux Terms
+
+- State
+  - Information/data stored by the app at a particular point in time
+- Store
+  - JavaScript object that has a few methods, `getState()`, `dispatch(action)`, `subscribe(listener)`
+  - Responsible for handling Redux state
+  - Store returns the current state
+  - READ-ONLY
+  - `createStore` takes three arguments
+    -   `reducer`
+      -   Allows the store to be updated
+      -   Mandatory
+    -   A "starting" state
+      -   Anything you want to exist in the state by default
+      -   Optional
+    - An enhancer function
+      - Allows us to use cool developer tools and features
+      - Not something we'll ever have to setup on our own
+      - Optional
+
+```js
+import { createStore } from 'redux';
+
+const store = createStore(reducer, preloadedState, enhancer);
+```
+
+- Actions
+  - POJO that has a `type` property (optional `payload` property)
+  - Actions are used to update the store
+  - Actions are "dispatched", send updates to the store, so that the store can update the state
+  - Generally user actions trigger actions
+  - Action creators are used to dynamically pass in information to the store
+
+```js
+const addGame = {
+    type: 'ADD_GAME',
+    payload: 'Fire Emblem Engage',
+};
+
+const addGame = (data) => {
+    return {
+        type: 'ADD_GAME',
+        payload: data,
+    };
+};
+```
+
+- Reducer
+  - Function that is invoked when a action is dispatched (only function to actually change store)
+  - Receives an action and the current redux state as arguments, and then returns an updated state
+  - Is required to be a pure function
+
+```js
+const reducer = (state = [], action) => {
+    switch (action.type) {
+        case 'ADD_GAME':
+            return [...state, action.payload];
+        default:
+            return state;
+    }
+};
+```
