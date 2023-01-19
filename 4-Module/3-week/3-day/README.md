@@ -83,7 +83,7 @@ npx sequelize seed:generate --name <name of seed>
 # Short Solo Practice 20 min [Sequelize INSERT Data](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/practice--sequelize-insert-data)
 #### [READING](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/insert-data-in-sequelize)
 - Short practice Q/A
-# Short Solo Practice 20 min [Sequelize UPDATE and DELETE](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/practice--sequelize-update-and-delete-singular-records)
+# Short Solo Practice 30 min [Sequelize UPDATE and DELETE](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/practice--sequelize-update-and-delete-singular-records)
 #### [UPDATE READING](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/update-data-in-sequelize)
 #### [DELETE READING](https://open.appacademy.io/learn/js-py---pt-aug-2022-online/week-21---express-and-sequelize/delete-data-in-sequelize)
 - Short practice Q/A
