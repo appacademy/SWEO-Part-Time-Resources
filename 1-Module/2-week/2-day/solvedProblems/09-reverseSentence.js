@@ -6,8 +6,16 @@ reversed. Note that you should reverse the order among words, not the order
 among characters.
 ******************************************************************************/
 // your code here
-
-
+// one line solve
+// let reverseSentence = sentence => sentence.split(" ").reverse().join(" ")
+function reverseSentence(sentence){
+    let words = sentence.split(" ");
+    let reversed = [];
+    for (let i = words.length - 1; i >= 0; i--){ // loop from back to front!
+        reversed.push(words[i])
+    }
+    return reversed.join(" ")
+}
 
 
 

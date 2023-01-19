@@ -6,7 +6,15 @@ should return null.
 ******************************************************************************/
 // your code here
 
-
+function avgVal(arr){
+    if(arr.length === 0) return null;
+    let length = arr.length;
+    let sum = 0;
+    while (arr.length > 0){
+        sum += arr.pop()
+    }
+    return sum / length;
+}
 
 
 

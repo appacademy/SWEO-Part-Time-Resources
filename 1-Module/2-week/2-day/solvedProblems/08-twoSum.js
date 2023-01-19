@@ -6,7 +6,13 @@ array contains only unique numbers.
 ******************************************************************************/
 // your code here
 
-
+let twoSum = function(nums, tar){
+    for(let num of nums) {
+        let diff = tar - num;
+        if (nums.includes(diff) && diff !== num) return true
+    }
+    return false
+}
 
 
 

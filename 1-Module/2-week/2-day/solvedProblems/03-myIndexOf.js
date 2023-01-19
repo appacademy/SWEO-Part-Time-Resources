@@ -6,7 +6,12 @@ in the array. If the target is not found, it should return -1. Solve this
 without using Array.indexOf.
 ******************************************************************************/
 // your code here
-
+function myIndexOf(arr, target){
+    for(let index = 0; index < arr.length; index++){
+        if (arr[index] === target) return index
+    }
+    return -1
+}
 
 
 

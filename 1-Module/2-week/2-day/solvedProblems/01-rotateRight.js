@@ -10,7 +10,22 @@ Define this function using function expression syntax.
 HINT: you can use Array's slice() method to create a copy of an array
 ******************************************************************************/
 // your code here
-
+let rotateRight =(arr, num)=>{
+    let copy = arr.slice();
+    // let firstHalf = [];
+    // let secondHalf = [];
+    // take last element of copy, and move it to beginning
+    // do this num times
+    for(let i = 0; i < num; i++){
+    //     firstHalf = arr.slice(num) // 0 -> shallow copy of arr
+    //     secondHalf = arr.slice(0, num) // -> start at beginning, and go to but not including i
+    //     return firstHalf + secondHalf
+        copy.unshift(copy.pop())
+    }
+    
+    // return arr.slice(-num).concat(arr.slice(0, -num))
+    return copy;
+}
 
 
 

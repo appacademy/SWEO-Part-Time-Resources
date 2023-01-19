@@ -6,6 +6,14 @@ empty, the function should return null.
 ******************************************************************************/
 // your code here
 
+let maxValue = nums => {
+    if (!nums.length)  return null
+    let max = -Infinity;
+    for (let num of nums){
+        if (num > max) max = num
+    }
+    return max
+}
 
 
 
