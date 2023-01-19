@@ -12,8 +12,6 @@ HINT: you can use Array's slice() method to create a copy of an array
 // your code here
 
 
-
-
 let arr = ['a', 'b', 'c', 'd', 'e'];
 console.log(rotateRight(arr, 2)); // [ 'd', 'e', 'a', 'b', 'c' ]
 console.log(arr); // [ 'a', 'b', 'c', 'd', 'e' ]
