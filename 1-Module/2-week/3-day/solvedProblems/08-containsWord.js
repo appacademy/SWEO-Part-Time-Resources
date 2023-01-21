@@ -6,7 +6,15 @@ is found inside of the sentence. Solve this without using String's indexOf()
 or includes() methods.
 ******************************************************************************/
 // your code here
-
+function containsWord(sentence, target){
+    console.log(sentence)
+    for(let i =0; i < sentence.length; i++){
+        let currentSlice = sentence.slice(i, i+target.length)
+        console.log("---",currentSlice)
+        if (currentSlice === target) return true
+    }
+    return false;
+}
 
 
 

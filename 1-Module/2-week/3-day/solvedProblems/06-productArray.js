@@ -5,7 +5,16 @@ should return the total product of multiplying all numbers of the array
 together. You can assume that nums will not be an empty array.
 ******************************************************************************/
 // your code here
-
+function product(nums){
+    console.log(nums)
+    let total = nums.pop();
+    console.log(nums)
+    while(nums.length){
+        console.log(nums)
+        total *= nums.shift();
+    }
+    return total;
+}
 
 
 

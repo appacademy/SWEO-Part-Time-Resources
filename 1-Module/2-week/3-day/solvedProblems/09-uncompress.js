@@ -9,7 +9,17 @@ Hint: you can use the built-in Number function should convert a numeric string
 into the number type. For example. Number("4") // => 4
 ******************************************************************************/
 // your code here
-
+let uncompress = function(str){
+    let result = "";
+    for (let i = 0; i < str.length; i+=2){
+        let currentChar = str[i]
+        let currNum = Number(str[i+1])
+        for (let j = 0; j < currNum; j++){
+            result += currentChar
+        }
+    }
+    return result;
+}
 
 
 

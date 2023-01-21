@@ -8,8 +8,15 @@ elements that were removed.
 Define this function using function expression syntax.
 ******************************************************************************/
 // your code here
+// function popper(arr, num){
+//     let popped = [];
+//     while (popped.length < num){
+//         popped.push(arr.pop());
+//     }
+//     return popped;
+// }
 
-
+let popper = (arr, num) => arr.splice(-num, num).reverse();
 
 
 

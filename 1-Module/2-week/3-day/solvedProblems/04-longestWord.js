@@ -6,7 +6,20 @@ is more than one "longest word", return the first of these instances.
 ******************************************************************************/
 // your code here
 
-
+function longestWord(sentence){
+    let wordsArr = sentence.split(" ");
+    console.table(wordsArr)
+    let longest = "";
+    while (wordsArr.length){
+        let first = wordsArr.shift();
+        console.log("++++++", first)
+        if (first.length > longest.length) {
+            console.log(first,"is longer than", longest)
+            longest = first;
+        }
+    }
+    return longest
+}
 
 
 console.log(longestWord('where did everyone go')); // 'everyone'

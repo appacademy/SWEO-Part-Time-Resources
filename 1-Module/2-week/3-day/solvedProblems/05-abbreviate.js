@@ -5,8 +5,13 @@ should return a new string where all of its vowels are removed.
 ******************************************************************************/
 // your code here
 
+let isVowel = char => "aeiou".includes(char.toLowerCase())
 
-
+function abbreviate(word){
+    let result = "";
+    for (let char of word) if (!isVowel(char)) result += char;
+    return result;
+}
 
 
 
