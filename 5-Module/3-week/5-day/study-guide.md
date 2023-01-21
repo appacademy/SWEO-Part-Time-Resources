@@ -29,7 +29,7 @@
 
 # Remove a book
 1. Identify component that has delete button
-2. Add variable `REMOVE_BOOK` to the books.js reducer file
+2. Add variable `REMOVE_BOOK` to the booksReducer.js file
 3. Create an action that takes in an `id` and returns an object.
 4. Add case to reducer for action.type === `REMOVE BOOK` 
 5. In the case delete key from the object and return `newState`
