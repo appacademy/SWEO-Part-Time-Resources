@@ -35,7 +35,7 @@ Some common events include:
 
 `event.currentTarget` refers to the element where the Event Handler has been **_attached_**
 
-`event.target` refers to the element where the has **_occurred_**
+`event.target` refers to the element where the event has **_occurred_**
 
 - This could be a descendent (child element)
 
