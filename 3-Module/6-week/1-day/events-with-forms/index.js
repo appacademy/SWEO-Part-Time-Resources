@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', (e) => {
           !inputVal.includes('@') &&
           (!inputVal.includes('.com') || !inputVal.includes('.io'))
         ) {
-        //   e.preventDefault(); //prevents form from submitting if there's an error!
+          e.preventDefault(); //prevents form from submitting if there's an error!
           alert('Invalid email');
         }
       });
