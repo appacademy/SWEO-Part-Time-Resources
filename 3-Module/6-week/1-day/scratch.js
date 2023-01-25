@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', (e) => {
   const blue = document.getElementById('outer');
 
-  blue.addEventListener('click', (e) => {
+  blue.addEventListener('scroll', (e) => {
     // console.log(e);
     // if we click on the red square
     console.log("BLUE TARGET:", e.target.className, e.target.id); // red
@@ -10,9 +10,9 @@ document.addEventListener('DOMContentLoaded', (e) => {
 
   const red = document.getElementById('inner');
   red.addEventListener('click', (e) => {
-    // clicking on red no longer does anything
-    e.stopPropagation();
 
+    // clicking on red no longer does anything
+    // e.stopPropagation();
      console.log("RED TARGET:", e.target.className, e.target.id); // red
     console.log("RED CURRTARGET:", e.currentTarget.className); // blue
 
@@ -22,4 +22,5 @@ document.addEventListener('DOMContentLoaded', (e) => {
   check.addEventListener('click', (e) => {
     e.preventDefault();
   });
+
 });
