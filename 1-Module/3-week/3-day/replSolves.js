@@ -325,7 +325,7 @@ const obj9 = {
 }
 
 // Write your solution here.
-obj.printUniqueValues = () => {
+obj9.printUniqueValues = () => {
     let values = Object.values(obj9);
     let unique = [];
     for (let value of values){
