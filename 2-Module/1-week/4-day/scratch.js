@@ -27,6 +27,7 @@ class Animal {
     static numAnimals = 0;
 }
 
+
 // let haru = new Animal("Dog");
 
 // let king = new Animal("Cat")
@@ -51,4 +52,3 @@ class Animal {
 
 //Overriding - When a child class has a different implementation of a method
 //than the parent class
-
