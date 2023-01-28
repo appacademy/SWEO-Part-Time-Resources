@@ -1,4 +1,3 @@
-# Oversimplified Assessment Breakdown
 
 - MAC Addresses - permanent ID on devices. Can't be changed.
 - Ports - virtual connection points for services, devices, or applications.
