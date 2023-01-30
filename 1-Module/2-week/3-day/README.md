@@ -1,44 +1,38 @@
-# M1W2D3
+# W2D3 - Helper Functions / Node
 
 ## Helper Functions
 
-- [Choose Primes]
+- In class lecture on Helper Functions
 
-### Choose Primes Discussion
+## Running Code
 
-## Practice 1
+`Basic Commands`
 
-- [Two Sum Recall]
-- [Reverse Sentence]
-- [Initials]
+- ls
+  - See all files and folders in the directory(folder) you're currently in
+- cd `<folder>`
+  - Navigate to a directory(folder)
+- mkdir `<folder_name>`
+  - Make a directory(folder) in whatever directory(folder) you're in
+- touch `<file_name>`
+  - Create a file in whatever directory(folder) you're currently in
+- pwd
+  - Shows you path to the current directory(folder) you're in
+- cd ../
+  - Travel upwards
+- cd ./
+  - Don't travel
 
-### Practice 1 Discussion
+`Using Node`
 
-## Practice 2
+- Open a node REPL with `node`
+  - exit with ctrl+c (twice)
+- Use `node <filename>` to run a file with node
 
-- [Two Dimensional Product]
-- [Popper]
+`Using Mocha`
 
-### Practice 2 Discussion
-
-## Practice 3
-
-- [Longest Word]
-- [Abbreviate]
-- [Product Array]
-
-### Practice 3 Discussion
-
-## EOD Discussion
-
-## Formative Quiz
-
-[Choose Primes]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/choose-primes
-[Two Sum Recall]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/two-sum-recall
-[Reverse Sentence]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/reverse-sentence
-[Initials]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/initials
-[Two Dimensional Product]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/two-dimensional-product
-[Popper]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/popper
-[Longest Word]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/longest-word
-[Abbreviate]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/abbreviate
-[Product Array]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/product-array
+- Make sure you're in the folder that contains the 'test' file
+- Run `mocha` to run all test files
+- Run `mocha -b` to run the test until one fails
+- Run `mocha <testFileLocation>` to run a single test
+- Run `mocha -g <functionName>` to run all test about a single function

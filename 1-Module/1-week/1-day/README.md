@@ -32,8 +32,20 @@ How to use:
     ```bash
     curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
     ```
+    1a. Enter your cohort ID.
+    
+    ``` 
+    2023-Jan-E (for EST cohort)
+    or
+    2023-Jan-W (for PST cohort)
+    ```
 
-2. Restart your terminal
+2. run the command that was given to you upon successful curl to give you access to the aa_update command.
+
+    ```bash
+    source ~/.zshrc
+    ```
+
 3. Every morning run...
 
     ```bash
@@ -47,7 +59,7 @@ How to use:
 
 ## Typical Lecture Format
 
-- Prompt
+- Prompt/Homework Review
 - Group Practice
 - Discussion
 
@@ -91,13 +103,11 @@ How to use:
 
 - How to use the Slack Channel during project time!
   - We'll teach you how to ask good coding questions... but for now...
-    1. I need help with _______
-    2. in room ______
+    1. I need help with _______ in room ______
 
 ## Student Reports
 
-1. Every night you'll get a Slack message after class.
-2. Follow the link and fill out the form
-3. DOUBLE CHECK OR STUDENT ID
+1. Watch for an email on Tuesday of Week 2 to begin filling out your weekly student report.
 
 [SWEO-Part-Time-Resources]: https://github.com/appacademy/SWEO-Part-Time-Resources
+
