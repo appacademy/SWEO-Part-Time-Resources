@@ -1,19 +1,15 @@
-/****************************************************************************** 
+/******************************************************************************
 Choose Primes
-Write a function choosePrimes(nums) that takes in an array of numbers as args. 
-The function should return a new array containing the primes from the original 
-array. A prime number is a number that is only divisible by 1 and itself. 
+Write a function choosePrimes(nums) that takes in an array of numbers as args.
+The function should return a new array containing the primes from the original
+array. A prime number is a number that is only divisible by 1 and itself.
 Hint: consider creating a helper function to check if a number is prime!
 ******************************************************************************/
 // your code here
 function isPrime(num){
-    for(let i = 2; i <= num/2; i++){
-        if (num % i === 0) return false
-    }
-    return true;
+  for (let i = 2; i < num; i++) if (num % i === 0) return false
+  return true
 }
-
-// console.log(isPrime(21))
 
 function choosePrimes(nums){
     let primes = [];

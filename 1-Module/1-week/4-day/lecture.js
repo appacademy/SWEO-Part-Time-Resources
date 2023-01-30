@@ -1,119 +1,131 @@
-// // // your code here
-// // // Conditionals!
+// // your code here
+// // Conditionals!
 
-// // // let number = 5;
-// // function isFive(number){
-// //   if (number > 5) {
-// //       console.log("Number is greater than to 5!");
-// //   } else if (number < 5) {
-// //       console.log("Number is less than 5!");
-// //   } else {
-// //       console.log("Number is exactly 5!");
-// //   }
-// // }
 
-// // isFive(5)
+// function isFive(number){
+//   if (number > 5){
+//       console.log("The num is greater than than 5!");
+//   } else if (number < 5) {
+//       console.log("The num is less than 5!");
+//   } else {
+//       console.log("The num is 5!");
+//   }
+//   return number === 5;
+// }
 
-// // loops
-// // -- While!
+// console.log(isFive(5))
 
-// // let i = 1;
+// Loops!
 
-// // while (i <= 5){
-// // 	console.log(i)
-// //     i++
-// //   //i = i + 1;
-// // }
+// initial valkue
+// let i = 0;
+// //  condition to loop while true
+// while (i <= 5 || i % 2 === 0){
+// 	console.log(i);
+//    	i = i + 1;  // increment (work towards loop condition not being true)
+// }
+// console.log("out of loop:", i)
 
-// // for (let i = 1; i <= 5; i++){
-// // 	console.log(i)
-// // }
+// for(initial value; condition to loop; increment statement){}
+// for(let i = 0; i <= 5 || i % 2 === 0; i++){
+// 	console.log(i)
+// }
+// console.log(i) // out of bounds for i!
 
 // let words = "Journey before destination"
 
-// // for(let banana = 0; banana < words.length; banana = banana + 1){
-// // 	console.log(words[banana])
-// // }
+// // let banana = 0
 
-// // let banana = 0;
-
-// // while(banana < words.length){
-// // 	console.log(words[banana])
+// // while (banana < words.length){
+// // 	let char = words[banana]
+// //     console.log(char)
 // //     banana++
 // // }
+// for(let banana = 0; banana < words.length; banana = banana + 1){
+// 	let char = words[banana]
+//     console.log(char)
+// }
 
-// // arrays!!
-// // let arr = [1,2,3,4]
-// // console.log(arr.length)
+// arrays!!
+// kind of like a list
 
-// // let arr2 = [
-// // 	42,
-// //     false,
-// //     "Let's go Pens!",
-// //     undefined,
-// //     null,
-// //     [[1], 2, [3]],
-// // ]
+// let arr1 = [1,2,3,4]
 
-// // console.log(arr2[5][0][0][0][0])
+// console.table(arr1)
 
-// let arr1 = [1,2,3];
-// let arr2 = [4,5,6];
-// let arr3 = [7,8,9];
+// let arr2 = [
+// 	42,
+// 	false,
+// 	"Let's go Pens!",
+//     undefined,
+//     null,
+//     0n,
+//     [[1], 2, [3]]
+// ]
 
-// // let arr4 = arr1 + arr2 + arr3; // bad combine!
-// // arr1[arr1.length] = 0
-// // arr1[arr1.length] = -1
-// // arr1.push(20)
-// // arr1.pop()
-// // arr1.pop()
-// // arr1.pop()
-// // arr1.pop()
+// console.table(arr2)
+// let letters = arr2[2].split("")
+// let hyphenated = letters.join("-")
+// let shouted = hyphenated.toUpperCase()
+// console.log(shouted)
+// arr2[3] = "no longer undefined :)"
+// console.log(arr2[3])
+
+// let name = "Biff"
+// name = name.split("")
+// console.log(name)
+// name[2] = "l"
+// name[3] = "l"
+// name = name.join("")
+// console.log(name)
+
+// let arr1 = [1,2,3]
+// let arr2 = [4,5,6]
+// let arr3 = [7,8,9]
 
 // let arr4 = arr1.concat(arr2, arr3)
 
-// console.log(arr4)
+// console.table(arr4)
 // // console.log(arr1)
 
-// let arr5 = arr4.slice(0, 4)
-// console.log("ARR 5!!", arr5)
-// console.log("----------------------")
-// console.log("AFTER SLICE!:", arr4)
-// arr5[0] = "REASSIGNED!"
-// console.log("ARR 5!!", arr5)
+// let arr5 = arr4.slice(2, 5)
+// console.log(arr5)
+// mutability --- our ability to change the elements in an array
 
-// PROMPT! sumArray
-// write a function that returns the sum of all numbers in a provided array
-// you can assume the array will only contain numbers
+// let arr = []
+// console.log(arr.length)
+// let pens = "Let's go Pens!"
+// for (let i = 0; i < pens.length; i++){
+// 	let char = pens[i]
+//     // // arr[i] = char
+//     // arr.push(char)
+//     arr[arr.length] = char
+// }
+// console.table(arr)
+
+// PROMPT: write a function that will accept an array of numbers and return the sum
+// of those numbers. You can trust that only numbers will be in the array
 
 function sumArray(nums){
-    console.log("VALUE OF NUMS:")
+	console.log("Numbers:")
     console.table(nums)
-    let sum = 0;
-    // for(let index = 0; index < nums.length ; index++){
-    // 	console.log("CURRENT INDEX :", index)
-    //   let currNum = nums[index];
-    //   sum = sum + currNum;
-    //   console.log("CURRENT SUM   :", sum)
+    let sum = 0
+    // for (let mango = 0; mango < nums.length; mango++){
+    // 	console.log("CURRENT INDEX     :", mango)
+    //     let currNum = nums[mango]
+    //     sum += currNum
+    //     console.log("SUM AT END OF LOOP:", sum)
     // }
-    while (nums.length > 0){  // while array of nums has elements in it,
-        let currNum = nums.pop() // pop off last element of array, store in currNum,
-      console.log("CURRENT NUMBER!", currNum)
-      sum = sum + currNum; // reassign sum to be itself plus value of currNum
-      console.log("CURRENT SUM   :", sum)
-      console.log("-----------------------------")
-      console.log("nums at end of lop:", nums)
-      console.log("-----------------------------")
+    while (nums.length > 0){
+    	let currNum = nums.pop()
+         console.log("CURRENT NUM       :", currNum)
+        sum += currNum
+      console.log("SUM AT END OF LOOP:", sum)
+      console.log("------------------------------")
+      console.table(nums)
+      console.log("------------------------------")
     }
-    
     return sum;
-  }
-  
-  console.log(sumArray([1,2,3,4]))
-  
-  
-  
-  
-  
-  
-  
+}
+
+console.log(sumArray([1,2,3,4])) // 10

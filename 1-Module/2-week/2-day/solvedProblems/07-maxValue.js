@@ -1,18 +1,15 @@
-/****************************************************************************** 
+/******************************************************************************
 Max Value
-Write a function maxValue(nums) that takes in an array of numbers as an arg. 
-The function should return the largest number of the array. If the array is 
+Write a function maxValue(nums) that takes in an array of numbers as an arg.
+The function should return the largest number of the array. If the array is
 empty, the function should return null.
 ******************************************************************************/
 // your code here
-function maxValue(nums){
-    if (nums.length === 0) return null
+
+let maxValue = nums => {
+    if (!nums.length)  return null
     let max = -Infinity;
-    // for (let num of nums){
-    //     if (num > max) max = num
-    // }
-    for(let i = 0; i < nums.length; i++){
-        let num = nums[i]
+    for (let num of nums){
         if (num > max) max = num
     }
     return max

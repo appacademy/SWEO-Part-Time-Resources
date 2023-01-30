@@ -1,64 +1,56 @@
+// Helper functions!
+// laligat? sum?? --> adding up primes? but what is prime??
 
-// lalligat sum ->
-// the sum of all primes up to or including our target
+// Prompt: find the laligat sum of a given number.
+// Step One -- Determine prime numbers
+//  -- Write function called isPrime, that accepts a number, and returns true
+//     if that number is prime, false otherwise.
+//  -- Write a loop inside of that function, that starts from 2 and checks to
+//     see any number from 2 up to our given number will yield a remainder of
+//     0 when we divide
+// Step Two -- If a number is prime, collect it somewhere to add up later
+//  -- We have the function! We can determine if a number is prime -- that
+//     function will return true if that number is prime and false if it
+//     is not
+//  -- so, using that function -- can have another loop that will start at 2
+//     and count up to and including our argument (num)
+//  -- if any of those numbers, passed into our isPrime function return true,
+//     we should collect them into a primes array
+// Step Three -- Add all of those prime numbers toget to find our laligat sum
+//  -- Now that we have those numbers, we should find a way to sum them up!
+//  -- So, in a sumArray function, we can write a loop that will look at every
+//     number and add all of those numbers together in order to find our total
 
-// Polya's 
-// Understand the problem -- What is prime?
-// -- Prime numbers are any number that is only divisible by the number 1 and
-//    itself.
-// -- How can I store this collection of primes? Add primes to an array
-// -- Also write a sumArray function
-// -- First step -- build is prime function
-//    -- how do I know (in code) whether or not a number is prime?
-//    -- from 2, count up to num that checks to see if num % loopcounter is 0. 
-//       if it is, I know I do not have a prime. If I make it to the end of the
-//       loop, I have found a prime number. 
-// -- Second step -- build skeleton for laligat sum function to construct array
-//    of primes
-//    -- iterate from our laligat argument, back to 1 to find out which numbers
-//       are prime
-//    -- while iterating, we will use the isPrime function to make the 
-//       determination of whether or not our current number is prime. 
-//    -- when we have a prime number, include it in the array of primes
-// -- Third step -- build sumArray function to find sum of that array, and use 
-//    it to calculate the return for our loligat sum function
-//    -- once we have array of primes, write a function that will accept an 
-//       array of numbers and add them all up.
-
-
-
-// console.log(isPrime(11)) // tested and valid!
-function isPrime(num) {
-    for (let currNum = 2; currNum < num; currNum++) {
-        if (num % currNum === 0) {
-            return false;
-        }
+function isPrime(num){
+    if (num < 2) return "BAD INPUT"
+    for (let i = 2; i < num; i = i +1){
+        if (num % i === 0) return false;
     }
-    return true;
+    return true
 }
+// console.log(isPrime(-10000))
 
-function sumArray(nums) {
-    let sum = 0;
-    // for(let num of nums){
+function sumArray(nums){
+    // let sum = nums.pop();
+    // while (nums.length){
+    //     sum = sum + nums.pop();
+    // }
+    // let sum = nums[0];
+    // for (let i = 1; i < nums.length; i+=1){
+    //     let num = nums[i];
     //     sum += num;
     // }
-    for (let banana = 0; banana < nums.length; banana++) {
-        let num = nums[banana];
-        sum += num;
-    }
+    let sum = 0;
+    for (let num of nums) sum += num;
     return sum;
 }
 
-function laligatSum(num) {
+function laligat(num){
     let primes = [];
-    for (let i = 1; i <= num; i++) {
-        console.log(i)
-        console.log("is prime?", isPrime(i))
-        if (isPrime(i)) primes.push(i)
+    for (let i = 2; i <= num; i++){
+        if (isPrime(i)) primes.push(i);
     }
-    return sumArray(primes)
+    return sumArray(primes);
 }
-//             [1,2,3,5,7]
 
-
-console.log(laligatSum(7)) // testing, working so far!
+console.log(laligat(110983342))

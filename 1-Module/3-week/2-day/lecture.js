@@ -1,38 +1,35 @@
 // Arrow functions!
 
-// function declaration:
-
-// function greeting(name){
-//     return "Hi there, ".concat(name, "!")
+// function declaration
+// function greeter(name){
+//     return "Hi there, " + name + "!";
 // }
-
-// let greeting = function(name){
-//     return "Hi there, ".concat(name, "!")
+// function expression syntax
+// let greeter = function(name){
+//     return "Hi there, " + name + "!";
 // }
-
-// let greeting = (name) => {
-//     return "Hi there, ".concat(name, "!")
-// }
-
-// let greeting = (name, location) => "Hi there, ".concat(name, " from ", location, "!")
+// arrow syntax
+// let greeter = (name, location) => "Hi there, ".concat(name, " from ", location, "!");
 
 
-// console.log(greeting)
-// console.log(greeting("Bill", "Pittsburgh"))
+// console.log(greeter("Bill", "Pittsburgh"));
+
+// greeter = [];
+
+// console.log(greeter)
 
 let nums = [1,2,3];
-const doubled = [];
-
-// const doubler = (num)=> doubled.push(num * 2)
-
-// nums.forEach(doubler)
-nums.forEach(function(num){ 
-    doubled.push(num * 2)
-})
-
+// let doubled = [];
+// nums.forEach((ele)=>{
+//     // console.log(ele,"----",i,"----",array)
+//     doubled.push(ele * 2)
+// })
+// let doubled = nums.map(ele => ele *2)
+let doubler = (ele, i, arr, _this) => {
+    // console logs >> dev process
+    return ele *2
+}
+let doubled = nums.map(doubler)
 console.log(doubled)
 
-
-
-// greeting = [];
-// console.log(greeting)
+// console.log(ele => ele *2)

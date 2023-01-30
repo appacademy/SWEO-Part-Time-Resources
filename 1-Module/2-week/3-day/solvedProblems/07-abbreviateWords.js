@@ -1,38 +1,27 @@
-/****************************************************************************** 
+/******************************************************************************
 Abbreviate Words
-Write a function abbreviateWords(sentence) that takes in a sentence string. 
-The function should return a new sentence where words that are longer than 4 
-characters have their vowels removed. Hint: Consider creating a helper function 
+Write a function abbreviateWords(sentence) that takes in a sentence string.
+The function should return a new sentence where words that are longer than 4
+characters have their vowels removed. Hint: Consider creating a helper function
 to remove all vowels in a string.
 ******************************************************************************/
 // your code here
+let isVowel = char => "aeiou".includes(char.toLowerCase())
+
 function abbreviate(word){
-    let newStr = ""
-    let vowels = "aieouAEIOU"
-    // console.log("word is:", word)
-    for (let char of word){
-        // console.log("current char:    ", char)
-        if (!vowels.includes(char)) newStr += char
-    }
-    return newStr
+    let result = "";
+    for (let char of word) if (!isVowel(char)) result += char;
+    return result;
 }
 
-function abbreviateWords(words){
-    let wordsArr = words.split(" ")
-    let result = [];
-    console.table(wordsArr)
-    for (let i = 0; i < wordsArr.length; i+=1){
-        let currentWord = wordsArr[i];
-        console.log("+++++", currentWord)
-        if (currentWord.length > 4){
-            console.log("THAT WORDS GOT MORE THAN 4 CHARACTERS!!")
-            result.push(abbreviate(currentWord))
-        } else {
-            console.log("THAT WORD IS A OK! :)")
-            result.push(currentWord)
-        }
+let abbreviateWords = function(sentence){
+    let words = sentence.split(" ")
+    // console.table(words)
+    for (let i = 0; i < words.length; i++){
+        if (words[i].length > 4) words[i] = abbreviate(words[i])
+        // console.log(words)
     }
-    return result.join(" ")
+    return words.join(" ")
 }
 
 

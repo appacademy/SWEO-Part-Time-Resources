@@ -3,7 +3,7 @@
 // Sometimes we'll need to solve problems that can be broken down into smaller
 // problems.  Consider the transactions a person may make with their bank
 // account.  Rather than encapsulating all of the activities within a single
-// function, we can instead write some helper functions to handle individual 
+// function, we can instead write some helper functions to handle individual
 // actions.
 
 
@@ -49,7 +49,7 @@ let deposit = function(initialBalance, amount) {
 // console.log(transaction('deposit', 96));
 // console.log(transaction('deposit', 1000000000000000));
 
-// Let's create another example, this time thinking about how we might add or 
+// Let's create another example, this time thinking about how we might add or
 // remove things from a to-do list
 
 function toDo(action, list, task){
@@ -90,7 +90,7 @@ function completeTask(list, task){
   let index = list.indexOf(task)
   list.splice(index, 1)
   printList(list)
-  return list 
+  return list
 }
 
 function prioritize(list, task){
@@ -107,11 +107,10 @@ function prioritize(list, task){
   return list
 }
 
-let myList = [] 
+let myList = []
 toDo("add", myList, "walk the dog")
 toDo("add", myList, "go shopping")
 toDo("add", myList, "defeat enemies")
 toDo("print", myList)
 toDo("prioritize", myList, "defeat enemies")
 toDo("complete", myList, "walk the dog")
-

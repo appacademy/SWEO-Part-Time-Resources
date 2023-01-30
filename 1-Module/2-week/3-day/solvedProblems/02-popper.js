@@ -1,24 +1,22 @@
-/****************************************************************************** 
+/******************************************************************************
 Popper
-Write a function popper(array, num) that takes in an array and a number as 
-args. The function should remove the last num elements from the array, mutating 
-the original array. The function should return a new array containing the 
-elements that were removed. 
+Write a function popper(array, num) that takes in an array and a number as
+args. The function should remove the last num elements from the array, mutating
+the original array. The function should return a new array containing the
+elements that were removed.
 
 Define this function using function expression syntax.
 ******************************************************************************/
 // your code here
-// let popper = (arr, num) => {
-//     // let popped = [];
-//     // while (num > 0){
-//     //     popped.push(arr.pop())
-//     //     num--
-//     // }
-//     // return popped;
-//     return arr.splice(-num, num)
+// function popper(arr, num){
+//     let popped = [];
+//     while (popped.length < num){
+//         popped.push(arr.pop());
+//     }
+//     return popped;
 // }
-let popper = (arr, num) => arr.splice(-num, num)
 
+let popper = (arr, num) => arr.splice(-num, num).reverse();
 
 
 

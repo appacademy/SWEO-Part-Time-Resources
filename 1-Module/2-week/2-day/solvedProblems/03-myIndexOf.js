@@ -1,18 +1,14 @@
-/****************************************************************************** 
+/******************************************************************************
 My Index Of Recall
-Write a function myIndexOf(arr, target) that takes in an array and target value 
-as args. The function should return the first index where the target is found 
-in the array. If the target is not found, it should return -1. Solve this 
+Write a function myIndexOf(arr, target) that takes in an array and target value
+as args. The function should return the first index where the target is found
+in the array. If the target is not found, it should return -1. Solve this
 without using Array.indexOf.
 ******************************************************************************/
 // your code here
-
-let myIndexOf = (arr, target) =>{
-    for (let banana = 0; banana < arr.length; banana++){
-        let currentEle = arr[banana]
-        if (currentEle === target) {
-            return banana
-        }
+function myIndexOf(arr, target){
+    for(let index = 0; index < arr.length; index++){
+        if (arr[index] === target) return index
     }
     return -1
 }

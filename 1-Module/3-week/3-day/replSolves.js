@@ -4,7 +4,7 @@ console.log("****************************************")
 /*
 Declare Keys/Values
 Given the following declaration of an object, obj below, declare values so
-that the print statements output what is expected. Try using both dot and 
+that the print statements output what is expected. Try using both dot and
 bracket notation.
 */
 console.log(
@@ -89,7 +89,7 @@ console.log(obj4["third_key"])
 
 /*
 Cat Builder
-Write a function catBuilder(name, color, toys) that returns a cat object 
+Write a function catBuilder(name, color, toys) that returns a cat object
 object with the corresponding properties.
 */
 console.log(
@@ -156,8 +156,8 @@ console.log("****************************************")
 
 /*
 Iterate Through Obj
-Write a function printObject(obj) that prints out all key-value pairs of an 
-object. The format should be key - value. 
+Write a function printObject(obj) that prints out all key-value pairs of an
+object. The format should be key - value.
 
 HINT: use a for loop
 */
@@ -173,13 +173,13 @@ function printObject(obj) {
         console.log(key, "-", value)
     }
   }
-  
+
   let bootcamp = {
     name: "App Academy",
     color: "Red",
     population: 120
   };
-  
+
   printObject(bootcamp); // prints
   // name - App Academy
   // color - Red
@@ -272,8 +272,8 @@ printValues(obj7);       // "1", 2, "three" (not apparent in terminal, but the 1
 /*
 Using Object.entries
 Write a function that takes in an object that uses car owners' names as keys
-and the car brand they own as values. The function should print the names of 
-the owners whose names are strictly longer than 5 characters and who own a 
+and the car brand they own as values. The function should print the names of
+the owners whose names are strictly longer than 5 characters and who own a
 "Honda".
 
 Note: Use Object.entries to make your life easier!
@@ -306,7 +306,7 @@ const printOwners = obj => {
 printOwners(obj8);               // Bradley
 /*
 Writing Object Methods
-Given an object, obj, declare a method, printValues on obj that prints all 
+Given an object, obj, declare a method, printValues on obj that prints all
 unique values within the object.
  */
 
@@ -329,9 +329,8 @@ obj9.printUniqueValues = () => {
     let values = Object.values(obj9);
     let unique = [];
     for (let value of values){
-        if (!unique.includes(value)) unique.push(value)
+        if (!unique.includes(value) && (typeof value !== "function")) unique.push(value)
     }
     for (let ele of unique) console.log(ele)
 }
-obj9.printUniqueValues();   
-
+obj9.printUniqueValues();

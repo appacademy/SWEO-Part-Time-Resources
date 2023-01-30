@@ -1,16 +1,19 @@
-/****************************************************************************** 
+/******************************************************************************
 Contains Word
-Write a function containsWord(sentence, targetWord) that accepts two strings as 
-args. The function should return a boolean indicating whether the targetWord 
-is found inside of the sentence. Solve this without using String's indexOf() 
+Write a function containsWord(sentence, targetWord) that accepts two strings as
+args. The function should return a boolean indicating whether the targetWord
+is found inside of the sentence. Solve this without using String's indexOf()
 or includes() methods.
 ******************************************************************************/
 // your code here
-let containsWord = (sentence, target) => {
-    for (let word of sentence.split(" ")){
-        if (word.toLowerCase() === target.toLowerCase()) return true
+function containsWord(sentence, target){
+    console.log(sentence)
+    for(let i =0; i < sentence.length; i++){
+        let currentSlice = sentence.slice(i, i+target.length)
+        console.log("---",currentSlice)
+        if (currentSlice === target) return true
     }
-    return false
+    return false;
 }
 
 

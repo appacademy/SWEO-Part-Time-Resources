@@ -1,11 +1,10 @@
-/****************************************************************************** 
+/******************************************************************************
 Avg Val
-Write a function avgVal(arr) that accepts an array as an arg. The function 
-should return the average of all values in the array. If the array is empty, it 
+Write a function avgVal(arr) that accepts an array as an arg. The function
+should return the average of all values in the array. If the array is empty, it
 should return null.
 ******************************************************************************/
 // your code here
-
 
 
 

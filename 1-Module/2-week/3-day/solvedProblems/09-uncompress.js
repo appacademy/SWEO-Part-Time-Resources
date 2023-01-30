@@ -1,27 +1,24 @@
-/****************************************************************************** 
+/******************************************************************************
 Uncompress
-Write a function uncompress(str) that takes in a "compressed" string as an arg. 
-A compressed string consists of a character immediately followed by the number 
-of times it appears in the "uncompressed" form. The function should return the 
-uncompressed version of the string. See the examples. 
+Write a function uncompress(str) that takes in a "compressed" string as an arg.
+A compressed string consists of a character immediately followed by the number
+of times it appears in the "uncompressed" form. The function should return the
+uncompressed version of the string. See the examples.
 
-Hint: you can use the built-in Number function should convert a numeric string 
+Hint: you can use the built-in Number function should convert a numeric string
 into the number type. For example. Number("4") // => 4
 ******************************************************************************/
 // your code here
-function uncompress(str){
-    let res = ""
-    for (let i = 0; i < str.length; i+=2){ 
-    // since the string is each letter immediately followed by the count, we 
-    // can increase by 2 so we're not accidentally adding any extra letters
-        let currentChar = str[i] // the letter
-        let currentCount = str[i + 1] // how many times we need it
-        for (let j = 0; j<currentCount; j++){
-        // for currentCount many times,
-        res += currentChar; // append our current character to the res string
+let uncompress = function(str){
+    let result = "";
+    for (let i = 0; i < str.length; i+=2){
+        let currentChar = str[i]
+        let currNum = Number(str[i+1])
+        for (let j = 0; j < currNum; j++){
+            result += currentChar
         }
     }
-    return res;
+    return result;
 }
 
 

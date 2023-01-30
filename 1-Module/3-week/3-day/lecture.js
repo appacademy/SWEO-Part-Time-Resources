@@ -1,20 +1,25 @@
-// OBJECTS! >> POJO
+// // OBJECTS!!
 
-let obj = {};
+// let arr = ["an", "array", "with", "stuff", "in","it"]
 
-obj.name = "Wayne";
-let myProp = "isChonky"
-obj[myProp] = true;
-obj["hasTail"] = false;
-obj.furColor = "black";
+// let mango = 2;
+// let method = "log"
+// console.table(arr)
+// console[method](arr[mango])
+// console.log(arr instanceof Object)
 
+// let obj = {a:"a", b:22,c:"a string!", d:arr}
 
-console.table(obj)
-let wax = {};
-wax.name = "Wax";
-wax["isChonky"] = false;
-let banana = "hasTail";
-wax[banana] = false;
-let fur = "Torty"
-wax["furColor"] = fur;
-console.table(wax)
+// console.table(obj)
+// console.log(obj)
+
+let wayne = {
+    name: "Wayne",
+    hasTail: false,
+    isChonky: true,
+    fur: "black"
+}
+wayne.disposition = "cuddly and curious"
+wayne["noisy"] = false
+console.log(wayne)
+// console.log(arr[arr.length] = "newValue")

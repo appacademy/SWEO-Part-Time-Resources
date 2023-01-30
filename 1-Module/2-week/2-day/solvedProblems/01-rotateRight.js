@@ -1,22 +1,30 @@
-/****************************************************************************** 
+/******************************************************************************
 Rotate Right
-Write a function rotateRight(array, num) that takes in an array and a number 
-as args. The function should return a new array where the elements of the array 
-are rotated to the right num times. The function should not mutate the original 
-array and instead return a new array. 
+Write a function rotateRight(array, num) that takes in an array and a number
+as args. The function should return a new array where the elements of the array
+are rotated to the right num times. The function should not mutate the original
+array and instead return a new array.
 
-Define this function using function expression syntax. 
+Define this function using function expression syntax.
 
 HINT: you can use Array's slice() method to create a copy of an array
 ******************************************************************************/
 // your code here
-function rotateRight(arr, num){
-    let newArr = arr.slice()
-    // console.table(newArr)
-    for (let loopCount = 0; loopCount < num; loopCount++){
-        newArr.unshift(newArr.pop())
+let rotateRight =(arr, num)=>{
+    let copy = arr.slice();
+    // let firstHalf = [];
+    // let secondHalf = [];
+    // take last element of copy, and move it to beginning
+    // do this num times
+    for(let i = 0; i < num; i++){
+    //     firstHalf = arr.slice(num) // 0 -> shallow copy of arr
+    //     secondHalf = arr.slice(0, num) // -> start at beginning, and go to but not including i
+    //     return firstHalf + secondHalf
+        copy.unshift(copy.pop())
     }
-    return newArr;
+
+    // return arr.slice(-num).concat(arr.slice(0, -num))
+    return copy;
 }
 
 
