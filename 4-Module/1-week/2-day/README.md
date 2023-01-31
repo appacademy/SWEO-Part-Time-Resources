@@ -135,8 +135,3 @@ res.status(404).send('Page Not Found');
 - Walkthrough
 - Request/Response Objects
 - Walkthrough/EOD
-
-## Tonight's HW
-
-- All "Homework for Wednesday"
-- Everything under `Environment Variables` from "Homework for Thursday"
