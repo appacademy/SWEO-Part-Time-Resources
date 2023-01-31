@@ -35,7 +35,7 @@ let est = [
     "David Soto",
     "Kyle Seeley",
     "Saman Rana",
-    "Brian Cabral"
+    "Brian Cabral",
 ]
 
 let pst = [
@@ -54,5 +54,21 @@ let pst = [
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
 
 
+function deathPairs(arr) {
+    let rooms = Array.from(Array(arr.length).keys())
+    while (arr.length) {
+        if (arr.length === 1) {
+            let solo = arr[0]
+            console.log(`SOLO - Add ${solo} to a group`)
+            return;
+        }
+        let student1 = arr.splice((Math.random() * 1000) % arr.length, 1)
+        let student2 = arr.splice((Math.random() * 1000) % arr.length, 1)
 
-console.log(deathWheel(allStudents), deathWheel(allStudents))
+        let room = rooms.splice(1, 1);
+      
+        console.log(`${student1} and ${student2} are in Room ${room}`)
+    }
+}
+
+deathPairs(est)

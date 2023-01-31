@@ -1,22 +1,48 @@
-// class Test {
-//   testFunc() {
-//     debugger;
-//     console.log(this)
-//     console.log(`this is equal to test1: ${this === test1}`);
+'use strict';
+
+//Context
+//Scope and Context are DIFFERENT
+
+//Scope - Refers to the visibility and availability of variables
+
+//Context - Refers to the value of THIS (the keyword)
+//Another definition - When it comes to determining the context of a function/method
+//What object is executing/invoking that function? That object is the value of this
+
+//"use strict" protects the global object from being accessed or mutated
+
+// function test() {
+//   console.log(this);
+// }
+
+// test();
+
+// class Dog {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   changeName() {
+//     this.name = "Marley";
 //   }
 // }
 
-// const test1 = new Test();
-// Calling the method on the instance
-test1.testFunc(); // true
-// Calling the method outside the class
-const test1Func = test1.testFunc; 
-test1Func(); // false
-// Calling the method as a callback
-setTimeout(test1.testFunc, 1000); // false
+// let haru = new Dog("Haru");
 
-// Using this in Function Declaration Syntax
-function someFunc() {
-  console.log(this);
+// let changeFunc = haru.changeName;
+
+// console.log(changeFunc());
+
+class Hat {
+  constructor(type) {
+    this.type = type;
+  }
+
+  changeType() {
+    this.type = "snapback";
+  }
 }
-someFunc(); // Global Object
+
+let bucket = new Hat("bucket");
+let change = bucket.changeType;
+change();
