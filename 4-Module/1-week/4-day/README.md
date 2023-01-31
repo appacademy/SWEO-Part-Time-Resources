@@ -103,3 +103,5 @@ app.use('/inner', express.static(path.join(__dirname, 'outer')));
 ```
 
 We will need to import `path`, which is available to us by default in Node (so no npm install required). Then we join our file's path to `__dirname`, which is just the folder that the server starts in.
+
+
