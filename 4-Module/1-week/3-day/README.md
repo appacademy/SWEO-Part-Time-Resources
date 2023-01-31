@@ -159,7 +159,3 @@ Cannot GET /hello
 # because we don't res.send() anything from /hello
 ```
 
-## Tonight's HW
-
-- Review `Express Middleware` from "Homework for Wednesday"
-- Everything you haven't done in "Homework for Thursday"
