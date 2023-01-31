@@ -101,7 +101,7 @@ node_modules/
 
 ---
 
-## Express Router
+# Express Router
 
 Express Routers allow us to direct traffic into different parts of our application. This enables us to have a more organized file structure, making it much easier to develop and maintain. Instead of all requests being handled in app.js, we can handle user requests in user.js, dog requests in dog.js, and so on.
 
