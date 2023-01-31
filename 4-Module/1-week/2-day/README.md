@@ -125,8 +125,18 @@ res.status(404).send('Page Not Found');
 
 ## Today's plan
 
--Req/Res Objects
--Route Handlers
--Route Order
--Http to Express
--Walkthroughs
+- Reference the [Express Request/Response Objects](https://open.appacademy.io/learn/js-py---pt-mar-2022-online/week-19---express/express-request-response-objects) reading and/or watch [the code demo video](https://open.appacademy.io/learn/js-py---pt-mar-2022-online/week-19---express/express-request-response-objects-code-demo)
+- Express Route Handlers
+  - Server is created for you, write Phase 1 in "Your code here"
+  - `res.status()`, NOT `res.statusCode()`
+- Walkthrough
+- Route Order Matters!
+- HTTP Server to Express Server
+- Walkthrough
+- Request/Response Objects
+- Walkthrough/EOD
+
+## Tonight's HW
+
+- All "Homework for Wednesday"
+- Everything under `Environment Variables` from "Homework for Thursday"
