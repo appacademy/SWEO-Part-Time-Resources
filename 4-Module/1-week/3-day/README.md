@@ -1,5 +1,3 @@
-
-
 ## Middleware
 
 Express is "essentially a series of middleware function calls"
@@ -158,4 +156,3 @@ Cannot GET /hello
 
 # because we don't res.send() anything from /hello
 ```
-
