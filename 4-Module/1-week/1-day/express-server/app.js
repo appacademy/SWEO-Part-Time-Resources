@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
 
 const port = 5000;
 
-app.listen(port, () => console.log('Heeyyooooooo', port));
+app.listen(port, () => console.log('Express on: ', port));
