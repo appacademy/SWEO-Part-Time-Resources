@@ -126,7 +126,11 @@ res.status(404).send('Page Not Found');
 ## Today's plan
 
 -Req/Res Objects
+
 -Route Handlers
+
 -Route Order
+
 -Http to Express
+
 -Walkthroughs
