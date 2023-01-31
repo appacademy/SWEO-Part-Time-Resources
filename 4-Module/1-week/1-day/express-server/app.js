@@ -5,6 +5,7 @@ const app = express();
 app.get('/', (req, res) => {
   // res.send('WOw how express');
   console.log("test")
+
   res.json({ msg: "Look at me I'm so cool" });
 });
 
