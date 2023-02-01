@@ -65,26 +65,65 @@
 
 //An arrow functions THIS keyword refers to the code that contains it, NOT CALLS IT
 
+// class Dog {
+//   constructor(name) {
+//     this.name = name;
+//   }
+//   // delayedBark() {
+//   //   setTimeout(function() {
+//   //     console.log(this.name)
+//   //   }.bind(dog), 1500)
+//   // }
+//   delayedBark() {
+//     setTimeout(() => {
+//       console.log(this.name)
+//     }, 1500)
+//   }
+// }
 
+// let dog = new Dog("Haru");
 
+// dog.delayedBark()
 
+/*
+Write a function named bindToAnArg(func, arg) 
+that will accept a function func and any argument arg. 
+The bindToAnArg function should return the passed-in function 
+func modified to always be invoked with the passed-in argument arg.
+*/
 
-class Dog {
-  constructor(name) {
-    this.name = name;
+// function bindToAnArg(func, arg) {
+//   return func.bind(null, arg)
+// }
+
+/*
+Create a PartyPlanner class.
+A newly instantiated instance should have its guestList property initialized to an empty array.
+Add two instance methods: a. addToGuestList(name) - add the name to the guestList 
+b. throwParty() - return a different string depending on the length of the guestList:
+If there are no guests, return "Gotta add people to the guest list"
+If there are guests in the guestList, return the guests' names. 
+For example, if there are two guests, return "Welcome to the party ${name1} and ${name2}".
+
+*/
+
+class PartyPlanner {
+  constructor() {
+    this.guestList = [];
   }
-  // delayedBark() {
-  //   setTimeout(function() {
-  //     console.log(this.name)
-  //   }.bind(dog), 1500)
-  // }
-  delayedBark() {
-    setTimeout(() => {
-      console.log(this.name)
-    }, 1500)
+
+  addToGuestList(name) {
+    this.guestList.push(name);
   }
+
+  throwParty() {
+    if (this.guestList.length === 0) {
+      return "Gotta add people to the guest list";
+    } else {
+      //return `Welcome to the party ${this.guestList.join(" and ")}`;
+
+      return "Welcome to the party " + this.guestList.join(" and ");
+    }
+  }
+
 }
-
-let dog = new Dog("Haru");
-
-dog.delayedBark()
