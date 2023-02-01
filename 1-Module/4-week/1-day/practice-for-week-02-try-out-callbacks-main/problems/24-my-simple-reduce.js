@@ -35,7 +35,13 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 *******************************************************************************/
 
 function mySimpleReduce(array, cb) {
-  // Your code here
+	//!!START
+	let accumulator = array[0];
+	array.slice(1).forEach(function (el) {
+	  accumulator = cb(accumulator, el);
+	});
+	return accumulator;
+	//!!END
 }
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
