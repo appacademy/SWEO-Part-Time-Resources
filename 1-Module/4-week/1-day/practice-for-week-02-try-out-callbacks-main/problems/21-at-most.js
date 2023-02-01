@@ -22,8 +22,30 @@ console.log(atMost(['boat', 'arc', 'cat', 'car', 'academy'], 1, startsWithA));  
 *******************************************************************************/
 
 function atMost(array, max, cb) {
-  // Your code here
+	let count = 0;
+	for(let i = 0; i < array.length; i++){
+		const el = array[i]
+		if(cb(el) === true){
+			count++
+		}
+	}
+	if(count > max) return false
+	else return true
 }
+
+// let isPositive = function (n) {
+//     return n > 0;
+// };
+// let startsWithA = function (s) {
+//     return s[0].toUpperCase() === 'A';
+// };
+
+// console.log(atMost([6, -2, 4, -1], 3, isPositive));                             // true
+// console.log(atMost([6, -2, 4, 1], 3, isPositive));                              // true
+// console.log(atMost([6, 2, 4, 1], 3, isPositive));                               // false
+// console.log(atMost(['boat', 'cat', 'car'], 1, startsWithA));                    // true
+// console.log(atMost(['boat', 'cat', 'car', 'academy'], 1, startsWithA));         // true
+// console.log(atMost(['boat', 'arc', 'cat', 'car', 'academy'], 1, startsWithA));  // false
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
