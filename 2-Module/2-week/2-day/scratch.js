@@ -85,18 +85,18 @@
 
 //All this means is that arrow functions THIS refers to the code that contains it
 
-class Dog {
-  constructor(name) {
-    this.name = name;
-  }
+// class Dog {
+//   constructor(name) {
+//     this.name = name;
+//   }
 
-  delayedBark() {
-    setTimeout(() => {
-      console.log(this)
-    }, 1500)
-  }
-}
+//   delayedBark() {
+//     setTimeout(() => {
+//       console.log(this)
+//     }, 1500)
+//   }
+// }
 
-let puppy = new Dog("Charger");
+// let puppy = new Dog("Charger");
 
-puppy.delayedBark()
+// puppy.delayedBark()
