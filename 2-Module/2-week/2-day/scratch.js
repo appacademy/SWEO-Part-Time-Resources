@@ -1,51 +1,102 @@
-class Test {
-  testFunc(name, num) {
-    console.log(name, num)
-    console.log(this === test1);
-  }
-}
+//BIND
+//In order to ensure the context for a function we can use bind();
 
-const test1 = new Test();
+//MDN Definition - "The simplest use of bind() is to make a function that, no matter how it is called,
+//                    is called with a particular THIS value. "
 
-// setTimeout(test1.testFunc.bind(test1, "Mylo", 3), 1000); // wait 1 second, true
+//When bind is called it returns the bound function and we call these "Exotic Functions"
+// All this means is that no matter where we call it, it has the same context
 
-/* 
-Using this in Function Declaration Syntax
-Could I make `this` equal to test1 in this function?
-*/
-// function someFunc() {
-//   console.log(this);
+//SYNTAX :
+// let boundFunction = func.bind(context/object);
+
+//The most common use case of bind would be to access a method on an object
+//in order to use it on any other object that has the same property name
+//as the one the method is accessing
+
+//CALL AND APPLY
+//While bind returns the bound function, call and apply invoke the bound function
+//immediately return the return value of that function
+
+//SYNTAX
+//Call :
+//  C is for comma
+//  let callReturn = func.call(context, ...args)
+// the arguments for call are seperated by commas
+
+//Apply :
+// A is for Array!
+// let applyReturn = func.apply(context, [...args])
+
+// class Dog {
+//   constructor(name) {
+//     this.name = name;
+//   }
+
+//   barkNTimes(n) {
+//     for (let i = 0; i < n; i++) {
+//       console.log(`${this.name} yelled at you`);
+//     }
+//   }
 // }
 
-// someFunc.call(test1); // (undefined) Test {...}
-
-
-
-
-// function greeting(...messages) {
-//   return messages.map((message) => {
-//     return `${this.firstName} says ${message}`;
-//   });
+// class Cat {
+//   constructor(name) {
+//     this.name = name;
+//   }
 // }
 
-// const derek = {
-//   firstName: 'Derek',
-// };
+// let puppy = new Dog("Charger");
+// let kitty = new Cat("King")
 
-// const derekMessages = greeting.bind(derek, 'Hello class!');
-// console.log(derekMessages('Goodbye class!'));
+// let barkFunction = puppy.barkNTimes;
 
-class Fruit {
+// barkFunction.call(puppy, 5)
+
+// barkFunction.apply(kitty, [5])
+
+
+//BIND 
+// let puppy = new Dog("Charger");
+// let kitty = new Cat("King")
+
+// let dogFunc = puppy.whoAmI;
+
+// let sayHiCat = dogFunc.bind(kitty);
+// let sayHiDog = dogFunc.bind(puppy);
+
+// sayHiCat()
+// sayHiDog()
+
+// let puppy = new Dog("Charger");
+
+// let sayWho = puppy.whoAmI;
+
+// let sayWhoBound = sayWho.bind(puppy);
+// //OR let sayWhoBound = puppy.whoAmI.bind(puppy)
+
+// sayWhoBound()
+
+//CONTEXT IN ARROW FUNCTIONS
+//Arrow functions apply context differently!
+
+//Arrow functions don't have an inherent binding to a THIS based on context
+//theirs is lexically bound
+
+//All this means is that arrow functions THIS refers to the code that contains it
+
+class Dog {
   constructor(name) {
     this.name = name;
   }
 
-  eat = () => {
-    console.log(`${this.name} has a bite mark`);
-  };
+  delayedBark() {
+    setTimeout(() => {
+      console.log(this)
+    }, 1500)
+  }
 }
 
-const apple = new Fruit('apple');
-const eat = apple.eat;
-eat();
-setTimeout(eat, 1000);
+let puppy = new Dog("Charger");
+
+puppy.delayedBark()
