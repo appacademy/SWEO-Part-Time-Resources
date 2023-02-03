@@ -217,7 +217,7 @@ The last element in the array is the page we're currently on
 history.push('developer.mozilla.org');
 
 // Ending history
-['reddit.com/r/Eldenring', 'youtube.com/lofi', 'developer.mozilla.org'];
+['reddit.com/r/Coding', 'youtube.com/lofi', 'developer.mozilla.org'];
 ```
 
 Now we're on MDN, and clicking the back button will take us to Lofi music
@@ -226,7 +226,7 @@ Now we're on MDN, and clicking the back button will take us to Lofi music
 
 ```js
 // Starting history
-['reddit.com/r/Eldenring', 'youtube.com/lofi'];
+['reddit.com/r/Coding', 'youtube.com/lofi'];
 
 history.replace('developer.mozilla.org');
 
