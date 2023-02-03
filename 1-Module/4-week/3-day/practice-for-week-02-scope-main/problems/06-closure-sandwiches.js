@@ -17,7 +17,34 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// Your code here
+// const sandwichMaker = () => {
+// 	const newArr = ['tomato']
+// 	return sandwitch = (str) => {
+// 		newArr.push(' and ' + str)
+// 		return 'One sandwich with ' + newArr.join('')
+// 	}
+// }
+
+function sandwichMaker(){
+
+	let badVariableName = "One sandwich with tomato "
+
+	function worseVariableName(func) {
+		badVariableName = badVariableName + ' and ' + func
+		return badVariableName
+	}
+
+	return worseVariableName
+}
+
+
+let sandwich = sandwichMaker(); // => returns a function
+console.log(sandwich("spinach")) // => "One sandwich with tomato and spinach"
+console.log(sandwich("jelly")) // => "One sandwich with tomato and spinach and jelly"
+console.log(sandwich("bread")) // => "One sandwich with tomato and spinach and jelly and bread"
+
+let sandwich2 = sandwichMaker(); // => returns a function
+console.log(sandwich2("pb")) // => "One sandwich with tomato and pb"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

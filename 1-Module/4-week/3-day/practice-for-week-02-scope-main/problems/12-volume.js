@@ -12,9 +12,36 @@ function returned by recVolume should continue to return the original volume.
 
 
 ***********************************************************************/
+function recVolume(height){
+	let width, volume, length
+	return function(measurement){
+		if(width === undefined){
+			width = measurement
+			return recVolume(height)
+		} else if(length === undefined){
+			length = measurement
+			volume = height * width * length
+			return volume
+		} else {
+			return volume
+		}
+	}
+}
 
-// Your code here
 
+const rectangle = recVolume(5) // returns a function
+console.log(rectangle(5)) // returns a function
+console.log(rectangle(5)) // 125
+// any call after this should still return 125
+console.log(rectangle(20)) // 125
+console.log(rectangle(12)) // 125
+
+const rectangle2 = recVolume(2) // returns a function
+console.log(rectangle2(3)) // returns a function
+console.log(rectangle2(1)) // 6
+// any call after this should still return 6
+console.log(rectangle2(100)) // 6
+console.log(rectangle2(10)) // 6
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {

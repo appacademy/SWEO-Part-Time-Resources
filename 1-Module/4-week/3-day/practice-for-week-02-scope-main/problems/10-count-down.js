@@ -28,7 +28,28 @@ Example 4:
 
 ***********************************************************************/
 
-// Your code here
+const countDownTimer = (n) => {
+	if (n === 0) return 'Happy New Year!'
+
+	return function count(){
+		n--
+		if(n === 0){
+			return 'Happy New Year!'
+		}
+		return count
+	}
+}
+
+// console.log(countDownTimer(0)); // prints "Happy New Year!"
+
+// let oneDay = countDownTimer(1); // returns a function
+// // console.log(oneDay) //
+// console.log(oneDay()); // prints "Happy New Year!"
+
+// let twoDays = countDownTimer(2); // returns a function
+// console.log(twoDays()); // returns a function
+// console.log(twoDays()); // prints "Happy New Year!"
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
