@@ -60,7 +60,7 @@ If you put all your environment variables in a single .env file, you can load th
 ```md
 # In /.env
 
-NAME=Zaviar
+NAME=Will
 MUSIC=lofi
 PASSWORD=YouWillNeverKnow
 ```
@@ -75,7 +75,7 @@ There's two ways to access these values:
 require('dotenv').config();
 
 // caps matter here
-console.log(process.env.NAME); // Zaviar
+console.log(process.env.NAME); // Will
 console.log(process.env.MUSIC); // lofi
 console.log(process.env.PASSWORD); // YouWillNeverKnow
 ```
@@ -85,7 +85,7 @@ console.log(process.env.PASSWORD); // YouWillNeverKnow
 ```md
 # in the terminal, no require() required!
 
-dotenv run node scratch.js
+npx dotenv node app.js
 ```
 
 ## Hiding your .env from the world
