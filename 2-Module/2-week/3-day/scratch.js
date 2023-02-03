@@ -89,3 +89,34 @@ try {
 }
 
 console.log("Let's continue on")
+
+//Try not to use these as often as possible as it slows down your code
+
+//Instead, try to write DEFENSIVE CODE
+//(Check the data type before you do anything with it)
+
+//Testing
+
+//Why do we test?
+//Make sure it works!
+//Keeps code consistent and helps engineers work together
+
+//Tests as "Specs" = "Specifications"
+
+//TESTING PYRAMID
+
+//E2E - "End to End" : Tests the entire application from top to bottom
+// Example : walks through like a user; creating an account, logging, etc.
+
+// Integration Testing : Tests the interactions between 2 pieces of code
+
+//Unit tests - Test ONE piece of code. Theyre the smallest tests. The backbone of tests if you will
+
+//TDD - Test driven development
+//Write tests, and then we write code to pass those tests
+
+//RED - tests are failing
+
+//GREEN - tests are passing
+
+//REFACTOR - Make it pretty (make it maintable and easily understandable)
