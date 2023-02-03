@@ -11,11 +11,10 @@ until it finally returns a sum.
 
 Here is a breakdown of how curriedSum(numArgs) should work:
     - Define an empty array, `numbers`.
-    - Define a function, `_curriedSum` that:
-        - Closes over `numArgs` and `numbers`.
-        - Takes a single postive integer greater than 0 as an argument.
-          - If number is less than or equal to 0 return null
-        - Appends this to the `numbers` array each time.
+	- Takes a single postive integer greater than 0 as an argument.
+		- If number is less than or equal to 0 return null
+    - Define an inner function, `_curriedSum` that:
+        - Appends the argument to the `numbers` array each time.
         - If `numbers.length === numArgs`, it sums the numbers in the array and
         returns the result.
         - Else, it returns itself.
@@ -43,7 +42,21 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
   be useful
 ***********************************************************************/
 
-// Your code here
+function curriedSum(numArgs){
+	const numbers = []
+
+	if(numArgs <= 0) return null
+
+	return function _curriedSum(num){
+		numbers.push(num)
+
+		if(numbers.length === numArgs){
+			return numbers.reduce((acc, cur) => acc + cur)
+		} else {
+			return _curriedSum
+		}
+	}
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

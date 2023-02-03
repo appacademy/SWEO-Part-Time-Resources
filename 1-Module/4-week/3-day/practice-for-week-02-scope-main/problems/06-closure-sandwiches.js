@@ -17,7 +17,34 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 ***********************************************************************/
 
-// Your code here
+// const sandwichMaker = () => {
+// 	let customSandwich = "One sandwich with tomato";
+// 	return function (ingredients) {
+// 	  let addedIng = " and " + ingredients;
+// 	  customSandwich += addedIng;
+// 	  return `${customSandwich}`;
+// 	};
+// };
+
+// const sandwichMaker = () => {
+// 	let order = "One sandwich with tomato";
+// 	return list => {
+// 		order = `${order} and ${list}` // template literal
+// 		return order
+// 	}
+// };
+
+const sandwichMaker = () => list => new Array(list).reduce((acc, cur) => acc + ' and ' + cur, "One sandwich with tomato")
+
+
+let sandwich = sandwichMaker(); // => returns a function
+console.log(sandwich("spinach")) // => "One sandwich with tomato and spinach"
+console.log(sandwich("jelly")) // => "One sandwich with tomato and spinach and jelly"
+console.log(sandwich("bread")) // => "One sandwich with tomato and spinach and jelly and bread"
+
+let sandwich2 = sandwichMaker(); // => returns a function
+console.log(sandwich2("pb")) // => "One sandwich with tomato and pb"
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

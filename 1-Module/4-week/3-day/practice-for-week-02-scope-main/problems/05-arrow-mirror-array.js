@@ -15,8 +15,6 @@ arrowMirrorArray(['a', 'b', 'c', 'd']); // => [ 'a', 'b', 'c', 'd', 'd', 'c', 'b
 
 // const arrowMirrorArray = (array) => {
 
-
-
 // }
 
 const arrowMirrorArray = (arr) => {

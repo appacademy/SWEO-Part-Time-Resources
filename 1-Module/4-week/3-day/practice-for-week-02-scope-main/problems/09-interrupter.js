@@ -16,7 +16,26 @@ console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
 ***********************************************************************/
 
-// Your code here
+let interrupter = (interruptingWord) => {
+	return (sentence) => {
+	  let sentenceArr = [];
+	  sentenceArr = sentence.split(' ');
+	  let newArr = [];
+	  for (let i = 0; i < sentenceArr.length; i++) {
+		newArr.push(sentenceArr[i]);
+		newArr.push(interruptingWord);
+	  }
+	  newArr.pop();
+	  return newArr.join(' ');
+	}
+};
+
+let rudePerson = interrupter("what"); // => returns a function
+console.log(rudePerson("how are you")); // prints "how what are what you"
+console.log(rudePerson("I like pie")); // prints "I what like what pie"
+
+let rudePerson2 = interrupter("yo"); // => returns a function
+console.log(rudePerson2("I love dogs")); // prints "I yo love yo dogs"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

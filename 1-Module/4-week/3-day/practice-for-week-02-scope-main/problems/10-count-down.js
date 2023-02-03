@@ -28,8 +28,25 @@ Example 4:
 
 ***********************************************************************/
 
-// Your code here
+function countDownTimer(days){
+	if(days === 0) return 'Happy New Year!'
 
+	return function countdown(){
+		days--;
+		if(days === 0) return 'Happy New Year!'
+		else return countdown
+	}
+}
+
+console.log(countDownTimer(0)); // prints "Happy New Year!"
+
+let oneDay = countDownTimer(1); // returns a function
+console.log(oneDay()); // prints "Happy New Year!"
+
+
+let twoDays = countDownTimer(2); // returns a function
+console.log(twoDays()); // returns a function
+console.log(twoDays()); // prints "Happy New Year!"
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
 try {
