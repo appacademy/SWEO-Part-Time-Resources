@@ -96,3 +96,28 @@ try {
 }
 
 console.log("HOWDY")
+
+//We try to avoid try..catch as often as possible
+//INSTEAD we try to write defensive code
+
+//TESTING
+
+//Testing pyramid
+
+//Unit tests - Smallest unit of testing
+//They test on piece of code at a time
+//Fastest to run
+
+//Integration tests - Tests two pieces of code together. Ensures that they work together properly
+
+//End to End (E2E) - Tests the entire application from top to bottom
+//Slowest to run, they get closest to testing the entire user experience
+
+//TDD - Test Driven Development
+//Write the tests first, then you write code to pass the tests
+
+//Three simple steps
+
+//Red - tests are failing
+//Green - tests are passing (the minimum amount of code to make it pass)
+//Refactor - Make it easier to read/ maintainable in the future

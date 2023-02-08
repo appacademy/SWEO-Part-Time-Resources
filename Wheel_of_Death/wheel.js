@@ -44,10 +44,9 @@ let pst = [
     "Gino Farfaglia",
     "Stephen Raymond Sy",
     "Joshua Krienke",
-    "Myles Spikes",
-    "Avery Illustre",
     "Mariia Gribacheva",
-    "Kevin Sy"
+    "Kevin Sy",
+    "Finley Joseph"
 ]
 
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
