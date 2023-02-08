@@ -26,16 +26,15 @@ let allStudents = [
 let est = [
     "Dylan McDougall",
     "Ledian Fekaj",
-    "Carlos Stich",
     "Emily Norman",
-    "Dylan Berry",
     "Enea Jorgji",
-    "Dorian Rivas",
     "Luke Morgan",
+    "Carlos Stich",
     "David Soto",
     "Kyle Seeley",
     "Saman Rana",
     "Brian Cabral",
+    "Nate Thomas"
 ]
 
 let pst = [
