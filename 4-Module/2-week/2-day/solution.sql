@@ -17,6 +17,20 @@ CREATE TABLE coffee_orders (
   ordered_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
 );
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --PHASE-3.sql~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 INSERT INTO customers
   (name, phone)
@@ -223,6 +237,14 @@ INSERT INTO coffee_orders DEFAULT VALUES;
 UPDATE customers
 SET email = 'p_as_in_phoebe@friends.show'
 WHERE name = 'Phoebe';
+
+
+
+
+
+
+
+
 
 --PHASE-4.sql~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 DROP TABLE IF EXISTS parties;
