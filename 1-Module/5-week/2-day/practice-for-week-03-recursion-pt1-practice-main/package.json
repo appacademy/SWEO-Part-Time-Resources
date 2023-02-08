@@ -1,0 +1,17 @@
+{
+  "name": "practice-for-week-03-recursion-pt1-practice-main",
+  "version": "1.0.0",
+  "description": "Here we `go(go(go()))`! It's time to flex your coding muscles on recursion. For each problem, implement a **recursive** function that satisfies all the listed requirements. Iterative solutions will be considered incorrect. The problems aren't dependent on each other and may be completed in any order you wish.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^10.2.0"
+  }
+}
