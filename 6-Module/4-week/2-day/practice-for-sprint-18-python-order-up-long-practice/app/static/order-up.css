@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, input, select, textarea, button {
+  color: #424242;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+button,
+.button {
+  background-color: white;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 700;
+  padding: .65em 3em;
+  text-transform: uppercase;
+  transition: background-color .3s;
+}
+
+button:hover,
+.button:hover {
+  background-color: #EEEEEE;
+}
+
+button.micro,
+.button.micro {
+  font-size: 75%;
+  padding: .45em 3em;
+}
+
+form {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  padding: 1em;
+}
+
+select {
+  padding: .65em 3em;
+}
+
+#workspace {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.actions-header {
+  display: flex;
+  padding: 1em;
+}
+
+.assign {
+  background-color: #1565C0;
+  color: white;
+}
+
+.assign:hover {
+  background-color: #0D47A1;
+}
+
+.assignment-form {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0px;
+}
+
+.assignment-form > * {
+  margin-right: 1em;
+}
+
+.assignment-form-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  text-align: left;
+}
+
+.food-choice {
+  display: flex;
+}
+
+.food-list {
+  flex: 1 0 0px;
+  margin-left: 1em;
+}
+
+.food-type-group {
+  margin-bottom: 2em;
+}
+
+.food-type-header {
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.foods {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.logout {
+  background-color: #FFAB40;
+  color: white;
+}
+
+.logout:hover {
+  background-color: #FF6D00;
+}
+
+.order-action-cell {
+  width: 175px;
+}
+
+.order-row > td {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em 0;
+}
+
+.orders-table {
+  border-collapse: collapse;
+  flex: 1 0 0px;
+}
+
+.table-title {
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 1em 0;
+  text-align: left;
+}
