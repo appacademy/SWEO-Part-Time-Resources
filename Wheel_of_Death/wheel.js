@@ -42,7 +42,6 @@ let pst = [
     "Yassin Tantawy",
     "Adrienne Tran",
     "Gino Farfaglia",
-    "Stephen Raymond Sy",
     "Joshua Krienke",
     "Mariia Gribacheva",
     "Kevin Sy",
