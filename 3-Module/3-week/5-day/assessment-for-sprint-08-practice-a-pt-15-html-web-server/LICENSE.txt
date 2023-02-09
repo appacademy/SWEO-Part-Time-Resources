@@ -1,0 +1,6 @@
+(c) Copyright 2020 Hash Map Labs, Inc, all rights reserved.
+
+All files in this repository can be copied once to one private computing device
+that you control for you to complete the assigned assessment. This helps prevent
+cheating. Please don't distribute it. That helps others cheat. Please don't help
+others cheat.

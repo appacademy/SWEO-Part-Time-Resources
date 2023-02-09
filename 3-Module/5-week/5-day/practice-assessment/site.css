@@ -1,0 +1,39 @@
+/* DO NOT CHANGE THE CSS IN THIS FILE OR YOU MAY FAIL */
+/* DO NOT CHANGE THE CSS IN THIS FILE OR YOU MAY FAIL */
+.square {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+img {
+    max-width: 950px;
+    height: auto;
+}
+
+body {
+    max-width: 1000px;
+    margin: 10px;
+}
+
+#problem-four {
+    background-color: blue; 
+    color: aliceblue;
+}
+
+.round {
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-size: 30px;
+}

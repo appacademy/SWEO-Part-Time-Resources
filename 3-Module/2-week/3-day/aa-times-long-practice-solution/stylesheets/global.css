@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1em;
+}
+
+button {
+  background-color: #6288a5;
+  border-radius: 3px;
+  color: white;
+  font-family: arial, helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  margin: 0 4px;
+  padding: 7px 9px;
+  text-transform: uppercase;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #326891;
+}
+
+header,
+footer,
+main {
+  margin: auto;
+  max-width: 1400px;
+  padding: 0 40px;
+}

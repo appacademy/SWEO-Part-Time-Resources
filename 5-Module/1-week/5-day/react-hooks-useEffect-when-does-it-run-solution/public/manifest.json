@@ -1,0 +1,8 @@
+{
+  "short_name": "BH-useEffect-When-Run",
+  "name": "Basic Hooks useEffect: When Does It Run?",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

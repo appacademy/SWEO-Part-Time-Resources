@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./your-code.css">
+    <title>App Academy Css Transitions</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <p>
+                <b>INSTRUCTIONS:</b> Read the HTML here and in the browser. Follow the
+                instructions to complete the problems. All of your CSS code must go into
+                <i>your-code.css</i>.
+                <b>You must use Live Serve</b>
+              </p>
+              <p><strong>Do not modify this file, test.html.</strong></p>
+              <p>
+                Each problem provides an gif of what your result should look like.
+                Because of minor image rendering inconsistencies in the browser, there
+                are <em>for reference only</em>. It is ok if there are pixel-sized
+                differences between what you have and the gif.
+              </p>
+        </div>
+    </header>
+    <main>
+        <fieldset id="p1">
+            <legend>Problem 1</legend>
+            <div>
+              <p>
+                The rotate(xdeg) CSS function defines a transformation that rotates an element around a fixed point on the 2D plane, without deforming it.
+              </p>
+              <p>
+                Use the rotate transition to rotate the rocket 250 degress whenever you hover over it.
+              </p>
+            </div>
+            <table border="0">
+              <tr>
+                <td>
+                    <img src="./media/rocket-gif.gif">
+                </td>
+                <td>
+                  <div id="problem-1" class="outer-layer-1">
+                    <img class="rocket_svg" src="./media/rocket.svg">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+                  <fieldset id="p2">
+            <legend>Problem 2</legend>
+            <div>
+              <p>
+                The translate(x,y) CSS function repositions an element in the horizontal and/or vertical directions.
+              </p>
+              <p>
+                Use the translate css function to move the astronaut element 100 degrees on the X axis.
+              </p>
+            </div>
+            <table border="0">
+              <tr>
+                <td>
+                    <img src="./media/astronaut-gif.gif">
+                </td>
+                <td>
+                  <div id="problem-2" class="outer-layer-2">
+                    <img img class="astronaut_svg" src="./media/astronaut.svg">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+          <fieldset id="bonus">
+            <legend>BONUS</legend>
+            <div>
+              <p>
+                CSS transitions are simple animations with only two possible points: a starting point and an ending point, which usually needs to be triggered by some kind of event (i.e hover).
+                Keyframes allow us to create more dynamic transitions by adding steps between the beginning and end of the transition.
+                Keyframe animations do not need to be triggered by an event and can usually loop on an cycle.
+              </p>
+              <p>
+                This earth svg is looking a little stagnant, to make this element a little more dynamic, let's use a keyframe and the rotate(x) css function to apply some movement to the Earth.
+                Start by adding an animation property to the "earth_svg" class, then set the animation to be infitite, liner and run for 2 seconds so that the earth spins continuously.
+                Then create your keyframe. The rotate keyframe should start at 0deg and then end up at 360deg.
+              </p>
+            </div>
+            <table border="0">
+              <tr>
+                <td>
+                    <img src="./media/earth-rotate.gif">
+                </td>
+                <td>
+                  <div id="BONUS" class="outer-layer-BONUS">
+                    <img class="earth_svg" src="./media/earth.svg">
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+    </main>
+</body>
+
+</html>

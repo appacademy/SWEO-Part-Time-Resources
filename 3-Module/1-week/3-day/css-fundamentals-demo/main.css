@@ -1,5 +1,4 @@
 @import './logo.css';
-
 /* 
 Make the title a sans serif font
 Show some of the generic font families: serif, sans-serif, monospace, cursive, and fantasy
@@ -14,50 +13,41 @@ body {
 }
 
 /* Use the compound class selector for div red-border white-background */
-.red-border.white-background {
+
+.red-border.white-background{
   border: 1px solid red;
   background-color: white;
 }
-
-/* Make p tags that are descendants of .parent have a white background */
-/* .parent p {
-    background-color: white;
-} */
 
 /* Make p tags that are direct descendant of .parent have a white background */
 .parent > p {
   background-color: white;
 }
 
+/* Make p tags that are descendants of .parent have a white background */
+ /* .parent p{
+  background-color: white;
+ } */
+
 /* Make li that are not selected color gray https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes*/
-li:not(.selected) {
+li:not(.selected){
   color: gray;
 }
 
+
+
 /* Adjacent sibling selector */
-li.selected + li.selected {
-  color: red;
+li.selected + li.selected{
+  color: tomato;
 }
 
 /* Change the pointer when hovering over the button, hover as a pseudo class */
-button:hover {
+button:hover{
   cursor: pointer;
 }
 
 /* Which one has more specificity id or tag + class */
-div.a-div {
-  width: 100px;
-  height: 100px;
-  background-color: blue;
-  border-radius: 50%;
-}
 
-#a-div {
-  width: 100px;
-  height: 100px;
-  background-color: red;
-  border-radius: 50%;
-}
 
 /* 
 font-size: relative vs absolute units, 
@@ -65,13 +55,14 @@ font-weight,
 color black in hex, rgb, rgba (talk about alpha value), 
 text transform uppercase 
 */
-.subtitle-container {
+.subtitle-container{
   font-size: 20px;
 }
 
-.subtitle {
-  font-size: 2em;
+.subtitle{
+  font-size: xx-large;
   font-weight: bold;
-  color: rgba(0, 0, 0, 0.5);
+  background-color: aqua;
   text-transform: uppercase;
+  box-shadow: 10px 10px tomato;
 }
