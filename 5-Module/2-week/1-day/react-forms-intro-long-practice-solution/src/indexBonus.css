@@ -1,0 +1,89 @@
+/* TODO Add site wide styles */
+
+
+.container {
+  display: block;
+  margin: auto;
+  max-width: 800px;
+}
+
+.errors {
+  display: block;
+  background-color: #fee;
+  border: 1px solid #f99;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+}
+
+.form-row {
+  margin: 10px 0 0 0;
+  display: block;
+}
+
+label {
+  width: 100%;
+  display: block;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+input[type=text], textarea, select {
+  width: 100%;
+  height: 1.5rem;
+  max-width: 300px;
+  border: 1px solid #666;
+  border-radius: 2px;
+  margin: 5px 0;
+  font-size: 1rem;
+  padding: 2px 5px;
+}
+
+select {
+  max-width: 312px;
+}
+
+textarea {
+  height: 80px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  background-color: #99f;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+}
+
+.input-error, input[type=text].input-error {
+  background-color: #fee;
+  border: 1px solid #f99;
+}
+
+.error-message {
+  font-size: 12px;
+  margin: 0px;
+  color: red;
+  height: 16px;
+}
+
+.phone-row .form-row:last-child {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.phone-row .form-row:first-child {
+  margin-bottom: 0;
+}
+
+.radio-row .form-row {
+  display: flex;
+  justify-content: left;
+  width: 312px;
+}
+
+.radio-button {
+  margin-right: 10px;
+}

@@ -1,0 +1,80 @@
+.box1 {
+  background-color: blueviolet;
+  height: 100px;
+  width: 100px;
+  /* version 1 */
+  border-width: 5px;
+  border-style: solid;
+  border-color: blue;
+  /* version 2 */
+  border: solid blue 5px;
+}
+
+.box2 {
+  background-color: greenyellow;
+  height: 100px;
+  width: 100px;
+  border: dotted red 2px;
+  border-radius: 5px;
+}
+
+.text1 {
+  background-color: blue;
+  color: #ffc300;
+  width: 500px;
+  padding: 5px;
+}
+
+.text2 {
+  background-color: burlywood;
+  color: rgb(235, 62, 71);
+}
+
+.box3 {
+  background-color: lavender;
+}
+h2 {
+  opacity: 0.5;
+}
+
+.box5 {
+  background-color: lemonchiffon;
+  box-shadow: 8px 2px 15px teal;
+}
+
+.box6 {
+  background-color: papayawhip;
+  box-shadow: 5px -10px #800000;
+}
+
+
+/* do not change below this line */
+
+body {
+  padding: 20px;
+}
+
+.container {
+  position: relative;
+}
+
+.box4 {
+  top: 0;
+  left: 5px;
+  background-color: hotpink;
+  position: absolute;
+  z-index: -1;
+}
+
+.text {
+  width: 500px;
+  padding: 5px;
+  margin: 20px;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 0 20px;
+  box-sizing: border-box;
+}

@@ -41,16 +41,27 @@ span {
   border: 1px solid red;
   background-color: white;
   height: 100px;
+  /* display: block; */
 }
 
+
+/* Elements would still get laid out left to right
+The layout would take into account their specified width and height properties */
 .inline-block {
   border: 1px solid red;
   background-color: white;
   height: 100px;
+  width: 200px;
   display: inline-block;
 }
 
 /* Parts of the box: content, padding, border and margin */
+
+/* margin on the farthest outside of our box model
+  then comes the border next to farthest outside
+  then comes padding (room between element and border)
+  element (ie font, picture, etc)
+*/
 .neighbor1 {
   border: 1px solid red;
   background-color: white;
@@ -66,27 +77,27 @@ span {
   display: inline-block;
 }
 
+.standard {
+  width: 200px;
+  height: 200px;
+  padding: 100px;
+  border: 1px solid red;
+  background-color: white;
+  /* box-sizing: border-box; */
+}
+
 /* 
 Standard CSS box model, width and height are for content only 
 In box-sizing: border-box, it also includes padding, and border
 */
-.standard {
-  width: 178px;
-  height: 178px;
-  padding: 10px;
-  border: 1px solid red;
-  background-color: white;
-}
-
 .border-box {
+  border:  10px solid black; /* Applies to all four sides. */
   box-sizing: border-box;
-  width: 200px;
-  height: 200px;
-  padding: 10px;
-  border: 1px solid red;
-  background-color: white;
+  height:  100px; /* Sum of content + top/bottom padding + top/bottom border */
+  margin:  50px;  /* Applies to all four sides. */
+  padding: 25px;  /* Applies to all four sides. */
+  width:   250px; /* Sum of content + left/right padding + left/right border */
 }
-
 /* 
 - margin top right bottom left
 - border top right bottom left and shorthand for width style and color
@@ -99,29 +110,24 @@ In box-sizing: border-box, it also includes padding, and border
   width: 100px;
   height: 100px;
 
-  margin: 100px;
-  margin-top: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
-  margin-left: 100px;
+  /* margins */
+  /* margin: 100px; */
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+/* borders */
+/* border: 5px solid red; */
+border-top: 5px dotted red;
+border-left: 5px dashed red;
+border-bottom: 5px solid red;
+border-right: 10px solid blue;
+/* padding */
+padding: 20px;
+/* shadow */
+box-shadow: 10px 10px fuchsia;
 
-  border: 5px dotted red;
-  border-top: 5px dotted red;
-  border-right: 5px dotted red;
-  border-bottom: 5px dotted red;
-  border-left: 5px dotted red;
-  border-width: 5px;
-  border-style: dotted;
-  border-color: red;
-
-  padding: 20px;
-  padding-top: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
-  padding-left: 20px;
-
-  box-shadow: 5px 5px 10px green;
-
+/* overflows */
   overflow: scroll;
 }
 
@@ -156,6 +162,29 @@ is positioned in a document. */
   margin: 10px;
 }
 
+
+/* static is the default, not considered to be positioned on the page 
+      will appear normally according to the page flow
+
+  relative remains in its original position in the page flow, but can be
+      offset using top, right, bottom, and left 'relative to its original 
+      place'
+
+  !!!!absolute positined is removed from the page flow!!!!
+      other elements around it behave as if its not there
+
+  fixed is removed from the page flow and acts like an absolutely positioned
+    element the difference is fixed element is relative to the html doc
+     itself and not an ancestor element stays in the same spot regardless 
+     of the size and whether a user scrolls
+
+  sticky element remains in its original position in the page flow and is
+    positioned relative to its closest block level ancestor  and any 
+    scrolling anscestors
+
+*/
+
+
 .red-box {
   width: 100px;
   height: 100px;
@@ -167,15 +196,15 @@ is positioned in a document. */
   /* position: static; */
   /* position: relative;
   top: 40px;
-  left: 40px; */
+  left: 40px;  */
 
   /* position: absolute;
   top: 40px;
   left: 40px; */
 
   /* position: fixed;
-  top: 40px;
-  left: 40px; */
+  top: 200px;
+  left: 400px; */
 }
 
 /* 
@@ -186,5 +215,5 @@ containing block (nearest block-level ancestor)
 */
 .subheading {
   position: sticky;
-  top: 20px;
+  top: 0px;
 }

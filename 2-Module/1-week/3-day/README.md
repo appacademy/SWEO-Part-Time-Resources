@@ -4,7 +4,7 @@
 
 ## Quiz Discussion - 25 mins
 
-## Classes Lecture - 15 Min
+## Classes Lecture - 25 Min
 
 What is a class?
 
@@ -50,25 +50,58 @@ const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
 console.log(carnitasTaco.assemble())
 ```
 
-### Group Activity - 20 min
 
-- Lets come up with some tings that would be easy to model with a class
-- Lets come up with some attributes and actions that these objects could have
+### Inheritence 
 
-## Create a Dog - 20 mins
+```js
+class Instrument {
+  constructor(name, family) {
+    this.name = name;
+    this.family = family;
+  }
 
-- Should have minimum of three instance variables assigned
-- Should have a minimum of three instance methods
-- TEST YOUR CODE!!!!
+  play() {
+    console.log('toot toot toot');
+  }
+}
+  class Guitar extends Instrument {
+    constructor() {
+      Guitar.total += 1;
+      super(`Guitar ${Guitar.total}`, 'Strings');
+    }
+  
+    static total = 0;
+  
+    strumGuitar() {
+      console.log('strumming guitar');
+    }
+    
+  }
 
-## Create a Dog Discussion - 20 mins
+class Trumpet extends Instrument {
+  constructor() {
+    Trumpet.total += 1;
+    super(`Trumpet ${Trumpet.total}`, 'Brass');
+  }
 
-## Create a Bicycle - 40 mins
+  static total = 0;
 
-- Should have minimum of 5 instance variables assigned
-- Should have a minimum of 5 instance methods
-- TEST YOUR CODE!!!!
+  releaseSpitValve() {
+    console.log('releasing spit valve');
+  }
+}
 
-## Create a Bicycle Discussion - 20 mins
 
-## Extra Time Read HW
+// What will print to the console?
+const jamesGuitar = new Guitar();
+const jamesTrumpet = new Trumpet();
+jamesGuitar.play();
+jamesTrumpet.play();
+jamesGuitar.strumGuitar();
+jamesTrumpet.releaseSpitValve();
+
+/* 
+We all know that guitars make more of a guitar sound lol
+How can I change just the guitar to shringggg instead of toot?
+*/
+``` 

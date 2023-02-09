@@ -1,5 +1,23 @@
 # W1D2
 
+## First Things First NOTES (10 mins):
+
+1. Run the following command (Once)
+
+    ```bash
+    curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
+    ```
+
+2. Restart your terminal
+3. Every morning run...
+
+    ```bash
+    aa_update
+    ```
+
+4. Follow prompts
+5. Run `aa_update` again after lecture to get live lecture notes
+
 ## Here we go: 20 mins
 
   1. [Favorite Food]

@@ -1,0 +1,46 @@
+{
+  "1": {
+    "endpoint": "Get all the colors",
+    "request": {
+      "method": "GET",
+      "URL": "/colors",
+      "headers": false,
+      "body": false
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 200,
+     "body": [
+        {
+            "colorId": true,
+            "color": true
+        }
+    ]
+    }
+  },
+  "2": {
+    "endpoint": "Add a color",
+    "request": {
+      "method": "POST",
+      "URL": "/colors",
+      "headers":  {
+        "Content-Type": "application/json"
+      },
+      "body":  {
+        "color": true
+    }
+    },
+    "response": {
+      "headers": {
+        "Content-Type": "application/json"
+      },
+      "statusCode": 201,
+      "body": {
+        "colorId": true,
+        "color": true
+    }
+    }
+  }
+}

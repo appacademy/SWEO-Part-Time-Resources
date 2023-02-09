@@ -1,0 +1,14 @@
+.main-nav {
+  height: 20px;
+}
+
+.main-nav__list {
+  display: flex;
+  font-size: 12px;
+  justify-content: center;
+  margin: auto;
+}
+
+.main-nav__list-item {
+  margin: 10px;
+}

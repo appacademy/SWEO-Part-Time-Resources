@@ -1,0 +1,10 @@
+extends layout.pug
+
+block title
+  title Edit Comment
+
+block body
+  h1 Edit Comment
+  form(action="/comments/" + comment.commentId method="post")
+    textarea(name="text")= comment.text
+    button(type="submit") Submit

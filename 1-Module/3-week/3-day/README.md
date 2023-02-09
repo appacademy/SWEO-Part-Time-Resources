@@ -1,7 +1,7 @@
 <!-- markdownlint-disable MD033 -->
 # M1W3D3
 
-## POJO Practice
+## POJO Practice - 20 min
 
 - [Cat Builder]
 - [Iterate Through Obj]
@@ -10,26 +10,33 @@
 
 ```js
 let obj = {
-  name: "Mylo",
-  age: 1000,
+  name: "James",
+  age: 28,
   game: {
-    name: "Dota 2",
-    position: 5,
-    favHero: "Dazzle"
+    name: "Rocket League",
+    hours: 135,
+    rank: "Platinum",
+    cars: [
+      "Octane", 
+      "Venom", 
+      "X-Devil",
+      "Breakout",
+      ] 
   }
 }
 
-//How would I print Mylo's name from the object?
-//
-//How would I add his location, Chicago?
-//
-//How would I change his age to 1001?
+//How would I print my name from the object?
+
+//How would I add my location, Pampa?
+
+//How would I change my age to 32000?
+
+//How would I add "Triton" to the cars array?
 ```
 
 `Dot notation`
 
-- Since keys are usually strings, and we'd hate to have to write [''] all the time\
-we have dot notation.
+- Since keys are usually strings, and we'd hate to have to write [''] all the time, we have dot notation.
 
 ```js
 let obj = {
@@ -148,8 +155,6 @@ console.log(obj[time.toLowerCase()]); //
 ## Project Time
 
 [POJO Project]
-
-## Formative Quiz
 
 [Cat Builder]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-3---node--pair-programming--pojos--adv--arrays/cat-builder
 [Iterate Through Obj]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-3---node--pair-programming--pojos--adv--arrays/iterate-through-obj
