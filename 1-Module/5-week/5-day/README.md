@@ -77,6 +77,12 @@ function foo() {
 console.log(foo); // Syntax Error
 ```
 
+## IIFE and Truthy/Falsy (25 minutes)
+
+- Primitive Data Types Quiz
+- Falsey Values in JavaScript Quiz
+- IIFE Quiz
+
 ## IIFE
 
 Immediately Invoked Function Expression
@@ -91,11 +97,6 @@ The two important pieces of an IIFE. [MDN](https://developer.mozilla.org/en-US/d
 (function () {
   console.log("I run immediately");
 })();
-
-
-(function(name){
-  console.log(`Hello, ${name}!`)
-})("James");
 ```
 
 Primarily used to avoid polluting the global namespace. Useful for situations
@@ -114,15 +115,9 @@ Falsy Values
 
 Everything else is Truthy;
 
-## IIFE and Truthy/Falsy Quizzes
-
-- Primitive Data Types Quiz
-- Falsey Values in JavaScript Quiz
-- IIFE Quiz
-
 ## aA Open Links
 
-- [Function-Hoisting](https://open.appacademy.io/learn/js-py---pt-jul-2022-online/week-5---recursion/function-hoisting-lecture)
-- [Primitive-Data-Types-Quiz](https://open.appacademy.io/learn/js-py---pt-jul-2022-online/week-5---recursion/primitive-data-types-quiz)
-- [Falsy-Values-Quiz](https://open.appacademy.io/learn/js-py---pt-jul-2022-online/week-5---recursion/falsey-values-in-javascript-quiz)
-- [IIFE-Quiz](https://open.appacademy.io/learn/js-py---pt-jul-2022-online/week-5---recursion/iife-quiz)
+- [Function-Hoisting](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/function-hoisting-lecture)
+- [Primitive-Data-Types-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/primitive-data-types-quiz)
+- [Falsy-Values-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/falsey-values-in-javascript-quiz)
+- [IIFE-Quiz](https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-5---recursion/iife-quiz)

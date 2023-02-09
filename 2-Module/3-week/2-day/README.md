@@ -1,5 +1,16 @@
 # M2W3D2
 
+## `aa_update` update
+
+```bash
+mv ~/appacademy ~/appacademy-2021-Sept-E && curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
+```
+
+```text
+Your Cohort's Code
+2021-Sept-E
+```
+
 ## Practice Pt. 1: 20 mins
 
 - If your `should run in O(n) time` test fails, call in a TA
@@ -20,35 +31,31 @@
 - You will ACTUALLY copy/paste your code from pt.2 then add timings
 - [Class Google Sheet]
 - You'll each present your findings and tell me, based on your graph, what time\
-  complexity you think we see here.
+complexity you think we see here.
   - If you need help Google sheet instructions are in the homework/Google
 
 ## Big-O Notation: Rest of Class
 
 - Some questions to start us off...
   - Why can't we effectively use 'time' to test the efficiency of our code?
-    - too many factors to play, ie machine speed, weather, different conditions
+    - answer
   - What is Big-O notation concerned with?
     - Best, average or worst case?
-      - we are usually concerned with the worst case of big-O
+      - answer
     - Specific tests run or general trend of many tests run?
-      - general tests run, not just specific instances of a test being run
+      - answer
     - Tests with similar sizes, or tests with different sizes?
-      - different sizes because we want to think about all different applications when running a program
+      - answer
     - What are the three complexities we read about?
-      - constant
-      - linear
-      - quadratic
+      - answer
+      - answer
+      - answer
     - So... what is Big-O?
-      - You can measure the speed of code using timing benchmarks but there's a faster, more descriptive way of evaluating code performance at scale. Instead of running the code under various conditions and recording the results, you will instead learn to read code and determine the rate of growth through analysis. This is called complexity analysis and expressed using big-O notation.
-      - standard mathematical notation that shows how efficient an algorithm is in the worst-case scenario relative to its input size
-
-
+      - answer
 
 ## Simplifying Big-O
 
 - We can remove coefficients
-
   - n is going to affect the trend MUCH more than a constant number.
 
     ```text
@@ -65,13 +72,13 @@
   ```
 
 - Let's simply!
-  - 5n^2 + 2n + 5 => On^2
-  - n \* 5n + n => On^2
-  - 2 + 3 => O(1)
+  - 5n^2 + 2n + 5 => ??
+  - n * 5n + n => ??
+  - 2 + 3 => ??
 
 ## If time is left
 
 - Look through some past weeks functions, can you define their time complexity?
   - If not, ask a TA
 
-[class google sheet]: https://docs.google.com/spreadsheets/d/1EcieWUaYYBa7MHq7ekGHW8_AO80VPC3n1JeI9FMAbV0/edit?usp=sharing
+[Class Google Sheet]: https://docs.google.com/spreadsheets/d/1EcieWUaYYBa7MHq7ekGHW8_AO80VPC3n1JeI9FMAbV0/edit?usp=sharing

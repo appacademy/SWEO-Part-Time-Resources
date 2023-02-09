@@ -158,16 +158,12 @@ Other common methods you will use often: (Not needed _today_, but why not\
   1. [Doubler]
   2. [Vowel Counter]
 
+## EOD / Office Hours
+
 ## Quizzes: 15 mins
 
   1. [Control Flow Quiz]
   2. [Formative Quiz]
-
-## Extra Homework 😰
-
-  1. [GitHub Setup]
-  2. [VS Code Setup]
-  3. Group Study
 
 [Is Five]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-five
 [Is Odd]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-odd
@@ -182,5 +178,3 @@ Other common methods you will use often: (Not needed _today_, but why not\
 [Control Flow Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/control-flow-quiz
 [Formative Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----thursday
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy
-[GitHub Setup]: https://github.com/appacademy/unified-setup/blob/main/github-setup.md
-[VS Code Setup]: https://github.com/appacademy/unified-setup/blob/main/visual-studio-code-setup.md

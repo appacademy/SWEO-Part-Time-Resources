@@ -1,24 +1,16 @@
-// let sumFunc = function(arr){
-//     let sum = 0
-//     arr.forEach(function(ele){
-//         sum += ele
-//     })
-//     return sum
+// function sum(num1, num2) {
+//     return num1 + num2;
 // }
 
-// const sumArrowFunc = arr => {
-//     let sum = 0
-//     arr.forEach(ele => sum += ele)
-//     return sum
-// }
+// let sum = (num1, num2) => num1 + num2;
 
-// console.log(sumFunc([1,2,3,4]))
-// console.log(sumArrowFunc([1,2,3,4]))
+// console.log(sum(3, 4));
 
+// const arr = [1, 2, 3];
 
-// const tripler = arr => arr.map((el, i) => (el * 3) + i);
+// const tripler = (arr) => arr.map((el) => el * 3);
 
-// console.log(tripler([1,2,3,4]));
+// console.log(tripler(arr));
 
 /*
 I want to start a new business that sells robots to people.
@@ -36,57 +28,47 @@ Level Four
 Customers would like it if the robots kept track of ALL the names they've spoken to.
 */
 
-
-// const someFunction = (name) => {return name}
-// console.log(someFunction)
-
 const factory = function (voiceChip) {
-    // console.log('Booting up factory...');
-    // console.log('Creating a new empty array...');
+    console.log('Booting up factory...');
+    console.log('Creating a new empty array...');
     let names = [];
-    // console.log('Returning a new robot that says ' + voiceChip + '...');
+    console.log('Returning a new robot that says ' + voiceChip + '...');
     return function robot(name) {
-        // console.log('Booting up ' + voiceChip + ' robot...');
-        // console.log('Adding ' + name + ' to names...');
+        console.log('Booting up ' + voiceChip + ' robot...');
+        console.log('Adding ' + name + ' to names...');
         names.push(name);
-        // console.log('Returning the correct phrase...');
+        console.log('Returning the correct phrase...');
         return voiceChip + ' ' + names.join(' and ');
     };
 };
 
 const hiBot = factory('Hello');
-// console.log('---Done---');
-// // const byeBot = factory('Goodbye');
-// // console.log('---Done---');
+console.log('---Done---');
+const byeBot = factory('Goodbye');
+console.log('---Done---');
 
 console.log('This is the return of hiBot: ', hiBot); // function
-// console.log('---Done---');
-// // console.log('This is the return of byeBot: ', byeBot); // function
-// // console.log('---Done---');
-
-console.log(hiBot('James')); // 
 console.log('---Done---');
-// console.log(hiBot('Crystal'));
-// console.log('---Done---');
+console.log('This is the return of byeBot: ', byeBot); // function
+console.log('---Done---');
 
-// console.log(byeBot('JM'));
-// console.log('---Done---');
-// console.log(byeBot('Mylo'));
-// console.log('---Done---');
-let helper = (str) => {
-    return str
+console.log(hiBot('Mylo'));
+console.log('---Done---');
+console.log(hiBot('JM'));
+console.log('---Done---');
+
+console.log(byeBot('JM'));
+console.log('---Done---');
+console.log(byeBot('Mylo'));
+console.log('---Done---');
+
+let str = 'hello';
+
+function something(str) {
+    return str;
 }
 
-let helloString = helper('hello')
-
-console.log(helloString)
-// let str = 'hello';
-
-// function something(str) {
-//     return str;
-// }
-
-// something(str);
+something(str);
 // First Class Function - A feature of a coding language (JavaScript)
 /* 
 JavaScript functions are first-class function

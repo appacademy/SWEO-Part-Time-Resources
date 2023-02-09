@@ -1,79 +1,44 @@
-# W2D3
-
-Make sure to call us into your breakout room during practice time if you are at all confused with what you are working on!
+# M1W2D3
 
 ## Helper Functions
 
-- ### Remove E Words
+- [Choose Primes]
 
-```js
-// Removes all words from the sentence with the letter "e"
-let removeEWords = function (sentence) {
+### Choose Primes Discussion
 
-} 
-```
-
-- ### Echo
-
-```js
-// Returns a string "echo-ized"
-
-let echo = function (string) {
-
-} 
-
- console.log(echo('Hello')); // 'HELLO ... Hello ... hello
- console.log(echo('PiNeAppLE')); // 'PINEAPPLE ... PiNeAppLE ... pineapple
-
-```
-
----
-
-## Practice 1 (30m)
+## Practice 1
 
 - [Two Sum Recall]
 - [Reverse Sentence]
 - [Initials]
 
-## Discussion 1
+### Practice 1 Discussion
 
-- Questions?
-- Two Sum Walkthrough
-
----
-
-## Practice 2 (30m)
+## Practice 2
 
 - [Two Dimensional Product]
 - [Popper]
-- [Choose Primes]
 
-## Discussion 2
+### Practice 2 Discussion
 
-- Questions?
-- Two Dimensional Product
-
----
-
-## Practice 3 (30m)
+## Practice 3
 
 - [Longest Word]
 - [Abbreviate]
 - [Product Array]
 
-## Discussion 3
+### Practice 3 Discussion
 
-- Questions?
-- Longest Word Walkthrough
+## EOD Discussion
 
----
+## Formative Quiz
 
-[two sum recall]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/two-sum-recall
-[reverse sentence]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/reverse-sentence
-[initials]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/initials
-[two dimensional product]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/two-dimensional-product
-[popper]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/popper
-[choose primes]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/choose-primes
-[longest word]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/longest-word
-[abbreviate]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/abbreviate
-[product array]: https://open.appacademy.io/learn/js-py---pt-nov-2021-online/week-2---intermediate-functions/product-array
+[Choose Primes]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/choose-primes
+[Two Sum Recall]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/two-sum-recall
+[Reverse Sentence]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/reverse-sentence
+[Initials]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/initials
+[Two Dimensional Product]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/two-dimensional-product
+[Popper]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/popper
+[Longest Word]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/longest-word
+[Abbreviate]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/abbreviate
+[Product Array]: https://open.appacademy.io/learn/part-time-canonical/pt-week-2-canonical/product-array

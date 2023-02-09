@@ -17,30 +17,14 @@ I want to see how much money I've made on ALL iceCream
 */
 class IceCream {
   constructor(flavor, toppings) {
-    // this = {};
     this.flavor = flavor;
-    // {flavor: "Vanilla"};
     this.toppings = toppings || [];
-    this.price = this.toppings.length * 0.5 + 1.5;
-    //{ flavor: 'Chocolate',toppings: [ 'peanut butter', 'caramel', 'Oreo' ],price: };
-    IceCream.iceCreamTracker.push(this)
+    this.price = 1.5;
   }
-
-  static iceCreamTracker = [];
 
   addToppings(...toppings) {
     this.toppings.push(...toppings);
     this.price = 1.5 + this.toppings.length * 0.5;
-  }
-
-  static getPrices() { 
-    let sum = 0;
-    let arr = IceCream.iceCreamTracker;
-    for (let i = 0; i < arr.length; i++) { 
-      let obj = arr[i];
-      sum += obj.price;
-    }
-    return sum;
   }
 }
 
@@ -97,12 +81,12 @@ class Saxophone extends Instrument {
 }
 
 // What will print to the console?
-const james = new Saxophone();
-const crystal = new Trumpet();
-crystal.play();
-james.play();
-crystal.soakReed();
-james.soakReed();
+const zaviar = new Saxophone();
+const mylo = new Trumpet();
+mylo.play();
+zaviar.play();
+mylo.soakReed();
+zaviar.soakReed();
 
 /* 
 We all know that Saxophones make more of a 'squawk squawk squawk'
@@ -112,3 +96,8 @@ How can I change just the Saxophones to squawk instead of toot?
 
 ## Friendly and Evil Dragons Phase (Today and Friday HW)
 
+## Bonus: Manager and Employee Salaries (Wednesday)
+
+[Class Syntax II Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/static-methods-and-variables
+[Inheritance Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/inheritance-quiz
+[Polymorphism Quiz]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-7---dry--oop--polymorphism/polymorphism-quiz

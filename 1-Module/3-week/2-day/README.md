@@ -1,5 +1,9 @@
 # M1W3D2
 
+## Office Hours
+
+- [One on One List]
+
 ## Basic Terminal Commands
 
 - ls
@@ -17,29 +21,6 @@
 - cd ./
   - Don't travel
 
-## Lecture Notes - aa_update
-
-1. Run the following command (Once)
-
-   ```bash
-   curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
-   ```
-
-   ```bash
-   What is your Cohort ID?
-    2022-Mar-E
-   ```
-
-2. Restart your terminal
-3. Every morning run...
-
-   ```bash
-   aa_update
-   ```
-
-4. Follow prompts
-5. Run `aa_update` again after lecture to get live lecture notes
-
 ## Node.js
 
 - Node.js (Node) is a JavaScript runtime environment
@@ -47,8 +28,8 @@
 ### NVM - Node Version Manager
 
 - We can easily switch between node versions!
-  1. `nvm install <version>` (if not installed)
-  2. `nvm use <version>`
+  1. `npm install <version>` (if not installed)
+  2. `npm use <version>`
 
 ### Using Node
 
@@ -77,4 +58,6 @@
 [Git Flow]: gitflow/README.md
 [One on One List]: https://docs.google.com/spreadsheets/d/12_NDRZO4QSZ6fMdlDj3uEn3tZ18_U1t1fqEZXxWHk3A/edit#gid=1323684749
 
-## Project
+## Finish Project
+
+## Formative Quiz

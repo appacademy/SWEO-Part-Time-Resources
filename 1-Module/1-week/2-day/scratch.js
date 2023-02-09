@@ -1,20 +1,16 @@
 /* EAST */
-/* 
-Numbers 
-Javascript ignores types of numbers a  number is just a number
-+ addition operator
-* multiplication operator
-- subtraction operator
-/ division operator
-** power operator
+/*
+What did we learn? / Initial Questions
 
+Numbers
+  JavaScript doesn't care about types of numbers... just numbers is numbers
+  Modulo is new what does it do?
+    Gives you the remainder for division 
 
+Comparisons
+  Short circuit can be a thing
+  learned how to spell circuit
 
-% modulo operator
-    -- divide 2 numbers and give the remainder
-
-
-NaN = not a number
 */
 
 // console.log(7 % 2); // 1
@@ -22,202 +18,218 @@ NaN = not a number
 // console.log(2 % 22); // 2
 // console.log(-7 * 2); // -14
 // console.log((2 + 5) * 2) // 14
-// console.log('james' / 14)
 
+// console.log(2 / "bread");
+// // NaN is not equal to NaN
+// console.log(NaN === NaN);
+// console.log(isNaN(NaN));
 
-// Not operator or ! 
-// console.log(true)
-// console.log(!true)
+// // Not operator !
+// console.log(!true);
 
-// And operator && 
+// // && - AND
 
-// console.log(true && true) // true
-// console.log(true && false) // false
-// console.log(false && false) // false
+// console.log(true && true);
+// console.log(false && true); // false
+// console.log(false && asdf) // it can short circuit
 
-// Or operator ||
-
-// console.log(true || true) // true
+// // || - OR
+// console.log(false || false) //false
 // console.log(true || false) // true
-// console.log(false || false) // false
+// console.log(true || asdf) // it can short circuit
+  
+
+// console.log('a' < 'b');  // true (dictionary order)
+// console.log('cat' < 'cats'); // true
+// // WARNING
+// console.log("A" < "a") // case matters
+// console.log("Zebra".toLowerCase() < "apple") // More on this tomorrow
+
+// // or equal tos
+// console.log(7 <= 7);
+// console.log(7 >= 7);
+
+// SINGLE = is ASSIGNMENT
+// DOUBLE == is loose equality
+// TRIPLE === a strict equality
+
+// console.log(2 == "2"); //true
+// console.log(2 === parseInt("2")) // true
+// // DOUBLE VS TRIPLE
+// console.log(false == 0) // true
+// console.log(false === 0) // false
+
+// //Variable Declaration
+// let carrot;
+// console.log(carrot);
+
+// //Variable Assignment/ Reassignment
+// carrot = "orange";
+// console.log(carrot);
+
+// // Variable Init
+// let apple = "red";
+
+// let num = 0;
+// console.log(num);
+// // num = num + 1;
+// // num += 1; // take the old num, add one to it, REASSIGN it to num
+// // num++;
+// // num += 5;
 
 
-// console.log(!(true || true)) // (!true && !true) false
-// console.log(!(true && true)) //  (!true || !true)
-// console.log(!(true && false)) //  (!true || !false)
+// // NOTE: sometimes ++ has some unexpected behavior
+// num++ // I want you to assign num to num then add one
+// ++num // I want you to add one to num then assign it to num
+// console.log(num);
 
-// Single = sign is an assignment operator 
-// Double == is loose comparison operaton 
-// Triple == is Strict comparison or checks if it deeply equals
-// Not Strictly equals !== compares that something is not equal to
-// Not Loosely equals != compares that something is not loosely equal
-
-// console.log(james = 'james') // prints string of james
-// console.log(true == 1) // true
-// console.log(false === false) // true 
-
-// console.log('42' == 42) // true // do't use double == 99.99% of the time
-// console.log('42' === 42) // false
-// console.log(false == false) // true
-
-
-// console.log(42 > 12) // true
-// console.log(11 < 88) // true
-// console.log(10 <= 10) // true
-// console.log(1 < -100) // false
-// console.log(Infinity > -Infinity) // true
-
-// console.log("100" != 100) // false
-// console.log("100" !== 100) // true
-
-// Variable declaration
-
-// let x = 7
-// x++  // this is the same thing as saying x += 1
-// x - 2
-// x *= 3 
-// console.log(x)
-
-
-// NOTE variable++ reassigns the variable to one more than variable
-// NOTE variable-- reassigns the variable to one less than variable
-
-// ** does not reassign variable **= does reassign variable 
-
-// let num = 12
-
-// num++ // 13
-// num ** 2 // 26
-// // num /= 3 // 8.66
-
-
+// num *= 5 // num = num * 5;
+// num /= 2 // num = num / 2;
+// num %= 6 // num = num % 6;
 // console.log(num)
 
-let num = 12
+// let a = 5;
+// // a is 5
+// console.log(a);
 
-num++ // 13
-// num /= 3 // 8.66
-num = num % 12
+// let b = a;
+// console.log(a,b);
+//     // b = a
+//     // a += 1
+// // take the value of a and put it into b // 5
+// // then add one to a // 6
 
-
-console.log(num)
-
-// let num1 = 10 // num1 = 10
-// num1++ // num1 = 11
-// let num2 = ++num1 + ++num1 // num 1 = 12 + num1 = 13
-
-// console.log(num2)
-
-
-
+// let c = ++a;
+// console.log(a,c);
+//     // a += 1
+//     // c = a
+// // add one to a // 7
+// // then the value of a and put it into c. //7
+// console.log(a, b, c);
 
 /* WEST */
- 
+/* What did you learn? Initial questions?
+echo vs console.log
+JS doesn't care what the number is just that it's a number
 
-/* 
-Numbers 
-    JavaScript doesnt care about types of numbers 
-    a number is just a number
+Boolean... nada
 
+Comparison Operators.. nah 
 
-
-
+Variables - INIT VS DECLARATION VS ASSIGNMENT
 
 */
 
-// console.log(12)
-// console.log(-12)
-// console.log('-12')
+// console.log(4, 4.5, -7);
+// // PEMDAS - Order of Operations
+// console.log((5 + 4) * 2); // 13
+// // Modulo
+// console.log(7 % 5); // 2
+// console.log(20 % 2); // 0
+// console.log(2 % 20); // 2
+// // NaN - WARNING
+// console.log(2 / "apple");
+// console.log(NaN === NaN);
+// console.log(isNaN(NaN));
 
-//Arithmetic operators
-// Addition operator -- + 
-// Subtraction operator -- -
-// Multiplication operator -- *
-// division opperator /
-// power of operator -- ** 
+// // NOT - !
+// console.log(!!!!!!!!!!!!!!!!true)
 
-// console.log(6 + 7) // 13
-// console.log(6 - 7) // -1
-// console.log(6 * 7) // 42
-// console.log(49 / 7) // 7
-// console.log(7 ** 2) // 49
-// console.log((32 - 14) * 10) // 180
-
-// console.log(49 % 7) // 0
-// console.log(2 % 12) // 2
-// console.log(7 % 3) // 1
-
-
-// console.log('james' / 2) // NaN
-
-
-// Not Operator !
-// console.log(!true) // false
-// console.log(!!true) // true
-
-// And Operator && 
-
+// // AND - &&
 // console.log(true && true) // true
+// console.log(false && true) // false 
 // console.log(true && false) // false
-// console.log(false && true) // false
-// console.log(false && false) // false
+// console.log(false && asdf) // short circuiting
 
-// De Morgans Law
-// console.log(!(true && true)) // false !true || ! true 
-// console.log(!(true && false)) // true !true || !false
+// OR - ||
+// console.log(false || false) // false
+// console.log(false || true) // true
+// console.log(true || false) // true
+// console.log(true || asdf) // short circuiting
 
-// Or Operator || 
+// Exclusive Operators
+// console.log(1 < 2) //true
+// console.log(2 < 2) // false
+// console.log(1 > 2) // false
+// console.log(2 > 2) // false
 
-// console.log(true || false) // true 
-// console.log(false || false) // false 
+// Inclusive Operators
+// console.log(1 <= 2) //true
+// console.log(2 <= 2) // true
+// console.log(1 >= 2) // false
+// console.log(2 >= 2) // true
 
-// console.log(!(true || true)) // false !true && !true
-// console.log(!(true || false)) // false !true && !false
+// // Strings
+// console.log("a" < "b"); // true
+// console.log("zebra" < "apple"); // false
+// // WARNING - Captials come before lower... case matters.
+// console.log("Zebra" < "apple"); // true
+// console.log("Zebra".toLowerCase() < "apple"); // false
+
+// Equality
+
+// loose equality => ==
+// strict equality => ===
+// loose inequality => !=
+// strict inequality => !==
+
+// console.log(2 == "2"); // true
+// console.log([] == 0); // true
+
+// console.log(2 === "2") // false
+// console.log([] === 0); // false
+// console.log(2 === parseInt("2")) //true
+
+// // Inequality 
+// console.log(2 != "2"); // false
+// console.log([] != 0); // false
+
+// console.log(2 !== "2") // true
+// console.log([] !== 0); // true
+// console.log(2 !== parseInt("2")) //false
+
+// WARNING - = is assignment operator
+
+// // Declaration
+// let kitchen; // undefined
+// console.log(kitchen);
+
+// // Assignment or Reassignment
+// kitchen = "plates";
+// console.log(kitchen);
+// kitchen = "cups";
+// console.log(kitchen);
+
+// // Initialization
+// let livingroom = "TV";
+// console.log(livingroom);
 
 
-// comparison operators with greater and less than -- <, >, <=, >=
-// console.log(2 > 6) // false
-// console.log(4 < 18) // true
-// console.log(10 <= 10) // true
-// console.log(10 <= -Infinity) // false 
-// console.log(Infinity < -Infinity) // false
+// let num = 0;
+// console.log(num);
 
-// Single = -- assignment opperator assigns a value 
-// Double == -- loosely equals 99.99% of the time you will NEVER use this
-// Triple === -- Strictly equals 
+// num = num + 1;
+// console.log(num);
 
-// console.log('42' == 42) // true
-// console.log('42' === 42) // false
-// console.log(42 !== '42') // true
-// console.log(42 != '42') // false // DONT DO THIS 
+// num += 1
+// console.log(num);
 
+// num++;
+// ++num;
+// console.log(num);
 
+// num += 1
+// num *= 3
+// num /= 7
+// num %= 3
 
-//Vaariable Declaration 
-// let strawberry
-// console.log(strawberry) 
-// strawberry = 'tasty fruit'
-// console.log(strawberry) 
+// let x = 7; // init
+// console.log(x);
+// x++; // x = x + 1
+// console.log(x);
+// x - 2; // random expression for no reason
+// console.log(x);
+// x *= 3; // x = x * 3
+// console.log(x);
 
-// Variable Init
-// let strawberry = 'tasty fruit'
-// console.log(strawberry) 
-
-// let num = 100
-// console.log(num)
-// // num = num + 1
-// // num += 1
-// // num *= 10
-// // num /= 10
-// num /= 25
-// console.log(num) // 4
-
-let num1 = 10
-let num2 = num1 + 1
-num2 = ++num1  // reassigns num2 at the same time as reassigning num1 where if you did num2 = num1++ only num1 gets reassigned to the extra ++ 
-console.log(num1, num2)
-
-
-
-
-
+//isSweet || !hasFruit

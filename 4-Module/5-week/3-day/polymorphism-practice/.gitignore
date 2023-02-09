@@ -1,3 +1,0 @@
-server/db/*.db
-server/*.db
-server/.env

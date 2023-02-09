@@ -64,3 +64,4 @@
 // let arr2 = [4, 5, 6];
 // let arr3 = [...arr1, "s", ...arr2, 9, 10, 12];
 // console.log(arr3)
+

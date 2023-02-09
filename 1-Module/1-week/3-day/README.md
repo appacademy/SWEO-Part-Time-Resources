@@ -109,7 +109,7 @@
   2. [Hello]
   3. [Divide by Three]
 
-## Final Discussion / EOD 
+## Final Discussion / EOD (JM)
 
 ## Formative Quiz: 10 mins
 

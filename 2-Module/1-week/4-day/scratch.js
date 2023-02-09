@@ -36,7 +36,7 @@ class IceCream {
   }
 }
 
-let vanilla = new IceCream('Vanilla', ['sprinkles', 'strawberry']);
+// let vanilla = new IceCream('Vanilla', ['sprinkles', 'strawberry']);
 // let chocolate = new IceCream('Chocolate', ['peanut butter', 'caramel', 'Oreo']);
 // let orange = new IceCream('Orange Sherbert');
 // console.log(vanilla.flavor);
@@ -47,53 +47,48 @@ let vanilla = new IceCream('Vanilla', ['sprinkles', 'strawberry']);
 // console.log(vanilla.getPrices());
 
 
+class Instrument { 
+  constructor(name, family) { 
+    this.name = name;
+    this.family = family;
+  }
 
-// class Instrument {
-//   constructor(name, family) {
-//     this.name = name;
-//     this.family = family;
-//   }
+  play() { 
+    console.log('toot toot toot');
+  }
+}
 
-//   play() {
-//     console.log('toot toot toot');
-//   }
-// }
+class Trumpet extends Instrument { 
+  constructor(spitValveLevel) { 
+    super('trumpet', 'brass')
+    this.spitValveLevel = spitValveLevel;
+  }
 
-// class Trumpet extends Instrument {
-//   constructor() {
-//     Trumpet.total += 1;
-//     super(`Trumpet ${Trumpet.total}`, 'Brass');
-//   }
+  emptyValve() { 
+    console.log('emptying valve...')
+    this.spitValveLevel = 0;
+  }
+}
 
-//   static total = 0;
-
-//   releaseSpitValve() {
-//     console.log('releasing spit valve');
-//   }
-// }
-
-// class Saxophone extends Instrument {
-//   constructor() {
-//     Saxophone.total += 1;
-//     super(`Saxophone ${Saxophone.total}`, 'Woodwinds');
-//   }
-
-//   static total = 0;
-
-//   soakReed() {
-//     console.log('soaking reed');
-//   }
+class Saxophone extends Instrument { 
+  constructor() {
+    super('saxophone', 'woodwind');
+  }
   
-// }
+  play() { 
+    console.log('squawk squawk squawk');
+  }
+}
 
-// // What will print to the console?
-// const james = new Saxophone();
-// const crystal = new Trumpet();
-// crystal.play();
-// james.play();
-// crystal.soakReed();
-// james.soakReed();
-
-/* 
-We all know that Saxophones make more of a 'squawk squawk squawk'
-How can I change just the Saxophones to squawk instead of toot?
+const flute = new Instrument('flute', 'woodwinds'); 
+const trumpet = new Trumpet()
+const saxophone = new Saxophone();
+console.log(flute)
+console.log(trumpet);
+console.log(saxophone)
+flute.play();
+trumpet.play();
+saxophone.play();
+// flute.emptyValve(); //error
+// saxophone.emptyValve(); //error
+trumpet.emptyValve();

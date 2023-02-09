@@ -12,30 +12,32 @@ const answers = {}
 // ask the user a question
 // Main thread is freed up while we wait for user input. HandleResponeOne will
 // be executed when the user has submitted their response.
-rl.question('What is your favorite sport? ', handleResponse)
 
+rl.question("What's up, doc? ", handleResponseOne)
 
 // first calback
-function handleResponse(answer) {
-  console.log(`${answer} is your favorite sport`)
-
-  answers.favoriteSport = answer
-  rl.question('What position do you play? ', handleResponseTwo)
+function handleResponseOne(firstAnswer) {
+  console.log(firstAnswer + ' is up.')
+  // save firstAnswer to answer object
+  answers['up'] = firstAnswer
+  debugger
+  rl.question("What's down, clown? ", handleResponseTwo)
 }
 
 // second callback (passed to `rl.question()` in handleResponseOne)
-function handleResponseTwo(answer){
-  console.log(`This is the position you play: ${answer}`)
-  answers.position = answer
-
-  rl.question('What is your favorite baseball Team? ', handleResponseThree)
+function handleResponseTwo(secondAnswer) {
+  console.log(secondAnswer + ' is down.')
+  answers['down'] = secondAnswer
+  debugger
+  rl.question("What's left, Jeff? ", handleResponseThree)
 }
-// third callback (passed to `rl.question()` in handleResponseTwo)
-function handleResponseThree(answer) {
-  console.log(`This is your position: ${answer}`)
-  answers.favoriteTeam = answer
 
+// third callback (passed to `rl.question()` in handleResponseTwo)
+function handleResponseThree(thirdAnswer) {
+  console.log(thirdAnswer + ' is left.')
+  answers['left'] = thirdAnswer
+  // close the interface
   rl.close()
+  debugger
   console.log(answers)
 }
-

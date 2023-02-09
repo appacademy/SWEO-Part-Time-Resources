@@ -2,9 +2,8 @@
 Set the image to 180X100 with a red border
 Look for the element with the Inspector
 */
-
 #aA-logo {
   width: 180px;
   height: 100px;
-  border: 2px solid red;
+  border: 1px solid red;
 }

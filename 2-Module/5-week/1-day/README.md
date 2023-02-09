@@ -1,6 +1,6 @@
 # M2W5D1
 
-## Readings - Intro to Algorithms (10 min)
+## Readings - Intro to Algorithms (7 min)
 
 1. Intro to CS 2
 2. Logarithms Objectives
@@ -16,34 +16,30 @@ by n to reach 1.
   comparisons
 
 ```js
-Math.log2(1); // 0
-Math.log2(2); // 1
-Math.log2(4); // 2
-Math.log2(8); // 3
-Math.log2(16); // 4
-Math.log2(32); // 5
-Math.log2(64); // 6
-Math.log2(128); // 7
-Math.log2(256); // 8
-Math.log2(512); // 9
+Math.log2(1);    // 0
+Math.log2(2);    // 1
+Math.log2(4);    // 2
+Math.log2(8);    // 3
+Math.log2(16);   // 4
+Math.log2(32);   // 5
+Math.log2(64);   // 6
+Math.log2(128);  // 7
+Math.log2(256);  // 8
+Math.log2(512);  // 9
 Math.log2(1024); // 10
 
-2 ** 0; // 1
-2 ** 1; // 2
-2 ** 2; // 4
-2 ** 3; // 8
-2 ** 4; // 16
-2 ** 5; // 32
-2 ** 6; // 64
-2 ** 7; // 128
-2 ** 8; // 256
-2 ** 9; // 512
-2 ** 10; // 1024
+2 ** 0   // 1
+2 ** 1   // 2
+2 ** 2   // 4
+2 ** 3   // 8
+2 ** 4   // 16
+2 ** 5   // 32
+2 ** 6   // 64
+2 ** 7   // 128
+2 ** 8   // 256
+2 ** 9   // 512
+2 ** 10  // 1024
 ```
-
-## Binary Search Readings & Practice (30 min)
-
-## Binary Search Discussion
 
 Properties of a Binary Search Tree:
 
@@ -51,3 +47,11 @@ Properties of a Binary Search Tree:
 - nodes whose values are less than the current node go to the left
 - nodes whose values are more than the current node go to the right
 - Each node has three properties: value, left and right
+
+## Binary Search Readings & Practice (30 min)
+
+## Binary Search Discussion
+
+## Start on HW for Tuesday (40 min)
+
+## Binary Tree Project Part 1

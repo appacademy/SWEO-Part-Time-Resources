@@ -1,95 +1,104 @@
-// // const myArr = [1,2,3,4]
-// // const myArr = new Array(1,2,3,4)
-// // console.log(myArr)
-
 // // Define a class with the class keyword followed by the name with the first
 // // letter capital and the rest of the words camel case
 // class Taco {
-//     // constructor is invoked when you create a new class such as:
-//     // new Taco("chicken", ["sour cream", "cheese"])
-//     constructor(meat, toppings = []) {
-//       // define any instance variables or logic that needs to be run when an
-//       // instance of the class is created
-//       this.meat = meat
-//       this.toppings = toppings
-//       this.tortillaType = 'corn'
-//       this.allInstances = []
-//       this.allInstances.push(this.constructor.name)
-//     }
-//     // instance method
-//     assemble() {
-//       return `These are some delicious ${this.meat} tacos on a ${
-//         this.tortillaType
-//       } tortilla with all the toppings ${this.toppings.join(', ')}.`
-//     }
+//   // constructor is invoked when you create a new class such as:
+//   // new Taco("chicken", ["sour cream", "cheese"])
+//   constructor(meat, toppings = []) {
+//     // define any instance variables or logic that needs to be run when an
+//     // instance of the class is created
+//     this.meat = meat
+//     this.toppings = toppings
+//     this.tortillaType = 'corn'
+//   }
+//   // instance method
+//   assemble() {
+//     return `These are some delicious ${this.meat} tacos on a ${
+//       this.tortillaType
+//     } tortilla with all the toppings ${this.toppings.join(', ')}.`
+//   }
+// }
+// // create a instance of a Taco and store in a variable
+// const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
+// const chickenTaco = new Taco('chicken', ['sour cream', 'cheese'])
+// // call an instance method
+// console.log(carnitasTaco.assemble())
+// console.log(chickenTaco.assemble())
 
-//     changeTortillaType(str){
-//         this.tortillaType = str
+// IceCream
+// Properties:
+//  - flavor array
+//  - toppings array
+//  - iceCreamMantle string
+//  - amount number
+//  Actions:
+//  - melt() - decrement amount
+//  - togo() - put it all together
+
+// class IceCream {
+//   constructor(flavors, toppings, iceCreamMantle, amount) {
+//     this.flavors = flavors
+//     this.toppings = toppings
+//     this.iceCreamMantle = iceCreamMantle
+//     this.amount = amount
+//   }
+
+//   eat() {
+//     //  - eat() - decrement amount
+//     // amount = 3
+//     // eat()
+//     // amount = 2
+//     if (this.amount > 0) {
+//       console.log('This is some yummy ice cream!')
+//       this.amount--
+//     }
+//     if (this.amount === 0) {
+//       return 'This was some yummy ice cream!'
 //     }
 //   }
-//   // create a instance of a Taco and store in a variable
-//   const carnitasTaco = new Taco('carnitas', ['guacamole', 'salsa'])
-//   const carnitasTaco2 = new Taco('carnitas', ['guacamole', 'salsa'])
-//   const carnitasTaco3 = new Taco('carnitas', ['guacamole', 'salsa'])
-//   // call an instance method
-// //   console.log(carnitasTaco.assemble())
-//   console.log(carnitasTaco)
-// //   carnitasTaco.changeTortillaType('flour')
-// //   console.log(global.this)
 
+//   melt() {
+//     if (this.amount > 0) {
+//       const interval = setInterval(() => {
+//         console.log('Im melting...')
+//         this.amount--
+//         if (this.amount === 0) {
+//           console.log("I'm Melted")
+//           clearInterval(interval)
+//         }
+//       }, 1000)
+//     }
+//   }
 
-class Instrument {
-    constructor(name, family) {
-      this.name = name;
-      this.family = family;
-    }
-  
-    play() {
-      console.log('toot toot toot');
-    }
-  }
+//   togo() {
+//     return {
+//       ingredients: [...this.toppings, ...this.flavors],
+//     }
+//   }
+// }
 
+// const chocolateIceCream = new IceCream(['chocolate'], ['nuts'], 'cone', 5)
+// console.log(chocolateIceCream.amount)
+// console.log(chocolateIceCream.togo())
+// console.log(chocolateIceCream.amount)
 
+// Dog Ideas
+// Attributes:
+// -Size
+// -Breed
+// -Barks (Boolean)
+// -Color
+// -Age
+// -furType
+// -barkVolume
+// -Walked (Boolean)
+// -Listen (Boolean)
 
-    class Guitar extends Instrument {
-      constructor(name, family) {
-        super(`Guitar`, 'Strings');
-      }
-    
-    
-      strumGuitar() {
-        console.log('strumming guitar');
-      }
-      
-    }
-
-    class ChildGuitar extends Guitar{
-        constructor(){
-            super('Guitar2', 'Strings as well')
-        }
-    }
-  
-  class Trumpet extends Instrument {
-    constructor() {
-      super(`Trumpet`, 'Brass');
-    }
-  
-  
-    releaseSpitValve() {
-      console.log('releasing spit valve');
-    }
-  }
-  
-  
-  // What will print to the console?
-  const jamesGuitar = new Guitar('Guitar', 'Strings');
-//   console.log(jamesGuitar instanceof Array)
-  console.log(jamesGuitar)
-
-//   const childGuitar = new ChildGuitar()
-//   console.log(childGuitar)
-//   const jamesTrumpet = new Trumpet();
-//   jamesGuitar.play();
-// //   jamesTrumpet.play();
-//   jamesGuitar.strumGuitar();
-//   jamesTrumpet.releaseSpitValve();
+// Methods:
+// -dogBark()
+// -walkingDog()
+// -findingDog()
+// -howOld()
+// -rollOver() - console.log("wheres my treat?")
+// -makePuppyDogEyes() - begs for treats
+// -walk() - update walked value and walks dog if they are not already walked
+// -praise() - if they listen you praise them otherwise you get mad
