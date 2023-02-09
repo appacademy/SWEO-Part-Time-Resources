@@ -74,7 +74,7 @@ CREATE TABLE weapons (
 CREATE TABLE player_weapon (
   player_id INTEGER,
   weapon_id INTEGER,
-  FOREIGN KEY (player_id) REFERENCES elden_ring_players(id)
+  FOREIGN KEY (player_id) REFERENCES elden_ring_players(id),
   FOREIGN KEY (weapon_id) REFERENCES weapons(id)
 );
 ```
