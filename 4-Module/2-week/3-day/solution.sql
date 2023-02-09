@@ -72,7 +72,7 @@ FROM instruments
   JOIN musician_instruments ON (
     instruments.id = musician_instruments.instrument_id
   )
-  JOIN musicians ON (musicians.id = musician_instruments.musician_id)
+  JOIN musicians ON (musicians.id = musician_instruments.musician_id);
 
 -- Step 2
 -- Just like with one-to-many relationships, you can filter one table by any
