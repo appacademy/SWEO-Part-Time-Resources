@@ -3,24 +3,20 @@ let allStudents = [
     "Ledian Fekaj",
     "Carlos Stich",
     "Emily Norman",
-    "Dylan Berry",
     "Enea Jorgji",
-    "Dorian Rivas",
     "Yassin Tantawy",
     "Adrienne Tran",
     "Gino Farfaglia",
     "Stephen Raymond Sy",
     "David Soto",
     "Joshua Krienke",
-    "Myles Spikes",
-    "Avery Illustre",
     "Luke Morgan",
     "Kyle Seeley",
     "Saman Rana",
     "Brian Cabral",
     "Mariia Gribacheva",
     "Kevin Sy",
-    "Manuel Salazar"
+    "Finley Joseph"
 ]
 
 let est = [
