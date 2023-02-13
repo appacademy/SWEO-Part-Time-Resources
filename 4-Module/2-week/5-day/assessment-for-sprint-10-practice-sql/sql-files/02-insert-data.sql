@@ -1,4 +1,5 @@
 -- Your code here
+--github
 
 INSERT INTO departments
   (name)

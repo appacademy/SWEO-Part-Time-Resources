@@ -1,4 +1,5 @@
 -- Your code here
+--github
 SELECT tools.name, tool_purchases.quantity
 FROM tools
 JOIN tool_purchases
