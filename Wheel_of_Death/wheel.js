@@ -50,10 +50,11 @@ let deathWheel = array => array[Math.floor(Math.random() * array.length)]
 
 function deathPairs(arr) {
     let rooms = Array.from(Array(arr.length).keys())
+    let randomRoom = Math.floor(Math.random() * (arr.length / 2))
     while (arr.length) {
         if (arr.length === 1) {
             let solo = arr[0]
-            console.log(`SOLO - Add ${solo} to a group`)
+            console.log(`SOLO - Add ${solo} to room ${randomRoom}`)
             return;
         }
         let student1 = arr.splice((Math.random() * 1000) % arr.length, 1)
