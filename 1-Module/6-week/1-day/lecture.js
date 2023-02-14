@@ -143,4 +143,3 @@ return the Timeout object for the interval.
 
 
 // setInterval(cb, miliseconds)
-
