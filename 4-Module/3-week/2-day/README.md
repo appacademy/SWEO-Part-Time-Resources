@@ -10,7 +10,7 @@
 ### How does it work
 SQL uses a B-tree, similar to a binary search tree, to store data. When creating an indexed column the values will be sorted and paired with a pointer that references the database row that matches the indexed column's value. Since the values become sorted the lookup is O(log n) time, becuase every record does not need to be searched.
 
-![lookup with index](./lookup-with-index.png)
+![lookup with index](https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/2022-Jun-W/4-Module/3-week/2-day/lookup-with-index.png)
 
 ### When to create indexes / drawbacks
 - Indexing can increase efficiency for lookups, but decrease efficiency for insertion and deletion.
