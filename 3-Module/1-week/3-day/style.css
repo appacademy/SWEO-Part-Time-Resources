@@ -1,35 +1,8 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <title>NOVEMBER 15, 2022</title>
-</head>
-
-<body>
-  <header>
-    <h1>Our CSS Test</h1>
-    <h2>CSS is Fun!</h2>
-  </header>
-  <main>
-    <div class="box yellow">
-      <h2>ADJACENT SIBLINGS HEADER</h2>
-      <p>It's me!!!</p>
-      <p>Not me...</p>
-      <p>or me...</p>
-      <p>or me...</p>
-      <div class="box orange">
-        <p>Not Affected</p>
-        <p>Not Affected</p>
-      </div>
-    </div>
-    <img src="https://th.bing.com/th/id/R.80fc5257ece64a82088952c881cb025c?rik=H7dIgVqMrUBrbQ&pid=ImgRaw&r=0"
-      alt="Cute White Cat Looking at You">
-    <img src="https://wallpapercave.com/wp/tOnOUAs.jpg">
-    <img src="https://th.bing.com/th/id/R.b54f11dafcbc9374cd284e94c5d44781?rik=qjOUiBV%2f7HSurw&pid=ImgRaw&r=0">
-    <img src="https://th.bing.com/th/id/OIP.kIMpCK_0JC7nE8eh5TtkWQHaHa?pid=ImgDet&rs=1">
-    <img src="https://ih0.redbubble.net/image.9749484.6007/flat,1000x1000,075,f.jpg" alt="The Best Cat">
-    <img src="https://th.bing.com/th/id/OIP.snDcNreVlavqHwHLnEl4UwHaFj?pid=ImgDet&rs=1">
-  </main>
-</body>
-
-</html>
+img {
+  border: 2px solid white;
+  border-radius: 100%;
+  height:200px;
+  object-fit: cover;
+  object-position: top;
+  width: 200px;
+}
