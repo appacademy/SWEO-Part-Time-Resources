@@ -125,7 +125,7 @@ while True:
 - Getting stuck in an infinite while loop:
     ```python
     while True:
-    print('Hello world!')
+        print('Hello world!')
     ```
 
 ## For loops
