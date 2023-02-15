@@ -32,9 +32,14 @@ CREATE UNIQUE INDEX index_name ON table_name(col1, col2, col3);
 ### Removing an index
 You can remove an index with the following syntax:
 ```
-DROP INDEX column_name;
+DROP INDEX index_name;
 ```
 
+### How SQL scan's with unsorted data (O(n)):
+![lookup with index](https://dataschool.com/assets/images/sql-optimization/how_to_index/BasicSearchGif.gif)
+
+### How SQL scan's with sorted data(i.e. Index O(log n)):
+![lookup with index](https://dataschool.com/assets/images/sql-optimization/how_to_index/BinarySearchGif.gif)
 ---
 
 ## SQL Injections
