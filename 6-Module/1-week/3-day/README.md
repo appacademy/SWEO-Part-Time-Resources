@@ -123,10 +123,10 @@ while True:
     break
 ```
 - Getting stuck in an infinite while loop:
-    ```python
-    while True:
-        print('Hello world!')
-    ```
+```python
+while True:
+    print('Hello world!')
+```
 
 ## For loops
 - JavaScript has multiple for loops: for(let i = 0; i < someValue; i++), for in, and for of
