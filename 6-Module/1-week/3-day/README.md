@@ -159,8 +159,10 @@ else:
 ```python
 if name == 'Kristen':
     print('Hi, Kristen.')
-elif age < 12:
-    print('You are not Kristen, kiddo.')
+elif name == 'Caleb':
+    print('You are not Kristen.')
+elif name == 'Waldo':
+    print('Where is Waldo?')
 else:
     print('You are neither Kristen nor a little kid.')
 ```
