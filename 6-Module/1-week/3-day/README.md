@@ -86,8 +86,31 @@ print (2 is 2.0)    # => False
 - Can catch any error, or a specific error(s)
 - Errors that occur while a program is executing are called exceptions
 ```python
+# simple error catching
 a = 321
-print(len(a))
+try:
+    print(len(a))
+except:
+    print('Silently handle error here')
+    # Optionally include a correction to the issue
+    a = str(a)
+    print(len(a))
+```
+
+```python
+#catching named errors
+a = 100
+# b = "5"
+# b = 0
+# b = 5
+try:
+    print(a / b)
+except ZeroDivisionError:
+    pass
+except (TypeError, NameError) as e:
+    print("ERROR!", e)
+finally:
+    print("Finally...")
 ```
 
 ## While Loops
