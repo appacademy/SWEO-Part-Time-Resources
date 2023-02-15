@@ -70,16 +70,7 @@ print (2 == 2.0)    # => True
 print (2 is 2.0)    # => False
 ```
 
-## Operator Practices in AAO (45 Minutes)
-- Is Divisible by 5
-- Calculate Exponent
-- Remainder of Two Numbers
-- First before Second
-- Equality in Python
-- Comparision in Python
-- (Challenge) Largest Perimeter Triangle
-
-## Operator Practices Discussion (10-15 Minutes)
+## Operators Practices
 
 ## Try Except
 - Same as try/catch in JavaScript
@@ -152,11 +143,6 @@ for i in range(5):
    print('Hogwarts Legacy (' + str(i) + ')')
 ```
 
-
-## AAO Practices(15 Minutes)
-- Try/Except
-- Print List
-
 ## If Statements
 - Similar to JavaScript
 - Difference is that you don't need parentheses `()`. If statements work the same way with or without parentheses
@@ -190,3 +176,5 @@ elif name == 'Waldo':
 else:
     print('You are neither Kristen nor a little kid.')
 ```
+
+## Statements Practices
