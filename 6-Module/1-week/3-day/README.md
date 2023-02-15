@@ -85,6 +85,7 @@ print (2 is 2.0)    # => False
 - Same as try/catch in JavaScript
 - Can catch any error, or a specific error(s)
 - Errors that occur while a program is executing are called exceptions
+- `raise` keyword to throw error
 ```python
 # simple error catching
 a = 321
