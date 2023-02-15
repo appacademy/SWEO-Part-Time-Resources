@@ -159,7 +159,7 @@ else:
 ```python
 if name == 'Kristen':
     print('Hi, Kristen.')
-elif name == 'Caleb':
+elif name == 'Philip':
     print('You are not Kristen.')
 elif name == 'Waldo':
     print('Where is Waldo?')
