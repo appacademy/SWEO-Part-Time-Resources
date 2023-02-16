@@ -3,8 +3,7 @@
 ## Functions
 
 -   Naming convention is snake_case
--   declaration is basically the same as JS with `function` replaced by `def` and
-    `{}` replaced by `:` and an indented block.
+-   `function` replaced by `def` and `{}` replaced by `:` and an indented block
 
 ```py
 def i_am_a_function():
@@ -16,9 +15,8 @@ i_am_a_function()
 
 ### Function Parameters and Arguments
 
-The biggest difference between JS and Python functions is in parameters and
-arguments. JS has exclusively positional arguments. Python has positional
-arguments and keyword arguments.
+JS has exclusively positional arguments. 
+Python has positional arguments and keyword arguments.
 
 You should order parameters and arguments in this order.
 
