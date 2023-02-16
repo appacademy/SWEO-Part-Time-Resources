@@ -1,3 +1,8 @@
+/* Type Selector */
+body {
+  background-color: #333;
+  color: #aaa;
+}
 img {
   border: 2px solid white;
   border-radius: 100%;
@@ -5,4 +10,63 @@ img {
   object-fit: cover;
   object-position: top;
   width: 200px;
+}
+/* Class Selector */
+.box {
+  border: 1px solid black;
+  background-color: yellow;
+}
+/* ID Selector */
+#orange {
+  background-color: orange;
+}
+
+/* Compound Selector */
+#orange.box {
+  text-decoration: none;
+}
+.box.yellow {
+  color: red;
+}
+
+/* Universal Selector */
+* {
+  padding: 10px;
+}
+
+/* Attribute Selector */
+img[alt] {
+  border-color: blue;
+}
+
+/* One Rule, Many Selectors */
+h1, h2 {
+  font-weight: bold;
+}
+h1 {
+  font-style: italic;
+}
+
+/* Descendant Selector */
+div p {
+  color : blue;
+}
+/* Direct Child Selector */
+.yellow > p {
+  background-color: aquamarine;
+}
+/* Adjacent Sibling Selector */
+h2 + p {
+  font-weight: bold;
+}
+
+/* pseudo-class selectors */
+#orange:hover {
+  background-image: url('https://ih0.redbubble.net/image.9749484.6007/flat,1000x1000,075,f.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+ol {
+  font-size: 3em;
 }

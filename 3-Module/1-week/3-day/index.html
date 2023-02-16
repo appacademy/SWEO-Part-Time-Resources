@@ -3,13 +3,12 @@
 
 <head>
   <title>NOVEMBER 15, 2022</title>
-  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <header>
+  <header id="fiveHead">
     <h1>Our CSS Test</h1>
-    <h2>CSS is Fun!</h2>
   </header>
   <main>
     <div class="box yellow">
@@ -18,14 +17,29 @@
       <p>Not me...</p>
       <p>or me...</p>
       <p>or me...</p>
-      <div class="box orange">
+      <div class="box" id="orange">
         <p>Not Affected</p>
         <p>Not Affected</p>
       </div>
     </div>
+    <div class="yellow">
+      <p>Not me...</p>
+      <p>or me...</p>
+      <p>or me...</p>
+    </div>
+    <div>
+      <h2>SPECIFICITY</h2>
+      <ol>
+        <li>Inline Styles</li>
+        <li>If one has a higher number of ids, it wins.</li>
+        <li>If one has a higher number of classes, pseudo-classes, and attributes, it wins.</li>
+        <li>If one has a higher number of tags, it wins.</li>
+        <li>The rule the browser reads last wins.</li>
+      </ol>
+    </div>
     <img src="https://th.bing.com/th/id/R.80fc5257ece64a82088952c881cb025c?rik=H7dIgVqMrUBrbQ&pid=ImgRaw&r=0"
       alt="Cute White Cat Looking at You">
-    <img src="https://wallpapercave.com/wp/tOnOUAs.jpg">
+    <img src="https://wallpapercave.com/wp/tOnOUAs.jpg" alt="A weird kitten meowing cutely">
     <img src="https://th.bing.com/th/id/R.b54f11dafcbc9374cd284e94c5d44781?rik=qjOUiBV%2f7HSurw&pid=ImgRaw&r=0">
     <img src="https://th.bing.com/th/id/OIP.kIMpCK_0JC7nE8eh5TtkWQHaHa?pid=ImgDet&rs=1">
     <img src="https://ih0.redbubble.net/image.9749484.6007/flat,1000x1000,075,f.jpg" alt="The Best Cat">
