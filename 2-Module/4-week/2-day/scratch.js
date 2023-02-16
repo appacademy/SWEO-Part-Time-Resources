@@ -71,3 +71,38 @@ function hashMod(key) {
 }
 
 console.log(hashMod("King"))
+
+//Again hashedMod is going to return a valid index for the "data" array
+
+//As long as the key is a valid string, hashedMod will always return a valid index
+
+//Once we have that index, we can store, read, and delete key/value pairs
+
+//HASH COLLISIONS
+//Two seperate return the same index
+//Hash tables only work soothly if every key gets a unique index, however this is ALWAYS a possibilty
+
+//Arrays can only hold one value per index, inserting the new pair will overwrite the previous key/value pair
+
+//One way to lessen the possibility of a hash collisions is to resize the array, however, there will still
+//always be a possibility of a hash collision
+
+//YOU CAN NEVER COMPLETELY AVOID HASH COLLISIONS
+
+//Resolving hash collisions
+
+//Unfortunately there are no elegant solutions (resizing arrays wastes space)
+
+//We can use linked list cahining to allow multiple key/value pairs within one bucket
+
+//We literally just put linked lists inside of hash tables
+
+/*
+
+Bucket 0 =  <"Key1", "Value"> -> null
+
+Bucket 1 = <"Key2", "King">  ->  <"Key3", "Apples">   -> null
+
+Bucket 3 = <"K1", "value">
+
+*/
