@@ -1,3 +1,4 @@
+/* Type Selector*/
 img {
   border: 2px solid white;
   border-radius: 100%;
@@ -5,4 +6,68 @@ img {
   object-fit: cover;
   object-position: top;
   width: 200px;
+}
+/* Universal Selector */
+* {
+  padding: 10px;
+}
+div {
+  border: 1px solid black;
+}
+/* Class Selector */
+.box {
+  padding: 20px;
+}
+.yellow {
+  background-color: yellow;
+}
+.orange {
+  background-color: orange;
+}
+/* ID Selector */
+#pink {
+  background-color: pink;
+}
+/* Attribute Selector */
+img[alt] {
+  border-color : red;
+}
+
+div.box.yellow {
+  color: red;
+}
+div.box.orange {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* One Rule, Many Selectors */
+h1, h2 {
+  font-size: 1em;
+}
+/* Descendant Selector */
+div.yellow p {
+  font-style: italic;
+}
+/* Direct Child Selector */
+div.yellow > p {
+  font-size: 2em;
+}
+/* Adjacent Sibling Selector */
+h2 + p + p + p + p {
+  background-color: black;
+}
+
+div.orange::before {
+  content: '';
+  background-color: maroon;
+  margin: 100px;
+}
+div.orange:hover {
+  background-color: black;
+}
+input[type='text']:focus {
+  background-color: black;
+  outline-color: red;
+  color: white;
 }
