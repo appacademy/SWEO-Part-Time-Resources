@@ -1,4 +1,117 @@
 body {
   background-color: #444;
-  color: #ccc
+  color: #eee
+}
+/* p {
+  display: inline;
+  background-color: red;
+  width: 50%;
+  height: 60px;
+}
+p.normal {
+  display: block;
+}
+p.fancy {
+  display: inline-block;
+} */
+
+div.parent1 {
+  background-color: maroon;
+}
+div.child1 {
+  box-sizing: border-box;
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 5px solid white;
+  /* 
+    border-width
+
+    border-style
+
+    border-color
+  */
+  margin: 40px 100px;
+  /* 
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+  */
+  padding: 20px 50px;
+}
+div.child2 {
+  height: 30px;
+  width: 100px;
+  background-color: black;
+  border: 5px solid white;
+  margin: 40px 100px;
+  /* 
+    margin-top
+    margin-right
+    margin-bottom
+    margin-left
+  */
+  padding: 20px 50px;
+}
+p {
+  background-color: red;
+}
+div.border {
+  height: 250px;
+  border-top-width: 5px;
+  border-right-width: 10px;
+  border-bottom-width: 20px;
+  border-left-width: 1px;
+  border-top-style:solid;
+  border-right-style:dashed;
+  border-bottom-style:dotted;
+  border-left-style:double;
+  border-top-color: blue;
+  border-right-color: #ff0000;
+  border-bottom-color: rgba(255,0,255,0.05);
+  border-left-color:rgb(0,255,0);
+}
+div.classy {
+  height: 100px;
+  width: 50%;
+  background-color: #ccc;
+  margin: 20px auto;
+  box-shadow: 0 15px 15px #00000066;
+  border-radius: 5px;
+}
+.position {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+}
+.static {
+  top: 0px;
+}
+.relative {
+  background-color: aqua;
+  position: relative;
+  left: 15px;
+  top: 15px;
+  z-index: -300 
+}
+.absolute {
+  background-color: orange;
+  position: absolute;
+  top: 200px;
+  left: 50%;
+  z-index: -1
+}
+.fixed {
+  background-color: black;
+  position: fixed;
+  top: 15px;
+  right: 15px;
+}
+.sticky {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  opacity: 50%;
 }
