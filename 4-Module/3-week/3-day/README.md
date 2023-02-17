@@ -149,12 +149,12 @@ module.exports = {
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.fn('now'), // I added this line
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"), // I added this line
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.fn('now'), // I added this line
+        defaultValue: Sequelize.literal("CURRENT_TIMESTAMP"), // I added this line
       },
     });
   },
