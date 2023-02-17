@@ -2,3 +2,91 @@ body {
   background-color: #444;
   color: #ccc
 }
+.display {
+  height: 100px;
+  width: 100px;
+  background-color: black;
+  color: white;
+  margin: 5px 0;
+}
+.parent {
+  background-color: red;
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.child {
+  /* box-sizing: border-box; */
+  background-color: yellow;
+  border: 1px solid black;
+  height: 50px;
+  /* margin: auto; */
+  margin: 10px;
+  padding: 20px;
+}
+p {
+  background-color: black;
+}
+.border {
+  height: 50px;
+  width: 100px;
+  border: 5px solid green;
+  /* border-width, border-style, border-color */
+  border-top: 10px dotted yellowgreen;
+}
+.plain {
+  color: red;
+}
+.hex {
+  color: #0000ff;
+}
+.rgb {
+  color: rgb(0,255,00);
+}
+.alpha {
+  /* color:#ff00ff8a; */
+  color: rgba(255,0,255, 0.5);
+}
+.fancy {
+  width: 200px;
+  height: 100px;
+  margin: 20px auto;
+  background-color: #ccc;
+  border-radius: 15px;
+  border: 2px outset #555;
+
+  box-shadow: -10px -5px 20px #000000 inset;
+}
+.pos {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  margin-top: 10px;
+}
+.static {
+  top: 15px;
+}
+.relative {
+  position: relative;
+  background-color: blue;
+  top: 15px;
+  left: 10px;
+}
+.absolute {
+  position: absolute;
+  background-color: green;
+  top : 20px;
+  right: 10px;
+}
+.fixed {
+  position: fixed;
+  background-color: orange;
+  bottom: 35vh;
+  right: 30px;
+  z-index: -1
+}
+.sticky {
+  position: sticky;
+  top:0;
+  left:0;
+}
