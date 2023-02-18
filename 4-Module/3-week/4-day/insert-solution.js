@@ -26,6 +26,7 @@ app.get('/puppies', async (req, res, next) => {
 app.post('/puppies', async (req, res, next) => {
     // Your code here
     const {name, age_yrs, breed, weight_lbs, microchipped} = req.body;
+
     const newPuppy = await Puppy.create({
         name, age_yrs, breed, weight_lbs, microchipped
     });
@@ -108,4 +109,3 @@ const { Puppy } = require('./db/models');
   }
 
 })();
-
