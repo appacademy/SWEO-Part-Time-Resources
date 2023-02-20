@@ -1,0 +1,15 @@
+div.parent {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+
+  /* Flex Stuff */
+}
+div.parent div {
+  background-color: red;
+  border-radius: 10px;
+  height: 100px;
+  width: 100px;
+
+  /* Flex Stuff */
+}
