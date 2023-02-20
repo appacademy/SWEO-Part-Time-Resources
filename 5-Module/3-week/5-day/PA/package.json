@@ -1,0 +1,42 @@
+{
+  "name": "library",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.6",
+    "nanoid": "^3.3.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.3.0",
+    "react-scripts": "5.0.0",
+    "redux": "^4.1.2"
+  },
+   "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --verbose --silent=false",
+    "test-with-json": "SKIP_PREFLIGHT_CHECK=true CI=true react-scripts test --silent --outputFile=./test/score.json --json; node test/calculateScore.js"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "redux-logger": "^3.0.6"
+  }
+}

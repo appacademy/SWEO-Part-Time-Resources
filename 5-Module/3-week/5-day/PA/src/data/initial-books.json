@@ -1,0 +1,32 @@
+[
+  {
+    "id": "1",
+    "title": "The Count of Monte Cristo",
+    "author": "Alexandre Dumas",
+    "checkedOut": false
+  },
+  {
+    "id": "2",
+    "title": "The Eyre Affair",
+    "author": "Jasper Fforde",
+    "checkedOut": false
+  },
+  {
+    "id": "3",
+    "title": "Byzantium",
+    "author": "Stephen Lawhead",
+    "checkedOut": false
+  },
+  {
+    "id": "4",
+    "title": "Harry Potter and the Philosopher's Stone",
+    "author": "J.K. Rowling",
+    "checkedOut": false
+  },
+  {
+    "id": "5",
+    "title": "The Fellowship of the Ring",
+    "author": "J. R. R. Tolkien",
+    "checkedOut": false
+  }
+]
