@@ -116,25 +116,3 @@ class Reader extends Model {
   }
 }
 ```
-
-## Which Associations Are Required? Source vs Target
-
-All associations are _one way_ connections
-
-You only need to define the association on the source
-
-- Depending on the situation, either model can be the source
-
-For example, in a One-To-Many Person-Jobs association
-
-- Define only on Person if Person is always the source
-
-  - Jobs is the target
-
-- Define only on Jobs if Jobs is always the source
-
-  - Person is the target
-
-- Define on Jobs and Person if both can be the source
-
-  - Both are also the target
