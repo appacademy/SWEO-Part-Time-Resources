@@ -1,0 +1,100 @@
+# Week 15 Day 4: Thunks, Normalization And Redux Dataflow
+
+<a name="#readme-top"></a>
+
+<p align="right" style="font-size:10px">
+  <a href="./README.md">Back to learning objectives README.md</a>
+</p>
+
+As you go through the lectures and material for each day take notes in the provided sections. Not every detail is covered in this file. It's up to you to fill out this document with what you've learned as well as important material from lectures and videos.
+
+## What is a thunk?
+
+- In programming, a thunk is a term used for a subroutine. We use a package called `redux-thunk` which is just a middleware function.
+- Middleware is functionality that enhances an original system. You can have middleware that does many things. So far you've already been working with a middleware package called `redux-logger`. This package was responsible for tracking actions and displaying actions and state in your console in a development environment.
+- `redux-thunk` is used in all environments, however. It is a fundamental piece of redux that we use in all of App Academy projects. This thunk function is called before we dispatch our actions that go to the reducer:
+
+`event --> dispatch --> thunk --> database --> dispatch --> actionCreator`
+
+- The reason we dispatch the middleware instead of our action creator directly is that thunk will hold our fetch calls to our database. The database needs to change before we control flow hits the reducer. Remember, Redux state should display the current state of the database. The database should change, and then Redux should change.
+- Now in a component you won't be dispatching an action directly, you'll dispatch a thunk instead. That thunk will then dispatch an action for you that will then trigger your reducer functions.
+- REMEMBER: database hits that need to persist in Redux need to go through your thunks. You can have fetches in React components that don't need to go through Redux and for those you don't have to dispatch. Just fetch in a handler function.
+
+`redux-thunk` functions are written with this signature:
+
+```js
+// Your first dispatch calls the outer function:
+export const requestToDatabase = (userId) => async (dispatch) => {
+  // Thunk makes the database request:
+  const response = await fetch(`/api/tweets/user/${id}`);
+
+  // Check for errors and parse data:
+  if (response.ok) {
+    const data = await response.json();
+
+    // Your second dispatch sends the db info to the reducer:
+    dispatch(actionCreator(data));
+  } else {
+    return false;
+  }
+};
+```
+
+Place your thunks below action creators in your slice file, before the reducer function.
+
+
+<br>
+<hr>
+
+## Normalization
+
+- In general, when you are storing data from a database you want to normalize it. Normalization is a process of reorganizing data to be less redundant, more logical and easier to work with. For React with Redux, this means taking arrays and objects returned by your database and organizing them by their ID's. Object lookup is O(1), whereas finding an object in an array is O(n) in worst case.
+- Your state shape will be determined by your site's needs. Design your state shape in your reducer and do not rely on the database to form the data for you. The jobs you will get after App Academy will have databases already setup with fixed return values. You might need to take that data and reorganize it.
+- An example of normalization is the idea of converting an array into an object where each key is the element object's id property:
+
+```js
+const normalizedObject = {};
+array.forEach((element) => (normalizedObject[element.id] = element));
+```
+
+Remember that if you insert an item into a normalized object, keep the normalization intact:
+
+```js
+const stateCopy = { ...normalizedState, [action.payload.id]: action.payload };
+```
+
+Note: arrays are not normalized, only objects.
+
+<br>
+
+<br>
+<hr>
+
+## Redux dataflow
+
+- You now have all the tools you need to connect your React/Redux application to your backend. Dataflow is more complex with a full stack application but you will get more familiar with it after practice.
+- This image gives you a breakdown of how data moves through your application at this point, so study this image and become familiar with every step. To study it, try to visualize a line of code pertaining to each numbered step. To consider yourself familiar with a React/Redux application, you need to know what function corresponds with each step number. If you can't point at a line number in your app and name the step it belongs to, then you need to study more:
+
+<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/ReactReduxCrudCycle.jpg' alt='redux dataflow' style="height: 700px; width: 1200px;">
+
+<br>
+
+<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/FullStack-Dataflow-Diagram-code_minson_whit.png' alt='whitney-minson full-stack data flow style="height: 700px; width: 1200px;"'>
+
+<br>
+<hr>
+<br>
+
+Redux documentation: [Redux Docs](https://redux.js.org/tutorials/essentials/part-1-overview-concepts#what-is-redux)
+
+[Redux Data Flow](https://redux.js.org/tutorials/fundamentals/part-2-concepts-data-flow).
+
+[How to write Redux reducers](https://redux.js.org/tutorials/fundamentals/part-3-state-actions-reducers).
+
+react-redux hooks documentation: [react-redux api reference](https://react-redux.js.org/api/hooks)
+
+<p align="right" style="font-size:10px">
+  <a href="#readme-top">Back to the top</a>
+</p>
+<p align="right" style="font-size:10px">
+  <a href="./README.md">Back to learning objectives README.md</a>
