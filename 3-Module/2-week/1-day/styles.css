@@ -2,14 +2,50 @@ div.parent {
   border: 1px solid black;
   border-radius: 10px;
   padding: 10px;
+  /* height: 600px; */
 
   /* Flex Stuff */
+  display: flex;
+  /* flex-wrap: wrap;
+  flex-direction: column-reverse; */
+  flex-flow: row wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 div.parent div {
   background-color: red;
   border-radius: 10px;
-  height: 100px;
-  width: 100px;
+  /* width: 100px; */
+  height: fit-content;
 
   /* Flex Stuff */
+  flex-shrink: 0;
+  font-size: 3em;
 }
+div.r {
+  /* flex-grow: 1; */
+  /* flex-shrink: 1; */
+  /* flex-basis: 10%; */
+  flex: 0 1 200px;
+}
+div.l {
+  flex-basis: 200px;
+  flex-grow: .5;
+  flex-shrink: 0;
+}
+div.c {
+  flex-basis: 200px;
+  flex-shrink: 0;
+}
+
+@media screen and (aspect-ratio: 3/4) {
+  body {
+    background-color: black;
+  }
+}
+/*
+all
+screen : what layout should look like on a browser
+print  : what layout should look like when printed
+speech : what it looks like when a screen reader reads it
+*/
