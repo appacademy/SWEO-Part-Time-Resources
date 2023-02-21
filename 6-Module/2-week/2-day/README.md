@@ -74,7 +74,7 @@ for k,v in tuple_dict.items():
 
 ```py
 my_set = {1,2,3}
-other_set = {3,4,5}
+other_set = set([3,4,5])
 
 # Union - the result of combining two sets
 print(my_set | other_set)
