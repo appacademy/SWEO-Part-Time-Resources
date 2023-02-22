@@ -16,7 +16,9 @@ let allStudents = [
     "Brian Cabral",
     "Mariia Gribacheva",
     "Kevin Sy",
-    "Finley Joseph"
+    "Finley Joseph",
+    "Jenniffe Masika",
+    "Charles Carroll"
 ]
 
 let est = [
@@ -30,7 +32,9 @@ let est = [
     "Kyle Seeley",
     "Saman Rana",
     "Brian Cabral",
-    "Nate Thomas"
+    "Nate Thomas",
+    "Jenniffe Masika",
+    "Charles Carroll"
 ]
 
 let pst = [
