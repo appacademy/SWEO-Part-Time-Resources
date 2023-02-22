@@ -19,9 +19,13 @@ def f():
 
 staticmethod(f)()
 
+#-------------------
+
 @staticmethod
 def f():
     pass
+
+f()
 ```
 
 ```py
