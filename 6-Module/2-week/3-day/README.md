@@ -14,13 +14,13 @@ def staticmethod(f):
         print(f())
     return inner
 
-def f(arg):
+def f():
     pass
 
-staticmethod(f)
+staticmethod(f)()
 
 @staticmethod
-def f(arg):
+def f():
     pass
 ```
 
