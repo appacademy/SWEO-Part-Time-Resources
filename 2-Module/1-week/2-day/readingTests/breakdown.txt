@@ -1,0 +1,70 @@
+specs.js defines tests for 3 functions -- isFive, isOdd and myRange. The file
+imports these three functions and describes tests for them. 
+
+describe("isFive(num)", () => {
+    it("should return true if the num is 5 otherwise false", () => {
+
+This boock delineates the tests for the function isFive. The block beginning 
+with it describes the tests for which the function must pass in order to be
+seen as functioning correctly. 
+
+Inside of this block, it sets out variables, then compares to see if the 
+function performs as expected. Statements beginning with expect set out
+individual conditions for how we can determine whether or not the test passes,
+using fairly straight forward syntax. We expect actual1 to hold the value of 
+true and actual2/actual3 to be false. Since the input used to generate actual1
+is the only input that is 5, if our funciton is working correctly, it is the 
+only input that should give us true from our function.
+
+describe("isOdd(number)", () => {
+    it("should return true if number is odd", () => {
+
+This block outlines tests for the isOdd function, defining the test block that
+it must pass in order to be seen as functioning correctly. The first spec it
+must satisfy is correctly reporting when a given number is odd. By setting out
+3 odd numbers in variables, and storing the result of our function in 
+corresponding variables, we then expect those results to be true. Satisfying 
+all tests will pass this spec.
+
+    it("should return false if the num is even", () => {
+
+This test works on the other side of the prompt, checking to make sure it can
+correctly return false when given an even number. It does this in a similar 
+manner to the above test, creating variables holding even numbers and expecting
+the result of passing those numbers in as arguments to our function to return
+false. If a number is even, it cannot be odd. Passing all of these tests will 
+mark this spec as passing.
+
+    it("should throw an error if num is not type of Number", () => {
+
+This test checks to make sure that our function can handle edge cases for this 
+input. When our function is given something that is not of the number type, it
+should throw an Error. By creating test inputs that are not numbers and then 
+verifying that the function does throw an error when given this input, we are 
+verifying that the function operates as desired. 
+
+describe("myRange(min, max, step)", () => {
+    context("if step is not provided", () => {
+        it("should return the correct array with default value step=1", () => {
+
+This block begins to setup the tests for the final function, myRange. It also
+sets up a condition that states when our tests should run, in this case "if 
+step is not provided". It is important to note that providing this context only
+helps users parse the output and gain better insight to what is being tested,
+and that setting this does not add any additional rules. The next statement 
+goes on to describe the test further, then goes into a function that sets up 
+the actual tests. Like the other tests, it sets up variables to run through 
+the function then compares the results. We'll want to note that the input is
+lacking the step that the function is capable of accepting, and that this is
+how we are verifying the default parameter is working as expected. If the given
+input returns the expected results, this function will have passed this spec.
+
+    context("if step is provided", () => {
+        it("should return the correct array", () => {
+    
+This next block sets up output that tells more about the upcoming tests, 
+specifically that they will be testing whether or not this function works when
+provided with all three arguments. It follows the pattern established by the 
+other tests, creating variables, generating results and checking it against the
+expected results. If the function returns the expected results for all input,
+it will pass this spec. 
