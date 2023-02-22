@@ -10,14 +10,14 @@ definitions are semantically equivalent
 
 ```py
 def staticmethod(f):
-    def inner(arg):
-        print(f(arg))
+    def inner():
+        print(f())
     return inner
 
 def f(arg):
     pass
 
-staticmethod(f(arg))
+staticmethod(f)
 
 @staticmethod
 def f(arg):
