@@ -18,48 +18,6 @@ def f(arg):
     pass
 ```
 
-What is a callback? (recall)
-
-```py
-def add_5(num):
-  return num + 5
-
-def subtract_5(num):
-  return num - 5
-
-def change_num(cb_func, num):
-  return cb_func(num)
-
-print(change_num(add_5, 5))
-print(change_num(subtract_5, 5))
-```
-
-Introspection
-
-```py
-def add_5(num):
-  return num + 5
-
-print(dir(add_5))
-# print(add_5.__closure__)
-```
-
-Closures
-
-```py
-def greeting_maker(hello_word):
-  def name_input(name):
-    return f'{hello_word}, {name}!'
-  return name_input
-
-hello_greeting = greeting_maker('hello')
-print(hello_greeting.__closure__) # notice you get back a tuple
-print(hello_greeting.__closure__[0]) # the first item in the tuple, in this case the only item
-print(hello_greeting.__closure__[0].cell_contents) # the value held in the closure
-```
-
-Decorators
-
 ```py
 # basic decorators
 
