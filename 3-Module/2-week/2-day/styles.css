@@ -1,12 +1,41 @@
+.parent {
+  display: grid;
+
+  grid-template-columns: repeat(3, 250px);
+  grid-template-rows: repeat(3, 250px);
+  /* grid-template-areas:
+    "header header second"
+    "first . second"
+    "first footer footer"; */
+  /* grid-column-gap: 5px; */
+  /* grid-row-gap: 10px; */
+  /* grid-gap: 5px 10px; */
+  gap: 10px;
+
+  justify-items: center; /* start(left) | end(right) | center | stretch */
+  align-items: center; /* start(top) | end(bottom) | center | stretch */
+
+  grid-auto-flow: column;
+}
+
+.item-1, .item-2, .item-3, .item-4 { min-width: 100px; min-height: 100px; }
 .item-1 {
+  /* grid-area: header; */
   background-color: mediumpurple; /* purple */
+  justify-self: end;
+  align-self: end;
 }
 .item-2 {
+  /* grid-area: first; */
   background-color: mediumseagreen; /* green */
+  justify-self: start;
+  align-self: stretch;
 }
 .item-3 {
+  /* grid-area: second; */
   background-color: indianred; /* red */
 }
 .item-4 {
+  /* grid-area: footer; */
   background-color: deepskyblue; /* blue */
 }
