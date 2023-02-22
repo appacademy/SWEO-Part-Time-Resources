@@ -1,0 +1,26 @@
+{
+  "name": "sequelize-foreign-key-migrations-short-practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test-one-to-many": "NODE_ENV=test node test-one-to-many.js",
+    "test-many-to-many": "NODE_ENV=test node test-many-to-many.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "sequelize": "^6.6.5",
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "dotenv-cli": "^5.1.0",
+    "nodemon": "^2.0.12"
+  }
+}
