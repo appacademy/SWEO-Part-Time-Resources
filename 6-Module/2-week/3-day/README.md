@@ -9,9 +9,15 @@ The decorator syntax is merely syntactic sugar, the following two function
 definitions are semantically equivalent
 
 ```py
+def staticmethod(f):
+    def inner():
+        print(f())
+    return inner
+
 def f(arg):
     pass
-f = staticmethod(f)
+
+innerf = staticmethod(f)
 
 @staticmethod
 def f(arg):
