@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+html, body, input, textarea, button, select, a {
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+
+button {
+  border: 0;
+  background: none;
+  font-weight: 700;
+  padding: .5em 1em;
+  text-transform: uppercase;
+  transition: background-color .25s, color .25s;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: default;
+}
+
+button:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+main {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+form {
+  flex: 0 0 400px;
+}
+
+h1 {
+  font-weight: 400;
+}
+
+input {
+  border: 0;
+  border-bottom: 2px solid #CCC;
+  box-sizing: border-box;
+  display: block;
+  outline: 0;
+  padding: .25em .5em;
+  width: 100%;
+}
+
+.item-form input {
+  margin-bottom: 2em;
+}
+
+input:focus {
+  border-bottom-color: blueviolet;
+}
+
+nav {
+  flex: 0 0 300px;
+  overflow-y: auto;
+}
+
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+select {
+  width: 100%;
+  margin-top: 10px;
+  padding-left: 4px;
+}
+
+td.centered {
+  text-align: center;
+}
+
+#logout-button-holder {
+  background-color: white;
+  border: 1px solid orange;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.bigger {
+  font-size: 4em;
+  margin-top: 0;
+}
+
+.centered {
+  justify-content: center;
+}
+
+.fab {
+  align-items: center;
+  background-color: orange;
+  border-radius: 50px;
+  bottom: 30px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  left: 200px;
+  height: 50px;
+  width: 50px;
+  transition: box-shadow 0.5s, transform 0.25s;
+  zoom: 1;
+}
+
+.fab.is-hidden {
+  transform: scale(0);
+}
+
+.fab:hover {
+  box-shadow: 0 6px 8px rgb(0, 0, 0, 0.3);
+}
+
+.fab span {
+  transition: transform 0.5s;
+}
+
+.fab:active span {
+  transform: rotate(360deg);
+}
+
+.item-image {
+  width: 50px;
+  height: auto;
+}
+
+.middled {
+  align-items: center;
+}
+
+.nav-entry {
+  align-items: center;
+  border-bottom: 1px solid #DFDFDF;
+  border-right: 8px solid transparent;
+  box-sizing: border-box;
+  display: flex;
+  padding: 1em;
+}
+
+.nav-entry-image {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 4px solid #DFDFDF;
+  border-radius: 60px;
+  height: 60px;
+  margin-right: 15px;
+  width: 60px;
+}
+
+.new-form-holder, .edit-form-holder {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.edit-form-holder {
+  margin-top: 20px;
+}
+
+.pokemon-image {
+  height: 50px;
+  width: auto;
+}
+
+.pokemon-detail {
+  flex: 1 0 0;
+  overflow-y: auto;
+}
+
+.pokemon-detail h1 {
+  color: white;
+  margin: 1em 0 0 0;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.pokemon-detail-image-background {
+  background: linear-gradient(315deg, #d43316, #ff0);
+  background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+
+.pokemon-detail-image {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 400px;
+  transition: height 0.5s;
+}
+
+.pokemon-detail-lists {
+  padding-left: 25px;
+  margin-bottom: 1em;
+}
+
+.primary-text {
+  font-size: 1.3em;
+}
+
+.is-selected {
+  border-right-color: orange;
+  background-color: #FFF3E0;
+}
+
+.secondary-text {
+  font-size: 0.8em;
+  color: #999;
+}
+
+@media screen and (min-width: 1000px) {
+  .pokemon-detail-lists {
+    display: flex;
+  }
+
+  .pokemon-detail-lists > * {
+    flex: 1 0 0;
+  }
+}
+
+@media screen and (max-height: 800px) {
+  .pokemon-detail-image {
+    height: 200px;
+    flex: 0 0 200px;
+  }
+
+  .pokemon-detail-image-background {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .pokemon-detail h1 {
+    flex: 1 0 0;
+    margin-top: 0.25em;
+  }
+}
+
+.battle-button {
+  align-items: center;
+  background-color: orange;
+  border-radius: 50px;
+  bottom: 30px;
+  box-shadow: 0 4px 6px rgb(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: fixed;
+  right: 200px;
+  height: 50px;
+  padding: 0 20px;
+  transition: box-shadow 0.5s, transform 0.25s;
+  zoom: 1;
+}
+
+.error-message {
+  color: red;
+  min-height: 24px;
+  min-width: 360px;
+  margin: 0 0 10px 0;
+  padding: 0 8px;
+}
