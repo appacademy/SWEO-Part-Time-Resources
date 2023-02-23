@@ -183,7 +183,7 @@ class Example:
 a = Example("Blake")
 b = Example("Jorge")
 
-print(z.my_static_method(a, b)) # ['Blake', 'Jorge']
+print(a.my_static_method(a, b)) # ['Blake', 'Jorge']
 
 print(Example.my_static_method(a)) # ['Blake']
 ```
