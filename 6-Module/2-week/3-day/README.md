@@ -269,7 +269,7 @@ Terms
 
 1. A __module__ is simply Python code in a separate file.
 2. A __package__ is the path to a directory that contains modules, which is also a special type of module.
-3. \_\_init\_\_.py is the default file for a package.
+3. \__init__.py is the default file for a package.
 4. A __submodule__ is another file in a module's folder.
 5. A __function__ is (obviously!) a function in a module.
 
