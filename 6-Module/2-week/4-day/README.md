@@ -45,6 +45,8 @@ print(my_dog.speak())
 
 ```py
 class Parent:
+  class_variable = "I am a class variable"
+
   def test(self):
     print('I am a parent class')
 
@@ -52,6 +54,7 @@ class Child(Parent):
   def test(self):
     print('I am a child class')
     super().test()
+    print(super().class_variable)
 
 child = Child()
 child.test()
