@@ -1,0 +1,9 @@
+
+include utils.pug
+
+input(type='hidden' name='_csrf' value=csrfToken)
++textField('Title', 'title', book.title)
++textField('Author', 'author', book.author)
++textField('Release Date', 'releaseDate', book.releaseDate)
++textField('Page Count', 'pageCount', book.pageCount)
++textField('Publisher', 'publisher', book.publisher)

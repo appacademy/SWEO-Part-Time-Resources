@@ -1,0 +1,7 @@
+python-dotenv==0.19.2
+Flask==2.0.3
+SQLAlchemy==1.4.31
+Flask-Migrate==3.1.0
+Flask-SQLAlchemy==2.5.1
+psycopg2-binary==2.9.3
+alembic==1.7.6

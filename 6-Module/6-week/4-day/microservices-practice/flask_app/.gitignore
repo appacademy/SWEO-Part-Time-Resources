@@ -1,0 +1,14 @@
+# Flask
+__pycache__/
+*.pyc
+*.pyo
+
+# Flask logs
+logs/
+*.log
+
+# Flask database files
+*.db
+
+# Flask environment files
+venv/

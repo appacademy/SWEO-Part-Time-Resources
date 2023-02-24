@@ -1,0 +1,8 @@
+extends layout.pug
+
+block content
+ div
+   p= message || 'An unexpected error occurred on the server.'
+ if stack
+   h3 Stack Trace
+   pre= stack

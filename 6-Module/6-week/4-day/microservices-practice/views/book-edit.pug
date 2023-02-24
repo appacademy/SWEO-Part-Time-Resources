@@ -1,0 +1,11 @@
+extends layout.pug
+
+include utils.pug
+
+block content
+  +validationErrorSummary(errors)
+  form(action=`/book/edit/${book.id}` method='post')
+    include book-form-fields.pug
+    div(class='py-4')
+      button(type='submit' class='btn btn-primary') Update Book
+      a(href='/' class='btn btn-warning ml-2') Cancel
