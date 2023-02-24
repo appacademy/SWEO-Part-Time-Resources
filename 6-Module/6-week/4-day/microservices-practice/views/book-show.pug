@@ -1,0 +1,25 @@
+extends layout.pug
+
+block content
+  table(class='table table-striped table-hover')
+    thead(class='thead-dark')
+      tr
+        th(scope='col') Title
+        th(scope='col') Author
+        th(scope='col') Release Date
+        th(scope='col') Page Count
+        th(scope='col') Publisher
+        th(scope='col') Rating
+        th(scope='col')
+    tbody
+      tr
+        td= book.title
+        td= book.author
+        td= book.releaseDate
+        td= book.pageCount
+        td= book.publisher
+        td= bookRating
+        td
+          a(class='btn btn-primary' href=`/book/edit/${book.id}` role='button') Edit
+          a(class='btn btn-danger ml-2' href=`/book/delete/${book.id}` role='button') Delete
+          a(class='btn btn-primary' href=`/book/ratings/${book.id}` role='button') Rate

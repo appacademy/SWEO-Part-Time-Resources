@@ -1,0 +1,13 @@
+
+mixin validationErrorSummary(errors)
+  if errors
+    div(class='alert alert-danger' role='alert')
+      p The following error(s) occurred:
+      ul
+        each error in errors
+          li= error
+
+mixin textField(labelText, fieldName, fieldValue)
+  div(class='form-group')
+    label(for=fieldName)= labelText
+    input(type='text' id=fieldName name=fieldName value=fieldValue class='form-control')

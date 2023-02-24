@@ -1,0 +1,16 @@
+extends layout.pug
+
+include utils.pug
+
+block content
+  +validationErrorSummary(errors)
+  form(action=`/book/ratings/${bookId}` method='post')
+    input(type='hidden' name='_csrf' value=csrfToken)
+    select(name="value")
+      option(value='' disabled="true" selected) Select value
+      each number in [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        option(value=number)= number
+    +textField('Email', 'email', rating.email)
+    div(class='py-4')
+      button(type='submit' class='btn btn-primary') Submit Rating
+      a(href=`/book/${bookId}` class='btn btn-warning ml-2') Cancel
