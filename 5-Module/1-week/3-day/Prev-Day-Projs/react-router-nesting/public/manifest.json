@@ -1,0 +1,8 @@
+{
+  "short_name": "Router Nesting",
+  "name": "React Router Nesting",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
