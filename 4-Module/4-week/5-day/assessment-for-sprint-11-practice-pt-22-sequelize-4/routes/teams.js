@@ -2,6 +2,17 @@ const express = require('express');
 const router = express.Router();
 const { Team, Player, Sport } = require('../db/models');
 
+const { Team, Sport, Player, Match } = require('../db/models');
+
+//bonus~~~~
+router.get('/', async (req, res) => {
+  const teams = await Team.findAll({
+    order: [['homeCity', 'ASC'], ['name', 'DESC']]
+  });
+  return res.json(teams);
+});
+//~~~~~~~~~~~~
+
 router.get('/:id', async (req, res) =>{
     let theId = req.params.id
     // console.log("IN ROUTE ID", theId)
@@ -37,5 +48,28 @@ router.post('/:id/players', async (req, res) => {
     // console.log("NEW PLAYER", newPlayer)
     res.json(newPlayer)
   })
+
+  //bonus~~~~
+  router.get('/:id/homeMatchesWon', async (req, res) => {
+    const team = await Team.findByPk(req.params.id);
+    if (!team) {
+      res.status(404);
+      return res.json({ message: 'Team Not Found' });
+    }
+    const matches = await Match.findAll({
+      include: [
+        {
+          model: Team,
+          as: 'AwayTeam',
+        },
+      ],
+      where: {
+        homeTeamId: req.params.id,
+        winnerId: req.params.id,
+      }
+    });
+    return res.json(matches);
+  });
+  //~~~~~~~~~~~~
 
 module.exports = router;
