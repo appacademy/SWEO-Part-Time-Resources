@@ -245,7 +245,7 @@ class SignUpForm(FlaskForm):
 ```
 
 ## Brad's Lecture Timestamps
-  00:00 - Initial Setup  
-  24:00 - Routes  
-  38:22 - Templating  
+   00:00  - Initial Setup  
+   24:00  - Routes  
+   38:22  - Templating  
 1:07:39 - Blueprints  
