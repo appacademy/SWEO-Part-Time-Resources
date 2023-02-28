@@ -249,5 +249,6 @@ class SignUpForm(FlaskForm):
    00:00  - Initial Setup  
    24:00  - Routes  
    38:22  - Templating  
- 1:07:39  - Blueprints  
+ 1:07:39  - Blueprints
+ 1:25:17  - Sqlite3 Connection
 ```
