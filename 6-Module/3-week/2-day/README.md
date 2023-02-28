@@ -243,3 +243,9 @@ from wtforms.validators import DataRequired, ...etc
 class SignUpForm(FlaskForm):
     user_name = StringField('Name', validators=[DataRequired()])
 ```
+
+## Brad's Lecture Timestamps
+  00:00 - Initial Setup
+  24:00 - Routes
+  38:22 - Templating
+1:07:39 - Blueprints
