@@ -69,7 +69,7 @@ Put conditionals right into html
 {% endif %}
 ```
 
-## Jinjeration
+## Iteration
 
 ```py
 nav = [
