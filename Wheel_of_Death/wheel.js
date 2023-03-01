@@ -36,7 +36,7 @@ let est = [
     "Saman Rana",
     "Brian Cabral",
     "Nate Thomas",
-    "Jenniffe Masika",
+    "Jenniffer Masika",
     "Charles Carroll"
 ]
 
