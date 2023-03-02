@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h3>Welcome to Tweeter!  Click on the feed to see more tweets!</h3>
+<div class="tweet">
+    <p>{{ tweet.author }} tweeted on {{ tweet.date }} ...</p>
+    <p>"{{ tweet.tweet }}"</p>
+    <p>Likes: {{ tweet.likes / 1000 }}k</p>
+</div>
+{% endblock %}
