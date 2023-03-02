@@ -9,5 +9,30 @@
 </head>
 <body>
   <h1>Servers and Forms - West Edition</h1>
+  <form method="POST" action="/dogs">
+    <label for="name">
+      Name
+      <input type="text" name="name">
+    </label>
+    <label for="color">
+      Color
+      <select name="color">
+        <option value="black">Black</option>
+        <option value="white">White</option>
+        <option value="brown">Brown</option>
+        <option value="red">Red</option>
+      </select>
+    </label>
+    <label for="age">
+      Age
+      <input type="number" name="age" placeholder="0">
+    </label>
+    <label for="description">
+      Description
+      <textarea name="description"></textarea>
+    </label>
+    <button type="submit">Create Dog</button>
+  </form>
+  <!-- name=Fido&color=black&age=13&description=Cute+Dog%21 -->
 </body>
 </html>
