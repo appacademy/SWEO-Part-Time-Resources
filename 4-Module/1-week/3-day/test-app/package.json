@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "name": "test-app",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +7,16 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon app.js"
+=======
+  "name": "2-day",
+  "version": "1.0.0",
+  "description": "- Compare and Contrast an Express application and an Express router\r - Create a resource for RESTful Routes using an Express router\r - Connect an Express router to the Express application\r - Add a middleware globally, to a specific route, and/or to a specific router\r - Predict the order of execution for middlewares\r - Define middleware\r - Create an Express middleware using a function or an array of functions\r - Compare and contrast a regular Express middleware and an Express error handling middleware\r - Serve a folder of static files using Express.static middleware",
+  "main": "scratch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "dev": "nodemon app.js"
+>>>>>>> 74f87fc62a8d801a6cb4371c04093041fc3bade6
   },
   "keywords": [],
   "author": "",

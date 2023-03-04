@@ -2,7 +2,10 @@ const express = require("express");
 
 const router = express.Router();
 
+<<<<<<< HEAD
 // initializing our users object
+=======
+>>>>>>> 74f87fc62a8d801a6cb4371c04093041fc3bade6
 const users = {
   1: {
     id: 1,
