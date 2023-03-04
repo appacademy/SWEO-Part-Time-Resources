@@ -1,0 +1,22 @@
+# Week 35 Study Guide
+
+- Flask Setup + Sqlite3
+  - Environment Variables (SECRET_KEY, FLASK_APP)
+  - Starting a Flask app
+  - Connecting to db (using `with` keyword vs without)
+- Routing
+  - Static vs Parameterized
+  - Route Decorators
+- WTForms
+  - Render forms
+  - Validators
+  - Sqlite3 vs Python data types
+- Blueprints
+  - Creating / Registering
+- Sessions
+  - CRUD session data
+- Jinja
+  - Templating syntax
+    - Variables
+    - Conditionals
+    - Loops
