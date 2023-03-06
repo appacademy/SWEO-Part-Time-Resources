@@ -10,13 +10,6 @@ Time: 1h
 
 ---
 
-## Intro to Databases
-
-- Reading
-- Quiz
-
----
-
 ## Discussion: Intro to Databases
 
 ### What is a database?
@@ -70,13 +63,5 @@ SQLite is super easy to set up and is very popular due to its simplicity.
 SQLite should be used only in testing and development and never in production,
 due to the lack of security due to file access being the only authorization
 needed for a database change.
-
----
-
-## CREATE/DROP, INSERT, SELECT, DELETE, UPDATE Practices
-
----
-
-## Basic SQL Demo
 
 ---
