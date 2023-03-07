@@ -1,7 +1,7 @@
 {
 	"info": {
-		"_postman_id": "b3feb03a-961b-4d9b-addb-958da27d3445",
-		"name": "AirBNB_Tests_Student",
+		"_postman_id": "a3a50f83-1fd9-4dca-b34f-63b2cf90c3ce",
+		"name": "AirBNB_Tests",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "15617080"
 	},
@@ -37,7 +37,7 @@
 			"response": []
 		},
 		{
-			"name": "Sign Up",
+			"name": "Sign Up - Send Twice to Error Check duplicate emails",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -69,7 +69,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"firstName\": \"John\",\n  \"lastName\": \"Smith\",\n  \"email\": \"john.smith@gmail.com\",\n  \"username\": \"johnnysmith\",\n  \"password\": \"secret password\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -121,7 +121,59 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"credential\": \"john.smith@gmail.com\",\n  \"password\": \"secret password\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/session",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"session"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Log In - Error Checking Invalid Credentials",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"credential\": \"john.smith@gmail.com\",\n  \"password\": \"wrong password\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -266,7 +318,9 @@
 					"listen": "test",
 					"script": {
 						"exec": [
-							""
+							"const responseJson = pm.response.json();",
+							"postman.setEnvironmentVariable('spotId', responseJson.id)",
+							"postman.setEnvironmentVariable('spotIdForBooking', responseJson.id - 1)"
 						],
 						"type": "text/javascript"
 					}
@@ -283,7 +337,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"address\": \"aaa123 Disney Lane\",\n  \"city\": \"San Francisco\",\n  \"state\": \"California\",\n  \"country\": \"United States of America\",\n  \"lat\": 37.7645358,\n  \"lng\": -122.4730327,\n  \"name\": \"App Academy\",\n  \"description\": \"Place where web developers are created\",\n  \"price\": 123\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -318,6 +372,61 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"const responseJson = pm.response.json();",
+							"postman.setEnvironmentVariable('spotImageId', responseJson.id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"image.url\",\n  \"preview\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/{{spotId}}/images",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"{{spotId}}",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an Image for a Spot - Error Check Invalid Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
 							""
 						],
 						"type": "text/javascript"
@@ -335,7 +444,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"url\": \"image.url\",\n  \"preview\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -343,13 +452,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1/images",
+					"raw": "{{url}}/spots/5000/images",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1",
+						"5000",
 						"images"
 					]
 				}
@@ -456,13 +565,69 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1",
+					"raw": "{{url}}/spots/{{spotId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1"
+						"{{spotId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Details of a Spot by Id - Error Check Invalid Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000"
 					]
 				}
 			},
@@ -501,7 +666,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"address\": \"NEW ADDRESS\",\n  \"city\": \"NEW CITY\",\n  \"state\": \"NEW STATE\",\n  \"country\": \"United States of America\",\n  \"lat\": 37.7645358,\n  \"lng\": -122.4730327,\n  \"name\": \"App Academy\",\n  \"description\": \"Place where web developers are created\",\n  \"price\": 123\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -509,13 +674,66 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1",
+					"raw": "{{url}}/spots/{{spotId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1"
+						"{{spotId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a Spot - Error Check Invalid Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"address\": \"NEW ADDRESS\",\n  \"city\": \"NEW CITY\",\n  \"state\": \"NEW STATE\",\n  \"country\": \"United States of America\",\n  \"lat\": 37.7645358,\n  \"lng\": -122.4730327,\n  \"name\": \"App Academy\",\n  \"description\": \"Place where web developers are created\",\n  \"price\": 123\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000"
 					]
 				}
 			},
@@ -523,6 +741,61 @@
 		},
 		{
 			"name": "Create a Review for a Spot",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"postman.setEnvironmentVariable('reviewId', responseJson.id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"review\": \"This was an awesome spot!\",\n  \"stars\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/{{spotId}}/reviews",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"{{spotId}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Review for a Spot - Error Check - Previous Review for User/Spot Already Exists",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -554,7 +827,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"review\": \"This was an awesome spot!\",\n  \"stars\": 5\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -562,13 +835,67 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1/reviews",
+					"raw": "{{url}}/spots/{{spotId}}/reviews",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1",
+						"{{spotId}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Review for a Spot - Error Check Invalid Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"review\": \"This was an awesome spot!\",\n  \"stars\": 5\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000/reviews",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000",
 						"reviews"
 					]
 				}
@@ -591,6 +918,61 @@
 					"listen": "test",
 					"script": {
 						"exec": [
+							"const responseJson = pm.response.json();",
+							"postman.setEnvironmentVariable('reviewImageId', responseJson.id)"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"url\": \"image.url\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/reviews/{{reviewId}}/images",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"reviews",
+						"{{reviewId}}",
+						"images"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create an Image for a Review  - Error Check Invalid Review Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
 							""
 						],
 						"type": "text/javascript"
@@ -608,7 +990,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"url\": \"image.url\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -616,13 +998,13 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/reviews/1/images",
+					"raw": "{{url}}/reviews/5000/images",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"reviews",
-						"1",
+						"5000",
 						"images"
 					]
 				}
@@ -729,13 +1111,70 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1/reviews",
+					"raw": "{{url}}/spots/{{spotId}}/reviews",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1",
+						"{{spotId}}",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Reviews by Spot Id - Error Check Invalid Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000/reviews",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000",
 						"reviews"
 					]
 				}
@@ -775,7 +1214,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"review\": \"This was an TERRIBLE spot!\",\n  \"stars\": 1\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -783,13 +1222,66 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/reviews/1",
+					"raw": "{{url}}/reviews/{{reviewId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"reviews",
-						"1"
+						"{{reviewId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit a Review - Error Check Invalid Review Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"review\": \"This was an TERRIBLE spot!\",\n  \"stars\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/reviews/5000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"reviews",
+						"5000"
 					]
 				}
 			},
@@ -797,6 +1289,62 @@
 		},
 		{
 			"name": "Create a Booking Based on a Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const responseJson = pm.response.json();",
+							"postman.setEnvironmentVariable('bookingId', responseJson.id)",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"startDate\": \"2025-11-24\",\n  \"endDate\": \"2025-11-25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/{{spotIdForBooking}}/bookings",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"{{spotIdForBooking}}",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Booking Based on a Spot Id - Error Check Existing Booking",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -828,7 +1376,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"startDate\": \"2025-11-24\",\n  \"endDate\": \"2025-11-25\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -836,13 +1384,67 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1/bookings",
+					"raw": "{{url}}/spots/{{spotIdForBooking}}/bookings",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1",
+						"{{spotIdForBooking}}",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create a Booking Based on a Spot Id - Error Check Invalid Spot Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"startDate\": \"2024-12-24\",\n  \"endDate\": \"2024-12-25\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000/bookings",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000",
 						"bookings"
 					]
 				}
@@ -949,13 +1551,70 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1/bookings",
+					"raw": "{{url}}/spots/{{spotIdForBooking}}/bookings",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1",
+						"{{spotIdForBooking}}",
+						"bookings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Bookings for a Spot By Id - Error Check Invalid Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots/5000/bookings",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots",
+						"5000",
 						"bookings"
 					]
 				}
@@ -989,13 +1648,13 @@
 				"header": [
 					{
 						"key": "XSRF-TOKEN",
-						"value": "",
+						"value": "{{xsrftoken}}",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "",
+					"raw": "{\n  \"startDate\": \"2024-12-26\",\n  \"endDate\": \"2024-12-27\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -1003,20 +1662,73 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/bookings/1",
+					"raw": "{{url}}/bookings/{{bookingId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"bookings",
-						"1"
+						"{{bookingId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete a Spot Image",
+			"name": "Edit a Booking - Error Check Invalid Booking Id",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"startDate\": \"2024-12-26\",\n  \"endDate\": \"2024-12-27\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/bookings/5000",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"bookings",
+						"5000"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a Spot Image - Send Twice to Error Check Invalid Id On Second Request",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1056,20 +1768,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spot-images/1",
+					"raw": "{{url}}/spot-images/{{spotImageId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spot-images",
-						"1"
+						"{{spotImageId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete a Review Image",
+			"name": "Delete a Review Image - Send Twice to Error Check Invalid Id On Second Request Copy",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1109,20 +1821,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/review-images/1",
+					"raw": "{{url}}/review-images/{{reviewImageId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"review-images",
-						"1"
+						"{{reviewImageId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete a Booking",
+			"name": "Delete a Booking - Send Twice to Error Check Invalid Id On Second Request",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1162,20 +1874,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/bookings/1",
+					"raw": "{{url}}/bookings/{{bookingId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"bookings",
-						"1"
+						"{{bookingId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete a Review",
+			"name": "Delete a Review - Send Twice to Error Check Invalid Id On Second Request",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1215,20 +1927,20 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/reviews/1",
+					"raw": "{{url}}/reviews/{{reviewId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"reviews",
-						"1"
+						"{{reviewId}}"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Delete a Spot",
+			"name": "Delete a Spot - Send Twice to Error Check Invalid Id On Second Request",
 			"event": [
 				{
 					"listen": "prerequest",
@@ -1268,13 +1980,78 @@
 					}
 				},
 				"url": {
-					"raw": "{{url}}/spots/1",
+					"raw": "{{url}}/spots/{{spotId}}",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"spots",
-						"1"
+						"{{spotId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Spots - Page/Size Params",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "XSRF-TOKEN",
+						"value": "{{xsrftoken}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/spots?page=1&size=3",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"spots"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "3"
+						}
 					]
 				}
 			},
