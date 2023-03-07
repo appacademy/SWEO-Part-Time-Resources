@@ -1,0 +1,8 @@
+{
+  "short_name": "Context-Intro",
+  "name": "Context Introduction to Provider and Consumer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

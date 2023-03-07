@@ -1,0 +1,8 @@
+{
+  "short_name": "CW-Dynamic-Consumer",
+  "name": "Context Wrapper: Dynamic Consumer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
