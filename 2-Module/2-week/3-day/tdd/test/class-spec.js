@@ -39,3 +39,26 @@ describe('Person Class', ()=> {
 	})
 
 })
+
+
+class Animal{
+	constructor(){
+		this.name = name
+	}
+
+	saySound(){
+		console.log('Moo moo')
+	}
+}
+
+
+class Dog extends Animal{
+	constructor(){
+		super()
+	}
+
+	// overloading
+	saySound(sound){
+		console.log(`Moo moo ` + sound )
+	}
+}
