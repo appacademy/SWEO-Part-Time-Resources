@@ -44,7 +44,7 @@
 					"script": {
 						"exec": [
 							"const responseJson = pm.response.json();",
-							"postman.setEnvironmentVariable('userId', responseJson.user.id)"
+							"postman.setEnvironmentVariable('userId', responseJson.id)"
 						],
 						"type": "text/javascript"
 					}
@@ -1570,7 +1570,7 @@
 					"script": {
 						"exec": [
 							"const responseJson = pm.response.json();",
-							"postman.setEnvironmentVariable('extraUserId', responseJson.user.id)"
+							"postman.setEnvironmentVariable('extraUserId', responseJson.id)"
 						],
 						"type": "text/javascript"
 					}
