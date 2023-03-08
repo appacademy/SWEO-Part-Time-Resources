@@ -19,6 +19,15 @@ for example:
 | false | true | false |
 | false | false | false |
 
+NAND
+
+| a | b | a (AND) b | !(a AND b) |
+|------:|:------:|:------:|:------:|
+| true | true | true | false |
+| true | false | false | false |
+| false | true | false | false |
+| false | false | false | true |
+
 This shows the 4 possible combos of A and B and the logical result of A && B.
 
 True and False can also be expressed using the binary values 0 and 1. (0 = false, 1 = true)
