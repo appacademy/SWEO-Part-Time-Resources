@@ -45,7 +45,6 @@ let pst = [
     "Adrienne Tran",
     "Gino Farfaglia",
     "Joshua Krienke",
-    "Mariia Gribacheva",
     "Kevin Sy",
     "Finley Joseph",
     "Stephen Sy",
