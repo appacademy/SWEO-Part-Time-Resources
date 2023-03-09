@@ -64,3 +64,31 @@ h2.subheader {
 //Unlike the descendant selector, this will only select an element (B) that is a DIRECT CHILD
 //of an element (A)
 //SYNTAX -  A > B {}
+
+//Adjacent Sibling Selector
+//SYNTAX - A + B {}
+//Selects an element (B) that follows directly behind an element (A)
+// Example    h1 + h2 {}
+
+//Psuedo Classes
+//Specify a special STATE of the selected element(s)
+//SYNTAX     selector:state {}
+
+//Specificity
+//What selector takes precidence
+
+//Inline styling
+//ID's 
+//Class, Attribute Selectors
+//Elements
+
+
+//Difference between rem and em
+
+//EM
+//is relative to the element its contained within
+
+//REM
+//is relative to the body
+
+//Most people prefer REM because its a universal measurement

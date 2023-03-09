@@ -41,13 +41,13 @@ let est = [
 ]
 
 let pst = [
-    "Yassin Tantawy",
+    //"Yassin Tantawy",
     "Adrienne Tran",
     "Gino Farfaglia",
     "Joshua Krienke",
     "Kevin Sy",
     "Finley Joseph",
-    "Stephen Sy",
+    //"Stephen Sy",
     "Melynie Phothong",
     "Duc Nguyen"
 ]
