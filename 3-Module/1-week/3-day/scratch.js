@@ -103,3 +103,9 @@
         content: ':)';
     }
 </style> */
+
+//EM vs REM
+//EM is a relative measurement that is relative to the element its contained within
+
+//REM
+//REM is relative to the body
