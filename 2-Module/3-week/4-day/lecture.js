@@ -31,23 +31,37 @@
 // address/reference or pointer? in these types of systems?
 
 // what is a variable?
-const arr = []
-let str = 'apple'
-
+// const arr = []
+// console.log(arr) // --> []
+// let str = 'apple' //
+// console.log(str) // 'apple'
 // pointer --> look
 // references --> look and edit
 
+// arr[0] = 1
+
 // what is an array?
 // a continguous block of memory addresses
+
+// arr = [4,5]
+//        1           2
+// 00000100    00000101
+
+// obj = {'name' : 'alex', 'email' : 'alexdemo@yahoo.com'}
+//      100          198
+// 00000000      000000000
+
 // const newArr = [1, [1,2], 'hello']
 // newArr[0]
+// newArr[1][0]
 
 // What is a stack?
-// like an array therefore its a block of memory addresses
+// like an array therefore its a contiguous block of memory addresses
 // things can only be added to or removed from the top
 
 const stack = [1,2,3,4]
 // FILO --> first in last out
+
 
 // 16 bits of memory --> 8 bits per memory block
 // 		  1 	   2
@@ -66,7 +80,11 @@ arr2[0] = 'a'// --> 1 1100001
 arr2[0] // 'a' --> reference to the memory address
 
 let data = arr2[0]
+// data --> 'a'
 // data --> pointer
+data = 3
+// data --> 3
+// arr2[0] --> 'a'
 
 
 // Dynamic Arrays
@@ -74,41 +92,46 @@ let data = arr2[0]
 // Allows us to store any type of data in those arrays
 // and the amount of memory allocated is dynamic
 
+// const newArr = []
+
+//        11
+//  00000000
+
 const initArr = [1,2]
+// will look for an empty contiguous block with the exact same length
+// as the initial array x2
+// 1,2,4,6,7,9,10,13,16 --> used up memory addresses
 
-// an array with the length of 1000 is 1kb
-// 1mb --> 1,000,000
-// 1gb --> 1,000,000,000
-// 1tb --> 1,000,000,000,000
-
-//        1        2
-// 00000001 00000010
-//        3        4
-// 00000000 00000000
+//     17      18
+// 0000001   00000010
+//     19      20
+// 00000000  00000000
 
 initArr.push(3)
+// time o(1)
 initArr.push(4)
+// time o(1)
 
 // [1,2,3,4]
 
-//        1        2
+//        17       18
 // 00000001 00000010
-//        3        4
+//        19       20
 // 00000011 00000100
 
 initArr.push(5)
+// time o(n)
 
-//       11       12
+//       101       102
 // 00000001 00000010
-//       13       14
+//       103       104
 // 00000011 00000100
-//       15       16
+//       105       106
 // 00000101 00000000
-//       17       18
+//       107       108
 // 00000000 00000000
-//       19
+//       109
 // 00000000
 
-
-// c --> length of 10
+// c --> array length of 10
 // [null, null, null, null, null, null, null, null, null, null]
