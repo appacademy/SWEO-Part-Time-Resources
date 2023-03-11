@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>Package Status</title>
+</head>
+
+<body>
+    <p>
+        <a href='/new_package'>Send a new package</a>
+    </p>
+    <h1>Package Status</h1>
+    {% for package in packages %}
+    <div style="border: 1px solid black; width: 300px; margin-bottom: 10px;">
+        <div>Package Id : {{ package.id }}</div>
+        <div>Package Sender : {{ package.sender }}</div>
+        <div>Package Recipient : {{ package.recipient }}</div>
+        <div>Package Origin : {{ package.origin }}</div>
+        <div>Package Destination{{ package.destination }}</div>
+        <div>Current Location : {{ package.location }}</div>
+    </div>
+    {% endfor %}
+</body>
+</html>
