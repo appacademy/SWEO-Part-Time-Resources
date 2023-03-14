@@ -1,0 +1,24 @@
+body {
+    background-color: pink;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    height: 70%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid black
+}
+
+.item {
+    width: 70%;
+    height: 30%;
+}
