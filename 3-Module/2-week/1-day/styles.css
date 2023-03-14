@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    flex-direction: row;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    display: grid;
+    height: 50%;
+    width: 50%;
+    grid-template-columns: 1fr 1fr 20px 2fr;
+    grid-template-rows: 100px 200px 100px;
+}
+
+.item {
+    background-color: rgb(150, 105, 150);
+}
