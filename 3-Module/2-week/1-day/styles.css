@@ -1,21 +1,24 @@
 body {
     display: flex;
     flex-direction: row;
-    background-color: pink;
     justify-content: center;
     align-items: center;
+    background-color: rgb(245, 187, 206);
     height: 100vh;
 }
 
 .container {
     background-color: white;
-    display: grid;
-    height: 50%;
-    width: 50%;
-    grid-template-columns: 1fr 1fr 20px 2fr;
-    grid-template-rows: 100px 200px 100px;
+    padding: 20px;
+    display: flex;
+    height: 30%;
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .item {
-    background-color: rgb(150, 105, 150);
+    width: 30%;
+    height: 90%;
 }
