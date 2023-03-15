@@ -1,0 +1,26 @@
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    padding: 4px;
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: white;
+    border-radius: 3px;
+    transition: background-color 2s, transform 1s, font-size 2s, height 2s, width 2s;
+}
+
+.btn:hover {
+    background-color: pink;
+    transform: rotate(90deg);
+    width: 400px;
+    height: 80px;
+    font-size: 32px;
+}
