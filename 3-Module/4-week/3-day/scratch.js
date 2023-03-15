@@ -1,38 +1,40 @@
-/*
-API - Application Programming Interface
-Abstracts away the inner workings of a package so you only have to worry about input and output.
-Web API
-Like a standard API but over the internet. We don't need to know the website's infrastructure, we only need to know how and where to send the request and what kind of response we'll get.
-*/
-
 const http = require('http');
-const parseForm = require("./parseForm");
+const fs = require('fs');
+const {formatComments, parseBody} = require('./parseInput');
 
+const comments = [{'id': 1, 'content':'Nice'}, {'id': 2, 'content': 'Not Nice'}];
 const server = http.createServer((req, res) => {
-  console.log(`${req.method} ${req.url}`);
-
-  let reqBody = "";
-  req.on("data", (data) => {
-    reqBody += data;
-  });
-  req.on("end", () => {
-    let reqType = req.headers['content-type']
-    if (reqBody && reqType === "application/json") {
-      //Parse Our JSON
-      req.body = JSON.parse(reqBody);
-      console.log('JSON: ', req.body);
-    }
-    if (reqBody && reqType === "application/x-www-form-urlencoded") {
-      req.body = parseForm(reqBody);
-      req.body.key2 = Number(req.body.key2);
-      req.body.key3 = JSON.parse(req.body.key3);
-      console.log('URL ENCODED: ', req.body);
-    }
-
-    // Add the res.body to the res body as JSON
-    res.end( JSON.stringify(req.body) );
-  });
+  if (req.url.endsWith('.js')) {
+    const js = fs.readFileSync('./domscripts.js');
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/javascript");
+    return res.end(js);
+  }
+  if (req.method === 'POST' && req.url === '/') {
+    let reqBody = '';
+    req.on("data", data => {
+      reqBody += data;
+    });
+    req.on("end", () => {
+      let comment = parseBody(reqBody);
+      comments.push(comment);
+      res.statusCode = 302;
+      res.setHeader("Location", "/");
+      res.end();
+    })
+  } else if (req.method === 'GET' && req.url === '/') {
+    const htmlDoc = fs.readFileSync('./index.html', 'utf-8');
+    let commentText = formatComments(comments);
+    let html = htmlDoc.replaceAll(/#{comments}/g, commentText);
+  
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "text/html");
+    res.end(html);
+  } else {
+    res.statusCode = 404;
+    res.setHeader("Content-Type", "text/plain");
+    res.end("Location could not be found...");
+  }
 });
-
-const port = 5000;
-server.listen(port, () => console.log('Server is listening on port', port));
+const port = 8080;
+server.listen(port, () => console.log(`Server is listening on port ${port}...`));
