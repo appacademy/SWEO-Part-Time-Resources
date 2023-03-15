@@ -1,0 +1,42 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 187, 206);
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 40px;
+    gap: 10px;
+    /* grid-template-areas: 
+    "topguy topguy"
+    "sidebar bunny"
+    "sidebar coffee"
+    ; */
+    overflow: scroll
+}
+
+.jan {
+    /* grid-area: topguy; */
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.feb {
+    /* grid-area: sidebar; */
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.may {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
