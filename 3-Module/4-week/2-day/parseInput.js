@@ -26,11 +26,11 @@ function parseBody(body) {
   }, {});
 }
 
-module.exports = {
-  formatComments,
-  parseBody
-}
-// export {
+// module.exports = {
 //   formatComments,
 //   parseBody
 // }
+export {
+  formatComments,
+  parseBody
+}
