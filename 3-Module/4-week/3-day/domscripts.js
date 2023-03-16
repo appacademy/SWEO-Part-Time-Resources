@@ -1,37 +1,39 @@
-// window.onload = () => {
-//   let button = document.querySelector('button');
-  
-//   // button.setAttribute('style', 'background-color:red');
-//   button.style = 'background-color: blue';
-//   button.innerHTML = "SUBMIT"
-//   // -----------------------------------------
-//   let parent = document.querySelector('#innerHTML');
-//   let newElement = document.createElement('p');
-//   newElement.innerText = 'Good Evening';
-//   newElement.id = 'smol';
-//   newElement.classList.add('bean');
-//   parent.appendChild(newElement);
+window.onload = () => {
+  let submit = document.querySelector('button');
+  // submit.setAttribute('style', 'background-color: blue');
+  // submit.style = 'background-color: blue';
+  submit.style.backgroundColor = '#aaf';
 
-//   let toGo = document.querySelector('.toGo');
-//   toGo.remove();
-// }
+  // submit.innerHTML = "Submit"
+  submit.innerText = "Submit"
+  // submit.addEventListener('mousedown', event => {
+  //   let toGo = document.querySelector('.toGo');
+  //   toGo.style.visibility = 'visible';
+  // })
 
-window.addEventListener('DOMContentLoaded', event => {
-  // let title = document.getElementById('title');
-  // const time = () => {
-  //   const date = new Date();
-  //   let seconds = date.getSeconds();
-  //   let minutes = date.getMinutes();
-  //   let hours = date.getHours();
+  let newElement = document.createElement('h2');
+  newElement.innerText = 'I WAS JUST BORN!!!'
+  document.body.append(newElement);
+  let toGo = document.querySelector('.toGo');
+  toGo.remove();
+}
 
-  //   title.innerHTML = `${hours}:${minutes}:${seconds}`;
-  // }
-  // setInterval(time, 1000);
-  let button = document.querySelector('.clickme');
-  let counter = document.querySelector('.counter');
-  let count = 0;
-  button.addEventListener('click', event => {
-    count++;
-    counter.innerHTML = count;
+window.addEventListener("DOMContentLoaded", event => {
+  const title = document.querySelector('title');
+  const time = () => {
+    const date = new Date();
+    let seconds = date.getSeconds();
+    let mins = date.getMinutes();
+    let hours = date.getHours();
+    title.innerHTML = `${hours}:${mins}:${seconds}`
+  }
+  setInterval(time, 1000);
+
+  let countButton = document.querySelector('.clickme');
+  let count = document.querySelector('.counter');
+  let counter = 0;
+  countButton.addEventListener("click", event => {
+    counter++;
+    count.innerHTML = counter;
   })
 });
