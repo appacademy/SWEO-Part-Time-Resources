@@ -1,0 +1,8 @@
+{
+  "short_name": "Redux-useDispatch-useSelector",
+  "name": "Redux useDispatch and useSelector",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
