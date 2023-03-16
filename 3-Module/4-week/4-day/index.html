@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      window.addEventListener('DOMContentLoaded', event => {
+        function handler(e) {
+          console.log(e.currentTarget.tagName);
+        }
+        document.querySelector('main').addEventListener('click', handler);
+        document.querySelector('div').addEventListener('click', handler);
+        document.querySelector('p').addEventListener('click', handler);
+      });
+    </script>
+    <script src="scratch.js"></script>
+    <link rel="stylesheet" href="./index.css">
+  </head>
+  <body>
+    <main>
+      <h1>Thursday March 16th</h1>
+      <div>
+        <p>This is a paragraph in a div in a main in a body in an html</p>
+      </div>
+      <form class="form form--signup" id="signup-form">
+        <input class="form__field" id="name" type="text" placeholder="Name" style="display:block">
+        <input class="form__field" id="email" type="text" placeholder="Email" style="display:block">
+        <input class="form__field" id="password" type="text" placeholder="Password" style="display:block">
+        <input class="form__field" id="confirm-password" type="text" placeholder="Password" style="display:block">
+        <button class="form__submit" id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

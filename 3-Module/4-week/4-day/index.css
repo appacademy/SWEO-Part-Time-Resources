@@ -1,0 +1,12 @@
+main {
+  background-color: red;
+  min-height: 200px;
+}
+div {
+  background-color: blue;
+  min-height: 100px;
+  padding: 10px;
+}
+p {
+  background-color: red;
+}
