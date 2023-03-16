@@ -89,3 +89,7 @@
 - Cancel or confirm deletion
 - See my post disappear off the page so that I know it's been deleted
 - Never see the post on the site again
+
+---
+
+Github: philling83
