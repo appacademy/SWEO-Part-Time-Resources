@@ -4,6 +4,7 @@
     <script>
       window.addEventListener('DOMContentLoaded', event => {
         function handler(e) {
+          <!-- e.stopPropagation(); -->
           console.log(e.currentTarget.tagName);
         }
         document.querySelector('main').addEventListener('click', handler);
@@ -11,6 +12,7 @@
         document.querySelector('p').addEventListener('click', handler);
       });
     </script>
+    
     <script src="scratch.js"></script>
     <link rel="stylesheet" href="./index.css">
   </head>
