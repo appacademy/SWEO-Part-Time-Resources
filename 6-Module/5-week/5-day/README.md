@@ -10,7 +10,6 @@ Submit your design docs for review by tagging your project lead in your group sl
 
 | Day | Tasks to Work On         | Design Docs Due                |
 | :------: | :--------------- | :--------------------- |
-|   Thursday    | Choose Project, Feature List        |     |
 |   Saturday    | Feature List, User Stories      | Feature List    |
 |   Monday    | User Stories   |  User Stories   |
 |   Tuesday    | DB Schema, *Optional: API Routes, Wire Frames, Redux State Shape, Set up Scrum Board & Issues*          |   |
