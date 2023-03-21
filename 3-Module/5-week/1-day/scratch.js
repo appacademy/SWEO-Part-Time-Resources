@@ -4,7 +4,7 @@
 -included in HTTP requests
 -the server sends the data back to the browser, where is is usually stored and then sent back on the next request
 
-let cookie = "key=value; key=value;"
+let cookie = "key=value; key=value"
 
 Web Storage
 * Local Storage
@@ -19,31 +19,26 @@ Web Storage
 
 */
 window.onload = () => {
-  let first = 'name=Tristan';
-  let second = 'id=6513846351683'
-
-  document.cookie = first;
-  document.cookie = second;
-  console.log(document.cookie);
-  document.cookie = 'name=; expires = Mon, 01 Jan 1970 00:00:00 GMT';
+  let firstname = 'firstName=Tristan'
+  document.cookie = firstname;
+  let id = 'id=516181651698465';
+  document.cookie = id;
 
   let button = document.querySelector('button');
   let field = document.querySelector('#field');
-
-  if (localStorage.getItem('inputvalue')) {
-    console.log(localStorage.getItem('inputvalue'));
-  }
-  if (sessionStorage.getItem('autosave')) {
-    field.value = sessionStorage.getItem('autosave');
-  }
 
   field.addEventListener('input', e => {
     sessionStorage.setItem('autosave', field.value);
   })
   button.addEventListener('click', e => {
-    localStorage.setItem('inputvalue', field.value);
-  });
+    localStorage.setItem('fieldInput', field.value);
+  })
+  if (sessionStorage.getItem('autosave')) {
+    field.value = sessionStorage.getItem('autosave');
+  }
 
-
-  localStorage.removeItem('inputvalue');
+  // if (sessionStorage.getItem('autosave')) {
+  //   sessionStorage.removeItem('autosave');
+  // }
+  // sessionStorage.clear();
 }
