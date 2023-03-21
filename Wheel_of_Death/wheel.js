@@ -33,7 +33,6 @@ let est = [
     "Carlos Stich",
     "David Soto",
     "Saman Rana",
-    "Jenniffer Masika",
     "Charles Carroll"
 ]
 
