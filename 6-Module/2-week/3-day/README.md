@@ -127,7 +127,7 @@ class Example:
         print(self.a_class_variable)
 
 
-my_instance = Example("Zaviar")
+my_instance = Example("James")
 
 my_instance.test_method() # Hello there!
 print(Example.a_class_variable) # Hello there!
@@ -146,7 +146,7 @@ class Example:
         print(self.a_class_variable)
 
 
-my_instance = Example("Zaviar")
+my_instance = Example("James")
 my_instance.test_method()  # Hello there!
 
 Example.a_class_variable = "Goodbye now!"
@@ -170,8 +170,8 @@ class Example:
         print(self.a_class_variable)
 
 
-my_instance = Example("Zaviar")
-other_instance = Example("Anthony")
+my_instance = Example("James")
+other_instance = Example("Crystal")
 
 other_instance.a_class_variable = "Goodbye now!"
 
@@ -198,7 +198,7 @@ class Example:
         print(self.a_class_variable)
 
 
-my_instance = Example("Zaviar")
+my_instance = Example("James")
 my_instance.a_class_variable = "Goodbye" # Attribute Error: Read-only
 Example.a_class_variable = "Goodbye" # Works fine
 ```
@@ -256,12 +256,12 @@ class Example:
         return [instance.name for instance in args]
 
 
-z = Example("Zaviar")
-a = Example("Anthony")
+j = Example("James")
+c = Example("Crystal")
 
-print(z.my_static_method(z, a)) # ['Zaviar', 'Anthony']
+print(j.my_static_method(j, c)) # ['James', 'Crystal']
 
-print(Example.my_static_method(a)) # ['Anthony']
+print(Example.my_static_method(j)) # ['Crystal']
 ```
 
 ## When should I use one over the other?
