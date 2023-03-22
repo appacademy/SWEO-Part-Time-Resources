@@ -13,3 +13,13 @@
 // my_func = js_decorator(my_func);
 
 // console.log(my_func('Pretend '));
+
+// simple js class
+class Dog {
+    constructor() {
+        this.sound = 'woof';
+    }
+}
+
+const myDog = new Dog();
+console.log(myDog);
