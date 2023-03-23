@@ -256,7 +256,7 @@ class Example:
 j = Example("James")
 c = Example("Crystal")
 
-print(z.my_static_method(j, c)) # ['James', 'Crystal']
+print(j.my_static_method(j, c)) # ['James', 'Crystal']
 
 print(Example.my_static_method(a)) # ['Crystal']
 ```
