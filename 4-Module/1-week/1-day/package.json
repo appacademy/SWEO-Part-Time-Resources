@@ -1,0 +1,20 @@
+{
+  "name": "1-day",
+  "version": "1.0.0",
+  "description": "- Express is a minimal and flexible Node.js backend framework used for building APIs and web applications. - Express aims to make common web development tasks easier to implement by reducing the amount of boilerplate code you need to write. - Express, is, in its own words, unopinionated and minimalistic",
+  "main": "scratch.js",
+  "scripts": {
+    "dev": "nodemon scratch.js",
+    "start": "node scratch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
