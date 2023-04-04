@@ -31,7 +31,7 @@ let est = [
     "Enea Jorgji",
     "Luke Morgan",
     "Carlos Stich",
-    "David Soto",
+    //"David Soto",
     "Saman Rana",
     "Charles Carroll"
 ]
