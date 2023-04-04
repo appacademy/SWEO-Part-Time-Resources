@@ -27,7 +27,7 @@ let allStudents = [
 let est = [
     "Dylan McDougall",
     "Ledian Fekaj",
-    "Emily Norman",
+    //"Emily Norman",
     "Enea Jorgji",
     "Luke Morgan",
     "Carlos Stich",
