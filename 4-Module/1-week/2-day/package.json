@@ -1,0 +1,18 @@
+{
+  "name": "2-day",
+  "version": "1.0.0",
+  "description": "## Using With in Creation Commands",
+  "main": "scratch.js",
+  "scripts": {
+    "dev": "clear && nodemon scratch.js",
+    "start": "clear && node scratch.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22"
+  }
+}
