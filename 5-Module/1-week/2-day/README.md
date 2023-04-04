@@ -279,7 +279,7 @@ The values passed in get stored as key/value pairs in an object. Function compon
 ```js
 const roleName = 'Instructor';
 
-const MarchStaff = () => {
+const SeptStaff = () => {
   return (
     <MyComponent name="Will" role={roleName} />;
     <MyComponent name="Anthony" role="Assistant Instructor" />;
