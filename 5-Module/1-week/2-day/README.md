@@ -291,6 +291,7 @@ We can also use object destructuring to give us immediate access to our prop dat
 
 ```js
 const MyComponent = ({ name, role }) => {
+// const MyComponent = (props) => {
     return (
         <div>
             <p>My name is {name}</p>
