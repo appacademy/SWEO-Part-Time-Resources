@@ -281,6 +281,7 @@ const roleName = 'Instructor';
 
 const MarchStaff = () => {
   return (
+    function MyComponent({name: "will", role: "instructor"}){}
     <MyComponent name="Will" role={roleName} />;
     <MyComponent name="Anthony" role="Assistant Instructor" />;
   )
@@ -290,11 +291,12 @@ const MarchStaff = () => {
 We can also use object destructuring to give us immediate access to our prop data. This way, we don't have to key into the props object
 
 ```js
-const MyComponent = ({ name, role }) => {
+// const MyComponent = ({ name, role }) => {
+const MyComponent = (props) => {
     return (
         <div>
-            <p>My name is {name}</p>
-            <p>I am an {role}</p>
+            <p>My name is {props.name}</p>
+            <p>I am an {props.role}</p>
         </div>
     );
 };
