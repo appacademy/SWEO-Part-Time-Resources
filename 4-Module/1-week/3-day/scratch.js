@@ -1,14 +1,16 @@
 const express = require('express');
-const home = require('./routes/home.js');
-const roster = require('./routes/roster.js');
-const schedule = require('./routes/schedule.js');
+const homeRouter = require('./home.js');
+const rosterRouter = require('./roster.js');
+// require('dotenv').config();
 
 const app = express();
 
-app.use('/', express.static('static'));
-app.use('/home', home);
-app.use('/roster', roster);
-app.use('/schedule', schedule);
+app.use( '/images', express.static('static/images'));
+app.use( '/scripts', express.static('static/scripts'));
+app.use( '/stylesheets', express.static('static/css'));
 
-const port = 5000;
+app.use( '/home', homeRouter );
+app.use( '/roster', rosterRouter);
+
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Listening on port ${port}...`));

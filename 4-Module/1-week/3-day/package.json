@@ -5,13 +5,15 @@
   "main": "scratch.js",
   "scripts": {
     "dev": "clear && nodemon scratch.js",
-    "start": "clear && node scratch.js",
+    "start": "clear && dotenv node scratch.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1",
     "express": "^4.18.2",
     "nodemon": "^2.0.22"
   }
