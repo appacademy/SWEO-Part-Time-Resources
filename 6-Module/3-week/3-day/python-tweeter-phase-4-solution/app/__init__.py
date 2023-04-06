@@ -3,9 +3,8 @@ from .config import Config
 from .tweets import tweets
 import random
 from .form.form import TweetForm
-# !!START SILENT
+
 from datetime import date
-# !!END
 
 
 app = Flask(__name__)
@@ -53,5 +52,4 @@ def new_tweet_form():
 
     if form.errors:
         return form.errors
-    # !!END
     return render_template("new_tweet.html", form=form)
