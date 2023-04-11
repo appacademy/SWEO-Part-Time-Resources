@@ -29,10 +29,10 @@ let est = [
     "Ledian Fekaj",
     "Emily Norman",
     "Enea Jorgji",
-    "Luke Morgan",
-    "Carlos Stich",
+    //"Luke Morgan",
+    //"Carlos Stich",
     "David Soto",
-    //"Saman Rana",
+    "Saman Rana",
     "Charles Carroll"
 ]
 
