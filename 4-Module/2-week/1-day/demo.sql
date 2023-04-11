@@ -23,11 +23,13 @@
     AUTOINCREMENT - causes the default value of the next value to be 
       next in series
 */
+.mode box
+.headers on
+
 DROP TABLE dogs;
 
--- CREATE OUR dogs TABLE
 CREATE TABLE dogs (
-  id INTEGER PRIMARY KEY NOT NULL,
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
   name VARCHAR(50) NOT NULL,
   age INTEGER,
   isChipped BOOLEAN DEFAULT false,
@@ -35,19 +37,15 @@ CREATE TABLE dogs (
   breed VARCHAR(50)
 );
 
--- INSERT SOME VALUES INTO THE dogs TABLE
 INSERT INTO dogs
+(name, age, isChipped, sex, breed)
 VALUES
--- (id, name, age, isChipped, sex, breed)
-(1,'Gojo',2,TRUE,'male','Corgi'),
-(2,'Hank',3,FALSE,'female', 'NULL'),
-(3,'Poutine',1,TRUE,'female','Doberman'),
-(4,'Peanuts',1,TRUE,'male', 'Pitbull'),
-(5,'Bowser',13,TRUE,'male','Bulldog');
+('Gojo',2,TRUE,'male','Corgi'),
+('Hank',3,FALSE,'female', 'NULL'),
+('Poutine',1,TRUE,'female','Doberman'),
+('Peanuts',1,TRUE,'male', 'Pitbull'),
+('Bowser',13,TRUE,'male','Bulldog');
 
 UPDATE dogs
 SET breed = 'Mixed'
 WHERE breed = 'NULL';
-
-DELETE FROM dogs
-WHERE id = 2;
