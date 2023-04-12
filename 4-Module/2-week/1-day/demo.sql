@@ -23,6 +23,9 @@ DEFAULT : specifies the value if one is not provided
 PRIMARY KEY : a unique identier on each entry
 AUTOINCREMENT : causes the default value of the next value to be next in series
 */
+.mode box
+.headers on
+
 DROP TABLE dogs;
 
 CREATE TABLE dogs (
@@ -41,14 +44,5 @@ VALUES
 ('Beau',10,1,'MALE','Mixed'),
 ('Yoshi', 10,1,'FEMALE','Mixed'),
 ('Butters',4,0,'ASEXUAL','Poodle'),
-('Dino', 100, 0, 'FEMALE', 'Mixed'),
+('Dino', 10, 0, 'FEMALE', 'Mixed'),
 ('Felix', 12, 1, 'MALE', 'Cat');
-
-SELECT id, name FROM dogs;
-
-UPDATE dogs SET age = 10 WHERE id = 5;
-
-DELETE FROM dogs
-WHERE id = 5;
-
-SELECT * FROM dogs;
