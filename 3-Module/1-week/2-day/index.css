@@ -1,0 +1,30 @@
+#b1 {
+    border: 2px rgb(46, 7, 7) solid;
+    color:whitesmoke;
+    background-color: rgb(46, 7, 7);
+}
+
+#b2 {
+    border: 2px rgb(46, 7, 7) solid;
+    color: rgb(46, 7, 7);
+    /* background-color:brown; */
+}
+
+#b3{
+    color: rgb(46, 7, 7);
+    background-color: white;
+    border: 1px white solid;
+}
+
+div {
+    border: 2px black solid;
+    box-shadow: 5px 10px 20px purple;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* puts red border around all of the elements on the page */
+/* * {
+    border: 1px solid red;
+  }  */
