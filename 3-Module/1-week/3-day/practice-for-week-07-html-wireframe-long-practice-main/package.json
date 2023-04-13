@@ -1,0 +1,17 @@
+{
+    "name": "html-wireframe-long-practice",
+    "private": true,
+    "version": "1.0.0",
+    "description": "HTML Wireframe Long Practice",
+    "scripts": {
+        "test-1": "cypress run --spec 'cypress/integration/test1.spec.js'",
+        "test-2": "cypress run --spec 'cypress/integration/test2.spec.js'",
+        "test-3": "cypress run --spec 'cypress/integration/test3.spec.js'"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "cypress": "^9.7.0"
+    },
+    "author": "curriculum@appacademy.io",
+    "license": "ISC"
+}

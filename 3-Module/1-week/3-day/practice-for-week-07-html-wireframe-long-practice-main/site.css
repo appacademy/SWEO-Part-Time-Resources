@@ -1,0 +1,111 @@
+/* Styling for image placeholder without a src attribute */
+/* selector specifity 0,0,0
+	first is id
+	second is class
+	third is tags
+*/
+
+img {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.nav li {
+	border: 1px solid pink;
+}
+
+/* descendant selector */
+.img.design {
+	width: 100px;
+	height: 20px;
+	border: 10px dashed cyan;
+}
+
+.img {
+	width: 1000px;
+	height: 1000px;
+	border: 10px solid cyan;
+}
+
+/* .design {
+	background-color: #fe6100;
+} */
+
+/* id selector */
+#ul-li-one {
+	color: purple;
+	border: 2px solid red
+}
+
+/* class selector */
+.ul-li {
+	color: brown;
+	border: 2px solid salmon;
+}
+
+/* Phase 2 wrapper borders */
+div#header {
+    border: 10px dashed #648fff;
+    margin: 10px;
+}
+
+div#title {
+    border: 10px dotted #dc267f;
+    margin: 10px;
+}
+
+div.article {
+    border: 10px solid #785ef0;
+    margin: 10px;
+}
+
+div.external-links {
+    border: 10px double #fe6100;
+    margin: 10px;
+}
+
+div#footer {
+    border: 10px solid #ffb000;
+    margin: 10px;
+}
+
+
+/* Phase 3 wrappers - background-color */
+header {
+    background-color: #648fff;
+    border: 10px solid black;
+    margin: 10px;
+}
+
+nav {
+    border: 10px solid #ffffff;
+    background-color: #9bb3f1;
+    margin: 10px;
+}
+
+main {
+    border: 10px solid black;
+    margin: 10px;
+}
+
+section {
+    background-color: #dc267f;
+    margin: 10px;
+}
+
+article {
+    background-color: #785ef0;
+    margin: 10px;
+}
+
+aside {
+    background-color: #fe6100;
+    margin: 10px;
+}
+
+footer {
+    border: 10px solid black;
+    margin: 10px;
+    background-color: #ffb000;
+}
