@@ -1,48 +1,111 @@
 /* Styling for image placeholder without a src attribute */
-/* selector specifity 0,0,0
-	first is id
-	second is class
-	third is tags
+/*
+	tag selector
+	id selector
+	class selector
+	universal selector
 */
 
-img {
+/*
+	specifity levels
+		0 , 0 ,  0
+	   id  class tag
+*/
+
+
+/* * {
+
+} */
+
+/* img {
     width: 500px;
     height: 200px;
     border: 1px solid black;
 }
 
-.nav li {
-	border: 1px solid pink;
-}
-
-/* descendant selector */
-.img.design {
-	width: 100px;
-	height: 20px;
-	border: 10px dashed cyan;
-}
-
-.img {
-	width: 1000px;
-	height: 1000px;
-	border: 10px solid cyan;
-}
-
-/* .design {
-	background-color: #fe6100;
+img {
+    width: 200px;
+    height: 300px;
+    border: 10px solid rgb(245, 18, 18);
 } */
 
-/* id selector */
-#ul-li-one {
-	color: purple;
-	border: 2px solid red
+
+/* #li-one {
+	border: 5px solid yellow;
 }
 
-/* class selector */
-.ul-li {
-	color: brown;
-	border: 2px solid salmon;
+.li-one {
+	border: 5px solid rgba(61, 45, 201, 0.702);
+} */
+
+.one.two.three.four{
+	color: blue;
+	font-size: 2rem;
+	background-color: white;
+	font-family: sans-serif;
 }
+
+/* #a-id#a-id-one#a-id-two.a-class-one.a-class-two {
+	color: salmon;
+	font-size: 10rem;
+	background-color: aqua;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} */
+
+.one {
+	color: red
+}
+
+.two {
+	font-size: 5rem;
+}
+
+.three {
+	background-color: purple;
+}
+
+.four {
+	font-family: fantasy;
+}
+
+
+
+.yellow-border {
+	border: 1px solid yellow;
+}
+
+.red-border {
+	border: 1px solid red;
+}
+
+.blue-border {
+	border: 1px solid blue;
+}
+
+.font-size-s {
+	font-size: 16px;
+}
+
+.font-size-m {
+	font-size: 20px;
+}
+
+.font-size-l {
+	font-size: 36px;
+}
+
+#a-color {
+	color: purple;
+}
+
+.a-color {
+	color: blue;
+}
+
+a {
+	color: yellow;
+}
+
 
 /* Phase 2 wrapper borders */
 div#header {
