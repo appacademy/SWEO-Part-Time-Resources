@@ -1,0 +1,27 @@
+body {
+    margin: 20px;
+    background-color: rgb(192, 251, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh
+}
+
+div {
+    padding: 60px;
+    background-color: rgb(192, 27, 247);
+}
+
+span {
+    padding: 40px;
+    background-color: rgb(240, 79, 106);
+}
+
+button {
+    background-color: rgb(255, 255, 255);
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(230, 166, 238);
+}
