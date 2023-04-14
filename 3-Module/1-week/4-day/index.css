@@ -1,0 +1,68 @@
+/* tag selector  */
+div {
+    margin: 10px;
+}
+
+/* class selector  */
+
+.orange {
+    color: orange;
+}
+
+/* chaining class selector, only the elements that have both classes */
+
+.orange.box {
+    padding: 3px;
+}
+
+/* universal selector */
+
+* {
+    border: 1px red solid;
+}
+
+/* id selector */
+
+#purple-button {
+    background-color: rgb(225, 86, 225);
+}
+
+/* attribute selector */
+
+div[title] {
+    opacity: 35%;
+}
+
+/* selects all of the elements that are separated by a comma */
+div.orange, button#purple-button {
+    color: blue;
+}
+
+/* selects all the a tags that are children of the div */
+div a {
+    margin: 60px;
+}
+
+/* selects all the a tags that are direct children of the div */
+div > a {
+    margin: 30px;
+}
+
+/* selects the p tags that are directly adjacent to the a tags */
+a + p {
+    color:rgb(225, 86, 225);
+}
+
+/* pseudo classes, refer to the state of an element */
+
+div:hover {
+    color: yellow;
+}
+
+
+/* pseudo elements, this inserts elements into the html document  */
+
+div::after {
+    content: 'hello';
+}
+
