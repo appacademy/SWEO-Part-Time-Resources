@@ -1,0 +1,70 @@
+/* tag selectors */
+
+div {
+    color: red;
+}
+
+/* class selectors */
+
+.orange {
+    color: orange;
+}
+
+/* id selectors  */
+
+#blue-button {
+    background-color: blue;
+}
+
+/* universal selector */
+
+* {
+    border: red;
+}
+
+/* attribute selector */
+
+div[title] {
+    color: purple;
+}
+
+/* selecting mulitple classes, will only grab the elements that have BOTH classes */
+
+.orange.box {
+    width: 500px;
+}
+
+/* selecting multiple element types at once, these are seperated by a comma */
+
+div.orange, a#blue-button {
+    height: 30px;
+}
+
+/* selects all children of the first element that are selected by the second element */
+
+div a {
+    opacity: 87%;
+}
+
+/* selects the first element hat matches the second element and is a child of the first element */
+div > a {
+    opacity: 95%;
+}
+
+/* selects the second element that is directly adjacent to the first element */
+div + a {
+    background-color: aqua;
+}
+
+/* pseudo classes */
+
+div:hover {
+    opacity: 70%;
+}
+
+/* pseudo selector */
+div::after {
+    content: 
+}
+
+
