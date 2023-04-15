@@ -1,0 +1,20 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+python-dotenv = "~=0.13"
+flask = "~=1.1"
+jinja2 = "~=2.11"
+flask-wtf = "~=0.14"
+sqlalchemy = "*"
+flask-sqlalchemy = "*"
+alembic = "*"
+flask-migrate = "*"
+psycopg2-binary = "*"
+
+[requires]
+python_version = "3.9"
