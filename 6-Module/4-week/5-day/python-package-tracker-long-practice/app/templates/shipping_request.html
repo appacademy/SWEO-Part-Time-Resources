@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>New Shipping Request</title>
+</head>
+
+<body>
+    <h1>New Shipping Request</h1>
+    <form action="" method="post" novalidate>
+        {{ form.csrf_token}}
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.sender_name.label }}
+            {{ form.sender_name() }}
+
+            {{ form.recipient_name.label }}
+            {{ form.recipient_name() }}
+
+            {{ form.origin.label }}
+            {{ form.origin() }}
+
+            {{ form.destination.label }}
+            {{ form.destination() }}
+        </p>
+        <p>
+            {{ form.submit() }}
+        </p>
+    </form>
+</body>
+</html>
