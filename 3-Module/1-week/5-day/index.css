@@ -1,0 +1,37 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: unset;
+}
+
+/* body {
+    border: 5px solid red;
+} */
+
+.parent {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid blue;
+}
+
+.child {
+    border: 5px solid red;
+    /* height: 20%;
+    width: 100%; */
+    /* height: 100%; /* percentages follow parents height and width, the sizes of elements*/
+    position: absolute;
+    /* top: 10px;
+    bottom: 0px; */
+    height: 20%;
+    width: 20%;
+    left: 0px;
+    right: 0px
+}
+
+.text {
+    font-size: 3rem; /* 1 rem = 16px */
+    /* 1 em = 16px follows the parents width */
+}
