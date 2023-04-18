@@ -1,27 +1,22 @@
 let allStudents = [
-    //"Dylan McDougall",
+    "Dylan McDougall",
     "Ledian Fekaj",
-    "Carlos Stich",
+    //"Carlos Stich",
     "Emily Norman",
     "Enea Jorgji",
     "Yassin Tantawy",
-    "Adrienne Tran",
-    "Gino Farfaglia",
+    //"Adrienne Tran",
+    //"Gino Farfaglia",
     //"Stephen Raymond Sy",
     "David Soto",
     "Joshua Krienke",
     "Luke Morgan",
-    "Kyle Seeley",
     //"Saman Rana",
-    "Brian Cabral",
-    "Mariia Gribacheva",
     //"Kevin Sy",
     "Finley Joseph",
-    //"Nate Thompson",
-    //"Jenniffe Masika",
-    "Charles Carroll",
-    "Melynie Phothong",
-    "Duc Nguyen"
+    //"Charles Carroll",
+    //"Melynie Phothong",
+    "Will Herrington"
 ]
 
 let est = [
@@ -49,7 +44,7 @@ let pst = [
     "Finley Joseph",
     "Stephen Sy",
     "Melynie Phothong",
-    //"Will Herrington"
+    "Will Herrington"
 ]
 
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
@@ -73,4 +68,4 @@ function deathPairs(arr) {
     }
 }
 
-deathPairs(pst)
+deathPairs(allStudents)
