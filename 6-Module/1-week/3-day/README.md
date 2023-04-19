@@ -14,6 +14,10 @@
 
 
 ## Python Datatypes
+ - Integer numeric datatype without decimals
+    - num = 1, num = int(1), isinstance(<variable_your_checking>, str)
+ - Float numeric datatype with decimals
+    - num = 1.2, num = float(1.2), isinstance(<variable_your_checking>, float)
  - String is a collection of alphabetic letters, words or other characters.
      - string = "string", string = 'string', isinstance(<variable_your_checking>, str) -- immutable
  - List (JS equivelant Array) is an ordered and changeable collection of data objects
