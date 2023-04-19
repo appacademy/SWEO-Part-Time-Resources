@@ -31,9 +31,9 @@
 
 ## Comparison Operators
   - Equality
-    - > (greater than)
+    - \> (greater than)
     - < (less than)
-    - >= (greater than or equal to)
+    - \>= (greater than or equal to)
     - <= (less than or equal to)
     - == (value is equal to, but does not share the same spot in memory)
     - != (value is not equal to)
