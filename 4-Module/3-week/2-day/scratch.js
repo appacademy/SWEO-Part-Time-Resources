@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 app.get('/bookmarks', (req, res) => {
     let userInput = req.body.userInput;         
-    // "'Week 1 Notes'; DROP TABLE Bookmarks"
+    // "'Week 1 Notes'; SELECT * FROM users;"
 
     let query = `SELECT * FROM Bookmarks WHERE title = ${userInput}`;
     // `SELECT * FROM Bookmarks WHERE title = 'Week 1 Notes'; DROP TABLE Bookmarks`
