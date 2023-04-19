@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    margin: unset;
+}
+
+/* .parent {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr 1fr 1fr;
+} */
+
+.parent {
+    display: grid;
+    grid-template-areas: 
+    "home-button home-button profile-button"
+    "navigation-bar navigation-bar navigation-bar"
+    "left-section middle-section right-section"
+    "footer footer footer";
+}
+
+.parent div {
+    border: 3px solid red;
+    /* height: 40px; */
+    /* width: 40px; */
+}
+
+.home-button {
+    grid-area: home-button;
+}
+
+.profile-button {
+    grid-area: profile-button;
+}
+
+.navigation-bar {
+    grid-area: navigation-bar;
+}
+
+.left-section {
+    grid-area: left-section;
+    height: 400px;
+}
+
+.middle-section {
+    grid-area: middle-section;
+    height: 400px;
+}
+
+.right-section {
+    grid-area: right-section;
+    height: 400px;
+}
+
+.footer{
+    grid-area: footer;
+}
