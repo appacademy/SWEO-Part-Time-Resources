@@ -24,7 +24,7 @@
     - lst = ['h', 'i'], lst = list('hi'), isinstance(<variable_your_checking>, list) -- mutable
  - Dictionary (Js equivelant Object) is a list of comma-separated key-value pairs wrapped around curly braces ({}).
     - dictionary = {},  dict(key = "value"), isinstance(<variable_your_checking>, dict) -- mutable
- - Tuple is an ordered and changeable collection of data objects
+ - Tuple is an ordered and unchangeable collection of data objects
     - tup = ('h', 'i'), tup = tuple('hi), isinstance(<variable_your_checking>, tuple) -- immutable
  - Set (Js equivelant Set) an unordered and changeable collection of unique data objects
     - my_set = set('hi'), my_set.add('bye), my_set.discard('bye'), isinstance(<variable_your_checking>, set) -- mutable
