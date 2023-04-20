@@ -1,0 +1,81 @@
+html, body, div {
+    /* PAGE SETTINGS - DO NOT EDIT */
+    font-family: sans-serif;
+    background-color: antiquewhite;
+    padding: 20px;
+}
+
+/* ====== */
+
+.grid-container {
+    text-align: center;
+
+    /* Phase 1 */
+    /* Your code here */
+    display: grid;
+    grid-template-columns: 3fr auto 1fr;
+    grid-template-areas: 
+    "h h h"
+    "m . s"
+    "f f f"
+    ;
+
+    /* Bonus Phase */
+    /* Your code here */
+    row-gap: 15px;
+}
+.item-1 {
+    background-color: #87a7b3; /* steel blue */
+
+    /* Phase 1 */
+    /* Your code here */
+    grid-area: h;
+}
+.item-2 {
+    background-color: #e1f1dd; /* light sea green */
+
+    /* Phase 1 */
+    /* Your code here */
+    grid-area: m;
+}
+.item-3 {
+    background-color: #cdc7be; /* grey */
+
+    /* Phase 1 */
+    /* Your code here */
+    grid-area: s;
+}
+.item-4 {
+    background-color: #766161; /* brown */
+    color: antiquewhite;
+
+    /* Phase 1 */
+    /* Your code here */
+    grid-area: f;
+}
+
+.divider {
+    background-image: linear-gradient(to right, #e1f1dd, #cdc7be);
+
+    /* Bonus Phase */
+    /* Your code here */
+    width: 100px;
+    box-sizing: border-box;
+}
+
+/* ====== */
+
+.grid-container-flow {
+    border: solid #87a7b3 2px;
+    margin: 20px;
+
+    /* Phase 2 */
+    /* Your code here */
+    display: grid;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: 50px 50px 50px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    grid-auto-flow: column;
+}
