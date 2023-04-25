@@ -1,0 +1,23 @@
+{
+  "name": "1-day",
+  "version": "1.0.0",
+  "main": "scratch.js",
+  "scripts": {
+    "dev":"clear && nodemon scratch.js",
+    "run":"clear && npx dotenv sequelize db:seed:undo:all && npx dotenv sequelize db:migrate:undo:all && npx dotenv sequelize db:migrate && npx dotenv sequelize db:seed:all",
+    "db" :"clear && sqlite3 db/dev.db"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.22",
+    "sequelize": "^6.31.0",
+    "sequelize-cli": "^6.6.0",
+    "sqlite3": "^5.1.6"
+  }
+}
