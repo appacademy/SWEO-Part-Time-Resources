@@ -1,5 +1,54 @@
 # M5 W4 D2 - Thunks, Normalization And Redux Dataflow
 
+## What is Redux Thunk?
+- A Thunk in CS is a functions whos primary purpose is to call another function
+- Redux Thunks is technically a middleware of Redux
+- Redux was not originally made to handle asynchronous action, such as a fetch request
+- Redux Thunk is a middle ware that will allow us to handle async actions in our redux store
+- Our Redux Thunks primary purpose is to dispatch our action
+
+## Application Workflow with Redux Reducers
+- If our Action requires an API fetch, the we will use a Redux Thunk
+- Dispactch our Redux Thunk on our component instead of our action
+- Make a fetch to our API in our Redux Thunk
+- Wait for Response
+- Normalize our response
+- Dispatch our Action with the Normalized response from our API call.
+
+## Redux dataflow
+
+- You now have all the tools you need to connect your React/Redux application to your backend. Dataflow is more complex with a full stack application but you will get more familiar with it after practice.
+- This image gives you a breakdown of how data moves through your application at this point, so study this image and become familiar with every step. To study it, try to visualize a line of code pertaining to each numbered step. To consider yourself familiar with a React/Redux application, you need to know what function corresponds with each step number. If you can't point at a line number in your app and name the step it belongs to, then you need to study more:
+
+<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/ReactReduxCrudCycle.jpg' alt='redux dataflow' style="height: 700px; width: 1200px;">
+
+<br>
+
+<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/FullStack-Dataflow-Diagram-code_minson_whit.png' alt='whitney-minson full-stack data flow style="height: 700px; width: 1200px;"'>
+
+<br>
+<hr>
+
+```js
+// Your first dispatch calls the outer function:
+export const requestToDatabase = (userId) => async (dispatch) => {
+  // Thunk makes the database request:
+  const response = await fetch(`/api/tweets/user/${id}`);
+
+  // Check for errors and parse data:
+  if (response.ok) {
+    const data = await response.json();
+
+    // Your second dispatch sends the db info to the reducer:
+    dispatch(actionCreator(data));
+  } else {
+    return false;
+  }
+};
+```
+<hr>
+<hr>
+
 <a name="#readme-top"></a>
 
 <p align="right" style="font-size:10px">
@@ -70,19 +119,8 @@ Note: arrays are not normalized, only objects.
 <br>
 <hr>
 
-## Redux dataflow
 
-- You now have all the tools you need to connect your React/Redux application to your backend. Dataflow is more complex with a full stack application but you will get more familiar with it after practice.
-- This image gives you a breakdown of how data moves through your application at this point, so study this image and become familiar with every step. To study it, try to visualize a line of code pertaining to each numbered step. To consider yourself familiar with a React/Redux application, you need to know what function corresponds with each step number. If you can't point at a line number in your app and name the step it belongs to, then you need to study more:
 
-<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/ReactReduxCrudCycle.jpg' alt='redux dataflow' style="height: 700px; width: 1200px;">
-
-<br>
-
-<img src='https://appacademy-open-assets.s3.us-west-1.amazonaws.com/Modular-Curriculum/content/react-redux/topics/redux/assets/FullStack-Dataflow-Diagram-code_minson_whit.png' alt='whitney-minson full-stack data flow style="height: 700px; width: 1200px;"'>
-
-<br>
-<hr>
 <br>
 
 Redux documentation: [Redux Docs](https://redux.js.org/tutorials/essentials/part-1-overview-concepts#what-is-redux)
