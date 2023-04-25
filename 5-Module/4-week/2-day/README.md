@@ -8,7 +8,7 @@
 - Our Redux Thunks primary purpose is to dispatch our action
 
 ## Application Workflow with Redux Reducers
-- If our Action requires an API fetch, the we will use a Redux Thunk
+- If our Action requires an API fetch, then we will use a Redux Thunk
 - Dispactch our Redux Thunk on our component instead of our action
 - Make a fetch to our API in our Redux Thunk
 - Wait for Response
