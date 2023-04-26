@@ -7,6 +7,11 @@
 - Function names that start and end with two underscores are special built-in functions that Python uses in certain ways. The \__init__() method is one of these special functions. It is called automatically when you create an object from your class.
 - The \__init__() method lets you make sure that all relevant attributes are set to their proper values when an object is created from the class, before the object is used.
 
+## Public and Private
+- In Python, adding a single underscore before an attribute name in a class is a convention that indicates that the attribute is intended to be private, i.e. it is not part of the public interface of the class and should not be accessed or modified by code outside of the class.
+
+- However, this is just a convention and does not enforce any access control or data hiding mechanism
+
 ## Self, This
 - The self keyword often takes people a little while to understand. The word "self" refers to the current object that you are working with. When you are writing a class, it lets you refer to certain attributes from any other part of the class. Basically, all methods in a class need the self object as their first argument, so they can access any attribute that is part of the class.
 
