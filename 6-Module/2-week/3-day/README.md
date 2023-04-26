@@ -10,14 +10,6 @@
 ## Self, This
 - The self keyword often takes people a little while to understand. The word "self" refers to the current object that you are working with. When you are writing a class, it lets you refer to certain attributes from any other part of the class. Basically, all methods in a class need the self object as their first argument, so they can access any attribute that is part of the class.
 
-## Instance Methods
-- A method is just a function that is part of a class. Since it is just a function, you can do anything with a method that you learned about with functions. You can accept positional arguments, keyword arguments, an arbitrary list of argument values, an arbitrary dictionary of arguments, or any combination of these. Your arguments can return a value or a set of values if you want, or they can just do some work without returning any values.
-
-## Private Variables _variable
-- Python does not have private variables for its classes. That means any instance variable that you declare can be read and set from outside the class. To discourage programmers from doing that, PEP 8 suggests the following naming convention.
-
-- Use one leading underscore only for non-public methods and instance variables.
-
 ## \__repr__()
 - If you create an instance of the a class and print it, you get some Python-runtime information about it.
 ```
@@ -26,6 +18,20 @@ print(<instanceOfClass>)
 #> <instance.ClassName object at 0x10a323e90>
 ```
 - Python does give you a way to override that behavior, if you would like, using the instance "dunder method" \__repr__().
+
+## Instance Methods
+- A method is just a function that is part of a class. Since it is just a function, you can do anything with a method that you learned about with functions. You can accept positional arguments, keyword arguments, an arbitrary list of argument values, an arbitrary dictionary of arguments, or any combination of these. Your arguments can return a value or a set of values if you want, or they can just do some work without returning any values.
+
+## Dot Notation (FINALLY)
+- In Python, you can access an instance attribute using the dot notation (e.g. instance.attribute) but not with square brackets and quotes (instance['attribute']).
+
+- The reason for this is that the dot notation is used to access attributes of an object, whereas square brackets and quotes are used to access items of a sequence, such as a list or a dictionary. When you use the dot notation, you are accessing a specific attribute of the object, which is a property of the object and can be directly accessed using the . operator.
+
+## Private Variables _variable
+- Python does not have private variables for its classes. That means any instance variable that you declare can be read and set from outside the class. To discourage programmers from doing that, PEP 8 suggests the following naming convention.
+
+- Use one leading underscore only for non-public methods and instance variables.
+
 
 ## Python Imports
 ### Terms To Know
