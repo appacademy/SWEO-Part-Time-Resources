@@ -1,0 +1,53 @@
+html, body {
+    height: 100%;
+    margin: unset;
+    background-color: black;
+}
+
+.parent {
+    display: grid;
+    grid-template-areas: 
+    "h h p"
+    "navigation-bar navigation-bar navigation-bar"
+    "left-section m-section r"
+    "f f ."
+    ;
+}
+
+.home-button {
+    grid-area: h;
+}
+
+.profile-button {
+    grid-area: p;
+}
+
+.navigation-bar {
+    grid-area: navigation-bar;
+}
+
+.left-section {
+    grid-area: left-section;
+    height: 60%;
+}
+
+.middle-section {
+    grid-area: m-section;
+    height: 60%;
+}
+
+.right-section {
+    grid-area: r;
+    height: 60%;
+}
+
+.footer {
+    grid-area: f;
+}
+
+.parent > div {
+    height: 80px;
+    /* width: 80px; */
+    color: white;
+    border: 3px solid yellow;
+}
