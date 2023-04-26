@@ -42,9 +42,8 @@ let pst = [
     "Joshua Krienke",
     "Kevin Sy",
     "Finley Joseph",
-    "Stephen Sy",
-    "Melynie Phothong",
-    "Will Herrington"
+   // "Stephen Sy",
+    //"Melynie Phothong",
 ]
 
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
@@ -68,4 +67,4 @@ function deathPairs(arr) {
     }
 }
 
-deathPairs(allStudents)
+deathPairs(pst)
