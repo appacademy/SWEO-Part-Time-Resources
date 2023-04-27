@@ -1,0 +1,22 @@
+extends layout.pug
+
+block title
+  title Edit #{product.name}
+
+block body
+  h1 Edit Product
+  form(action="/products/" + product.productId method="post")
+    label Name
+      input(type="text" name="name" value=product.name) 
+    label Description
+      textarea(name="description")= product.description
+    label Price
+      input(type="float" name="price" value=product.price) 
+    label Categories
+      select(name="categories" multiple value=product.categories[0])
+        each category in categories
+          option(
+            value=category.tag
+            selected=product.categories.find(tag => tag === category.tag)
+          )= category.name
+    button(type="submit") Submit

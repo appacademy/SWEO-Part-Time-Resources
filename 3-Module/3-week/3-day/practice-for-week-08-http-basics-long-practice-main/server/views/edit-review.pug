@@ -1,0 +1,13 @@
+extends layout.pug
+
+block title
+  title Edit Review for #{product.name}
+
+block body
+  h1 Edit Review for #{product.name}
+  form(action="/reviews/" + review.reviewId method="post")
+    label Comment
+      textarea(name="comment")= review.comment
+    label Star Rating
+      input(type="number" min=1 max=5 name="starRating" value=review.starRating)
+    button(type="submit") Submit
