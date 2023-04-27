@@ -1,0 +1,12 @@
+extends layout.pug
+
+block title
+  title #{title}Products List
+
+block body
+  h1 #{title}Products List
+  ul
+    each product in products
+      li: a(href= "/products/" + product.productId)= product.name
+    else
+      li There are no products available

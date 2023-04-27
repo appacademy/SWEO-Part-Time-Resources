@@ -1,0 +1,18 @@
+{
+  "name": "parse-request-body",
+  "version": "1.0.0",
+  "description": "In this practice, you will implement the code to parse the body of a typical HTML form submission request with a `Content-Type` header of `application/x-www-form-urlencoded`.",
+  "main": "server.js",
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "chai-fetch": "^0.3.1",
+    "chai-http": "^4.3.0",
+    "mocha": "^9.0.3"
+  }
+}
