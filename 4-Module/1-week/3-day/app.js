@@ -31,6 +31,7 @@ app.get('/users', (req, res) => {
 
 app.use((err, req, res, next) => {
     console.error(err);
+    res.status(err.status)
     res.send("Error bro")
 })
 
