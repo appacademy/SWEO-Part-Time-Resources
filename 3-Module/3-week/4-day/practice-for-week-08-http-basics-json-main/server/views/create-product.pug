@@ -1,0 +1,19 @@
+extends layout.pug
+
+block title
+  title Create a Product
+
+block body
+  h1 Create a Product
+  form(action="/products" method="post")
+    label Name
+      input(type="text" name="name") 
+    label Description
+      textarea(name="description")
+    label Price
+      input(type="float" name="price") 
+    label Categories
+      select(name="categories" multiple)
+        each category in categories
+          option(value=category.tag)= category.name
+    button(type="submit") Submit
