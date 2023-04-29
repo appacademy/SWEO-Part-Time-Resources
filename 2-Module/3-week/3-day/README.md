@@ -1,5 +1,12 @@
 # M2W3D3
 
+<<<<<<< HEAD
+=======
+## Binary Practice (15 min)
+
+## Lecture Part 1
+
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 ### Key Logic and Truth Points
 
 - ! = not
@@ -21,9 +28,13 @@ F | T  => T
 F | F  => F
 ```
 
+<<<<<<< HEAD
 ---
 
 ### Base 10 - "Normal"
+=======
+### Binary, base 10
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 You learned to count in a base 10 system. All numbers are based on a 0-9
 counting pattern.
@@ -32,7 +43,11 @@ counting pattern.
 - when you get to the last digit, you simply increase the number to the left and
  start over from 0
 
+<<<<<<< HEAD
 ### Base 2 - Binary
+=======
+### Binary, base 2
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 - 2 Key points:
   - binary is all 0s and 1s
@@ -41,7 +56,10 @@ counting pattern.
 
 #### How to count in binary
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 0000 - 0
 0001 - 1
 0010 - 2
@@ -51,15 +69,21 @@ counting pattern.
 0110 - 6
 0111 - 7
 1000 - 8
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 - The pattern is: 0 and 1 are the same a base 10, but then you run out of digits.
   - The right most digit returns to 0 and the digit to the left increments by 1
 - '0b' prefix identifies string/num as binary:  0b0100 -> 4
 - Avoids confusion, 8 -> 0b1000 to differentiate from base 10 number 1000
 
+<<<<<<< HEAD
 ---
 
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 ### Converting from binary to decimal (base 10)
 
 Formula: Multiply each digit by the number base raised to the nth power, where n
@@ -67,7 +91,10 @@ is its position _starting from the right_. Then, add all of the results together
 
 To convert 0b11001010 to decimal, remember the base is 2:
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 2^0 *0 = 0
 2^1* 1 = 2
 2^2 *0 = 0
@@ -76,6 +103,7 @@ To convert 0b11001010 to decimal, remember the base is 2:
 2^5* 0 = 0
 2^6 *1 = 64
 2^7* 1 = 128
+<<<<<<< HEAD
 ```
 
 Add all of those sums together to get 2 + 8 + 64 + 128 = 202
@@ -85,6 +113,14 @@ Add all of those sums together to get 2 + 8 + 64 + 128 = 202
 ## Write a javascript function that converts Binary to Decimal
 
 ---
+=======
+
+Add all of those sums together to get 2 + 8 + 64 + 128 = 202
+
+## Write a javascript function that converts Binary to Decimal (20 min)
+
+## Lecture Part 2
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 ### Base 16 - Hexadecimal
 
@@ -98,7 +134,10 @@ prepended with an '0x' to differentiate them as base-16.
 - Hexadecimal is often used as shorthand for representing binary values:
   - one hex digit can represent four bits.
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
  0 = 0b0000 = 0x0
  1 = 0b0001 = 0x1
  2 = 0b0010 = 0x2
@@ -124,6 +163,7 @@ prepended with an '0x' to differentiate them as base-16.
 22 = 0x16
 23 = 0x17
 24 = 0x18
+<<<<<<< HEAD
 ```
 
 To convert A1 from hexadecimal to decimal, we use the same formula as above:
@@ -132,15 +172,26 @@ To convert A1 from hexadecimal to decimal, we use the same formula as above:
 16^0 *1 =    1* 1 = 1
 16^1 *a (10) =   16*  10 = 160
 ```
+=======
+
+To convert A1 from hexadecimal to decimal, we use the same formula as above:
+
+16^0 *1 =    1* 1 = 1
+16^1 *a (10) =   16*  10 = 160
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 160 + 1 = 161
 
 To convert the hex number 0xF23C:
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 16^0 *C =    1* 12 = 12
 16^1 *3 =   16*  3 = 48
 16^2 *2 =  256*  2 = 512
 16^3 *F = 4096* 15 = 61440
+<<<<<<< HEAD
 ```
 
 Add the sums together to get 61440 + 512 + 48 + 12 = 62012
@@ -150,6 +201,14 @@ Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 ## Write a function that converts hex to decimal
 
 ---
+=======
+
+Add the sums together to get 61440 + 512 + 48 + 12 = 62012
+
+## Write a fuction that converts hex to decimal (20min)
+
+## Lecture Part 3
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 ### Bytes, kilobytes, megabytes, gigabytes, terabytes
 
@@ -157,7 +216,10 @@ Add the sums together to get 61440 + 512 + 48 + 12 = 62012
 
 #### Recall from grade school
 
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 kilo - thousand
 mega - million
 giga - billion
@@ -166,7 +228,10 @@ peta - quadrillion
 exa - quintillion
 zetta - sextillion
 yotta - septillion
+<<<<<<< HEAD
 ```
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 ### ASCII
 
@@ -187,6 +252,7 @@ console.log(str.charCodeAt(0));
 
 ```javascript
 // Convert Hexadecimal to Base10 & back`
+<<<<<<< HEAD
 let hexNum = parseInt('0xa1', 16);      // 161
 let hexStr = Number(hexNum).toString(16);  // 'a1'
 
@@ -196,3 +262,10 @@ let binStr = Number(binNum).toString(2);   // '10110'
 ```
 
 ## JavaScript Arrays Big-O Project
+=======
+let num = parseInt('0xa1', 16);      // 161
+let str = Number(num).toString(16);  // 'a1'
+```
+
+## Binary Extra Practice
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6

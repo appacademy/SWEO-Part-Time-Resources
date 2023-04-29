@@ -1,5 +1,6 @@
 # M2W4D2
 
+<<<<<<< HEAD
 ## Linked List Types
 
 | List Type         | Description                                                                                                   | Direction                     |
@@ -10,25 +11,108 @@
 | Circularly Linked | Final node's next pointer points to the first node, creating a non-linear, circular version of a Linked List. | Head→Tail→Head→Tail           |
 
 ## Linked List Methods
+=======
+## Linked List Practice Part 1 (20 Min)
+
+## Lecture Part 1
+
+### Linked List Instance
+
+Linked Lists are data structures that represent a linear sequence of "vertices"
+(or nodes) and track three important properties:
+
+- head: first node in the list
+- tail: last node in the list
+- count: number of nodes in the list
+
+### Node Instance
+
+Each individual instance of a node tracks some other important properties as
+well:
+
+- value: value represented by the node
+- next: the next node in the list
+- previous: the previous node in the list
+
+### Linked Lists and Node Instances Working Together
+
+- In order to implement a Linked List, you MUST implement the Node class as well
+as the LinkedList class.
+- The actual data lives in the node instances
+
+### Linked Lists vs Arrays
+
+Linked Lists contain ORDERED DATA, similar to arrays. While they exhibit some
+very similar traits, the difference is how data is stored.
+
+- Arrays store data in a contiguous manner:
+
+  - each element is stored next to it's neighboring element in a single block of
+    memory.
+
+- Linked Lists, elements arestored non-contiguously:
+
+  - They are randomly dispersed around your computer. Even though elements are
+      stored randomly, because each node has a previous and a next property, we
+       are ble to retrieve neighboring elements easily.
+
+  - A Linked List has NO INDICES and it is not possible to look up individual
+  nodes in constant time. In order to find a node, we must iterate over the
+  entire list until we find our target node.
+
+## Linked List Practice Part 2 (20 Min)
+
+### Linked List Types
+
+| List Type         | Description                                                                                                   | Direction                        |
+|-------------------|---------------------------------------------------------------------------------------------------------------|----------------------------------|
+| Singly Linked     | Nodes have a single pointer connecting                                                                        | Head→Tail                        |
+| Doubly Linked     | Nodes have two pointers connecting them bi-directionally.                                                     | Head⇄Tail                        |
+| Multiply Linked   | Nodes have two or more pointers, providing a variety of potential node orderings.                             | Head⇄Tail, A→Z, Jan-Dec, etc.A→Z |
+| Circularly Linked | Final node's next pointer points to the first node, creating a non-linear, circular version of a Linked List. | Head→Tail→Head→Tail              |
+
+### Linked List Methods
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 - addToTail: Adds a new node to the end of the list.
 - addToHead: Adds a new node to the front of the list.
 - insertAt: Adds a new node at the specified position (we need to traverse to
+<<<<<<< HEAD
   that point, then update pointers)
+=======
+that point, then update pointers)
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 - removeTail: Removes the last node of the list.
 - removeHead: Removes the first node of the list.
 - removeFrom: Removes the node at the specified position.
 - contains: Traverses the list and returns a boolean to indicate if the value
+<<<<<<< HEAD
   was found at any node.
+=======
+was found at any node.
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 - get: Returns a reference to the node at the specified position.
 - set: Updates the value of the node at the specified position.
 - size: Returns the current length of the list.
 
+<<<<<<< HEAD
 ---
 
 ## Project Time
 
 ---
+=======
+#### Time Complexity of Linked List Methods
+
+- Accessing a node: O(n)
+- Searching a list: O(n)
+- Inserting a value: O(1)
+- Deleting a node: O(1)
+
+## Linked list Practice Part 3 (20 min)
+
+## Lecture Part 3
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 ## Stack & Queues
 
@@ -41,7 +125,10 @@ removed.
   - the last Node added is always the first Node to be removed
   - the first Node added is always the last Node to be removed
 - It is helpful to visualize a stack as a vertical stack of items.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
   - we add to the top of the stack. We remove from the top of the stack.
 
 - Queues: FIFO (First In, First Out) data structures.
@@ -85,11 +172,25 @@ class Stack {
 }
 ```
 
+<<<<<<< HEAD
 ## Implement a Queue using an Array
+=======
+## Implement a Queue using an Array (20 Min)
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
 
 Should have these methods:
 
 - size
 - enqueue
 - dequeue
+<<<<<<< HEAD
 - peek
+=======
+- peek
+
+## Linked List Practice for Wedensday (3 Hours)
+
+## Bonus
+
+Implement a queue using a linked list and make sure to test it!
+>>>>>>> 068e39f9864dacf5a348aadb94b67acf4110ead6
