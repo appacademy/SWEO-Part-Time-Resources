@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/calendar.css">
+    <script src="/static/scripts/calendar.js"></script>
+    <title>Calendar This!</title>
+</head>
+
+<body>
+    <div id="application">
+        <section id="appointment-form">
+            <form method="post">
+                {{ form.csrf_token }}
+                <div class="form-row">{{ form.name.label }} {{ form.name }}</div>
+                <div class="form-row">{{ form.start_date.label }} {{ form.start_date }}</div>
+                <div class="form-row">{{ form.start_time.label }} {{ form.start_time }}</div>
+                <div class="form-row">
+                    {{ form.end_date.label }} {{ form.end_date }}
+
+                    {% if form.end_date.errors %}
+                    <ul class="errors">
+                        {% for error in form.end_date.errors %}
+                        <li>{{ error }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                </div>
+                <div class="form-row">{{ form.end_time.label }} {{ form.end_time }}</div>
+                <div class="form-row">{{ form.description.label }} {{ form.description }}</div>
+                <div class="form-row">{{ form.private.label }} {{ form.private }}</div>
+                <div class="form-actions">{{ form.submit }}</div>
+            </form>
+        </section>
+        <main>
+            <div class="selector">
+                <input type="date" id="date-selector" value="{{day.strftime(" %Y-%m-%d")}}">
+            </div>
+            {% for slot in timeslots %}
+            <div>{{ slot.time.strftime("%H:%M") }}</div>
+            {% if slot.appointment %}
+            <div class="appointment" style="grid-row-end: span {{ slot.appointment.units }};">
+                {{ slot.appointment.name }}
+            </div>
+            {% elif slot.open %}
+            {% if slot.time.strftime("%M")== "00" %}
+                <div class="top-of-hour"></div>
+            {% else %}
+                <div></div>
+            {% endif %}
+            {% endif %}
+            {% endfor %}
+        </main>
+    </div>
+</body>
+
+</html>

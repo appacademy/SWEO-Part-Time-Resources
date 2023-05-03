@@ -22,30 +22,14 @@ class User:
         self.username = None
         self.logged_in = False
         self._pet = None
+        self.title = None
         self.id = next(User.newId)
         self.__class__.instances.update({self.id : self})
 
-    def login_user(self, email, password):
-        # print(email, password, self.email, self.password)
-        if email == self.email and password == self.password:
-            self.logged_in = True
-            return f"User with the id of {self.id} has been logged in"
-        return "Invalid Credential!!!!!!!!!"
-
-    @login_required_decorator
-    def change_user_name(self, username):
-        self.username = username
-        return self
-
-    @login_required_decorator
-    def change_user_first_name(self, first_name):
-        self.first_name = first_name
-        return self
-
-    # @login_required_decorator
-    # def give_user_pet(self, pet_name):
-    #     self.pet = pet_name
-    #     return self
+    def give_use_pet(self, new_pet):
+        if isinstance(new_pet, str) and len(new_pet) > 3:
+            self._pet = new_pet
+        print("new pet must be a str and have a length > 3")
 
     @property
     def pet(self):
@@ -53,24 +37,25 @@ class User:
 
     @pet.setter
     def pet(self, new_pet):
-        self._pet = new_pet
+        if isinstance(new_pet, str) and len(new_pet) > 3:
+            self._pet = new_pet
+        print("new pet must be a str and have a length > 3")
 
 
     def __repr__(self):
-        return f'< User ( id: {self.id}, first_name : {self.first_name}, last_name : {self.last_name}, username : {self.username} email : {self.email}, pet : {self.pet}, logged_in : {self.logged_in}) >'
-
+        return f'< User ( id: {self.id}, title : {self.title}, first_name : {self.first_name}, last_name : {self.last_name}, username : {self.username} email : {self.email}, pet : {self._pet}, logged_in : {self.logged_in}) >'
 
 
 blake = User(first_name = "Blake", last_name = "Watts",  email = 'bWatts@test.com', password='password')
 
-andres = User(first_name = "Andres", last_name = "Aguilar", email = 'aAguilar@test.com', password = 'password' )
 
 
 
-users = User.instances
+User.give_use_pet(blake, "hieee")
 
-blake.login_user(email = 'bWatts@test.com', password = 'password')
-print(blake.change_user_name("wollyWombat527"))
+# blake.give_use_pet("paisley")
 
-# blake.pet = "paisley"
-# print(blake.pet)
+# print(blake.change_user_name("wollyWombat527"))
+
+
+print(blake)
