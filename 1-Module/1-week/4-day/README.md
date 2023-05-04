@@ -20,10 +20,9 @@
 
 `Syntax`
 
-- keywords: `if` `else if` `else`
+- keywords: `if`, `else if`, `else`
   - `if` & `else if` require a condition inside of parenthesis
   - We can put whatever we want in a condition
-    - [Falsy Values]
 - a `code block` to run
 
   ```js
@@ -63,7 +62,7 @@
 
 - Syntax
   - `for` keyword
-  - parenthesis that has ... separated by a semi-colon
+  - parenthesis that has the following separated by a semi-colon
     - an `initial expression` (like a counter)
     - a conditional of when to run the loop
     - if truthy, the loop will run.
