@@ -7,7 +7,10 @@ const cors = require('cors');
 
 // server setup
 
-app.use( cors({ origin: ["http://website.com"] }));
+app.use( cors({
+  origin: ["http://website.com"],
+  credentials: true
+}));
 
 const allowGoogle = () => {
   cors({ origin: ["http://google.com"]})
