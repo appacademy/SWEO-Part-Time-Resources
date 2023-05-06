@@ -239,5 +239,5 @@ for (let i = 0; i < dogs.length; i++) {
 - Min Value
 - Two Sum
 
-[unique pairs in arrays]: ./images/unique_pairs_in_arrays.png
-[pairs in arrays]: ./images/pairs_in_arrays.png
+[unique pairs in arrays]: ./unique_pairs_in_arrays.png
+[pairs in arrays]: ./pairs_in_arrays.png
