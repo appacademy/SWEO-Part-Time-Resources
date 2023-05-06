@@ -36,14 +36,14 @@ let est = [
 ]
 
 let pst = [
-    "Yassin Tantawy",
+    //"Yassin Tantawy",
     "Adrienne Tran",
     "Gino Farfaglia",
     "Joshua Krienke",
     "Kevin Sy",
     "Finley Joseph",
-   // "Stephen Sy",
-    //"Melynie Phothong",
+    "Stephen Sy",
+    "Melynie Phothong",
 ]
 
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
