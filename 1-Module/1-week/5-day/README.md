@@ -71,7 +71,7 @@ console.log(str); // 'abcd'
 
 ---
 
-## Array Methods - 30m
+## Array Methods
 
 ### Array.push (MDN: [Array.prototype.push])
 
