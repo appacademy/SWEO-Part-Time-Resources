@@ -17,6 +17,7 @@ if (!fetch) {
 const body = JSON.stringify({
 	"color": "green"
 })
+
 const headers =  {
 		"Content-Type" : "application/json"
 }
