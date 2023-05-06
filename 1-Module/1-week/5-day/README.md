@@ -3,17 +3,22 @@
 0. Lots of practice!
 1. Mutability
 2. Array Methods
+3. Nested Loops
 
 **_Quick Notes_**:
 
 1.  **Best way to learn:**
     1.  Use Polya's to write down your thought process
-    2.  Code it out
-    3.  Run code
-    4.  See error
-    5.  See if you can debug the error
+        1. Understand the problem
+        2. Make a Plan
+        3. Carry out the Plan
+        4. Look back and improve your solution (Refactor)
+    3.  Code it out
+    4.  Run code
+    5.  See error
+    6.  See if you can debug the error
         1.  **IMPORTANT: DO NOT stare down your code. Mandatory to ask for help after 10 minutes of being stuck**
-    6.  Ask a question in live-questions channel
+    7.  Ask a question in live-questions channel
 
 2. **LESS passive walkthroughs, MORE active practice, and Homework:** 
    1. We won't go over every problem during discussion
@@ -23,7 +28,7 @@
 
 ---
 
-## Practice Set 1 - 1hr 30min
+## Practice Set 1
 
 - Reverse String
 - Range
@@ -159,16 +164,6 @@ console.log(str); // 'abcd'
   console.log(firstCat); // 'Paprika'
   console.log(cats); // ['Whiskers', 'Garfield']
   ```
-
----
-
-## Practice Set 3 - 40m
-
-- FizzBuzz Array
-- First Vowel
-- Even Numbers
-- Is Prime Recall
-
 ---
 
 ## Lunch! 30m
@@ -227,7 +222,7 @@ for (let i = 0; i < dogs.length; i++) {
 
 ---
 
-## Practice Set 2 - 40m
+## Practice Set 2
 
 - FizzBuzz Array
 - First Vowel
@@ -236,6 +231,7 @@ for (let i = 0; i < dogs.length; i++) {
 - Last Vowel
 - Pit Pat
 - Remove Last Vowel
+- Pairs Maker
 - Min Value
 - Two Sum
 
