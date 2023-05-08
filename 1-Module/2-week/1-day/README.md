@@ -89,3 +89,6 @@ for (let i = 0; i < dogs.length; i++) {
 ```
 
 ![Unique Pairs In Arrays]
+
+[unique pairs in arrays]: ./unique_pairs_in_arrays.png
+[pairs in arrays]: ./pairs_in_arrays.png
