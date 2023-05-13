@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript">
+      window.addEventListener("DOMContentLoaded", event => {
+        // Now listen for a click on the body
+        /*document.body.addEventListener("click", event => {
+          console.log("The body click event!");
+          console.log(event.target.id);
+        });
+
+
+		document.querySelector('form').addEventListener('click', e => {
+			alert('form')
+		})
+		document.querySelector('div').addEventListener('click', e => {
+			//e.stopPropagation()
+			alert('div')
+		})
+		document.querySelector('p').addEventListener('click', e => {
+			//e.stopPropagation()
+			alert('p')
+		})
+
+
+		document.querySelector('ul').addEventListener('click', e => {
+			//console.log(e.target) // displays the element in which triggered the event
+			console.log(e.currentTarget) // displays the element/object/node in which the event is attached to
+		})
+
+		*/
+
+		document.querySelector('a').addEventListener('click', e=> {
+			e.preventDefault()
+		})
+
+		document.querySelector('input').addEventListener('click', e=> {
+			e.preventDefault()
+		})
+
+		document.querySelector('form').addEventListener('click', e=> {
+			e.preventDefault()
+			console.log(e.target)
+		})
+
+      });
+    </script>
+	<style>
+		body * {
+		  margin: 10px;
+		  border: 1px solid blue;
+		}
+	</style>
+  </head>
+  <body>
+	<!-- <ul>
+		<li> Item number 1</li>
+		<li> Item number 2</li>
+		<li> Item number 3</li>
+		<li> Item number 4</li>
+		<li> Item number 5</li>
+		<li> Item number 6</li>
+	</ul> -->
+
+	<a href="https://google.com">
+		link to somewhere
+	</a>
+
+	<input placeholder="input value in here">
+
+	<form>
+		<button type="submit"> click me </button>
+	</form>
+
+  </body>
+</html>
