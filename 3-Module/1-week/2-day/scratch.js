@@ -46,7 +46,7 @@
 //<h1 id="attribute">Welcome to my blog bro</h1>
 
 //ELEMENTS
-//An elements is EVERYTHING between the tags and including the tags
+//An element is EVERYTHING between the tags and including the tags
 
 //ATTRIBUTES
 //USed to define additional information about our element

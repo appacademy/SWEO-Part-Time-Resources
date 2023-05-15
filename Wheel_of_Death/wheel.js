@@ -1,34 +1,37 @@
 let allStudents = [
     "Dylan McDougall",
     "Ledian Fekaj",
-    "Carlos Stich",
     "Emily Norman",
     "Enea Jorgji",
+    "Carlos Stich",
+    "David Soto",
+    "Saman Rana",
+    "Charles Carroll",
+    "Will Herrington",
+    "Nook Muenseeprom",
     "Yassin Tantawy",
     "Adrienne Tran",
     "Gino Farfaglia",
-    "Stephen Raymond Sy",
-    "David Soto",
     "Joshua Krienke",
-    "Luke Morgan",
-    "Saman Rana",
+    "Mariia Gribacheva",
     "Kevin Sy",
     "Finley Joseph",
-    "Charles Carroll",
-    "Melynie Phothong"
+    "Stephen Sy",
+    "Melynie Phothong",
+    "Jamie Cardona"
 ]
 
 let est = [
-    //"Dylan McDougall",
+    "Dylan McDougall",
     "Ledian Fekaj",
-    //"Emily Norman",
+    "Emily Norman",
     "Enea Jorgji",
-    "Luke Morgan",
-    //"Carlos Stich",
+    "Carlos Stich",
     "David Soto",
     "Saman Rana",
     "Charles Carroll",
-    "Will Herrington"
+    "Will Herrington",
+    "Nook Muenseeprom"
 ]
 
 let pst = [
@@ -41,6 +44,7 @@ let pst = [
     "Finley Joseph",
     "Stephen Sy",
     "Melynie Phothong",
+    "Jamie Cardona"
 ]
 
 let deathWheel = array => array[Math.floor(Math.random() * array.length)]
