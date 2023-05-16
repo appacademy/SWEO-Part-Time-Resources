@@ -1,0 +1,140 @@
+/* Theme Colors */
+
+.theme-none {
+    --color-dark: black;
+    --color-light: white;
+    --color-accent: none;
+}
+
+.theme-dragon {
+    --color-dark: #556052;
+    --color-light: #ececec;
+    --color-accent: #c1a57b;
+}
+
+.theme-griffin {
+    --color-dark: #810000;
+    --color-light: #eeebdd;
+    --color-accent: #1b1717;
+}
+
+.theme-wizard {
+    --color-dark: #325288;
+    --color-light: #f4eee8;
+    --color-accent: #de8971;
+}
+
+/* The Page */
+
+body, html {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+
+    font-family: sans-serif;
+    margin: 90px 0 40px 0;
+}
+
+/* The Top Bar */
+
+header {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+/* The Primary Content */
+
+p {
+    padding: 5px 20px 0px 20px;
+}
+
+p:first-child:first-letter {
+    color: var(--color-accent);
+
+    float: left;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+/* The Bottom Bar */
+
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+
+    font-size: small;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Links */
+
+a {
+    color: var(--color-accent);
+}
+
+a:hover {
+    color: var(--color-dark);
+}
+
+header a:hover, footer a:hover {
+    color: var(--color-light);
+}
+
+/* The Theme Buttons */
+
+.theme-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.theme-controls button {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+
+    padding: 5px;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.theme-controls button.selected {
+    background-color: var(--color-light);
+    color: var(--color-accent);
+}
+
+/* The Name Input */
+
+.name-controls input {
+    padding: 5px;
+    margin-top: 4px;
+    margin-right: 20px;
+}
+
+/* The Two Settings Side-by-side */
+
+.settings {
+    display: flex;
+    gap: 20px;
+}
+
+/* Clear All Button */
+
+#clear-all {
+    background-color: var(--color-accent);
+    color: var(--color-light);
+
+    padding: 5px;
+    font-size: larger;
+    cursor: pointer;
+}
