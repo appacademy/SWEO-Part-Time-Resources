@@ -10,7 +10,7 @@
 `What are objects`
 
 - an unordered collection of key-value pairs
-  - key: value (property)\
+  - key: value (property)
 - [*OBJECTS ARE UNORDERED*]
 
 `Why objects`
@@ -21,7 +21,7 @@
 
 ```js
 let cohort = {
-  startMonth: "June",
+  startMonth: "May",
   instructors: [{
     name: "Philip",
     currentGame: "Pokemon Unite",
@@ -30,8 +30,8 @@ let cohort = {
       "Charizard"
     ] 
   }, {
-    name: "Blake",
-    currentGame: "Escape from Tarkov",
+    name: "Alan",
+    currentGame: "Zelda: Tears of the Kingdom",
     hours: 50
   }],
 }
