@@ -52,15 +52,6 @@ my_var = None
 print(my_var is None)
 ```
 
-## Duck-typing
-- Other programming languages such as Java or C++ require you to specify the type of variable when you declare/assign it
-- Python does not check the variable's type, and instead simply throws an error if the variable type does not have the method/property in its class definition
-- Commonly referred to as EAFP, or Easier to ask for forgiveness than permission
-```python
-string = 'hello'
-number = 1
-print(number.index(1))
-```
 
 ## Identity Operators
 - Handles strict equality
