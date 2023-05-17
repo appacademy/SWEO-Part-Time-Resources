@@ -1,16 +1,16 @@
 # `M1W3D3`
 
-## POJO Practice - 20 min
+## POJO Quizzes - 15 min
 
-- Cat Builder
-- Iterate Through Obj
+- Learning Boost (Wednesday)
+- Object Notation Quiz
 
 ## POJO Discussion
 
 `What are objects`
 
-- an unordered collection of key-value pairs
-  - key: value (property)
+- an unordered collection of key-value pairs (properties)
+- mutable data type
 - [*OBJECTS ARE UNORDERED*]
 
 `Why objects`
