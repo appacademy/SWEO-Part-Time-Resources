@@ -1,7 +1,7 @@
 # M6 Wk1 D4 Intro To Python
 
 ## Functions are the fundamental building blocks of Python and mastering them is a big step on the road to Python mastery.
-- Functions are now defined with the key were "def" js equivalant(function)
+- Functions are now defined with the key word "def" js equivalant(function)
 - The block of code that will run after our function is declared are the indented lines after the colon : symbol js equivalant({ })
 ```
 def my_func(param1, param2):
@@ -77,7 +77,7 @@ add(2, 3, 4, 5) # Returns 14
 ```
 def greeting(name, saying="Hello"):
     print(saying, name)
-greeting(saying = 'Documentation is life', name = "Blake")
+greeting(saying = 'Documentation is life', name = "Will")
 ```
 
 ### Adding additional keyword arguments **kwargs
@@ -99,13 +99,13 @@ print_staff(greeting = "Hello, my name is", Blake="video games", Andres="poker")
 # js example
 const nameToUpper = (name) => name.toUpperCase();
 
-console.log(nameToUpper("blake))
+console.log(nameToUpper("Will'))
 
 # python example
 #func_name------lambda param : code to run/return
 name_to_upper = lambda name: name.upper()
 
-print(name_to_upper('blake))
+print(name_to_upper('Will'))
 ```
 
 ### List/Dict Comprehension
@@ -113,7 +113,7 @@ print(name_to_upper('blake))
 - essentialy you insert your for loop inside of square brackets to build a new array pr curly to build a new dictionary.
 
 ```
-names = ["Blake", "Andres", "Yake", "Nick", "Susan", "Bryan"]
+names = ["Will", "Anthony", "Bob", "Larry", "Susan", "Bryan"]
 
 names_upper = [name.upper() for name in names]
 
