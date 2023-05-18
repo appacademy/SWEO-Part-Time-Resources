@@ -19,7 +19,7 @@
   console.log("secondAnimal:", secondAnimal);
   
   let cohort = {
-    startMonth: "June",
+    startMonth: "May",
     instructors: [{
       name: "Philip",
       currentGame: "Pokemon Unite",
