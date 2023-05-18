@@ -1,18 +1,36 @@
+"""
+variable = 33
+my_variable = 42
+
+def my_function():
+    pass
+
+class MyClass:
+    pass
+
+#f you see a variable in all caps, you should treat it as a constant, even though
+#the Python language won't actually prevent you from changing it
+MY_CONSTANT = 42
+
+"""
+
+
+
 # (*)args: any extra arguments that don't have a positional parameter. Type is a Tuple. Similar to rest parameter in js
 # default: keyword argument with default value
 # (**)kwargs: any arguments with a key=value pairing. Type is a Dictionary.
-def parameters(positional, position2, *args,  **kwargs):
-  print(positional, position2, args, kwargs)
-parameters('hello', "Will", 1,2,3,4, test='test', world='earth')
+# def parameters(positional, position2, *args, **kwargs):
+#   print(positional, position2, args, kwargs)
+# parameters('hello', "Will", 1,2,3,4, test='test', world='earth')
+
 
 
 
 ### Keyword arguments
-
-
-def greeting(name, saying="Hello"):
-    print(saying, name)
-greeting(saying = 'Documentation is life', name = "Will")
+# def greeting(name, saying="Hello"):
+#     print(saying, name)
+# greeting(name = "Will")
+# greeting(saying = 'Documentation is life', name = "Will")
 
 
 # Lambda Functions
@@ -23,9 +41,9 @@ console.log(nameToUpper("Will'))
 
 """
 #func_name------lambda param : code to run/return
-name_to_upper = lambda name: name.upper()
+# name_to_upper = lambda name: name.upper()
 
-print(name_to_upper('Will'))
+# print(name_to_upper('Will'))
 
 
 # List Comprehension
