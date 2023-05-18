@@ -1,3 +1,6 @@
+# num = 1.2
+# print("INT: ", int(num))
+# print("FLOAT: ", float(num))
 
 # #LISTS
 # lst = ['h', 'i']
@@ -11,9 +14,7 @@
 # dict1 = dict(key = "value")
 # print("DICT1: ", dict1)
 
-# num = 1.2
-# print("INT: ", int(num))
-# print("FLOAT: ", float(num))
+
 
 
 # simple error catching
@@ -27,15 +28,35 @@
 #     a = str(a)
 #     print(len(a))
 
+# a = '7'
+# a /= 2
+# print(a)
 
-#catching named errors
+# print (2 == 2.0)    # => True
+# print (2 is 2.0)
+
+# my_var = None
+# print(my_var is None)
+
+# a = 321
+# # print(len(a))
+# try:
+#     print(len(a))
+# except:
+#     print('Silently handle error here')
+#     # Optionally include a correction to the issue
+#     a = str(a)
+#     print(len(a))
+
+# catching named errors
 # a = 100
 # # b = "5"
-# b = 0
-# # b = 5
+# # b = 0
+# b = 5
 # try:
-#     print(a / b)
+#     print("TEST", a / b)
 # except ZeroDivisionError:
+#     # print("Cannot divide by zero")
 #     pass
 # except (TypeError, NameError) as e:
 #     print("ERROR!", e)
@@ -59,11 +80,11 @@
 #     break
 
 #For loop
-# animalList = ['cat', 'bat', 'rat', 'elephant']
+# animal_list = ['cat', 'bat', 'rat', 'elephant']
 
 
-# for animal in animalList:
-#    print(animal)
+# for ele in range(5):
+#    print(ele)
 
 
 # for animal in animalList:
@@ -72,8 +93,8 @@
 
 # name = "Will"
 # if name == 'Will':
-#     name = "bob"
-#     # print('Hi, Will.')
+#     # name = "bob"
+#     print('Hi, Will.')
 # print(name)
 
 # if (name == 'Will'):
@@ -86,19 +107,16 @@
 # else:
 #     print('Hello, Great TA!!!!.')
 
-
-# name= "Bob"
-# if name == 'Will':
-#     print('Hi, Will.')
-# else:
-#     print('You are not Will.')
-# # elif name == 'Waldo':
-# #     print('Where is Waldo?')
-# else:
-#     print('You are neither Kristen nor a little kid.')
-# my_list = [1, 2, 3, 4, 5]
-# print(type(my_list))
-
+name = "Waldo"
+if name == 'Kristen':
+    print('Hi, Kristen.')
+elif name == 'Philip':
+    print('You are not Kristen.')
+else:
+    print('Where is Waldo?')
+else:
+    print('You are neither Kristen nor a little kid.')
+print(name)
 #Tuples are defined using parentheses () or the tuple() constructor. Here's an example:
 
 
@@ -149,7 +167,7 @@ For example:
 # print("tuple func: ", fill_tuple(orignal_tuple, 2, 3))    #> ((58, 1, 5), (0, 3, 2), (45, 2, 2), (24, 23, 2))
 # print("original tuple after func: ", orignal_tuple)
 
-mixed_tuple = (1, "hello", True, (2, 3))
-print(mixed_tuple[3][1])
-hello_element = mixed_tuple[1]
-print(hello_element)
+# mixed_tuple = (1, "hello", True, (2, 3))
+# print(mixed_tuple[3][1])
+# hello_element = mixed_tuple[1]
+# print(hello_element)
