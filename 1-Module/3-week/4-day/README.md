@@ -28,9 +28,9 @@
         "Charizard"
       ] 
     }, {
-      name: "Blake",
-      currentGame: "Escape from Tarkov",
-      hours: 50
+      name: "Alan",
+      currentGame: "Zelda: Tears of the Kingdom",
+      hours: 100
     }],
   }
   
@@ -45,10 +45,10 @@
   console.log("teachers: ", teachers);
 
   //given this cohort obj, destructure the object inside of instructors array
-  let { instructors: [Philip, Blake] } = cohort;
+  let { instructors: [Philip, Alan] } = cohort;
   
   console.log("Philip: ",  Philip);
-  console.log("Blake: ", Blake);
+  console.log("Alan: ", Alan);
   ```
 
 ## Rest and Spread
