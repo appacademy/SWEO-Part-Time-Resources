@@ -99,3 +99,5 @@ console.log(obj[time.toLowerCase()]); //
 ## Project Time
 
 POJO Project
+
+[*OBJECTS ARE UNORDERED*]: https://2ality.com/2015/10/property-traversal-order-es6.html
