@@ -1,9 +1,14 @@
 """
+Naming conventions
+
 variable = 33
+
 my_variable = 42
 
 def my_function():
     pass
+    return
+
 
 class MyClass:
     pass
@@ -19,6 +24,11 @@ MY_CONSTANT = 42
 # (*)args: any extra arguments that don't have a positional parameter. Type is a Tuple. Similar to rest parameter in js
 # default: keyword argument with default value
 # (**)kwargs: any arguments with a key=value pairing. Type is a Dictionary.
+
+# def my_func(positional, *args, **kwargs):
+#   print(positional, args, kwargs)
+# my_func('hello', 1,2,3, key="value1", key2="value2")
+
 # def parameters(positional, position2, *args, **kwargs):
 #   print(positional, position2, args, kwargs)
 # parameters('hello', "Will", 1,2,3,4, test='test', world='earth')
@@ -29,7 +39,8 @@ MY_CONSTANT = 42
 ### Keyword arguments
 # def greeting(name, saying="Hello"):
 #     print(saying, name)
-# greeting(name = "Will")
+#     print(name, saying)
+# # greeting(name = "Will")
 # greeting(saying = 'Documentation is life', name = "Will")
 
 
@@ -49,13 +60,14 @@ console.log(nameToUpper("Will'))
 # List Comprehension
 # names = ["Will", "Anthony", "Bob", "Larry", "Susan", "Bryan"]
 
+# List Comprehension
 # names_upper = [name.upper() for name in names]
 
-# print(names_upper)
 
 # # adding an if conditional
 
 # names_start_with_b = [name for name in names if name[0] == 'B']
+# print(names_start_with_b)
 
 
 
@@ -67,10 +79,13 @@ and maintable, which this is the exact opposite
 
 """
 
-# transform_names = [name.upper() if name[0] == 'B' else
-#                     name.lower() if (name[0] == 'A') else (name) for name in names]
+# transform_names = [name.upper() if name[0] == 'B' else name.lower() if (name[0] == 'A') else (name) for name in names]
 
 # print('here', transform_names)
+
+
+
+
 
 
 
