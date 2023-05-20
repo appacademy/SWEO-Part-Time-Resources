@@ -2,7 +2,7 @@
 
 ---
 
-## Discussion Advanced Array Methods: 45 mins
+## Discussion Advanced Array Methods
 
 `forEach`
 
