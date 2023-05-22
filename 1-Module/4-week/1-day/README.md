@@ -1,6 +1,6 @@
 # `M1W4D1`
 
-## Warmup Challenge Problem (SOLO, 20m)
+## Warmup Challenge Problem
 
 ```js
 /*
