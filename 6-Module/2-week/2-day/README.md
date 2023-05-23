@@ -140,3 +140,39 @@ person.update(person_last_name)
 print(person)
 
 ```
+
+## Sets
+
+-   A collection of unique hashable (immutable/primitive) elements
+-   Mutable
+-   Unordered
+
+```py
+my_set = {1,2,3}
+other_set = set([3,4,5])
+
+# Union - the result of combining two sets
+print(my_set | other_set)
+print(my_set.union(other_set))
+
+# Like dictionaries, you can update a set
+my_set.update(other_set)
+print(my_set)
+
+# Can be passed any iterable
+my_set.update([1, 10, 4, 11, 3, 7])
+print(my_set)
+
+# Intersection - the result of only the non-unique items in two sets
+print(my_set & other_set)
+print(my_set.intersection(other_set))
+
+# Difference - the result set1 after removing anything present in set2
+print(my_set - other_set)
+print(my_set.difference(other_set))
+print(other_set - my_set)
+
+# Symmetric difference - the result of only the unique items in two sets
+print(my_set ^ other_set)
+print(my_set.symmetric_difference(other_set))
+```
