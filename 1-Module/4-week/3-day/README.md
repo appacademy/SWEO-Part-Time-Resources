@@ -1,5 +1,32 @@
 # `M1W4D3`
 
+## Arrow Functions
+
+`Overview`
+
+- Arrow Functions are always anonymous
+- Arrow Functions have implicit return (one line)
+- Optional parenthesis for single parameter
+
+  ```js
+  // Multiline
+  const multilineName = name => {
+    return 'My name is '+ name;
+  };
+  multilineName('Mylo');
+  
+  // Single Line
+  const returnName = name => 'My name is ' + name;
+  console.log(returnName('JM'));
+
+  // Anonymous callback
+  const arr = [1, 2, 3];
+  const addOne = arr.map((num) => num + 1);
+  console.log(addOne);
+  ```
+
+---
+
 ## Scope
 
 ### `Overview`
