@@ -10,7 +10,7 @@
 
 - Can use/manipulate a Higher Order Functions' variables/parameters
 - Can create multiple "instances" of a function's variables
-- 
+- Create a private state within a function
 
 ```js
 function createCounter() {
