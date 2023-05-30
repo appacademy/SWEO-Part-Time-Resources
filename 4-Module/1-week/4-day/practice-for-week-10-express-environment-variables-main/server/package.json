@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "dotenv-cli": "^7.2.1",
+    "express": "^4.17.1"
+  },
+  "license": "ISC"
+}
