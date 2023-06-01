@@ -59,7 +59,7 @@ console.log(hello("Alan"));
 - Is JS single-threaded or multi-threaded? What does this mean?
   1. Single Threaded - Can only do one thing at a time
 - What is a 'stack'?
-  1. First in - First Last (FILO)
+  1. First in - Last Out (FILO)
 
 ```js
 function foo() {
