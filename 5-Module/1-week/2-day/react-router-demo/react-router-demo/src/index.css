@@ -1,0 +1,6 @@
+/* TODO Add site wide styles */
+.active {
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
