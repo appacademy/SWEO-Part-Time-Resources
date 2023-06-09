@@ -30,8 +30,7 @@ def form():
                               recipient=data["recipient_name"],
                               origin=data["origin"],
                               destination=data["destination"],
-                              location=data["origin"],
-                              test="testing")
+                              location=data["origin"])
         db.session.add(new_package)
         db.session.commit()
 
