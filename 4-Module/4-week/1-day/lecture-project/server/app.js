@@ -14,13 +14,13 @@ const person = require('./db/models/person');
 app.use(express.json());
 
 // List of all colors in the database - DO NOT MODIFY
-app.get('/books/:genre', async (req, res, next) => {
+app.get('/books/:genre/readers', async (req, res, next) => {
     const { genre } = req.params;
 
     // Lazy two steps
     // const book = await Book.findOne({ where: { genre: genre, id: 2 }});
 
-    // const bookReaders = await book.getReaders()
+    // const bookReaders = await book.getReaders();
 
 
 
@@ -35,21 +35,21 @@ app.get('/books/:genre', async (req, res, next) => {
     //         id: 1,
     //         title: 'Anne of Green Gables',
     //         genre: fiction,
-    //         Reader: {
+    //         Reader: [{
     //             id: 1,
     //             name: 'Layla',
     //             location: 'England'
-    //         }
+    //         }]
     //     },
     //     {
     //         id: 2,
     //         title: 'Anne of Green Gables 2',
     //         genre: fiction,
-    //         Reader: {
+    //         Reader: [{
     //             id: 2,
     //             name: 'John'
     //             location: 'England'
-    //         }
+    //         }]
     //     }
     // ];
 
@@ -62,11 +62,13 @@ app.post('/books/:author_name', async (req, res, next) => {
 
 
     // manually and define assocaition
-    // const newBook = await Book.create({ title, genre, author_id: , band: { 'Band 1'}});
+    // const author = await Reader.findOne({where: { name : author_name, author: true}});
+
+    // const newBook = await Book.create({ title, genre, author_id: author.id});
 
     // dynamically creating association and new record at the same time
     // option 1
-    await author.createBook({ title, genre})
+    // await author.createBook({ title, genre})
 
     // option 2
     const author = await Reader.findOne({where: { name : author_name, author: true}});
