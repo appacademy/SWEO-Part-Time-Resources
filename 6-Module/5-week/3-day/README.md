@@ -8,7 +8,7 @@ You must produce 5 design documents for approval by your project advisor before 
 - Feature list
 - User stories
 - Database schema
-- Scrum Board
+- Scrum/Kanban Board
 - Project Scorecard
 
 
