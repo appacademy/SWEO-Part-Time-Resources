@@ -4,10 +4,12 @@ We will have time allotted each day this week to work on group project planning!
 
 ***You will be required to have 4 features for this project, 2 full CRUD and 2 partial CRUD***
 
-You must produce 3 design documents for approval by your project advisor before beginning:
+You must produce 5 design documents for approval by your project advisor before beginning:
 - Feature list
 - User stories
 - Database schema
+- Scrum/Kanban Board
+- Project Scorecard
 
 
 ---
@@ -18,7 +20,7 @@ You must produce 3 design documents for approval by your project advisor before 
 
 1. Come up with an idea for your project with your group and create a Feature List for Instructor approval. Make sure to get instructor approval on your feature list before continuing on with your other design docs.
 2. Start an empty git repository WITHOUT a readme and create a wiki in your repo to hold all of your design docs. Share your wiki with your project advisor.
-3. The project starter repo will be released when 3 design docs have been approved, or next Thursday at the latest. Do not start coding until this is released AND you have finished your design docs!
+3. The project starter repo will be released when 5 design docs have been approved, or next Thursday at the latest. Do not start coding until this is released AND you have finished your design docs!
 
 
 ---
