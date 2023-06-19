@@ -1,20 +1,20 @@
-1. Introduction to Dockerfiles
+# Introduction to Dockerfiles
 
 Dockerfiles are text files that contain the commands or instructions to build a Docker image. They automate the process of Docker image creation, making it easy and efficient to create Docker environments and package applications.
 
-2. Anatomy of a Dockerfile
+# Anatomy of a Dockerfile
 
 A Dockerfile consists of various commands and arguments. The most common commands include:
 
-FROM: This command sets the base image for the Dockerfile. It's usually the first command in a Dockerfile. For example, FROM ubuntu:18.04.
-RUN: This command executes a shell command. It's useful for installing packages or other software. For example, RUN apt-get update && apt-get install -y nginx.
-CMD: This command provides defaults for an executing container. These can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT command. For example, CMD ["nginx", "-g", "daemon off;"].
-COPY: This command is used to copy files from the host system into the Docker container. For example, COPY . /app.
-WORKDIR: This command sets the working directory inside the Docker container. For example, WORKDIR /app.
-EXPOSE: This command informs Docker that the container listens on the specified network ports at runtime. For example, EXPOSE 80.
+- FROM: This command sets the base image for the Dockerfile. It's usually the first command in a Dockerfile. For example, FROM ubuntu:18.04.
+- RUN: This command executes a shell command. It's useful for installing packages or other software. For example, RUN apt-get update && apt-get install -y nginx.
+- CMD: This command provides defaults for an executing container. These can include an executable, or they can omit the executable, in which case you must specify an ENTRYPOINT command. For example, CMD ["nginx", "-g", "daemon off;"].
+- COPY: This command is used to copy files from the host system into the Docker container. For example, COPY . /app.
+- WORKDIR: This command sets the working directory inside the Docker container. For example, WORKDIR /app.
+- EXPOSE: This command informs Docker that the container listens on the specified network ports at runtime. For example, EXPOSE 80.
 
 
-3. Creating a Simple Dockerfile
+# Creating a Simple Dockerfile
 
 ```
 # Use an official Node.js runtime as the base image
@@ -36,7 +36,7 @@ EXPOSE 80
 CMD [ "npm", "start" ]
 ```
 
-4. Building an Image from a Dockerfile
+# Building an Image from a Dockerfile
 
 Docker uses the docker build command to build Docker images from a Dockerfile and a context. The build context is the set of files located in the specified PATH or URL. For example:
 
@@ -46,7 +46,7 @@ docker build -t my-nodejs-app:latest .
 
 This command tells Docker to build an image from the Dockerfile in the current directory (.), and tag (-t) the image with the name my-nodejs-app:latest.
 
-5. Best Practices for Writing Dockerfiles
+# Best Practices for Writing Dockerfiles
 
 There are several best practices to keep in mind when writing Dockerfiles, including:
 
