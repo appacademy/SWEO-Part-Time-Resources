@@ -50,11 +50,11 @@ The following documentation is required for your group project.
 All Documentation needs to be added to your project repo's wiki page. Do NOT
 make or add this info to a README.md in your repo, the project starter will come
 with a very important README.md that we will merge in to our group project
-repos.  
+repos.
 If you have something ready for review, let your advisor know (in your group's
 slack channel).  Do not move on to the next documentation deliverable without
 getting the previous one approved (if your feature list is not approved, don't
-start on the DB schema) 
+start on the DB schema)
 
 
 ### Additional Suggested Documentation
@@ -64,28 +64,3 @@ start on the DB schema)
 2. Wire Frames (not making an original site)
 3. Redux State Shape
 
-
-## Daily Planning Schedule
-
-The following schedule is when your different design documents are due
-throughout Week 19. 
-
-
-| Day | Tasks to Work On         | Design Docs Due                |
-| :------: | :--------------- | :--------------------- |
-|   Monday    | Select Project, Feature List        |  What site to clone   |
-|   Tuesday    | Feature List, DB Schema      | Feature List    |
-|   Wednesday    | DB Schema, User Stories   |   DB Schema  |
-|   Thursday    | User Stories, *Wire Frames (if your site is original)Set up Scrum Board (GitHub Projects)*          | User Stories  |
-|   Friday    | Release & Review Project Starter       | Scrum Board  |
-
-
-
-## Instructor GitHub Handles
-
-Please add your all your instructor to your project repo as collaborators.  Your project advisor will be assigned once all group have settle on their clone projects (so should happen Tuesday)
-
-- Brad: `bradsimpson213`
-- David: `hisownspace`
-- Andrew: `andrwtran`
-- Keegan: `Holidaez`
