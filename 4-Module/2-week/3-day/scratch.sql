@@ -1,6 +1,6 @@
 -- Types of Relationships in SQL
 
--- 1. one-to-one: each orchard can only have one kind of tree and each kind of tree can only be assigned to one orchard 
+-- 1. one-to-one: each orchard can only have one kind of tree and each kind of tree can only be assigned to one orchard
 -- (can only be done with some really funky commands, so don't worry about it even relationships that you would classify as one-to-one, you will do like a one-to-many)
 
 -- 2. one-to-many: each orchard can have only one kind of tree, but each kind of tree can belong to mulitple orchards
@@ -30,7 +30,6 @@ CREATE TABLE orchards (
 DROP TABLE IF EXISTS trees;
 DROP TABLE IF EXISTS orchards;
 
-
 -- Many-to-Many
 CREATE TABLE trees (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -41,34 +40,33 @@ CREATE TABLE trees (
 CREATE TABLE orchards (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     name VARCHAR(100) NOT NULL UNIQUE,
-    location VARCHAR(100) NOT NULL
+    location VARCHAR(100) NOT NULL,
 );
 
-CREATE TABLE orchard_tree {
+
+CREATE TABLE orchard_tree (
     tree_id INTEGER NOT NULL,
     orchard_id INTEGER NOT NULL,
     FOREIGN KEY (tree_id) REFERENCES trees(id)
     FOREIGN KEY (orchard_id) REFERENCES orchards(id)
-}
+
+)
 
 
 
 SELECT * FROM orchards WHERE id = 2;
--- syntax for including related data we'll learn later don't worry for now
+-- with including the other table (syntax you'll learn later) will give you something like:
 
 {
-    id: 2,
     name: "Roger's",
-    location: "Maryland",
-    tree_id = 3,
+    location: "Virgina",
+    tree_id: 2,
     trees: {
-        id: 3,
-        name: "Plum",
+        id: 2,
+        name: "orange",
         height_ft: 30
     }
 }
-
-
 
 
 
@@ -87,4 +85,3 @@ SELECT * FROM orchards WHERE id = 2;
 
 -- Third normal form
 -- Eliminate fields that do not depend on the key.
-
