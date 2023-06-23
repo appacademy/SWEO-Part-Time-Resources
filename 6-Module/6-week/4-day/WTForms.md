@@ -23,6 +23,8 @@ class MyForm(FlaskForm):
 @app.route('/submit', methods=['POST'])
 def submit():
     form = MyForm(request.json)
+     # form manually to validate_on_submit can be used
+    form['csrf_token'].data = request.cookies['csrf_token']
     if form.validate():
         # If the form data is valid, you can save it to the database.
         return jsonify(success=True)
