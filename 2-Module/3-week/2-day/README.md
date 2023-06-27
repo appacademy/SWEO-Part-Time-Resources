@@ -4,7 +4,9 @@
 
 Big O Notation is a mathemetical notation that describes the time and space complexity of a function.
 
-In other words, it describes how long a function will take to complete or how much memory will be used after its execution.
+In other words, it describes the performance of an algorithm / function as the amount of data increases.
+
+It is machine independent.
 
 ---
 
