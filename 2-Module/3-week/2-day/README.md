@@ -17,6 +17,8 @@ It is machine independent.
 
   <img src="https://i.ibb.co/XxHTsn0/growthcurves.png" width="500">
 
+[Source](https://www.bigocheatsheet.com/)
+
 - The growth curve can be described in many different ways, but the 3 we are going to focus on for now are:
   - Constant: O(1)
   - Linear: O(n)
