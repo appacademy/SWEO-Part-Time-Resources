@@ -1,0 +1,59 @@
+html, body, input, textarea, button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+main {
+  display: grid;
+  flex: 1 0 0px;
+  grid-template-columns: 50px 1fr;
+}
+
+#application {
+  bottom: 0;
+  display: flex;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#appointment-form {
+  flex: 0 0 300px;
+}
+
+.appointment {
+  background-color: #0277BD;
+  border-radius: 4px;
+  color: white;
+  font-weight: bold;
+  margin-right: 1em;
+  padding-left: 1em;
+}
+
+.form-actions {
+  display: flex;
+  margin: 0.25em;
+  justify-content: flex-end;
+}
+
+.form-row {
+  display: flex;
+  margin: .25em;
+}
+
+.form-row label {
+  flex: 0 0 100px;
+}
+
+.form-row input[type="text"],
+.form-row input[type="date"],
+.form-row input[type="time"],
+.form-row textarea {
+  width: 100%;
+}
+
+.selector {
+  grid-column-end: span 2;
+  text-align: center;
+}
