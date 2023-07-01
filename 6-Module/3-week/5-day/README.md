@@ -1,4 +1,4 @@
-# `M6W3D3`
+# `M6W3`
 
 ## Templating
 
