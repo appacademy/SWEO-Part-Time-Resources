@@ -1,7 +1,6 @@
 docker --help | List all Docker commands and options available.
+
 Starting
-
-
 docker container run <OPTIONS> <IMAGENAME:TAGNUMBER> <COMMAND> | Run an image in a container (see more below).
 docker container start <CONTAINERNAME>                         | Starting a container that is currently stopped.
 
