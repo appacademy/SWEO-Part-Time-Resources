@@ -1,0 +1,19 @@
+/* TODO Add site wide styles */
+div {
+  background-color: #ddd;
+  border-radius: 10px;
+  padding: 0 10px 5px 10px;
+  text-align: center;
+}
+button {
+  background-color: rgb(220, 127, 127);
+  border-radius: 100px;
+  border: none;
+  color:white;
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 5px 10px;
+}
+button:hover {
+  background-color: rgb(184, 108, 95);
+}
