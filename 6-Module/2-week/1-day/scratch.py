@@ -40,7 +40,7 @@ res = all(bools) # looking for false values
 
 greg = {'first_name': 'Greg', 'last_name': 'Isales', 'age': 31, 'height':'6cm'}
 # print(f'\n{greg}')
-# print(zipped_lst)
+print(zipped_lst)
 # print(dir(zipped_lst))
 
 # SET OPERATIONS
