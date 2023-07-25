@@ -1,3 +1,7 @@
+// You don't need to use the same exact code I used,
+// Like doing a for loop or while loop.
+// I mix things up to give examples of different tools.
+
 function myForEach(array, cb) {
 	for (let i = 0; i < array.length; i++) {
 		cb(array[i], i, array)
