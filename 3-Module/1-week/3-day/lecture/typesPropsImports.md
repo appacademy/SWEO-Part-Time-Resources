@@ -112,5 +112,5 @@ body {
 If you need to import something into your `CSS` file, such as a font or even another `CSS` file, you can use the @import directive in the top of your `CSS` file..
 
 ```css
-@import url(https://fonts.googleapis.com/`css`?family=Open+Sans);
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 ```
