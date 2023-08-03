@@ -1,0 +1,3 @@
+FLASK_APP=app.py
+FLASK_DEBUG=True
+SECRET_KEY=pineapple_on_pizza_is_awesome
