@@ -11,10 +11,15 @@ let recursiveProduct = (limit) => {
 } 
 
 
-console.log(recursiveProduct(1))
-console.log(recursiveProduct(2))
-console.log(recursiveProduct(3))
+// console.log(recursiveProduct(1))
+// console.log(recursiveProduct(2))
+// console.log(recursiveProduct(3))
 console.log(recursiveProduct(4))
+
+
+
+
+
 
 
 let dualArgProduct = (num, product = 1) => {
@@ -23,10 +28,16 @@ let dualArgProduct = (num, product = 1) => {
 }
 
 
-console.log(dualArgProduct(1))
-console.log(dualArgProduct(2))
-console.log(dualArgProduct(3))
+// console.log(dualArgProduct(1))
+// console.log(dualArgProduct(2))
+// console.log(dualArgProduct(3))
 console.log(dualArgProduct(4))
+
+
+
+
+
+
 
 
 let restedProd = (...nums) => {
@@ -38,7 +49,7 @@ let restedProd = (...nums) => {
 }
 
 
-console.log(restedProd(1))
-console.log(restedProd(1, 2))
-console.log(restedProd(1, 2, 3))
+// console.log(restedProd(1))
+// console.log(restedProd(1, 2))
+// console.log(restedProd(1, 2, 3))
 console.log(restedProd(1, 2, 3, 4))
