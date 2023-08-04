@@ -24,7 +24,7 @@ console.log(recursiveProduct(4))
 
 let dualArgProduct = (num, product = 1) => {
 	if (num === 0) return product
-	else return dualArgProduct(num - 1, product * num) 
+	return dualArgProduct(num - 1, product * num) 
 }
 
 

@@ -15,6 +15,3 @@ consoleEachItem([1, 2, [3], [4, [5], 6], [[[[[7]]], 8]]])
  // 6
  // 7
  // 8
-
-// Maybe I want [1, 2, 3, 4, 5, 6, 7, 8].
-// If so, I'll need to have a return on line 5 && 6 with something
