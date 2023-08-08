@@ -1,24 +1,13 @@
-# W1D4
-
-## Here we go!: 20 mins
-
-### WE'RE SAVING THE QUIZ UNTIL THE END
-
-  1. [Is Five]
-  2. [Is Odd]
-  3. [Log Between]
-
-### Control Flow Discussion: 30 mins
-
 ## Conditionals
 
 `Syntax`
 
-- keywords: `if` `else if` `else`
-  - `if` & `else if` require a condition inside of parenthesis
-  - We can put whatever we want in a condition
-    - [Falsy Values]
-- a `code block` to run
+- a keyword: `if` `else if` `else`
+- `if` & `else if` require a condition inside of parenthesis
+  - these will evaluate the `truthy-ness` of what is inside of the parentheses
+  - [Falsy Values]
+- a `code block` to run if the conditional is `truthy` or, with `else`,\
+if other conditionals are `falsy`
 
   ```js
   let c = 'turtle';
@@ -34,14 +23,15 @@
   }
   ```
 
-### Loops
+## Loops
 
 `While Loop`
 
 - Syntax
   - an `initial expression` (like a counter)
   - the `while` keyword
-  - parenthesis with a conditional of when to run the loop WHILE the condition is true
+  - parenthesis with a conditional of when to run the loop
+    - if truthy, the loop with run
   - a step case leading to the conditional being falsy.
 
   ```js
@@ -69,20 +59,7 @@
   }
   ```
 
-## Solo Practice 1: 20 mins
-
-  1. [Print Fives]
-  2. [Log Between Stepper]
-  3. [Three or Seven]
-
-## Solo Practice Discussion: 10 mins
-
-## Arrays : 20 mins
-
-  1. [Sum Array]
-  2. [Add Arrays]
-
-## Array Discussion: 30 mins
+## Array Data Type
 
 `Info to know`
 
@@ -146,35 +123,22 @@
 Other common methods you will use often: (Not needed _today_, but why not\
  take a look at them on MDN)
 
-- Array.push
-- Array.pop
-- Array.shift
-- Array.unshift
-- Array.slice
-- Array.splice
+- Array.prototype.push
+- Array.prototype.pop
+- Array.prototype.shift
+- Array.prototype.unshift
+- Array.prototype.slice
+- Array.prototype.splice
 
-## Solo Practice 2: 25 mins
+<!-- Links to change for each cohort -->
+[Morning Boost]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/tuesday-morning-boost
+[String Type Lecture]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/string-type-lecture
+[String Type Demo]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/string-type-demo
+[Function Lecture]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/function-lecture
+[Average Walkthrough]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/average-walkthrough
+[Conditionals Demo]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/conditionals-demo
+[Loop Demo]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/loops-demo
+[Array Lecture]: https://open.appacademy.io/learn/js-py---pt-jan-2023-online/week-1---intro-to-javascript/array-lecture
 
-  1. [Doubler]
-  2. [Vowel Counter]
-
-## EOD / Office Hours
-
-## Quizzes: 15 mins
-
-  1. [Control Flow Quiz]
-  2. [Formative Quiz]
-
-[Is Five]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-five
-[Is Odd]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/is-odd
-[Log Between]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/log-between
-[Print Fives]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/print-fives
-[Log Between Stepper]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/log-between-stepper
-[Three or Seven]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/three-or-seven
-[Sum Array]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/sum-array
-[Add Arrays]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/add-arrays
-[Doubler]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/doubler
-[Vowel Counter]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/vowel-counter----
-[Control Flow Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/control-flow-quiz
-[Formative Quiz]: https://open.appacademy.io/learn/s-py---pt-sept-2021-online/week-1---intro-to-javascript/formative-quiz--repeat----thursday
+<!-- Constant Links -->
 [Falsy Values]: https://developer.mozilla.org/en-US/docs/Glossary/Falsy

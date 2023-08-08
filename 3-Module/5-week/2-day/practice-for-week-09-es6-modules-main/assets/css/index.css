@@ -1,0 +1,33 @@
+html, body {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+    place-items: center center;
+}
+
+button {
+    margin: 5px;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+#message {
+    position: relative;
+    width: 300px;
+    overflow-wrap: break-word;
+    text-align: center;
+    background-color: #f8f8f8;
+    border: 1px solid #c8c8c8;
+    border-radius: 5px;
+    padding: 20px;
+
+}

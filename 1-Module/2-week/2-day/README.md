@@ -1,29 +1,13 @@
-# M1W2D2
+# Week 2 Day 2
 
-## Let's try one together
+Today, we'll spend some time at the beginning of class discussing the methods 
+that came up in the homework. We'll spend some time working through [String's split method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split)
+as well as [Array's join method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join).
+We'll want to think about why we might need these methods.
+* Are strings mutable or immutable?
+* What about arrays?
+* How can these differences guide our problem solving approaches?
 
-- [removeConsonants]
-
-[removeConsonants]: removeConsonants.js
-
-## Practice Time
-
-- [Array Sum]
-- [Rotate Right]
-- [Two Dimensional Sum]
-- [Avg Val]
-- [My Index Of Recall]
-- [Tripler]
-- [Long Words]
-- [Remove E Words]
-- [Max Value]
-
-[Array Sum]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/array-sum
-[Rotate Right]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/rotate-right
-[Two Dimensional Sum]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/two-dimensional-sum
-[Avg Val]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/avg-val
-[My Index Of Recall]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/my-index-of-recall
-[Tripler]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/tripler
-[Long Words]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/long-words
-[Remove E Words]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/remove-e-words
-[Max Value]: https://open.appacademy.io/learn/js-py---pt-sept-2021-online/week-2---intermediate-functions/max-value
+We'll also be taking a look at [Array's split method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split).
+We'll take some time to explore the documentation on these methods and see if
+we can think of any scenarios where it might be useful. See you in class!

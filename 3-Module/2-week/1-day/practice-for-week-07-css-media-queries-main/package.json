@@ -1,0 +1,15 @@
+{
+    "name": "css-media-queries",
+    "private": true,
+    "version": "1.0.0",
+    "description": "CSS Media Queries Guided Practice",
+    "scripts": {
+        "test": "cypress run --spec 'cypress/integration/test.spec.js'"
+    },
+    "dependencies": {},
+    "devDependencies": {
+      "cypress": "^9.7.0"
+    },
+    "author": "curriculum@appacademy.io",
+    "license": "ISC"
+}

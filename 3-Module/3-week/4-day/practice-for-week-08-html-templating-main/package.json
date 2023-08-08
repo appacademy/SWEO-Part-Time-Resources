@@ -1,0 +1,18 @@
+{
+    "name": "html-templating-practice",
+    "private": true,
+    "version": "1.0.0",
+    "description": "HTML Templating Long Practice",
+    "scripts": {
+        "test": "cypress run --spec 'cypress/integration/basic-spec.js,cypress/integration/bonus-spec.js'",
+        "test-basic": "cypress run --spec 'cypress/integration/basic-spec.js'",
+        "test-bonus": "cypress run --spec 'cypress/integration/bonus-spec.js'"
+    },
+    "dependencies": {
+      "cypress": "^9.7.0",
+      "chai": "^4.3.6",
+      "mocha": "^10.0.0"
+    },
+    "author": "curriculum@appacademy.io",
+    "license": "ISC"
+}

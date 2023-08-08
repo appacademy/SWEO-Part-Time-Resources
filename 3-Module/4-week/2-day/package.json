@@ -1,0 +1,17 @@
+{
+  "name": "2-day",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lecture.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.1"
+  }
+}

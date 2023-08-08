@@ -77,7 +77,7 @@ app.post('/books/:author_name', async (req, res, next) => {
 
     author.addBook(newBook);
 
-    // author.addBooks([newBook, book2]);
+    author.addBooks([newBook, book2]);
 });
 
 // Set port and listen for incoming requests - DO NOT MODIFY
