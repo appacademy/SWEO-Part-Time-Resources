@@ -1,0 +1,22 @@
+{
+  "name": "jwt-exploration",
+  "version": "1.0.0",
+  "description": "Encode, decode and verify a JWT",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "mocha",
+    "test-with-json": "SECRET_KEY=a30d2ba48103304d394824b7e28a03d963ef7a5848f3cf3ab29bb1c07f250d6aa096494d9dd29ee7ad9b9f26eb1b9f0778df1d96d505ef4a5722126f3cdb541d mocha --reporter json"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-spies": "^1.0.0",
+    "dotenv": "^16.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "mocha": "^6.2.2",
+    "test-console": "^2.0.0"
+  },
+  "license": "ISC"
+}

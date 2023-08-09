@@ -14,12 +14,34 @@ require('dotenv').config();
 app.use(express.json());
 
 
-app.get('/trees', async (req, res, next) => {
-    // SELECT * FROM trees;
+// app.get('/trees', async (req, res, next) => {
+//     // SELECT * FROM trees;
 
-    const trees = await Tree.findAll();
+//     const trees = await Tree.findAll();
 
     res.json(trees)
+    const trees = await Tree.findAll({attributes: ['location', 'age']});
+
+    res.json(trees);
+
+    // res returns this to the backend
+    // {
+    //     species: 'Apple',
+    //     location: 'Vermont',
+    //     age: 40
+    //   }
+// });
+
+app.get('/trees/apple', async (req, res, next) => {
+    // SELECT * FROM trees WHERE species='Apple';
+
+    const appleTrees = await Tree.findAll({
+        where: {species: 'Apple'},
+        order: [['age', DESC]],
+        limit: 5
+    });
+
+    res.json(appleTrees);
 
     // res returns this to the backend
     // {
@@ -29,38 +51,33 @@ app.get('/trees', async (req, res, next) => {
     //   }
 });
 
-app.get('/trees/apple', async (req, res, next) => {
-
+app.post('/trees', async (req, res, next) => {
     // SELECT * FROM trees WHERE species='Apple';
 
-    const appleTrees = await Tree.findAll({ 
-        where: {species: "Apple"},
-        order: [['age', DESC]],
-        limit: 5
-    });
-
-    res.json(appleTrees)
-    
-});
-
-app.post('/trees', async (req, res, next) => {
     // need to save for it to update the database
-    // const plumTree = await Tree.build({ species: "Plum", location: "Maryland", age: 10});
+    // const plumTree = await Tree.build({species: 'Plum', location: 'maryland', age: 10});
 
+    
     // await plumTree.save();
-
+    
+    // saves automatically
+    const plumTree = await Tree.create({species: 'Plum', location: 'maryland', age: 10});
     await Tree.findOne({where: {species: 'Plum'}});
 
-    // saves automatically
-    const plumTree = await Tree.create({ species: "Plum", location: "Maryland", age: 10});
+    plumTree.location = 'New Zealand';
+
+    await plumTree.validate();
+
+    await plumTree.save();
+
+    res.json(plumTree);
 });
 
 app.put('/trees/:tree_id', async (req, res, next) => {
-    const { tree_id } = req.params;
     const tree = await Tree.findOne({where: {id: `${tree_id}`}});
-
     const { location, age } = req.body;
 
+    // need to save for it to update the database
     tree.set({
         location,
         age

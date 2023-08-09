@@ -1,0 +1,13 @@
+.header {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+/* style={{
+	'height': '100vh',
+	'width': '100vw',
+	'display': 'flex',
+	'justifyContent': 'space-evenly'
+}} */

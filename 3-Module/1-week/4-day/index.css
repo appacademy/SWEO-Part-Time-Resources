@@ -1,68 +1,68 @@
-/* tag selector  */
+/* tag selectors */
+
 div {
-    margin: 10px;
+    color: red;
 }
 
-/* class selector  */
+/* class selectors */
 
 .orange {
     color: orange;
 }
 
-/* chaining class selector, only the elements that have both classes */
+/* id selectors  */
 
-.orange.box {
-    padding: 3px;
+#blue-button {
+    background-color: blue;
 }
 
 /* universal selector */
 
 * {
-    border: 1px red solid;
-}
-
-/* id selector */
-
-#purple-button {
-    background-color: rgb(225, 86, 225);
+    border: red;
 }
 
 /* attribute selector */
 
 div[title] {
-    opacity: 35%;
+    color: purple;
 }
 
-/* selects all of the elements that are separated by a comma */
-div.orange, button#purple-button {
-    color: blue;
+/* selecting mulitple classes, will only grab the elements that have BOTH classes */
+
+.orange.box {
+    width: 500px;
 }
 
-/* selects all the a tags that are children of the div */
+/* selecting multiple element types at once, these are seperated by a comma */
+
+div.orange, a#blue-button {
+    height: 30px;
+}
+
+/* selects all children of the first element that are selected by the second element */
+
 div a {
-    margin: 60px;
+    opacity: 87%;
 }
 
-/* selects all the a tags that are direct children of the div */
+/* selects the first element hat matches the second element and is a child of the first element */
 div > a {
-    margin: 30px;
+    opacity: 95%;
 }
 
-/* selects the p tags that are directly adjacent to the a tags */
-a + p {
-    color:rgb(225, 86, 225);
+/* selects the second element that is directly adjacent to the first element */
+div + a {
+    background-color: aqua;
 }
 
-/* pseudo classes, refer to the state of an element */
+/* pseudo classes */
 
 div:hover {
-    color: yellow;
+    opacity: 70%;
 }
 
-
-/* pseudo elements, this inserts elements into the html document  */
-
+/* pseudo selector */
 div::after {
-    content: 'hello';
+    content: hidden
 }
-
