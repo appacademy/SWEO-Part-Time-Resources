@@ -16,6 +16,10 @@ The goal here will be the following:
 		***We won't actually be using the suit of the card but it should be present regardless.
 	The array of the cards needs to be randomized.
 		*You shouldn't get an A, then a 2, then a 3, then a 4 all in a row and from the same suits.
+		**Bonus: "Shuffle the deck" by splitting the cards array in half.
+			Create a new deck and fill it up by
+			randomly adding items to it from one half or the other half 
+			until both half decks are empty.
 	
 	Play:
 	The opponent will get 2 cards from the deck.
