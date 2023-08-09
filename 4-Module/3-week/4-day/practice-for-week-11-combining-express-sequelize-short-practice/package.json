@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "dotenv-cli": "^7.2.1",
+    "sqlite3": "^5.1.6"
+  },
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "sequelize": "^6.32.0",
+    "sequelize-cli": "^6.6.1"
+  }
+}
