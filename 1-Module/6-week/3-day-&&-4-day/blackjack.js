@@ -7,6 +7,7 @@ The goal here will be the following:
 	The game will need an [array] of cards:
 		cards will need a value of A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q, K
 		cards will need a suit from S, D, H, C or Spade, Diamond, Heart, Club
+		cards of a J, Q, or K have a value of 10
 		cards with an A, or Ace, can be either 1 or an 11.
 			That value can change mid-round if the player or opponent draws a card that would have made the total go above 21.
 				*Think of where this additional logic should be added
@@ -42,16 +43,54 @@ The goal here will be the following:
 				They reach 17+ and are tied with player. Draw, no one wins.
 	
 	Another round begins
-	*The cards used in the previous rounds are gone from the deck
-	*If you choose to add betting to this project, the total $ for the player will need to be updated each round they win or lose
-	*If you play enough rounds that the deck is getting low on cards
+	*The cards used in the previous rounds are gone from the deck until shuffled back in.
+	*To shuffle:
 		Add all the cards that have been used back into the deck
 		Randomize the order of the deck
 		Choose the logic you'll use on when to shuffle so that you never run into a round where there aren't enough cards
 		**Bonus, you can setup your deck to include 2 copies of every card
+	*If you choose to add betting to this project, the total $ for the player will need to be updated each round they win or lose
+
 */
 
 
 const blackJack = () => {
-	// your code here
+	const deck = [
+		'AS', '2S', '3S', '4S', '5S', '6S', '7S', '8S', '9S', '10S', 'JS', 'QS', 'KS',
+		'AD', '2D', '3D', '4D', '5D', '6D', '7D', '8D', '9D', '10D', 'JD', 'QD', 'KD',
+		'AH', '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH',
+		'AC', '2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', '10C', 'JC', 'QC', 'KC'
+	]
+
+	let shuffled = shuffle(deck)
+	console.log(shuffled)
 }
+
+const shuffle = (deck, shuffleCount = 5) => {
+	if (shuffleCount === 0) return deck
+	if (!Array.isArray(deck)) {
+		console.log("Error, can not shuffle a deck that is not an array")
+		return null
+	}
+
+	let halfDeckLength = Math.floor(deck.length / 2)
+	const [split1, split2] = [deck.slice(0, halfDeckLength), deck.slice(halfDeckLength)]  // destructure deck
+
+	let shuffled = []
+
+	while (split1.length || split2.length) {
+		let binary = Math.floor(Math.random() * 2)
+
+		if (binary) {
+			if (split1.length) shuffled.push(split1.pop())
+			else shuffled.push(split2.pop())
+		} else {
+			if (split2.length) shuffled.push(split2.pop())
+			else shuffled.push(split1.pop())
+		}
+	}
+
+	return shuffle(shuffled, shuffleCount - 1)
+}
+
+blackJack()
