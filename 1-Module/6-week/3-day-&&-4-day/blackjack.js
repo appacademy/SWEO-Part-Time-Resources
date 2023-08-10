@@ -41,7 +41,7 @@ The goal here will be the following:
 				They beat the player and win the round.
 				They go above 21 and lose. Player wins.
 				They reach 17+ and are tied with player. Draw, no one wins.
-	
+
 	Another round begins
 	*The cards used in the previous rounds are gone from the deck until shuffled back in.
 	*To shuffle:
@@ -62,35 +62,30 @@ const blackJack = () => {
 		'AC', '2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', '10C', 'JC', 'QC', 'KC'
 	]
 
-	let shuffled = shuffle(deck)
-	console.log(shuffled)
+	console.log(shuffle(deck))
 }
 
-const shuffle = (deck, shuffleCount = 5) => {
-	if (shuffleCount === 0) return deck
-	if (!Array.isArray(deck)) {
-		console.log("Error, can not shuffle a deck that is not an array")
-		return null
-	}
+const shuffle = (deck, shuffleTimes = 5) => {
+	if (shuffleTimes === 0) return deck
+	
+	let halfwayIndex = Math.floor(deck.length / 2)
+	let [half1, half2] = [deck.slice(0, halfwayIndex), deck.slice(halfwayIndex)]  // destructuring
 
-	let halfDeckLength = Math.floor(deck.length / 2)
-	const [split1, split2] = [deck.slice(0, halfDeckLength), deck.slice(halfDeckLength)]  // destructure deck
+	let shuffled = [];
+	while (half1.length || half2.length) {
+		let binary = Math.floor(Math.random() * 2) // 1 or 0
 
-	let shuffled = []
-
-	while (split1.length || split2.length) {
-		let binary = Math.floor(Math.random() * 2)
-
-		if (binary) {
-			if (split1.length) shuffled.push(split1.pop())
-			else shuffled.push(split2.pop())
-		} else {
-			if (split2.length) shuffled.push(split2.pop())
-			else shuffled.push(split1.pop())
+		if (binary) { // random number was a 1
+			if (half1.length)	shuffled.push(half1.pop()) // as long as there are cards left
+			else shuffled.push(half2.pop()) 
+		} else { // random number was a 0
+			if (half2.length) shuffled.push(half2.pop()) // as long as there are cards left
+			else shuffled.push(half1.pop())
 		}
+
 	}
 
-	return shuffle(shuffled, shuffleCount - 1)
+	return shuffle(shuffled, shuffleTimes -1)
 }
 
 blackJack()
