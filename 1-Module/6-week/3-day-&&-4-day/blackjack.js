@@ -30,6 +30,7 @@ The goal here will be the following:
 		**Bonus, have a readline input that repeats what cards they have in case they forget.
 	The player then has 2 options:
 		They may ask for another card
+			if you get another card and your val goes above 21, you lose
 		They may stop asking for cards and move on
 		*Bonus, asking for another card here could be done as recursion
 	When the player wants to move on, the opponent reveals their hidden card
@@ -53,21 +54,146 @@ The goal here will be the following:
 
 */
 
+const readline = require("readline");
 
-const blackJack = () => {
-	const deck = [
-		'AS', '2S', '3S', '4S', '5S', '6S', '7S', '8S', '9S', '10S', 'JS', 'QS', 'KS',
-		'AD', '2D', '3D', '4D', '5D', '6D', '7D', '8D', '9D', '10D', 'JD', 'QD', 'KD',
-		'AH', '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH',
-		'AC', '2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', '10C', 'JC', 'QC', 'KC'
-	]
+const rl = readline.createInterface({
+	input: process.stdin,
+	output: process.stdout
+});
 
-	console.log(shuffle(deck))
+const deck = [
+	'AS', '2S', '3S', '4S', '5S', '6S', '7S', '8S', '9S', '10S', 'JS', 'QS', 'KS',
+	'AD', '2D', '3D', '4D', '5D', '6D', '7D', '8D', '9D', '10D', 'JD', 'QD', 'KD',
+	'AH', '2H', '3H', '4H', '5H', '6H', '7H', '8H', '9H', '10H', 'JH', 'QH', 'KH',
+	'AC', '2C', '3C', '4C', '5C', '6C', '7C', '8C', '9C', '10C', 'JC', 'QC', 'KC'
+]
+
+const blackJack = (deck) => {
+	deck = shuffle(deck)
+	console.log("heres the deck, ", deck)
+
+	// Start dealing the cards
+	let playerHand = [];
+	let opponentHand = [];
+	for (let i = 0; i < 4; i++) {
+		if (i % 2 === 0) playerHand.push(deck.pop())
+		else opponentHand.push(deck.pop())
+	}
+
+	console.log(`Your cards are ${playerHand[0]} and ${playerHand[1]}`)
+	console.log(`Your opponent has 1 card face down, and a ${opponentHand[0]}`)
+
+	function playerDrawingCards() {
+		rl.question("Would you like to draw another card? Yes or No ", playerDrawCardAnswer);
+	}
+
+	function playerDrawCardAnswer(answer) {
+		if (answer === "Yes") {
+			playerHand.push(deck.pop())
+			console.log(`Your cards are ${playerHand.join(" and ")}`)
+			console.log(`Your hand value is ${calcHandvalue(playerHand)}`)
+			if (calcHandvalue(playerHand) > 21) {
+				console.log("You Lose")
+				rl.close()
+				return
+			}
+			rl.question("Would you like to draw another card? Yes or No ", playerDrawCardAnswer);
+		}
+		else {
+			console.log(`The opponent cards are ${opponentHand.join(" and ")}`)
+			console.log(`The opponent hand value is ${calcHandvalue(opponentHand)}`)
+			if (calcHandvalue(opponentHand) > calcHandvalue(playerHand)) {
+				console.log("You Lose")
+				rl.close()
+				return
+			}
+			if (calcHandvalue(opponentHand) === calcHandvalue(playerHand)) {
+				console.log("It's a draw")
+				rl.close()
+				return
+			}
+			if (calcHandvalue(opponentHand) < 17) {
+				while (calcHandvalue(opponentHand) < 17) {
+					opponentHand.push(deck.pop())
+				}
+				if (calcHandvalue(opponentHand) > calcHandvalue(playerHand)) {
+					console.log("You Lose")
+					rl.close()
+					return
+				}
+				else if (calcHandvalue(opponentHand) === calcHandvalue(playerHand)) {
+					console.log("It's a draw")
+					rl.close()
+					return
+				}
+				else {
+					console.log("You Win!")
+					rl.close()
+					return
+				}
+			}
+			console.log("You Win!")
+			rl.close()
+			return
+		}
+	}
+
+	function calcHandvalue(hand) {
+		let sum = 0
+		let valObj = {
+			'A': 11,
+			'2': 2,
+			'3': 3,
+			'4': 4,
+			'5': 5,
+			'6': 6,
+			'7': 7,
+			'8': 8,
+			'9': 9,
+			'1': 10,
+			'J': 10,
+			'Q': 10,
+			'K': 10
+		}
+		let aces = 0
+		for (let card of hand) {
+			let val = valObj[card[0]]
+			if (card[0] === "A") {
+				aces++
+				// console.log("found an ace ", aces)
+			}
+			sum += val
+		}
+
+		// console.log("sum big?", sum > 21)
+		// console.log("aces?", aces)
+		// console.log("whileloop going?", sum > 21 && aces > 0)
+
+		while (sum > 21 && aces > 0) {
+			sum -= 10
+			aces--
+		}
+
+		return sum
+	}
+
+
+	playerDrawingCards()
+
+
+
+	// function funcName (args) {
+	// 	rl.question("", cb);
+	// }
+
 }
 
-const shuffle = (deck, shuffleTimes = 5) => {
+
+
+
+const shuffle = (deck, shuffleTimes = 10) => {
 	if (shuffleTimes === 0) return deck
-	
+
 	let halfwayIndex = Math.floor(deck.length / 2)
 	let [half1, half2] = [deck.slice(0, halfwayIndex), deck.slice(halfwayIndex)]  // destructuring
 
@@ -76,16 +202,15 @@ const shuffle = (deck, shuffleTimes = 5) => {
 		let binary = Math.floor(Math.random() * 2) // 1 or 0
 
 		if (binary) { // random number was a 1
-			if (half1.length)	shuffled.push(half1.pop()) // as long as there are cards left
-			else shuffled.push(half2.pop()) 
+			if (half1.length) shuffled.push(half1.pop()) // as long as there are cards left
+			else shuffled.push(half2.pop())
 		} else { // random number was a 0
 			if (half2.length) shuffled.push(half2.pop()) // as long as there are cards left
 			else shuffled.push(half1.pop())
 		}
-
 	}
 
-	return shuffle(shuffled, shuffleTimes -1)
+	return shuffle(shuffled, shuffleTimes - 1)
 }
 
-blackJack()
+blackJack(deck)
