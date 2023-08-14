@@ -1,3 +1,26 @@
+#one{
+    border: 5px green dashed;
+    color: white;
+    background-color: blue;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#two{
+    border: 1px red solid;
+    color: black;
+    background-color: red;
+
+}
+
+#three{
+    color: red
+}
+
+div {
+    box-shadow: 10px 20px 50px purple;
+    border: 2px solid black;
+}
 alex {
 	border: 1px solid red;
 }
