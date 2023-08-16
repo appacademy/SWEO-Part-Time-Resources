@@ -19,11 +19,11 @@ const dispatch = useDispatch();
 
     console.log("2: I'm in the handleClick function.")
 
-    let someVariable = "Stuff needed such as userId or form data"
+    let dataForThunk = "Data needed such as userId or form data"
 
-    console.log("3: If I need to send anything to my thunk, I'm sending the right info", someVariable)
+    console.log("3: If I need to send anything to my thunk, I'm sending the right info", dataForThunk)
 
-    dispatch(fetchServerData());
+    dispatch(fetchServerData(dataForThunk));
   };
 
   return (
@@ -36,28 +36,31 @@ const dispatch = useDispatch();
 export default MyComponent;
 ```
 
-## Thunk in Reducer
+## Thunk in my store
 
 ```Javascript
 import { updateData } from './actions';
 
-export const fetchServerData = (dataFromComponent) => {
+export const fetchServerData = (dataFromComponent) => async (dispatch) => {
 
-console.log("4: I'm in the right thunk, and received the required info", dataFromComponent)
+    console.log("4: I'm in the right thunk.  If applicable, I received the correct info", dataFromComponent)
 
-  return async (dispatch) => {
     try {
+
       const response = await fetch('api/data');
+
       const data = await response.json();
 
      console.log("8: The data from my server looks good: ", data)
 
       dispatch(updateData(data));
+
     } catch (error) {
+
       console.log('Error fetching server data:', error);
     }
-  };
 };
+
 ```
 
 ## Server
