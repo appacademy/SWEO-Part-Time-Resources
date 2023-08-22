@@ -1,5 +1,9 @@
 # M2W2D1
 
+# June cohort specifically
+
+We've added some folders to today for the adventure game classes and test files that we were working on throughout saturday and now. These will keep getting filled out as we practice TDD as well
+
 ## Assessment
 
 ## Context
