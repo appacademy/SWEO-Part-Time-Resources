@@ -1,6 +1,7 @@
-const {Food} = require('./food');
+const { Food } = require('./food');
 
 class Player {
+
     constructor(name, startingRoom) {
         this.name = name;
         this.currentRoom = startingRoom;
@@ -23,15 +24,14 @@ class Player {
             console.log(`${this.name} is not carrying anything.`);
         } else {
             console.log(`${this.name} is carrying:`);
-            for (let i = 0 ; i < this.items.length ; i++) {
+            for (let i = 0; i < this.items.length; i++) {
                 console.log(`  ${this.items[i].name}`);
             }
         }
     }
 
     getItemByName(name) {
-
-        for (let i = 0 ; i < this.items.length ; i++) {
+        for (let i = 0; i < this.items.length; i++) {
             let item = this.items[i];
             if (item.name.toLowerCase().startsWith(name)) {
                 return this.items.splice(i, 1)[0];
@@ -40,7 +40,7 @@ class Player {
 
         console.log("Item not found");
     }
-    
+
     takeItem(itemName) {
         let item = this.currentRoom.getItemByName(itemName);
 
@@ -52,7 +52,6 @@ class Player {
     }
 
     dropItem(itemName) {
-
         let item = this.getItemByName(itemName);
 
         if (item) {
@@ -72,11 +71,9 @@ class Player {
         } else {
             console.log(`You ate ${item.name}`);
         }
-
     }
-
 }
 
 module.exports = {
-  Player,
+    Player,
 };
