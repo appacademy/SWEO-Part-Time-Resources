@@ -1,16 +1,5 @@
 # M2W3D2
 
-## `aa_update` update
-
-```bash
-mv ~/appacademy ~/appacademy-2021-Sept-E && curl -s https://raw.githubusercontent.com/appacademy/SWEO-Part-Time-Resources/main/utilities/scripts/folder_structure.sh | bash
-```
-
-```text
-Your Cohort's Code
-2021-Sept-E
-```
-
 ## Practice Pt. 1: 20 mins
 
 - If your `should run in O(n) time` test fails, call in a TA
