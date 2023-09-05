@@ -1,9 +1,5 @@
 # M2W4D2
 
-## Linked List Practice Part 1 (30 Min)
-
-## Lecture Part 1
-
 ### Linked List Instance
 
 Linked Lists are data structures that represent a linear sequence of "vertices"
@@ -48,8 +44,6 @@ very similar traits, the difference is how data is stored.
   nodes in constant time. In order to find a node, we must iterate over the
   entire list until we find our target node.
 
-## Linked List Practice Part 2 (20 Min)
-
 ### Linked List Types
 
 | List Type         | Description                                                                                                   | Direction                        |
@@ -81,10 +75,6 @@ was found at any node.
 - Inserting a value:
 - Deleting a node:
 
-## Linked list Practice Part 3 (15 min)
-
-## Lecture Part 3
-
 ## Stack & Queues
 
 Stacks and queues both represent a linear collection of nodes or values, and in
@@ -109,47 +99,11 @@ removed.
   - Array implementation may work for what you need; easier to read code
   - Evaluate _readability, maintainability_ and _simplicity costs_
 
-### Implement a Stack using an Array
+## Implement a Queue using an Array
 
-```js
-class Stack {
-  constructor() {
-    this.store = new Array();
-  }
-  size() {
-    //return the length of the stack
-    return this.store.length;
-  }
-
-  push(ele) {
-    //this will add element to end of stack
-    this.store.push(ele);
-    return true;
-  }
-
-  pop() {
-    //remove the last element
-    return this.store.pop();
-  }
-
-  peek() {
-    //return the last element
-    return this.store[this.store.length - 1];
-  }
-}
-```
-
-## Implement a Queue using an Array (10 Min)
-
-Should have these methods:
+Your Queue should have these methods:
 
 - size
 - enqueue
 - dequeue
-- peek
-
-## Linked List Practice for Wedensday (3 Hours)
-
-## Bonus
-
-Implement a queue using a linked list and make sure to test it!
+- peek (return what's coming next)

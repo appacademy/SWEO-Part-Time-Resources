@@ -28,13 +28,3 @@ const sum = (nums) => {
 
 console.log(sum([1, 2, 3, 4, 5]));
 ```
-
-## Practices
-
-- Array Practice
-- Binary Practice
-- Dynamic Array Practice
-
-## Lunch
-
-## Practice Assessment

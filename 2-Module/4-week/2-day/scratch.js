@@ -1,6 +1,6 @@
 class Queue {
   constructor() {
-    this.store = new Array()
+    this.data = new Array()
   }
 
   size() {
