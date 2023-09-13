@@ -20,7 +20,11 @@ two.left = one;
 two.right = three;
 six.left = five;
 six.right = seven;
-
+/*
+						4
+				2	 			6
+			1		3		5		7
+*/
 
 // Depth First Search
 function binaryTreeSearch(root, target) {
