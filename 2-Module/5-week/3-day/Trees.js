@@ -132,6 +132,6 @@ depthFirstTraversal(four)
 console.log("---------- ************ ----------")
 
 /*
-Feels awfully familiar... Why are we getting the same result as our recursive\
-traversal implementation?
+Feels awfully familiar... Why are we getting the same result as 
+our recursive traversal implementation?
 */
