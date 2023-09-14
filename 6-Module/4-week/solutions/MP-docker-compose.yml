@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    image: flaskapp
+    ports:
+      - "5000:5000"
+    environment:
+      FLASK_APP: book_ratings.py
+      FLASK_ENV: development
+      DATABASE_URL: postgresql://ratings_user:password@postgres/ratings
+    networks:
+      pgflaskapp:
+    volumes:
+      - ".:/app"
+    depends_on:
+      - "db"
+    command: ["./entrypoint.sh"]
+
+  db:
+    image: postgres:12-alpine
+    environment:
+      POSTGRES_USER: ratings_user
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: ratings
+    volumes:
+      - postgres-db:/var/lib/postgresql/data/
+    networks:
+      pgflaskapp:
+        aliases:
+          - "postgres"
+
+volumes:
+  postgres-db:
+
+networks:
+  pgflaskapp:
+    driver: bridge
