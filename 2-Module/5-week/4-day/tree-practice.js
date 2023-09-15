@@ -126,7 +126,7 @@ function getParentNode(node, target) {
 }
 
 function inOrderPredecessor(node, target) {
-  let current = rootNode;
+  let current = node;
   let stack = [];
   let predecessor = null;
 
@@ -150,7 +150,7 @@ function inOrderPredecessor(node, target) {
 
 function deleteNodeBST(node, target) {
   // Do a traversal to find the node. Keep track of the parent
-  let parentNode = getParentNode(rootNode, target);
+  let parentNode = getParentNode(node, target);
 
   // Undefined if the target cannot be found
   if (parentNode === undefined) return undefined;
@@ -159,14 +159,12 @@ function deleteNodeBST(node, target) {
   let targetNode;
   let isLeftChild = false;
   if (!parentNode) {
-    targetNode = rootNode;
+    targetNode = node;
   } else if (parentNode.left && parentNode.left.val === target) {
     targetNode = parentNode.left;
     isLeftChild = true;
   } else if (parentNode.right && parentNode.right.val === target) {
     targetNode = parentNode.right;
-  } else {
-    throw Error("Algorithm Error: This should never happen");
   }
 
   // Case 0: Zero children and no parent:
@@ -183,8 +181,8 @@ function deleteNodeBST(node, target) {
   // Case 2: Two children:
   //   set the value to its in-order predecessor, then delete the predecessor
   else if (targetNode.left && targetNode.right) {
-    let predecessor = inOrderPredecessor(rootNode, target);
-    deleteNodeBST(rootNode, predecessor);
+    let predecessor = inOrderPredecessor(node, target);
+    deleteNodeBST(node, predecessor);
     targetNode.val = predecessor;
   }
 
