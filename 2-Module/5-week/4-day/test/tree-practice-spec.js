@@ -52,6 +52,7 @@ describe('Binary Tree Practice', () => {
     //         6       15
     //                /
     //              14
+
     bstRootBig = new TreeNode(8);
     bstRootBig.left = new TreeNode(3);
     bstRootBig.left.left = new TreeNode(2);
@@ -356,22 +357,18 @@ describe('Binary Tree Practice', () => {
   });
 
   describe('inOrderPredecessor', () => {
-
     it('returns the in-order predecessor of the target node', function() {
       expect(inOrderPredecessor(bstRoot, 4)).to.equal(3);
       expect(inOrderPredecessor(bstRootUnbalanced, 6)).to.equal(5);
       expect(inOrderPredecessor(bstRootBig, 5)).to.equal(4);
       expect(inOrderPredecessor(bstRootBig, 10)).to.equal(8);
-
     });
 
     it('returns null if starting node is the first in-order node', function() {
       expect(inOrderPredecessor(bstRoot, 1)).to.equal(null);
       expect(inOrderPredecessor(bstRootUnbalanced, 1)).to.equal(null);
       expect(inOrderPredecessor(bstRootBig, 1)).to.equal(null);
-
     });
-
   });
 
   describe('deleteNodeBST', () => {
