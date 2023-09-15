@@ -45,25 +45,24 @@ function findMaxBT(node) {
 }
 
 function getHeight(node) {
-  if (!node) return -1
-  return 1 + Math.max(getHeight(node.left), getHeight(node.right));
-
   // if (!node) return -1
-  // if (!node.left && !node.right) return 0
-  // let levels = []
+  // return 1 + Math.max(getHeight(node.left), getHeight(node.right));
 
-  // let queue = [node];
-  // while (queue.length) {
-  //   let length = queue.length
-  //   for (let i = 0; i < length; i++) {
-  //     let curr = queue.shift()
-  //     if (curr.left) queue.push(curr.left)
-  //     if (curr.right) queue.push(curr.right)
-  //   }
-  //   if (queue.length) levels.push("another level")
-  // }
-  // return levels.length
+  if (!node) return -1
+  if (!node.left && !node.right) return 0
+  let levels = []
 
+  let queue = [node];
+  while (queue.length) {
+    let length = queue.length
+    for (let i = 0; i < length; i++) {
+      let curr = queue.shift()
+      if (curr.left) queue.push(curr.left)
+      if (curr.right) queue.push(curr.right)
+    }
+    if (queue.length) levels.push("another level")
+  }
+  return levels.length
 }
 
 function countNodes(node) {
@@ -80,32 +79,51 @@ function countNodes(node) {
 }
 
 function balancedTree(node) {
+  // // recursive
+  // if (!node) return true
+  // let lh = getHeight(node.left)
+  // let rh = getHeight(node.right)
+  // if (lh === rh ||
+  //     lh === rh + 1 ||
+  //     lh === rh - 1) {
+  //   return balancedTree(node.left) && balancedTree(node.right)
+  // }
+  // else return false
+
+
+  // Iterative
   if (!node) return true
-  let lh = getHeight(node.left)
-  let rh = getHeight(node.right)
-  if (lh === rh ||
+  let stack = [node]
+  while (stack.length) {
+    let curr = stack.pop()
+    let lh = getHeight(curr.left)
+    let rh = getHeight(curr.right)
+    if (lh === rh ||
       lh === rh + 1 ||
       lh === rh - 1) {
-    return balancedTree(node.left) && balancedTree(node.right)
+      if (curr.left) stack.push(curr.left)
+      if (curr.right) stack.push(curr.right)
+    }
+    else return false
   }
-  else return false
+  return true
 }
 
 function getParentNode(node, target) {
   if (node.val === target) return null;
 
-  let stack = [node];
+  let queue = [node];
 
-  while (stack.length > 0) {
-    let current = stack.pop();
+  while (queue.length > 0) {
+    let current = queue.shift();
 
     if ((current.left && current.left.val === target) ||
-        (current.right && current.right.val === target)) {
+      (current.right && current.right.val === target)) {
       return current;
     }
 
-    if (current.left) stack.push(current.left);
-    if (current.right) stack.push(current.right);
+    if (current.left) queue.push(current.left);
+    if (current.right) queue.push(current.right);
   }
 
   return undefined;
@@ -138,7 +156,7 @@ function deleteNodeBST(node, target) {
 
   // Undefined if the target cannot be found
   if (parentNode === undefined) return undefined;
-  
+
   // Set target based on parent
   let targetNode;
   let isLeftChild = false;
@@ -186,21 +204,27 @@ function deleteNodeBST(node, target) {
 }
 
 
-bstRootBig = new TreeNode(8);
-bstRootBig.left = new TreeNode(3);
-bstRootBig.left.left = new TreeNode(2);
-bstRootBig.left.left.left = new TreeNode(1);
-bstRootBig.left.right = new TreeNode(5);
-bstRootBig.left.right.left = new TreeNode(4);
-bstRootBig.left.right.right = new TreeNode(7);
-bstRootBig.left.right.right.left = new TreeNode(6);
-bstRootBig.right = new TreeNode(10);
-bstRootBig.right.right = new TreeNode(11);
-bstRootBig.right.right.right = new TreeNode(12);
-bstRootBig.right.right.right.right = new TreeNode(15);
-bstRootBig.right.right.right.right.left = new TreeNode(14);
-debugger
-inOrderPredecessor(bstRootBig, 7)
+// Challenge Question
+function makeArrayOfTheLeftandRightSides(node) {
+
+  return [ [5], [3, 7], [2, 8] ] // every idx is an array of the furthest left and furthest right nodes of a level
+}
+
+// bstRootBig = new TreeNode(8);
+// bstRootBig.left = new TreeNode(3);
+// bstRootBig.left.left = new TreeNode(2);
+// bstRootBig.left.left.left = new TreeNode(1);
+// bstRootBig.left.right = new TreeNode(5);
+// bstRootBig.left.right.left = new TreeNode(4);
+// bstRootBig.left.right.right = new TreeNode(7);
+// bstRootBig.left.right.right.left = new TreeNode(6);
+// bstRootBig.right = new TreeNode(10);
+// bstRootBig.right.right = new TreeNode(11);
+// bstRootBig.right.right.right = new TreeNode(12);
+// bstRootBig.right.right.right.right = new TreeNode(15);
+// bstRootBig.right.right.right.right.left = new TreeNode(14);
+// debugger
+// inOrderPredecessor(bstRootBig, 7)
 
 
 module.exports = {
