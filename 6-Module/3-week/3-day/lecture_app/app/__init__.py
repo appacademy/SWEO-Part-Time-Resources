@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect
 
 from .cats import cats
+from .routes.cat_routes import cats_bp
 # from app.config import Config
 from .config import Config
 
@@ -8,19 +9,12 @@ from .config import Config
 app = Flask(__name__)
 
 app.config.from_object(Config)
+app.register_blueprint(cats_bp, url_prefix='/cats')
 
 @app.route("/")
 def index():
     return render_template("base.html")
 
-@app.route("/cats")
-def all_cats():
-    return render_template("cats.html", cats=cats)
-
-@app.route("/create-cat")
-def new_cat_form():
-    return render_template("new-cat.html")
-
-@app.route("/create-cat", methods=["POST"])
-def create_cat():
-    return "<h1> Created Successfully </h1>"
+@app.route("/redirect")
+def redirecter():
+    return redirect("/cats")
