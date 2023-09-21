@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block main %}
+<h1>Hello from all Cats page</h1>
+
+{% for cat in cats %}
+    <div>
+        <p>Name: {{ cat.name }}</p>
+        <p>Breed: {{ cat.breed }}</p>
+        <p>Age: {{ cat.age }}</p>
+        <p>Weight: {{ cat.weight }}</p>
+    </div>
+{% endfor %}
+
+
+{% endblock %}
