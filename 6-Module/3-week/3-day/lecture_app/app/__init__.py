@@ -18,3 +18,4 @@ def index():
 @app.route("/redirect")
 def redirecter():
     return redirect("/cats")
+
