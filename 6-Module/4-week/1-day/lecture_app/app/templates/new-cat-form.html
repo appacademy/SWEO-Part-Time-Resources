@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block main %}
+<form action="/cats/create-cat" method="POST">
+    {{ form.csrf_token }}
+    {{ form.name.label }} {{ form.name }}
+    {{ form.breed.label }} {{ form.breed }}
+    {{ form.weight.label }} {{ form.weight }}
+    {{ form.age.label }} {{ form.age }}
+    {{ form.submit }}
+</form>
+{% endblock %}
