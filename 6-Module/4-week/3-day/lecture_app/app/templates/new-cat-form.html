@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block main %}
+{% if form.errors %}
+    <div>
+        {% for error in form.errors %}
+            {{ error }}
+        {% endfor %}
+    </div>
+{% endif %}
+<form action="/cats/create-cat" method="POST">
+    {{ form.csrf_token }}
+    {{ form.owner_name.label }} {{ form.owner_name }}
+    {{ form.phone_number.label }} {{ form.phone_number }}
+    {{ form.email.label }} {{ form.email }}
+    {{ form.cat_name.label }} {{ form.cat_name }}
+    {{ form.cat_breed.label }} {{ form.cat_breed }}
+    {{ form.cat_weight.label }} {{ form.cat_weight }}
+    {{ form.cat_age.label }} {{ form.cat_age }}
+    {{ form.submit }}
+
+</form>
+{% endblock %}

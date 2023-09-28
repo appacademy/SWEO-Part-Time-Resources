@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block main %}
+<form action="/create-cat" method="POST">
+    <label for="name"> Name: </label>
+    <input type="text" name="name" id="name"> </input>
+    <label for="breed"> Breed: </label>
+    <input type="text" name="breed" id="breed"> </input>
+    <label for="age">Age:</label>
+    <input type="text" name="age" id="age"> </input>
+    <label for="weight">Weight:</label>
+    <input type="text" name="weight" id="weight"> </input>
+    <button type="submit">Add Cat</button>
+</form>
+{% endblock %}
