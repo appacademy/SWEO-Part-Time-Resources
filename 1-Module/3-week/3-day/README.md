@@ -18,9 +18,12 @@ let cohort = {
       "Charizard"
     ] 
   }, {
-    name: "Blake",
-    currentGame: "Escape from Tarkov",
-    hours: 50
+    name: "Alan",
+    currentGame: "Baldur's Gate 3",
+    character:{
+      class: "Fighter",
+      level : 8,
+    }
   }],
 }
 
