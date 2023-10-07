@@ -1,0 +1,10 @@
+/* Goals:
+modular css
+some bigger element css chunks
+typical webpage layout
+darkmode
+new font
+glowing animations
+*/
+@import "./elementStyles.css";
+@import "./modularStyles.css";

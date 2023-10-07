@@ -1,0 +1,24 @@
+/* 
+ids
+classes
+un-opinionated
+*/
+
+.flex {
+	display: flex;
+}
+
+.fdc {
+	display: flex;
+	flex-direction: column;
+}
+
+.fdr {
+	display: flex;
+	flex-direction: row;
+}
+
+.fw {
+	display: flex;
+	flex-wrap: wrap;
+}

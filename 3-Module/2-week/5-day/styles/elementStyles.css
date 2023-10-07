@@ -1,0 +1,71 @@
+/* 
+Main html elements with multiple styles in one
+Aka (also known as) component styling
+Will be much more opinionated
+*/
+body {
+	margin: 0px;
+	background-color: rgb(1, 6, 33);
+	color: rgb(183, 248, 255);
+	font-size: 1.25em;
+}
+
+nav {
+	border: 2px solid black;
+	display: flex;
+	justify-content: flex-end;
+	height:50px;
+	align-items: center;
+	background-color: rgb(23, 22, 35);
+	box-shadow: 0px 0px 10px 5px rgb(183, 248, 255);
+	transition: box-shadow 2s;
+}
+
+nav:hover {
+	box-shadow: 0px 0px 10px 5px purple;
+}
+
+nav * {
+	padding: 0px 10px;
+	margin: 0px 10px;
+	height: 75%;
+}
+
+nav span {
+	padding: 0px;
+	margin: 0px;
+}
+
+a {
+	color: rgb(183, 248, 255);
+	text-decoration: none;
+	border: 2px solid white;
+	background-color: purple;
+}
+
+button {
+	cursor: pointer;
+	background-color: purple;
+	border: 2px solid white;
+	color: rgb(183, 248, 255);
+	height: 75%;
+}
+
+h1 {
+	display: flex;
+	justify-content: center;
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-left: 10px;
+}
