@@ -18,21 +18,22 @@ function secondStep(input) {
 function thirdStep(input) {
   let res = input.map(([key, val]) => [key, val.split("+").join(" ")])
   return res
-	// Hello World%21
+  // Hello World%21
 }
 
 function fourthStep(input) {
   return input.map(([key, val]) => [key, decodeURIComponent(val)])
-	// Hello World!
+  // Hello World!
 }
 
 function fifthStep(input) {
   let obj = {};
   for (let i = 0; i < input.length; i++) {
-    obj[input[i][0]] = input[i][1]
+    let [key, val] = [input[i]]
+    obj[key] = val
   }
   return obj
-	// {all the kvp's as key-val pairs}
+
   return input.reduce((acc, [key, value]) => {
     acc[key] = value;
     return acc;
@@ -48,7 +49,9 @@ function parseBody(str) {
   return s5
 }
 
-/******************************************************************************/
+// name=Fido&color=black&age=1&description=Hello+World%21
+
+/***************************************************************/
 /******************* DO NOT CHANGE THE CODE BELOW THIS LINE *******************/
 
 module.exports = {
