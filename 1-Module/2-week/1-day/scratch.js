@@ -21,11 +21,11 @@
 
 
 
-let fruits = ['apple', 'banana', 'lemon', 'cherry', 'pineapple', 'orange'];
+// let fruits = ['apple', 'banana', 'lemon', 'cherry', 'pineapple', 'orange'];
 
-for (let i = 0; i < fruits.length; i++) {
-    console.log('OUTER LOOP ------------------')
-    for (let j = i + 1; j < fruits.length; j++) {
-        console.log(fruits[i], fruits[j])
-    }
-}
+// for (let i = 0; i < fruits.length; i++) {
+//     console.log('OUTER LOOP ------------------')
+//     for (let j = i + 1; j < fruits.length; j++) {
+//         console.log(fruits[i], fruits[j]);
+//     }
+// }
