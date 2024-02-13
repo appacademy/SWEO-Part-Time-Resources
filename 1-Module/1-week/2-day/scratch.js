@@ -81,12 +81,36 @@ console.log(userName)
 
 //TWO OTHER WAYS TO DECLARE VARIABLES
 
-var userName2; //NOBODY LIKES VAR
+// var userName2; //NOBODY LIKES VAR
 
-const userName3 = 'Bubbles'; //Stands for constant
+// const userName3 = 'Bubbles'; //Stands for constant
 
 // userName3 = 'Puppies';
 
 // console.log(userName3)
 
 //OLD WAY: var CONSTANT
+
+
+//Arithmetic Operators
+
+// +, -, /, *, %
+
+//Comparison Operators
+
+// >, <, ==, ===, !=, !==
+
+//console.log(4 > 5)
+
+//console.log(4 != 4)
+
+//LOOSE EQUALITY ==
+//DOES NOT CARE ABOUT THE DATA TYPE, JUST THE VALUE
+
+console.log('4' == 4) //TRUE
+
+//STRICT EQUALITY ===
+//CARES ABOUT THE DATA TYPE
+
+console.log('4' === 4) //FALSE
+

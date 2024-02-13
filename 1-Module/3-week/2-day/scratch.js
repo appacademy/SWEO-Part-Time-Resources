@@ -93,12 +93,13 @@
 //     likesTreats: true,
 //     meow: function() {
 //         console.log("Meow")
-//     }
+//     },
 // }
+
+
 
 // //The meow function is special because it only exists on the CAT object
 // //So it is called a METHOD
 // //In order to call a method we have to use DOT NOTATION
 
-// cat.meow();
-   
+cat.meow()
