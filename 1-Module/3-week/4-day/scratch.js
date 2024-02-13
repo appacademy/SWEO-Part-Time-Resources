@@ -101,12 +101,13 @@
 
 // console.log(colorArr)
 
-let user = { username: "King", email: "king@king.com", password: "password", followers: 100 }
+// let user = { username: "King", email: "king@king.com", password: "password", followers: 100 }
 
-// let username = user.username;
-// let password = user.password;
-// let followers = user.followers;
+// // let username = user.username;
+// // let password = user.password;
+// // let followers = user.followers;
 
-let { username, email: userEmail, followers } = user;
+// let { username, email: userEmail, followers } = user;
 
-console.log(username)
+// console.log(username)
+
