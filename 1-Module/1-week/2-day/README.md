@@ -13,7 +13,7 @@
 
 ## Student Portal
 
-[Link to site](https://appacademycommunity.force.com/trackers)
+[Link to site](https://my.appacademy.io/)
 
 - Email - use the one that you signed up to app academy with
 - PIN - default is 1234
