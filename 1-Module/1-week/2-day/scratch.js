@@ -1,120 +1,133 @@
-// console.log('jesse says hello')
+// expressions
+
+5 + 5;
+
 // console.log('hello world')
 
-5 + 5
+// comments
 
-'jesse' + 'brooks'
+// console.log(5 + 5)
 
-// console.log('jesse' + 'brooks')
+/* jksdfljasfk
+akjsdflasdkfj
+laksjdflaskjdf
+laskjdflkjasd
+alsajkdflsakj */
 
-1 > 5
-// console.log('hello from console.log', 1 > 5)
-
-// console.log(5 === 5) //  => true
-// console.log(5 !== 5) // => false
-
-5 + 5 // adding 5 and 5 together
-
-// 5 +5
-// console.log('hello world')
-
-/*
-asdklfjsldkfjsaf
-aldfjkasdkfjsadf
-lasdjkflasdkjfasldfj
-lsakjdflskjdfsaldkfjsal
-lakjdsfljskadf
-5 + 5
-console.log('test')
-*/
-
-/* saldfjkslfkjsaflksjafsalfkjsa
-saldfjkslfkjsaflksjafsalfkjsa
-saldfjkslfkjsaflksjafsalfkjsasaldfjkslfkjsaf
-lksjafsalfkjsasaldfjkslfkjsaflksjafsalfkjsa
-*/
+// this is a comments, comments get ignored :)
 
 // strings
-'jslakdf 1 *$!@#^* /'
-// console.log('jslakdf 1 *$!@#^* /'.length)
+'12321laksdjfaslkASDFSADF!@#!$^!'
+// console.log('12321laksdjfaslkASDFSADF!@#!$^!'.length)
 
-// numbers
+// number
+
 5
 5.5
 -5
 
-// console.log(5 + (5 * 3))
-// console.log()
-
-/*
+/* number operations
 + addition
-- subtration
+- subtraction
 * multiplication
 / division
-% modulo
+% modulo -- division, but returns the remainder
+15 % 5 === 0
 */
 
-// console.log(5 + 5)
-// console.log(5 - 7)
-// console.log(5 * 20)
+// NaN
+// console.log(20 / 'test')
+// console.log(20 / '20')
+
+// console.log(5 + 10)
+// console.log(3 - 10)
+// console.log(2 * 12)
 // console.log(20 / 7)
-// console.log(20 / 0)
-// console.log(18 % 3)
+// console.log(16 % 5)
+
+// console.log(20 / someValue)
+
+// console.log(21 / 0)
+
+// console.log(-Infinity / Infinity)
+
+// console.log(0 / 0);
+
+// console.log(0 % 0);
+
 
 // booleans
+// console.log(true, false)
+
+// ! not boolean operator
 // console.log(!true)
-// console.log(!false)
+// console.log(true)
+
+// && AND boolean operator
+// console.log(1 < 5 && false)
 
 // console.log(true && true)
-// console.log(true && false)
-// console.log(!true && !false)
+// console.log(true && !false)
+// console.log(!false && true)
+// console.log(false && false)
 
-// console.log(true && true) // => true
-// console.log(true && false) // => false
-// console.log(false && true) // => false
-// console.log(false && false) // => false
-// console.log(!false && !false) // => true
+// || OR boolean operator
 
-// console.log(5 === 5 && 6 === 6) // => true
-// console.log(5 === 6 && true) // => false
-// console.log(5 === 6 && 5 === 6) // => false
+// console.log(true || true)
+// console.log(true || false)
+// console.log(false || true)
+// console.log(false || false)
+
+// console.log(5 < 9); // true
+// console.log(5 > 9); //
 
 
-// || OR
-// console.log(true || true) // => true
-// console.log(true || false) // => true
-// console.log(false || true) // => true
-// console.log(false || false) // => false
+// equality
 
-// console.log(5 === 5 || 5 === 5) // => true
-// console.log(5 === 5 || 5 === 6) // => true
-// console.log(5 === 6 || 5 === 5 ) // => true
-// console.log(5 === 6 || 5 === 6) // => false
+// strict equality: ===
+// checks for value + data type
 
-/* ===, ==, <, >
-strict ===
-loose ==
-*/
-
-// console.log(10 === '10')
-// console.log(10 == '10')
-
+// console.log(5 === 6)
 // console.log(5 === 5)
+// console.log(5 === '5')
+
+// loose equality: ==
 // console.log(5 == '5')
-// console.log('hello' === 'hello')
-// console.log(5 !== 5)
-// console.log(1 < 5)
-// console.log(1 > 5)
+
+// console.log(true === true)
+// console.log(true !== false)
+// console.log(true === !false)
 
 // variables
-// let whatever = 5
-// console.log(whatever)
-// whatever = 4
-// console.log(whatever)
+// let someValue = 5
 
-// let someNumber; //declaration
-// console.log(someNumber)
-// someNumber = 10 // assignment / reassignment
+// console.log(someValue)
+
+// someValue = 4
+
+// console.log(someValue)
+
+let someNumber
+
 // console.log(someNumber)
 
-// let anotherNumber = 10 // initialization
+someNumber = 10
+
+let anotherNumber = 15
+
+console.log(someNumber + anotherNumber)
+
+
+// preliminary scope example
+
+// //--------------------------------
+// let blah
+//     //------------------------
+//     blah = 5                //|
+//     //                      //|
+//     //------------------------
+
+
+//  console.log(blah)
+
+// //----------------------------------

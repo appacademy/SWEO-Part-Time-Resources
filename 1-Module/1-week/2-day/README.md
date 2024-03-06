@@ -16,15 +16,13 @@
 [Link to site](https://my.appacademy.io/)
 
 - Email - use the one that you signed up to app academy with
-- PIN - default is 1234
+- Password - same password you use for a/A open
 
 ## Live Questions Channel
 
 This is a element of your learning here at App Academy. You will start off by just reaching out for help without any expectations of question quality from us. By the time you complete the course here, we will expect that you have learned how to ask effective questions as if you were in a work place asking help from a senior engineer.
 
 For now, just post that you need help and your room number in the live-questions channel.
-
-`#{yyyy}-{mm}-{dd}-questions`
 
 Please ask questions during lectures. Use the zoom raised hand feature to avoid talking over me or other students.
 
