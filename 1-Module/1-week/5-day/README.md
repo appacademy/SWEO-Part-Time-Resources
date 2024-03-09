@@ -39,3 +39,61 @@ Create a hypothesis and test it out.
     - Can you make it more efficient?
     - Can you make it easier to read?
     - Check if there could be any situation where it breaks your solution
+
+## Function Expression Declaration
+is a way of defining a function in JavaScript by assigning it to a variable. In a function expression, the function itself becomes a value that can be assigned to a variable.
+
+
+
+
+
+
+
+let greet = function (name) {
+  console.log("Hello, " + name);
+};
+
+
+## Mutability
+
+Mutable types:
+Arrays
+Objects (we will learn these later)
+
+Immutable Types
+Numbers
+Strings
+NaN
+undefined
+null
+
+In JavaScript, mutability refers to the property of certain data types that allows their values to be changed after they are created.
+
+
+
+let arr = [1, 2, 3];
+arr[1] = 7;
+console.log(arr); //[1,7,3]
+
+let str = "abc";
+str[1] = "x";
+console.log(str); // 'abc';
+
+//reassigning !== mutable
+let str = "abc";
+str += "d"; // str = str + 'd';
+console.log(str); // 'abcd'
+
+
+
+## Nested loops
+
+Nested loops refer to the situation where you have one loop (inner loop) inside another loop (outer loop).
+
+Pairs in loops
+Unique Pairs
+multidimensional array
+is an array that contains other arrays as its elements.
+
+2D array
+is an array where each element in the outer array is itself an array, forming a grid-like structure with rows and columns. It's called "2D" because it has two dimensions: rows and columns.
