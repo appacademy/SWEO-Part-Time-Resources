@@ -105,7 +105,7 @@ You can convert strings into arrays and vice versa with the "split" and "join" m
 
     let splitAgain = joinedString.split(" ") // this will split the joinedArray for each " "
 
-    console.log(splitAgain) // Prins: ???
+    console.log(splitAgain) // Prints: ???
     ```
 
 

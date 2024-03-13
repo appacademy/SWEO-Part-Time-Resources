@@ -1,42 +1,32 @@
-// -------------------------------------- SPLICE --------------------------------------
+// -------------------------------- SPLICE --------------------------------
+// let myArray = ["Hello", "my", "name", "cat's", "is", "Garfield."]
 
-// let myArray = ['apple', 'orange', 'watermelon', 'grape', 'banana', "fruitX", "fruitY"]
-
-
-// let myFunction = function() {
-//     return "hello"
-// }
-
-// let cutFruits = myArray.splice(0, myArray.length - 1, myFunction, "fruitZ")
+// myArray.splice(1, myArray.length - 1, "world")
 
 // console.log(myArray)
-// console.log(cutFruits)
+
+
+// let myArray = ['apple', 'orange', 'watermelon', 'grape', 'banana']
+
+// let cutFruits = myArray.splice(1, 3) // this will delete 3 items, starting at index 1. It will then store the deleted items into the "cutFruits" variable as an array
+
+
+// console.log('myArray 2:', myArray) // Prints: ['apple', 'banana']
+// console.log(cutFruits) // Prints: ['orange', 'watermelon', 'grape']
 
 
 
-// ---------------------------------- SPLIT and JOIN ----------------------------------
+// ---------------------------- JOIN and SPLIT ----------------------------
 
 // // SPLIT
-// let string = "hello_world_it's_good_to_see_you_"
-// let splitArray = string.split("asdfasdfasdf") // this will split the string using the "_" as the splitter
-
-// console.log(splitArray)
-
-
 // let string = "I dream of electric sheep"
 // let splitArray = string.split("") // this will split the string using ""
 
 // console.log(splitArray) // Prints: ???
 
 
+
 // // JOIN
-// let array = ["hello", "world", "it's", "good", "to", "see", "you"]
-// let joinedString = array.join(",") // this will join the array using " "
-
-// console.log(joinedString) // Prints: "hello world it's good to see you"
-
-
-
 // let array = ["hello", "world", "it's", "good", "to", "see", "you"]
 
 // let joinedString = array.join(" ") // this will join the array using ","
@@ -45,30 +35,27 @@
 
 // let splitAgain = joinedString.split(" ") // this will split the joinedArray for each " "
 
-// console.log(splitAgain) // Prins: ???
+// console.log(splitAgain) // Prints: ???
 
 
-// let string = "ZhZeZzzzlZloZZzzzZZZ".toLowerCase()
-// console.log(string.split("z".toLowerCase()))
+// let joinAndSplit = array.join(" ").split(" ").join(" ")
+// console.log(joinAndSplit)
 
-// let splitArray = string.split("Z").join("")
-// // let joinAgain = splitArray.join("")
+// let joined = array.join("asdfasdgagrs")
+// console.log(joined)
 
-// console.log(splitArray)
+
+
+// // Why use split or join
+// let string = "Vankouver"
 
 // let splitArray = string.split("")
-// splitArray[3] = "l"
-// let joinAgain = splitArray.join("")
+// splitArray[3] = 'c'
 
-// console.log(joinAgain)
-
-
-let string = 'Zhelloz'
-
-let splitArray = string.split("Z").join("")
-let splitArrayAgain = splitArray.split('z').join("")
-
-console.log(splitArrayAgain)
+// let joinedString = splitArray.join("")
+// console.log(joinedString)
 
 
-console.log(string)
+// let splitArray = string.split("k")
+// let joinedString = splitArray.join("c")
+// console.log(joinedString)
