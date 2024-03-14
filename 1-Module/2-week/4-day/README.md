@@ -9,7 +9,6 @@ There are 8 data types in JavaScript:
 6. BigInt
 7. Symbol
 
-At App Academy, you only need to worry about the first 5.\
 For more information, you can visit [MDN's](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures) page on datatypes.
 
 You've already learned about strings, numbers, and boolean. You might have already started using "undefined", but now it's time to add "null" into the mix, and see how that differs from other data types.
