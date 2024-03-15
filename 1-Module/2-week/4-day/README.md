@@ -1,6 +1,6 @@
 # Types
 
-There are 8 data types in JavaScript:
+There are 7 data types in JavaScript:
 1. String
 2. Number
 3. Boolean
@@ -91,26 +91,26 @@ When considering falsy values, and their data types. Things can get weird.\
 Check out what happens if we compare falsy values with each other:
 ```js
 // Undefined comparisons
-console.log(undefined === undefined) // Prints: "true"
-console.log(undefined == undefined) // Prints: "true"
+console.log(undefined === undefined) // Prints: ???
+console.log(undefined == undefined) // Prints: ???
 
-console.log(undefined === null) // Prints: "false"
-console.log(undefined == null) // Prints: "true"
+console.log(undefined === null) // Prints: ???
+console.log(undefined == null) // Prints: ???
 
 // Null comparisons
-console.log(null === null) // Prints: "true"
-console.log(null == null) // Prints: "true"
+console.log(null === null) // Prints: ???
+console.log(null == null) // Prints: ???
 
-console.log(null === false) // Prints: "false"
-console.log(null == false) // Prints: "false"
+console.log(null === false) // Prints: ???
+console.log(null == false) // Prints: ???
 
 
 // Not a Number comparisons
-console.log(NaN === null) // Prints: "false"
-console.log(NaN == null) // Prints: "false"
+console.log(NaN === null) // Prints: ???
+console.log(NaN == null) // Prints: ???
 
-console.log(NaN === undefined) // Prints: "false"
-console.log(NaN == undefined) // Prints: "false"
+console.log(NaN === undefined) // Prints: ???
+console.log(NaN == undefined) // Prints: ???
 ```
 
 Using "==" will perform type conversions with the items you are comparing.\
