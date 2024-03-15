@@ -106,11 +106,11 @@ console.log(null == false) // Prints: ???
 
 
 // Not a Number comparisons
-console.log(NaN === null) // Prints: "false"
-console.log(NaN == null) // Prints: "false"
+console.log(NaN === null) // Prints: ???
+console.log(NaN == null) // Prints: ???
 
-console.log(NaN === undefined) // Prints: "false"
-console.log(NaN == undefined) // Prints: "false"
+console.log(NaN === undefined) // Prints: ???
+console.log(NaN == undefined) // Prints: ???
 ```
 
 Using "==" will perform type conversions with the items you are comparing.\
