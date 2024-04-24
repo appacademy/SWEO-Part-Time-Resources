@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "1-day",
+  "version": "1.0.0",
+  "description": "JavaScript is a single threaded language that can be non-blocking.",
+  "main": "scratch.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

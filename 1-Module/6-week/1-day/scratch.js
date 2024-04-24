@@ -1,6 +1,6 @@
 // Function hoisting
 // hello()
-// let x = 'hello'
+// let x = 'hello' // ReferenceError: Cannot access 'x' before initialization
 // function hello(){
 //     console.log(x)
 // }
@@ -11,8 +11,8 @@
 //     console.log('Hello')
 // }
 // hello() // ReferenceError: Cannot access 'hello' before initialization
-// Function Expression
-// let hello = function(){
+// // Function Expression
+// const hello = function(){
 //     console.log('Hello')
 // }
 
@@ -21,7 +21,6 @@
 // can be used to protect the variables in the function, since an outer scope does not have access to
 // an inner scopes variables
 // you can only use IIFE's with function expressions
-
 
 // iife with function expression
 // const hello = function() {
@@ -61,31 +60,32 @@
 // rl.question("What's up, doc? ", handleResponseOne)
 // console.log('waiting for input for first question')
 
-// // first callback
+// // // first callback
 // function handleResponseOne(firstAnswer) {
-//   console.log(firstAnswer + ' is up.')
-//   // save firstAnswer to answer object
-//   answers['up'] = firstAnswer
-//   rl.question("What's down, clown? ", handleResponseTwo)
-//   console.log('waiting for input for second question')
+//     console.log(firstAnswer + ' is up.')
+//     // save firstAnswer to answer object
+//     answers['up'] = firstAnswer
+//     rl.question("What's down, clown? ", handleResponseTwo)
+//     console.log('waiting for input for second question')
 // }
 
 // // second callback (passed to `rl.question()` in handleResponseOne)
 // function handleResponseTwo(secondAnswer) {
-//   console.log(secondAnswer + ' is down.')
-//   answers['down'] = secondAnswer
-//   rl.question("What's left, Jeff? ", handleResponseThree)
-//   console.log('waiting for input for third question')
+//     console.log(secondAnswer + ' is down.')
+//     answers['down'] = secondAnswer
+//     rl.question("What's left, Jeff? ", handleResponseThree)
+//     console.log('waiting for input for third question')
 // }
 
 // // third callback (passed to `rl.question()` in handleResponseTwo)
 // function handleResponseThree(thirdAnswer) {
-//   console.log(thirdAnswer + ' is left.')
-//   answers['left'] = thirdAnswer
-//   // close the interface
-//   rl.close()
-//   console.log(answers)
+//     console.log(thirdAnswer + ' is left.')
+//     answers['left'] = thirdAnswer
+//     // close the interface
+//     rl.close()
+//     console.log(answers)
 // }
+// console.log('waiting for input for first question')
 
 // --------------- Problem 1 ---------------------------
 // console.log('one');
@@ -94,7 +94,7 @@
 
 // // --------------- Problem 2 ---------------------------
 // const foo = () => {
-//     console.log('two');
+//         console.log('two');
 // };
 
 // console.log('one');
@@ -110,6 +110,11 @@
 // }, 1500);
 
 // console.log('three');
+
+// for(let i = 0; i < 10000000000; i++){
+//     5 + 5
+// }
+// console.log('finished loop')
 
 // --------------- Problem 1 ---------------------------
 // const someCallback = () => {
@@ -160,14 +165,23 @@
 
 // // --------------- Problem 3 ---------------------------
 // const intervalCount = (count, delay) => {
-//     const intervalObj = setInterval(() => {
+//     const intervalId = setInterval(() => {
 //         console.log('time is up');
 //         count--;
 
 //         if (count === 0) {
-//             clearInterval(intervalObj);
+//             clearInterval(intervalId);
 //         }
 //     }, delay);
 // }
 
-// intervalCount(3, 2000);
+// intervalCount(10, 1000);
+
+import * as readline from "node:readline/promises";
+
+const r1 = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout,
+});
+
+r1.close();
