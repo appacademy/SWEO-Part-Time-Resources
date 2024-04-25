@@ -1,0 +1,92 @@
+/* This is the Universal selector */    
+/* * {
+    text-decoration: underline;
+} */
+
+body, html {
+    padding: 0px;
+    margin: 0px;
+}
+/* 
+h1 {
+    font-size: 64px;
+}
+
+p {
+    color: rgb(153, 55, 72);
+}
+
+/* This one is using an ID Selector */
+/* #lp-welcome-box {
+    background-color: aquamarine;
+}
+
+/* This one uses a class selector */
+/* .button-bois {
+    background-color: rgb(246, 159, 230);
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Styling when we hover over buttonboi */
+/* .button-bois:hover {
+    background-color: rgb(226, 133, 209);
+    cursor: pointer;
+}  */ 
+
+
+/* This one uses a attribute selector */
+/* h1[title] {
+    color: orange
+}
+
+.box.orange {
+    background-color: orange;
+}
+
+.box.yellow {
+    background-color: yellow;
+} */
+
+/* You can select multiple elements at once using a comma */
+
+h1,
+h2 {
+    font-weight: 500;
+}
+
+/* div#welcome-lvy {
+    background-color: yellow;
+}
+
+div a {
+    background-color: red;
+}
+
+div > a {
+    background-color: pink;
+}
+
+#a-btn + #b-btn {
+    background-color: rgb(174, 11, 177);
+} */
+
+/* div {
+    background-color: orange;
+}
+
+.howdy-class {
+    background-color: pink;
+}
+
+#howdy-id {
+    background-color: purple;
+} */
+
+#hp-navigation {
+    height: 4rem;
+    background-color: black;
+    padding: 0px;
+    margin: 0px;
+}
