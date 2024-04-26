@@ -1,0 +1,23 @@
+body {
+    height: 100vh;
+}
+
+#outer-box {
+    background-color: aquamarine;
+    height: 20rem;
+}
+
+.box {
+    width: fit-content;
+    height: 5rem;
+    background-color: pink;
+    padding: 10px;
+    border: 20px solid black;
+    margin: 20px;
+    display: inline-block;
+}
+
+#floatie {
+    position: fixed;
+    bottom: 0rem;
+}
