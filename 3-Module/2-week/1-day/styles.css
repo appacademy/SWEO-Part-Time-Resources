@@ -1,0 +1,57 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 187, 206);
+    height: 100vh;
+}
+
+/* body {
+    padding: 0px;
+    margin: 0px;
+} */
+
+.container {
+    background-color: white;
+    padding:10px;
+    height: 40%;
+    width: 70%;
+    gap: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+/* 
+.item {
+    width: 6rem;
+    height: 6rem;
+} */
+
+/* nav {
+    background-color: black;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+} */
+
+
+
+#btn-1 {
+    width: 6rem;
+    height: 6rem;
+}
+
+#btn-2 {
+    flex-grow: 0.3;
+    height: 6rem;
+    display: none;
+    visibility: hidden;
+}
+
+#btn-3 {
+    flex-grow: 0.7;
+    height: 6rem;
+}
