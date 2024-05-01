@@ -1,7 +1,7 @@
 // Error examples
 
 // Uncaught SyntaxError: Unexpected identifier
-// funtion broken () {
+// function broken () {
 //     console.log("I'm broke");
 // }
 
@@ -9,7 +9,7 @@
 // ReferenceError: pupy is not defined
 // function callPuppy() {
 //     const puppy = "puppy";
-//     console.log(pupy);
+//     console.log(puppy);
 // }
 // callPuppy();
 
