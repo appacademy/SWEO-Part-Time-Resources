@@ -9,13 +9,13 @@
 // ReferenceError: pupy is not defined
 // function callPuppy() {
 //     const puppy = "puppy";
-//     console.log(pupy);
+//     console.log(puppy);
 // }
 // callPuppy();
 
 
 // TypeError: dog is not a function
-// let dog; // Remember unassigned variables are undefined!
+// let dog = function(){ console.log('hello')}; // Remember unassigned variables are undefined!
 // dog();
 
 // When you get an error referencing a specific function you are trying to use, look up the function behavior on mdn!
