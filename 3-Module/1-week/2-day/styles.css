@@ -1,0 +1,75 @@
+/*    * {
+    text-decoration: underline;
+} */
+
+h1 {
+    background-color: pink;
+}
+
+/* This is using an id selector */
+#howdy-h1 {
+    font-weight: 500;
+}
+
+/* This is using a class selector */
+.button-bois {
+    background-color: aquamarine;
+}
+
+.button-bois:hover {
+    background-color: rgb(86, 214, 171);
+}
+
+#submit-btn {
+    height: 40px;
+    width: 120px;
+}
+
+/* This is using an attribute selector */
+p[title] {
+    color: rgb(225, 10, 139)
+}
+
+.box {
+    background-color: rgb(232, 232, 135);
+}
+
+.orange {
+    font-weight: 700;
+}
+
+/* A compound selector*/
+.box.yellow {
+    text-decoration: underline ;
+}
+
+/* Styling multiple elements at a time */
+/* 
+h1, 
+h2 {
+    color: rgb(11, 8, 10)
+}
+
+div h4 {
+    background-color: purple;
+}
+
+div > a {
+    background-color: pink;
+} */
+
+/* a + a {
+    background-color: pink;
+} */
+
+.test-class {
+    background-color: green;
+}
+
+/* #test-id {
+    background-color: blueviolet;
+} */
+
+div[title] {
+    background-color: blueviolet;
+}

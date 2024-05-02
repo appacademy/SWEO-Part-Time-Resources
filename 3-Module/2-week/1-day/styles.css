@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 187, 206);
+    height: 100vh;
+}
+/* 
+body {
+    padding: 0px;
+    margin: 0px;
+} */
+
+.container {
+    background-color: white;
+    display: flex;
+    height: 40%;
+    width: 70%;
+}
+
+
+/* .item {
+    width: 6rem;
+    height: 6rem;
+}  */
+
+
+#btn-1 {
+    width: 6rem;
+    height: 6rem;
+}
+
+#btn-2 {
+    width: 6rem;
+    height: 6rem;
+    /* visibility: hidden; */
+    display: none;
+}
+
+#btn-3 {
+    width: 6rem;
+    height: 6rem;
+}
+ 
+
+
+/* nav {
+    background-color: black;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+} */

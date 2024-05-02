@@ -1,0 +1,19 @@
+#outer-box {
+    background-color: aquamarine;
+}
+
+.box {
+    height: 5rem;
+    width: fit-content;
+    background-color: pink;
+    padding: 10px;
+    border: black solid 20px;
+    margin: 20px;
+    display: inline-block
+}
+
+#floatie-guy {
+    position: absolute;
+    top: 6rem;
+    left: 8rem;
+}

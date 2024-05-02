@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 187, 206);
+    height: 100vh;
+}
+
+/*
+.container {
+    background-color: white;
+    padding: 20px;
+    width: 50%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    /* grid-template-areas:
+    "toaster toaster bunny"
+    "two . bunny"
+    ; */
+    /* justify-items: flex-end; */
+/*} */
+
+
+
+/* 
+.jan {
+    grid-area: toaster;
+}
+
+.feb {
+    grid-area: bunny;
+}
+
+.oct {
+    grid-area: two;
+} */
+
+
+/* 
+.feb {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.march {
+    grid-row: 3/4;
+    grid-column: 1/4;
+} */
+
+
+button {
+    background-color: rgb(249, 229, 14);
+    height: 6rem;
+    width: 16rem;
+    font-size: 32px;
+    transition: height 200ms, width 2s, font-size 200ms, background-color 2s;
+}
+
+button:hover {
+    background-color: purple;
+    height: 8rem;
+    width: 20rem;
+    font-size: 48px;
+}
