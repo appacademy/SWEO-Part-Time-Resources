@@ -31,16 +31,24 @@ function printArr(arr) {
 }
 
 // O(n^2)
-// add each element to every other element in an array          i     j
+// add each element to every other element in an array
 function nestedComparison(arr) {
-  let result = []
-  //                           [0,1,2,3,4,5,6]
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr.length; j++) {
-      result.push(j)
+      arr[i] + arr[j]
     }
   }
 }
+
+function nestedPush(arr) {
+  let arr = []
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length; j++) {
+      arr.push(j)
+    }
+  }
+}
+
 
 // time complexity
 // array insertions/deletions at the beginning of array will be o(n) (at a minimum)
@@ -77,6 +85,7 @@ for (let n = increment; n <= 10 * increment; n += increment) {
   console.log(`${endTime - startTime}`);
 }
 
+animals = ['alligator', 'bear', 'cat', 'dog', 'elephant', 'fish', 'goose', 'hamster', 'iguana', 'jaguar', 'kangaroo'];
 
 // Count how many animals are in the list
 // Time complexity: O(?)
@@ -115,8 +124,6 @@ function printTenAnimals(animals) {
   console.log(animals[8]);
   console.log(animals[9]);
 }
-
-
 
 // Print out all the animals
 // Time complexity: O(?)
