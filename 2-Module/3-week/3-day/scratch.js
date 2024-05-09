@@ -36,16 +36,22 @@ function nestedPush(arr){
 }
 
 //create increments to test space complexity
-let increment = 100
+let increment = 10
 for(let i = increment; i <= 10 * increment ; i += increment){
+    let result = []
     let arr = []
     for(let j = 0; j < i; j++){
         arr.push(j)
     }
+    const startTime = Date.now()
+    result.push(...arr)
+    const endTime = Date.now()
+    // console.log(arr.length)
+    console.log(endTime - startTime)
     // addNums(arr)
     // console.log('---------------------------')
     // addFive(arr)
     // console.log('---------------------------')
-    nestedPush(arr)
+    // nestedPush(arr)
     // console.log('---------------------------')
 }
