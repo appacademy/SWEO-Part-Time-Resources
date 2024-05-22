@@ -42,7 +42,7 @@ class TreeNode {
 
 ## Searching a BST for a specific value
 - If root is null, return false because tree is empty
-- Being a traversal loop
+- Begin a traversal loop
 - If value is lower then currentNode value go left
 - If value is higher than currentNode value go right
 - if both cases above fail, then that means the value has been found
