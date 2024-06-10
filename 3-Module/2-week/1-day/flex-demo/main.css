@@ -1,0 +1,40 @@
+.parent {
+    width: 800px;
+    height: 800px;
+    background-color: purple;
+    display: flex;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    align-content: center;
+    flex-flow: row wrap
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#child-1 {
+    background-color: red;
+    /* align-self: flex-start; */
+    order: 1
+}
+
+#child-2 {
+    background-color: blue;
+    order: 2
+    /* align-self: center; */
+}
+
+#child-3 {
+    background-color: green;
+    order: 3
+    /* align-items: flex-start; */
+}
+
+#child-4 {
+    background-color: orange;
+    order: 4
+    /* align-self: flex-end; */
+}
