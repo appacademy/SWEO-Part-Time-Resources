@@ -1,0 +1,41 @@
+.parent {
+    width: 800px;
+    height: 800px;
+    background-color: purple;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-content: space-around;
+    flex-flow: row wrap
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+#child-1 {
+    background-color: red;
+    order: 1
+    /* align-self: flex-end */
+}
+
+#child-2 {
+    background-color: blue;
+    order: 2
+    /* align-self: flex-start; */
+}
+
+#child-3 {
+    background-color: green;
+    order: 3
+    /* align-self: flex-end */
+}
+
+#child-4 {
+    background-color: orange;
+    order: 4
+}
