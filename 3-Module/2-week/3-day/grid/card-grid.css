@@ -1,0 +1,42 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+
+.card-grid-container{
+    border: 1px solid red;
+
+    display: grid;
+
+    width: 600px;
+    height: 400px;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-template-areas:
+    "skills picture"
+    "bio bio"
+    ;
+
+    align-items: center;
+    justify-items: center;
+}
+
+
+.picture{
+    height: 250px;
+    width: 250px;
+    grid-area: picture;
+}
+
+.skills{
+    grid-area: skills;
+}
+
+.bio{
+    grid-area: bio;
+}
