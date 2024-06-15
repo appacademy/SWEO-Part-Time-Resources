@@ -1,0 +1,34 @@
+@import url('./header.css');
+@import url('./body.css');
+@import url('./footer.css');
+
+html{
+    background-color: #eeedf2;
+    font-family: "Neue Plak", sans-serif;
+    color: #6f7287;
+}
+
+body{
+    /* border: solid 1px black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:0;
+    margin-bottom:0;
+    margin-left: 5px;
+    margin-right: 5px;
+    gap:25px;
+
+}
+
+.site-button{
+    border: 1px solid #6f7287;
+    box-shadow: 2px 3px 3px gray;
+}
+
+.site-button:hover{
+    border: 1px solid orangered;
+    box-shadow: 2px 3px 3px orangered;
+    color: orangered;
+}
