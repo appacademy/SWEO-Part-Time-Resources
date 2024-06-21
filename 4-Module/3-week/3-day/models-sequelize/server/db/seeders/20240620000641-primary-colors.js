@@ -16,6 +16,7 @@ module.exports = {
       {name: 'red'},
       {name: 'blue'},
       {name: 'yellow'},
+      {name: 'red'}
     ])
   },
 
@@ -25,6 +26,8 @@ module.exports = {
      *
      * Example:
     */
-    await queryInterface.bulkDelete('Colors', null);
+    await queryInterface.bulkDelete('Colors', {
+      name: ['red', 'blue', 'yellow']
+    });
   }
 };
