@@ -1,0 +1,26 @@
+Table Trees {
+  id integer [pk]
+  tree varchar
+  location varchar
+  heightFt decimal
+  groundCircumferenceFt decimal
+}
+
+
+Table InsectTrees {
+  id integer [pk]
+  treeId integer
+  insectId integer
+}
+
+Table Insects {
+  id integer [pk]
+  name varchar
+  description text
+  fact text
+  territory varchar
+  millimeters decimal
+}
+
+Ref: Trees.id > InsectTrees.treeId
+Ref: Insects.id > InsectTrees.insectId
