@@ -1,0 +1,21 @@
+{
+  "name": "03-malicious-frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "malicious-app.js",
+  "scripts": {
+    "start": "node malicious-app.js",
+    "dev": "nodemon malicious-app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "node-fetch": "^2.6.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,79 @@
+main {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: -76px;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+  padding-top: 12px;
+}
+
+nav #nav-links {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  box-sizing: border-box;
+}
+
+nav a {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-decoration: none;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: transparent;
+  font-size: 32px;
+  margin-top: 4px;
+  border-radius: 50%;
+}
+
+nav a:hover {
+  background-color: rgba(217, 217, 217, 0.1);
+}
+
+.login-button {
+  font-size: 15px;
+  height: 36px;
+  border: 1px solid white;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 36px;
+  padding: 0 16px;
+  font-weight: 700;
+  color: white;
+}
+
+#auth-links {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(29, 155, 240);
+  color: white;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#auth-links > div {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
