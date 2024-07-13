@@ -41,7 +41,7 @@ defaultScope: {
     // included attributes do not exclude other elements opposed to a/a's reading
     // include: ['title', 'author', 'isCheckedOut', 'location'];
     
-    // this will exclude the ones you want to 
+    // this will exclude the ones you want to exclude, everything else will be included
     exclude: ['createdAt'] 
   }
 }
