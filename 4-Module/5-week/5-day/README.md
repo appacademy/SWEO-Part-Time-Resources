@@ -38,8 +38,11 @@ Scopes work much like an options object passed to a query, with the syntax being
 ```js
 defaultScope: {
   attributes: {
-    // included attributes; all others are excluded
-    include: ['title', 'author', 'isCheckedOut', 'location'];
+    // included attributes do not exclude other elements opposed to a/a's reading
+    // include: ['title', 'author', 'isCheckedOut', 'location'];
+    
+    // this will exclude the ones you want to 
+    exclude: ['createdAt'] 
   }
 }
 
