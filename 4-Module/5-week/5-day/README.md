@@ -142,10 +142,11 @@ Now if we wanted this to be more programmatic, we could write a function instead
   sequelize,
   modelName: 'Cat',
   scopes: {
-    isColor(color) {
+    isColorNamme(color, namme) {
       return {
         where: {
-          color
+          color,
+          namme
           // color: color
         }
       }
@@ -157,5 +158,5 @@ Now if we wanted this to be more programmatic, we could write a function instead
 We would invoke this using this syntax
 
 ```js
-await Cat.scope({ method: ['isColor', 'orange'] }).findAll();
+await Cat.scope({ method: ['isColor', 'orange', 'jyynxie'] }).findAll();
 ```
