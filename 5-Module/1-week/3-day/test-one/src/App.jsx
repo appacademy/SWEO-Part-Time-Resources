@@ -3,21 +3,14 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
-
-// App.jsx
-
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Home from "./components/Home";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-]);
-
 function App() {
-  return <RouterProvider router={router} />;
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <h1>Hello World</h1>
+    </>
+  )
 }
 
-export default App;
+export default App
