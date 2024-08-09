@@ -1,5 +1,7 @@
 # Hooks
 
+The term "hooks" refers to the idea that these functions "hook into" React’s internal state and lifecycle features from functional components. They provide a way to tap into React’s capabilities without needing to use class components. Essentially, hooks allow you to "hook into" React's core features, like state management and side effects, making it easier to manage and reuse logic across components. The name reflects their role in connecting functional components to the underlying React functionality.
+
 Hooks are a way for us to update content on the page that will persist through rerenders
 
 This will NOT persist data through refreshes
@@ -94,3 +96,4 @@ The array is what useEffect is "watching".
     -   useEffect will only run its function if a change has occurred to the array values
 -   An empty dependency array will cause the useEffect to run after the initial render ONLY
 -   No dependency array will cause useEffect to run after initial render and on EVERY subsequent rerender
+ 
