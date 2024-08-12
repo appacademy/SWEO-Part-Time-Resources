@@ -34,9 +34,11 @@ import { useState } from 'react';
 const EatFruit = () => {
     const [numFruits, setNumFruits] = useState(10);
 
+    console.log('something')
+
     return (
 		// Pretend there's JSX here that lets a user eat an apple
-
+        <div>something</div>
 		...
 		// BAD CODE DON'T DO THIS
 		numFruits = numFruits - 1
@@ -86,7 +88,7 @@ console.log(myNumber); // 10
 useEffect(() => {}, []);
 ```
 
-The function is the action you want to happen on every render.
+The function is the action you want to happen on every render we tell it too.
 
 The array is what useEffect is "watching".
 
