@@ -1,0 +1,1 @@
+const myClosure = (something) => (somethingElse) => something += somethingElse
