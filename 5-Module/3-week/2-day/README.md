@@ -122,16 +122,14 @@ export default configureStore
 
 ### Create an action creator
 
-In the above examples, we referenced 2 action creators. `createPokemon` and `setPokemon`
-
 ```js
 //Constants
 const SET_POKEMON = 'pokemon/setPokemon';
 const CREATE_POKEMON = 'pokemon/createPokemon';
 
-const setPokemon = (data) => ({
+const setPokemon = (payload) => ({
     type: SET_POKEMON,
-    payload: data
+    payload
 });
 
 const createPokemon = (newPokemon) => ({
