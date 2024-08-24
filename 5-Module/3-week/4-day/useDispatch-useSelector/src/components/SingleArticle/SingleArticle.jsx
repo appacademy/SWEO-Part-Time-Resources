@@ -1,5 +1,3 @@
-
-
 import './SingleArticle.css';
 
 const SingleArticle = () => {

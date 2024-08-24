@@ -1,16 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
+import configureStore from './store';
+import { populateProduce } from './store/produce';
 import App from './App';
 import './index.css';
-import configureStore from './store';
-import { loadArticles } from './store/articleReducer';
 
 const store = configureStore();
 
-if(import.meta.env.MODE !== 'production'){
-  window.store = store
-  window.loadArticles = loadArticles
+if (import.meta.env.MODE !== "production") {
+  window.store = store;
+  window.populateProduce = populateProduce;
 }
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -20,3 +20,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Provider>
   </React.StrictMode>
 );
+

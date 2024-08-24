@@ -1,5 +1,5 @@
-import { createStore, applyMiddleware, compose, combineReducers } from 'redux';
-import fruitReducer from './fruitReducer';
+import { createStore, applyMiddleware, compose, combineReducers } from "redux";
+import fruitReducer from "./fruitReducer";
 /*
 `combineReducers` combines all the reducer functions into one big reducer
 function, which is typically called `rootReducer`. This is the most important
@@ -8,10 +8,10 @@ components.
 */
 
 // create rootReducer here:
-// Your code here 
+// Your code here
 const rootReducer = combineReducers({
-  fruitState: fruitReducer
-})
+  fruits: fruitReducer,
+});
 
 /*
 `enhancer` allows you to alter the store and add functionality such as Redux

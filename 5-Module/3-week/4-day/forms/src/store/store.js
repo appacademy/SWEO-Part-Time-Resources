@@ -9,8 +9,8 @@ part of this file. You will add your reducers here to work with your various
 components.
 */
 const rootReducer = combineReducers({
-  fruits: fruitReducer,
-  articles: articleReducer
+  fruitState: fruitReducer,
+  articleState: articleReducer
 });
 
 /*

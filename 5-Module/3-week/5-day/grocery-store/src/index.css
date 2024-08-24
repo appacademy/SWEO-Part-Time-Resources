@@ -1,0 +1,81 @@
+html {
+  font-family: sans-serif;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, main, nav, div, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+input {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  right: -300px;
+  transition: all 0.2s linear;
+  background-color: whitesmoke;
+  box-shadow: 0px 0 8px 1px lightgray;
+}
+
+main {
+  margin-top: 54px;
+  transition: all 0.2s linear;
+  padding: 16px;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+nav, .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 54px;
+  background-color: pink;
+  box-shadow: 3px -1px 3px 3px lightgray;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.checkout-button, .arrow-button, button[type="submit"] {
+  color: white;
+  height: 32px;
+  background-color: coral;
+  border: 0;
+  border-radius: 8px;
+  min-width: 32px;
+}
+
+.checkout-button i {
+  margin-right: 8px;
+}
+
+h1 {
+  color: darkred;
+}
+
+h2 {
+  color: gray;
+  margin-bottom: 16px;
+}

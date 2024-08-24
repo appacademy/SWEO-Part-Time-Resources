@@ -10,7 +10,7 @@ components.
 */
 const rootReducer = combineReducers({
   fruitState: fruitReducer,
-  articleState: articleReducer
+  articles: articleReducer
 });
 
 /*

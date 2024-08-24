@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { loadArticles } from "../../store";
+import { loadArticles } from "../../store/articleReducer";
 import { NavLink } from "react-router-dom";
 
 const ArticleList = () => {
   const dispatch = useDispatch();
-  const articles = useSelector((state) => state.articles.entries);
+  const articles = useSelector((state) => state.articleState.entries);
 
   useEffect(() => {
     dispatch(loadArticles());
@@ -18,7 +18,7 @@ const ArticleList = () => {
         {articles &&
           articles.map((article) => (
             <li key={article.id}>
-              <NavLink to={`${article.id}`}>{article.title}</NavLink>
+              <NavLink to={article.id}>{article.title}</NavLink>
             </li>
           ))}
       </ol>
