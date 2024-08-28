@@ -1,11 +1,12 @@
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
+import { selectArticleById } from '../../store/articleReducer';
 import './SingleArticle.css';
 
 const SingleArticle = () => {
   const { id } = useParams();
   const singleArticle = useSelector(
-    state => state.articleState.entries.find(article => article.id === +id)
+    selectArticleById(id)
   )
 
   return (

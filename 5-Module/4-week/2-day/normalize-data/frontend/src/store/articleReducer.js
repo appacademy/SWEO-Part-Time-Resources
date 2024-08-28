@@ -38,6 +38,8 @@ export const writeArticle = (payload) => async (dispatch) => {
 };
 
 const selectArticles = (state) => state.articleState.entries;
+export const selectArticleById = (articleId) => (state) =>
+  state.articleState.entries[articleId];
 
 export const selectArticlesArray = createSelector(
   selectArticles,
@@ -52,7 +54,7 @@ const initialState = { entries: {}, isLoading: true };
 const articleReducer = (state = initialState, action) => {
   switch (action.type) {
     case LOAD_ARTICLES: {
-      const newState = { ...state, entries: {...state.entries} };
+      const newState = { ...state, entries: { ...state.entries } };
 
       action.articles.forEach((article) => {
         newState.entries[article.id] = article;
