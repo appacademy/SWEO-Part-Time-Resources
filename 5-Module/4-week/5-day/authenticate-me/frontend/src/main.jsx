@@ -19,6 +19,8 @@ if (import.meta.env.MODE !== "production") {
   window.store = store;
   window.sessionActions = sessionActions; // <-- ADD THIS LINE
 }
+
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Provider store={store}>
