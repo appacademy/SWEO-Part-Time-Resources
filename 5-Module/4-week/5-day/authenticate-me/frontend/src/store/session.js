@@ -46,11 +46,20 @@ export const signUp =
 
     if (res.ok) {
       res = await res.json();
+      console.log(res)
       dispatch(addUser(res));
       return res;
     }
   };
 
+export const logout = () => async dispatch => {
+  let res = await csrfFetch('/api/session',{
+    method: 'DELETE'
+  })
+  dispatch(removeUser())
+  res = await res.json()
+  return res
+}
 const initialState = { user: null };
 
 const session = (state = initialState, action) => {
@@ -61,7 +70,7 @@ const session = (state = initialState, action) => {
       return newState;
     }
     case REMOVE_USER: {
-      return { ...state, ...initialState };
+      return { user: null };
     }
     default:
       return state;

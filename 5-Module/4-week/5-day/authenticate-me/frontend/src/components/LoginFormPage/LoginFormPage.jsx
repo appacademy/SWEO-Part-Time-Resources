@@ -2,11 +2,12 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../../store/session";
 import { useSelector } from "react-redux";
-import { Navigate } from "react-router-dom";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const LoginFormPage = () => {
+  const navigate = useNavigate()
   const dispatch = useDispatch();
-  const currUser = useSelector((state) => state.session.user);
+  const currUser = useSelector((state) => state.session.user?.user);
   const [credential, setCredential] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
@@ -19,10 +20,11 @@ const LoginFormPage = () => {
       credential,
       password,
     };
-    return dispatch(login(userInfo)).catch(async (res) => {
+    dispatch(login(userInfo)).catch(async (res) => {
       const data = await res.json();
       if (data?.errors) setErrors(data.errors);
     });
+    navigate('/')
   };
 
   return (

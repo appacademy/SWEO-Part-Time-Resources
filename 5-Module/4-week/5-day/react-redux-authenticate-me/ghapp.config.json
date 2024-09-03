@@ -1,0 +1,12 @@
+{
+  "programs": {
+    "BASE": {
+      "starter-exclusions": [
+        "frontend/"
+      ]
+    },
+    "CH": true,
+    "FT": true,
+    "PT": true
+  }
+}

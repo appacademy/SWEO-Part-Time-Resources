@@ -45,7 +45,9 @@ router.post(
 
     await setTokenCookie(res, safeUser);
 
-    return res.json(safeUser);
+    return res.json({
+      user: safeUser
+    });
   }
 );
 
