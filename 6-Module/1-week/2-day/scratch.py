@@ -31,4 +31,55 @@
 
 # print(num_1)
 
-print(20 % 6)
+# print(20 % 6)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# print('hello world')
+# questions = 20
+# num_correct = 10
+# score = f'You got {num_correct/questions:%}'
+# print(score)
+# score = f'You got {num_correct/questions:.2%}'
+# print(score)
+
+
+# print(23 / 6) # 3.33333
+# print(23 // 6) # 3 integer division
+
+# num = 1
+
+# num += 1
+# print(num)
+
