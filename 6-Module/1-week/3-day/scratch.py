@@ -132,12 +132,12 @@
 #     pass
 
 
-# word = 'hello'
+word = 'hello'
 
-# i = len(word) - 1
-# while i >= 0:
-#     print(word[i])
-#     i -= 1
+i = len(word) - 1
+while i >= 0:
+    print(word[i])
+    i -= 1
     
 # for letter in word:
 #   print(letter)
@@ -147,15 +147,15 @@
 #   print({i: word[i]})
 
 #catching named errors
-a = 100
-# b = "5"
-# b = 0
-b = 5
-try:
-    print(a / b)
-except ZeroDivisionError:
-    pass
-except (TypeError, NameError) as e:
-    print("ERROR!", e)
-finally:
-    print("Finally...")
+# a = 100
+# # b = "5"
+# # b = 0
+# b = 5
+# try:
+#     print(a / b)
+# except ZeroDivisionError:
+#     pass
+# except (TypeError, NameError) as e:
+#     print("ERROR!", e)
+# finally:
+#     print("Finally...")
