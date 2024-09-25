@@ -10,6 +10,6 @@ let my_func = (arg) => {
     return arg;
 };
 
-my_func = js_decorator(my_func);
+const my_Func = js_decorator(my_func);
 
-console.log(my_func('Pretend '));
+console.log(my_Func('Pretend '));
