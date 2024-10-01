@@ -145,7 +145,7 @@ def my_route():
 And any requests starting with `/reviews` will go here
 
 ```py
-# /app/reviews/reviews.py
+# /app/routes/reviews.py
 from flask import Blueprint
 
 bp = Blueprint('reviews', __name__, url_prefix='/reviews')
